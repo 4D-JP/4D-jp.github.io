@@ -2,7 +2,7 @@
 layout: page
 title: 管理者
 permalink: /about/
-icon: heart
+icon: id-card
 ---
 
 * content
