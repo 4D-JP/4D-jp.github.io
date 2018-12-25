@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Teach Girlfriend to make a Web Pages like Zhihu"
+title:  "アプリケーションの起動コマンドライン引数をメソッド内で受け取るには"
 date:   2018-12-25 15:14:54
 categories: Bootstrap
 tags: BootStrap HTML CSS Zhihu
