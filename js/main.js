@@ -8,7 +8,7 @@
  * clickMenu
  */
 (function() {
-    if (window.innerWidth <= 770) {
+//     if (window.innerWidth <= 770) {
         var menuBtn = document.querySelector('#headerMenu')
         var nav = document.querySelector('#headerNav')
         menuBtn.onclick = function(e) {
@@ -25,7 +25,7 @@
             nav.classList.remove('nav-show')
             menuBtn.classList.remove('active')
         })
-    }
+//     }
 }());
 
 
