@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Jekyll 搭建静态博客"
-date:   2015-02-15 22:14:54
-categories: jekyll
-tags: jekyll RubyGems
+title:  "アプリケーションの起動コマンドライン引数をメソッド内で受け取るには"
+date:   2018-12-25 16:00:00
+categories: サンプルコード
+tags: R3 develop
 ---
 
 * content
