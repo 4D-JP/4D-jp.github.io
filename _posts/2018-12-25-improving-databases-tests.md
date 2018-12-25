@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "アプリケーションの起動コマンドライン引数をメソッド内で受け取るには"
+title:  "起動コマンドライン引数が受け取れるようになりました"
 date:   2018-12-25 15:14:54
 categories: Bootstrap
-tags: BootStrap HTML CSS Zhihu
+tags: R3 hdi
 ---
 
 * content
