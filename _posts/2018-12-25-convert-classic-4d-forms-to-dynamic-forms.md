@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "新: FORM Convert to dynamic"
+title:  "テキスト形式でフォームの書き出し"
 date:   2018-12-25 15:14:54
 categories: サンプル
-tags: 17r3 develop
-excerpt: フォーム定義がJSON形式で書き出せるようになりました。
+tags: 17r3 develop new
+excerpt: 新コマンドのFORM Convert to dynamicでフォームがエクスポートできるようになりました。
 
 ---
