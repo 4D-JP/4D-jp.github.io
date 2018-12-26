@@ -6,7 +6,7 @@ categories: 修正リスト
 tags: 16.4 hotfix
 excerpt: "4D v16.x 修正リスト"
 build: 231031
-version: 16/x
+version: 16.x
 
 ---
 
