@@ -1,15 +1,17 @@
 ---
 layout: fix
-title: "4D v16.x Nightly Build"
+title: "4D v16 修正リスト"
 date: 2018-12-26 22:14:54
 categories: 修正リスト
 tags: 16.4 hotfix
-excerpt: "4D v16.x Nightly Build 修正リスト"
+excerpt: "4D v16.x 修正リスト"
 build: 231031
+version: 16/x
 
 ---
 
-**バージョン**: {{page.title}} **ビルド**: {{page.build}}  
+**バージョン**: {{page.version}}  
+**ビルド**: {{page.build}}  
 
 * ACI0098598 アプリケーションを数週間にわたって連続運用した場合，``DELAY PROCESS``で遅延したプロセスが再開しないことがありました。
 
