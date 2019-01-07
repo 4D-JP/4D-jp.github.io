@@ -3,7 +3,7 @@ layout: post
 title: "Milliseconds ドキュメント追記"
 date: 2019-01-07 22:14:54
 categories: ドキュメント
-tags: develop documentation
+tags: develop documentation 17r3
 excerpt: "Milliseconds の例題と説明文が改定されています。経過時間を計測したい場合，関数から返される値を比較するのではなく，差を計算するべきである点が強調されています。値は約24日毎に符号が反転するからです。"
 version: 17r3
 
