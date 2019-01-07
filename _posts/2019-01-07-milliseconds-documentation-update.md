@@ -17,7 +17,7 @@ version: 17r3
 
 ドキュメントは17r3で改定されていますが，この情報は過去すべてのバージョンで有効です。
 
-* 改定されたサンプルコード
+* 改定されたサンプルコード [17r3](https://doc.4d.com/4Dv17R3/4D/17-R3/Milliseconds.301-3907274.ja.html)
 
 ```
  If(Locked([Table_1]))
@@ -30,9 +30,7 @@ version: 17r3
  End if
 ```
 
-[17r3](https://doc.4d.com/4Dv17R3/4D/17-R3/Milliseconds.301-3907274.ja.html)
-
-* 以前のサンプルコード
+* 以前のサンプルコード [17.x](https://doc.4d.com/4Dv16/4D/16.4/Milliseconds.301-3978208.ja.html)
 
 ```
  Open window(100;100;300;200;0;"Chronometer")
@@ -49,5 +47,3 @@ version: 17r3
  Until((Current time-$vhTimeStart)>=?00:01:00?)
  CLOSE WINDOW
 ```
-
-[17.x](https://doc.4d.com/4Dv16/4D/16.4/Milliseconds.301-3978208.ja.html)
