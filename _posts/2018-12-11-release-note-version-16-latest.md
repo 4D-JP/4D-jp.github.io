@@ -4,7 +4,6 @@ title: "4D v16 修正リスト"
 date: 2018-12-26 22:14:54
 categories: 修正リスト
 tags: 16.4 hotfix
-excerpt: "4D v16.x 修正リスト"
 build: 231031
 version: 16.x
 
