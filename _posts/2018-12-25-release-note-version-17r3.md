@@ -188,22 +188,22 @@ version: 17r3
 
 ```js
 "action": { // standard action name associated to the item
-"type": "string"
+  "type": "string"
 },
 "textDecoration": {
-"enum": ["none", "underline"]
+  "enum": ["none", "underline"]
 },
 "fontWeight": {
-"enum": ["normal", "bold"]
+  "enum": ["normal", "bold"]
 },
 "fontStyle": {
-"enum": ["normal", "italic"]
+  "enum": ["normal", "italic"]
 },
 "stroke": { // text color
-"$ref": "#/definitions/types/color"
+  "$ref": "#/definitions/types/color"
 },
 "icon": { // path to the icon
-"$ref": "#/definitions/types/picture"
+  "$ref": "#/definitions/types/picture"
 }
 ```
 
@@ -217,12 +217,11 @@ version: 17r3
 
 ```
 ARRAY DATE($ad_Birth;0)
-
 Begin SQL
-SELECT P.Birth FROM Person P
-JOIN Company C ON C.ID=P.Id_company
-ORDER BY 1 DESC 
-INTO :$ad_Birth;
+  SELECT P.Birth FROM Person P
+  JOIN Company C ON C.ID=P.Id_company
+  ORDER BY 1 DESC 
+  INTO :$ad_Birth;
 End SQL
 ```
 
