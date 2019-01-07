@@ -1,11 +1,11 @@
 ---
 layout: fix
 title: "4D v17r3 修正リスト"
-date: 2018-12-26 22:14:54
+date: 2019-01-07 19:25:54
 categories: 修正リスト
 tags: 17r3
 excerpt: "4D v17r3 修正リスト"
-build: 231515
+build: 231689
 version: 17r3
 
 ---
