@@ -9,7 +9,7 @@ version: 17r3
 
 ---
 
-* 改定の要旨
+#### 改定の要旨
 
 ``Milliseconds``は，マシン（アプリケーションではありません）が起動されてから経過された時間をミリ秒単位で返します。しばしば時間の計測に使用される関数ですが，符号付き32ビット整数（``C_LONGINT``）が使用されているため，``2,147,483,647``ミリ秒，つまり約``24.86``日毎に返される値の符号が反転することに留意しなければなりません。
 
@@ -19,7 +19,7 @@ version: 17r3
 
 ドキュメントは17r3で改定されていますが，この情報は過去すべてのバージョンで有効です。
 
-[17r3](https://doc.4d.com/4Dv17R3/4D/17-R3/Milliseconds.301-3907274.ja.html)
+#### 改定されたサンプルコード
 
 ```
  If(Locked([Table_1]))
@@ -32,7 +32,10 @@ version: 17r3
  End if
 ```
 
-[17.x](https://doc.4d.com/4Dv16/4D/16.4/Milliseconds.301-3978208.ja.html)
+[17r3](https://doc.4d.com/4Dv17R3/4D/17-R3/Milliseconds.301-3907274.ja.html)
+
+
+#### 以前のサンプルコード
 
 ```
  Open window(100;100;300;200;0;"Chronometer")
@@ -49,3 +52,5 @@ version: 17r3
  Until((Current time-$vhTimeStart)>=?00:01:00?)
  CLOSE WINDOW
 ```
+
+[17.x](https://doc.4d.com/4Dv16/4D/16.4/Milliseconds.301-3978208.ja.html)
