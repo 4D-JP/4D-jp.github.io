@@ -3,7 +3,7 @@ layout: post
 title: "macOS Mojave"
 date: 2019-01-09 11:35:00
 categories: リリースノート
-tags: 17r4 mac "17.1"
+tags: 17r4 mac 17.1
 excerpt: "近日中にリリース予定の17.1および17r3（Mac版）は，Xcode 10.1およびmacOS 10.14 SDKがコンパイルに使用されています。これにより，macOS Mojaveでウィンドウリサイズ時に発生する『ちらつき』現象が解消されています。"
 version: 17r4
 
