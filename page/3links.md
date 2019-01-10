@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: page
 title: リンク
 permalink: /link/
 icon: heart
-type: page
 ---
 
 ## なにか
