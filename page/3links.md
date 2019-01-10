@@ -6,6 +6,6 @@ icon: heart
 type: page
 ---
 
-# なにか
+## なにか
 
 いろいろ
