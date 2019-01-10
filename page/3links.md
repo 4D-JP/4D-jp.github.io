@@ -1,7 +1,7 @@
 ---
 layout: page
 title: リンク
-permalink: /link/
+permalink: /links/
 icon: heart
 type: page
 ---
