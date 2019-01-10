@@ -7,5 +7,4 @@ tags: 17r3 hdi develop update
 excerpt: "GET DATABASE PARAMETERが拡張され、アプリケーションの起動パラメーターが取得できるようになりました。"
 ---
 
-* content
-{:toc}
+<i class="fa fa-download" aria-hidden="true"></i> [ダウンロード](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_RelaunchAndTest.zip)
