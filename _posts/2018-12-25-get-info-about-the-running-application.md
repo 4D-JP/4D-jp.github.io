@@ -7,5 +7,4 @@ tags: 17r3 hdi admin update
 excerpt: "Get application infoが拡張され、ネットワークアクティビティ情報が取得できるようになりました。"
 ---
 
-* content
-{:toc}
+<i class="fa fa-download" aria-hidden="true"></i> [ダウンロード](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_GetApplicationInfo.zip)
