@@ -11,3 +11,5 @@ excerpt: 新コマンドのFORM Convert to dynamicでフォームがエクスポ
 ここが本文ですね。
 ここが本文でしょうか。<br />
 おそらくここが本文です。
+
+<i class="fa fa-download" aria-hidden="true"></i> [ダウンロード](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_ConvertFormToDynamicForm.zip)
