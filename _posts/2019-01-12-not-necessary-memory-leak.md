@@ -3,7 +3,7 @@ layout: post
 title: "メモリーリーク？"
 date: 2019-01-13 19:45:23
 categories: 注意点 
-tags: memory
+tags: memory 16.x
 version: 16.x
 ---
 
