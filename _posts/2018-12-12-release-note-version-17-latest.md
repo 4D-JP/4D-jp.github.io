@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2018-12-26 22:14:54
+date: 2019-01-12 22:14:54
 categories: 修正リスト
 tags: "17.1" 
 build: 231689
@@ -12,7 +12,7 @@ version: 17.1
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
-* ACI0099077 4D Write Proドキュメントに下揃え（``{wk anchor section:wk anchor embedded, wk anchor vertical align:wk bottom, wk anchor layout:wk in front of text}``）のアンカー画像を挿入し，埋め込みモードで表示し，ドキュメントの高さが増減するようにその画像の上にテキストを追加した場合，画像をクリックしたときに表示されるハンドルの位置が移動しませんでした。
+* ACI0099077 4D Write Proドキュメントに下揃え（``wk anchor section:wk anchor embedded, wk anchor vertical align:wk bottom, wk anchor layout:wk in front of text``）のアンカー画像を挿入し，埋め込みモードで表示し，ドキュメントの高さが増減するようにその画像の上にテキストを追加した場合，画像をクリックしたときに表示されるハンドルの位置が移動しませんでした。
 
 * ACI0099056 Windows版のみ。SDIモードで``Movable form dialog box``タイプのウィンドウを``Open form window``および``DIALOG``で表示した場合，タイトルバーをクリックした場合にしかウィンドウが最前面に移動しませんでした。期待されるのは，コンテンツエリアをクリックした場合にもウィンドウが最前面に移動することです。``Plain form window``では問題ありません。
 
