@@ -12,7 +12,7 @@ type: page
 ## 17r3
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**アプリケーションの起動パラメーター**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_RelaunchAndTest.zip)<br />
-データベースをコマンドで起動する際に、パラメーターを受け渡すことができます。
+[Database Parameters](https://doc.4d.com/Database-Parameters.302-3905958.ja.html)定数テーマに追加された定数 _User param value_ を使って、データベースをコマンドで起動する際にパラメーターを受け渡すことができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ネットワークアクティビティ情報**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_GetApplicationInfo.zip)<br />
 [`Get application info`](https://doc.4d.com/Get-application-info.301-3921185.ja.html)コマンドを使って、アクティブデータベースと、そのネットワーク設定に関する情報を取得することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**テキスト形式でフォームの書き出し**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_ConvertFormToDynamicForm.zip)<br />
@@ -22,9 +22,8 @@ type: page
 * <i class="fa fa-download" aria-hidden="true"></i> [**メソッドのオブジェクト化**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_NewFormula.zip)<br />
 [`New formula`](http://doc.4d.com/New-formula.301-3958154.ja.html)コマンドを使って、メソッドをオブジェクト化することができます。オブジェクト化されたメソッドは引数として受け渡すことができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: セクションとサブセクションの操作**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DWP_ManageSections.zip)<br />
-セクションやサブセクションをコマンドにより操作することができます:<br />
-[`WP Get section`](https://doc.4d.com/WP-Get-section.301-3921330.ja.html)[`WP Get sections`](https://doc.4d.com/WP-Get-sections.301-3905004.ja.html)[` WP SET ATTRIBUTES`](https://doc.4d.com/WP-SET-ATTRIBUTES.301-3920802.ja.html)[`WP Create subsection`](https://doc.4d.com/WP-Create-subsection.301-3931950.ja.html)[`WP Get subsection`](https://doc.4d.com/WP-Get-subsection.301-3934758.ja.html)
-
+セクションやサブセクションをコマンドにより操作することができます:[`WP Get section`](https://doc.4d.com/WP-Get-section.301-3921330.ja.html)[`WP Get sections`](https://doc.4d.com/WP-Get-sections.301-3905004.ja.html)[`WP SET ATTRIBUTES`](https://doc.4d.com/WP-SET-ATTRIBUTES.301-3920802.ja.html)[`WP Create subsection`](https://doc.4d.com/WP-Create-subsection.301-3931950.ja.html)[`WP Get subsection`](https://doc.4d.com/WP-Get-subsection.301-3934758.ja.html)
+[` `]()
 ## 17r2
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**HDI_4DWP_AnchoredPictureExpressions.zip**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_AnchoredPictureExpressions.zip)<br />
