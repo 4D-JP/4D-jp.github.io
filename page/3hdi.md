@@ -11,46 +11,45 @@ type: page
 
 ## 17r3
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Bootstrap_4DTags](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_Bootstrap_4DTags)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_RelaunchAndTest](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_RelaunchAndTest)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_GetApplicationInfo](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_GetApplicationInfo)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ConvertFormToDynamicForm](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_ConvertFormToDynamicForm)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_VP_ExportToExcel](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_VP_ExportToExcel)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_NewFormula](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_NewFormula)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ManageSections](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DWP_ManageSections)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Bootstrap_4DTags.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_Bootstrap_4DTags.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_RelaunchAndTest.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_RelaunchAndTest.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_GetApplicationInfo.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_GetApplicationInfo.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ConvertFormToDynamicForm.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_ConvertFormToDynamicForm.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_VP_ExportToExcel.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_VP_ExportToExcel.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_NewFormula.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_NewFormula.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ManageSections.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DWP_ManageSections.zip)
 
 ## 17r2
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_AnchoredPictureExpressions](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_AnchoredPictureExpressions)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DVP_DB_Method](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DVP_DB_Method)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_TablePagination](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_TablePagination)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_AnchoredPictureExpressions.zip](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_AnchoredPictureExpressions.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DVP_DB_Method.zip](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DVP_DB_Method.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_TablePagination.zip](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_TablePagination.zip)
 
 ## 17
 
-* <i class="fa fa-download" aria-hidden="true"></i> [Demo_4DWP_Toolbar_JA.zip](https://github.com/4D-JP/HDI/releases/download/17/Demo_4DWP_Toolbar_JA.zip)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DVP_Offscreen_doc](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DVP_Offscreen_doc)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Dynamic_Sort_v17](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Dynamic_Sort_v17)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ListBoxCollection_Advanced_v17](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListBoxCollection_Advanced_v17)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_EntitySelectionInListbox](https://github.com/4D-JP/HDI/releases/download/17/HDI_EntitySelectionInListbox)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Statistics](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Statistics)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Logical_Operators](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Logical_Operators)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Handling_Entities](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Handling_Entities)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Optimistic_Lock](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Optimistic_Lock)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Pessimistic_Lock](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Pessimistic_Lock)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSONTableForm_v17](https://github.com/4D-JP/HDI/releases/download/17/HDI_JSONTableForm_v17)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Objects_And_Collections](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Objects_And_Collections)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Current_Selection_Bridge](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Current_Selection_Bridge)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ListboxCollection](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListboxCollection)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Query](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Query)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_Elements](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_Elements)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_GetPosition](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_GetPosition)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_MultiColumn](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_MultiColumn)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_SetGetText](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_SetGetText)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWriteProContextualMenu](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWriteProContextualMenu)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ForEach](https://github.com/4D-JP/HDI/releases/download/17/HDI_ForEach)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_FormData](https://github.com/4D-JP/HDI/releases/download/17/HDI_FormData)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_GET_STRUCTURE_INFO](https://github.com/4D-JP/HDI/releases/download/17/HDI_GET_STRUCTURE_INFO)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_CRUD](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_CRUD)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DVP_Offscreen_doc.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DVP_Offscreen_doc.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Dynamic_Sort_v17.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Dynamic_Sort_v17.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ListBoxCollection_Advanced_v17.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListBoxCollection_Advanced_v17.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_EntitySelectionInListbox.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_EntitySelectionInListbox.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Statistics.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Statistics.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Logical_Operators.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Logical_Operators.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Handling_Entities.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Handling_Entities.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Optimistic_Lock.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Optimistic_Lock.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Pessimistic_Lock.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Pessimistic_Lock.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSONTableForm_v17.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_JSONTableForm_v17.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Objects_And_Collections.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Objects_And_Collections.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Current_Selection_Bridge.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Current_Selection_Bridge.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ListboxCollection.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListboxCollection.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_Query.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Query.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_Elements.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_Elements.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_GetPosition.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_GetPosition.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_MultiColumn.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_MultiColumn.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_SetGetText.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_SetGetText.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWriteProContextualMenu.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWriteProContextualMenu.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ForEach.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ForEach.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_FormData.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_FormData.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_GET_STRUCTURE_INFO.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_GET_STRUCTURE_INFO.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_CRUD.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_CRUD.zip)
 
 ## 16r6
 
@@ -63,8 +62,8 @@ type: page
 
 ## 16r5
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_TwitterSearchAPI](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_TwitterSearchAPI)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSON_Pointer](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_JSON_Pointer)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_TwitterSearchAPI.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_TwitterSearchAPI.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSON_Pointer.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_JSON_Pointer.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DVP_AutoRowHeight.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DVP_AutoRowHeight.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_BackImagePaperBox.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_BackImagePaperBox.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_HeadersFooters.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_HeadersFooters.zip)
@@ -75,7 +74,7 @@ type: page
 ## 16r4
 
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DViewProNewFormObject.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DViewProNewFormObject.zip)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWritePro_Link.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Link.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWritePro_Links.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Links.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWritePro_Tables.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Tables.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_GetProcessActivity.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_GetProcessActivity.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSONFileValidation.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_JSONFileValidation.zip)
