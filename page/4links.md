@@ -18,6 +18,10 @@ type: page
 
 * [4D method](https://4dmethod.com/)
 
+* [ My 4D Experience](https://my4dexperience.home.blog)
+
+スイス在住Gabriel Inzirilloさんのブログ（フランス語）
+
 ## サードパーティ
 
 * [Heubach Media](https://www.hmplugins.com/)
