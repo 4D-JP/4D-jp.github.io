@@ -5,13 +5,11 @@ permalink: /hdi/
 icon: download
 type: page
 ---
-<header>
 {{ "{% if content contains '<a href=' " }}%}
-    {{ content | replace:'<a','<a target="_blank"' }}
+    {{ content | replace:'<a','<a target="_ blank"' }}
 {{ "{% else " }}%}
     {{content}}
 {{ "{% endif " }}%}
-</header>
     
 * content
 {:toc}
