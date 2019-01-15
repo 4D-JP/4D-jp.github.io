@@ -53,12 +53,12 @@ type: page
 
 ## 16r6
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Generate_GDPR_Report_V16](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Generate_GDPR_Report_V16)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Collection_Query](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Query)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Collection_Members](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Members)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSONForm](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_JSONForm)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_useSharedObjects](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_useSharedObjects)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ImageInAbsolutePosition](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_4DWP_ImageInAbsolutePosition)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Generate_GDPR_Report_V16.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Generate_GDPR_Report_V16.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Collection_Query.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Query.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Collection_Members.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Members.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSONForm.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_JSONForm.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_useSharedObjects.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_useSharedObjects.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ImageInAbsolutePosition.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_4DWP_ImageInAbsolutePosition.zip)
 
 ## 16r5
 
