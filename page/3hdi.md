@@ -11,11 +11,10 @@ type: page
 
 ## 17r3
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Bootstrap_4DTags.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_Bootstrap_4DTags.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_RelaunchAndTest.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_RelaunchAndTest.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_GetApplicationInfo.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_GetApplicationInfo.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_ConvertFormToDynamicForm.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_ConvertFormToDynamicForm.zip)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_VP_ExportToExcel.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_VP_ExportToExcel.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DVP_ExportToExcel.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DVP_ExportToExcel.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_NewFormula.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_NewFormula.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ManageSections.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DWP_ManageSections.zip)
 
@@ -53,7 +52,6 @@ type: page
 
 ## 16r6
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Generate_GDPR_Report_V16.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Generate_GDPR_Report_V16.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_Collection_Query.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Query.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_Collection_Members.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Members.zip)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSONForm.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_JSONForm.zip)
