@@ -14,7 +14,7 @@ type: page
 * <i class="fa fa-download" aria-hidden="true"></i> [**アプリケーションの起動パラメーター**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_RelaunchAndTest.zip)<br />
 データベースをコマンドで起動する際に、パラメーターを受け渡すことができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ネットワークアクティビティ情報**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_GetApplicationInfo.zip)<br />
-`Get application info`コマンドを使って、アクティブデータベースと、そのネットワーク設定に関する情報を取得することができます。
+[`Get application info`](https://doc.4d.com/4Dv17R3/4D/17-R3/Get-application-info.301-3921185.ja.html)コマンドを使って、アクティブデータベースと、そのネットワーク設定に関する情報を取得することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**テキスト形式でフォームの書き出し**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_ConvertFormToDynamicForm.zip)<br />
 `FORM Convert to dynamic`コマンドを使って、4DBファイルに保存された従来の 4DフォームをJSONファイルに変換し、ダイナミックフォームとして使用することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**HDI_4DVP_ExportToExcel.zip**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DVP_ExportToExcel.zip)<br />
