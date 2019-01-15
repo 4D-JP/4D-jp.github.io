@@ -26,9 +26,12 @@ type: page
 
 ## 17r2 # {#v17r2}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**HDI_4DWP_AnchoredPictureExpressions.zip**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_AnchoredPictureExpressions.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**HDI_4DVP_DB_Method.zip**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DVP_DB_Method.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**HDI_4DWP_TablePagination.zip**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_TablePagination.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: アンカー画像にピクチャー式を設定**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_AnchoredPictureExpressions.zip)<br />
+アンカー画像も[ピクチャー式](https://doc.4d.com/Handling-pictures.200-3920761.ja.html#3841026)（変数・フィールド・メソッドなど）によって定義することができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: フィールドデータやメソッドを使う**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DVP_DB_Method.zip)<br />
+セルへの簡単な記述により、[フィールドへの参照](https://doc.4d.com/Field-references.300-3936010.ja.html)や[プロジェクトメソッドへの参照](https://doc.4d.com/Project-method-references.300-3935962.ja.html)を使用することができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブルのページネーション**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_TablePagination.zip)<br />
+テーブルが[自動ページネーション](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3920766.ja.html#3892922)に対応し、テーブルの表示がページをまたぐ場合には行と行のあいだで分割されるようになりました。
 
 ## 17 # {#v17}
 
