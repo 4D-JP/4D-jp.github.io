@@ -6,11 +6,11 @@ icon: download
 type: page
 ---
 <header>
-{% if content contains '<a href=' %}
+{{ "{% if content contains '<a href=' " }}%}
     {{ content | replace:'<a','<a target="_blank"' }}
-{% else %}
+{{ "{% else " }}%}
     {{content}}
-{% endif %}
+{{ "{% endif " }}%}
 </header>
     
 * content
