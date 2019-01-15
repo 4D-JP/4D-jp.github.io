@@ -40,11 +40,11 @@ type: page
 
 ## 17 # {#v17}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: ドキュメントをプログラムにより作成**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DVP_Offscreen_doc.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: プログラムによってドキュメントを作成**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DVP_Offscreen_doc.zip)<br />
 4D View Pro ドキュメントはプログラムによっても簡単に作成することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: ストラクチャー情報を使った汎用コード**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Dynamic_Sort_v17.zip)<br />
 ORDAによって取得できるストラクチャー情報を利用した、汎用的なコードによる並べ替えツールの例です。
-* <i class="fa fa-download" aria-hidden="true"></i> [**コレクション型リストボックス-複階層コレクション**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListBoxCollection_Advanced_v17.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**コレクション型リストボックスと複階層コレクション**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListBoxCollection_Advanced_v17.zip)<br />
 複数のリストボックスを使い、複階層のコレクションを表示します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスにエンティティセレクションを表示**](https://github.com/4D-JP/HDI/releases/download/17/HDI_EntitySelectionInListbox.zip)<br />
 エンティティセレクションをコレクション型リストボックスに表示するために必要となる設定を紹介します。
@@ -61,7 +61,20 @@ ORDAによって取得できるストラクチャー情報を利用した、汎�
 [`entitySelection.and( )`](https://doc.4d.com/entitySelectionand.305-3907525.ja.html)
 [`entitySelection.or( )`](https://doc.4d.com/entitySelectionor.305-3907518.ja.html)
 [`entitySelection.minus( )`](https://doc.4d.com/entitySelectionminus.305-3907519.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_Handling_Entities.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Handling_Entities.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティとエンティティセレクションの操作**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Handling_Entities.zip)<br />
+エンティティやエンティティセレクションのもっとも基本的な操作の紹介です。
+[`dataClass.newSelection( )`](https://doc.4d.com/dataClassnewSelection.305-3907509.ja.html)
+[`entitySelection.add( )`](https://doc.4d.com/entitySelectionadd.305-3907516.ja.html)
+[`entitySelection.first( )`](https://doc.4d.com/entitySelectionfirst.305-3907520.ja.html)
+[`entity.first( )`](https://doc.4d.com/entityfirst.305-3907551.ja.html)
+[`entitySelection.last( )`](https://doc.4d.com/entitySelectionlast.305-3907522.ja.html)
+[`entity.last( )`](https://doc.4d.com/entitylast.305-3907552.ja.html)
+[`entity.previous( )`](https://doc.4d.com/entityprevious.305-3907554.ja.html)
+[`entity.next( )`](https://doc.4d.com/entitynext.305-3907553.ja.html)
+[`entitySelection.contains( )`](https://doc.4d.com/entitySelectioncontains.305-3907524.ja.html)
+[`entity.indexOf( )`](https://doc.4d.com/entityindexOf.305-3907555.ja.html)
+[`entitySelection.isOrdered( )`](https://doc.4d.com/entitySelectionisOrdered.305-3907517.ja.html)
+[`entitySelection.slice( )`](https://doc.4d.com/entitySelectionslice.305-3907533.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_Optimistic_Lock.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Optimistic_Lock.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_Pessimistic_Lock.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Pessimistic_Lock.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**HDI_JSONTableForm_v17.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_JSONTableForm_v17.zip)<br />
