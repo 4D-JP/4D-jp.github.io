@@ -16,16 +16,19 @@
                 </li>
 
                 {% for my_page in site.pages %}
-                    {% if my_page.title %}
-                    <li>
-                        {% if my_page.url == page.url %}
-                        <a class="active" href="{{ my_page.url | prepend: site.baseurl }}">
-                            {% else %}
-                        <a href="{{ my_page.url | prepend: site.baseurl }}">
-                        {% endif %}
-                            <i class="fa fa-{{my_page.icon}}"></i>{{ my_page.title }}
-                        </a>
-                    </li>
+                    {% if my_page.standalone %}
+                    {% else %}
+                        {% if my_page.title %}
+                        <li>
+                            {% if my_page.url == page.url %}
+                            <a class="active" href="{{ my_page.url | prepend: site.baseurl }}">
+                                {% else %}
+                            <a href="{{ my_page.url | prepend: site.baseurl }}">
+                            {% endif %}
+                                <i class="fa fa-{{my_page.icon}}"></i>{{ my_page.title }}
+                            </a>
+                        </li>
+                        {% endif %}                    
                     {% endif %}
                 {% endfor %}
             </ul>
