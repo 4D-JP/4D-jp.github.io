@@ -56,7 +56,7 @@ type: page
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_GET_STRUCTURE_INFO.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_GET_STRUCTURE_INFO.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDA_CRUD.zip](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_CRUD.zip)<br />
 
-## 16r6 # {#16r6}
+## 16r6 # {#v16r6}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_Collection_Query.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Query.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_Collection_Members.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Members.zip)<br />
@@ -64,7 +64,7 @@ type: page
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_useSharedObjects.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_useSharedObjects.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ImageInAbsolutePosition.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_4DWP_ImageInAbsolutePosition.zip)<br />
 
-## 16r5 # {#16r5}
+## 16r5 # {#v16r5}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_TwitterSearchAPI.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_TwitterSearchAPI.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSON_Pointer.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_JSON_Pointer.zip)<br />
@@ -75,7 +75,7 @@ type: page
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_GetProcessActivity.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_GetProcessActivity.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_ListboxHelpTips.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_ListboxHelpTips.zip)<br />
 
-## 16r4 # {#16r4}
+## 16r4 # {#v16r4}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DViewProNewFormObject.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DViewProNewFormObject.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWritePro_Links.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Links.zip)<br />
