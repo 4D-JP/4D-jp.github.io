@@ -23,7 +23,7 @@ type: page
 [`New formula`](http://doc.4d.com/New-formula.301-3958154.ja.html)コマンドを使って、メソッドをオブジェクト化することができます。オブジェクト化されたメソッドは引数として受け渡すことができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: セクションとサブセクションの操作**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DWP_ManageSections.zip)<br />
 セクションやサブセクションをコマンドにより操作することができます:[`WP Get section`](https://doc.4d.com/WP-Get-section.301-3921330.ja.html)[`WP Get sections`](https://doc.4d.com/WP-Get-sections.301-3905004.ja.html)[`WP SET ATTRIBUTES`](https://doc.4d.com/WP-SET-ATTRIBUTES.301-3920802.ja.html)[`WP Create subsection`](https://doc.4d.com/WP-Create-subsection.301-3931950.ja.html)[`WP Get subsection`](https://doc.4d.com/WP-Get-subsection.301-3934758.ja.html)
-[` `]()
+
 ## 17r2
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**HDI_4DWP_AnchoredPictureExpressions.zip**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_AnchoredPictureExpressions.zip)<br />
