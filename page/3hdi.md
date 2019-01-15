@@ -11,12 +11,16 @@ type: page
 
 ## 17r3
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_RelaunchAndTest.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_RelaunchAndTest.zip)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_GetApplicationInfo.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_GetApplicationInfo.zip)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ConvertFormToDynamicForm.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_ConvertFormToDynamicForm.zip)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DVP_ExportToExcel.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DVP_ExportToExcel.zip)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_NewFormula.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_NewFormula.zip)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ManageSections.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DWP_ManageSections.zip)
+* <i class="fa fa-download" aria-hidden="true"></i> [アプリケーションの起動パラメーター](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_RelaunchAndTest.zip)<br />
+データベースをコマンドで起動する際に、パラメーターを受け渡すことができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [ネットワークアクティビティ情報](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_GetApplicationInfo.zip)<br />
+``Get application info``コマンドを使って、アクティブデータベースと、そのネットワーク設定に関する情報を取得することができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [テキスト形式でフォームの書き出し](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_ConvertFormToDynamicForm.zip)<br />
+``FORM Convert to dynamic``コマンドを使って、4DBファイルに保存された従来の 4DフォームをJSONファイルに変換し、ダイナミックフォームとして使用することができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DVP_ExportToExcel.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DVP_ExportToExcel.zip)<br />
+``VP IMPORT DOCUMENT``および``VP EXPORT DOCUMENT``コマンドを使って、XLSXファイルをインポート・エクスポートすることができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_NewFormula.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_NewFormula.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ManageSections.zip](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DWP_ManageSections.zip)<br />
 
 ## 17r2
 
