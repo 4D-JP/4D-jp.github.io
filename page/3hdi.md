@@ -41,7 +41,7 @@ type: page
 ## 17 # {#v17}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: プログラムによってドキュメントを作成**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DVP_Offscreen_doc.zip)<br />
-4D View Pro ドキュメントはプログラムによっても簡単に作成することができます。
+4D View Pro ドキュメントはプログラムによっても簡単に作成することができます。<br />
 参考: [4D View Pro オブジェクト](https://doc.4d.com/Handling-4D-View-Pro-areas.300-3935959.ja.html#3429183)、[`VP IMPORT FROM OBJECT`](https://doc.4d.com/VP-IMPORT-FROM-OBJECT.301-3935958.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: ストラクチャー情報を使った汎用コード**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Dynamic_Sort_v17.zip)<br />
 ORDAによって取得できるストラクチャー情報を利用した、汎用的なコードによる並べ替えツールの例です。
@@ -101,13 +101,22 @@ JSONファイルや、4D オブジェクト (オブジェクト型変数、あ�
 カレントセレクションからエンティティセレクションを作成したり、エンティティセレクションをカレントセレクションに反映させることができます。<br />
 [`Create entity selection`](https://doc.4d.com/Create-entity-selection.301-3907527.ja.html)
 [`USE ENTITY SELECTION`](https://doc.4d.com/USE-ENTITY-SELECTION.301-3907526.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**HDI_ListboxCollection.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListboxCollection.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_Query.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Query.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: HDI_4DWP_Elements.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_Elements.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: HDI_4DWP_GetPosition.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_GetPosition.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: HDI_4DWP_MultiColumn.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_MultiColumn.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: HDI_4DWP_SetGetText.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_SetGetText.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: HDI_4DWriteProContextualMenu.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWriteProContextualMenu.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**コレクション型リストボックス**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListboxCollection.zip)<br />
+[コレクション型リストボックス](http://livedoc.4d.com/4Dv17R3/4D/17-R3/Overview.300-3961394.ja.html#3779401)の設定の仕方、使い方の紹介です。
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: クエリ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Query.zip)<br />
+ORDAを使ったクエリ方法の紹介です。<br />
+[`entitySelection.query( )`](https://doc.4d.com/entitySelectionquery.305-3907515.ja.html)
+[`dataClass.query( )`](https://doc.4d.com/dataClassquery.305-3907505.ja.html)
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメント要素の一括取得**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_Elements.zip)<br />
+[`WP Get elements`](https://doc.4d.com/WP-Get-elements.301-3920772.ja.html)コマンドを使って、ドキュメントの要素をすべて、あるいは種類別に一度に取得することができます。取得要素はコレクションに格納されて返されます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメント要素の位置情報**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_GetPosition.zip)<br />
+[`WP Get position`](https://doc.4d.com/WP-Get-position.301-3920816.ja.html)コマンドを使って、ドキュメント要素の位置情報を取得することができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 段組レイアウト**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_MultiColumn.zip)<br />
+段組(カラム)レイアウトを使用した例です。<br />
+参考: [カラムの管理](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3920766.ja.html#3751928)
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストの取得と挿入**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_SetGetText.zip)<br />
+[`WP Get text`](https://doc.4d.com/WP-Get-text.301-3920815.ja.html)および[`WP SET TEXT`](https://doc.4d.com/WP-SET-TEXT.301-3920814.ja.html)コマンドを使って、テキストの取得や挿入をすることができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: コンテキストメニューのカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWriteProContextualMenu.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**HDI_ForEach.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ForEach.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**HDI_FormData.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_FormData.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**HDI_GET_STRUCTURE_INFO.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_GET_STRUCTURE_INFO.zip)<br />
