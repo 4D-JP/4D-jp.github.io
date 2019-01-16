@@ -119,7 +119,7 @@ ORDAを使ったクエリ方法の紹介です。<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: コンテキストメニューのカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWriteProContextualMenu.zip)<br />
 右クリックで表示されるコンテキストメニューをカスタマイズする方法の紹介です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**新しい For each...End for each ループ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ForEach.zip)<br />
-新しく実装された[`For each...End for each`](https://doc.4d.com/For-eachEnd-for-each.300-3907126.ja.html)ループの使用例です。コレクション内の要素、エンティティセレクション内のエンティティ、オブジェクト内のプロパティの反復処理が可能です。
+新しく実装された[`For each...End for each`](https://doc.4d.com/For-eachEnd-for-each.300-3907126.ja.html)ループの使用例です。コレクション内の各要素、エンティティセレクション内の各エンティティ、オブジェクト内の各プロパティの反復処理が可能です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**フォームデータとFormコマンド**](https://github.com/4D-JP/HDI/releases/download/17/HDI_FormData.zip)<br />
 [`DIALOG`](https://doc.4d.com/DIALOG.301-3907158.ja.html)コマンドには、フォームデータを引数として渡すことができるようになりました。渡したオブジェクトはフォームにおいて[`Form`](http://doc.4d.com/Form.301-3907390.ja.html)コマンドによって呼び出すことができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**テキスト形式でデータベースストラクチャーを書き出し**](https://github.com/4D-JP/HDI/releases/download/17/HDI_GET_STRUCTURE_INFO.zip)<br />
