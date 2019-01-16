@@ -117,10 +117,19 @@ ORDAを使ったクエリ方法の紹介です。<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストの取得と挿入**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_SetGetText.zip)<br />
 [`WP Get text`](https://doc.4d.com/WP-Get-text.301-3920815.ja.html)および[`WP SET TEXT`](https://doc.4d.com/WP-SET-TEXT.301-3920814.ja.html)コマンドを使って、テキストの取得や挿入をすることができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: コンテキストメニューのカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWriteProContextualMenu.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**HDI_ForEach.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ForEach.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**HDI_FormData.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_FormData.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**HDI_GET_STRUCTURE_INFO.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_GET_STRUCTURE_INFO.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_CRUD.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_CRUD.zip)<br />
+右クリックで表示されるコンテキストメニューをカスタマイズする方法の紹介です。
+* <i class="fa fa-download" aria-hidden="true"></i> [**新しい For each...End for each ループ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ForEach.zip)<br />
+新しく実装された[`For each...End for each`](https://doc.4d.com/For-eachEnd-for-each.300-3907126.ja.html)ループの使用例です。コレクション内の要素、エンティティセレクション内のエンティティ、オブジェクト内のプロパティの反復処理が可能です。
+* <i class="fa fa-download" aria-hidden="true"></i> [**フォームデータとFormコマンド**](https://github.com/4D-JP/HDI/releases/download/17/HDI_FormData.zip)<br />
+[`DIALOG`](https://doc.4d.com/DIALOG.301-3907158.ja.html)コマンドには、フォームデータを引数として渡すことができるようになりました。渡したオブジェクトはフォームにおいて[`Form`](http://doc.4d.com/Form.301-3907390.ja.html)コマンドによって呼び出すことができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**テキスト形式でデータベースストラクチャーを書き出し**](https://github.com/4D-JP/HDI/releases/download/17/HDI_GET_STRUCTURE_INFO.zip)<br />
+[`EXPORT STRUCTURE`](http://doc.4d.com/EXPORT-STRUCTURE.301-3906050.ja.html)コマンド使って、データベースストラクチャー定義をXMLフォーマットで書き出します。
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティの新規作成・更新・削除**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_CRUD.zip)<br />
+ORDAにおける、エンティティのメンバーメソッドを使った基本操作を説明します。<br />
+[`dataClass.new( )`](https://doc.4d.com/dataClassnew.305-3907506.ja.html)
+[`entity.save( )`](https://doc.4d.com/entitysave.305-3907540.ja.html)
+[`entity.drop( )`](https://doc.4d.com/entitydrop.305-3907541.ja.html)
+[`entitySelection.drop( )`](https://doc.4d.com/entitySelectiondrop.305-3907513.ja.html)
 
 ## 16r6 # {#v16r6}
 
