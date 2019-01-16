@@ -125,7 +125,7 @@ ORDAを使ったクエリ方法の紹介です。<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**テキスト形式でデータベースストラクチャーを書き出し**](https://github.com/4D-JP/HDI/releases/download/17/HDI_GET_STRUCTURE_INFO.zip)<br />
 [`EXPORT STRUCTURE`](http://doc.4d.com/EXPORT-STRUCTURE.301-3906050.ja.html)コマンド使って、データベースストラクチャー定義をXMLフォーマットで書き出します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティの新規作成・更新・削除**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_CRUD.zip)<br />
-ORDAにおける、エンティティのメンバーメソッドを使った基本操作を説明します。<br />
+ORDAにおける、メンバーメソッドを使ったエンティティの基本操作を説明します。<br />
 [`dataClass.new( )`](https://doc.4d.com/dataClassnew.305-3907506.ja.html)
 [`entity.save( )`](https://doc.4d.com/entitysave.305-3907540.ja.html)
 [`entity.drop( )`](https://doc.4d.com/entitydrop.305-3907541.ja.html)
