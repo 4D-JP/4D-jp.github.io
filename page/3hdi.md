@@ -42,6 +42,7 @@ type: page
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: プログラムによってドキュメントを作成**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DVP_Offscreen_doc.zip)<br />
 4D View Pro ドキュメントはプログラムによっても簡単に作成することができます。
+参考: [4D View Pro オブジェクト](https://doc.4d.com/Handling-4D-View-Pro-areas.300-3935959.ja.html#3429183)、[`VP IMPORT FROM OBJECT`](https://doc.4d.com/VP-IMPORT-FROM-OBJECT.301-3935958.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: ストラクチャー情報を使った汎用コード**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Dynamic_Sort_v17.zip)<br />
 ORDAによって取得できるストラクチャー情報を利用した、汎用的なコードによる並べ替えツールの例です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**コレクション型リストボックスと複階層コレクション**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListBoxCollection_Advanced_v17.zip)<br />
@@ -75,8 +76,19 @@ ORDAによって取得できるストラクチャー情報を利用した、汎�
 [`entity.indexOf( )`](https://doc.4d.com/entityindexOf.305-3907555.ja.html)
 [`entitySelection.isOrdered( )`](https://doc.4d.com/entitySelectionisOrdered.305-3907517.ja.html)
 [`entitySelection.slice( )`](https://doc.4d.com/entitySelectionslice.305-3907533.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_Optimistic_Lock.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Optimistic_Lock.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_Pessimistic_Lock.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Pessimistic_Lock.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 楽観的(オプティミスティック)ロック**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Optimistic_Lock.zip)<br />
+ORDAの基本仕様である、オプティミスティックロックがどのように動作するかについての説明です。
+[`entity.save( )`](https://doc.4d.com/entitysave.305-3907540.ja.html)
+[`entity.clone( )`](https://doc.4d.com/entityclone.305-3907549.ja.html)
+[`entity.reload( )`](https://doc.4d.com/entityreload.305-3907543.ja.html)
+[`entity.drop( )`](https://doc.4d.com/entitydrop.305-3907541.ja.html)
+[`entity.touchedAttributes( )`](https://doc.4d.com/entitytouchedAttributes.305-3907548.ja.html)
+[`entity.touched( )`](https://doc.4d.com/entitytouched.305-3907547.ja.html)
+[`entity.diff( )`](https://doc.4d.com/entitydiff.305-3907546.ja.html)
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 悲観的(ペシミスティック)ロック**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Pessimistic_Lock.zip)<br />
+ORDAでペシミスティックロックを使う方法の紹介です。
+[`entity.lock( )`](https://doc.4d.com/entitylock.305-3907542.ja.html)
+[`entity.unlock( )`](https://doc.4d.com/entityunlock.305-3907544.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**HDI_JSONTableForm_v17.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_JSONTableForm_v17.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_Objects_And_Collections.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Objects_And_Collections.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_Current_Selection_Bridge.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Current_Selection_Bridge.zip)<br />
