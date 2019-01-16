@@ -89,9 +89,18 @@ ORDAの基本仕様である、オプティミスティックロックがどの�
 ORDAでペシミスティックロックを使う方法の紹介です。
 [`entity.lock( )`](https://doc.4d.com/entitylock.305-3907542.ja.html)
 [`entity.unlock( )`](https://doc.4d.com/entityunlock.305-3907544.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**HDI_JSONTableForm_v17.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_JSONTableForm_v17.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_Objects_And_Collections.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Objects_And_Collections.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_Current_Selection_Bridge.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Current_Selection_Bridge.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**動的なフォーム**](https://github.com/4D-JP/HDI/releases/download/17/HDI_JSONTableForm_v17.zip)<br />
+JSONファイルや、4D オブジェクト (オブジェクト型変数、あるいはオブジェクト型フィールド) によって[ダイナミックフォーム](https://doc.4d.com/Dynamic-Forms.300-3961476.ja.html)を定義することができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティとオブジェクトの相互変換**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Objects_And_Collections.zip)<br />
+エンティティやエンティティセレクションをオブジェクトやコレクションに変換したり、その逆をおこなうメンバーメソッドの紹介です: 
+[`entity.toObject( )`](https://doc.4d.com/entitytoObject.305-3907556.ja.html)
+[`entitySelection.toCollection( )`](https://doc.4d.com/entitySelectiontoCollection.305-3907523.ja.html)
+[`entity.fromObject( )`](https://doc.4d.com/entityfromObject.305-3907557.ja.html)
+[`dataClass.fromCollection( )`](https://doc.4d.com/dataClassfromCollection.305-3907510.ja.html)
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティセレクションとカレントセレクションの相互変換**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Current_Selection_Bridge.zip)<br />
+カレントセレクションからエンティティセレクションを作成したり、エンティティセレクションをカレントセレクションに反映させることができます。<br />
+[`Create entity selection`](https://doc.4d.com/Create-entity-selection.301-3907527.ja.html)
+[`USE ENTITY SELECTION`](https://doc.4d.com/USE-ENTITY-SELECTION.301-3907526.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**HDI_ListboxCollection.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListboxCollection.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: HDI_ORDA_Query.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Query.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: HDI_4DWP_Elements.zip**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_Elements.zip)<br />
