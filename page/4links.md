@@ -57,3 +57,10 @@ type: page
 
 * [Kirk Brooks](https://github.com/KirkBrooks)（アメリカ）
 
+    * sideORDA
+    
+* [Thomas Maul](https://github.com/ThomasMaul)
+
+    * Barcode_SVG
+    * Tools_TM_export
+    * UserMode_Component
