@@ -44,8 +44,13 @@ type: page
 
 ## コードシェアリング
 
-* [AJARProject](https://github.com/AJARProject)
+* [Ajar SA](https://github.com/AJARProject)（スイス）
 
-  * AJUI_FloatingLabel
-  * RegexComponent
-  * RegexLab5
+ * AJUI_FloatingLabel
+ * RegexComponent
+ * RegexLab5
+  
+* [Lutz Epperlein](https://github.com/elutz)（ドイツ）
+
+ * vc-framework-v17
+ * mobileesp-4D
