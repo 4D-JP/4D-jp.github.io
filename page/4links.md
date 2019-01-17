@@ -18,9 +18,7 @@ type: page
 
 * [4D method](https://4dmethod.com/)
 
-* [ My 4D Experience](https://my4dexperience.home.blog)
-
- Gabriel Inzirilloさんのブログ（フランス語）
+* [ My 4D Experience](https://my4dexperience.home.blog) Gabriel Inzirilloさんのブログ（フランス語）
 
 ## サードパーティ
 
