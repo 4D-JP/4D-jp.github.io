@@ -48,13 +48,13 @@ type: page
 
 * [Ajar SA](https://github.com/AJARProject)
 
-   * AJUI_FloatingLabel
-   * RegexComponent
-   * RegexLab5
-   
+    * AJUI_FloatingLabel
+    * RegexComponent
+    * RegexLab5
+
 * [Bruno Legay](https://github.com/blegay)
 
-* aws_component
+    * aws_component
    
 * [Fine Arts Museums of San Francisco](https://github.com/famsf)
 
@@ -67,8 +67,8 @@ type: page
     
 * [Lutz Epperlein](https://github.com/elutz)
 
-   * vc-framework-v17
-   * mobileesp-4D    
+    * vc-framework-v17
+    * mobileesp-4D    
    
 * [Orchard Software](https://github.com/OrchardSoftware)   
   
