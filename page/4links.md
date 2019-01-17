@@ -44,18 +44,18 @@ type: page
 
 ## コードシェアリング
 
-* [Ajar SA](https://github.com/AJARProject)（スイス）
+* [Ajar SA](https://github.com/AJARProject)
 
    * AJUI_FloatingLabel
    * RegexComponent
    * RegexLab5
   
-* [Lutz Epperlein](https://github.com/elutz)（ドイツ）
+* [Lutz Epperlein](https://github.com/elutz)
 
    * vc-framework-v17
    * mobileesp-4D
 
-* [Kirk Brooks](https://github.com/KirkBrooks)（アメリカ）
+* [Kirk Brooks](https://github.com/KirkBrooks)
 
     * sideORDA
     
