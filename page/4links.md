@@ -38,8 +38,6 @@ Gabriel Inzirilloさんのブログ（フランス語）
 
 * [AJARProject](https://github.com/AJARProject)
 
-Maurice Inzirilloさんのリポジトリ
-
- * AJUI_FloatingLabel
- * RegexComponent
- * RegexLab5
+  * AJUI_FloatingLabel
+  * RegexComponent
+  * RegexLab5
