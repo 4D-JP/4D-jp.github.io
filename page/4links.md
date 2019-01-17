@@ -14,6 +14,16 @@ type: page
 * [日本支社](https://jp.4d.com/)
 * [ブログ（英文）](https://blog.4d.com/)
 
+## テクニカル情報
+
+* [ナレッジベース（日本）](http://kb.4d-japan.com/)
+
+* [ナレッジベース（米国）](https://kb.4d.com/)
+
+* [ナレッジベース（欧州/英語）](https://taow.4d.com/Tech-Tips/tipsList.en.html/)
+
+* [ナレッジベース（欧州/フランス語）](https://taow.4d.com/Tech-Tips/tipsList.fr.html/)
+
 ## コミュニティ
 
 * [4D method](https://4dmethod.com/)
