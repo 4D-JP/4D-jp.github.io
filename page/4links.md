@@ -20,7 +20,7 @@ type: page
 
 * [ My 4D Experience](https://my4dexperience.home.blog)
 
-Gabriel Inzirilloさんのブログ（フランス語）
+ Gabriel Inzirilloさんのブログ（フランス語）
 
 ## サードパーティ
 
