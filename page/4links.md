@@ -52,26 +52,30 @@ type: page
    * RegexComponent
    * RegexLab5
    
-* [Orchard Software](https://github.com/OrchardSoftware)   
-  
-    * 4D-Win32API
+* [Bruno Legay](https://github.com/blegay)
+
+* aws_component
+   
+* [Fine Arts Museums of San Francisco](https://github.com/famsf)
+
+    * pecl-pdo-4d
+    * 4d-mysqldump
+    
+* [Kirk Brooks](https://github.com/KirkBrooks)
+
+    * sideORDA  
     
 * [Lutz Epperlein](https://github.com/elutz)
 
    * vc-framework-v17
-   * mobileesp-4D
-
-* [Kirk Brooks](https://github.com/KirkBrooks)
-
-    * sideORDA
+   * mobileesp-4D    
+   
+* [Orchard Software](https://github.com/OrchardSoftware)   
+  
+    * 4D-Win32API
     
 * [Thomas Maul](https://github.com/ThomasMaul)
 
     * Barcode_SVG
     * Tools_TM_export
     * UserMode_Component
-
-* [Fine Arts Museums of San Francisco](https://github.com/famsf)
-
-    * pecl-pdo-4d
-    * 4d-mysqldump
