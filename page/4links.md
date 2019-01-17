@@ -47,35 +47,28 @@ type: page
 * [4D](https://github.com/4d)
 
 * [Ajar SA](https://github.com/AJARProject)
-
     * AJUI_FloatingLabel
     * RegexComponent
     * RegexLab5
 
 * [Bruno Legay](https://github.com/blegay)
-
     * aws_component
    
 * [Fine Arts Museums of San Francisco](https://github.com/famsf)
-
     * pecl-pdo-4d
     * 4d-mysqldump
     
 * [Kirk Brooks](https://github.com/KirkBrooks)
-
     * sideORDA  
     
 * [Lutz Epperlein](https://github.com/elutz)
-
     * vc-framework-v17
     * mobileesp-4D    
    
 * [Orchard Software](https://github.com/OrchardSoftware)   
-  
     * 4D-Win32API
     
 * [Thomas Maul](https://github.com/ThomasMaul)
-
     * Barcode_SVG
     * Tools_TM_export
     * UserMode_Component
