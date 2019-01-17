@@ -54,3 +54,6 @@ type: page
 
    * vc-framework-v17
    * mobileesp-4D
+
+* [Kirk Brooks](https://github.com/KirkBrooks)（アメリカ）
+
