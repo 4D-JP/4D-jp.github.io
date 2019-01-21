@@ -1,16 +1,48 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2019-01-12 22:14:54
+date: 2019-01-22 06:14:54
 categories: 修正リスト
 tags: "17.1" 
-build: 231689
+build: 232318
 version: 17.1
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0098493 クエリ・統計・ソート・変換等のORDAオペレーションに時間に要している場合（３秒以上），プログレスバーが表示されませんでした。
+
+**注記**: プログレスバーが表示されるのは，下記のメソッドです。
+
+  * ``dataClass.query()``
+  * ``entitySelection.query()``
+  * ``entitySelection.sum()``
+  * ``entitySelection.count()``
+  * ``entitySelection.min()``
+  * ``entitySelection.max()``
+  * ``entitySelection.distinct()``
+  * ``entitySelection.avarage()``
+  * ``entitySelection.orderBy()``
+  * ``entitySelection.toCollection()``
+  * ``entitySelection.fromCollection()``
+  * ``entitySelection.drop()``
+
+下記のメソッドおよびコマンドは高速なので非対応となっています。
+
+  * ``entitySelection.and()``
+  * ``entitySelection.or()``
+  * ``entitySelection.minus()``
+  * ``entitySelection.slice()`` 
+  * ``Create entity selection``
+  * ``USE ENTITY SELECTION`` 
+
+リレーションまたはストレージ属性のプロジェクション（``entitySelection.[attribute]``）は直ちに巨大なコレクションを作成するわけではないので，プログレスバーは表示されません。
+
+* ACI0099030 4D Writeドキュメントを4D Write Proに変換した場合，挿入されたフォーミュラー式の日付フォーマットが変わってしまうことがありました。
+
+* ACI0097617 データベース設定の「クライアント/サーバー」ページの「サービスプリンシパル名」の入力エリアを指定したときに表示されるヘルプTipsの内容が設定されていませんでした。``:xliff:csTipsServicePrincipalName``というXLIFFラベルがそのまま表示されました。
 
 * ACI0099077 4D Write Proドキュメントに下揃えのアンカー画像を挿入し，埋め込みモードで表示し，ドキュメントの高さが増減するようにその画像の上にテキストを追加した場合，画像をクリックしたときに表示されるハンドルの位置が移動しませんでした。
 
