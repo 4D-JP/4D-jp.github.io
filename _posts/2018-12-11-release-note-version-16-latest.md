@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v16 修正リスト"
-date: 2019-01-09 07:19:31
+date: 2019-01-17 07:19:31
 categories: 修正リスト
 tags: 16.4 hotfix
-build: 231870
+build: 232250
 version: 16.x
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0097687 サーバー管理ウィンドウのプロセスリストに表示されている「プリエンプティブワーカー」の表示がローカライズされていませんでした。`` :xliff:MONI_PROCESS_Type39``と表示されました。
 
 * ACI0098805 macOS 10.14 Mojaveのみ。4D Writeまたは4D Viewドキュメントをディスクに保存することができませんでした。
 
