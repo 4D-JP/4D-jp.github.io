@@ -16,27 +16,27 @@ version: 17.1
 
 **注記**: プログレスバーが表示されるのは，下記のメソッドです。
 
-  * ``dataClass.query()``
-  * ``entitySelection.query()``
-  * ``entitySelection.sum()``
-  * ``entitySelection.count()``
-  * ``entitySelection.min()``
-  * ``entitySelection.max()``
-  * ``entitySelection.distinct()``
-  * ``entitySelection.avarage()``
-  * ``entitySelection.orderBy()``
-  * ``entitySelection.toCollection()``
-  * ``entitySelection.fromCollection()``
-  * ``entitySelection.drop()``
+   * ``dataClass.query()``
+   * ``entitySelection.query()``
+   * ``entitySelection.sum()``
+   * ``entitySelection.count()``
+   * ``entitySelection.min()``
+   * ``entitySelection.max()``
+   * ``entitySelection.distinct()``
+   * ``entitySelection.avarage()``
+   * ``entitySelection.orderBy()``
+   * ``entitySelection.toCollection()``
+   * ``entitySelection.fromCollection()``
+   * ``entitySelection.drop()``
 
 下記のメソッドおよびコマンドは高速なので非対応となっています。
 
-  * ``entitySelection.and()``
-  * ``entitySelection.or()``
-  * ``entitySelection.minus()``
-  * ``entitySelection.slice()`` 
-  * ``Create entity selection``
-  * ``USE ENTITY SELECTION`` 
+   * ``entitySelection.and()``
+   * ``entitySelection.or()``
+   * ``entitySelection.minus()``
+   * ``entitySelection.slice()`` 
+   * ``Create entity selection``
+   * ``USE ENTITY SELECTION`` 
 
 リレーションまたはストレージ属性のプロジェクション（``entitySelection.[attribute]``）は直ちに巨大なコレクションを作成するわけではないので，プログレスバーは表示されません。
 
