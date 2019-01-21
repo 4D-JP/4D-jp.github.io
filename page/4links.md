@@ -30,6 +30,8 @@ type: page
 
 * [ My 4D Experience](https://my4dexperience.home.blog) Gabriel Inzirilloのブログ（フランス語）
 
+* [Flury Software](https://flury-software.ch/category/4d/) Olivier Fluryのブログ
+
 ## サードパーティ
 
 * [Heubach Media](https://www.hmplugins.com/)
