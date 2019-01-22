@@ -33,7 +33,7 @@ description_footer:
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
 # baidu_tongji_id: 
-# google_analytics_id: 
+google_analytics_id: UA-132873397-1
 
 # Build settings
 markdown: kramdown
