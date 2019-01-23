@@ -11,6 +11,9 @@ type: page
 
 ## 17r3 # {#v17r3}
 
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**bootstrapと4Dタグ**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_Bootstrap_4DTags.zip)<br />
+[4D 変換タグ](https://doc.4d.com/4D-Transformation-Tags.300-3907284.ja.html)をbootstrapと組み合わせて使えば、データを差し込んだ見栄えのするページを簡単に作成することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**アプリケーションの起動パラメーター**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_RelaunchAndTest.zip)<br />
 [Database Parameters](https://doc.4d.com/Database-Parameters.302-3905958.ja.html)定数テーマに追加された定数 _User param value_ を使って、データベースをコマンドで起動する際にパラメーターを受け渡すことができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ネットワークアクティビティ情報**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_GetApplicationInfo.zip)<br />
