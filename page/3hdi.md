@@ -9,8 +9,13 @@ type: page
 * content
 {:toc}
 
-## 17r3 # {#v17r3}
+## 17r4 # {#v17r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: DOCX形式への書き出し**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_ExportDocx.zip)<br />
+[`WP EXPORT DOCUMENT`](https://doc.4d.com/WP-EXPORT-DOCUMENT.301-4077762.ja.html)および[`WP EXPORT VARIABLE`](https://doc.4d.com/WP-EXPORT-VARIABLE.301-4077758.ja.html)コマンドを使って、4D Write Pro ドキュメントをdocx形式に書き出すことができます。<br />
+参考：[.docxフォーマットへの書き出し](https://doc.4d.com/Exporting-in-docx-format.200-4077720.ja.html)
+
+## 17r3 # {#v17r3}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**bootstrapと4Dタグ**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_Bootstrap_4DTags.zip)<br />
 [4D 変換タグ](https://doc.4d.com/4D-Transformation-Tags.300-3907284.ja.html)をbootstrapと組み合わせて使えば、データを差し込んだ見栄えのするページを簡単に作成することができます。
