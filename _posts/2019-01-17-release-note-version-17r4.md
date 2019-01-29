@@ -1,15 +1,21 @@
 ---
 layout: fix
 title: "4D v17r4 修正リスト"
-date: 2019-01-22 15:15:04
+date: 2019-01-29 23:12:04
 categories: 修正リスト
 tags: 17r4
-build: 232407
+build: 232708
 version: 17r4
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099101 4D WriteドキュメントをWrite Proに変換して印刷した場合，背景が透明ではなくなりました。
+
+**注記**: 4D WriteドキュメントをWrite Proに変換した後，``WP SET ATTRIBUTES``で``wk background color``を``wk transparent``に指定し，``WP PRINT``で印刷してください。``WP New``で作成した新規ドキュメントのデフォルト背景色は，表示モードを問わず``#FFFFFF``ですが，埋め込みモードであれば，背景を``wk transparent``に設定し，背後のオブジェクトが透けて表示されるようにすることができます。
+
+* ACI0099004 Mac 64ビット版のみ。``On Display Detail``イベントで``OBJECT SET ENTERABLE``を使用し，リストフォーム上のテキスト入力オブジェクト（フィールドまたは変数）を入力不可に設定するようなコードが存在する場合，リスト上でレコードの更新イベント（``On Load Record``）が発生すると，入力不可に設定されたテキスト入力オブジェクトが表示されませんでした。
 
 * ACI0097745 Mac 64ビット版のみ。スラッシュ記号 (``/``) が含まれるファイルパスを処理することができませんでした。
 
