@@ -11,8 +11,10 @@ type: page
 
 ## 17r4 # {#v17r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**メール送信**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_SendMail.zip)<br />
+[`SMTP New transporter`](https://doc.4d.com/4Dv17R4/4D/17-R4/SMTP-New-transporter.301-4070576.ja.html)コマンドによって生成した SMTP transporter オブジェクトを使ってメールを送信することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: DOCX形式への書き出し**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_ExportDocx.zip)<br />
-[`WP EXPORT DOCUMENT`](https://doc.4d.com/4Dv17R4/4D/17-R4/WP-EXPORT-DOCUMENT.301-4077762.ja.html)および[`WP EXPORT VARIABLE`](https://doc.4d.com/4Dv17R4/4D/17-R4/WP-EXPORT-VARIABLE.301-4077758.ja.html)コマンドを使って、4D Write Pro ドキュメントから[.docx形式への書き出し](https://doc.4d.com/4Dv17R4/4D/17-R4/Exporting-in-docx-format.200-4077720.ja.html)をすることができます。<br />
+[`WP EXPORT DOCUMENT`](https://doc.4d.com/4Dv17R4/4D/17-R4/WP-EXPORT-DOCUMENT.301-4077762.ja.html)および[`WP EXPORT VARIABLE`](https://doc.4d.com/4Dv17R4/4D/17-R4/WP-EXPORT-VARIABLE.301-4077758.ja.html)コマンドを使って、4D Write Pro ドキュメントから[.docx形式への書き出し](https://doc.4d.com/4Dv17R4/4D/17-R4/Exporting-in-docx-format.200-4077720.ja.html)をすることができます。
 
 ## 17r3 # {#v17r3}
 
