@@ -7,7 +7,7 @@ tags: 17r4 deprecated
 version: 17r4
 ---
 
-17r4では，``DRAG AND DROP PROPERTIES``コマンドが正式に[廃止予定]((https://doc.4d.com/4Dv17R4/4D/17-R4/o-DRAG-AND-DROP-PROPERTIES.301-4054394.ja.html))となり，名称が``_o_DRAG AND DROP PROPERTIES``に変更されました。このコマンドは，ポインターを使用した独自の面倒なメカニズムに基づいており，v11以降，推奨されていません。
+17r4では，``DRAG AND DROP PROPERTIES``コマンドが正式に[廃止予定](https://doc.4d.com/4Dv17R4/4D/17-R4/o-DRAG-AND-DROP-PROPERTIES.301-4054394.ja.html)となり，名称が``_o_DRAG AND DROP PROPERTIES``に変更されました。このコマンドは，ポインターを使用した独自の面倒なメカニズムに基づいており，v11以降，推奨されていません。
 
 フォームオブジェクト間のドラッグ＆ドロップ，外部アプリケーションまたはファイルシステムからのドラッグ＆ドロップ，テキストやピクチャのネイティブドラッグ＆ドロップは，すべて[ペーストボード](https://doc.4d.com/4Dv17R4/4D/17-R4/Pasteboard.201-4053690.ja.html)を使用したコードでシンプルかつ一元的に処理することができます。
 
