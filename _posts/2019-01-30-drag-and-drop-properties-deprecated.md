@@ -3,7 +3,7 @@ layout: post
 title: "DRAG AND DROP PROPERTIESの名称変更について"
 date: 2019-01-30 21:11:23
 categories: 廃止予定 
-tags: memory 17r4 deprecated
+tags: 17r4 deprecated
 version: 17r4
 ---
 
