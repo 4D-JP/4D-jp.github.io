@@ -32,6 +32,8 @@ type: page
 
 * [Flury Software](https://flury-software.ch/category/4d/) Olivier Fluryのブログ
 
+* [4D-JUG](http://4djug.forumjap.com/)
+
 ## サードパーティ
 
 * [Heubach Media](https://www.hmplugins.com/)
