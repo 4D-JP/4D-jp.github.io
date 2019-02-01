@@ -1,15 +1,17 @@
 ---
 layout: fix
 title: "4D v17r4 修正リスト"
-date: 2019-01-29 23:12:04
+date: 2019-02-01 18:52:04
 categories: 修正リスト
 tags: 17r4
-build: 232708
+build: 232860
 version: 17r4
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0098972 4D Writeで作成したドキュメントをWrite Proに変換した場合，カスタマイズされた箇条書きの記号が引き継がれませんでした。
 
 * ACI0099101 4D WriteドキュメントをWrite Proに変換して印刷した場合，背景が透明ではなくなりました。
 
