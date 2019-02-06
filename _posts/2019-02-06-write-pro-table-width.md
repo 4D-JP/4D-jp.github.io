@@ -23,23 +23,20 @@ wk width+(wk border width left+wk border width right)*0.5+wk padding left+wk pad
 C_REAL($widthFull)
 $widthFull:=0
 For ($i;1;$NbCol)
-
-$Col:=WP Table get columns($Tableau;$i;1)
-
-WP SET ATTRIBUTES($Col;wk width;120)
-
-$cells:=WP Table get cells($Tableau;$i;1;1;1)
-C_REAL($width)
-C_REAL($borderWidth;$padding)
-WP GET ATTRIBUTES($cells;wk border width;$borderWidth;wk padding;$padding)
-  //full cell width = wk width+(wk border width*2)/2+wk padding*2 (only if all cells have same padding and border widths)
-  //for interior cells borders are collapsed
-$width:=120+($borderWidth*2/2)+($padding*2)
-$widthFull:=$widthFull+$width
-If (($i=1) | ($i=$NbCol))
-  //for row first and last cell, exterior borders are not collapsed
-$widthFull:=$widthFull+($borderWidth*0.5)
-End if 
+  $Col:=WP Table get columns($Tableau;$i;1)
+  WP SET ATTRIBUTES($Col;wk width;120)
+  $cells:=WP Table get cells($Tableau;$i;1;1;1)
+  C_REAL($width)
+  C_REAL($borderWidth;$padding)
+  WP GET ATTRIBUTES($cells;wk border width;$borderWidth;wk padding;$padding)
+    //full cell width = wk width+(wk border width*2)/2+wk padding*2 (only if all cells have same padding and border widths)
+    //for interior cells borders are collapsed
+  $width:=120+($borderWidth*2/2)+($padding*2)
+  $widthFull:=$widthFull+$width
+  If (($i=1) | ($i=$NbCol))
+      //for row first and last cell, exterior borders are not collapsed
+    $widthFull:=$widthFull+($borderWidth*0.5)
+  End if 
 End for 
 
 ALERT("full table width in px="+String($widthFull))
