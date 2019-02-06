@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Write Proテーブルの幅を計算するには"
+title: "Write Proテーブルの幅を計算"
 date: 2019-02-05 00:46:00
 categories: 仕様 
 tags: 17.x writepro
