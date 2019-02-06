@@ -149,7 +149,7 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 * <i class="fa fa-download" aria-hidden="true"></i> [コレクションのクエリ](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Query.zip)<br />
 [`collection.query( )`](https://doc.4d.com/collectionquery.305-3730931.ja.html)メンバーメソッドを使ったコレクションのクエリ方法を紹介します。プレースホルダーを使った例、使わない例、比較演算子や、文字列をクエリする際の"@"の扱いなど。
 * <i class="fa fa-download" aria-hidden="true"></i> [コレクションの操作](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Members.zip)<br />
-コマンドや、コレクションのメンバーメソッドを使った、コレクションに関わるさまざまな操作の紹介です。
+コマンドや、コレクションのメンバーメソッドを使った、コレクションに関わるさまざまな操作の紹介です。<br />
 [`Split string`](https://doc.4d.com/Split-string.301-3730754.ja.html)文字列をコレクションに分割します<br />
 [`collection.join( )`](https://doc.4d.com/collectionjoin.305-3730935.ja.html)コレクション要素を文字列にします<br />
 [`COLLECTION TO ARRAY`](https://doc.4d.com/COLLECTION-TO-ARRAY.301-3730912.ja.html)コレクションを配列に変換します<br />
