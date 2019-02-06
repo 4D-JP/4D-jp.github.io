@@ -146,8 +146,43 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 
 ## 16r6 # {#v16r6}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Collection_Query.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Query.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Collection_Members.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Members.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [コレクションのクエリ](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Query.zip)<br />
+[`collection.query( )`](https://doc.4d.com/collectionquery.305-3730931.ja.html)メンバーメソッドを使ったコレクションのクエリ方法を紹介します。プレースホルダーを使った例、使わない例、比較演算子や、文字列をクエリする際の"@"の扱いなど。
+* <i class="fa fa-download" aria-hidden="true"></i> [コレクションの操作](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Members.zip)<br />
+コマンドや、コレクションのメンバーメソッドを使った、コレクションに関わるさまざまな操作の紹介です。
+[`Split string`](https://doc.4d.com/Split-string.301-3730754.ja.html)文字列をコレクションに分割します<br />
+[`collection.join( )`](https://doc.4d.com/collectionjoin.305-3730935.ja.html)コレクション要素を文字列にします<br />
+[`COLLECTION TO ARRAY`](https://doc.4d.com/COLLECTION-TO-ARRAY.301-3730912.ja.html)コレクションを配列に変換します<br />
+[`ARRAY TO COLLECTION`](https://doc.4d.com/ARRAY-TO-COLLECTION.301-3730916.ja.html)配列をコレクションに変換します<br />
+[`collection.unshift( )`](https://doc.4d.com/collectionunshift.305-3730934.ja.html)コレクションの先頭に要素を挿入します<br />
+[`collection.shift( )`](https://doc.4d.com/collectionshift.305-3730933.ja.html)先頭要素を取り出します<br />
+[`collection.push( )`](https://doc.4d.com/collectionpush.305-3730914.ja.html)コレクションの末尾に要素を追加します<br />
+[`collection.pop( )`](https://doc.4d.com/collectionpop.305-3730923.ja.html)コレクションの最終要素を取り出します<br />
+[`collection.map( )`](https://doc.4d.com/collectionmap.305-3730943.ja.html)コレクションの各要素にメソッドを適用します<br />
+[`collection.average( )`](https://doc.4d.com/collectionaverage.305-3730922.ja.html)[`collection.sum( )`](https://doc.4d.com/collectionsum.305-3730921.ja.html)[`collection.min( )`](https://doc.4d.com/collectionmin.305-3730928.ja.html)[`collection.max( )`](https://doc.4d.com/collectionmax.305-3730929.ja.html)統計用のメンバーメソッドです<br />
+[`collection.insert( )`](https://doc.4d.com/collectioninsert.305-3730915.ja.html)コレクションに要素を挿入します<br />
+[`collection.extract( )`](https://doc.4d.com/collectionextract.305-3730938.ja.html)コレクションの各要素の特定のプロパティ値を抽出します<br />
+[`collection.find( )`](https://doc.4d.com/collectionfind.305-3730925.ja.html)指定メソッドに引数として渡すとtrueを返す最初の要素を返します<br />
+[`collection.filter( )`](https://doc.4d.com/collectionfilter.305-3730926.ja.html)指定メソッドに引数として渡すとtrueを返すすべての要素を返します<br />
+[`collection.query( )`](https://doc.4d.com/collectionquery.305-3730931.ja.html)クエリ文字列で指定した条件に合致するすべての要素を返します<br />
+[`collection.findIndex( )`](https://doc.4d.com/collectionfindIndex.305-3730946.ja.html)指定メソッドに引数として渡すとtrueを返す最初の要素のインデックスを返します<br />
+[`collection.indices( )`](https://doc.4d.com/collectionindices.305-3730939.ja.html)クエリ文字列の条件に合致するすべての要素のインデックスを返します<br />
+[`collection.indexOf( )`](https://doc.4d.com/collectionindexOf.305-3730924.ja.html)式と一致する最初の要素のインデックスを返します<br />
+[`collection.lastIndexOf( )`](https://doc.4d.com/collectionlastIndexOf.305-3730947.ja.html)式と一致する最後の要素のインデックスを返します<br />
+[`collection.count( )`](https://doc.4d.com/collectioncount.305-3730927.ja.html)Nullでない要素の数、オブジェクトプロパティを指定した場合はそれを含む要素の数を返します<br />
+[`collection.length`](https://doc.4d.com/collectionlength.303-3730911.ja.html)コレクションの要素の数を返します（これはメンバーメソッドではなく、コレクションのプロパティです）<br />
+[`collection.countValues( )`](https://doc.4d.com/collectioncountValues.305-3730917.ja.html)指定した値がコレクション内で見つかった回数を返します<br />
+[`collection.copy( )`](https://doc.4d.com/collectioncopy.305-3730930.ja.html)コレクションインスタンスのディープ・コピーを返します<br />
+[`collection.slice( )`](https://doc.4d.com/collectionslice.305-3730950.ja.html)指定した開始インデックスから、指定した終了インデックスの一つ前までの要素を返します<br />
+[`collection.distinct( )`](https://doc.4d.com/collectiondistinct.305-3730951.ja.html)重複しない要素のみを格納したコレクションを返します<br />
+[`collection.equal( )`](https://doc.4d.com/collectionequal.305-3730952.ja.html)二つのコレクションを比較し、要素に相違ない場合はtrueを返します<br />
+[`collection.concat( )`](https://doc.4d.com/collectionconcat.305-3730940.ja.html)コレクションの末尾に要素を追加します（二つのコレクションを一つにまとめることができます）<br />
+[`collection.every( )`](https://doc.4d.com/collectionevery.305-3730944.ja.html)指定メソッドに引数として渡すとtrueを返す要素だけで構成されたコレクションの場合にtrueを返します<br />
+[`collection.some( )`](https://doc.4d.com/collectionsome.305-3730945.ja.html)指定メソッドに引数として渡すとtrueを返す要素が一つ以上コレクションに含まれていればtrueを返します<br />
+[`collection.reverse( )`](https://doc.4d.com/collectionreverse.305-3730942.ja.html)すべての要素が逆順に並べ替えます<br />
+[`collection.orderBy( )`](https://doc.4d.com/collectionorderBy.305-3730936.ja.html)指定した順番でコレクションの要素を並べ替えます<br />
+[`collection.orderByMethod( )`](https://doc.4d.com/collectionorderByMethod.305-3730937.ja.html)指定したメソッドが定義する順番でコレクションの要素を並べ替えます<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSONForm.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_JSONForm.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_useSharedObjects.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_useSharedObjects.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ImageInAbsolutePosition.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_4DWP_ImageInAbsolutePosition.zip)<br />
