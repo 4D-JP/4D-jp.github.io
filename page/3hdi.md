@@ -76,7 +76,7 @@ ORDAによって取得できるストラクチャー情報を利用した、汎�
 [`entitySelection.or( )`](https://doc.4d.com/entitySelectionor.305-3907518.ja.html)
 [`entitySelection.minus( )`](https://doc.4d.com/entitySelectionminus.305-3907519.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティとエンティティセレクションの操作**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Handling_Entities.zip)<br />
-エンティティやエンティティセレクションのもっとも基本的な操作の紹介です。
+エンティティやエンティティセレクションのもっとも基本的な操作の紹介です。<br />
 [`dataClass.newSelection( )`](https://doc.4d.com/dataClassnewSelection.305-3907509.ja.html)
 [`entitySelection.add( )`](https://doc.4d.com/entitySelectionadd.305-3907516.ja.html)
 [`entitySelection.first( )`](https://doc.4d.com/entitySelectionfirst.305-3907520.ja.html)
