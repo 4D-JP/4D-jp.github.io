@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2019-01-30 14:59:00
+date: 2019-02-07 01:07:00
 categories: 修正リスト
 tags: "17.1" 
-build: 232790
+build: 233134
 version: 17.1
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099065 64ビット版のみ。``PRINT LABEL``で用紙またはラベルの枠外にオブジェクトが印刷されることがありました。
 
 * ACI0099144 `` OBJECT DUPLICATE``でラジオボタンを既存のグループに所属させることができませんでした。
 
