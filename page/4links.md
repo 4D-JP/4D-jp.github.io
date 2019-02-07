@@ -72,7 +72,7 @@ type: page
 * [Orchard Software](https://github.com/OrchardSoftware)   
     * 4D-Win32API
 
-* [Protée](http://www.protee.org/index.php/fr/produits/outils-de-gestion) Olivier Grimbertのサイト
+* [Protée](http://www.protee.org/index.php/fr/produits/outils-de-gestion) - Olivier Grimbert
     * ogTools for 4D
     * proTools - 4D buttons
     
