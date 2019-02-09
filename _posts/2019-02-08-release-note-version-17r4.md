@@ -4,12 +4,14 @@ title: "4D v17r4 修正リスト"
 date: 2019-02-08 01:05:00
 categories: 修正リスト
 tags: 17r4
-build: 233141
+build: 233236
 version: 17r4
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0098288 クイックレポートにフィールドが１個しか追加されていない場合，小計行でポップアップメニューを表示させるとエラー``9852``が返されました。
 
 * ACI0099185 4D View Proエリアのオブジェクトメソッドで``OBJECT Get name(Object current)``をコールした場合，空の文字列が返されました。
 
