@@ -4,7 +4,7 @@ title: "4D v17 修正リスト"
 date: 2019-02-11 09:00:00
 categories: 修正リスト
 tags: "17.1" 
-build: 233266
+build: 233337
 version: 17.x
 
 ---
