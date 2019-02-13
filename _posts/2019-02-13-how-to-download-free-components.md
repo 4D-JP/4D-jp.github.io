@@ -22,6 +22,6 @@ v16以降，4D Popと4D SVG Areaは，公式インストーラーに収録され
   * 4D Widgets.zip（ウィジェット）
   * 4D WritePro Interface.zip（Write Proエリア）
 
-URL（FTP）は，4D Forumsの[4D Partner channel > 4D Partners Worldwide](https://forums.4d.com/List_Message/JP:0/0/2/1/1/1/17354592/0/0/1/-1/0/0/0/0/0/0)スレッドで案内されています。ブラウザが認証情報付きのURL（``pass:user@domain``）に対応していない場合，FTPクライアントでアクセスする必要があるもしれません。
+FTPサイトのURLは，4D Forumsの[4D Partner channel > 4D Partners Worldwide](https://forums.4d.com/List_Message/JP:0/0/2/1/1/1/17354592/0/0/1/-1/0/0/0/0/0/0)スレッドで案内しています。ブラウザが認証情報付きのURL（``pass:user@domain``）に対応していない場合，FTPクライアントでアクセスする必要があるもしれません。
 
 4D Forumsのパートナー限定スレッドは，有効なパートナープログラムのアカウントでログインすれば表示されます。アクセスしてもスレッドが表示されない場合，[日本支社の営業部](info-jp@4d.com)までお問い合わせください。
