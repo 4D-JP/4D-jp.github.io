@@ -15,12 +15,12 @@ v16以降，4D Popと4D SVG Areaは，公式インストーラーに収録され
 
 下記のコンポーネントは，パートナー向けにソースコードが公開されています。
 
-* 4D Labels（ラベルエディター）
-* 4D Progress.zip（プログレスバー）
-* 4D Report.zip（クイックレポート）
-* 4D SVG.zip（SVGコンポーネント）
-* 4D Widgets.zip（ウィジェット）
-* 4D WritePro Interface.zip（Write Proエリア）
+  * 4D Labels（ラベルエディター）
+  * 4D Progress.zip（プログレスバー）
+  * 4D Report.zip（クイックレポート）
+  * 4D SVG.zip（SVGコンポーネント）
+  * 4D Widgets.zip（ウィジェット）
+  * 4D WritePro Interface.zip（Write Proエリア）
 
 URL（FTP）は，4D Forumsの[4D Partner channel > 4D Partners Worldwide](https://forums.4d.com/List_Message/JP:0/0/2/1/1/1/17354592/0/0/1/-1/0/0/0/0/0/0)スレッドで案内されています。ブラウザが認証情報付きのURL（``pass:user@domain``）に対応していない場合，FTPクライアントでアクセスする必要があるもしれません。
 
