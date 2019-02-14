@@ -32,6 +32,8 @@ type: page
 
 * [Flury Software](https://flury-software.ch/category/4d/) Olivier Fluryのブログ
     
+* [die4dwerkstatt](https://die4dwerkstatt.de/) ユーザーグループ（ドイツ語）
+
 * [4D-JUG](http://4djug.forumjap.com/)
 
 ## サードパーティ
