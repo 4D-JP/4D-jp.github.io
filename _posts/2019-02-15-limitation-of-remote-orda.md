@@ -7,7 +7,7 @@ tags: mac 17r4 orda writepro viewpro 17r5
 version: 17r4
 ---
 
-4D Remote, 4D for iOSなど，ネットワーク版のORDAは，RESTインタフェースに支えられています。標準的なJSONとしてエクスポートできるようなオブジェクトであれば，クライアント側のORDAアクセスで更新できますが，``[object picture]``・Write Proドキュメント・View Proドキュメントなどが属性に含まれるオブジェクトは，ORDAの``entitiy.save()``で更新することができません。これは仕様です。
+4D Remote, 4D for iOSなど，ネットワーク版のORDAは，RESTインタフェースに支えられています。標準的なJSONとしてエクスポートできるようなオブジェクトであれば，クライアント側のORDAアクセスで更新できますが，``[object picture]``・Write Proドキュメント・View Proドキュメントなどが属性に含まれるオブジェクトは，ORDAの``entity.save()``で保存することができません。これは仕様です。
 
 ```
 C_OBJECT($e)
