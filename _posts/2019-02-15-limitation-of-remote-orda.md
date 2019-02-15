@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "クライアント/サーバー版はバイナリデータが含まれるオブジェクト型がORDAで更新できない"
+title: "クライアント/サーバー版はバイナリデータを含むオブジェクト型がORDAで更新できない"
 date: 2019-02-15 10:31:00
 categories: 注意点 
 tags: mac 17r4 orda writepro viewpro 17r5
