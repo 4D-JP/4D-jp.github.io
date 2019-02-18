@@ -11,6 +11,8 @@ type: page
 
 ## 17r4 # {#v17r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: レンジ座標の取得**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_MoreCoordinates.zip)<br />
+[`WP Get position`](https://doc.4d.com/4Dv17R4/4D/17-R4/WP-Get-position.301-4077777.ja.html)コマンドが拡張され、4D Write Pro ドキュメント内の任意のレンジについて、ページ上の座標を取得できるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 垂直ルーラー**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_VerticalRulers.zip)<br />
 ページモードで表示された 4D Write Pro エリアで、[垂直ルーラー](https://doc.4d.com/4Dv17R4/4D/17-R4/Using-a-4D-Write-Pro-area.200-4077726.ja.html#4101568)が使えるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セルの値の設定・取得**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DVP_SetGetCells.zip)<br />
@@ -146,9 +148,9 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 
 ## 16r6 # {#v16r6}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [コレクションのクエリ](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Query.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**コレクションのクエリ**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Query.zip)<br />
 [`collection.query( )`](https://doc.4d.com/collectionquery.305-3730931.ja.html)メンバーメソッドを使ったコレクションのクエリ方法を紹介します。プレースホルダーを使った例、使わない例、比較演算子や、文字列をクエリする際の"@"の扱いなど。
-* <i class="fa fa-download" aria-hidden="true"></i> [コレクションの操作](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Members.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**コレクションの操作**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Members.zip)<br />
 コマンドや、コレクションのメンバーメソッドを使った、コレクションに関わるさまざまな操作の紹介です。<br />
 [`Split string`](https://doc.4d.com/Split-string.301-3730754.ja.html)文字列をコレクションに分割します<br />
 [`collection.join( )`](https://doc.4d.com/collectionjoin.305-3730935.ja.html)コレクション要素を文字列にします<br />
@@ -183,9 +185,9 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 [`collection.orderBy( )`](https://doc.4d.com/collectionorderBy.305-3730936.ja.html)指定した順番でコレクションの要素を並べ替えます<br />
 [`collection.orderByMethod( )`](https://doc.4d.com/collectionorderByMethod.305-3730937.ja.html)指定したメソッドが定義する順番でコレクションの要素を並べ替えます<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSONForm.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_JSONForm.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_useSharedObjects.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_useSharedObjects.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ImageInAbsolutePosition.zip](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_4DWP_ImageInAbsolutePosition.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**HDI_JSONForm.zip**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_JSONForm.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**HDI_useSharedObjects.zip**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_useSharedObjects.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**HDI_4DWP_ImageInAbsolutePosition.zip**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_4DWP_ImageInAbsolutePosition.zip)<br />
 
 ## 16r5 # {#v16r5}
 
