@@ -68,6 +68,7 @@ type: page
     
 * [Kirk Brooks](https://github.com/KirkBrooks)
     * sideORDA  
+    * Form-object-hilite
     
 * [Lutz Epperlein](https://github.com/elutz)
     * vc-framework-v17
