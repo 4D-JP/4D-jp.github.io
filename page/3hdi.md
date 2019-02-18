@@ -104,8 +104,8 @@ ORDAの基本仕様である、オプティミスティックロックがどの�
 ORDAでペシミスティックロックを使う方法の紹介です。
 [`entity.lock( )`](https://doc.4d.com/entitylock.305-3907542.ja.html)
 [`entity.unlock( )`](https://doc.4d.com/entityunlock.305-3907544.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**動的なフォーム**](https://github.com/4D-JP/HDI/releases/download/17/HDI_JSONTableForm_v17.zip)<br />
-JSONファイルや、4D オブジェクト (オブジェクト型変数、あるいはオブジェクト型フィールド) によって[ダイナミックフォーム](https://doc.4d.com/Dynamic-Forms.300-3961476.ja.html)を定義することができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**動的なテーブルフォーム**](https://github.com/4D-JP/HDI/releases/download/17/HDI_JSONTableForm_v17.zip)<br />
+JSONファイルや、4D オブジェクト (オブジェクト型変数、あるいはオブジェクト型フィールド) によって[ダイナミックフォーム](https://doc.4d.com/Dynamic-Forms.300-3961476.ja.html)を定義することができます。ここでは、テーブルフォームを動的に生成する例を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティとオブジェクトの相互変換**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Objects_And_Collections.zip)<br />
 エンティティやエンティティセレクションをオブジェクトやコレクションに変換したり、その逆をおこなうメンバーメソッドの紹介です: 
 [`entity.toObject( )`](https://doc.4d.com/entitytoObject.305-3907556.ja.html)
@@ -184,7 +184,7 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 [`collection.reverse( )`](https://doc.4d.com/collectionreverse.305-3730942.ja.html)すべての要素を逆順に並べ替えます<br />
 [`collection.orderBy( )`](https://doc.4d.com/collectionorderBy.305-3730936.ja.html)指定した順番でコレクションの要素を並べ替えます<br />
 [`collection.orderByMethod( )`](https://doc.4d.com/collectionorderByMethod.305-3730937.ja.html)指定したメソッドが定義する順番でコレクションの要素を並べ替えます<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**ダイナミックフォーム**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_JSONForm.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**動的なフォーム**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_JSONForm.zip)<br />
 フォームをテキストで表し、4Dオブジェクトや.jsonファイルとして保存することができます。[ダイナミックフォーム](https://doc.4d.com/Dynamic-Forms.300-4201272.ja.html)は、ランタイムにおいて動的に生成されます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**共有オブジェクトとStorage**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_useSharedObjects.zip)<br />
 [共有オブジェクトおよび共有コレクション](https://doc.4d.com/Shared-objects-and-shared-collections.300-4179447.ja.html)はプロセス間でコンテンツを共有することができる、特殊なオブジェクトとコレクションです。作成された共有オブジェクト等の一覧は[`Storage`](https://doc.4d.com/Storage.301-4179448.ja.html)コマンドより取得することができます。
