@@ -7,7 +7,7 @@ tags: writepro
 version: 17.x
 ---
 
-[``WP SET ATTRIBUTES``](https://doc.4d.com/4Dv17/4D/17/WP-SET-ATTRIBUTES.301-3726313.ja.html)は，Write Proドキュメント・レンジ・要素の属性を更新することができるコマンドです。属性名と属性値からなる任意数のパラメーターペアを渡すことにより，１回のコールで複数の属性を一括更新することができます。
+[``WP SET ATTRIBUTES``](https://doc.4d.com/4Dv17/4D/17/WP-SET-ATTRIBUTES.301-3726313.ja.html)は，Write Proドキュメント・レンジ・要素の属性を更新することができるコマンドです。属性名と属性値からなるパラメーターペアをまとめて渡すことにより，１回のコールで複数の属性を一括更新することができます。
 
 [4D Write Pro属性](https://doc.4d.com/4Dv17/4D/17/4D-Write-Pro-Attributes.300-3726323.ja.html)の値は，テキスト・数値・ピクチャー・日付型で指定します。色（それぞれの要素値がRGB値が対応）や，タブ位置など，値を配列で指定できるものもありますが，そのような属性を``WP SET ATTRIBUTES``でセットする場合は注意が必要です。
 
