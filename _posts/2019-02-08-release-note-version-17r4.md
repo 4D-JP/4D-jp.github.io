@@ -4,7 +4,7 @@ title: "4D v17r4 修正リスト"
 date: 2019-02-20 04:07:00
 categories: 修正リスト
 tags: 17r4
-build: 233829
+build: 233895
 version: 17r4
 ---
 
