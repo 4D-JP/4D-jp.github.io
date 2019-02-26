@@ -7,7 +7,7 @@ tags: 17r4 jsonform
 version: 17r4
 ---
 
-16r6では，フォームエディターで作成したフォームだけでなく，オブジェクト型またはJSONファイルに記述されたフォーム（JSONフォーム）を表示したり，印刷したりできるようになりました。
+16r6では，フォームエディターで作成したフォームだけでなく，オブジェクト型またはJSONファイルに記述されたフォーム（JSONフォーム）もコマンドで表示したり，印刷したりできるようになりました。
 
 [Discover the power of dynamic forms](https://blog.4d.com/discover-the-power-of-dynamic-forms/)
 
