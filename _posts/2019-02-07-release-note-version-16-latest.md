@@ -1,11 +1,11 @@
 ---
 layout: fix
-title: "4D v16 修正リスト"
-date: 2019-02-08 23:40:00
+title: "4D v16.5 修正リスト"
+date: 2019-02-21 21:48:00
 categories: 修正リスト
-tags: 16.4 hotfix
+tags: 16.5
 build: 233713
-version: 16.x
+version: 16.5
 
 ---
 
