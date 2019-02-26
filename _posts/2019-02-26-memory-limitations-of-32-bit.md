@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Mac 32ビット版の動作が不安定な場合"
-date: 2019-02-22 12:35:00
-categories: 仕様
+date: 2019-02-26 12:25:00
+categories: 注意点
 tags: 17.x preferences
 version: 17.x
 ---
