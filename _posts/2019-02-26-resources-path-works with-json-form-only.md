@@ -11,7 +11,7 @@ version: 17r4
 
 [Discover the power of dynamic forms](https://blog.4d.com/discover-the-power-of-dynamic-forms/)
 
-JSONフォームを使用するには，``Open form window``や``DIALOG``のような既存のコマンドにフォーム名の代わりにオブジェクト型またはファイルパスを渡します。ファイルパスを渡す場合，``Resources``フォルダー内のファイルパスを特殊なシンタックスで指定します。``Resources``フォルダー外のファイルを絶対パスで参照することはできません。
+JSONフォームを使用するには，``Open form window``や``DIALOG``のような既存のコマンドにフォーム名の代わりにオブジェクト型またはファイルパスを渡します。ファイルパスを渡す場合，``Resources``フォルダー内のファイルパスを特殊なシンタックスで指定します。``Resources``フォルダーの外部のあるファイルを絶対パスで参照することはできません。
 
 ```
 DIALOG ("/RESOURCES/form.json")
