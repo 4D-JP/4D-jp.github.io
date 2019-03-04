@@ -1,15 +1,19 @@
 ---
 layout: fix
 title: "4D v17r4 修正リスト"
-date: 2019-02-28 12:07:00
+date: 2019-03-01 21:12:00
 categories: 修正リスト
 tags: 17r4
-build: 234003
+build: 234065
 version: 17r4
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099149 ``MAIL New attachment``で添付ファイルの``content-disposition``を``inline``に設定しても，メールクライアントで受信してみると，通常の添付ファイルのように本文中ではなく文末に表示されました。
+
+* ACI0099098 Write Proで非表示文字であるタブが表示されるようにした場合，下線が付されたタブの下線が表示されませんでした。
 
 * ACI0099257 ``OBJECT SET ACTION``に定数``ak none``を渡して標準アクションを「なし」に設定することができませんでした。
 
