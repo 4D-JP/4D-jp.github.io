@@ -1,16 +1,39 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2019-02-28 12:15:00
+date: 2019-03-02 21:37:00
 categories: 修正リスト
 tags: "17.1" 
-build: 234014
+build: 234139
 version: 17.x
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099272 Write Proエリアに対してドラッグ＆ドロップ操作をした場合，テキスト中のドロップ位置を示すカーソルが表示されませんでした。自動ドラッグ＆ドロップでは問題ありません。
+
+**注記**: Write Proエリアだけでなく，テキスト入力エリア全般が修正されました。``Drop position``から返される位置は，ヘッダー・本文・フッターそれぞれの相対位置です。下記のようなコードで
+
+```
+$selection:=WP Selection range($wp) 
+If ($selection.container#Null) //drop position is in header/footer
+  $range:=WP Create range($selection.container;$dropPos;$dropPos)
+Else 
+  $range:=WP Create range($wp;$dropPos;$dropPos)
+End if
+```
+
+* ACI0099265 Windows 64ビット版のみ。データベース設定で「スプラッシュスクリーン」が非表示に設定されている場合，SDIモードでアプリケーションを起動中に一瞬，画面の左上にスプラッシュスクリーンが表示されました。
+
+* ACI0099003 Mac 64ビット版のみ。リストフォームの``On Display Detail``イベントで非表示に設定された入力エリアを``On Load Record``イベントで再表示した場合，オブジェクトのボーダーだけが表示され，内容は表示されませんでした。
+
+**注記**: 似たような現象で，リストフォームの``On Display Detail``イベントで値が代入された入力エリアをリスト上で更新しようとした場合，その行の値ではなく，最後に代入された値が表示されました。これは仕様です。編集中のオブジェクトに対して``On Display Detail``イベントは発生しません。``On Display Detail``だけでなく，``On Load Record``イベントでも同等の代入文を実行する必要があります。
+
+* ACI0099291 Mac版のみ。システム版Webエリアに対して`` WA Evaluate Javascript``を使用した場合，``\r``と``\n``がリテラル文字列として処理され，JavaScriptコードが正しく実行されませんでした。
+
+* ACI0099098 Write Proで非表示文字であるタブが表示されるようにした場合，下線が付されたタブの下線が表示されませんでした。
 
 * ACI0099253 クイックレポートの出力中，「レポート生成中」という進捗ダイアログがモーダルウィンドウで表示され，処理が完了するまでアプリケーションを操作することができませんでした。
 
