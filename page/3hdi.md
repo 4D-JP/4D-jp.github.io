@@ -11,6 +11,9 @@ type: page
 
 ## 17r4 # {#v17r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: バーシャルストラクチャー**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_VirtualStructure.zip)<br />
+[`SET FIELD TITLES`](https://doc.4d.com/SET-FIELD-TITLES.301-4054009.ja.html)および[`SET TABLE TITLES`](https://doc.4d.com/4Dv17R4/4D/17-R4/SET-TABLE-TITLES.301-4054019.ja.html)コマンドで定義したバーチャルストラクチャーが 4D Write Pro 内で利用できるようになりました。<br />
+参考：[バーチャルストラクチャーのサポート](https://doc.4d.com/4Dv17R4/4D/17-R4/Managing-expressions.300-4077722.ja.html#4087988)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: レンジ座標の取得**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_MoreCoordinates.zip)<br />
 [`WP Get position`](https://doc.4d.com/4Dv17R4/4D/17-R4/WP-Get-position.301-4077777.ja.html)コマンドが拡張され、4D Write Pro ドキュメント内の任意のレンジについて、ページ上の座標を取得できるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 垂直ルーラー**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_VerticalRulers.zip)<br />
