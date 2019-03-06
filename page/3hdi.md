@@ -207,13 +207,13 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 4D Write Pro で[背景](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3726280.ja.html#3514034)画像をフチなし全面指定できるようになりました。[`WP SET ATTRIBUTES`](https://doc.4d.com/WP-SET-ATTRIBUTES.301-3726313.ja.html)コマンドで[背景属性](https://doc.4d.com/4D-Write-Pro-Attributes.300-3726323.ja.html#3690279)の`wk background clip`と`wk background origin`を`wk paper box`に指定します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ヘッダーとフッター**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_HeadersFooters.zip)<br />
 追加された新コマンドにより、ヘッダーとフッターがプログラムにより操作できるようになりました。<br />
-[`WP Get header`](https://doc.4d.comWP-Get-header.301-3726285.ja.html)[`WP Get body`](https://doc.4d.com/WP-Get-body.301-3726287.ja.html)[`WP Get footer`](https://doc.4d.com/WP-Get-footer.301-3726286.ja.html)[` WP Get frame`](https://doc.4d.com/WP-Get-frame.301-3726289.ja.html)[`WP SET FRAME`](https://doc.4d.com/WP-SET-FRAME.301-3726288.ja.html)
+[`WP Get header`](https://doc.4d.com/WP-Get-header.301-3726285.ja.html)[`WP Get body`](https://doc.4d.com/WP-Get-body.301-3726287.ja.html)[`WP Get footer`](https://doc.4d.com/WP-Get-footer.301-3726286.ja.html)[`WP Get frame`](https://doc.4d.com/WP-Get-frame.301-3726289.ja.html)[`WP SET FRAME`](https://doc.4d.com/WP-SET-FRAME.301-3726288.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャー式の使用**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_InsertPictureExpression.zip)<br />
-4D Write Pro ドキュメントに、[ピクチャー式](https://doc.4d.com/Handling-pictures.200-3920761.ja.html#3841026)を挿入できるようになりました。
+4D Write Pro ドキュメントに、[ピクチャー式](https://doc.4d.com/4Dv17R3/4D/17-R3/Handling-pictures.200-3920761.ja.html#3841026)を挿入できるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**Get Process Activity**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_GetProcessActivity.zip)<br />
-[`Get process activity`](https://doc.4d.com/Get-process-activity.301-3906894.ja.html)コマンドを使って、セッションやプロセスの情報をモニタリングする方法を紹介します。
+[`Get process activity`](https://doc.4d.com/Get-process-activity.301-4179078.ja.html)コマンドを使って、セッションやプロセスの情報をモニタリングする方法を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスとヘルプTips**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_ListboxHelpTips.zip)<br />
-[`OBJECT SET HELP TIP`](https://doc.4d.com/OBJECT-SET-HELP-TIP.301-3907036.ja.html)および[`LISTBOX GET CELL POSITION`](https://doc.4d.com/LISTBOX-GET-CELL-POSITION.301-3906800.ja.html)コマンドが拡張され、リストボックス内に個別のヘルプTipsを追加できるようになりました。
+[`OBJECT SET HELP TIP`](https://doc.4d.com/OBJECT-SET-HELP-TIP.301-4179220.ja.html)および[`LISTBOX GET CELL POSITION`](https://doc.4d.com/LISTBOX-GET-CELL-POSITION.301-4178984.ja.html)コマンドが拡張され、リストボックス内に個別のヘルプTipsを追加できるようになりました。
 
 ## 16r4 # {#v16r4}
 
