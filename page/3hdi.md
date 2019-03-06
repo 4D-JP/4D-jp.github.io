@@ -196,9 +196,12 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 
 ## 16r5 # {#v16r5}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_TwitterSearchAPI.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_TwitterSearchAPI.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSON_Pointer.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_JSON_Pointer.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DVP_AutoRowHeight.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DVP_AutoRowHeight.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Twitter Search API との連携**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_TwitterSearchAPI.zip)<br />
+[`HTTP Request`](https://doc.4d.com/HTTP-Request.301-4178732.ja.html)コマンドを使って Twitter のアカウント認証と文字列検索を行う方法の紹介です。
+* <i class="fa fa-download" aria-hidden="true"></i> [**JSON ポインターの解決**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_JSON_Pointer.zip)<br />
+新しく追加された[`JSON Resolve pointers`](https://doc.4d.com/JSON-Resolve-pointers.301-4179124.ja.html)コマンドは、引数として渡されたオブジェクトに含まれるすべての JSON ポインターを解決します。
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスの行高さの自動設定**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DVP_AutoRowHeight.zip)<br />
+新しいリストボックスプロパティ「[自動行高](https://doc.4d.com/List-box-specific-properties.300-4201189.ja.html#3510338)」および「最小行高」「最大行高」が追加されました。**この機能には 4D View Pro ライセンス必要です。**
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_BackImagePaperBox.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_BackImagePaperBox.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_HeadersFooters.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_HeadersFooters.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_InsertPictureExpression.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_InsertPictureExpression.zip)<br />
