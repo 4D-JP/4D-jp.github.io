@@ -201,12 +201,19 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 * <i class="fa fa-download" aria-hidden="true"></i> [**JSON ポインターの解決**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_JSON_Pointer.zip)<br />
 新しく追加された[`JSON Resolve pointers`](https://doc.4d.com/JSON-Resolve-pointers.301-4179124.ja.html)コマンドは、引数として渡されたオブジェクトに含まれるすべての JSON ポインターを解決します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスの行高さの自動設定**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DVP_AutoRowHeight.zip)<br />
-新しいリストボックスプロパティ「[自動行高](https://doc.4d.com/List-box-specific-properties.300-4201189.ja.html#3510338)」および「最小行高」「最大行高」が追加されました。**この機能には 4D View Pro ライセンス必要です。**
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_BackImagePaperBox.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_BackImagePaperBox.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_HeadersFooters.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_HeadersFooters.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_InsertPictureExpression.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_InsertPictureExpression.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_GetProcessActivity.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_GetProcessActivity.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ListboxHelpTips.zip](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_ListboxHelpTips.zip)<br />
+**この機能には 4D View Pro ライセンス必要です。**<br />
+新しいリストボックスプロパティ「[自動行高](https://doc.4d.com/List-box-specific-properties.300-4201189.ja.html#3510338)」および「最小行高」「最大行高」が追加されました。
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フチなし全面の背景画像**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_BackImagePaperBox.zip)<br />
+4D Write Pro で[背景](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3920766.ja.html#3514034)画像をフチなし全面指定できるようになりました。[`WP SET ATTRIBUTES`](https://doc.4d.com/WP-SET-ATTRIBUTES.301-3920802.ja.html)コマンドで[背景属性](https://doc.4d.com/4D-Write-Pro-Attributes.300-3920812.ja.html#3936525)の[`wk background clip`]と[`wk background origin`]を[`wk paper box`]に指定します。
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ヘッダーとフッター**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_HeadersFooters.zip)<br />
+追加された新コマンドにより、ヘッダーとフッターがプログラムにより操作できるようになりました。<br />
+[`WP Get header`](https://doc.4d.com/WP-Get-header.301-3920774.ja.html)[`WP Get body`](https://doc.4d.com/WP-Get-body.301-3920776.ja.html)[`WP Get footer`](https://doc.4d.com/WP-Get-footer.301-3920775.ja.html)[` WP Get frame`](https://doc.4d.com/WP-Get-frame.301-3920778.ja.html)[`WP SET FRAME`](https://doc.4d.com/WP-SET-FRAME.301-3920777.ja.html)
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャー式の使用**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_InsertPictureExpression.zip)<br />
+4D Write Pro ドキュメントに、[ピクチャー式](https://doc.4d.com/Handling-pictures.200-3920761.ja.html#3841026)を挿入できるようになりました。
+* <i class="fa fa-download" aria-hidden="true"></i> [**Get Process Activity**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_GetProcessActivity.zip)<br />
+[`Get process activity`](https://doc.4d.com/Get-process-activity.301-3906894.ja.html)コマンドを使って、セッションやプロセスの情報をモニタリングする方法を紹介します。
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスとヘルプTips**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_ListboxHelpTips.zip)<br />
+[`OBJECT SET HELP TIP`](https://doc.4d.com/OBJECT-SET-HELP-TIP.301-3907036.ja.html)および[`LISTBOX GET CELL POSITION`](https://doc.4d.com/LISTBOX-GET-CELL-POSITION.301-3906800.ja.html)コマンドが拡張され、リストボックス内に個別のヘルプTipsを追加できるようになりました。
 
 ## 16r4 # {#v16r4}
 
