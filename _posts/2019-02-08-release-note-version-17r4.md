@@ -1,15 +1,21 @@
 ---
 layout: fix
 title: "4D v17r4 修正リスト"
-date: 2019-03-01 21:12:00
+date: 2019-03-06 21:55:00
 categories: 修正リスト
 tags: 17r4
-build: 234065
+build: 234275
 version: 17r4
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI009929 メソッド内に``Begin SQL/End SQL``コードブロックが存在する場合，コンパイラーに間違った行番号が表示されました。
+
+* ACI0099061 64ビット版のみ。クイックレポートエディターでカラムの水平揃えを変更することができませんでした。
+
+* ACI0099259 ``dataClass.fromCollection()``の引数を省略すると，アプリケーションがクラッシュしました。
 
 * ACI0099149 ``MAIL New attachment``で添付ファイルの``content-disposition``を``inline``に設定しても，メールクライアントで受信してみると，通常の添付ファイルのように本文中ではなく文末に表示されました。
 
