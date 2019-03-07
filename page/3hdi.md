@@ -256,7 +256,7 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスプロパティ**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ListboxProperties.zip)<br />
 新コマンド[`LISTBOX SET PROPERTY`](https://doc.4d.com/LISTBOX-SET-PROPERTY.301-4178995.ja.html)を使って、リストボックスのプロパティをプログラミングにより設定するデモンストレーションです。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ManageListboxHightlight.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス選択行のハイライト**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ManageListboxHightlight.zip)<br />
 リストボックスにおける選択行のハイライトがカスタマイズできるようになりました。<br />
 参考：[選択行の見た目をカスタマイズ](https://doc.4d.com/Managing-List-Box-Objects.300-4178954.ja.html#3971639)
 * <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクトフィールドに基づいた並べ替え**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ORDER_BY_ATTRIBUTE.zip)<br />
