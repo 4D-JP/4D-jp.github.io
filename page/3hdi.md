@@ -231,9 +231,13 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 [オブジェクト記法](https://doc.4d.com/Using-object-notation.300-4179432.ja.html)の使い方を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクトとピクチャー属性**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_PictureObjectAttribute.zip)<br />
 オブジェクトの属性値にピクチャーを設定できるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_StandardActionMultiStateObject.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_StandardActionMultiStateObject.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_TabbableObjectOrder.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_TabbableObjectOrder.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Tips.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_Tips.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**標準アクションとマルチステートオブジェクト**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_StandardActionMultiStateObject.zip)<br />
+チェックボックス・ポップアップメニュ・ドロップダウンリストなどのマルチステートオブジェクトで標準アクションを利用できるようになり、4D Write Pro 用のカスタムメニューバーが簡単に作成できるようになりました。
+* <i class="fa fa-download" aria-hidden="true"></i> [**プログラムによる入力順の指定**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_TabbableObjectOrder.zip)<br />
+新しいコマンド[`FORM GET ENTRY ORDER`](https://doc.4d.com/FORM-GET-ENTRY-ORDER.301-4179552.ja.html)[`FORM SET ENTRY ORDER`](https://doc.4d.com/FORM-SET-ENTRY-ORDER.301-4179553.ja.html)によってフォーム上のタブ移動による入力順を動的に指定できるようになりました。
+* <i class="fa fa-download" aria-hidden="true"></i> [**ヘルプTips表示のカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_Tips.zip)<br />
+[`SET DATABASE PARAMETER`](https://doc.4d.com/SET-DATABASE-PARAMETER.301-4179137.ja.html)で`Tips enabled`、`Tips delay`、`Tips duration`の新パラメーターが設定できるようになりました。<br />
+参考：[`OBJECT SET HELP TIP`](https://doc.4d.com/OBJECT-SET-HELP-TIP.301-4179220.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_UseCollections.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_UseCollections.zip)<br />
 
 ## 16r3 # {#v16r3}
