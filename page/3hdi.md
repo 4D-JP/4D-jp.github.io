@@ -244,7 +244,7 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 
 ## 16r3 # {#v16r3}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 標準アクション**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_4DWritePro_StandardActions.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 標準アクション**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_4DWP_StandardActions.zip)<br />
 4D Write Pro で使える標準アクションが多数実装されました。新コマンド[`INVOKE ACTION`](https://doc.4d.com/INVOKE-ACTION.301-4178618.ja.html)の使用含め、標準アクションを利用する方法を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**新しい標準アクション**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_NewStandardActions.zip)<br />
 新しい標準アクションをスタイル付テキストに適用する方法を紹介します。<br />
