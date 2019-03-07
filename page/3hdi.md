@@ -238,7 +238,9 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 * <i class="fa fa-download" aria-hidden="true"></i> [**ヘルプTips表示のカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_Tips.zip)<br />
 [`SET DATABASE PARAMETER`](https://doc.4d.com/SET-DATABASE-PARAMETER.301-4179137.ja.html)で`Tips enabled`、`Tips delay`、`Tips duration`の新パラメーターが設定できるようになりました。<br />
 参考：[`OBJECT SET HELP TIP`](https://doc.4d.com/OBJECT-SET-HELP-TIP.301-4179220.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_UseCollections.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_UseCollections.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**コレクション**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_UseCollections.zip)<br />
+新しいデータタイプ[`コレクション`](https://doc.4d.com/Data-Types.300-4179320.ja.html#3687203)が実装されました。<br />
+参考：[コレクションについて](https://doc.4d.com/About-collections.300-4179667.ja.html)
 
 ## 16r3 # {#v16r3}
 
