@@ -267,19 +267,27 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 
 ## 16 # {#v16}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ブックマーク**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Bookmarks.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ブックマークの操作**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Bookmarks.zip)<br />
 4D Write Proのブックマーク機能を紹介します。参考：[ブックマークコマンド](https://doc.4d.com/Accessing-document-contents-by-programming.300-3726304.ja.html#3507549)<br />
 [`WP CREATE BOOKMARK`](https://doc.4d.com/WP-CREATE-BOOKMARK.301-3726301.ja.html)
 [`WP GET BOOKMARKS`](https://doc.4d.com/WP-GET-BOOKMARKS.301-3726300.ja.html)
 [`WP Get bookmark range`](https://doc.4d.com/WP-Get-bookmark-range.301-3726302.ja.html)
 [`WP DELETE BOOKMARK `](https://doc.4d.com/WP-DELETE-BOOKMARK.301-3726299.ja.html)
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ブックマークの活用例**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InvoicesAndBookmarks.zip)<br />
+実際にブックマークを活用したデモンストレーションです。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 4D式とフィルタリング**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Filter4DExpressions.zip)<br />
 4D Write Proのドキュメントには4D式を挿入できますが、これらはあらかじめ[`SET ALLOWED METHODS`](https://doc.4d.com/SET-ALLOWED-METHODS.301-4179548.ja.html)によって許可されている必要があります。<br />
 参考：[4D Write Pro ドキュメントに含める式の制限](https://doc.4d.com/Filter-expressions-contained-in-a-4D-Write-Pro-document.300-3726276.ja.html#2993380)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_InsertDoc.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InsertDoc.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_InsertPicture.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InsertPicture.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_InvoicesAndBookmarks.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InvoicesAndBookmarks.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_Print.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Print.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメントの操作**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InsertDoc.zip)<br />
+次のコマンドを紹介します：<br />
+[`WP New`](https://doc.4d.com/WP-New.301-3726295.ja.html)ドキュメントの新規作成<br />
+[`WP INSERT DOCUMENT`](https://doc.4d.com/WP-INSERT-DOCUMENT.301-3726298.ja.html)ドキュメントの挿入<br />
+[`WP INSERT BREAK`](https://doc.4d.com/WP-INSERT-BREAK.301-3726296.ja.html)ブレークの挿入<br />
+[`WP Get page count`](https://doc.4d.com/WP-Get-page-count.301-3726297.ja.html)総ページ数の取得
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーの挿入**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InsertPicture.zip)<br />
+[`WP INSERT PICTURE`](https://doc.4d.com/WP-INSERT-PICTURE.301-3726303.ja.html)コマンドを使って 4D Write Pro ドキュメントにピクチャーを挿入します。
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 印刷**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Print.zip)<br />
+[`WP PRINT`](https://doc.4d.com/WP-PRINT.301-3726306.ja.html)[`WP USE PAGE SETUP`](https://doc.4d.com/WP-USE-PAGE-SETUP.301-3726305.ja.html)コマンドを使った、4D Write Proドキュメントの印刷機能の紹介です。
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_Thread_safety.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Thread_safety.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ViewProperties.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_ViewProperties.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_DISTINCT_ATTRIBUTES.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_DISTINCT_ATTRIBUTES.zip)<br />
