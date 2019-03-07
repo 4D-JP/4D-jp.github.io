@@ -214,13 +214,14 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 [`Get process activity`](https://doc.4d.com/Get-process-activity.301-4179078.ja.html)コマンドを使って、セッションやプロセスの情報をモニタリングする方法を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスとヘルプTips**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_ListboxHelpTips.zip)<br />
 [`OBJECT SET HELP TIP`](https://doc.4d.com/OBJECT-SET-HELP-TIP.301-4179220.ja.html)および[`LISTBOX GET CELL POSITION`](https://doc.4d.com/LISTBOX-GET-CELL-POSITION.301-4178984.ja.html)コマンドが拡張され、リストボックス内に個別のヘルプTipsを追加できるようになりました。
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: リンクの挿入**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_Links.4dbase.zip)<br />
+[`WP SET ATTRIBUTES`](https://doc.4d.com/WP-SET-ATTRIBUTES.301-3726313.ja.html)コマンドで任意のレンジに`wk link url`を設定し、リンクを挿入する方法を紹介します。
 
 ## 16r4 # {#v16r4}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro プレビュー**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DViewProNewFormObject.zip)<br />
 4D View Pro ドキュメントの基本操作に必要なコマンドが追加されました。(デモ2はv17以降)<br />
 [`VP NEW DOCUMENT`](https://doc.4d.com/VP-NEW-DOCUMENT.301-3778565.ja.html)[`VP EXPORT DOCUMENT`](https://doc.4d.com/VP-EXPORT-DOCUMENT.301-3778567.ja.html)[`VP Export to object`](https://doc.4d.com/VP-Export-to-object.301-3778568.ja.html)[`VP IMPORT DOCUMENT`](https://doc.4d.com/VP-IMPORT-DOCUMENT.301-3778566.ja.html)[`VP IMPORT FROM OBJECT`](https://doc.4d.com/VP-IMPORT-FROM-OBJECT.301-3778569.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: リンクの挿入**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Links.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWritePro_Tables.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Tables.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_GetProcessActivity.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_GetProcessActivity.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSONFileValidation.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_JSONFileValidation.zip)<br />
