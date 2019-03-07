@@ -10,4 +10,10 @@ tags: 17r5 unicode
 
 Unicode 11では，``66``個の絵文字が追加され，``5``のCJK（中日韓）統合漢字が追加されています。追加されたのは，新元素の中国語名に使用される``3``文字と独立行政法人情報処理推進機構の<i class="fa fa-external-link" aria-hidden="true"></i> [文字情報基盤整備事業](https://mojikiban.ipa.go.jp)のリストに含まれている人名漢字等``2``文字です。
 
+| 原子番号 | 漢字 | 名称|
+---|---|---
+|113 | Nh | ニホニウム |
+|117 |Ts | テネシン |
+|118 | Og | オガネソン |
+
 <img width="300" alt="2019-03-07 9 57 15" src="https://user-images.githubusercontent.com/10509075/53929559-7104e700-40d1-11e9-967b-a4eb662e48a0.png">
