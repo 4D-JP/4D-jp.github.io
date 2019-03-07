@@ -12,8 +12,11 @@ Unicode 11では，``66``個の絵文字が追加され，``5``のCJK（中日�
 
 | 原子番号 | 漢字 | 名称|
 ---|---|---
-|113 | Nh | ニホニウム |
-|117 |Ts | テネシン |
 |118 | Og | オガネソン |
+|117 |Ts | テネシン |
+|113 | Nh | ニホニウム |
+
+<img width="302" alt="2019-03-07 12 12 58" src="https://user-images.githubusercontent.com/10509075/53929827-6008a580-40d2-11e9-964c-f590e0883651.png">
+
 
 <img width="300" alt="2019-03-07 9 57 15" src="https://user-images.githubusercontent.com/10509075/53929559-7104e700-40d1-11e9-967b-a4eb662e48a0.png">
