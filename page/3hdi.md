@@ -239,14 +239,17 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 [`SET DATABASE PARAMETER`](https://doc.4d.com/SET-DATABASE-PARAMETER.301-4179137.ja.html)で`Tips enabled`、`Tips delay`、`Tips duration`の新パラメーターが設定できるようになりました。<br />
 参考：[`OBJECT SET HELP TIP`](https://doc.4d.com/OBJECT-SET-HELP-TIP.301-4179220.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**コレクション**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_UseCollections.zip)<br />
-新しいデータタイプ[`コレクション`](https://doc.4d.com/Data-Types.300-4179320.ja.html#3687203)が実装されました。<br />
+[コレクション](https://doc.4d.com/Data-Types.300-4179320.ja.html#3687203)という新しいデータタイプが実装されました。<br />
 参考：[コレクションについて](https://doc.4d.com/About-collections.300-4179667.ja.html)
 
 ## 16r3 # {#v16r3}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWritePro_StandardActions.zip](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_4DWritePro_StandardActions.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 標準アクション**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_4DWritePro_StandardActions.zip)<br />
+4D Write Pro で使える標準アクションが多数実装されました。新コマンド[`INVOKE ACTION`](https://doc.4d.com/INVOKE-ACTION.301-4178618.ja.html)の使用含め、標準アクションを利用する方法を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_NewStandardActions.zip](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_NewStandardActions.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_OB_New.zip](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_OB_New.zip)<br />
+新しい標準アクションをスタイル付テキストに適用する方法を紹介します。<br />
+新しく追加された[`Get action info`](https://doc.4d.com/Get-action-info.301-4178619.ja.html)コマンドを使って、任意の標準アクションについて、特定のコンテキストにおける利用可能性やステータスなどの情報を取得することができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**New Object**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_NewObject.zip)<br />
 
 ## 16r2 # {#v16r2}
 
