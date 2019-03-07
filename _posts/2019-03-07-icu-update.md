@@ -21,3 +21,5 @@ Unicode 11では，``66``個の絵文字が追加され，``5``のCJK（中日�
 および独立行政法人情報処理推進機構の<i class="fa fa-external-link" aria-hidden="true"></i> [文字情報基盤整備事業](https://mojikiban.ipa.go.jp)のリストに含まれている人名漢字等``2``文字です。
 
 <img width="289" alt="2019-03-07 12 15 33" src="https://user-images.githubusercontent.com/10509075/53929906-bd045b80-40d2-11e9-9e87-e9e9121c92b9.png">
+
+加えて，全角の数字ゼロ（``FULLWIDTH DIGIT ZERO``, ``U+FF10``）に斜めの線が入ったバージョンが異体字として追加されています。
