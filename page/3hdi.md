@@ -254,10 +254,16 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 
 ## 16r2 # {#v16r2}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ListboxProperties.zip](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ListboxProperties.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ManageListboxHightlight.zip](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ManageListboxHightlight.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ORDER_BY_ATTRIBUTE.zip](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ORDER_BY_ATTRIBUTE.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_QueryByAttribute.zip](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_QueryByAttribute.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスプロパティ**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ListboxProperties.zip)<br />
+新コマンド[`LISTBOX SET PROPERTY`](https://doc.4d.com/LISTBOX-SET-PROPERTY.301-4178995.ja.html)を使って、リストボックスのプロパティをプログラミングにより設定するデモンストレーションです。
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ManageListboxHightlight.zip)<br />
+リストボックスにおける選択行のハイライトがカスタマイズできるようになりました。<br />
+参考：[選択行の見た目をカスタマイズ](https://doc.4d.com/Managing-List-Box-Objects.300-4178954.ja.html#3971639)
+* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクトフィールドに基づいた並べ替え**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ORDER_BY_ATTRIBUTE.zip)<br />
+新コマンド[`ORDER BY ATTRIBUTE`](https://doc.4d.com/ORDER-BY-ATTRIBUTE.301-4178917.ja.html)を使って、オブジェクトフィールド内のプロパティに基づいてセレクションを並べ替えることができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクト配列のクエリ**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_QueryByAttribute.zip)<br />
+[`QUERY BY ATTRIBUTE`](https://doc.4d.com/QUERY-BY-ATTRIBUTE.301-4178904.ja.html)[`QUERY SELECTION BY ATTRIBUTE`](https://doc.4d.com/QUERY-SELECTION-BY-ATTRIBUTE.301-4178916.ja.html)コマンドが拡張され、オブジェクト配列が含まれているオブジェクトフィールドのクエリが便利になりました。<br />
+参考：[配列属性のクエリ引数をリンクする](https://doc.4d.com/QUERY-BY-ATTRIBUTE.301-4178904.ja.html#3181657)
 
 ## 16 # {#v16}
 
