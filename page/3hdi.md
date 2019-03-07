@@ -54,7 +54,7 @@ type: page
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: フィールドデータやメソッドを使う**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DVP_DB_Method.zip)<br />
 セルへの簡単な記述により、[フィールドへの参照](https://doc.4d.com/Field-references.300-3936010.ja.html)や[プロジェクトメソッドへの参照](https://doc.4d.com/Project-method-references.300-3935962.ja.html)を使用することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブルのページネーション**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_TablePagination.zip)<br />
-テーブルが[自動ページネーション](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3920766.ja.html#3892922)に対応し、テーブルの表示がページをまたぐ場合には行と行のあいだで分割されるようになりました。
+テーブル (表) が[自動ページネーション](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3920766.ja.html#3892922)に対応し、テーブルの表示がページをまたぐ場合には行と行のあいだで分割されるようになりました。
 
 ## 17 # {#v17}
 
@@ -222,8 +222,9 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro プレビュー**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DViewProNewFormObject.zip)<br />
 4D View Pro ドキュメントの基本操作に必要なコマンドが追加されました。(デモ2はv17以降)<br />
 [`VP NEW DOCUMENT`](https://doc.4d.com/VP-NEW-DOCUMENT.301-3778565.ja.html)[`VP EXPORT DOCUMENT`](https://doc.4d.com/VP-EXPORT-DOCUMENT.301-3778567.ja.html)[`VP Export to object`](https://doc.4d.com/VP-Export-to-object.301-3778568.ja.html)[`VP IMPORT DOCUMENT`](https://doc.4d.com/VP-IMPORT-DOCUMENT.301-3778566.ja.html)[`VP IMPORT FROM OBJECT`](https://doc.4d.com/VP-IMPORT-FROM-OBJECT.301-3778569.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWritePro_Tables.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Tables.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_GetProcessActivity.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_GetProcessActivity.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブル (表)**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Tables.zip)<br />
+4D Write Pro にテーブル (表) を挿入し、表示を整える方法を紹介します。<br />
+[`WP Insert table`](https://doc.4d.com/WP-Insert-table.301-3726290.ja.html)[`WP Table append row`](https://doc.4d.com/WP-Table-append-row.301-3726291.ja.html)[`WP Table get columns`](https://doc.4d.com/WP-Table-get-columns.301-3726293.ja.html)[`WP Table get rows`](https://doc.4d.com/WP-Table-get-rows.301-3726292.ja.html)[`WP Table get cells`](https://doc.4d.com/WP-Table-get-cells.301-3726294.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSONFileValidation.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_JSONFileValidation.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_ObjectNotationDatasource.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_ObjectNotationDatasource.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_PictureObjectAttribute.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_PictureObjectAttribute.zip)<br />
