@@ -251,7 +251,6 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 新しく追加された[`Get action info`](https://doc.4d.com/Get-action-info.301-4178619.ja.html)コマンドを使って、任意の標準アクションについて、特定のコンテキストにおける利用可能性やステータスなどの情報を取得することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**New Object**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_NewObject.zip)<br />
 オブジェクトを初期化するための新コマンド[`New object`](https://doc.4d.com/New-object.301-4179445.ja.html)が追加されました。従来のコードと新コマンドを使ったコードを比較します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**New Object**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_NewObject.zip)<br />
 
 ## 16r2 # {#v16r2}
 
