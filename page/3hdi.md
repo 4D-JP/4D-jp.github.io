@@ -225,11 +225,12 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブル (表)**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Tables.zip)<br />
 4D Write Pro にテーブル (表) を挿入し、表示を整える方法を紹介します。<br />
 [`WP Insert table`](https://doc.4d.com/WP-Insert-table.301-3726290.ja.html)[`WP Table append row`](https://doc.4d.com/WP-Table-append-row.301-3726291.ja.html)[`WP Table get columns`](https://doc.4d.com/WP-Table-get-columns.301-3726293.ja.html)[`WP Table get rows`](https://doc.4d.com/WP-Table-get-rows.301-3726292.ja.html)[`WP Table get cells`](https://doc.4d.com/WP-Table-get-cells.301-3726294.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_JSONFileValidation.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_JSONFileValidation.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**JSONオブジェクトの評価**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_JSONFileValidation.zip)<br />
 新コマンド[`JSON Validate`](https://doc.4d.com/JSON-Validate.301-4179123.ja.html)を使って、任意のJSONオブジェクトが、あらかじめ定義したJSONスキーマに適合するかをチェックすることができます。また、適合しなかった場合のデバッグ用に、要素の位置を特定できるよう[`JSON Parse`](https://doc.4d.com/JSON-Parse.301-4179121.ja.html)コマンドが拡張されました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクト記法**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_ObjectNotationDatasource.zip)<br />
-オブジェクト記法の使い方を紹介します。
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_PictureObjectAttribute.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_PictureObjectAttribute.zip)<br />
+[オブジェクト記法](https://doc.4d.com/Using-object-notation.300-4179432.ja.html)の使い方を紹介します。
+* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクトとピクチャー属性**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_PictureObjectAttribute.zip)<br />
+オブジェクトの属性値にピクチャーを設定できるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_StandardActionMultiStateObject.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_StandardActionMultiStateObject.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_TabbableObjectOrder.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_TabbableObjectOrder.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_Tips.zip](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_Tips.zip)<br />
