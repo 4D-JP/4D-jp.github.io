@@ -1,16 +1,24 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2019-03-08 02:55:00
+date: 2019-03-08 08:07:00
 categories: 修正リスト
 tags: "17.1" 
-build: 234350
+build: 234428
 version: 17.1
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0098160 ``Get system info``から返されるオペレーションシステム名（Windows Professional, Windows Professionnelなど）は，プラットフォームの言語に左右され，Mac版では"build", "version"などのワードを含む形式で返されました。また，Windows 10のバージョンを区別することができませんでした。
+
+**注記**: 修正により，プラットフォームや言語に左右されない統一の形式で情報が返されるようになりました。
+
+  * macOS 10.14.2 (18C54)
+  * Windows 10 Enterprise 1809 (17763.107)
+  * Windows 10 Pro 1809 (17763.107)
 
 * ACI0099332 Windows 32ビット版のみ。同時の大量のSOAPリクエストを実行すると，アプリケーションがクラッシュすることがありました。
 
