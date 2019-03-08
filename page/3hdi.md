@@ -11,7 +11,7 @@ type: page
 
 ## 17r4 # {#v17r4}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: バーシャルストラクチャー**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_VirtualStructure.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: バーチャルストラクチャー**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_VirtualStructure.zip)<br />
 [`SET FIELD TITLES`](https://doc.4d.com/4Dv17R4/4D/17-R4/SET-FIELD-TITLES.301-4054009.ja.html)および[`SET TABLE TITLES`](https://doc.4d.com/4Dv17R4/4D/17-R4/SET-TABLE-TITLES.301-4054019.ja.html)コマンドで定義したバーチャルストラクチャーが 4D Write Pro 内で利用できるようになりました。<br />
 参考：[バーチャルストラクチャーのサポート](https://doc.4d.com/4Dv17R4/4D/17-R4/Managing-expressions.300-4077722.ja.html#4087988)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: レンジ座標の取得**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_MoreCoordinates.zip)<br />
@@ -265,10 +265,10 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 参考：[4D Write Pro ドキュメントに含める式の制限](https://doc.4d.com/Filter-expressions-contained-in-a-4D-Write-Pro-document.300-3726276.ja.html#2993380)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメントの操作**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InsertDoc.zip)<br />
 次のコマンドを紹介します：<br />
-[`WP New`](https://doc.4d.com/WP-New.301-3726295.ja.html)ドキュメントの新規作成<br />
-[`WP INSERT DOCUMENT`](https://doc.4d.com/WP-INSERT-DOCUMENT.301-3726298.ja.html)ドキュメントの挿入<br />
-[`WP INSERT BREAK`](https://doc.4d.com/WP-INSERT-BREAK.301-3726296.ja.html)ブレークの挿入<br />
-[`WP Get page count`](https://doc.4d.com/WP-Get-page-count.301-3726297.ja.html)総ページ数の取得
+[`WP New`](https://doc.4d.com/WP-New.301-3726295.ja.html) ドキュメントの新規作成<br />
+[`WP INSERT DOCUMENT`](https://doc.4d.com/WP-INSERT-DOCUMENT.301-3726298.ja.html) ドキュメントの挿入<br />
+[`WP INSERT BREAK`](https://doc.4d.com/WP-INSERT-BREAK.301-3726296.ja.html) ブレークの挿入<br />
+[`WP Get page count`](https://doc.4d.com/WP-Get-page-count.301-3726297.ja.html) 総ページ数の取得
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーの挿入**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InsertPicture.zip)<br />
 [`WP INSERT PICTURE`](https://doc.4d.com/WP-INSERT-PICTURE.301-3726303.ja.html)コマンドを使って 4D Write Pro ドキュメントにピクチャーを挿入します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 印刷**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Print.zip)<br />
