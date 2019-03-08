@@ -1,15 +1,25 @@
 ---
 layout: fix
 title: "4D v17r4 修正リスト"
-date: 2019-03-06 21:55:00
+date: 2019-03-08 07:55:00
 categories: 修正リスト
 tags: 17r4
-build: 234275
+build: 234428
 version: 17r4
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099335 メールの件名が一定の文字数を超過すると，受信したクライアントで文字化け表示されることがありました。
+
+* ACI0099328 プリエンプティブ実行メソッドでサーバー管理用の新コマンドをコンパイルすることができませんでした。
+
+  * ``SEND MESSAGE TO REMOTE USER``
+  * ``DROP REMOTE USER``
+  * ``ABORT PROCESS BY ID``
+  * ``REJECT NEW REMOTE CONNECTIONS``
+  * ``SOAP REJECT NEW REQUESTS``
 
 * ACI0099294 メソッド内に``Begin SQL/End SQL``コードブロックが存在する場合，コンパイラーに間違った行番号が表示されました。
 
