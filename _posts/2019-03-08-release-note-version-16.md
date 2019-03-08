@@ -3,7 +3,7 @@ layout: fix
 title: "4D v16.5 修正リスト"
 date: 2019-03-08 00:00:00
 categories: 修正リスト
-tags: 16.5
+tags: "16.5"
 build: 233713
 version: 16.5
 
