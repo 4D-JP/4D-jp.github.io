@@ -1,3 +1,4 @@
+---
 layout: page
 title: 教材
 permalink: /help/2019-03-13/
