@@ -8,4 +8,8 @@
 
 <img width="770" alt="スクリーンショット 2019-03-13 15 12 55" src="https://user-images.githubusercontent.com/10509075/54257412-8fbc1f80-45a2-11e9-8b54-b5073cc365b3.png">
 
-<video autoplay="" loop="" class="" style="max-width: 100%; min-height: 455px;"><source type="video/mp4" src="https://i.imgur.com/dCihNJn.mp4"></video>
+<video width="320" height="240" controls>
+  <source src="https://i.imgur.com/dCihNJn.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
