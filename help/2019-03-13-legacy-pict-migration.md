@@ -5,7 +5,7 @@ permalink: /help/2019-03-13/
 standalone: true
 ---
 
-### ポイント
+# ポイント
 
 * v12以前にフォームウィザードで作成したフォームのアイコン画像は，4Dに収録されていた``cicn``または``PICT``リソースを参照している
 
@@ -21,13 +21,13 @@ standalone: true
 
 **注記**: 下記の方法でPICT画像を復元できるとはいえ，当時のアイコン画像はシンプルなドット絵なので，この機会にもっとキレイな画像にすると良いでしょう。
 
-### 動画
+# 動画
 
 [![image](https://user-images.githubusercontent.com/10509075/54258061-c6933500-45a4-11e9-8521-ab5b82d0ce9a.jpg)](https://imgur.com/a/fSLuZvr "image")
 
 [imgur.com](https://imgur.com/a/fSLuZvr)
 
-### 手順
+# 手順
 
 旧バージョンに収録されていた``cicn``および``PICT``リソースのPNG版をダウンロード
 
