@@ -1,6 +1,6 @@
 ### 動画
 
-* imgur.com
+[imgur.com](https://imgur.com/a/fSLuZvr)に移動
 
 [![image](https://user-images.githubusercontent.com/10509075/54258061-c6933500-45a4-11e9-8521-ab5b82d0ce9a.jpg)](https://imgur.com/a/fSLuZvr "image")
 
