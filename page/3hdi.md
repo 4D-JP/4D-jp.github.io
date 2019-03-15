@@ -196,7 +196,7 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 新しく追加された[`JSON Resolve pointers`](https://doc.4d.com/JSON-Resolve-pointers.301-4179124.ja.html)コマンドは、引数として渡されたオブジェクトに含まれるすべての JSON ポインターを解決します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 行高さの自動設定**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DVP_AutoRowHeight.zip) (v16r5)<br />
 新しいリストボックスプロパティ「[自動行高](https://doc.4d.com/List-box-specific-properties.300-4201189.ja.html#3510338)」および「最小行高」「最大行高」が追加されました。<br />
-<span style="text-decoration: underline">※ この機能には 4D View Pro ライセンス必要です。</span>
+<span style="text-decoration: underline">※ この機能には 4D View Pro ライセンスが必要です。</span>
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フチなし全面の背景画像**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_BackImagePaperBox.zip) (v16r5)<br />
 4D Write Pro で[背景](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3726280.ja.html#3514034)画像をフチなし全面指定できるようになりました。[`WP SET ATTRIBUTES`](https://doc.4d.com/WP-SET-ATTRIBUTES.301-3726313.ja.html)コマンドで[背景属性](https://doc.4d.com/4D-Write-Pro-Attributes.300-3726323.ja.html#3690279)の`wk background clip`と`wk background origin`を`wk paper box`に指定します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ヘッダーとフッター**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_HeadersFooters.zip) (v16r5)<br />
@@ -290,7 +290,7 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 フォームイベント[`On Column Resize`](https://doc.4d.com/Form-event.301-4227726.ja.html#3048676)がカラムリサイズ中にリアルタイムで発生するようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 行高さの指定**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxVariableRowHeight.zip)<br />
 新しいコマンド[`LISTBOX SET ROW HEIGHT`](https://doc.4d.com/LISTBOX-SET-ROW-HEIGHT.301-4226911.ja.html)および[`LISTBOX Get row height`](https://doc.4d.com/LISTBOX-Get-row-height.301-4226910.ja.html)を使って、あるいは[行高さ配列](https://doc.4d.com/List-box-specific-properties.300-4253551.ja.html#3070590)を関連付けることで、リストボックスの各行の高さを個別に指定することができます。<br />
-<span style="text-decoration: underline">※ この機能には 4D View Pro ライセンス必要です。</span>
+<span style="text-decoration: underline">※ この機能には 4D View Pro ライセンスが必要です。</span>
 * <i class="fa fa-download" aria-hidden="true"></i> [**キャッシュ管理**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ManageCache.zip)<br />
 4D v16ではキャッシュの仕組みが刷新され、[キャッシュ管理](https://doc.4d.com/Cache-Management.201-4226165.ja.html)に役立つ次のコマンドが追加されました。これらのコマンドは64-bit版の4Dで提供されている内部アーキテクチャーに依存しているため、64-bit版でのみ正常に動作します。<br />
 [`Cache info`](https://doc.4d.com/Cache-info.301-4226247.ja.html)[`Get cache size`](https://doc.4d.com/Get-cache-size.301-4226248.ja.html)[`SET CACHE SIZE`](https://doc.4d.com/SET-CACHE-SIZE.301-4226249.ja.html)
