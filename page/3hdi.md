@@ -276,11 +276,18 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: プリエンプティブ実行**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Thread_safety.zip)<br />
 ユーザーインターフェースに関わらない 4D Write Pro コマンドはプリエンプティブに実行することができます。文書作成処理をコオペラティブおよびプリエンプティブに実行した場合の処理速度を比較します。<br />
 参考：[プリエンプティブ4Dプロセス](https://doc.4d.com/Preemptive-4D-processes.300-4226849.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ViewProperties.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_ViewProperties.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_DISTINCT_ATTRIBUTES.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_DISTINCT_ATTRIBUTES.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_GetPictureFormats.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_GetPictureFormats.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ListboxAutoResizeColumns.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxAutoResizeColumns.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ListboxOnColumnResize.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxOnColumnResize.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビューモード**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_ViewProperties.zip)<br />
+4D Write Pro ドキュメントの表示は複数の[ビューモードから選択](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3048088.ja.html#3052041)できます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクト型フィールドより重複しないパスや値を取得する**](https://github.com/4D-JP/HDI/releases/download/16/HDI_DISTINCT_ATTRIBUTES.zip)<br />
+オブジェクト型フィールドに含まれる重複しないパスや値を取得するためのコマンドを紹介します。<br />
+[`DISTINCT ATTRIBUTE PATHS`](https://doc.4d.com/DISTINCT-ATTRIBUTE-PATHS.301-4227275.ja.html)[`DISTINCT ATTRIBUTE VALUES`](https://doc.4d.com/DISTINCT-ATTRIBUTE-VALUES.301-4227274.ja.html)
+* <i class="fa fa-download" aria-hidden="true"></i> [**GET PICTURE FORMATS**](https://github.com/4D-JP/HDI/releases/download/16/HDI_GetPictureFormats.zip)<br />
+新しく追加されたコマンド[`GET PICTURE FORMATS`](https://doc.4d.com/GET-PICTURE-FORMATS.301-4226801.ja.html)でピクチャーのファイル形式を取得することができます。
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: カラム自動リサイズ**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxAutoResizeColumns.zip)<br />
+リストボックスに追加された新しいプロパティ ”カラム自動リサイズ” の紹介です。<br />
+参考：[カラムの自動リサイズの仕組み]()
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: リアルタイムな On Column Resize**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxOnColumnResize.zip)<br />
+フォームイベント[`On Column Resize`](https://doc.4d.com/Form-event.301-4227726.ja.html#3048676)がカラムリサイズ中にリアルタイムで発生するようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_ListboxVariableRowHeight.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxVariableRowHeight.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_ManageCache.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_ManageCache.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_Mouse_Up_Event.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_Mouse_Up_Event.zip)<br />
