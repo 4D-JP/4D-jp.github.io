@@ -273,7 +273,9 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 [`WP INSERT PICTURE`](https://doc.4d.com/WP-INSERT-PICTURE.301-3726303.ja.html)コマンドを使って 4D Write Pro ドキュメントにピクチャーを挿入します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 印刷**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Print.zip)<br />
 [`WP PRINT`](https://doc.4d.com/WP-PRINT.301-3726306.ja.html)[`WP USE PAGE SETUP`](https://doc.4d.com/WP-USE-PAGE-SETUP.301-3726305.ja.html)コマンドを使った、4D Write Proドキュメントの印刷機能の紹介です。
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_Thread_safety.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Thread_safety.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: プリエンプティブ実行**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Thread_safety.zip)<br />
+ユーザーインターフェースに関わらない 4D Write Pro コマンドはプリエンプティブに実行することができます。文書作成処理をコオペラティブおよびプリエンプティブに実行した場合の処理速度を比較します。<br />
+参考：[プリエンプティブ4Dプロセス](https://doc.4d.com/Preemptive-4D-processes.300-4226849.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_4DWP_ViewProperties.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_ViewProperties.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_DISTINCT_ATTRIBUTES.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_DISTINCT_ATTRIBUTES.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_GetPictureFormats.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_GetPictureFormats.zip)<br />
