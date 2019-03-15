@@ -65,7 +65,7 @@ type: page
 ORDAによって取得できるストラクチャー情報を利用した、汎用的なコードによる並べ替えツールの例です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**コレクション型リストボックスと複階層コレクション**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListBoxCollection_Advanced_v17.zip)<br />
 複数のリストボックスを使い、複階層のコレクションを表示します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスにエンティティセレクションを表示**](https://github.com/4D-JP/HDI/releases/download/17/HDI_EntitySelectionInListbox.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: エンティティセレクションの表示**](https://github.com/4D-JP/HDI/releases/download/17/HDI_EntitySelectionInListbox.zip)<br />
 エンティティセレクションをコレクション型リストボックスに表示するために必要となる設定を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティセレクションの統計情報**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Statistics.zip)<br />
 エンティティセレクションの統計情報は[エンティティセレクションのメンバーメソッド](https://doc.4d.com/ORDA-EntitySelection.201-3905932.ja.html)を使って簡単に取得することができます: 
@@ -194,7 +194,7 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 [`HTTP Request`](https://doc.4d.com/HTTP-Request.301-4178732.ja.html)コマンドを使って Twitter のアカウント認証と文字列検索を行う方法の紹介です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**JSON ポインターの解決**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_JSON_Pointer.zip) (v16r5)<br />
 新しく追加された[`JSON Resolve pointers`](https://doc.4d.com/JSON-Resolve-pointers.301-4179124.ja.html)コマンドは、引数として渡されたオブジェクトに含まれるすべての JSON ポインターを解決します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスの行高さの自動設定**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DVP_AutoRowHeight.zip) (v16r5)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 行高さの自動設定**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DVP_AutoRowHeight.zip) (v16r5)<br />
 新しいリストボックスプロパティ「[自動行高](https://doc.4d.com/List-box-specific-properties.300-4201189.ja.html#3510338)」および「最小行高」「最大行高」が追加されました。<br />
 <span style="text-decoration: underline">※ この機能には 4D View Pro ライセンス必要です。</span>
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フチなし全面の背景画像**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_BackImagePaperBox.zip) (v16r5)<br />
@@ -239,9 +239,9 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 新しく追加された[`Get action info`](https://doc.4d.com/Get-action-info.301-4178619.ja.html)コマンドを使って、任意の標準アクションについて、特定のコンテキストにおける利用可能性やステータスなどの情報を取得することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**New Object**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_NewObject.zip) (v16r3)<br />
 オブジェクトを初期化するための新コマンド[`New object`](https://doc.4d.com/New-object.301-4179445.ja.html)が追加されました。従来のコードと新コマンドを使ったコードを比較します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスプロパティ**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ListboxProperties.zip) (v16r2)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: LISTBOX SET PROPERTY**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ListboxProperties.zip) (v16r2)<br />
 新コマンド[`LISTBOX SET PROPERTY`](https://doc.4d.com/LISTBOX-SET-PROPERTY.301-4178995.ja.html)を使って、リストボックスのプロパティをプログラミングにより設定するデモンストレーションです。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス選択行のハイライト**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ManageListboxHightlight.zip) (v16r2)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 選択行のハイライト**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ManageListboxHightlight.zip) (v16r2)<br />
 リストボックスにおける選択行のハイライトがカスタマイズできるようになりました。<br />
 参考：[選択行の見た目をカスタマイズ](https://doc.4d.com/Managing-List-Box-Objects.300-4178954.ja.html#3971639)
 * <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクトフィールドに基づいた並べ替え**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ORDER_BY_ATTRIBUTE.zip) (v16r2)<br />
@@ -286,11 +286,17 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: カラム自動リサイズ**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxAutoResizeColumns.zip)<br />
 リストボックスに追加された新しいプロパティ ”カラム自動リサイズ” の紹介です。<br />
 参考：[カラムの自動リサイズの仕組み]()
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: リアルタイムな On Column Resize**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxOnColumnResize.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: リアルタイムな On Column Resize イベント**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxOnColumnResize.zip)<br />
 フォームイベント[`On Column Resize`](https://doc.4d.com/Form-event.301-4227726.ja.html#3048676)がカラムリサイズ中にリアルタイムで発生するようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ListboxVariableRowHeight.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxVariableRowHeight.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_ManageCache.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_ManageCache.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_Mouse_Up_Event.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_Mouse_Up_Event.zip)<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [HDI_SavePrintSettings.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_SavePrintSettings.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 行高さの指定**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxVariableRowHeight.zip)<br />
+新しいコマンド[`LISTBOX SET ROW HEIGHT`](https://doc.4d.com/LISTBOX-SET-ROW-HEIGHT.301-4226911.ja.html)および[`LISTBOX Get row height`](https://doc.4d.com/LISTBOX-Get-row-height.301-4226910.ja.html)を使って、あるいは[行高さ配列](https://doc.4d.com/List-box-specific-properties.300-4253551.ja.html#3070590)を関連付けることで、リストボックスの各行の高さを個別に指定することができます。<br />
+<span style="text-decoration: underline">※ この機能には 4D View Pro ライセンス必要です。</span>
+* <i class="fa fa-download" aria-hidden="true"></i> [**キャッシュ管理**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ManageCache.zip)<br />
+4D v16ではキャッシュの仕組みが刷新され、[キャッシュ管理](https://doc.4d.com/Cache-Management.201-4226165.ja.html)に役立つ次のコマンドが追加されました。これらのコマンドは64-bit版の4Dで提供されている内部アーキテクチャーに依存しているため、64-bit版でのみ正常に動作します。<br />
+[`Cache info`](https://doc.4d.com/Cache-info.301-4226247.ja.html)[`Get cache size`](https://doc.4d.com/Get-cache-size.301-4226248.ja.html)[`SET CACHE SIZE`](https://doc.4d.com/SET-CACHE-SIZE.301-4226249.ja.html)
+* <i class="fa fa-download" aria-hidden="true"></i> [**On Mouse Up イベント**](https://github.com/4D-JP/HDI/releases/download/16/HDI_Mouse_Up_Event.zip)<br />
+ピクチャーエリアに新しく追加された[`On Mouse Up`](https://doc.4d.com/Form-event.301-4227726.ja.html#3047241)イベントの紹介です。
+* <i class="fa fa-download" aria-hidden="true"></i> [**印刷設定の保存**](https://github.com/4D-JP/HDI/releases/download/16/HDI_SavePrintSettings.zip)<br />
+4D Packプラグインのコマンドが標準コマンドになりました：[`Print settings to BLOB`](https://doc.4d.com/Print-settings-to-BLOB.301-4226252.ja.html)[`BLOB to print settings`](https://doc.4d.com/BLOB-to-print-settings.301-4226253.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_ThreadSafe_XMLCommands.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_ThreadSafe_XMLCommands.zip)<br />
 * <i class="fa fa-download" aria-hidden="true"></i> [HDI_WebServerPreemptive.zip](https://github.com/4D-JP/HDI/releases/download/16/HDI_WebServerPreemptive.zip)<br />
