@@ -1,15 +1,17 @@
 ---
 layout: fix
 title: "4D v17r4 修正リスト"
-date: 2019-03-18 10:14:00
+date: 2019-03-20 07:41:00
 categories: 修正リスト
 tags: 17r4
-build: 234870
+build: 234985
 version: 17r4
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0098848 4D ViewドキュメントをView Proに変換した場合，ピクチャ型フィールドの内容が正しく変換されませんでした。
 
 * ACI0099353 4D ViewドキュメントをView Proに変換した場合，ボールドとイタリックの両方が設定されたセルのスタイルが正しく変換されませんでした。
 
