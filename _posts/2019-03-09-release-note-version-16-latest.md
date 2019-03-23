@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v16 修正リスト"
-date: 2019-03-20 07:45:00
+date: 2019-03-23 21:49:00
 categories: 修正リスト
 tags: "16.6"
-build: 234985
+build: 234976
 version: 16.6
 
 ---
