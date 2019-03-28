@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Write Proテーブルのボーダーを設定する"
-date: 2019-01-09 23:44:23
+date: 2019-03-28 11:15:00
 categories: 注意点 
 tags: writepro
 version: 17.x
