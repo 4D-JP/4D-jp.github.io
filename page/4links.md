@@ -12,6 +12,7 @@ type: page
 ## 公式サイト
 
 * [日本支社](https://jp.4d.com/)
+
 * [ブログ（英文）](https://blog.4d.com/)
 
 ## テクニカル情報
@@ -23,6 +24,10 @@ type: page
 * [ナレッジベース（欧州/英語）](https://taow.4d.com/Tech-Tips/tipsList.en.html/)
 
 * [ナレッジベース（欧州/フランス語）](https://taow.4d.com/Tech-Tips/tipsList.fr.html/)
+
+* [製品アーカイブ（日本）](http://library.4d-japan.com/PRODUCTS/4D/)
+
+* [資料アーカイブ（日本）](http://library.4d-japan.com/REFERENCE/)
 
 ## コミュニティ
 
