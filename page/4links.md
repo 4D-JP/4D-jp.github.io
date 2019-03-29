@@ -70,7 +70,16 @@ type: page
 * [Fine Arts Museums of San Francisco](https://github.com/famsf)
     * pecl-pdo-4d
     * 4d-mysqldump
-    
+
+* [Keisuke Miyako](https://github.com/miyako)
+
+    * [4d-plugin-curl](https://github.com/miyako/4d-plugin-curl-v2)
+    * [4d-component-wkhtmltopdf](https://github.com/miyako/4d-component-wkhtmltopdf)
+    * [4d-plugin-x-phonetic)](https://github.com/miyako/4d-plugin-x-phonetic) よみがな抽出
+    * [4d-plugin-text-input-service)](https://github.com/miyako/4d-plugin-text-input-service) 日本語入力メソッド切り替え（Mac）
+    * [4d-plugin-input-method-manager](https://github.com/miyako/4d-plugin-input-method-manager) 日本語入力メソッド切り替え（Windows）
+    * [4d-plugin-mecab-v2](https://github.com/miyako/4d-plugin-mecab-v2) 日本語形態素解析
+
 * [Kirk Brooks](https://github.com/KirkBrooks)
     * sideORDA  
     * Form-object-hilite
