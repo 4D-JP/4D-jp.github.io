@@ -28,13 +28,18 @@
                                 <i class="fa fa-{{my_page.icon}}"></i>{{ my_page.title }}
                             </a>
                         </li>
-                        {% endif %}                    
+                        {% endif %}
+                            
+                        {% if my_page.title == "例題"%}
+                            <li>
+                            <a href="{{ "TechNote/" | prepend: site.baseurl }}">
+                            <i class="fa fa-file-text-o"></i>テクニカルノート
+                            </a></li>
+                        {% endif %}  
+                
                     {% endif %}
                 {% endfor %}
-                               <li>
-                <a href="{{ "TechNote/" | prepend: site.baseurl }}">
-                    <i class="fa fa-file-text-o"></i>テクニカルノート
-                            </a>   </li>
+
             </ul>
         </nav>
     </div>
