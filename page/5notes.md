@@ -36,7 +36,7 @@ icon: book
             {% capture category_size %}{{ categories | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
             {% unless category_size == '0' %}
             <div class="label-card">
-                <span>
+                <span class="categories">
                   <i class="fa fa-th-list"></i>{{ categories }}
                 </span>   
             </div>            
