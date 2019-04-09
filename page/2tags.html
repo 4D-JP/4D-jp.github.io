@@ -91,7 +91,7 @@ icon: tags
                         {% assign tag_size = site.tags[tag].size %}
                         {% for tech_note in site.tech_notes %}
                             {% if tech_note.tags contains tag %}
-                                {% increment tag_size %}
+                                {% assign tag_size = tag_size + 1 %}
                             {% endif %}
                         {% endfor %}
                         <a class="scroll" href="#{{ tag }}">
