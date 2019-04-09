@@ -48,8 +48,8 @@ kramdown:
 # url
 category_dir: category/
 tag_dir: tag/
-collections_dir: .
 
+#collections_dir: collections/
 #collections:
 #  tech_notes:
 #    output: true
