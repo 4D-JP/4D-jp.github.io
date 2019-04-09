@@ -1,10 +1,15 @@
 ---
-layout: page
+layout: default
 title: テクニカルノート
 permalink: /notes/
 icon: book
-type: page
 ---
+
+<div class="page clearfix">
+<div class="wide">
+<h1>{{page.title}}</h1>
+<hr>
+      
 <ul>
 {% for tech_note in site.tech_notes %}
 <li>
@@ -36,3 +41,6 @@ type: page
 </li>
 {% endfor %}
 </ul>
+
+</div>
+</div>
