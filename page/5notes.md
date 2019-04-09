@@ -13,9 +13,9 @@ icon: book
 <ul>
 {% for tech_note in site.tech_notes %}
 <li>
-  <h2>
+
     <a class="post-link" href="{{ tech_note.url | prepend: site.baseurl }}">{{ tech_note.title }}</a>
-  </h2>
+
   <div class="label">
     <div class="label-card">
       <i class="fa fa-calendar"></i>{{ tech_note.date | date: "%F" }}
