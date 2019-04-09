@@ -39,7 +39,7 @@ icon: tags
     {% if tech_note.tags contains tag %}
     <li>
         
-        <i class="fa fa-th-book"></i><a class="title" href="{{ tech_note.url }}">{{ tech_note.title }}</a>
+        <i class="fa fa-file-text-o"></i><a class="title" href="{{ tech_note.url }}">{{ tech_note.title }}</a>
         
         {% capture categories %}
             {% for category in tech_note.categories %}
