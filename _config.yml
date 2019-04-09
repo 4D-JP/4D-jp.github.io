@@ -49,13 +49,15 @@ kramdown:
 category_dir: category/
 tag_dir: tag/
 collections_dir: .
-collections:
-  tech_notes:
-    output: true
-    permalink: /:title
-  posts:
-    output: true
-    permalink: /:year/:month/:day/:title/   
+
+#collections:
+#  tech_notes:
+#    output: true
+#    permalink: /:title
+#  posts:
+#    output: true
+#    permalink: /:year/:month/:day/:title/   
+
 # excerpt
 excerpt_separator: "\n\n\n\n"
 
