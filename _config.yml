@@ -48,11 +48,12 @@ kramdown:
 # url
 category_dir: category/
 tag_dir: tag/
-collections_dir: collections/
+collections_dir: .
 collections:
   tech_notes:
     output: true
     permalink: /:name
+    
 # excerpt
 excerpt_separator: "\n\n\n\n"
 
