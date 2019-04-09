@@ -26,6 +26,17 @@
             background-color: #f4efeb;
         }
     }
+    .wide {
+        ul {
+            >h2 {
+                color: #333;
+            }
+            li {
+                color: #333;
+                margin: 0;
+            }
+        }
+    }    
     .left {
         ul {
             >h2 {
@@ -40,6 +51,24 @@
 }
 @media screen and (max-width: 770px) {
     .page[post] {
+        .wide {
+            font-size: 15px;
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            h4 {
+                font-size: 18px;
+            }
+            h5 {
+                font-size: 16px;
+            }
+            h6{
+                font-size: 15px;
+            }
+        }
         .left {
             font-size: 15px;
             h2 {
