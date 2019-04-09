@@ -5,13 +5,25 @@ permalink: /category/
 icon: th-list
 ---
 
-
 <div class="page clearfix">
     <div class="left">
         <h1>{{page.title}}</h1>
         <hr>
+        {% capture categories %}
+          {% for category in site.categories %}
+            {{ category[0] }}
+          {% endfor %}
+        {% endcapture %}
+        
+        {% assign technote_categories = site.tech_notes | map: 'categories' | join: ' '  | split: ' ' | uniq %}
+        {% assign post_categories = categories | split:' ' %}
+        {% assign all_categories = post_categories | concat:technote_categories %}
+        {% assign sortedcategories = all_categories | uniq | sort %}   
+        
         <ul>
-            {% for category in site.categories %}
+
+            {% for category in sortedcategories %}
+            
             <h2 id="{{category | first}}">{{category | first}}</h2>
                 {% for posts in category  %}
                     {% for post in posts %}
@@ -28,6 +40,42 @@ icon: th-list
                         {% endif %}
                     {% endfor %}
                 {% endfor %}
+            
+              {% for tech_note in site.tech_notes %}
+                {% if tech_note.categories contains category %}
+                <li>
+                    <i class="fa fa-file-text-o"></i><a class="title" href="{{ tech_note.url }}">{{ tech_note.title }}</a>
+                    
+                    {% capture categories %}
+                        {% for category in tech_note.categories %}
+                            <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+                        {% endfor %}
+                    {% endcapture %}
+                    
+                    {% capture category_size %}{{ categories | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
+                    {% unless category_size == '0' %}
+                        <span class="categories">
+                          <i class="fa fa-th-list"></i>{{ categories }}
+                        </span>             
+                    {% endunless %}
+                    
+                    {% capture tags %}
+                    {% for tag in tech_note.tags %}
+                        <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}
+                    {% endcapture %}   
+                    {% capture tag_size %}{{ tags | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
+                    {% unless category_size == '0' %}
+                        <span class="pageTag">
+                          <i class="fa fa-tags"></i>{{ tags }}
+                        </span>         
+                    {% endunless %} 
+                    
+                </li>
+                {% endif %}
+              {% endfor %}
+            
+            
             {% endfor %}
         </ul>
     </div>
@@ -41,17 +89,25 @@ icon: th-list
                     カテゴリー
                 </div>
                 <ul id="content-side" class="content-ul">
-                    {% for category in site.categories%}
+                    {% for category in sortedcategories %}
                         <li>
-                            <a class="scroll" href="#{{ category | first }}">
-                                {{ category | first }} ({{ category | last | size }})
+                            
+                        {% assign category_size = 0 %}
+                        {% if site.categories[category] %}
+                            {% assign category_size = site.categories[category].size %}
+                        {% endif %}
+                        {% for tech_note in site.tech_notes %}
+                            {% if tech_note.categories contains category %}
+                                {% assign category_size = category_size | plus: 1 %}
+                            {% endif %}
+                        {% endfor %}
+                            <a class="scroll" href="#{{ category }}">
+                                {{ category }} ({{ category_size }})
                             </a>
                         </li>
                     {% endfor %}
                 </ul>
             </div>
-            <!-- 其他div框放到这里 -->
-            <!-- <div class="side">bbbb</div> -->
         </div>
     </div>
 </div>
