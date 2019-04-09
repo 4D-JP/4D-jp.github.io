@@ -37,10 +37,8 @@ icon: tags
   {% for tech_note in site.tech_notes %}
     {% if tech_note.tags contains tag %}
     <li>
-        <time>
-        {{ tech_note.date | date:"%F" }} {{ tech_note.date | date: "%a" }}.
-        </time>
-        <a class="title" href="{{ tech_note.url }}">{{ tech_note.title }}</a>
+        
+        <i class="fa fa-th-book"></i><a class="title" href="{{ tech_note.url }}">{{ tech_note.title }}</a>
         
         {% capture categories %}
             {% for category in tech_note.categories %}
