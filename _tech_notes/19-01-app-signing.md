@@ -6,7 +6,7 @@ author: Timothy Aaron Penner
 position: Senior Technical Services Engineer, 4D Inc.
 date: 2019-04-01 00:00:00
 categories: アプリケーションビルド
-tags: mac windows codesign deployment
+tags: mac windows deployment
 version: 17
 ---
 
