@@ -50,10 +50,10 @@ category_dir: category/
 tag_dir: tag/
 
 #collections_dir: collections/
-#collections:
-#  tech_notes:
-#    output: true
-#    permalink: /:title
+collections:
+  tech_notes:
+    output: true
+    permalink: /:collection/:path/
 #  posts:
 #    output: true
 #    permalink: /:year/:month/:day/:title/   
