@@ -1,5 +1,5 @@
 {% capture tags %}
-  {% if post %}
+  {% if technote %}
     {% for tag in technote.tags %}
         <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}
