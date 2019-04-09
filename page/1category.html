@@ -25,8 +25,10 @@ icon: th-list
             {% for category in sortedcategories %}
             
             <h2 id="{{category}}">{{category}}</h2>
-                {% for posts in site.categories[category] %}
-                    {% for post in posts %}
+            
+            {% for post_category in site.categories %}
+                {% for posts in post_category[1] %}
+                      {% for post in posts %}
                         {% if post.url %}
                         <li>
                             <time>
@@ -38,8 +40,9 @@ icon: th-list
                             {% include tag.html %}
                         </li>
                         {% endif %}
-                    {% endfor %}
+                    {% endfor %}          
                 {% endfor %}
+            {% endfor %}
             
               {% for tech_note in site.tech_notes %}
                 {% if tech_note.categories contains category %}
