@@ -2,7 +2,7 @@
 layout: default
 title: テクニカルノート
 permalink: /notes/
-icon: fa-file-text-o
+icon: file-text-o
 ---
 
 <div class="page clearfix">
