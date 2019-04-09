@@ -49,6 +49,10 @@ kramdown:
 category_dir: category/
 tag_dir: tag/
 collections_dir: collections/
+
+collections:
+  posts:
+    output: true
 # excerpt
 excerpt_separator: "\n\n\n\n"
 
