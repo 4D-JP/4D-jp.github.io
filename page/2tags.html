@@ -88,8 +88,14 @@ icon: tags
                 <ul id="content-side" class="content-ul">
                     {% for tag in sortedtags %}
                     <li>
+                        {% assign tag_size = site.tags[tag].size %}
+                        {% for tech_note in site.tech_notes %}
+                            {% if tech_note.tags contains tag %}
+                                {% increment tag_size %}
+                            {% endif %}
+                        {% endfor %}
                         <a class="scroll" href="#{{ tag }}">
-                            {{ tag }} ({{ site.tags[tag].size }})
+                            {{ tag }} ({{ tag_size }})
                         </a>
                     </li>
                     {% endfor %}
