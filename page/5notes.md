@@ -6,7 +6,7 @@ icon: book
 ---
 
 <div class="page clearfix">
-      <div class="wide">
+      <div class="left">
       <h1>{{page.title}}</h1>
       <hr>
       <ul style="list-style: none;">
