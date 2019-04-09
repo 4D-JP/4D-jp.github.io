@@ -28,10 +28,10 @@ icon: book
       {% if tech_note.meta %}<i class="fa fa-key"></i>{{ tech_note.meta }}  {% endif %}
     </div>
     <div class="label-card">
-      {% include technote_category.html %}
+      {% include category.html %}
     </div>
     <div class="label-card">
-      {% include technote_tag.html %}
+      {% include tag.html %}
     </div>
   </div> 
   <div class="excerpt">
