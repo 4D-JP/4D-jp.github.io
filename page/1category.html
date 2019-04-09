@@ -24,8 +24,8 @@ icon: th-list
 
             {% for category in sortedcategories %}
             
-            <h2 id="{{category | first}}">{{category | first}}</h2>
-                {% for posts in category  %}
+            <h2 id="{{category}}">{{category}}</h2>
+                {% for posts in site.categories[category] %}
                     {% for post in posts %}
                         {% if post.url %}
                         <li>
