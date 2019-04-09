@@ -29,7 +29,7 @@ icon: book
           </div>
         
             {% capture categories %}
-                {% for category in page.categories %}
+                {% for category in tech_note.categories %}
                     <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
                 {% endfor %}
             {% endcapture %}
@@ -43,7 +43,7 @@ icon: book
             {% endunless %}
             
             {% capture tags %}
-                {% for tag in page.tags %}
+                {% for tag in tech_note.tags %}
                     <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
                 {% endfor %}
             {% endcapture %}   
