@@ -18,7 +18,7 @@ icon: tags
         {% assign technote_tags = site.tech_notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
         {% assign post_tags = tags | split:' ' %}
         {% assign all_tags = post_tags | concat:technote_tags %}
-        {% assign sortedtags = all_tags | sort %}
+        {% assign sortedtags = all_tags | uniq | sort %}
         
         <ul>
         {% for tag in sortedtags %}
@@ -88,7 +88,10 @@ icon: tags
                 <ul id="content-side" class="content-ul">
                     {% for tag in sortedtags %}
                     <li>
-                        {% assign tag_size = site.tags[tag].size %}
+                        {% assign tag_size = 0 %}
+                        {% if site.tags[tag] %}
+                            {% assign tag_size = site.tags[tag].size %}
+                        {% endif %}
                         {% for tech_note in site.tech_notes %}
                             {% if tech_note.tags contains tag %}
                                 {% assign tag_size = tag_size + 1 %}
