@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: テクニカルノート
 permalink: /notes/
 icon: book
