@@ -52,8 +52,10 @@ collections_dir: .
 collections:
   tech_notes:
     output: true
-    permalink: /:name
-    
+    permalink: /:title
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/   
 # excerpt
 excerpt_separator: "\n\n\n\n"
 
