@@ -15,10 +15,10 @@ icon: tags
           {% endfor %}
         {% endcapture %}
         
-        {% assign technote_tags =  site.tech_notes | map: 'tags' | uniq %}   
-        {% assign sortedtags = tags | concat: technote_tags | split:' ' | sort %}
-        <!-- {% assign sortedtags = tags | split:' ' | sort %} -->
-
+        {% assign technote_tags = site.tech_notes | map: 'tags' | uniq | split:' ' %}
+        {% assign post_tags = tags | split:' ' %}
+        {% assign sortedtags = post_tags | concat:technote_tags | sort %}
+        
         <ul>
         {% for tag in sortedtags %}
             
