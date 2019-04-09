@@ -23,10 +23,10 @@ type: page
       {% if tech_note.meta %}<i class="fa fa-key"></i>{{ tech_note.meta }}  {% endif %}
     </div>
     <div class="label-card">
-      {% include category.html %}
+      {% include technote_category.html %}
     </div>
     <div class="label-card">
-      {% include tag.html %}
+      {% include technote_tag.html %}
     </div>
   </div> 
   <div class="excerpt">
