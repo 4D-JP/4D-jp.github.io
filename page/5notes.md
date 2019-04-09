@@ -1,8 +1,8 @@
 ---
 layout: page
-title: リンク
-permalink: /links/
-icon: heart
+title: テクニカルノート
+permalink: /notes/
+icon: book
 type: page
 ---
 
@@ -12,5 +12,5 @@ type: page
 {% for tech_note in site.tech_notes %}
   <h1>{{ tech_note.title }}</h1>
   <h2>{{ tech_note.author }}</h2>
-  <p>{{ tech_note.position }}<</p>
+  <p>{{ tech_note.position }}</p>
 {% endfor %}
