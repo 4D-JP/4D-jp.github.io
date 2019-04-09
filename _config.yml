@@ -49,10 +49,10 @@ kramdown:
 category_dir: category/
 tag_dir: tag/
 collections_dir: collections/
-
 collections:
-  posts:
+  tech_notes:
     output: true
+    permalink: /:name
 # excerpt
 excerpt_separator: "\n\n\n\n"
 
