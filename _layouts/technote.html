@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="page clearfix" post>
-    <div class="wide">
+    <div class="left">
         <h1>{{page.title}}</h1>
         <div class="label">
 
@@ -16,17 +16,17 @@ layout: default
                 {% endif %}
             </div>
 
-            <div class="label-card">
+<!--             <div class="label-card">
                 {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
-            </div>
+            </div> -->
 
-            <div class="label-card">
-            {% include technote_category.html %}
-            </div>
+<!--             <div class="label-card">
+            {% include category.html %}
+            </div> -->
 
-            <div class="label-card">
-            {% include technote_tag.html %}
-            </div>
+<!--             <div class="label-card">
+            {% include tag.html %}
+            </div> -->
 
         </div>
         
@@ -51,4 +51,4 @@ layout: default
     }
 }());
 </script>
-<!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
+<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
