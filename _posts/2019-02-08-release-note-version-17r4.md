@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v17r4 修正リスト"
-date: 2019-04-03 11:04:00
+date: 2019-04-06 00:00:00
 categories: 修正リスト
 tags: 17r4
-build: 235715
+build: 235909
 version: 17r4
 ---
 
