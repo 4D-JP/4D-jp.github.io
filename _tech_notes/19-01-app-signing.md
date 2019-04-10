@@ -8,7 +8,7 @@ date: 2019-04-01 00:00:00
 categories: アプリケーションビルド
 tags: mac windows deployment
 version: 17
-excerpt: "まとめまとめまとめ"
+excerpt: "準備中"
 ---
 
-あああうう
+テクニカルノートは現在準備中です。
