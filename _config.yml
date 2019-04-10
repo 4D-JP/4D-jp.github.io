@@ -56,7 +56,7 @@ collections:
     permalink: /:collection/:path/
 
 # excerpt
-excerpt_separator: "\n\n\n\n"
+excerpt_separator: <!--more-->
 
 # paginate
 gems: [jekyll-paginate]
