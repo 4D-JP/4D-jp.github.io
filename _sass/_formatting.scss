@@ -15,7 +15,14 @@
 }
 
 .align-left {
-  clear: right;
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left-wrap {
+  clear: both;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -23,7 +30,15 @@
 }
 
 .align-right {
-  clear: left;
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+
+.align-right-wrap {
+  clear: both;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -31,6 +46,7 @@
 }
 
 .align-center {
+  clear: both;
   display: block;
   margin-left: auto;
   margin-right: auto;
