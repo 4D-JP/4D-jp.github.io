@@ -96,9 +96,9 @@ type: page
     * proTools - 4D buttons
 
 * [Rolf Bachmann](https://github.com/4dgeek)
-    * jsonEditor
-    * tagEditor
-    * tinymce
+    * JSON Editor
+    * Tag Editor
+    * TinyMCE
     
 * [Thomas Maul](https://github.com/ThomasMaul)
     * Barcode_SVG
