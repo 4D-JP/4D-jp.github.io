@@ -11,4 +11,4 @@ macOS Mojaveで``PHP Execute``を実行すると，「アプリケーション�
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [support.apple.com](https://support.apple.com/ja-jp/HT208436)
 
-Mac 32ビット版アプリケーションの提供は，17r4が最後のリリースとなります。17r5以降，Mac版は64ビット版アプリケーションのみのリリースとなり，PHPも64ビット版のバージョン``7.3.1``にアップデートされる予定です。
+32ビット版アプリケーションは，17r4が最後のリリースとなります。17r5以降，4Dおよび4D Serverは64ビット版アプリケーションのみのリリースとなり，PHPも64ビット版のバージョン``7.3.1``にアップデートされる予定です。
