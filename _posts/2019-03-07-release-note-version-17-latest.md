@@ -1,16 +1,30 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2019-04-09 21:46:00
+date: 2019-04-10 12:06:00
 categories: 修正リスト
 tags: "17.1" 
-build: 235940
+build: 236070
 version: 17.1
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099445 RESTプロセスを途中でアボートした場合，HTTPステータスコード``200``および``null``が返されました。また，以降のRESTリクエストが実行されなくなりました。
+
+**注記**: 修正により，RESTプロセスがアボートされた場合，HTTPステータスコード``500``が返されるようになりました。また，``ON ERR CALL``でエラーハンドリングメソッドがインストールされていない場合，下記のようなレスポンスが返されるようになりました。
+
+```json
+ "__ERROR": [
+        {
+            "message": "Error code: 53 (4DRT)\nインデックス範囲を越えています。\ncomponent: '4DRT'\ntask -6, name: 'REST'\n",
+            "componentSignature": "4DRT",
+            "errCode": 53
+        }
+    ]
+```
 
 * ACI0098029 SQLの``LEFT OUTER JOIN``から返される結果が正しくありませんでした。LEFTテーブルに合致するレコードがRIGHTテーブルに存在しないとしても，LEFTテーブルの行はすべて返され，合致するレコードが存在しないRIGHTテーブルの行には``Null``が返されるべきですが，そのような行は返されませんでした。
 
