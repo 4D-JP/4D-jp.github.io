@@ -49,6 +49,16 @@ $BORDER_RADIUS: 4px;
   border-radius: $BORDER_RADIUS;
   box-shadow: 0 1px 1px rgba($NOTICE-COLOR, 0.25);
 
+  a {
+    color: $NOTICE-COLOR;
+
+    &:hover {
+      color: mix(#000, $NOTICE-COLOR, 40%);
+    }
+  }
+  strong {
+    color: mix(#000, $NOTICE-COLOR, 50%);
+  }
 }
 
 .notice {
