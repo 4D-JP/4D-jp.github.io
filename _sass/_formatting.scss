@@ -41,23 +41,23 @@ $DANGER_COLOR: #ee6060;
 $BORDER_RADIUS: 4px;
 
 
-@mixin notice($NOTICE-COLOR) {
+@mixin notice($NOTICE_COLOR) {
   margin: 2em 0 !important;  /* override*/
   padding: 1em;
   color: #444;
-  background-color: mix(#fff, $NOTICE-COLOR, 90%);
+  background-color: mix(#fff, $NOTICE_COLOR, 90%);
   border-radius: $BORDER_RADIUS;
-  box-shadow: 0 1px 1px rgba($NOTICE-COLOR, 0.25);
+  box-shadow: 0 1px 1px rgba($NOTICE_COLOR, 0.25);
 
   a {
-    color: $NOTICE-COLOR;
+    color: $NOTICE_COLOR !important;
 
     &:hover {
-      color: mix(#000, $NOTICE-COLOR, 40%);
+      color: mix(#000, $NOTICE_COLOR, 40%) !important;
     }
   }
   strong {
-    color: mix(#000, $NOTICE-COLOR, 50%);
+    color: mix(#000, $NOTICE_COLOR, 50%);
   }
 }
 
