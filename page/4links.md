@@ -94,8 +94,14 @@ type: page
 * [Protée](http://www.protee.org/index.php/fr/produits/outils-de-gestion) - Olivier Grimbert
     * ogTools for 4D
     * proTools - 4D buttons
+
+* [Rolf Bachmann](https://github.com/4dgeek)
+    * jsonEditor
+    * tagEditor
+    * tinymce
     
 * [Thomas Maul](https://github.com/ThomasMaul)
     * Barcode_SVG
     * Tools_TM_export
     * UserMode_Component
+    
