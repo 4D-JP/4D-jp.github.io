@@ -19,6 +19,10 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  float: left;
+}
+.align-left::after {
+  clear: both;
 }
 
 .align-left-wrap {
@@ -36,6 +40,9 @@
   margin-right: auto;
   float: right;
 }
+.align-right::after {
+  clear: both;
+}
 
 .align-right-wrap {
   clear: both;
@@ -50,6 +57,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.align-center::after {
+  clear: both;
 }
 
 $SIMPLE_COLOR: #ccc;
