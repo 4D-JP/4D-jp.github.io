@@ -1,0 +1,77 @@
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.align-left {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+$SIMPLE_COLOR: #ccc
+$PRIMARY_COLOR: #707777
+$INFO_COLOR: #40a0bb
+$WARNING_COLOR: #d08010
+$SUCCESS_COLOR: #40aa40
+$DANGER_COLOR: #ee6060
+$BORDER_RADIUS: 4px
+
+
+@mixin notice($NOTICE-COLOR) {
+  margin: 2em 0 !important;  /* override*/
+  padding: 1em;
+  color: #444;
+  background-color: mix(#fff, $NOTICE-COLOR, 90%);
+  border-radius: $BORDER_RADIUS;
+  box-shadow: 0 1px 1px rgba($NOTICE-COLOR, 0.25);
+
+}
+
+.notice {
+  @include notice($SIMPLE_COLOR);
+}
+
+.notice--primary {
+  @include notice($PRIMARY_COLOR);
+}
+
+.notice--info {
+  @include notice($INFO_COLOR);
+}
+
+.notice--warning {
+  @include notice($WARNING_COLOR);
+}
+
+.notice--success {
+  @include notice($SUCCESS_COLOR);
+}
+
+.notice--danger {
+  @include notice($DANGER_COLOR);
+}
+
