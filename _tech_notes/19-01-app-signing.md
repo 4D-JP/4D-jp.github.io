@@ -45,8 +45,7 @@ There are a few potential disadvantages to signing an application. Here are some
 Before an application can be signed, the developer must obtain a signing certificate. There are some differences in how to obtain the certificate for Mac and Windows so this section of the document is broken into two sections, one specific to Windows and one specific to Mac.
 
 ### Windows
-The signing certificate can be obtained from numerous online SSL Certificate vendors. For this tech note a self-signed certificate is used; if this were for production then it would be recommended to use a certificate from a trusted source instead of a self-signed certificate.
-{: .sub3}
+   The signing certificate can be obtained from numerous online SSL Certificate vendors. For this tech note a self-signed certificate is used; if this were for production then it would be recommended to use a certificate from a trusted source instead of a self-signed certificate.
 
 #### Create a Self-Signed Certificate
 The following command and parameters will be used to create a self-signed certificate on Windows:
@@ -60,8 +59,7 @@ Parameter 4: **-FriendlyName** "4D, Inc"
 Parameter 5: **-CertStoreLocation** "Cert:\LocalMachine\My"
 ```
 {: .sub4}
-The values used for this tech note are filled in but the developer will want to use custom data for the **Subject** and **FriendlyName** parameters. The **CertStoreLocation** parameter can also use custom data but this location is used later on so if using something other than what is listed above, it will need to be substituted in later on.
-{: .sub4}
+The values used for this tech note are filled in but the developer will want to use custom data for the **Subject** and **FriendlyName** parameters. The **CertStoreLocation** parameter can also use custom data but this location is used later on so if using something other than what is listed above, it will need to be substituted in later on.  
 Once the values are updates, put it all together on a single line and run it from an Elevated PowerShell window like this:
 {: .sub4}
 ```shell
