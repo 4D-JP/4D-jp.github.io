@@ -13,8 +13,7 @@ version: 17
 テクニカルノートは現在準備中です。
 <!--more-->
 
-## Introduction
----
+## Introduction ---
 Application signing is an integral part of distribution cycle of applications. It is sort of like a tamper-resistant bottles or a ‘void if removed’ sticker – it serves as a way for the consumer to identify if the item has been tampered with. The signed application is only valid if application has not been tampered with. In contrast, making changes to the binary file after signing the application will invalidate the signature. Although this is an extra step in the in final stages of development, the added development time equates to better peace of mind for the end users.
 
 ## Why sign an application?
