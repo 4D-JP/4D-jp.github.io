@@ -23,6 +23,7 @@ There are many advantages to signing an application before distributing it to cu
 
 ### Advantages of signing an app
 Signing the application can be advantageous for both the developer and the end user. Here are a few examples of the advantages:
+{: .sub3}
 - Protects binary from being manipulated
 - Proves the application has not been tampered with
 - Proves the application is coming from a trusted source
@@ -31,6 +32,7 @@ Signing the application can be advantageous for both the developer and the end u
 
 ### Disadvantages of signing an app
 There are a few potential disadvantages to signing an application. Here are some examples of things to consider:
+{: .sub3}
 - It is an additional step in the process or preparing the application
   - The development process will become slightly longer
 - It requires a certificate from a trusted Certificate Authority ($$$)
