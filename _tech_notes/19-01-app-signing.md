@@ -49,16 +49,16 @@ The signing certificate can be obtained from numerous online SSL Certificate ven
 {: .sub4}
 #### Create a Self-Signed Certificate
 The following command and parameters will be used to create a self-signed certificate on Windows:
-  
+{: .sub4}
 Command: **New-SelfSignedCertificate**  
 Parameter 1: **-Type** Custom  
 Parameter 2: **-Subject** "CN=4D, O=4D Inc, C=US"  
 Parameter 3: **-KeyUsage** DigitalSignature  
 Parameter 4: **-FriendlyName** "4D, Inc"  
 Parameter 5: **-CertStoreLocation** "Cert:\LocalMachine\My"
-  
+{: .sub4}
 The values used for this tech note are filled in but the developer will want to use custom data for the **Subject** and **FriendlyName** parameters. The **CertStoreLocation** parameter can also use custom data but this location is used later on so if using something other than what is listed above, it will need to be substituted in later on.  
-  
+{: .sub4}
 Once the values are updates, put it all together on a single line and run it from an Elevated PowerShell window like this:
 {: .sub4}
 ```shell
