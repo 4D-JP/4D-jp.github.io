@@ -13,7 +13,8 @@ version: 17
 テクニカルノートは現在準備中です。
 <!--more-->
 
-## Introduction ---
+## Introduction
+---
 Application signing is an integral part of distribution cycle of applications. It is sort of like a tamper-resistant bottles or a ‘void if removed’ sticker – it serves as a way for the consumer to identify if the item has been tampered with. The signed application is only valid if application has not been tampered with. In contrast, making changes to the binary file after signing the application will invalidate the signature. Although this is an extra step in the in final stages of development, the added development time equates to better peace of mind for the end users.
 
 ## Why sign an application?
@@ -26,6 +27,7 @@ Signing the application can be advantageous for both the developer and the end u
 - Proves the application has not been tampered with
 - Proves the application is coming from a trusted source
 - Gets rid of the “Unknown Publisher” message when running on Windows
+{: .sub3}
 
 ### Disadvantages of signing an app
 There are a few potential disadvantages to signing an application. Here are some examples of things to consider:
@@ -34,6 +36,7 @@ There are a few potential disadvantages to signing an application. Here are some
 - It requires a certificate from a trusted Certificate Authority ($$$)
   - The development cost will be slightly more
 - The first time the application is launched the signature is verified
+{: .sub3}
 
 ![screenshot1](/images/AppSign-1.png){: .align-center}
 
@@ -45,7 +48,8 @@ There are a few potential disadvantages to signing an application. Here are some
 
 ![My helpful screenshot-2](/images/AppSign-2.png){: .align-right}Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{: .text-center}
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{: .text-center}
 
 **Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse [cillum dolore](#) eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 {: .text-justify .notice--warning}
