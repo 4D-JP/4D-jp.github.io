@@ -8,16 +8,27 @@
     }
     
     article > hr {
-	    border-top: 1px dashed #007;
-    }
-    h2 > hr {
-	    border-top: 1px dashed #007;
-    }
+		border-top: 1px dashed #007;
+		margin: 0px 0px 10px;
+	}
 
     h2 {
 	    color: #007;
     }
-    
+
+    article > h3 {
+	    margin-left: 10px;
+    }
+	.sub3 {
+		margin-left: 10px;
+	}
+    article > h4 {
+	    margin-left: 20px;
+    }
+	.sub4 {
+		margin-left 20px;
+	}
+	
     p {
     clear: both;   
     }
