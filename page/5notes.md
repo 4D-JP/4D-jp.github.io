@@ -5,7 +5,7 @@ permalink: /notes/
 icon: file-text-o
 ---
 
-<div class="page clearfix">
+<div class="page clearfix" notes>
       <div class="left">
       <h1>{{page.title}}</h1>
       <hr>
