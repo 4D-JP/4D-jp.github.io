@@ -9,10 +9,11 @@ icon: file-text-o
       <div class="left">
       <h1>{{page.title}}</h1>
       <hr>
-      <ul style="list-style: none;">
+      <ul>
       {% for tech_note in site.tech_notes %}
-      <h2><a class="post-link" href="{{ tech_note.url | prepend: site.baseurl }}">{{ tech_note.title }}</a></h2>      
       <li>
+      <h2><a class="post-link" href="{{ tech_note.url | prepend: site.baseurl }}">{{ tech_note.title }}</a></h2>      
+    
         <div class="label">
               
           <div class="label-card">
