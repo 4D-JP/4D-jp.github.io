@@ -8,7 +8,7 @@ icon: file-text-o
 <div class="page clearfix" notes>
       <div class="left">
       <h1>{{page.title}}</h1>
-      <hr style="all:none;">
+      <hr>
       <ul>
       {% for tech_note in site.tech_notes %}
       <li>
