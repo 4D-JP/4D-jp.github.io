@@ -13,7 +13,26 @@ version: 17
 テクニカルノートは現在準備中です。
 <!--more-->
 
-テクニカルノートを公開予定です。
+## Introduction<hr>
+Application signing is an integral part of distribution cycle of applications. It is sort of like a tamper-resistant bottles or a ‘void if removed’ sticker – it serves as a way for the consumer to identify if the item has been tampered with. The signed application is only valid if application has not been tampered with. In contrast, making changes to the binary file after signing the application will invalidate the signature. Although this is an extra step in the in final stages of development, the added development time equates to better peace of mind for the end users.
+
+## Why sign an application?<hr>
+There are many advantages to signing an application before distributing it to customers, and possibly only a few disadvantages. Generally speaking, the advantages outweigh the disadvantages; but it is up to the developer to decide what is right for their own development and deployment practice. For example, a developer providing in-house development work for internal database may not find this to be as important as it would be for someone developing a vertical market application. Although, application signing could actually be beneficial in both situations. Let’s explore the pros and cons.
+
+### Advantages of signing an app
+Signing the application can be advantageous for both the developer and the end user. Here are a few examples of the advantages:
+- Protects binary from being manipulated
+- Proves the application has not been tampered with
+- Proves the application is coming from a trusted source
+- Gets rid of the “Unknown Publisher” message when running on Windows
+
+### Disadvantages of signing an app
+There are a few potential disadvantages to signing an application. Here are some examples of things to consider:
+- It is an additional step in the process or preparing the application
+  - The development process will become slightly longer
+- It requires a certificate from a trusted Certificate Authority ($$$)
+  - The development cost will be slightly more
+- The first time the application is launched the signature is verified
 
 ![screenshot1](/images/AppSign-1.png){: .align-center}
 
