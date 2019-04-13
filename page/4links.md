@@ -63,6 +63,7 @@ type: page
     * AJUI_FloatingLabel
     * RegexComponent
     * RegexLab5
+    * [AJUI_Tip](https://ch-fr.4d.com/ajuitip-10)
 
 * [Bruno Legay](https://github.com/blegay)
     * aws_component
