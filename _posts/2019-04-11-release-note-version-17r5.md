@@ -206,3 +206,11 @@ PROCESS 4D TAGS($script;$resp)
 **注記**: 17.xクライアント/サーバー版の``entity.save()``は，バイナリ形式のオブジェクト型フィールドに対応していません。これは仕様です。
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [entity.save()](https://livedoc.4d.com/--17-R2.1720/ORDA/entitysave.305-3857761.ja.html)
+
+* ACI0099311 ``On Header Click``イベントで``LISTBOX GET CELL POSITION``を使用した場合，正しい列番号が返されませんでした。
+
+* ACI0099308 Windows版のみ。インタープリターモードで``New process``に``32*1024``以下のスタックサイズを指定した場合，スタック不足エラーが返されました。
+
+**注記**: ドキュメントに記述されているように，デフォルト値（``0``）を渡さない場合，スタックサイズは少なくとも``64*1024``を確保することが推奨されています。
+
+<i class="fa fa-external-link" aria-hidden="true"></i> [New process](https://doc.4d.com/4Dv17/4D/17.1/New-process.301-4179077.ja.html)
