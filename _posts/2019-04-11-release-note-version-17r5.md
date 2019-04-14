@@ -266,3 +266,7 @@ PROCESS 4D TAGS($script;$resp)
 * ACI0099108 4D ViewドキュメントをView Proに変換した場合，データ型が違う値を連結するようなフォーミュラが正しく変換されませんでした。
 
 * ACI0099106 ``VP New Document ``を使用した場合，View Proエリアのタブストリップバーが消えました。
+
+* ACI0099299 トランスポーターの``headerCharset``を``mail mode ISO2022JP``に設定した場合，ヘッダーが正しくエンコードされませんでした。
+
+* ACI0099116 Write Proエリアに対して``OBJECT GET RGB COLORS``を使用した場合，``altBackgrndColor``に正しい値が返されませんでした。
