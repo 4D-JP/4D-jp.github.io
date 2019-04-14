@@ -237,4 +237,4 @@ PROCESS 4D TAGS($script;$resp)
 
 * ACI0099260 日本語版のようこそ画面に表示されるバナー画像をクリックした場合，英語（米国）のWebサイトにジャンプしました。
 
-* ACI0099138 Mac版のみ。4D for iOSの「データ」ページで「プロダクションサーバーデータファイル」を選択して，サーバーのURLを入力した場合，MobileApps > Key.mobileapp フォルダーに``key.mobilekey ``ファイルが作成されませんでした。プロダクションサーバーを使用する場合，リモートサーバーの``/mobileapp/$catalog``にアクセスしてカタログとデータをダンプするために``key.mobilekey ``ファイルを作成する必要があります。
+* ACI0099138 Mac版のみ。4D for iOSの「データ」ページで「プロダクションサーバーデータファイル」を選択して，サーバーのURLを入力した場合，MobileApps > Key.mobileapp フォルダーに``key.mobilekey``ファイルが作成されませんでした。プロダクションサーバーを使用する場合，リモートサーバーの``/mobileapp/$catalog``にアクセスしてカタログとデータをダンプするために``key.mobilekey``ファイルを作成する必要があります。
