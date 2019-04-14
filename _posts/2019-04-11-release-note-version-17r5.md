@@ -4,7 +4,7 @@ title: "4D v17r5 修正リスト"
 date: 2000-04-11 00:00:00
 categories: 修正リスト
 tags: 17r5
-build: ------
+build: 235616
 version: 17r5
 ---
 
