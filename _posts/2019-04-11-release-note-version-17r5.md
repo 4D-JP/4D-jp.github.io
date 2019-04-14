@@ -190,3 +190,19 @@ PROCESS 4D TAGS($script;$resp)
 * ACI0099284 無効なホスト名が指定された場合，``transporter.checkConnection()``は``status``に``False``を返しますが，``transporter.send()``は``True``を返しました。
 
 * ACI0099268 Write Proに``\n``文字が含まれるテキストを``WP SET TEXT``で挿入した場合，改行が挿入される代わりに重ねてテキストが表示されました。
+
+* ACI0099258 ``VERIFY CURRENT DATA FILE``に無効なファイルパスを渡した場合，アプリケーションがクラッシュしました。
+
+* ACI0099248 プロジェクトモードのメニューエディターでメニューアイテムを追加しようとすると，アプリケーションがクラッシュすることがありました。比較的，小さなメニューでは問題ありません。
+
+* ACI0099233 Mac版のみ。リストにバインドされたタブコントールのタブを``SET LIST ITEM PROPERTY``で``disabled``状態に設定した場合，タブの表示が``enabled``状態と変わりませんでした。
+
+* ACI0099223 4D ViewドキュメントをView Proに変換した場合，時間を返す関数が正しく変換されませんでした。
+
+**注記**: ``Current time``は，日付と時間を返す``NOW()``ではなく``RUNTIME_CURRENT_TIME``に変換されるようになりました。
+
+* ACI0099139 クライアント/サーバー版のみ。Write Proドキュメント（バイナリ形式の特殊なオブジェクト型）はORDAの``save()``メソッドで保存できませんでした。
+
+**注記**: 17.xクライアント/サーバー版の``entity.save()``は，バイナリ形式のオブジェクト型フィールドに対応していません。これは仕様です。
+
+<i class="fa fa-external-link" aria-hidden="true"></i> [entity.save()](https://livedoc.4d.com/--17-R2.1720/ORDA/entitysave.305-3857761.ja.html)
