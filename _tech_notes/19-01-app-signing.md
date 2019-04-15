@@ -46,7 +46,7 @@ Before an application can be signed, the developer must obtain a signing certifi
 
 ### Windows
 The signing certificate can be obtained from numerous online SSL Certificate vendors. For this tech note a self-signed certificate is used; if this were for production then it would be recommended to use a certificate from a trusted source instead of a self-signed certificate.
-{: .sub4}
+{: .sub3}
 #### Create a Self-Signed Certificate
 The following command and parameters will be used to create a self-signed certificate on Windows:
 {: .sub4}
@@ -66,11 +66,36 @@ New-SelfSignedCertificate -Type Custom -Subject "CN=4D, O=4D Inc, C=US" -KeyUsag
 ```
 {: .sub4}
 If the command is executed properly the output may look like this:
+{: .sub4}
+```shell
 PSParentPath: Microsoft.PowerShell.Security\Certificate::LocalMachine\My
 Thumbprint Subject
 ---------- -------
 A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 CN=4D, O=4D Inc, C=US
-The thumbprint of the certificate is important and will be used later on. In this example the thumbprint is A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 but the thumbprint for
+```
+{: .sub4}
+The thumbprint of the certificate is important and will be used later on. In this example the thumbprint is A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 but the thumbprint for those that are following along at home will be different. Be sure to include the correct thumbprint for the examples in the following sections.
+
+Note: This process needs to be done from a PowerShell window with Elevated Privileges.
+{: .sub4 .notice--warning}
+
+Note: This process needs to be done from a PowerShell window with Elevated Privileges.
+{: .sub4 .notice}
+
+Note: This process needs to be done from a PowerShell window with Elevated Privileges.
+{: .sub4 .notice--primary}
+
+Note: This process needs to be done from a PowerShell window with Elevated Privileges.
+{: .sub4 .notice--info}
+
+Note: This process needs to be done from a PowerShell window with Elevated Privileges.
+{: .sub4 .notice--success}
+
+Note: This process needs to be done from a PowerShell window with Elevated Privileges.
+{: .sub4 .notice--danger}
+
+
+
 
 ![screenshot1](/images/AppSign-1.png){: .align-center}
 
