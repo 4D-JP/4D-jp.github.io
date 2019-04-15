@@ -61,7 +61,7 @@ The values used for this tech note are filled in but the developer will want to 
 {: .sub4}
 Once the values are updates, put it all together on a single line and run it from an Elevated PowerShell window like this:
 {: .sub4}
-```powershell
+```
 New-SelfSignedCertificate -Type Custom -Subject "CN=4D, O=4D Inc, C=US" -KeyUsage DigitalSignature -FriendlyName "4D, Inc" -CertStoreLocation "Cert:\LocalMachine\My"
 ```
 {: .sub4}
@@ -78,8 +78,7 @@ The thumbprint of the certificate is important and will be used later on. In thi
 {: .sub4}
 Note: This process needs to be done from a PowerShell window with Elevated Privileges.
 {: .sub4 .notice--info}
-
-####Export the certificate to PFX
+#### Export the certificate to PFX
 The next step is to export the certificate to a PFX file, but in order to do this a password must be set. The PowerShell command ConvertTo-SecureString is used to create the secure password and store it into a session variable ($pwd). The PowerShell command ExportPfxCertificate is used to export the certificate in PFX format using the $pwd session variable.
 {: .sub4}
 The following 2 lines PowerShell code will create a password in the $pwd session variable and then use the $pwd session variable in the exporting of the certificate.
