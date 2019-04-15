@@ -74,7 +74,9 @@ layout: default
                 </div>
                 <ul class="content-ul" recent>
                     {% for post in site.posts offset: 0 limit: 10  %}
+                        {% unless post.categories contains '修正リスト' %}
                         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                        {% endunless %}
                     {% endfor %}
                 </ul>
             </div>
@@ -98,7 +100,6 @@ layout: default
                     {% endfor %}
                 </ul>
             </div>
-            <!-- 其他div框放到这里 -->
             <div class="side">
                 <div>
                     <i class="fa fa-tags"></i>
@@ -116,7 +117,6 @@ layout: default
                       {% endif %}
                     {% endfor %}
                     {% assign diff = max | minus: min %}
-
                     {% for tag in site.tags %}
                       {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff %}
                       {% assign base = temp | divided_by: 4 %}
@@ -137,16 +137,6 @@ layout: default
                     {% endfor %}
                 </div>
             </div>
-
-            <!-- <div class="side">
-                <div>
-                    <i class="fa fa-external-link"></i>
-                    Links
-                </div>
-                <ul  class="content-ul">
-
-                </ul>
-            </div> -->
         </div>
     </div>
 </div>
