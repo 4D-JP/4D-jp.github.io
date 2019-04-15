@@ -8,7 +8,7 @@ layout: default
         <small>テクニカルサポートブログ</small>
         <hr>
         <ul>
-            {% assign category_release_note = 'リリースノート' %}
+            {% assign category_release_note = '修正リスト' %}
             {% for post in paginator.posts %}
             
             {% unless post.categories contains category_release_note %}
