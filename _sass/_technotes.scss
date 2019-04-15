@@ -322,7 +322,7 @@ $BORDER_RADIUS: 4px;
   color: #444;
   background-color: mix(#fff, $NOTICE_COLOR, 70%);
   border-radius: $BORDER_RADIUS;
-  box-shadow: 0 1px 1px rgba($NOTICE_COLOR, 0.1);
+  box-shadow: 0 1px 1px rgba($NOTICE_COLOR, 0.5);
 
   a {
     color: $NOTICE_COLOR !important;
