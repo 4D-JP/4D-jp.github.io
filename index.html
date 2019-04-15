@@ -8,10 +8,8 @@ layout: default
         <small>テクニカルサポートブログ</small>
         <hr>
         <ul>
-            {% assign category_release_note = '修正リスト' %}
             {% for post in paginator.posts %}
-            
-            {% unless post.categories contains category_release_note %}
+            {% unless post.categories contains '修正リスト' %}
               <li>
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
