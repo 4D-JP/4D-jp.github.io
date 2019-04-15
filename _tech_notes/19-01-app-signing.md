@@ -61,7 +61,7 @@ The values used for this tech note are filled in but the developer will want to 
 {: .sub4}
 Once the values are updates, put it all together on a single line and run it from an Elevated PowerShell window like this:
 {: .sub4}
-```
+```powershell
 New-SelfSignedCertificate -Type Custom -Subject "CN=4D, O=4D Inc, C=US" -KeyUsage DigitalSignature -FriendlyName "4D, Inc" -CertStoreLocation "Cert:\LocalMachine\My"
 ```
 {: .sub4}
@@ -79,9 +79,9 @@ The thumbprint of the certificate is important and will be used later on. In thi
 Note: This process needs to be done from a PowerShell window with Elevated Privileges.
 {: .sub4 .notice--info}
 #### Export the certificate to PFX
-  The next step is to export the certificate to a PFX file, but in order to do this a password must be set. The PowerShell command ConvertTo-SecureString is used to create the secure password and store it into a session variable ($pwd). The PowerShell command ExportPfxCertificate is used to export the certificate in PFX format using the $pwd session variable.
-
-    The following 2 lines PowerShell code will create a password in the $pwd session variable and then use the $pwd session variable in the exporting of the certificate.
+The next step is to export the certificate to a PFX file, but in order to do this a password must be set. The PowerShell command ConvertTo-SecureString is used to create the secure password and store it into a session variable ($pwd). The PowerShell command ExportPfxCertificate is used to export the certificate in PFX format using the $pwd session variable.
+{: .sub4}
+The following 2 lines PowerShell code will create a password in the $pwd session variable and then use the $pwd session variable in the exporting of the certificate.
 {: .sub4}
 ```powershell
 $pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
@@ -113,24 +113,49 @@ Parameter 3: -Password $pwd
 {: .sub4}
 The second command written out in the terminal looks like this (due to the length of the line and the width of this document, the single line is depicted on multiple lines):
 {: .sub4}
-
+```powershell
 Export-PfxCertificate -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 -FilePath C:\signing\cert.pfx -Password $pwd
-
+```
+{: .sub4}
 This exports the certificate iditified by the thumbprint and exports it to the path specified by the FilePath parameter, using the password defined in the $pwd session variable. The developer will need to substitute the correct thumbprint when running this command.
+{: .sub4}
 Once all of the data points have been updated the developer can run the two commands like this:
-
+{: .sub4}
+```powershell
 $pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
 Export-PfxCertificate -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 -FilePath C:\signing\cert.pfx -Password $pwd
-This will place the password protected PFX certificate into the location specified. This PFX file will be used later for signing the application, and the password is required to use the PFX file.
+```
+{: .sub4}
+This will place the password protected PFX certificate into the location specified. This PFX file will be used later for signing the 
+application, and the password is required to use the PFX file.
+{: .sub4}
 The output observed in PowerShell may look like this:
-The second command written out in the terminal looks like this (due to the length of the line and the width of this document, the single line is depicted on multiple lines):
-Export-PfxCertificate -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 -FilePath C:\signing\cert.pfx -Password $pwd
-This exports the certificate iditified by the thumbprint and exports it to the path specified by the FilePath parameter, using the password defined in the $pwd session variable. The developer will need to substitute the correct thumbprint when running this command.
-Once all of the data points have been updated the developer can run the two commands like this:
-$pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
-Export-PfxCertificate -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 -FilePath C:\signing\cert.pfx -Password $pwd
-This will place the password protected PFX certificate into the location specified. This PFX file will be used later for signing the application, and the password is required to use the PFX file.
-The output observed in PowerShell may look like this:
+{: .sub4}
+```powershell
+Directory: C:\signing
+Mode LastWriteTime Length Name
+---- ------------- ------ ----
+-a---- 8/9/2018 3:06 PM 2701 cert.pfx
+```
+{: .sub4}
+This indicates that the file has been exported and provides a short summary.
+{: .sub4}
+### MacOS
+Signing Certificates for the MacOS platform can be created from either inside of XCode or from the Apple Developer website. In both cases, an active membership to the Apple Developer Program is required.
+{: .sub3}
+#### Obtaining the certificate from Apple’s website
+The Apple Developer website is available from the following URL: https://developer.apple.com/account/
+{: .sub4}
+The steps for obtaining the certificate from Apple’s website have changed over the years. Currently, the developer needs to use the iTunes connect portal to obtain the certificate.
+{: .sub4}
+#### Obtaining the certificate using XCode
+To create the certificate from within XCode, first launch XCode.
+{: .sub4}
+From the XCode drop down menu choose the Preferences menu item:
+{: .sub4}
+
+
+
 
 
 
