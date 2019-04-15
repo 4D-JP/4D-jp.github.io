@@ -61,13 +61,13 @@ The values used for this tech note are filled in but the developer will want to 
 {: .sub4}
 Once the values are updates, put it all together on a single line and run it from an Elevated PowerShell window like this:
 {: .sub4}
-```shell
+```powershell
 New-SelfSignedCertificate -Type Custom -Subject "CN=4D, O=4D Inc, C=US" -KeyUsage DigitalSignature -FriendlyName "4D, Inc" -CertStoreLocation "Cert:\LocalMachine\My"
 ```
 {: .sub4}
 If the command is executed properly the output may look like this:
 {: .sub4}
-```shell
+```powershell
 PSParentPath: Microsoft.PowerShell.Security\Certificate::LocalMachine\My
 Thumbprint Subject
 ---------- -------
@@ -84,7 +84,7 @@ The next step is to export the certificate to a PFX file, but in order to do thi
 {: .sub4}
 The following 2 lines PowerShell code will create a password in the $pwd session variable and then use the $pwd session variable in the exporting of the certificate.
 {: .sub4}
-```shell
+```powershell
 $pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
 Export-PfxCertificate -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 -FilePath C:\signing\cert.pfx -Password $pwd
 ```
@@ -99,20 +99,21 @@ Parameter 1: -String “thePassword” Parameter
 {: .sub4}
 The first command written out in the terminal looks like this:
 {: .sub4}
-```shell
+```powershell
 $pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
 ```
 {: .sub4}
-This stores the password (“thePassword”) as a secure string within the $pwd session variable to be used in the next line of PowerShell code. The developer will want to modify the value in the password parameter and then substitute the correct password in for the following examples.  
-　　　
-Here is the breakdown of the second command and parameters used:  
-　　　
+This stores the password (“thePassword”) as a secure string within the $pwd session variable to be used in the next line of PowerShell code. The developer will want to modify the value in the password parameter and then substitute the correct password in for the following examples.
+{: .sub4}
+Here is the breakdown of the second command and parameters used:
+{: .sub4}
 Command 2: ExportPfxCertificate  
 Parameter 1: -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304  
 Parameter 2: -FilePath C:\signing\cert.pfx  
-Parameter 3: -Password $pwd  
-　　　
-The second command written out in the terminal looks like this (due to the length of the line and the width of this document, the single line is depicted on multiple lines):  
+Parameter 3: -Password $pwd
+{: .sub4}
+The second command written out in the terminal looks like this (due to the length of the line and the width of this document, the single line is depicted on multiple lines):
+{: .sub4}
 
 Export-PfxCertificate -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 -FilePath C:\signing\cert.pfx -Password $pwd
 
