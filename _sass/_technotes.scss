@@ -1,50 +1,5 @@
-.page[notes] {
-    a {
-        color: #007;
-        transition: 0.5s ease;
-        &:hover {
-            color: #4d6dad;
-        }
-    }
-    
-	article {
-		hr {
-			border-top: 1px dashed #007;
-			margin: 0px 0px 10px;
-		}
-		h3 {
-			margin-left: 20px;
-			font-weight: bold;
-			font-size: 20px;
-		}
-		.sub3 {
-			margin-left: 20px;
-		}
-		h4 {
-			margin-left: 40px;
-			font-weight: bold;
-			font-size: 16px;
-		}
-		.sub4 {
-			margin-left: 40px;
-		}
-		li {
-			color: #000 !important;
-		}
-	
-	}
-	
-    p {
-		clear: both;   
-    }
-
-	h2 {
-		color: #007;
-		border: 0px !important;
-	}
-    
-    .wide .left {
-        >ul {
+@mixin technote_layout {
+    >ul {
             padding: 0;
             >li {
                 list-style: none;
@@ -99,8 +54,8 @@
                     }
                 }
             }
-        }
-        .pagination {
+	}
+	        .pagination {
             text-align: center;
             .previous,
             .next {
@@ -114,6 +69,60 @@
                 color: #cbcbcb;
             }
         }
+}
+
+
+
+.page[notes] {
+    a {
+        color: #007;
+        transition: 0.5s ease;
+        &:hover {
+            color: #4d6dad;
+        }
+    }
+    
+	article {
+		hr {
+			border-top: 1px dashed #007;
+			margin: 0px 0px 10px;
+		}
+		h3 {
+			margin-left: 20px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.sub3 {
+			margin-left: 20px;
+		}
+		h4 {
+			margin-left: 40px;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.sub4 {
+			margin-left: 40px;
+		}
+		li {
+			color: #000 !important;
+		}
+	
+	}
+	
+    p {
+		clear: both;   
+    }
+
+	h2 {
+		color: #007;
+		border: 0px !important;
+	}
+    
+    .wide {
+	    @include technote_layout;
+	}
+	.left {
+	    @include technote_layout;
     }
     .right {
         .wrap {
