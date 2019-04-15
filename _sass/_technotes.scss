@@ -1,4 +1,114 @@
-@mixin technote_layout {
+.page[notes] {
+    a {
+        color: #007;
+        transition: 0.5s ease;
+        &:hover {
+            color: #4d6dad;
+        }
+    }
+    
+	article {
+		hr {
+			border-top: 1px dashed #007;
+			margin: 0px 0px 10px;
+		}
+		h3 {
+			margin-left: 20px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.sub3 {
+			margin-left: 20px;
+		}
+		h4 {
+			margin-left: 40px;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.sub4 {
+			margin-left: 40px;
+		}
+		li {
+			color: #000 !important;
+		}
+	
+	}
+	
+    p {
+		clear: both;   
+    }
+
+	h2 {
+		color: #007;
+		border: 0px !important;
+	}
+    
+    .wide {
+            padding: 0;
+            color: #333;
+            h2 {
+                    border: none;
+                    font-size: 23px;
+                    font-weight: bold;
+                    margin: 0;
+            }
+            .label {
+                    margin-bottom: 15px;
+                    overflow: hidden;
+                    .label-card {
+                        float: left;
+                        margin-right: 15px;
+                        i {
+                            padding-right: 0;
+                            margin-right: 3px;
+                            color: #6b6a6a;
+                        }
+                    }
+                    .categories {
+                        padding: 0;
+                    }
+            }
+            .excerpt {
+                    h2 {
+                        font-size: 24px;
+                    }
+                    h3 {
+                        font-size: 22px;
+                    }
+                    h4 {
+                        font-size: 20px;
+                    }
+            }
+            .read-all {
+                    text-align: right;
+                    font-size: 14px;
+                    a {
+                        color: #778ab0;
+                        transition: 0.2s ease;
+                        &:hover {
+                            color: #5872a7;
+                        }
+                        i {
+                            padding-right: 3px;
+                        }
+                    }
+            }
+			.pagination {
+            	text-align: center;
+        		.previous,
+            	.next {
+                	font-size: 20px;
+                	padding: 0 5px;
+            		}
+            		.page_number {
+						padding: 0 5px;
+					}
+            	.disable {
+                	color: #cbcbcb;
+            	}
+        	}
+	}
+	.left {
     >ul {
             padding: 0;
             >li {
@@ -69,60 +179,6 @@
                 color: #cbcbcb;
             }
         }
-}
-
-
-
-.page[notes] {
-    a {
-        color: #007;
-        transition: 0.5s ease;
-        &:hover {
-            color: #4d6dad;
-        }
-    }
-    
-	article {
-		hr {
-			border-top: 1px dashed #007;
-			margin: 0px 0px 10px;
-		}
-		h3 {
-			margin-left: 20px;
-			font-weight: bold;
-			font-size: 20px;
-		}
-		.sub3 {
-			margin-left: 20px;
-		}
-		h4 {
-			margin-left: 40px;
-			font-weight: bold;
-			font-size: 16px;
-		}
-		.sub4 {
-			margin-left: 40px;
-		}
-		li {
-			color: #000 !important;
-		}
-	
-	}
-	
-    p {
-		clear: both;   
-    }
-
-	h2 {
-		color: #007;
-		border: 0px !important;
-	}
-    
-    .wide {
-	    @include technote_layout;
-	}
-	.left {
-	    @include technote_layout;
     }
     .right {
         .wrap {
