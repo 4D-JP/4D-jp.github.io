@@ -8,10 +8,14 @@
     }
     
 	article {
+		p {
+			clear: both;   
+    		}
 		hr {
 			border-top: 1px dashed #007;
 			margin: 0px 0px 10px;
 		}
+
 		h3 {
 			margin-left: 20px;
 			font-weight: bold;
@@ -34,14 +38,7 @@
 	
 	}
 	
-    p {
-		clear: both;   
-    }
 
-	h2 {
-		color: #007;
-		border: 0px !important;
-	}
     
     .wide {
             color: #333;
