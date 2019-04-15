@@ -78,6 +78,7 @@ The thumbprint of the certificate is important and will be used later on. In thi
 {: .sub4}
 Note: This process needs to be done from a PowerShell window with Elevated Privileges.
 {: .sub4 .notice--info}
+
 ####Export the certificate to PFX
 The next step is to export the certificate to a PFX file, but in order to do this a password must be set. The PowerShell command ConvertTo-SecureString is used to create the secure password and store it into a session variable ($pwd). The PowerShell command ExportPfxCertificate is used to export the certificate in PFX format using the $pwd session variable.
 {: .sub4}
@@ -87,6 +88,7 @@ The following 2 lines PowerShell code will create a password in the $pwd session
 $pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
 Export-PfxCertificate -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 -FilePath C:\signing\cert.pfx -Password $pwd
 ```
+{: .sub4}
 Here is the breakdown of the first command and parameters used:
 {: .sub4}
 Return value stored in: $pwd  
@@ -100,15 +102,16 @@ The first command written out in the terminal looks like this:
 ```shell
 $pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
 ```
+{: .sub4}
 This stores the password (“thePassword”) as a secure string within the $pwd session variable to be used in the next line of PowerShell code. The developer will want to modify the value in the password parameter and then substitute the correct password in for the following examples.  
-　
+　　　
 Here is the breakdown of the second command and parameters used:  
-　
+　　　
 Command 2: ExportPfxCertificate  
 Parameter 1: -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304  
 Parameter 2: -FilePath C:\signing\cert.pfx  
 Parameter 3: -Password $pwd  
-　
+　　　
 The second command written out in the terminal looks like this (due to the length of the line and the width of this document, the single line is depicted on multiple lines):  
 
 Export-PfxCertificate -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 -FilePath C:\signing\cert.pfx -Password $pwd
