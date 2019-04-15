@@ -318,7 +318,6 @@ $BORDER_RADIUS: 4px;
 
 
 @mixin notice($NOTICE_COLOR) {
-  margin: 2em 0 !important;  /* override*/
   padding: 1em;
   color: #444;
   background-color: mix(#fff, $NOTICE_COLOR, 90%);
