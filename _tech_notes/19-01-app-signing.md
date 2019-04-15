@@ -75,7 +75,7 @@ A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 CN=4D, O=4D Inc, C=US
 ```
 {: .sub4}
 The thumbprint of the certificate is important and will be used later on. In this example the thumbprint is A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 but the thumbprint for those that are following along at home will be different. Be sure to include the correct thumbprint for the examples in the following sections.
-
+{: .sub4}
 Note: This process needs to be done from a PowerShell window with Elevated Privileges.
 {: .sub4 .notice--warning}
 
