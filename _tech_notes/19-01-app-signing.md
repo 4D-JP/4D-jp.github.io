@@ -79,9 +79,9 @@ The thumbprint of the certificate is important and will be used later on. In thi
 Note: This process needs to be done from a PowerShell window with Elevated Privileges.
 {: .sub4 .notice--info}
 #### Export the certificate to PFX
-The next step is to export the certificate to a PFX file, but in order to do this a password must be set. The PowerShell command ConvertTo-SecureString is used to create the secure password and store it into a session variable ($pwd). The PowerShell command ExportPfxCertificate is used to export the certificate in PFX format using the $pwd session variable.
-{: .sub4}
-The following 2 lines PowerShell code will create a password in the $pwd session variable and then use the $pwd session variable in the exporting of the certificate.
+  The next step is to export the certificate to a PFX file, but in order to do this a password must be set. The PowerShell command ConvertTo-SecureString is used to create the secure password and store it into a session variable ($pwd). The PowerShell command ExportPfxCertificate is used to export the certificate in PFX format using the $pwd session variable.
+
+    The following 2 lines PowerShell code will create a password in the $pwd session variable and then use the $pwd session variable in the exporting of the certificate.
 {: .sub4}
 ```powershell
 $pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
