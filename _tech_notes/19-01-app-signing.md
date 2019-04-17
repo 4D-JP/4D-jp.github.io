@@ -172,6 +172,15 @@ Once complete, the certificate should be listed in the Keychain Access applicati
 
 ![screenshot1](/images/app-4.png)
 
+The name listed here is the name that should be used when identifying the certificate. For example, the name to be used for the certificate depicted in this screenshot is “Developer ID Application: 4D Inc (Q2R63U84YG)”
+
+## How to sign an app on MacOS
+---
+On MacOS a merged 4D application can be signed from within the BUILD APPLICATION process, or afterwards from the Terminal application. It is usually preferred to sign the application from within the BUILD APPLICATION process, however, if an error occurs during the signing process it is suggested to switch the process and perform the signing from Terminal in order to obtain more information about the failure.
+
+### Sign the application from 4D during BUILD APPLICATION
+The Build Application dialog in 4D provides the developer the option of Code Signing their application during the build process. This feature is only available on the MacOS operating system. This option is exposed at the bottom of the License tab of the Build Application dialog:
+
 **Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse [cillum dolore](#) eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 {: .text-justify .notice--warning}
 
