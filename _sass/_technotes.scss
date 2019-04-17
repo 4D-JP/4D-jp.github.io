@@ -297,12 +297,14 @@
 .align-left {
   display: block;
   margin-right: auto;
+  padding-right: 1em;
   float: left;
 }
 
 .align-right {
   display: block;
   margin-left: auto;
+  padding-left: 1em;
   float: right;
 }
 
