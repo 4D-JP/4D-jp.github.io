@@ -72,4 +72,21 @@ layout: default
     }
 }());
 </script>
+	<script>
+	/**
+	 * manage_margin
+	 */
+		var h = 0;
+		var elementList = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6");
+		elementList.forEach(function(element){
+			if(element.nodeName=="H2") h=2;
+			else if (element.nodeName=="H3") h=3;
+			else if (element.nodeName=="H4") h=4;
+			else if (element.nodeName=="P"){
+				if(h<3) element.setAttribute("style","margin-left:0px;");
+				else element.setAttribute("style","margin-left:"+String((h-2)*40)+"px;");
+			}
+			else;
+		});
+	</script>
 <!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
