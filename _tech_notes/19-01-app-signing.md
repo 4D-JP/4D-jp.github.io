@@ -23,22 +23,22 @@ There are many advantages to signing an application before distributing it to cu
 
 ### Advantages of signing an app
 Signing the application can be advantageous for both the developer and the end user. Here are a few examples of the advantages:
-{: .sub3}
+
 - Protects binary from being manipulated
 - Proves the application has not been tampered with
 - Proves the application is coming from a trusted source
 - Gets rid of the “Unknown Publisher” message when running on Windows
-{: .sub3}
+
 
 ### Disadvantages of signing an app
 There are a few potential disadvantages to signing an application. Here are some examples of things to consider:
-{: .sub3}
+
 - It is an additional step in the process or preparing the application
   - The development process will become slightly longer
 - It requires a certificate from a trusted Certificate Authority ($$$)
   - The development cost will be slightly more
 - The first time the application is launched the signature is verified
-{: .sub3}
+
 
 ## Obtaining a signing certificate
 ---
@@ -46,113 +46,113 @@ Before an application can be signed, the developer must obtain a signing certifi
 
 ### Windows
 The signing certificate can be obtained from numerous online SSL Certificate vendors. For this tech note a self-signed certificate is used; if this were for production then it would be recommended to use a certificate from a trusted source instead of a self-signed certificate.
-{: .sub3}
+
 #### Create a Self-Signed Certificate
 The following command and parameters will be used to create a self-signed certificate on Windows:
-{: .sub4}
+
 Command: **New-SelfSignedCertificate**  
 Parameter 1: **-Type** Custom  
 Parameter 2: **-Subject** "CN=4D, O=4D Inc, C=US"  
 Parameter 3: **-KeyUsage** DigitalSignature  
 Parameter 4: **-FriendlyName** "4D, Inc"  
 Parameter 5: **-CertStoreLocation** "Cert:\LocalMachine\My"
-{: .sub4}
+
 The values used for this tech note are filled in but the developer will want to use custom data for the **Subject** and **FriendlyName** parameters. The **CertStoreLocation** parameter can also use custom data but this location is used later on so if using something other than what is listed above, it will need to be substituted in later on.  
-{: .sub4}
+
 Once the values are updates, put it all together on a single line and run it from an Elevated PowerShell window like this:
-{: .sub4}
+
 ```powershell
 New-SelfSignedCertificate -Type Custom -Subject "CN=4D, O=4D Inc, C=US" -KeyUsage DigitalSignature -FriendlyName "4D, Inc" -CertStoreLocation "Cert:\LocalMachine\My"
 ```
-{: .sub4}
+
 If the command is executed properly the output may look like this:
-{: .sub4}
+
 ```powershell
 PSParentPath: Microsoft.PowerShell.Security\Certificate::LocalMachine\My
 Thumbprint Subject
 ---------- -------
 A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 CN=4D, O=4D Inc, C=US
 ```
-{: .sub4}
+
 The thumbprint of the certificate is important and will be used later on. In this example the thumbprint is A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 but the thumbprint for those that are following along at home will be different. Be sure to include the correct thumbprint for the examples in the following sections.
-{: .sub4}
+
 Note: This process needs to be done from a PowerShell window with Elevated Privileges.
-{: .sub4 .notice--info}
+{: .notice--info}
 #### Export the certificate to PFX
 The next step is to export the certificate to a PFX file, but in order to do this a password must be set. The PowerShell command ConvertTo-SecureString is used to create the secure password and store it into a session variable ($pwd). The PowerShell command ExportPfxCertificate is used to export the certificate in PFX format using the $pwd session variable.
-{: .sub4}
+
 The following 2 lines PowerShell code will create a password in the $pwd session variable and then use the $pwd session variable in the exporting of the certificate.
-{: .sub4}
+
 ```powershell
 $pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
 Export-PfxCertificate -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 -FilePath C:\signing\cert.pfx -Password $pwd
 ```
-{: .sub4}
+
 Here is the breakdown of the first command and parameters used:
-{: .sub4}
+
 Return value stored in: $pwd  
 Command 1: ConvertToSecureString  
 Parameter 1: -String “thePassword” Parameter  
 2: -Force Parameter  
 3: -AsPlainText
-{: .sub4}
+
 The first command written out in the terminal looks like this:
-{: .sub4}
+
 ```powershell
 $pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
 ```
-{: .sub4}
+
 This stores the password (“thePassword”) as a secure string within the $pwd session variable to be used in the next line of PowerShell code. The developer will want to modify the value in the password parameter and then substitute the correct password in for the following examples.
-{: .sub4}
+
 Here is the breakdown of the second command and parameters used:
-{: .sub4}
+
 Command 2: ExportPfxCertificate  
 Parameter 1: -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304  
 Parameter 2: -FilePath C:\signing\cert.pfx  
 Parameter 3: -Password $pwd
-{: .sub4}
+
 The second command written out in the terminal looks like this (due to the length of the line and the width of this document, the single line is depicted on multiple lines):
-{: .sub4}
+
 ```powershell
 Export-PfxCertificate -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 -FilePath C:\signing\cert.pfx -Password $pwd
 ```
-{: .sub4}
+
 This exports the certificate iditified by the thumbprint and exports it to the path specified by the FilePath parameter, using the password defined in the $pwd session variable. The developer will need to substitute the correct thumbprint when running this command.
-{: .sub4}
+
 Once all of the data points have been updated the developer can run the two commands like this:
-{: .sub4}
+
 ```powershell
 $pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
 Export-PfxCertificate -cert Cert:\LocalMachine\My\A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304 -FilePath C:\signing\cert.pfx -Password $pwd
 ```
-{: .sub4}
+
 This will place the password protected PFX certificate into the location specified. This PFX file will be used later for signing the 
 application, and the password is required to use the PFX file.
-{: .sub4}
+
 The output observed in PowerShell may look like this:
-{: .sub4}
+
 ```powershell
 Directory: C:\signing
 Mode LastWriteTime Length Name
 ---- ------------- ------ ----
 -a---- 8/9/2018 3:06 PM 2701 cert.pfx
 ```
-{: .sub4}
+
 This indicates that the file has been exported and provides a short summary.
-{: .sub4}
+
 ### MacOS
 Signing Certificates for the MacOS platform can be created from either inside of XCode or from the Apple Developer website. In both cases, an active membership to the Apple Developer Program is required.
-{: .sub3}
+
 #### Obtaining the certificate from Apple’s website
 The Apple Developer website is available from the following URL: https://developer.apple.com/account/
-{: .sub4}
+
 The steps for obtaining the certificate from Apple’s website have changed over the years. Currently, the developer needs to use the iTunes connect portal to obtain the certificate.
-{: .sub4}
+
 #### Obtaining the certificate using XCode
 To create the certificate from within XCode, first launch XCode.
-{: .sub4}
+
 From the XCode drop down menu choose the Preferences menu item:
-{: .sub4}
+
 
 
 
