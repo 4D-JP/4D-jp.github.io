@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v17r5 修正リスト"
-date: 2000-04-18 00:00:00
+date: 2019-04-18 00:00:00
 categories: 修正リスト
 tags: 17r5
 build: 236426
