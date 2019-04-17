@@ -74,11 +74,13 @@ layout: default
 </script>
 	<script>
 	/**
-	 * manage_margin
+	 * manage margin
+	 * elementList.forEach(function(element){} is not available with IE
 	 */
 		var h = 0;
 		var elementList = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, ul, div");
-		elementList.forEach(function(element){
+		var elementArray = Array.prototype.slice.call(elementList,0);
+		elementArray.forEach(function(element){
 			if(element.nodeName=="H1") h=1;
 			else if (element.nodeName=="H2") h=2;
 			else if (element.nodeName=="H3") h=3;
