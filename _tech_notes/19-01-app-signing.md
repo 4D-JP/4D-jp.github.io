@@ -158,11 +158,19 @@ Choose the Accounts tab.
 ![screenshot1](/images/app-2.png)
 
 If the AppleID account is not already added, click on the + button to add the account (this account must have an active membership to the Apple Developer Program).
+
 Once the Apple ID account is added, select the account from the left side of the accounts window,. Then click on the Manage Certificates button.
+
 From the manage certificates dialog, click on the + and choose “Developer ID Application”.
+![screenshot1](/images/app-3.png)
+
 Follow the prompts to complete the process.
+
 #### Locating the certificate in Keychain Access
 
+Once complete, the certificate should be listed in the Keychain Access application under the certificates section.
+
+![screenshot1](/images/app-4.png)
 
 **Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse [cillum dolore](#) eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 {: .text-justify .notice--warning}
