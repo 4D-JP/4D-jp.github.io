@@ -152,25 +152,17 @@ The steps for obtaining the certificate from Apple’s website have changed over
 To create the certificate from within XCode, first launch XCode.
 
 From the XCode drop down menu choose the Preferences menu item:
+![screenshot1](/images/app-1.png)
 
+Choose the Accounts tab.
+![screenshot1](/images/app-2.png)
 
+If the AppleID account is not already added, click on the + button to add the account (this account must have an active membership to the Apple Developer Program).
+Once the Apple ID account is added, select the account from the left side of the accounts window,. Then click on the Manage Certificates button.
+From the manage certificates dialog, click on the + and choose “Developer ID Application”.
+Follow the prompts to complete the process.
+#### Locating the certificate in Keychain Access
 
-
-
-
-
-![screenshot1](/images/AppSign-1.png){: .align-center}
-
-画像左周りこみテキストテスト
-
-![screenshot1](/images/AppSign-1.png){: .align-left}**Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in [reprehenderit](#) in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-画像右周りこみテキストテスト
-
-![My helpful screenshot-2](/images/AppSign-2.png){: .align-right}Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-{: .text-center}
 
 **Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse [cillum dolore](#) eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 {: .text-justify .notice--warning}
