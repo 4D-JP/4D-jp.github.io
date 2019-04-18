@@ -89,6 +89,7 @@ layout: default
 			else if (element.nodeName=="H6") h=6;
 			
 			if (element.className=="align-right");
+			else if (element.parentNode.nodeName=="LI");
 			else if(h<3) element.setAttribute("style","margin-left:0px;");
 			else element.setAttribute("style","margin-left:"+String((h-2)*40)+"px;");
 		});
