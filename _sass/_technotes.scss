@@ -280,16 +280,15 @@
 
 .align-left {
   display: block;
-  padding: 1em 0;
+  padding: 1em 1em 1em 0;
   float: left;
-  margin-right: auto;
 }
 
 .align-right {
   display: block;
   padding: 1em 0;
   float: right;
-  margin-left: auto;
+  margin-left: 0;
 }
 
 .align-center {
