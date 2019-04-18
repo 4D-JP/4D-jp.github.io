@@ -43,17 +43,17 @@ type: page
 
 ## サードパーティ
 
-* [Heubach Media](https://www.hmplugins.com/)
-
 * [Aparajita](https://aparajita.com/)
 
-* [Pluggers Software](https://www.pluggers.nl/)
-
-* [Lightning](http://www.grahamlangley.co.uk/)
+* [Contrôle SMS](https://www.controle-sms.com/en/) by la Soub Compagnie
 
 * [e-Node](http://www.e-node.net/)
 
-* [Contrôle SMS](https://www.controle-sms.com/en/) by la Soub Compagnie
+* [Heubach Media](https://www.hmplugins.com/)
+
+* [Lightning](http://www.grahamlangley.co.uk/)
+
+* [Pluggers Software](https://www.pluggers.nl/)
 
 * [QualiSoft](http://association-qualisoft.eu)
     * [QS_Toolbox](http://association-qualisoft.eu/qs_toolbox/telechargement-qs_toolbox/)
