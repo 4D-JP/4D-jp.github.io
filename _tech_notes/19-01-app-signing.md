@@ -152,11 +152,13 @@ The steps for obtaining the certificate from Apple’s website have changed over
 To create the certificate from within XCode, first launch XCode.
 
 From the XCode drop down menu choose the Preferences menu item:
+
 ![screenshot1](/images/app-1.png){: .align-left}
 **Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
 {: .text-justify}
 
 Choose the Accounts tab.
+
 ![screenshot1](/images/app-2.png)
 
 If the AppleID account is not already added, click on the + button to add the account (this account must have an active membership to the Apple Developer Program).
@@ -164,6 +166,7 @@ If the AppleID account is not already added, click on the + button to add the ac
 Once the Apple ID account is added, select the account from the left side of the accounts window,. Then click on the Manage Certificates button.
 
 From the manage certificates dialog, click on the + and choose “Developer ID Application”.
+
 ![screenshot1](/images/app-3.png)
 
 Follow the prompts to complete the process.
@@ -171,7 +174,9 @@ Follow the prompts to complete the process.
 #### Locating the certificate in Keychain Access
 
 Once complete, the certificate should be listed in the Keychain Access application under the certificates section.
+
 ![screenshot1](/images/app-4.png)
+
 The name listed here is the name that should be used when identifying the certificate. For example, the name to be used for the certificate depicted in this screenshot is “Developer ID Application: 4D Inc (Q2R63U84YG)”
 
 ## How to sign an app on MacOS
