@@ -55,6 +55,9 @@ type: page
 
 * [Contrôle SMS](https://www.controle-sms.com/en/) by la Soub Compagnie
 
+* [QualiSoft](http://association-qualisoft.eu)
+    * [QS_Toolbox](http://association-qualisoft.eu/qs_toolbox/telechargement-qs_toolbox/)
+
 ## コードシェアリング
 
 * [4D](https://github.com/4d)
