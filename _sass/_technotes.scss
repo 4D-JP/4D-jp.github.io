@@ -282,12 +282,14 @@
   display: block;
   padding: 1em 1em 1em 0;
   float: left;
+  margin-right: auto;
 }
 
 .align-right {
   display: block;
   padding: 1em 0 1em 1em;
   float: right;
+  margin-left: auto;
 }
 
 .align-center {
