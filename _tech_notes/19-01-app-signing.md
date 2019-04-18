@@ -153,6 +153,7 @@ To create the certificate from within XCode, first launch XCode.
 
 From the XCode drop down menu choose the Preferences menu item:
 ![screenshot1](/images/app-1.png){: .align-right}
+**Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
 
 Choose the Accounts tab.
 ![screenshot1](/images/app-2.png)
@@ -171,6 +172,7 @@ Follow the prompts to complete the process.
 Once complete, the certificate should be listed in the Keychain Access application under the certificates section.
 
 ![screenshot1](/images/app-4.png){: .align-left}
+**Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
 
 The name listed here is the name that should be used when identifying the certificate. For example, the name to be used for the certificate depicted in this screenshot is “Developer ID Application: 4D Inc (Q2R63U84YG)”
 
