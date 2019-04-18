@@ -153,8 +153,7 @@ To create the certificate from within XCode, first launch XCode.
 
 From the XCode drop down menu choose the Preferences menu item:
 
-![screenshot1](/images/app-1.png)
-{: .align-right}
+![screenshot1](/images/app-1.png){: .align-right}
 **Lorem ipsum** dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
 {: .text-justify}
 
