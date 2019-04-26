@@ -41,7 +41,7 @@ Windows 64ビット版は，ダブルクリックするだけで，アプリケ�
 <Preferences4D>
    <BuildApp>
       <CS> 
-         <ClientWinSingleInstance > False </ClientWinSingleInstance >
+         <ClientWinSingleInstance>False</ClientWinSingleInstance>
       </CS> 
    </BuildApp>
 </Preferences4D>
