@@ -8,7 +8,7 @@ tags: 17r3
 
 17r3では，``WP Create range``にドキュメントを渡した場合の振る舞いが調整され，仕様が明確になりました。
 
-##### 17.xの振る舞い
+* 17.xの振る舞い
 
 本文をクリックしてからコマンドを実行した場合（``WP Get frame``が``wk body``を返す状態），``WP Create range``にドキュメントを渡したときに返されるレンジは，本文に対して相対的でした。
 
@@ -16,7 +16,7 @@ tags: 17r3
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [17.x](https://doc.4d.com/4Dv17/4D/17/WP-Create-range.301-3726316.ja.html)
 
-##### 17r3以降の振る舞い
+* 17r3以降の振る舞い
 
 ``WP Create range``にドキュメントを渡したときに返されるレンジは，フレームに関係なく，本文に対して相対的です。
 
