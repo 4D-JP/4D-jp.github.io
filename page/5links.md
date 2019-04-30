@@ -61,6 +61,7 @@ type: page
 ## コードシェアリング
 
 * [4D](https://github.com/4d)
+    * [4D Plugin SDK](https://github.com/4d/4D-Plugin-SDK)
 
 * [Ajar SA](https://github.com/AJARProject)
     * AJUI_FloatingLabel
