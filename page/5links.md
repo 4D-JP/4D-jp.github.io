@@ -62,6 +62,7 @@ type: page
 
 * [4D](https://github.com/4d)
     * [4D Plugin SDK](https://github.com/4d/4D-Plugin-SDK)
+    * [PDO_4D](https://php.net/pdo_4d) on [PECL](http://pecl.php.net/package/PDO_4D)
 
 * [Ajar SA](https://github.com/AJARProject)
     * AJUI_FloatingLabel
