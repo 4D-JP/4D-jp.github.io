@@ -3,7 +3,7 @@ layout: fix
 title: "4D v17.1 Hotfix 2 修正リスト"
 date: 2019-05-02 00:00:00
 categories: 修正リスト
-tags: "17.1" 
+tags: 17.1 hotfix 
 build: 236840
 version: 17.1
 
