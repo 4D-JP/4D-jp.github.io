@@ -8,7 +8,7 @@ tags: 17r5 unicode
 
 17r5では，テキスト（オブジェクト型やコレクション型のプロパティ値を含む）の比較と検索に使用されている <i class="fa fa-external-link" aria-hidden="true"></i> [International Components for Unicode, ICU](http://site.icu-project.org/home)ライブラリがバージョン[``63``](http://site.icu-project.org/download/63)にアップデートされる予定です。v16およびv17のライブラリバージョンは [``56``](http://site.icu-project.org/download/56)でした。ライブラリのアップデートに伴い，サポートされるUnicodeのバージョンも``8``から``11``に上がります。
 
-Unicode 11では，``66``個の絵文字が追加され，``5``のCJK（中日韓）統合漢字が追加されています。追加されたのは，新元素の中国語名に使用される``3``文字（下記）
+Unicode 11では，``66``個の絵文字が追加され，``5``個のCJK（中日韓）統合漢字が追加されています。追加されたのは，新元素の中国語名に使用される``3``文字（下記）
 
 | 原子番号 | 漢字 | 名称 |
 |:---:|:---:|:---:|
