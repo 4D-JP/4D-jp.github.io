@@ -55,8 +55,12 @@ type: page
 
 * [Pluggers Software](https://www.pluggers.nl/)
 
+* [Protée](https://www.protee.org/index.php/fr/)
+    * [ogTools pour 4D](https://www.protee.org/index.php/fr/produits/outils-de-gestion/ogtools-for-4d)
+
 * [QualiSoft](http://association-qualisoft.eu)
     * [QS_Toolbox](http://association-qualisoft.eu/qs_toolbox/telechargement-qs_toolbox/)
+    * [proTools - boutons 4D](https://www.protee.org/index.php/fr/produits/outils-de-gestion/protools)
 
 ## コードシェアリング
 
