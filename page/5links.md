@@ -41,6 +41,8 @@ type: page
 
 * [4D-JUG](http://4djug.forumjap.com/)
 
+* [4DTidbits](http://blog.heintz.net) Alexandar Heintzのブログ  
+
 ## サードパーティ
 
 * [Aparajita](https://aparajita.com/)
