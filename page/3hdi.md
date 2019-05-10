@@ -11,6 +11,8 @@ type: page
 
 ## 17r5 # {#v17r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 値の命名プレースホルダーを使ったクエリ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_PlaceHolders_Values.zip)<br />
+[`dataClass.query( )`](https://livedoc.4d.com/4D-Language-Reference-17-R5/ORDA-DataClass/dataClassquery.305-4128666.en.html)および[`entitySelection.query( )`](https://livedoc.4d.com/4D-Language-Reference-17-R5/ORDA-EntitySelection/entitySelectionquery.305-4128676.en.html)のメンバーメソッドを使う際に、値の命名プレースホルダーが使えるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ファイルオブジェクト・フォルダーオブジェクト**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_FilesAndFolders.zip)<br />
 新しく追加された[`File`](https://doc.4d.com/4Dv17R5/4D/17-R5/File.301-4280282.en.html)コマンドと[`Folder`](https://doc.4d.com/4Dv17R5/4D/17-R5/Folder.301-4280288.en.html)コマンド、およびその戻り値であるファイルオブジェクトとフォルダーオブジェクトを使って、ファイルやフォルダーの操作がオブジェクト記法で簡単にできるようになりました。<br />
 参考：[ファイルとフォルダー](https://doc.4d.com/4Dv17R5/4D/17-R5/File-and-Folder.201-4282207.en.html)<br />
