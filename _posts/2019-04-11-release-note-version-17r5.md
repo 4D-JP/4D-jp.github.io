@@ -27,7 +27,7 @@ version: 17r5
 
 * ACI0099536 64ビット版のクイックレポートエディターは，``Tab``以外のセパレーター記号を設定することができませんでした。
 
-**注記**: ``QR AREA``は，デフォルトでシステム変数の``FldDelimit``と``RecDelimit``を使用します。これは``QR SET PROPERTY``でオーバーライドすることができます。修正により，``QR SET DESTINATION``の前に``QR SET PROPERTY``を使用すれば，``FldDelimit``と``RecDelimit``がオーバーライドできるようになりました。
+**注記**: ``QR AREA``は，デフォルトでシステム変数の``FldDelimit``と``RecDelimit``を使用しますが，これは``QR SET PROPERTY``でオーバーライドすることができます。修正により，``QR SET DESTINATION``の前に``QR SET PROPERTY``を使用すれば，``FldDelimit``と``RecDelimit``がオーバーライドできるようになりました。
 
 * ACI0099534 クライアント/サーバー版のみ。トランザクション中に時間型または日付型の属性に対して``collection.sort()``メソッドを実行した場合，結果が正しくありませんでした。
 
