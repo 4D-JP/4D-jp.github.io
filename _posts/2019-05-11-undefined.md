@@ -14,7 +14,7 @@ tags: 17.x object
 
 深い階層のプロパティに１行でアクセスするために，ひとつずつプロパティをチェックしなければならないとすれば，それは本末転倒であり，オブジェクト記法を使用するメリットがありません。それで，v17以降，「未定義」の参照と代入に関する仕様が変更され，より柔軟に「未定義」を扱うことができるようになりました。オブジェクトのプロパティだけでなく，省略されたパラメーターにも影響が及びます。
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [](https://blog.4d.com/object-notation-improvement-after-customer-feedback/)
+<i class="fa fa-external-link" aria-hidden="true"></i> [https://blog.4d.com/object-notation-improvement-after-customer-feedback/](https://blog.4d.com/object-notation-improvement-after-customer-feedback/)
 
 * オブジェクト記法で参照したプロパティが「未定義」
 
