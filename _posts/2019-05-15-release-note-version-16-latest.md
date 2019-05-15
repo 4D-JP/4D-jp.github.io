@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v16 修正リスト"
-date: 2019-05-06 18:28:00
+date: 2019-05-15 07:12:00
 categories: 修正リスト
 tags: "16.6"
-build: 238069
+build: 237474
 version: 16.6
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099524 サーバー管理画面のプロセスベージにプリエンプティブワーカーのプロセス名が正しく表示されませんでした。ローカライズされてない文字列リソース（``:xliff:MONI_PROCESS_Type39 - (process name)``）が表示されました。
 
 * ACI0099235 ``HTTP Get``が過剰にCPUパワーを消費しました。
 
