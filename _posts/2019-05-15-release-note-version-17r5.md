@@ -1,15 +1,17 @@
 ---
 layout: fix
 title: "4D v17r5 修正リスト"
-date: 2019-05-14 05:32:00
+date: 2019-05-15 07:10:00
 categories: 修正リスト
 tags: 17r5
-build: 237115
+build: 237470
 version: 17r5
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099476 右から左に向かって読む言語（アラビア語など）のWrite Proテキストを揃えた場合，右ではなく，左揃えになりました。
 
 * ACI0099572 Windows版のみ。POSIXパスで``File``オブジェクト	を作成することができませんでした。
 
