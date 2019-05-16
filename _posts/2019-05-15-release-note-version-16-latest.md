@@ -4,7 +4,7 @@ title: "4D v16 修正リスト"
 date: 2019-05-15 07:12:00
 categories: 修正リスト
 tags: "16.6"
-build: 237474
+build: 237452
 version: 16.6
 
 ---
