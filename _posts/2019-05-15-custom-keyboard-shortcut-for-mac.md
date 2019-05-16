@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "カスタムキーボードショートカット"
-date: 2019-05-15 07:51:00
+date: 2019-05-15 10:41:00
 categories: 仕様
 tags: 17.x mac  
 ---
