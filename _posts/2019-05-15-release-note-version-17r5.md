@@ -1,15 +1,17 @@
 ---
 layout: fix
 title: "4D v17r5 修正リスト"
-date: 2019-05-17 23:08:00
+date: 2019-05-20 17:13:00
 categories: 修正リスト
 tags: 17r5
-build: 237597
+build: 237647
 version: 17r5
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099590 サーバー側でランタイムエクスプローラーを表示することができませんでした。
 
 * ACI0099597 フランス語のフォント名「Courier Gras」をプロパティリストで選択すると，表示が「Courier Bold」に変わりました。
 
