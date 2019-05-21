@@ -18,35 +18,35 @@ version: 17.1
 
 | Windows | 
 |:-:|
-| Courier |
-| Courier New |
-| Arial |
-| Tahoma |
-| MS Sans Serif |
-| MS Serif |
-| Terminal |
-| Symbol |
-| Modern |
-| Roman |
-| Windings |
-| Script |
+|Courier |
+|Courier New |
+|Arial |
+|Tahoma |
+|MS Sans Serif |
+|MS Serif |
+|Terminal |
+|Symbol |
+|Modern |
+|Roman |
+|Windings |
+|Script |
  
 その他のフォントはアプリケーションフォントに変換されます。
 
 
 | macOS Mojave |
 |:-:|
-| Lucida Grande * |
-| Arial |
-| Helvetica |
-| Times |
-| Times Roman |
-| Times New Roman |
-| Courier |
-| Courier New |
-| Symbol |
-| Geneva |
-| Monaco |
+|Lucida Grande * |
+|Arial |
+|Helvetica |
+|Times |
+|Times Roman |
+|Times New Roman |
+|Courier |
+|Courier New |
+|Symbol |
+|Geneva |
+|Monaco |
 
 \* システムフォントに変換
 
