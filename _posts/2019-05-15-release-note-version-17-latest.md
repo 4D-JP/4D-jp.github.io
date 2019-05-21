@@ -35,7 +35,7 @@ version: 17.1
 
 
 | macOS Mojave |
-|:-|
+|-|
 |Lucida Grande * |
 |Arial |
 |Helvetica |
