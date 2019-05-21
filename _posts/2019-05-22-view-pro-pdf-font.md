@@ -26,4 +26,4 @@ tags: 17r5 viewpro
 |Symbol|
 |ZapfDingbats|
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [ExportingToPDF.html)](http://help.grapecity.com/spread/SpreadSheets12/webframe.html#ExportingToPDF.html)
+<i class="fa fa-external-link" aria-hidden="true"></i> [ExportingToPDF.html](http://help.grapecity.com/spread/SpreadSheets12/webframe.html#ExportingToPDF.html)
