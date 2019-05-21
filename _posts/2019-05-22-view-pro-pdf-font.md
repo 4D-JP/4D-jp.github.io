@@ -10,7 +10,7 @@ tags: 17r5 viewpro
 スプレッドシートを``.pdf``形式でエクスポートした場合，フォントが変わってしまうことがあります。これは仕様です。``VP EXPORT DOCUMENT ``はSpreadJSの標準モジュールを使用してドキュメントをPDFに変換します。バージョン12でサポートされているのは，下記14種類のフォントです。
 
 | --- |
-|Courier|
+| Courier |
 |Courier-Bold|
 |Courier-Oblique|
 |Courier-BoldOblique|	
