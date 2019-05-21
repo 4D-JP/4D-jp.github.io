@@ -12,10 +12,10 @@ tags: 17r5 viewpro
 | フォントファミリー | フォント |
 | --- | --- |
 | Courier | Courier |
-| ||Courier-Bold|
-| ||Courier-Oblique|
-| ||Courier-BoldOblique|	
-| Times ||Times-Roman|
+| |Courier-Bold|
+| |Courier-Oblique|
+| |Courier-BoldOblique|	
+| Times |Times-Roman|
 | |Times-Bold|
 | |Times-Italic|
 | |Times-BoldItalic|
