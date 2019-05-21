@@ -12,6 +12,47 @@ version: 17.1
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0099455 フォームオブジェクトのフォントがスタイルシートではなく，プロパティリストで設定されていた場合，v13からv17にアップグレードすると，フォントの指定が失われました。
+
+**注記**: スタイルシートを使用せずにプロパティリストで直接フォントを設定した場合，QuickDraw ID（フォント番号）が保存されるため，別プラットフォームでアプリケーションを開くと，違うフォントが使用されます。これは仕様であり，この問題を避けるためにスタイルシートが存在します。v17以降，たとえ同じプラットフォームであっても，スタイルシートを使用せずに設定したフォントを再現することが技術的にできなくなりました。QuickDraw IDをフォント名に変換するAPIは，mac OS Mojave以降には存在せず，Windowsの場合，Altura SDKの定義済みフォント以外は変換できないためです。
+
+**Windows**  
+
+|:-:|
+| Courier |
+| Courier New |
+| Arial |
+| Tahoma |
+| MS Sans Serif |
+| MS Serif |
+| Terminal |
+| Symbol |
+| Modern |
+| Roman |
+| Windings |
+| Script |
+ 
+その他のフォントはアプリケーションフォントに変換されます。
+
+
+**macOS Mojave**
+
+| Lucida Grande * |
+| Arial |
+| Helvetica |
+| Times |
+| Times Roman |
+| Times New Roman |
+| Courier |
+| Courier New |
+| Symbol |
+| Geneva |
+| Monaco |
+
+* システムフォントに変換
+
+その他のフォントは正しく変換できない可能性があります。
+
 * ACI0098413 ``SVG_SAVE_AS_PICTURE``は，ファイルまたはフォルダーの名前に複数の拡張子が存在する場合に画像が保存できませんでした。内部的に使用されている正規表現が間違っているためです。
 
 * ACI0099507 クライアントがシンタックスチェックを実行している間に別のクライアントで``SET DATABASE PARAMETER``を``4D Remote mode timeout``セレクターで実行すると，シンタックスチェックを実行しているほうのクライアントがフリーズしました。
