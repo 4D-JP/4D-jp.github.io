@@ -11,6 +11,15 @@ type: page
 
 ## 17r5 # {#v17r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**データファイルの暗号化**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_Encryption.zip)<br />
+データファイルの暗号化機能を紹介します。<br />
+[`Encrypt data file`](https://doc.4d.com/4Dv17R5/4D/17-R5/Encrypt-data-file.301-4032077.ja.html)
+[`Data file encryption status`](https://doc.4d.com/4Dv17R5/4D/17-R5/Data-file-encryption-status.301-4031901.ja.html)
+[`Register data key`](https://doc.4d.com/4Dv17R5/4D/17-R5/Register-data-key.301-4072179.ja.html)
+[`New data key`](https://doc.4d.com/4Dv17R5/4D/17-R5/New-data-key.301-4070478.ja.html)
+[`Discover data key`](https://doc.4d.com/4Dv17R5/4D/17-R5/Discover-data-key.301-4097761.ja.html)
+[`ds.provideDataKey( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/dsprovideDataKey.305-4069252.ja.html)
+[`ds.encryptionStatus( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/dsencryptionStatus.305-4166703.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 属性パスのプレースホルダーを使ったクエリ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_PlaceHolders_AttributePaths.zip)<br />
 [`dataClass.query( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/dataClassquery.305-4128666.ja.html)および[`entitySelection.query( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitySelectionquery.305-4128676.ja.html)のメンバーメソッドを使う際に、属性パスのプレースホルダーが使えるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 値の命名プレースホルダーを使ったクエリ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_PlaceHolders_Values.zip)<br />
