@@ -214,7 +214,7 @@ UNTIL(stopFlag_b)| (Process aborted)
 //…
 REPEAT
 $logPath_t:= New log file
-Mirror_SendLog($logPath_t) // ミラーの場所のログファイルを送信します
+Mirror_SendLog($logPath_t) // ミラーサーバーにログファイルを送信します
 DELAY PROCESS(CURRENT PROCESS; 60*60*2) // 60ティック= 1秒
 UNTIL(stopFlag_b)| (Process aborted)
 //…
