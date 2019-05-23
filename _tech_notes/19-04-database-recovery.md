@@ -4,13 +4,13 @@ original_title: 4D Database Recovery Options – Part I
 title: "4Dデータベース修復オプション - Part I"
 author: Tai Bui
 position: Technical Services Engineer, 4D Inc.
-date: 2018-09-01 00:00:00
+date: 2018-05-14 00:00:00
 categories: セットアップ
 tags: deployment backup recovery 
 version: 17
 ---
 
-データベース破損時に便利な 4Dの機能（MSC、バックアップ、ミラーリング）の紹介。
+データベース破損時に便利な 4Dの機能（MSC、バックアップ、ミラーリング）の紹介です。([原文](https://kb.4d.com/assetid=78018)）
 <!--more-->
 
 ## はじめに
