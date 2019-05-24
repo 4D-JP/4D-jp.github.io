@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2019-05-23 10:00:00
+date: 2019-05-24 23:36:00
 categories: 修正リスト
 tags: "17.1"  
-build: 237750
+build: 237887
 version: 17.1
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099618 エンティティセレクション型のリストボックスに対して``LISTBOX SELECT ROW``を``lk add to selection``オプションで続けて使用した場合，正しい行が選択されませんでした。ACI0099498が修正されたことの副作用です。
 
 * ACI0099556 トランザクション中に日付型の属性に対して``collection.sort()``メソッドを実行した場合，結果が正しくありませんでした。
 
