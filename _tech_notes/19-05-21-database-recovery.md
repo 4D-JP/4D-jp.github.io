@@ -179,7 +179,6 @@ MSCでは修復できない大きな問題が発生した場合は、バック�
 //…
 C_TEXT($path_t)
 $path_t:= Get 4D Folder(Current resources folder)
-$path_t:= $path_t + Folder Separator
 $path_t:= $path_t + “IsMirror.txt”
 If(Test path name($path_t)=Is a document)
 // ミラーサーバーの場合
