@@ -13,3 +13,9 @@ standalone: true
 ## オブジェクト型
 ---
 
+### ORDAリストボックス
+
+![図: ORDAリストボックス](https://user-images.githubusercontent.com/10509075/58543752-05976500-823b-11e9-90d5-e19aac95b393.png){: .align-center}
+
+＜ 図: ORDAリストボックス ＞
+{: .text-center}
