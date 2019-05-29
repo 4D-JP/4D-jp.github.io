@@ -11,6 +11,7 @@ standalone: true
 <!--more-->
 
 ## シグナル
+---
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [シグナル](https://doc.4d.com/4Dv17R4/4D/17-R4/New-signal.301-4104310.ja.html)は``17 R4``から使用できるようになった特殊な共有オブジェクトです。
 
@@ -23,10 +24,6 @@ standalone: true
 
 ＜ 図: メッセージキュー ＞
 {: .text-center}
-
-
-
----
 
 ## オブジェクト型
 ---
