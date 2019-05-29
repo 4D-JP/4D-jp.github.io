@@ -12,7 +12,7 @@ standalone: true
 
 ## フォーム
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [Form](https://doc.4d.com/4Dv17/4D/17.1/Form.301-4179574.ja.html)を使用すれば，ウィンドウの中だけで有効な「ローカル変数」をフォームオブジェクトのデータソースに設定することができます。``Form``が使用できるのは，``DIALOG``で開いたウィンドウだけです。``DIALOG``に渡したオブジェクトは，``Form``の初期値となり，ダイアログ実行中の更新はウィンドウを閉じた後に調べることができます。
+<i class="fa fa-external-link" aria-hidden="true"></i> [``Form``](https://doc.4d.com/4Dv17/4D/17.1/Form.301-4179574.ja.html)を使用すれば，ウィンドウの中だけで有効な「ローカル変数」をフォームオブジェクトのデータソースに設定することができます。``Form``が使用できるのは，<i class="fa fa-external-link" aria-hidden="true"></i> [``DIALOG``](https://doc.4d.com/4Dv17/4D/17.1/DIALOG.301-4179342.ja.html)で開いたウィンドウだけです。``DIALOG``に渡したオブジェクトは，``Form``の初期値となり，ダイアログ実行中の更新はウィンドウを閉じた後に調べることができます。
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-form.4dbase.zip
 ](https://github.com/4D-JP/event-world-tour-2019/releases/tag/form.4dbase-1.0)
@@ -39,7 +39,7 @@ standalone: true
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [シグナル](https://doc.4d.com/4Dv17R4/4D/17-R4/New-signal.301-4104310.ja.html)は``17 R4``から使用できるようになった特殊な共有オブジェクトです。
 
-カスタムオブジェクトに``enqueue`` ``dequeue``といったメソッドを<i class="fa fa-external-link" aria-hidden="true"></i> [New formula](https://doc.4d.com/4Dv17R4/4D/17-R4/New-formula.301-4055155.ja.html)で追加し，内部的にシグナルを使用するようなコードを記述すれば，簡易的なメッセージキューが実装できます。
+カスタムオブジェクトに``enqueue`` ``dequeue``といったメソッドを<i class="fa fa-external-link" aria-hidden="true"></i> [``New formula``](https://doc.4d.com/4Dv17R4/4D/17-R4/New-formula.301-4055155.ja.html)で追加し，内部的にシグナルを使用するようなコードを記述すれば，簡易的なメッセージキューが実装できます。
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-signal-queue.4dbase.zip
 ](https://github.com/4D-JP/event-world-tour-2019/releases/tag/signal-queue-1.1)
