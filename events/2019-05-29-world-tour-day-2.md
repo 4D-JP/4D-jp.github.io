@@ -17,6 +17,11 @@ standalone: true
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-shared-object.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/shared-object-1.0)
 
+![図: 共有オブジェクト](https://user-images.githubusercontent.com/10509075/58556339-c24aef80-8256-11e9-8f8d-d88f490a86d8.png){: .align-center}
+
+＜ 図: 共有オブジェクト ＞
+{: .text-center}
+
 ## シグナル
 ---
 
