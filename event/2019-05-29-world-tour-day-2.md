@@ -19,3 +19,8 @@ standalone: true
 
 ＜ 図: ORDAリストボックス ＞
 {: .text-center}
+
+![図: 友人の友人の友人・・・ ](https://user-images.githubusercontent.com/10509075/58543949-62931b00-823b-11e9-8f58-a13dc4f89175.png){: .align-center}
+
+＜ 図: 友人の友人の友人・・・ ＞
+{: .text-center}
