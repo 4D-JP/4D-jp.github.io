@@ -13,7 +13,7 @@ standalone: true
 ## 共有オブジェクトとストレージ
 ---
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [共有オブジェクト](https://doc.4d.com/4Dv17/4D/17.1/Shared-objects-and-shared-collections.300-4179447.ja.html)および<i class="fa fa-external-link" aria-hidden="true"></i> [ストレージ](https://doc.4d.com/4Dv17/4D/17.1/Storage.301-4179448.ja.html)は，インタープロセス変数の代わり，プロセス間で情報を共有するための新しいメカニズムです。
+<i class="fa fa-external-link" aria-hidden="true"></i> [共有オブジェクト](https://doc.4d.com/4Dv17/4D/17.1/Shared-objects-and-shared-collections.300-4179447.ja.html)および<i class="fa fa-external-link" aria-hidden="true"></i> [ストレージ](https://doc.4d.com/4Dv17/4D/17.1/Storage.301-4179448.ja.html)は，インタープロセス変数に代わるもので，プロセス間で情報を共有するための新しいメカニズムです。
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-shared-object.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/shared-object-1.0)
 
