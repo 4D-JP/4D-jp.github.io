@@ -4,7 +4,7 @@ original_title: 4D Database Recovery Using Backups and Mirroring – Part II
 title: "4Dデータベースとミラーリング - Part II"
 author: Tai Bui
 position: Technical Services Engineer, 4D Inc.
-date: 2018-05-14 00:00:00
+date: 2018-07-20 00:00:00
 categories: セットアップ
 tags: deployment mirroring recovery 
 version: 17
