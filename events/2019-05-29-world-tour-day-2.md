@@ -12,7 +12,7 @@ standalone: true
 
 ## フォーム
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [``Form``](https://doc.4d.com/4Dv17/4D/17.1/Form.301-4179574.ja.html)を使用すれば，ウィンドウの中だけで有効な「ローカル変数」をフォームオブジェクトのデータソースに設定することができます。``Form``が使用できるのは，<i class="fa fa-external-link" aria-hidden="true"></i> [``DIALOG``](https://doc.4d.com/4Dv17/4D/17.1/DIALOG.301-4179342.ja.html)で開いたウィンドウだけです。``DIALOG``に渡したオブジェクトは，``Form``の初期値となり，ダイアログ実行中の更新はウィンドウを閉じた後に調べることができます。
+<i class="fa fa-external-link" aria-hidden="true"></i> [``Form``](https://doc.4d.com/4Dv17/4D/17.1/Form.301-4179574.ja.html)を使用すれば，ウィンドウの中だけで有効な「ローカル変数」をフォームオブジェクトのデータソースに設定することができます。``Form``は，<i class="fa fa-external-link" aria-hidden="true"></i> [``DIALOG``](https://doc.4d.com/4Dv17/4D/17.1/DIALOG.301-4179342.ja.html)で開いたウィンドウのコンテキストで使用することができます。``DIALOG``に渡したオブジェクトは，``Form``の初期値となり，ウィンドウが閉じられた後，ダイアログ実行中に更新された``Form``がそのオブジェクトに返されます。
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-form.4dbase.zip
 ](https://github.com/4D-JP/event-world-tour-2019/releases/tag/form.4dbase-1.0)
