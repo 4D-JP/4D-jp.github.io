@@ -12,9 +12,9 @@ type: page
 ## 17r5 # {#v17r5}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 動的なストラクチャー情報の取得**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_Database_Info.zip)<br />
-新しく追加されたメンバーメソッドやデータクラス属性オブジェクトの拡張によって、動的なストラクチャー情報の取得が容易になりました。これにより汎用コードを簡単に書くことができます。<br />
-[`dataClass.getInfo( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/dataClassgetInfo.305-4275830.ja.html)<br />
-[`entity.getDataClass( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitygetDataClass.305-4275760.ja.html)<br />
+新しく追加されたメンバーメソッドや、データクラス属性オブジェクトの拡張によって、動的なストラクチャー情報の取得が容易になりました。これにより汎用コードを簡単に書くことができます。<br />
+[`dataClass.getInfo( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/dataClassgetInfo.305-4275830.ja.html)
+[`entity.getDataClass( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitygetDataClass.305-4275760.ja.html)
 [`entitySelection.getDataClass( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitySelectiongetDataClass.305-4275795.ja.html)<br />
 [ORDA - データクラス属性](https://doc.4d.com/4Dv17R5/4D/17-R5/ORDA-DataClassAttribute.201-4127158.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ユーザーエイリアスの設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_SetUserAlias.zip)<br />
