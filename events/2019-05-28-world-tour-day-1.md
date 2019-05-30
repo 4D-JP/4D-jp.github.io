@@ -31,11 +31,11 @@ standalone: true
 
 #### 非サポート
 
-- ODBC
-- INTO LISTBOX
-- QUERY BY SQL
-- REPLICATE/SYNCHRONIZE
-- SQL LOGIN
+- ``ODBC``
+- ``INTO LISTBOX``
+- ``QUERY BY SQL``
+- ``REPLICATE`` ``SYNCHRONIZE``
+- ``SQL LOGIN``
 
 ### ローカルプロセスのサーバーアクセス
 
