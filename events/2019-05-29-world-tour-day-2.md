@@ -145,7 +145,7 @@ ORDAを使用すれば，複雑なリレーショナルクエリをシンプル�
 ＜ 図: リレーション・・・ ＞
 {: .text-center}
 
-![図: ORDAクエリ・・・ ](https://user-images.githubusercontent.com/10509075/58666356-11d00f00-836e-11e9-8422-7fa19b2f9369.png){: .align-center}
+![図: ORDAクエリ・・・ ](https://user-images.githubusercontent.com/10509075/58666433-404dea00-836e-11e9-922b-5377c208764c.png){: .align-center}
 
 ＜ 図: ORDAクエリ・・・ ＞
 {: .text-center}
