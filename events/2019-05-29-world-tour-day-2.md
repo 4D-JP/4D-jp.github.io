@@ -24,6 +24,8 @@ standalone: true
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-themes.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/themes-0.9)
 
+### メソッドエディターの設定ファイル
+
 ![図: メソッドエディターの設定ファイル⑴](https://user-images.githubusercontent.com/10509075/57895878-c0615380-7888-11e9-84ec-f5dc9fbc2e6e.png){: .align-center}
 
 ＜ 図: メソッドエディターの設定ファイル⑴ ＞
