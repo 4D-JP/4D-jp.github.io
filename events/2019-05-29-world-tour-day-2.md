@@ -139,6 +139,73 @@ End if
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-orda.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/orda-1.0)
 
+### リストボックス
+
+エンティティセレクション型のリストボックスは，下記のプロパティで簡単にコントロールすることができます。
+
+- コレクションまたはエンティティセレクション
+- カレントの項目
+- カレントの項目の位置
+- 選択された項目
+- メタ情報式
+
+#### フォームイベント
+
+```
+$event:=Form event
+
+Case of 
+: ($event=On Load)
+
+	Form.List1:=New object("col";Null;"sel";Null;"pos";Null;"item";Null;"items";Null)
+
+	Form.List1.highlightFormat:=New object("stroke";"#FFFFFF";"fill";"#F9AA33")
+
+	Form.List1.col:=ds.名簿.all()
+		
+End case 
+```
+
+#### メタ情報式
+
+```
+C_TEXT($1;$Me)
+C_OBJECT($0)
+
+$Me:=$1  //OBJECT Get name(Object current) does not work in meta
+
+If (Form[$Me].items.contains(This))
+	$0:=Form[$Me].highlightFormat
+End if 
+```
+
+![図: コレクション型リストボックス](https://user-images.githubusercontent.com/10509075/58664780-55287e80-836a-11e9-9068-f5f91e56a7eb.png){: .align-center}
+
+＜ 図: コレクション型リストボックス ＞
+{: .text-center}
+
+### 複数の「カレントレコード」「カレントセレクション」
+
+ORDAを使用すれば，同一のテーブルに由来する複数のエンティティ（カレントレコード）やエンティティセレクション（カレントセレクション）を同時に扱うことができます。
+
+![図: リストボックス](https://user-images.githubusercontent.com/10509075/58543752-05976500-823b-11e9-90d5-e19aac95b393.png){: .align-center}
+
+＜ 図: リストボックス ＞
+{: .text-center}
+
+### N to N リレーション
+
+ORDAで記述すれば，再帰的なN to N リレーションのエンティティセレクションを簡単に取り出すことができます。
+
+```
+$friends:=$person.friends.person.friends.person.minus($person)
+```
+
+![図: 友人の友人の友人・・・ ](https://user-images.githubusercontent.com/10509075/58543949-62931b00-823b-11e9-8f58-a13dc4f89175.png){: .align-center}
+
+＜ 図: 友人の友人の友人・・・ ＞
+{: .text-center}
+
 ### リレーション
 
 ORDAを使用すれば，複雑なリレーショナルクエリをシンプルに記述することができます。
@@ -215,70 +282,3 @@ End if
 
 $0:=$統計
 ```
-
-### リストボックス
-
-エンティティセレクション型のリストボックスは，下記のプロパティで簡単にコントロールすることができます。
-
-- コレクションまたはエンティティセレクション
-- カレントの項目
-- カレントの項目の位置
-- 選択された項目
-- メタ情報式
-
-#### フォームイベント
-
-```
-$event:=Form event
-
-Case of 
-: ($event=On Load)
-
-	Form.List1:=New object("col";Null;"sel";Null;"pos";Null;"item";Null;"items";Null)
-
-	Form.List1.highlightFormat:=New object("stroke";"#FFFFFF";"fill";"#F9AA33")
-
-	Form.List1.col:=ds.名簿.all()
-		
-End case 
-```
-
-#### メタ情報式
-
-```
-C_TEXT($1;$Me)
-C_OBJECT($0)
-
-$Me:=$1  //OBJECT Get name(Object current) does not work in meta
-
-If (Form[$Me].items.contains(This))
-	$0:=Form[$Me].highlightFormat
-End if 
-```
-
-![図: コレクション型リストボックス](https://user-images.githubusercontent.com/10509075/58664780-55287e80-836a-11e9-9068-f5f91e56a7eb.png){: .align-center}
-
-＜ 図: コレクション型リストボックス ＞
-{: .text-center}
-
-### 複数の「カレントレコード」「カレントセレクション」
-
-ORDAを使用すれば，同一のテーブルに由来する複数のエンティティ（カレントレコード）やエンティティセレクション（カレントセレクション）を同時に扱うことができます。
-
-![図: リストボックス](https://user-images.githubusercontent.com/10509075/58543752-05976500-823b-11e9-90d5-e19aac95b393.png){: .align-center}
-
-＜ 図: リストボックス ＞
-{: .text-center}
-
-### N to N リレーション
-
-ORDAで記述すれば，再帰的なN to N リレーションのエンティティセレクションを簡単に取り出すことができます。
-
-```
-$friends:=$person.friends.person.friends.person.minus($person)
-```
-
-![図: 友人の友人の友人・・・ ](https://user-images.githubusercontent.com/10509075/58543949-62931b00-823b-11e9-8f58-a13dc4f89175.png){: .align-center}
-
-＜ 図: 友人の友人の友人・・・ ＞
-{: .text-center}
