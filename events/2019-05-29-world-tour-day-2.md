@@ -136,28 +136,6 @@ End if
 ## ORDA
 ---
 
-### 複数の「カレントレコード」「カレントセレクション」
-
-ORDAを使用すれば，同一のテーブルに由来する複数のエンティティ（カレントレコード）やエンティティセレクション（カレントセレクション）を同時に扱うことができます。
-
-![図: リストボックス](https://user-images.githubusercontent.com/10509075/58543752-05976500-823b-11e9-90d5-e19aac95b393.png){: .align-center}
-
-＜ 図: リストボックス ＞
-{: .text-center}
-
-### N to N リレーション
-
-ORDAで記述すれば，再帰的なN to N リレーションのエンティティセレクションを簡単に取り出すことができます。
-
-```
-$friends:=$person.friends.person.friends.person.minus($person)
-```
-
-![図: 友人の友人の友人・・・ ](https://user-images.githubusercontent.com/10509075/58543949-62931b00-823b-11e9-8f58-a13dc4f89175.png){: .align-center}
-
-＜ 図: 友人の友人の友人・・・ ＞
-{: .text-center}
-
 ### リストボックス
 
 エンティティセレクション型のリストボックスは，下記のプロパティで簡単にコントロールすることができます。
@@ -201,4 +179,26 @@ End if
 ![図: コレクション型リストボックス・・・ ](https://user-images.githubusercontent.com/10509075/58664780-55287e80-836a-11e9-9068-f5f91e56a7eb.png){: .align-center}
 
 ＜ 図: コレクション型リストボックス・・・ ＞
+{: .text-center}
+
+### 複数の「カレントレコード」「カレントセレクション」
+
+ORDAを使用すれば，同一のテーブルに由来する複数のエンティティ（カレントレコード）やエンティティセレクション（カレントセレクション）を同時に扱うことができます。
+
+![図: リストボックス](https://user-images.githubusercontent.com/10509075/58543752-05976500-823b-11e9-90d5-e19aac95b393.png){: .align-center}
+
+＜ 図: リストボックス ＞
+{: .text-center}
+
+### N to N リレーション
+
+ORDAで記述すれば，再帰的なN to N リレーションのエンティティセレクションを簡単に取り出すことができます。
+
+```
+$friends:=$person.friends.person.friends.person.minus($person)
+```
+
+![図: 友人の友人の友人・・・ ](https://user-images.githubusercontent.com/10509075/58543949-62931b00-823b-11e9-8f58-a13dc4f89175.png){: .align-center}
+
+＜ 図: 友人の友人の友人・・・ ＞
 {: .text-center}
