@@ -148,7 +148,7 @@ End if
 
 ---
 
-#### リストボックス
+### リストボックス
 
 エンティティセレクション型のリストボックスは，下記のプロパティで簡単にコントロールすることができます。
 
@@ -157,6 +157,36 @@ End if
 - カレントの項目の位置
 - 選択された項目
 - メタ情報式
+
+#### フォームイベント
+
+```
+$event:=Form event
+
+Case of 
+	: ($event=On Load)
+
+		Form.List1:=New object("col";Null;"sel";Null;"pos";Null;"item";Null;"items";Null)
+
+		Form.List1.highlightFormat:=New object("stroke";"#FFFFFF";"fill";"#F9AA33")
+
+		Form.List1.col:=ds.名簿.all()
+		
+End case 
+```
+
+#### メタ情報式
+
+```
+C_TEXT($1;$Me)
+C_OBJECT($0)
+
+$Me:=$1  //OBJECT Get name(Object current) does not work in meta
+
+If (Form[$Me].items.contains(This))
+	$0:=Form[$Me].highlightFormat
+End if 
+```
 
 ![図: コレクション型リストボックス・・・ ](https://user-images.githubusercontent.com/10509075/58664780-55287e80-836a-11e9-9068-f5f91e56a7eb.png){: .align-center}
 
