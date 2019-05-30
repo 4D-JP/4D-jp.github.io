@@ -177,6 +177,43 @@ ORDAは，リレーションやオブジェクト型の可視化が容易なの�
 ＜ 図: ダッシュボード ＞
 {: .text-center}
 
+#### 統計メソッド
+
+```
+  //統計
+
+C_LONGINT($1)
+C_OBJECT($0;$営業日;$統計)
+
+$ID:=$1
+
+$営業日:=ds.営業日.get($ID)
+
+If ($営業日#Null)
+	
+	C_OBJECT($today)
+	$today:=ds.売上.query("日付 = :1";$営業日.ID)
+	
+	C_COLLECTION($lines)
+	$lines:=$today.明細.extract("行").reduce("get_lines";New collection)
+	
+	$統計:=New object
+	
+	$統計.合計:=$lines.sum("個数")
+	$統計.半額:=$lines.query("単価 = :1";150).sum("個数")
+	$統計.値引:=$lines.query("単価 = :1";200).sum("個数")
+	$統計.終了:=$today.query("明細.残数[a].商品名 in :1 and 明細.残数[a].終了時刻 != null";ds.洋菓子.all().名称)\
+	.明細\
+	.extract("残数")\
+	.reduce("get_lines";New collection)\
+	.query("終了時刻 != null")\
+	.orderBy("終了時刻 asc")
+	
+End if 
+
+$0:=$統計
+```
+
 ### リストボックス
 
 エンティティセレクション型のリストボックスは，下記のプロパティで簡単にコントロールすることができます。
