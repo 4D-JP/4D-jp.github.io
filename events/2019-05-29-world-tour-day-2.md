@@ -133,11 +133,16 @@ End if
 ## オブジェクト型
 ---
 
-### ORDAリストボックス
+## ORDA
+---
 
-![図: ORDAリストボックス](https://user-images.githubusercontent.com/10509075/58543752-05976500-823b-11e9-90d5-e19aac95b393.png){: .align-center}
+### 複数の「カレントレコード」「カレントセレクション」
 
-＜ 図: ORDAリストボックス ＞
+ORDAを使用すれば，同一のテーブルに由来するエンティティ（カレントレコード）やエンティティセレクション（カレントセレクション）を同時に扱うことができます。
+
+![図: リストボックス](https://user-images.githubusercontent.com/10509075/58543752-05976500-823b-11e9-90d5-e19aac95b393.png){: .align-center}
+
+＜ 図: リストボックス ＞
 {: .text-center}
 
 ### N to N リレーション
@@ -152,8 +157,6 @@ $friends:=$person.friends.person.friends.person.minus($person)
 
 ＜ 図: 友人の友人の友人・・・ ＞
 {: .text-center}
-
----
 
 ### リストボックス
 
