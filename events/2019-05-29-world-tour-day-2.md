@@ -136,6 +136,25 @@ End if
 ## ORDA
 ---
 
+### クエリ
+
+ORDAを使用すれば，複雑なリレーショナルクエリをシンプルに記述することができます。
+
+![図: リレーション・・・ ](https://user-images.githubusercontent.com/10509075/58666136-7b9be900-836d-11e9-8dad-2ae073c62986.png){: .align-center}
+
+＜ 図: リレーション・・・ ＞
+{: .text-center}
+
+![図: ORDAクエリ・・・ ](https://user-images.githubusercontent.com/10509075/58666141-80609d00-836d-11e9-8937-5b4cc839a48f.png){: .align-center}
+
+＜ 図: ORDAクエリ・・・ ＞
+{: .text-center}
+
+![図: 従来のクエリ・・・ ](https://user-images.githubusercontent.com/10509075/58666144-835b8d80-836d-11e9-937d-5b6de3fca834.png){: .align-center}
+
+＜ 図: 従来のクエリ・・・ ＞
+{: .text-center}
+
 ### リストボックス
 
 エンティティセレクション型のリストボックスは，下記のプロパティで簡単にコントロールすることができます。
