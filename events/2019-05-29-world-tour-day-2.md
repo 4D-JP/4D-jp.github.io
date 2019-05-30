@@ -48,7 +48,7 @@ standalone: true
 下記のような<i class="fa fa-external-link" aria-hidden="true"></i> [コマンドラインインタフェース](https://doc.4d.com/4Dv17R4/4D/17-R4/Command-Line-Interface.300-4085761.ja.html)（CLI）が使用できます。
 
 | パラメーター | 意味 | 値 |
-|:---:|:---:|:---:|
+|:---|:---|:---|
 |--structure |ストラクチャファイル |パス | 
 |--data |データファイル |パス | 
 |--opening-mode |実行モード | | 
