@@ -11,6 +11,7 @@ standalone: true
 <!--more-->
 
 ##  デザインモード
+---
 
 デザインモードの便利な使い方を知っていれば，仕事の能率が上がります。逆に知らないと，無駄な作業に余計な時間を費やしてしまい，機会の損失につながるかもしれません。
 
@@ -40,6 +41,22 @@ standalone: true
 
 ＜ 図: メソッドエディターの設定ファイル⑶ ＞
 {: .text-center}
+
+##  起動パラメーターの受け渡し
+---
+
+コマンドラインインタフェース（CLI）には下記のようなものが存在します。
+
+| パラメーター | 意味 | 値 |
+|:---:|:---:|:---:|
+| --structure | ストラクチャファイル | パス | 
+| --data | データファイル | パス | 
+| --opening-mode | 実行モード | | 
+| --create-data | 新規データファイルを作成 | | 
+| --user-param | 起動パラメーター | 任意の文字列 | 
+| --headless | ユーザーインタフェースを表示しない | * 17R6予定 | 
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-relaunch-and-test.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/relaunch-and-test-1.0)
 
 ##  Undefined
 ---
