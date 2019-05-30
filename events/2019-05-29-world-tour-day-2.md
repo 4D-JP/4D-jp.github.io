@@ -7,9 +7,6 @@ permalink: /event/2019-05-29/
 standalone: true
 ---
 
-4D World Tour 2019（２日目）
-<!--more-->
-
 ##  デザインモード
 ---
 
