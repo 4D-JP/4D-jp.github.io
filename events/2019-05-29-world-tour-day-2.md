@@ -10,6 +10,44 @@ standalone: true
 4D World Tour 2019（２日目）
 <!--more-->
 
+##  Undefined
+---
+
+``Undefined``つまり未定義という「値」は，1. パラメーターが省略された場合，2. オブジェクト型の存在しないプロパティにアクセスした場合，3. 値を返さないコマンドまたはメソッドの戻り値を受け取ろうとした場合に発生します。v17では，そのような値の扱いが変わりました。1. 未定義を``If``などの条件文で評価した場合は``False``が返される，2. 未定義がパラメーターとして渡された場合はパラメーターに宣言型のデフォルト値が代入される，3. 存在しないプロパティのプロパティにアクセスした場合は``Undefined``が返されれる，という仕様です。なお，``Undefined``を``Null``と比較した場合は``True``が返されます。
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-undefined.4dbase.zip
+](https://github.com/4D-JP/event-world-tour-2019/releases/tag/undefined-1.0)
+
+```
+C_TEXT($1)
+C_DATE($2)
+C_TIME($3)
+C_LONGINT($4)
+C_BOOLEAN($5)
+
+If (Count parameters<5)
+	If ($5)
+		  //not error
+	Else 
+		TRACE
+	End if 
+End if 
+```
+
+```
+C_OBJECT($o)
+
+If ($o.a.b.c.d.e.f.g)
+	  //not error
+Else 
+	TRACE
+End if 
+```
+
+こちらの記事もご覧ください
+
+[未定義の参照と代入](https://4d-jp.github.io/2019/05/11/undefined/)
+
 ## フォーム
 ---
 
