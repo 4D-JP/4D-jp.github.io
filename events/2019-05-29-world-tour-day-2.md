@@ -49,12 +49,12 @@ standalone: true
 
 | パラメーター | 意味 | 値 |
 |:---:|:---:|:---:|
-| --structure | ストラクチャファイル | パス | 
-| --data | データファイル | パス | 
-| --opening-mode | 実行モード | | 
-| --create-data | 新規データファイルを作成 | | 
-| --user-param | 起動パラメーター | 任意の文字列 | 
-| --headless | ユーザーインタフェースを表示しない | * 17R6予定 | 
+|--structure |ストラクチャファイル |パス | 
+|--data |データファイル |パス | 
+|--opening-mode |実行モード | | 
+|--create-data |新規データファイルを作成 | | 
+|--user-param |起動パラメーター |任意の文字列 | 
+|--headless |ユーザーインタフェースを表示しない |17R6 | 
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-relaunch-and-test.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/relaunch-and-test-1.0)
 
