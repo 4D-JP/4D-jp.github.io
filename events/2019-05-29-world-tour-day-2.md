@@ -45,7 +45,7 @@ standalone: true
 ##  起動パラメーターの受け渡し
 ---
 
-コマンドラインインタフェース（CLI）には下記のようなものが存在します。
+<i class="fa fa-external-link" aria-hidden="true"></i> [コマンドラインインタフェース](https://doc.4d.com/4Dv17R4/4D/17-R4/Command-Line-Interface.300-4085761.ja.html)（CLI）には下記のようなものが存在します。
 
 | パラメーター | 意味 | 値 |
 |:---:|:---:|:---:|
