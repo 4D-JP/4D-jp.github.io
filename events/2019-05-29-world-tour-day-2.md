@@ -10,6 +10,20 @@ standalone: true
 4D World Tour 2019（２日目）
 <!--more-->
 
+##  デザインモード
+
+デザインモードの便利な使い方を知っていれば，仕事の能率が上がります。逆に知らないと，無駄な作業に余計な時間を費やしてしまい，機会の損失につながるかもしれません。
+
+デバッガーの<i class="fa fa-external-link" aria-hidden="true"></i> [実行行ハイライトカラー](https://doc.4d.com/4Dv17R4/4D/17-R4/Methods-Page.300-4085748.ja.html)はカスタマイズできるようになりました。
+
+コードエディターおよびデバッガーは，<i class="fa fa-external-link" aria-hidden="true"></i> [新しいキーボードショートカット](https://doc.4d.com/4Dv17R4/4D/17-R4/Debugger-Shortcuts.300-4053962.ja.html)をサポートしています。
+
+<i class="fa fa-external-link" aria-hidden="true"></i> [自動ブラケット補完](https://blog.4d.com/check-out-the-code-editor-enhancements/)を有効にすれば，素早く正確にコマンドや制御フローを入力することができます。
+
+<i class="fa fa-external-link" aria-hidden="true"></i> [メソッドエディターのステータスバー](https://blog.4d.com/check-out-the-code-editor-enhancements/)に表示される情報も見過ごせない改良点です。標準コマンドはもちろん，プロジェクトメソッドの引数タイプもコマンド入力中にアップデートされるため，仕様書やドキュメントを確認する手間が省けます。
+
+<i class="fa fa-external-link" aria-hidden="true"></i> [スライド](https://speakerdeck.com/miyako/dezainmodo-4d-world-tour-2019-2ri-mu-yori)
+
 ##  Undefined
 ---
 
