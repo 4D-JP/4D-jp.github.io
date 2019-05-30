@@ -145,12 +145,12 @@ ORDAを使用すれば，複雑なリレーショナルクエリをシンプル�
 ＜ 図: リレーション・・・ ＞
 {: .text-center}
 
-![図: ORDAクエリ・・・ ](https://user-images.githubusercontent.com/10509075/58666141-80609d00-836d-11e9-8937-5b4cc839a48f.png){: .align-center}
+![図: ORDAクエリ・・・ ](https://user-images.githubusercontent.com/10509075/58666356-11d00f00-836e-11e9-8422-7fa19b2f9369.png){: .align-center}
 
 ＜ 図: ORDAクエリ・・・ ＞
 {: .text-center}
 
-![図: 従来のクエリ・・・ ](https://user-images.githubusercontent.com/10509075/58666144-835b8d80-836d-11e9-937d-5b6de3fca834.png){: .align-center}
+![図: 従来のクエリ・・・ ](https://user-images.githubusercontent.com/10509075/58666367-1ac0e080-836e-11e9-8118-3616b210f9ab.png){: .align-center}
 
 ＜ 図: 従来のクエリ・・・ ＞
 {: .text-center}
