@@ -140,33 +140,33 @@ End if
 
 ORDAを使用すれば，複雑なリレーショナルクエリをシンプルに記述することができます。
 
-![図: リレーション・・・ ](https://user-images.githubusercontent.com/10509075/58666136-7b9be900-836d-11e9-8dad-2ae073c62986.png){: .align-center}
+![図: リレーション](https://user-images.githubusercontent.com/10509075/58666136-7b9be900-836d-11e9-8dad-2ae073c62986.png){: .align-center}
 
-＜ 図: リレーション・・・ ＞
+＜ 図: リレーション ＞
 {: .text-center}
 
-![図: ORDA・・・ ](https://user-images.githubusercontent.com/10509075/58666433-404dea00-836e-11e9-922b-5377c208764c.png){: .align-center}
+![図: ORDA ](https://user-images.githubusercontent.com/10509075/58666433-404dea00-836e-11e9-922b-5377c208764c.png){: .align-center}
 
-＜ 図: ORDA・・・ ＞
+＜ 図: ORDA ＞
 {: .text-center}
 
-![図: 従来のクエリ・・・ ](https://user-images.githubusercontent.com/10509075/58666367-1ac0e080-836e-11e9-8118-3616b210f9ab.png){: .align-center}
+![図: 従来のクエリ ](https://user-images.githubusercontent.com/10509075/58666367-1ac0e080-836e-11e9-8118-3616b210f9ab.png){: .align-center}
 
-＜ 図: 従来のクエリ・・・ ＞
+＜ 図: 従来のクエリ ＞
 {: .text-center}
 
 ### オブジェクト型
 
 ORDAを使用すれば，オブジェクト型フィールドのリンクされたクエリもシンプルに記述することができます。
 
-![図: オブジェクト型・・・ ](https://user-images.githubusercontent.com/10509075/58666654-ea2d7680-836e-11e9-887c-a03221b7dd60.png){: .align-center}
+![図: オブジェクト型](https://user-images.githubusercontent.com/10509075/58666654-ea2d7680-836e-11e9-887c-a03221b7dd60.png){: .align-center}
 
-＜ 図: オブジェクト型・・・ ＞
+＜ 図: オブジェクト型 ＞
 {: .text-center}
 
-![図: ORDA・・・ ](https://user-images.githubusercontent.com/10509075/58666684-ff0a0a00-836e-11e9-9aec-3008efb8b8ed.png){: .align-center}
+![図: ORDA](https://user-images.githubusercontent.com/10509075/58666684-ff0a0a00-836e-11e9-9aec-3008efb8b8ed.png){: .align-center}
 
-＜ 図: ORDA・・・ ＞
+＜ 図: ORDA ＞
 {: .text-center}
 
 ### リストボックス
@@ -209,9 +209,9 @@ If (Form[$Me].items.contains(This))
 End if 
 ```
 
-![図: コレクション型リストボックス・・・ ](https://user-images.githubusercontent.com/10509075/58664780-55287e80-836a-11e9-9068-f5f91e56a7eb.png){: .align-center}
+![図: コレクション型リストボックス](https://user-images.githubusercontent.com/10509075/58664780-55287e80-836a-11e9-9068-f5f91e56a7eb.png){: .align-center}
 
-＜ 図: コレクション型リストボックス・・・ ＞
+＜ 図: コレクション型リストボックス ＞
 {: .text-center}
 
 ### 複数の「カレントレコード」「カレントセレクション」
