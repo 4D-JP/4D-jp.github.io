@@ -164,13 +164,13 @@ End if
 $event:=Form event
 
 Case of 
-	: ($event=On Load)
+: ($event=On Load)
 
-		Form.List1:=New object("col";Null;"sel";Null;"pos";Null;"item";Null;"items";Null)
+	Form.List1:=New object("col";Null;"sel";Null;"pos";Null;"item";Null;"items";Null)
 
-		Form.List1.highlightFormat:=New object("stroke";"#FFFFFF";"fill";"#F9AA33")
+	Form.List1.highlightFormat:=New object("stroke";"#FFFFFF";"fill";"#F9AA33")
 
-		Form.List1.col:=ds.名簿.all()
+	Form.List1.col:=ds.名簿.all()
 		
 End case 
 ```
