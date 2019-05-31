@@ -216,9 +216,9 @@ CLOSE WINDOW($w)
 ## 文書や請求書を作成
 ---
 
-<i class="fa fa-download" aria-hidden="true"></i> [conf19-write-pro.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/write-pro-1.0)
-
 4D Write Proで作成したドキュメントは，DOCX PDF HTML形式でエクスポートできるようになりました。インライン画像・背景画像・アンカー画像もエクスポートされるので，広告文書やカタログなどの編集にも活用できます。
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-write-pro.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/write-pro-1.0)
 
 ![図: 文書や請求書を作成](https://user-images.githubusercontent.com/10509075/58693596-19260580-83cc-11e9-8444-fa08ad5f638b.png){: .align-center}
 
