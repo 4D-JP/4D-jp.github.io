@@ -66,6 +66,54 @@ standalone: true
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-relaunch-and-test.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/relaunch-and-test-1.0)
 
+## オブジェクト型
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-object.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/object-1.0)
+
+オブジェクト型は，[``New object``](https://doc.4d.com/4Dv17/4D/17.1/New-object.301-4179445.ja.html)などのコマンドで作成したオブジェクトそのものではなく，オブジェクトにアクセスするための参照である，という点がテキストや数値など，従来の変数とは違います。
+
+たとえば，オブジェクト型を別の変数にコピーするのであれば，代入演算子（``:=``）ではなく，[``OB Copy``](https://doc.4d.com/4Dv17/4D/17.1/OB-Copy.301-4179437.ja.html)を使用する必要があります。
+
+```
+C_OBJECT($o;$o2)
+
+$o:=New object
+$o.属性:="値"
+
+  //$o2:=$o
+$o2:=OB Copy($o)
+
+$o.属性:="べつの値"
+
+CLEAR VARIABLE($o)
+```
+
+オブジェクト配列に要素を追加する場合も同じです。
+
+- 誤
+
+```
+ARRAY OBJECT($oo;0)
+C_OBJECT($o)
+
+$o:=New object("属性";"値")
+
+For ($i;1;3)
+	$o.属性:=String($i)+"番目の値"
+	APPEND TO ARRAY($oo;$o)
+End for 
+```
+
+- 正
+
+```
+ARRAY OBJECT($oo;0)
+
+For ($i;1;3)
+	APPEND TO ARRAY($oo;New object("属性";String($i)+"番目の値"))
+End for 
+```
+
 ##  Undefined
 ---
 
