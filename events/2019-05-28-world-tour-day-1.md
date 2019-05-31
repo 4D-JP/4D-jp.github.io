@@ -139,7 +139,7 @@ ORDAは新しいパラダイムです。従来のランゲージでも，デー�
 
 N to 1リレーションであれば，そのまま同じリストボックスのカラムに，1 to Nリレーションであれば，隣接するリストボックスに表示させることができます。表示されているのはどれも同じテーブルのエンティティセレクションであり，リストボックスのカラム設定はすべて流用されている点に注目してください。
 
-![図: 1 to Nリレーションで](https://user-images.githubusercontent.com/10509075/58682812-03edae80-83ad-11e9-9c69-77ce7f80a095.png){: .align-center}
+![図: 1 to Nリレーション](https://user-images.githubusercontent.com/10509075/58682812-03edae80-83ad-11e9-9c69-77ce7f80a095.png){: .align-center}
 
-＜ 図: 1 to Nリレーションで ＞
+＜ 図: 1 to Nリレーション ＞
 {: .text-center}
