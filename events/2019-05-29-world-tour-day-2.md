@@ -206,6 +206,33 @@ SET DATABASE PARAMETER(Dates inside objects;Dates inside objects)
 $o.属性:=$date
 ```
 
+## トランスポーター
+---
+
+[トランスポーター](https://doc.4d.com/4Dv17R4/4D/17-R4/Mail.201-4069211.ja.html)は，メール送信に特化されたオブジェクトです。
+
+4d Internet Commandsと比較した場合，下記の点で優れています。
+
+- プリエンプティブモード対応
+- IPv6サポート
+- SMTPステータスコードをそのまま返す
+- オブジェクト指向プログラミング
+- BLOB（またはファイルパス）で添付ファイル
+- ログファイルの出力（17R5）
+- DIGEST-MD5 Kerberos OAUTH2 PKCS#11 認証プロトコルサポート（17R6）
+
+<i class="fa fa-external-link" aria-hidden="true"></i> [スライド](https://speakerdeck.com/miyako/toransupota-4d-world-tour-2019-2ri-mu-yori)
+
+![図: メール送信⑴](https://user-images.githubusercontent.com/10509075/58689655-98164080-83c2-11e9-8e86-0b2f66cd9ae2.png){: .align-center}
+
+＜ 図: メール送信⑴ ＞
+{: .text-center}
+
+![図: メール送信⑵](https://user-images.githubusercontent.com/10509075/58689693-b2e8b500-83c2-11e9-9ec9-35d5ab3f8bab.png){: .align-center}
+
+＜ 図: メール送信⑵ ＞
+{: .text-center}
+
 ##  Undefined
 ---
 
