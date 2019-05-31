@@ -211,3 +211,32 @@ CLOSE WINDOW($w)
 ```
 
 ピクチャやメソッドもエクスポートされている点に注目してください。
+
+## 文書や請求書を作成
+---
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-write-pro.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/write-pro-1.0)
+
+4D Write Proで作成したドキュメントは，DOCX PDF HTML形式でエクスポートできるようになりました。インライン画像・背景画像・アンカー画像もエクスポートされるので，広告文書やカタログなどの編集にも活用できます。
+
+![図: 文書や請求書を作成](https://user-images.githubusercontent.com/10509075/58693596-19260580-83cc-11e9-8444-fa08ad5f638b.png){: .align-center}
+
+＜ 図: 文書や請求書を作成 ＞
+{: .text-center}
+
+エクスポートしたDOCXは，Word 2010以降で開くことができます。エクスポートされるのは，下記の要素です。
+
+- 本文
+- ヘッダー
+- フッター
+- セクション
+- ページ設定
+- プリント設定
+- インライン画像
+- 背景画像
+- アンカー画像（ビューモードは画面上のレンダリングに依存するため除外）
+- ブックマーク
+- 変数・フィールド・メソッド・計算式（確定値）
+- ``Current date`` PPCurrent time`` ``$wp_``数式はWordフィールドに変換
+
+<i class="fa fa-external-link" aria-hidden="true"></i> [ドキュメント](https://doc.4d.com/4Dv17R4/4D/17-R4/Exporting-in-docx-format.200-4077720.ja.html)
