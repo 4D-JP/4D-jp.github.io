@@ -157,11 +157,35 @@ $c[8]:="9番目の値"
 - ピクチャ
 - ポインター
 
+### メンバーメソッド
+
+コレクション型は，``38``種類のメンバーメソッドをサポートしています。比較的，使用する機会が多いのは，下記のメンバーメソッドかもしれません。
+
+- 要素の付け足しと取り出し
+
+	- push() 末尾に追加
+	- unshift() 先頭に追加
+	- shift() 先頭を取り出し
+	- pop() 末尾を取り出し
+
+- 派生コレクションの作成
+
+	- reverse() 逆順のコレクションを作成
+	- extract() （オブジェクト型のコレクションから）指定プロパティでコレクションを作成
+	- concat() 連結したコレクションを作成
+	- copy() コピーを作成
+	
+- コールバックメソッドで要素を処理
+
+	- map() 要素値を別の値に置換
+	- filter() 条件に適う要素だけを抽出
+	- reduce() 要素を別のオブジェクトまたはコレクションにまとめる
+
 ### 型の特定と変換
 
 オブジェクト型のプロパティやコレクション型の要素は，変数のように型が決まっているわけではないので，[``Type``](https://doc.4d.com/4Dv17/4D/17.1/Type.301-4178621.ja.html)ではなく，[``Value type``](https://doc.4d.com/4Dv17/4D/17.1/Value-type.301-4178634.ja.html)で型を特定します。
 
-別の型に値を変換したい場合，[``OB Get``](https://doc.4d.com/4Dv17/4D/17.1/OB-Get.301-4179444.ja.html)を使用するか，[``String``](https://doc.4d.com/4Dv17/4D/17.1/String.301-4179471.ja.html) [``Num``](https://doc.4d.com/4Dv17/4D/17.1/Num.301-4179487.ja.html) [``Time``](https://doc.4d.com/4Dv17/4D/17.1/Time.301-4179455.ja.html) ``Date``(https://doc.4d.com/4Dv17/4D/17.1/Date.301-4179453.ja.html) [``Bool``](https://doc.4d.com/4Dv17/4D/17.1/Date.301-4179453.ja.html)のような関数を使用します。[``Date``](https://doc.4d.com/4Dv17/4D/17.1/Date.301-4179453.ja.html)にISO文字列を渡した場合，ローカルタイムゾーンに変換された日付が返されます。
+別の型に値を変換したい場合，[``OB Get``](https://doc.4d.com/4Dv17/4D/17.1/OB-Get.301-4179444.ja.html)を使用するか，[``String``](https://doc.4d.com/4Dv17/4D/17.1/String.301-4179471.ja.html) [``Num``](https://doc.4d.com/4Dv17/4D/17.1/Num.301-4179487.ja.html) [``Time``](https://doc.4d.com/4Dv17/4D/17.1/Time.301-4179455.ja.html) [``Date``](https://doc.4d.com/4Dv17/4D/17.1/Date.301-4179453.ja.html) [``Bool``](https://doc.4d.com/4Dv17/4D/17.1/Date.301-4179453.ja.html)のような関数を使用します。[``Date``](https://doc.4d.com/4Dv17/4D/17.1/Date.301-4179453.ja.html)にISO文字列を渡した場合，ローカルタイムゾーンに変換された日付が返されます。
 
 ### 日付型
 
