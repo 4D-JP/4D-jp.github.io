@@ -104,7 +104,7 @@ Webプロセスの場合，メソッド毎の設定はありません。デー�
 - [``REPLICATE``](https://doc.4d.com/4Dv17/4D/17/REPLICATE.300-3786790.ja.html) [``SYNCHRONIZE``](https://doc.4d.com/4Dv17/4D/17/SYNCHRONIZE.300-3786772.ja.html)
 - [``SQL LOGIN``](https://doc.4d.com/4Dv17/4D/17.1/SQL-LOGIN.301-4179385.ja.html)
 
-## ORDA
+## データ視覚化の新しい方法
 ---
 
 ORDAには，いろいろな側面があります。
