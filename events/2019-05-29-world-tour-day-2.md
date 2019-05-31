@@ -52,6 +52,8 @@ standalone: true
 ##  起動パラメーターの受け渡し
 ---
 
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-relaunch-and-test.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/relaunch-and-test-1.0)
+
 下記のような[コマンドラインインタフェース](https://doc.4d.com/4Dv17R4/4D/17-R4/Command-Line-Interface.300-4085761.ja.html)（CLI）が使用できます。
 
 | パラメーター | 意味 | 値 |
@@ -63,9 +65,8 @@ standalone: true
 |--user-param |起動パラメーター |任意の文字列 | 
 |--headless |ユーザーインタフェースを表示しない |17R6 | 
 
-<i class="fa fa-download" aria-hidden="true"></i> [conf19-relaunch-and-test.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/relaunch-and-test-1.0)
-
 ## オブジェクト型
+---
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-object.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/object-1.0)
 
@@ -208,9 +209,9 @@ $o.属性:=$date
 ##  Undefined
 ---
 
-``Undefined``つまり未定義という「値」は，1. パラメーターが省略された場合，2. オブジェクト型の存在しないプロパティにアクセスした場合，3. 値を返さないコマンドまたはメソッドの戻り値を受け取ろうとした場合に発生します。v17では，そのような値の扱いが変わりました。1. 未定義を``If``などの条件文で評価した場合は``False``が返される，2. 未定義がパラメーターとして渡された場合はパラメーターに宣言型のデフォルト値が代入される，3. 存在しないプロパティのプロパティにアクセスした場合は``Undefined``が返されれる，という仕様です。なお，``Undefined``を[``Null``](https://doc.4d.com/4Dv17/4D/17.1/Null.301-4178633.ja.html)と比較した場合は``True``が返されます。
-
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-undefined.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/undefined-1.0)
+
+``Undefined``つまり未定義という「値」は，1. パラメーターが省略された場合，2. オブジェクト型の存在しないプロパティにアクセスした場合，3. 値を返さないコマンドまたはメソッドの戻り値を受け取ろうとした場合に発生します。v17では，そのような値の扱いが変わりました。1. 未定義を``If``などの条件文で評価した場合は``False``が返される，2. 未定義がパラメーターとして渡された場合はパラメーターに宣言型のデフォルト値が代入される，3. 存在しないプロパティのプロパティにアクセスした場合は``Undefined``が返されれる，という仕様です。なお，``Undefined``を[``Null``](https://doc.4d.com/4Dv17/4D/17.1/Null.301-4178633.ja.html)と比較した場合は``True``が返されます。
 
 ```
 C_TEXT($1)
@@ -245,9 +246,9 @@ End if
 ## フォーム
 ---
 
-[``Form``](https://doc.4d.com/4Dv17/4D/17.1/Form.301-4179574.ja.html)を使用すれば，ウィンドウの中だけで有効な「ローカル変数」をフォームオブジェクトのデータソースに設定することができます。``Form``は，[``DIALOG``](https://doc.4d.com/4Dv17/4D/17.1/DIALOG.301-4179342.ja.html)で開いたウィンドウのコンテキストで使用することができます。``DIALOG``に渡したオブジェクトは，``Form``の初期値となり，ウィンドウが閉じられた後，ダイアログ実行中に更新された``Form``がそのオブジェクトに返されます。
-
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-form.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/form.4dbase-1.0)
+
+[``Form``](https://doc.4d.com/4Dv17/4D/17.1/Form.301-4179574.ja.html)を使用すれば，ウィンドウの中だけで有効な「ローカル変数」をフォームオブジェクトのデータソースに設定することができます。``Form``は，[``DIALOG``](https://doc.4d.com/4Dv17/4D/17.1/DIALOG.301-4179342.ja.html)で開いたウィンドウのコンテキストで使用することができます。``DIALOG``に渡したオブジェクトは，``Form``の初期値となり，ウィンドウが閉じられた後，ダイアログ実行中に更新された``Form``がそのオブジェクトに返されます。
 
 ![図: フォーム](https://user-images.githubusercontent.com/10509075/58557700-fffd4780-8259-11e9-92ca-c6698efd5684.png){: .align-center}
 
@@ -257,9 +258,9 @@ End if
 ## 共有オブジェクトとストレージ
 ---
 
-[共有オブジェクト](https://doc.4d.com/4Dv17/4D/17.1/Shared-objects-and-shared-collections.300-4179447.ja.html)および[ストレージ](https://doc.4d.com/4Dv17/4D/17.1/Storage.301-4179448.ja.html)は，インタープロセス変数に代わるもので，プロセス間で情報を共有するための新しいメカニズムです。
-
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-shared-object.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/shared-object-1.0)
+
+[共有オブジェクト](https://doc.4d.com/4Dv17/4D/17.1/Shared-objects-and-shared-collections.300-4179447.ja.html)および[ストレージ](https://doc.4d.com/4Dv17/4D/17.1/Storage.301-4179448.ja.html)は，インタープロセス変数に代わるもので，プロセス間で情報を共有するための新しいメカニズムです。
 
 ![図: 共有オブジェクト](https://user-images.githubusercontent.com/10509075/58556339-c24aef80-8256-11e9-8f8d-d88f490a86d8.png){: .align-center}
 
@@ -283,9 +284,9 @@ End if
 ## ORDA
 ---
 
-既存のクエリやフォームを敢えてORDAで作り直す必要はないでしょう。しかし，ORDAを使用すれば，これまで難しかった処理や画面がシンプルかつスマートに実現できるかもしれません。
-
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-orda.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/orda-1.0)
+
+既存のクエリやフォームを敢えてORDAで作り直す必要はないでしょう。しかし，ORDAを使用すれば，これまで難しかった処理や画面がシンプルかつスマートに実現できるかもしれません。
 
 ### リストボックス
 
