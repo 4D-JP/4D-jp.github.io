@@ -176,11 +176,6 @@ Windowsプラットフォームでシングル・ドキュメント・インタ�
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-dynamic-form.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/dynamic-form-1.0)
 
-![図: ダイナミックフォーム](https://user-images.githubusercontent.com/10509075/58683712-68f6d380-83b0-11e9-8586-43a116686469.png){: .align-center}
-
-＜ 図: ダイナミックフォーム ＞
-{: .text-center}
-
 ### エディターで作成したフォームをダイナミックフォームとして使用する
 
 ```
