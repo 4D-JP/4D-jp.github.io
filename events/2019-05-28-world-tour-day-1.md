@@ -237,6 +237,6 @@ CLOSE WINDOW($w)
 - アンカー画像（ビューモードは画面上のレンダリングに依存するため除外）
 - ブックマーク
 - 変数・フィールド・メソッド・計算式（確定値）
-- ``Current date`` PPCurrent time`` ``$wp_``数式はWordフィールドに変換
+- ``Current date`` ``Current time`` ``$wp_``数式はWordフィールドに変換
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [ドキュメント](https://doc.4d.com/4Dv17R4/4D/17-R4/Exporting-in-docx-format.200-4077720.ja.html)
