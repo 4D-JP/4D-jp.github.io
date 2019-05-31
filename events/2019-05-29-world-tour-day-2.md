@@ -225,14 +225,9 @@ $o.属性:=$date
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [スライド](https://speakerdeck.com/miyako/toransupota-4d-world-tour-2019-2ri-mu-yori)
 
-![図: メール送信⑴](https://user-images.githubusercontent.com/10509075/58689655-98164080-83c2-11e9-8e86-0b2f66cd9ae2.png){: .align-center}
+![図: メール送信](https://user-images.githubusercontent.com/10509075/58689693-b2e8b500-83c2-11e9-9ec9-35d5ab3f8bab.png){: .align-center}
 
-＜ 図: メール送信⑴ ＞
-{: .text-center}
-
-![図: メール送信⑵](https://user-images.githubusercontent.com/10509075/58689693-b2e8b500-83c2-11e9-9ec9-35d5ab3f8bab.png){: .align-center}
-
-＜ 図: メール送信⑵ ＞
+＜ 図: メール送信 ＞
 {: .text-center}
 
 ##  Undefined
