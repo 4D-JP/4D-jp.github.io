@@ -257,6 +257,21 @@ Write Proのユーザーインタフェースは，かなりの部分が標準�
 ＜ 図: タスク＞
 {: .text-center}
 
+### スワイプトゥリフレッシュ
+
+リストフォームを左にスワイプしたときに実行されるアクションを設定すれば，デバイスからレコードを更新することができます。
+
+- リストフォーム：/RESOURCES/Mobile/form/list/TasksList/
+- フォーマッター：/RESOURCES/Mobile/formatters/プライオリティー文字列/
+- フォーマッター：/RESOURCES/Mobile/formatters/ステータス文字列/
+- アイコン：/RESOURCES/Mobile/medias/icons/doneIcon.png
+- アクション：setProgress100
+
+![図: スワイプトゥリフレッシュ](https://user-images.githubusercontent.com/10509075/58738040-0e588880-843f-11e9-9ebc-51620bd2e8b2.png){: .align-center}
+
+＜ 図: スワイプトゥリフレッシュ＞
+{: .text-center}
+
 ### カスタムフォーマッター
 
 数値ではなく，アイコンで表現すれば，プライオリティーやステータスを表現すれば，情報を直感的に伝えることができます。
