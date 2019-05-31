@@ -53,6 +53,8 @@ v16以降の64ビット版は，ハードウェアのポテンシャルを引
 - ``100``MBから``100``GB以上まで幅広いサイズを想定
 - フラグメンテーションの恐れなし
 
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-manage-cache.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/conf19-manage-cache-1.0)
+
 ## ハードウェアの力を使用する
 ---
 
@@ -64,6 +66,8 @@ v16以降の64ビット版は，ハードウェアのポテンシャルを引
 ---
 
 Webプロセスの場合，メソッド毎の設定はありません。データベース設定でプリエンプティブモードを有効にすることができます。Webサービスの場合，メソッドのプロパティ「プリエンプティブモードで実行可」を有効にすれば，コンパイラーが呼び出しチェーンのコマンド/メソッドをチェックします。
+
+<i class="fa fa-download" aria-hidden="true"></i> [con19-web-server-preemptive.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/web-server-preemptive-1.0)
 
 ## プロセス間のデータ交換
 ---
@@ -114,3 +118,14 @@ ORDAには，いろいろな側面があります。
 - データアクセス（クライアント/サーバー・4D for iOS・コネクター構想）
 
 ORDAは新しいパラダイムです。従来のランゲージでも，データのアクセスと表示はできますが，リレーショナルデータベースとオブジェクト指向データベースの利点を組みあわせたORDAを使用すれば，ほんの数行で複雑なデータを直感的に視覚化することができます。
+
+### 家系図
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-genealogy.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/genealogy-1.2)
+
+オブジェクト記法を使用して父母・祖父母のデータにアクセスすることができます。
+
+![図: 父母・祖父母のデータにアクセス](https://user-images.githubusercontent.com/10509075/58682524-d48a7200-83ab-11e9-9728-86d150f86880.png){: .align-center}
+
+＜ 図: 父母・祖父母のデータにアクセス ＞
+{: .text-center}
