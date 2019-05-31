@@ -114,6 +114,23 @@ For ($i;1;3)
 End for 
 ```
 
+### OB SETの特殊性
+
+[``OB SET``](https://doc.4d.com/4Dv17/4D/17.1/OB-SET.301-4179438.ja.html)は特殊なコマンドです。``Null``のオブジェクトが渡された場合，自動的に新規オブジェクトが作成されるようになっています。
+
+```
+ARRAY OBJECT($oo;0)
+C_OBJECT($o)
+
+For ($i;1;3)
+	OB SET($o;"属性";String($i)+"番目の値")
+	APPEND TO ARRAY($oo;$o)
+	CLEAR VARIABLE($o)
+End for 
+```
+
+<i class="fa fa-external-link" aria-hidden="true"></i> [スライド](https://speakerdeck.com/miyako/obuziekutoxing-developer-conference-2018yori?slide=9)
+
 ##  Undefined
 ---
 
