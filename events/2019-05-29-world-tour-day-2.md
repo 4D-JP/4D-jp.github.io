@@ -163,23 +163,23 @@ $c[8]:="9番目の値"
 
 - 要素の付け足しと取り出し
 
-	- push() 末尾に追加
-	- unshift() 先頭に追加
-	- shift() 先頭を取り出し
-	- pop() 末尾を取り出し
+	- [``push()``](https://doc.4d.com/4Dv17/4D/17.1/collectionpush.305-4179649.ja.html) 末尾に追加
+	- [``unshift()``](https://doc.4d.com/4Dv17/4D/17.1/collectionunshift.305-4179669.ja.html) 先頭に追加
+	- [``shift()``](https://doc.4d.com/4Dv17/4D/17.1/collectionshift.305-4179668.ja.html) 先頭を取り出し
+	- [``pop()``](https://doc.4d.com/4Dv17/4D/17.1/collectionpop.305-4179658.ja.html) 末尾を取り出し
 
 - 派生コレクションの作成
 
-	- reverse() 逆順のコレクションを作成
-	- extract() （オブジェクト型のコレクションから）指定プロパティでコレクションを作成
-	- concat() 連結したコレクションを作成
-	- copy() コピーを作成
+	- [``reverse()``](https://doc.4d.com/4Dv17/4D/17.1/collectionreverse.305-4179677.ja.html) 逆順のコレクションを作成
+	- [``extract()``](https://doc.4d.com/4Dv17/4D/17.1/collectionextract.305-4179673.ja.html) （オブジェクト型のコレクションから）指定プロパティでコレクションを作成
+	- [``concat()``](https://doc.4d.com/4Dv17/4D/17.1/collectionconcat.305-4179675.ja.html) 連結したコレクションを作成
+	- [``copy()``](https://doc.4d.com/4Dv17/4D/17.1/collectioncopy.305-4179665.ja.html) コピーを作成
 	
 - コールバックメソッドで要素を処理
 
-	- map() 要素値を別の値に置換
-	- filter() 条件に適う要素だけを抽出
-	- reduce() 要素を別のオブジェクトまたはコレクションにまとめる
+	- [``map()``](https://doc.4d.com/4Dv17/4D/17.1/collectionmap.305-4179678.ja.html) 要素値を別の値に置換
+	- [``filter()``](https://doc.4d.com/4Dv17/4D/17.1/collectionfilter.305-4179661.ja.html) 条件に適う要素だけを抽出
+	- [``reduce()``](https://doc.4d.com/4Dv17/4D/17.1/collectionreduce.305-4179688.ja.html) 要素を別のオブジェクトまたはコレクションにまとめる
 
 ### 型の特定と変換
 
