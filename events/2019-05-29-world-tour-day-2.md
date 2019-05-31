@@ -70,7 +70,7 @@ standalone: true
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-object.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/object-1.0)
 
-オブジェクト型は，[``New object``](https://doc.4d.com/4Dv17/4D/17.1/New-object.301-4179445.ja.html)などのコマンドで作成したオブジェクトそのものではなく，オブジェクトにアクセスするための参照である，という点がテキストや数値など，従来の変数とは違います。
+オブジェクト型は，[``New object``](https://doc.4d.com/4Dv17/4D/17.1/New-object.301-4179445.ja.html)などのコマンドで作成したオブジェクトそのものではなく，オブジェクトにアクセスするための参照が代入される，という点がテキストや数値などの変数とは違います。
 
 たとえば，オブジェクト型を別の変数にコピーするのであれば，代入演算子（``:=``）ではなく，[``OB Copy``](https://doc.4d.com/4Dv17/4D/17.1/OB-Copy.301-4179437.ja.html)を使用する必要があります。
 
@@ -130,6 +130,57 @@ End for
 ```
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [スライド](https://speakerdeck.com/miyako/obuziekutoxing-developer-conference-2018yori?slide=9)
+
+### コレクション型
+
+コレクション型は，[``New collection``](https://doc.4d.com/4Dv17/4D/17.1/New-collection.301-4179645.ja.html)などのコマンドで作成したコレクションそのものではなく，コレクションにアクセスするための参照が代入される，という点でオブジェクト型の同類に属します。
+
+コレクション型の要素は，``0``から数えます。添字（インデックス）は，ブラケット記号（``[]``）で指定します。要素数（``length``プロパティ）を超えた要素に値を代入した場合，途中の要素には``Null``が代入されます。
+
+```
+C_COLLECTION($c)
+
+$c:=New collection
+
+$c[0]:="1番目の値"
+$c[8]:="9番目の値"
+```
+
+従来の配列とは違い，コレクション型の要素は型を揃える必要はありません。``7``種類のJSONタイプに加え，ピクチャやポインターも代入できます。BLOB型は，現在のところ，サポートされていません。時間型と整数型は実数に変換されます。
+
+- ``Null``
+- ブール
+- 数値
+- 日付
+- テキスト
+- オブジェクト
+- コレクション
+- ピクチャ
+- ポインター
+
+### 型の特定と変換
+
+オブジェクト型のプロパティやコレクション型の要素は，変数のように型が決まっているわけではないので，[``Type``](https://doc.4d.com/4Dv17/4D/17.1/Type.301-4178621.ja.html)ではなく，[``Value type``](https://doc.4d.com/4Dv17/4D/17.1/Value-type.301-4178634.ja.html)で型を特定します。
+
+別の型に値を変換したい場合，[``OB Get``](https://doc.4d.com/4Dv17/4D/17.1/OB-Get.301-4179444.ja.html)を使用するか，[``String``](https://doc.4d.com/4Dv17/4D/17.1/String.301-4179471.ja.html) [``Num``](https://doc.4d.com/4Dv17/4D/17.1/Num.301-4179487.ja.html) [``Time``](https://doc.4d.com/4Dv17/4D/17.1/Time.301-4179455.ja.html) ``Date``(https://doc.4d.com/4Dv17/4D/17.1/Date.301-4179453.ja.html) [``Bool``](https://doc.4d.com/4Dv17/4D/17.1/Date.301-4179453.ja.html)のような関数を使用します。[``Date``](https://doc.4d.com/4Dv17/4D/17.1/Date.301-4179453.ja.html)にISO文字列を渡した場合，ローカルタイムゾーンに変換された日付が返されます。
+
+### 日付型
+
+オブジェクト型のプロパティやコレクション型の要素には，下記いずれかのフォーマットで日付型を代入することができます。
+
+- 日付のみ（用途：生年月日）
+- ローカル日付（用途：一般）
+- 協定標準時（用途：インターネット・絶対時刻）
+
+```
+$date:=Current date
+SET DATABASE PARAMETER(Dates inside objects;String type with time zone)
+$o.属性:=$date
+SET DATABASE PARAMETER(Dates inside objects;String type without time zone)
+$o.属性:=$date
+SET DATABASE PARAMETER(Dates inside objects;Dates inside objects)
+$o.属性:=$date
+```
 
 ##  Undefined
 ---
