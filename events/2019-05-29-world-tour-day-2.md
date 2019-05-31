@@ -209,6 +209,8 @@ $o.属性:=$date
 ## トランスポーター
 ---
 
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-send-mail.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/send-mail-1.0)
+
 [トランスポーター](https://doc.4d.com/4Dv17R4/4D/17-R4/Mail.201-4069211.ja.html)は，メール送信に特化されたオブジェクトです。
 
 4d Internet Commandsと比較した場合，下記の点で優れています。
