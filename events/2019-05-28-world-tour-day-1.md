@@ -98,7 +98,7 @@ Webプロセスの場合，メソッド毎の設定はありません。デー�
 
 #### 非サポート
 
-- ``ODBC``
+- ODBC
 - [``SELECT INTO :LISTBOX``](https://doc.4d.com/4Dv17/4D/17.1/Managing-List-Box-Objects.300-4178954.ja.html#429187)
 - [``QUERY BY SQL``](https://doc.4d.com/4Dv17/4D/17.1/QUERY-BY-SQL.301-4179375.ja.html)
 - [``REPLICATE``](https://doc.4d.com/4Dv17/4D/17/REPLICATE.300-3786790.ja.html) [``SYNCHRONIZE``](https://doc.4d.com/4Dv17/4D/17/SYNCHRONIZE.300-3786772.ja.html)
