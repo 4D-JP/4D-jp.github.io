@@ -151,6 +151,24 @@ N to 1リレーションであれば，そのまま同じリストボックス�
 ＜ 図: 家系図 ＞
 {: .text-center}
 
+
+
+
+
+
+
+## SDIモード：Windows版4Dアプリケーションの新しい時代
+---
+
+Windowsプラットフォームでシングル・ドキュメント・インタフェース（SDI）モードのアプリケーションをビルドすることができるようになりました。
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-sdi-final-application.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/sdi-final-application-1.0)
+
+![図: SDIモード](https://user-images.githubusercontent.com/10509075/58692735-3659d480-83ca-11e9-9196-9e391e9b6d96.PNG){: .align-center}
+
+＜ 図: SDIモード ＞
+{: .text-center}
+
 ## これまでのバイナリーフォームも無駄にはなりません
 ---
 
