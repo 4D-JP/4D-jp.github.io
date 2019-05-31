@@ -150,3 +150,51 @@ N to 1リレーションであれば，そのまま同じリストボックス�
 
 ＜ 図: 家系図 ＞
 {: .text-center}
+
+## これまでのバイナリーフォームも無駄にはなりません
+---
+
+``Open form window`` ``DIALOG``のようなコマンドには，フォーム名の代わりにオブジェクト型やJSONファイルパスを渡すことができます。そのようなフォームは，プログラミングで内容をダイナミックに変えることができます。
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-dynamic-form.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/dynamic-form-1.0)
+
+![図: ダイナミックフォーム](https://user-images.githubusercontent.com/10509075/58683712-68f6d380-83b0-11e9-8586-43a116686469.png){: .align-center}
+
+＜ 図: ダイナミックフォーム ＞
+{: .text-center}
+
+### エディターで作成したフォームをダイナミックフォームとして使用する
+
+```
+$TEST:=FORM Convert to dynamic("TEST")
+$TEST.pages[1].objects.ClickMe.text:="Click Me!"
+$w:=Open form window($TEST)
+DIALOG($TEST)
+CLOSE WINDOW($w)
+```
+
+### レコードに保存したフォームをダイナミックフォームとして使用する
+
+```
+C_OBJECT($e;$TEST)
+$e:=ds.FORM.query("name = :1";"TEST")
+If ($e.length#0)
+  $TEST:=$e[0].data
+  $TEST.pages[1].objects.ClickMe.text:="Click Me!"
+  $w:=Open form window($TEST)
+  DIALOG($TEST)
+  CLOSE WINDOW($w)
+End if 
+```
+
+### エディターで作成したフォームを独立したJSONフォームとしてエクスポートする
+
+```
+C_POINTER($NIL)
+$path:=exportForm ($NIL;"TEST")
+$w:=Open form window($path)
+DIALOG($path)
+CLOSE WINDOW($w)
+```
+
+ピクチャやメソッドがきちんと書き出されている点に注目してください。
