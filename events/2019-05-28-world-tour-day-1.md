@@ -94,12 +94,19 @@ Webプロセスの場合，メソッド毎の設定はありません。デー�
 
 - ローカルデータベース
 - C/Sアプリケーション
-- エクスターナルデータベース（``USE DATABASE``）
+- エクスターナルデータベース（[``USE DATABASE``](https://doc.4d.com/4Dv17/4D/17/USE-DATABASE.300-3786769.ja.html)）
 
 #### 非サポート
 
 - ``ODBC``
-- ``INTO LISTBOX``
-- ``QUERY BY SQL``
-- ``REPLICATE`` ``SYNCHRONIZE``
-- ``SQL LOGIN``
+- [``SELECT INTO :LISTBOX``](https://doc.4d.com/4Dv17/4D/17.1/Managing-List-Box-Objects.300-4178954.ja.html#429187)
+- [``QUERY BY SQL``](https://doc.4d.com/4Dv17/4D/17.1/QUERY-BY-SQL.301-4179375.ja.html)
+- [``REPLICATE``](https://doc.4d.com/4Dv17/4D/17/REPLICATE.300-3786790.ja.html) [``SYNCHRONIZE``](https://doc.4d.com/4Dv17/4D/17/SYNCHRONIZE.300-3786772.ja.html)
+- [``SQL LOGIN``](https://doc.4d.com/4Dv17/4D/17.1/SQL-LOGIN.301-4179385.ja.html)
+
+## ORDA
+---
+
+ORDAは新しいパラダイムです。従来のランゲージでも，データのアクセスと表示はできますが，リレーショナルデータベースとオブジェクト指向データベースの利点を組みあわせたORDAを使用すれば，ほんの数行で複雑なデータを直感的に視覚化することができます。
+
+
