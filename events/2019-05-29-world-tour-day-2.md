@@ -21,13 +21,13 @@ standalone: true
 
 デザインモードの便利な使い方を知っていれば，仕事の能率が上がります。逆に知らないと，無駄な作業に余計な時間を費やしてしまい，機会の損失につながるかもしれません。
 
-デバッガーの<i class="fa fa-external-link" aria-hidden="true"></i> [実行行ハイライトカラー](https://doc.4d.com/4Dv17R4/4D/17-R4/Methods-Page.300-4085748.ja.html)はカスタマイズできるようになりました。
+デバッガーの[実行行ハイライトカラー](https://doc.4d.com/4Dv17R4/4D/17-R4/Methods-Page.300-4085748.ja.html)はカスタマイズできるようになりました。
 
-コードエディターおよびデバッガーは，<i class="fa fa-external-link" aria-hidden="true"></i> [新しいキーボードショートカット](https://doc.4d.com/4Dv17R4/4D/17-R4/Debugger-Shortcuts.300-4053962.ja.html)をサポートしています。
+コードエディターおよびデバッガーは，[新しいキーボードショートカット](https://doc.4d.com/4Dv17R4/4D/17-R4/Debugger-Shortcuts.300-4053962.ja.html)をサポートしています。
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [自動ブラケット補完](https://blog.4d.com/check-out-the-code-editor-enhancements/)を有効にすれば，素早く正確にコマンドや制御フローを入力することができます。
+[自動ブラケット補完](https://blog.4d.com/check-out-the-code-editor-enhancements/)を有効にすれば，素早く正確にコマンドや制御フローを入力することができます。
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [メソッドエディターのステータスバー](https://blog.4d.com/check-out-the-code-editor-enhancements/)に表示される情報も見過ごせない改良点です。標準コマンドはもちろん，プロジェクトメソッドの引数タイプもコマンド入力中にアップデートされるため，仕様書やドキュメントを確認する手間が省けます。
+[メソッドエディターのステータスバー](https://blog.4d.com/check-out-the-code-editor-enhancements/)に表示される情報も見過ごせない改良点です。標準コマンドはもちろん，プロジェクトメソッドの引数タイプもコマンド入力中にアップデートされるため，仕様書やドキュメントを確認する手間が省けます。
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [スライド](https://speakerdeck.com/miyako/dezainmodo-4d-world-tour-2019-2ri-mu-yori)
 
@@ -53,7 +53,7 @@ standalone: true
 ##  起動パラメーターの受け渡し
 ---
 
-下記のような<i class="fa fa-external-link" aria-hidden="true"></i> [コマンドラインインタフェース](https://doc.4d.com/4Dv17R4/4D/17-R4/Command-Line-Interface.300-4085761.ja.html)（CLI）が使用できます。
+下記のような[コマンドラインインタフェース](https://doc.4d.com/4Dv17R4/4D/17-R4/Command-Line-Interface.300-4085761.ja.html)（CLI）が使用できます。
 
 | パラメーター | 意味 | 値 |
 |:---|:---|:---|
@@ -69,7 +69,7 @@ standalone: true
 ##  Undefined
 ---
 
-``Undefined``つまり未定義という「値」は，1. パラメーターが省略された場合，2. オブジェクト型の存在しないプロパティにアクセスした場合，3. 値を返さないコマンドまたはメソッドの戻り値を受け取ろうとした場合に発生します。v17では，そのような値の扱いが変わりました。1. 未定義を``If``などの条件文で評価した場合は``False``が返される，2. 未定義がパラメーターとして渡された場合はパラメーターに宣言型のデフォルト値が代入される，3. 存在しないプロパティのプロパティにアクセスした場合は``Undefined``が返されれる，という仕様です。なお，``Undefined``を<i class="fa fa-external-link" aria-hidden="true"></i> [``Null``](https://doc.4d.com/4Dv17/4D/17.1/Null.301-4178633.ja.html)と比較した場合は``True``が返されます。
+``Undefined``つまり未定義という「値」は，1. パラメーターが省略された場合，2. オブジェクト型の存在しないプロパティにアクセスした場合，3. 値を返さないコマンドまたはメソッドの戻り値を受け取ろうとした場合に発生します。v17では，そのような値の扱いが変わりました。1. 未定義を``If``などの条件文で評価した場合は``False``が返される，2. 未定義がパラメーターとして渡された場合はパラメーターに宣言型のデフォルト値が代入される，3. 存在しないプロパティのプロパティにアクセスした場合は``Undefined``が返されれる，という仕様です。なお，``Undefined``を[``Null``](https://doc.4d.com/4Dv17/4D/17.1/Null.301-4178633.ja.html)と比較した場合は``True``が返されます。
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-undefined.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/undefined-1.0)
 
@@ -106,7 +106,7 @@ End if
 ## フォーム
 ---
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [``Form``](https://doc.4d.com/4Dv17/4D/17.1/Form.301-4179574.ja.html)を使用すれば，ウィンドウの中だけで有効な「ローカル変数」をフォームオブジェクトのデータソースに設定することができます。``Form``は，<i class="fa fa-external-link" aria-hidden="true"></i> [``DIALOG``](https://doc.4d.com/4Dv17/4D/17.1/DIALOG.301-4179342.ja.html)で開いたウィンドウのコンテキストで使用することができます。``DIALOG``に渡したオブジェクトは，``Form``の初期値となり，ウィンドウが閉じられた後，ダイアログ実行中に更新された``Form``がそのオブジェクトに返されます。
+[``Form``](https://doc.4d.com/4Dv17/4D/17.1/Form.301-4179574.ja.html)を使用すれば，ウィンドウの中だけで有効な「ローカル変数」をフォームオブジェクトのデータソースに設定することができます。``Form``は，[``DIALOG``](https://doc.4d.com/4Dv17/4D/17.1/DIALOG.301-4179342.ja.html)で開いたウィンドウのコンテキストで使用することができます。``DIALOG``に渡したオブジェクトは，``Form``の初期値となり，ウィンドウが閉じられた後，ダイアログ実行中に更新された``Form``がそのオブジェクトに返されます。
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-form.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/form.4dbase-1.0)
 
@@ -118,7 +118,7 @@ End if
 ## 共有オブジェクトとストレージ
 ---
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [共有オブジェクト](https://doc.4d.com/4Dv17/4D/17.1/Shared-objects-and-shared-collections.300-4179447.ja.html)および<i class="fa fa-external-link" aria-hidden="true"></i> [ストレージ](https://doc.4d.com/4Dv17/4D/17.1/Storage.301-4179448.ja.html)は，インタープロセス変数に代わるもので，プロセス間で情報を共有するための新しいメカニズムです。
+[共有オブジェクト](https://doc.4d.com/4Dv17/4D/17.1/Shared-objects-and-shared-collections.300-4179447.ja.html)および[ストレージ](https://doc.4d.com/4Dv17/4D/17.1/Storage.301-4179448.ja.html)は，インタープロセス変数に代わるもので，プロセス間で情報を共有するための新しいメカニズムです。
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-shared-object.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/shared-object-1.0)
 
@@ -130,9 +130,9 @@ End if
 ## シグナル
 ---
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [シグナル](https://doc.4d.com/4Dv17R4/4D/17-R4/New-signal.301-4104310.ja.html)は``17 R4``から使用できるようになった特殊な共有オブジェクトです。
+[シグナル](https://doc.4d.com/4Dv17R4/4D/17-R4/New-signal.301-4104310.ja.html)は``17 R4``から使用できるようになった特殊な共有オブジェクトです。
 
-カスタムオブジェクトに``enqueue`` ``dequeue``といったメソッドを<i class="fa fa-external-link" aria-hidden="true"></i> [``New formula``](https://doc.4d.com/4Dv17R4/4D/17-R4/New-formula.301-4055155.ja.html)で追加し，内部的にシグナルを使用するようなコードを記述すれば，簡易的なメッセージキューが実装できます。
+カスタムオブジェクトに``enqueue`` ``dequeue``といったメソッドを[``New formula``](https://doc.4d.com/4Dv17R4/4D/17-R4/New-formula.301-4055155.ja.html)で追加し，内部的にシグナルを使用するようなコードを記述すれば，簡易的なメッセージキューが実装できます。
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-signal-queue.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/signal-queue-1.1)
 
