@@ -241,3 +241,8 @@ CLOSE WINDOW($w)
 - ``Current date`` ``Current time`` ``$wp_``数式はWordフィールドに変換
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [ドキュメント](https://doc.4d.com/4Dv17R4/4D/17-R4/Exporting-in-docx-format.200-4077720.ja.html)
+
+## メニューをカスタマイズ
+---
+
+Write Proのユーザーインタフェースは，かなりの部分が標準アクションだけで制御できるようになっており，メニューバーやコンテキストメニューを最小限のコーディングで構築することができます。
