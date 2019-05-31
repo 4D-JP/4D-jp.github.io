@@ -246,3 +246,26 @@ CLOSE WINDOW($w)
 ---
 
 Write Proのユーザーインタフェースは，かなりの部分が標準アクションだけで制御できるようになっており，メニューバーやコンテキストメニューを最小限のコーディングで構築することができます。
+
+## プルトゥリフレッシュ
+---
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-ios-pull-to-refresh.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/ios-pull-to-refresh-1.0)
+
+![図: タスク](https://user-images.githubusercontent.com/10509075/58737493-bde02b80-843c-11e9-95fa-31978118fc7e.png){: .align-center}
+
+＜ 図: タスク＞
+{: .text-center}
+
+### カスタムフォーマッター
+
+数値ではなく，アイコンで表現すれば，プライオリティーやステータスを表現すれば，情報を直感的に伝えることができます。
+
+- リストフォーム：/RESOURCES/Mobile/form/list/TasksCollection v2/
+- フォーマッター：/RESOURCES/Mobile/formatters/プライオリティーアイコン/
+- フォーマッター：/RESOURCES/Mobile/formatters/ステータスアイコン/
+
+![図: カスタムフォーマッター](https://user-images.githubusercontent.com/10509075/58737517-dfd9ae00-843c-11e9-90bb-bbad73f02d9e.png){: .align-center}
+
+＜ 図: カスタムフォーマッター＞
+{: .text-center}
