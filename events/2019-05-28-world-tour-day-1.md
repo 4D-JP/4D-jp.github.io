@@ -121,7 +121,7 @@ ORDAは新しいパラダイムです。従来のランゲージでも，デー�
 
 ### 家系図
 
-<i class="fa fa-download" aria-hidden="true"></i> [conf19-genealogy.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/genealogy-1.2)
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-genealogy.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/genealogy-1.3)
 
 オブジェクト記法を使用して父母・祖父母のデータにアクセスすることができます。
 
