@@ -164,6 +164,25 @@ FilerMaker Server 17 Data APIは，JSONリクエストを受信してJSONレス�
 - 「データ入力のみ」のアカウントを作成し，パスワードを設定する
 - 「管理 > セキュリティ > 詳細設定 > 拡張アクセス権」で「データ入力のみ」にData APIのアクセス権を付与する
 
+### サーバー管理
+
+FilerMaker Serverは，Webから管理することができます。
+
+```
+https://localhost:16000/
+```
+
+``http://localhost:16001/``（ポート番号が違う）ではないことに注意してください。
+
+コマンドラインインタフェース（CLI）で制御することもできます。
+
+```
+fmsadmin restart adminserver
+fmsadmin list files
+fmsadmin remove 
+fmsadmin close
+```
+
 ## サーバーに注目 
 ---
 
