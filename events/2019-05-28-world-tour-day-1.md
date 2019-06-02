@@ -151,6 +151,18 @@ N to 1リレーションであれば，そのまま同じリストボックス�
 ＜ 図: 家系図 ＞
 {: .text-center}
 
+## サーバーに注目 
+---
+
+サーバー管理画面の情報やアクションは，どれも標準コマンドで実現できるようになりました。たとえば，Web版のサーバー管理画面をデザインすることができます。
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-admin-demo.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/admin-demo-1.0)
+
+![図: サーバー管理画面](https://user-images.githubusercontent.com/10509075/58761549-88445b00-8580-11e9-90c3-f0ebe8a76445.png){: .align-center}
+
+＜ 図: サーバー管理画面 ＞
+{: .text-center}
+
 ## ダイナミックフォームのパワーを発掘しましょう
 ---
 
