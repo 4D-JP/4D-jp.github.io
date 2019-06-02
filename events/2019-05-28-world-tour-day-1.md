@@ -259,6 +259,16 @@ CLOSE WINDOW($w)
 
 Write Proのユーザーインタフェースは，かなりの部分が標準アクションだけで制御できるようになっており，メニューバーやコンテキストメニューを最小限のコーディングで構築することができます。
 
+## Microsoft Excel形式に対応
+---
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-view-pro.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/view-pro-1.3)
+
+![図: 4D View Pro](https://user-images.githubusercontent.com/10509075/58761602-3ea84000-8581-11e9-97c9-d9af381c72df.png){: .align-center}
+
+＜ 図: 4D View Pro ＞
+{: .text-center}
+
 ## アプリ開発に経験は不要
 ---
 
