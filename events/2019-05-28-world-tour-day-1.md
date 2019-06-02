@@ -156,6 +156,14 @@ N to 1リレーションであれば，そのまま同じリストボックス�
 
 <i class="fa fa-download" aria-hidden="true"></i> [fmdemo.4dbase.zip, 顧客名簿.fmp12.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/file-maker-1.0)
 
+FilerMaker Server 17 Data APIは，JSONリクエストを受信してJSONレスポンスを返すRESTful APIです。``HTTP Request``でデータを受け取り，ORDAでリストボックスに表示することができます。
+
+ファイルメーカー Data APIを有効にするための手順は，下記のとおりです。
+
+- 完全アクセス権のパスワードを設定する
+- 「データ入力のみ」のアカウントを作成し，パスワードを設定する
+- 「管理 > セキュリティ > 詳細設定 > 拡張アクセス権」で「データ入力のみ」にData APIのアクセス権を付与する
+
 ## サーバーに注目 
 ---
 
