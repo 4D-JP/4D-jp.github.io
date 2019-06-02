@@ -310,6 +310,8 @@ Write Proのユーザーインタフェースは，かなりの部分が標準�
 ## Microsoft Excel形式に対応
 ---
 
+4D View Proは，Viewライセンスでアンロックされる上級フィーチャーの総称です。これには，拡張リストボックスとスプレッドシートの両方が含まれます。スプレッドシート部分であるView Proエリアは，定評あるJavaScriptライブラリをベースにしています。
+
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-view-pro.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/view-pro-1.3)
 
 ![図: 4D View Pro](https://user-images.githubusercontent.com/10509075/58761602-3ea84000-8581-11e9-97c9-d9af381c72df.png){: .align-center}
