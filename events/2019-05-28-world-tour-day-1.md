@@ -453,6 +453,11 @@ StatusForContract.Name = '処理中' & ManagerForContract.Email= :email
 $HOME/Library/Caches/com.4d.mobile/lastBuild.xlog
 ```
 
+## ベーシックから脱却
+---
+
+4D for iOSには，洗練されたテンプレートが収録されています。テンプレードの仕様は公開されており，必要であれば，自分でカスタマイズすることもできます。
+
 ## シンプルなライセンス
 ---
 
