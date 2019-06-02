@@ -430,3 +430,15 @@ StatusForContract.Name = '処理中' & ManagerForContract.Email= :email
 
 ＜ 図: カスタムフォーマッター ＞
 {: .text-center}
+
+## シンプルなライセンス
+---
+
+無料のApple IDとMacとiPhoneさえあれば，iOSアプリの開発・シミュレーターでの検証・デバイスでのテスト（USB経由でインストール）ができます。（13歳以上）
+
+Appleの規約 4.2.6によれば，半自動的なプロセスで開発されたiOSアプリ，あるいはテンプレートから作られたiOSアプリは，個別のアカウントでストアに出品することが求められています。開発から出品まで代行するのであれば，エンドユーザーに開発者アカウントを作成してもらうと良いでしょう。
+
+<i class="fa fa-external-link" aria-hidden="true"></i> [developer.apple.com](https://developer.apple.com/app-store/review/guidelines/)
+
+デベロッパーメンバーシップに加入すれば，ストア経由で配付ができます。（年会費：11,800円）エンタープライズなら，ストアを経由しないで配付ができます。（年会費：37,800円）プログラムは，相互に排他的ではなく，両方に加入するメリットもあります。
+
