@@ -438,6 +438,21 @@ StatusForContract.Name = '処理中' & ManagerForContract.Email= :email
 
 追加・更新されたレコードだけをシンクロするため，4D for iOSでエクスポートしたテーブルには，``__GlobalStamp``という管理フィールドが自動的に追加されます。また，削除されたレコードを追跡するため，``__DeletedRecords``という管理テーブルもストラクチャに追加されます。
 
+## Xcodeはさらなる可能性を提供
+---
+
+4D for iOSは，純粋なXcodeプロジェクトをエクスポートし，自動的にビルドした後，シミュレーターで起動します。デバイスが接続されており，Apple Configurator 2がインストールされていれば，アーカイブ（ipa）の書き出しからインストールも自動的です。
+
+デバイスが接続されていない場合，あるいはApple Configurator 2がインストールされていない場合，Xcode > window > Devices and Simulatorメニューから手動でインストールすることになります。
+
+### ビルドログの場所
+
+詳細なビルドログは下記の場所に出力されます。
+
+```
+$HOME/Library/Caches/com.4d.mobile/lastBuild.xlog
+```
+
 ## シンプルなライセンス
 ---
 
