@@ -11,7 +11,7 @@ type: page
 
 ## 17r5 # {#v17r5}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 挿入系コマンドの拡張**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_UseTargets.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: INSERT系およびSET系コマンドの拡張**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_UseTargets.zip)<br />
 INSERT系およびSET系のコマンドが改良され、対象としてレンジ以外のものも指定できるようになりました：
 [`WP SELECT`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SELECT.301-4115146.ja.html)
 [`WP SET TEXT`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-TEXT.301-4115154.ja.html)
