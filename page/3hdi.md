@@ -11,6 +11,17 @@ type: page
 
 ## 17r5 # {#v17r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 挿入系コマンドの拡張**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_UseTargets.zip)<br />
+INSERT系およびSET系のコマンドが改良され、対象としてレンジ以外のものも指定できるようになりました：
+[`WP SELECT`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SELECT.301-4115146.ja.html)
+[`WP SET TEXT`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-TEXT.301-4115154.ja.html)
+[`WP SET ATTRIBUTES`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-ATTRIBUTES.301-4115142.ja.html)
+[`WP INSERT DOCUMENT`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-INSERT-DOCUMENT.301-4115127.ja.html)
+[`WP INSERT PICTURE`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-INSERT-PICTURE.301-4115132.ja.html)
+[`WP Insert table`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-Insert-table.301-4115119.ja.html)
+[`WP INSERT BREAK`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-INSERT-BREAK.301-4115125.ja.html)<br />
+また、コマンドをより分かりやすくするため、一部のコマンドが名称変更されました。
+![名称変更されたコマンド](/images/HDI_4DWP_UseTargets-CommandNameChange.png){: .align-center}
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セル位置の取得・設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DVP_SelectionCells.zip)<br />
 新しく追加されたコマンドによって、4D View Pro ドキュメントの選択セルやアクティブセルの位置を設定・取得することができます：
 [`VP Get selection`](https://livedoc.4d.com/4D-View-Pro-Reference-17-R5/4D-View-Pro-Language/VP-Get-selection.301-4284608.en.html)
