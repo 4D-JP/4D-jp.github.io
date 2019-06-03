@@ -458,6 +458,8 @@ $0:=$統計
 
 ### 付録
 
+### サンプル請求書アプリ（ORDA）
+
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-invoices-demo.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/invoices-demo-1.0)
 
 ![図: サンプル請求書アプリ](https://user-images.githubusercontent.com/10509075/58761380-b9bc2700-857e-11e9-848e-79224e2e31e6.png){: .align-center}
@@ -465,7 +467,7 @@ $0:=$統計
 ＜ 図: サンプル請求書アプリ ＞
 {: .text-center}
 
-<i class="fa fa-download" aria-hidden="true"></i> [conf19-era.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/era-1.0)
+### 軽量メールクライアント（4D Write Pro）
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-lw-mail-editor.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/lw-mail-editor-1.0)
 
