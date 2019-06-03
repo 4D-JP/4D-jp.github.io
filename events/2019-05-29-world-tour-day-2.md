@@ -466,3 +466,10 @@ $0:=$統計
 {: .text-center}
 
 <i class="fa fa-download" aria-hidden="true"></i> [conf19-era.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/era-1.0)
+
+<i class="fa fa-download" aria-hidden="true"></i> [conf19-lw-mail-editor.4dbase.zip](https://github.com/4D-JP/event-world-tour-2019/releases/tag/lw-mail-editor-1.0)
+
+![図: 軽量メールクライアント](https://user-images.githubusercontent.com/10509075/58769556-16e9c400-85e3-11e9-9369-de7d228ff0f8.png){: .align-center}
+
+＜ 図: 軽量メールクライアント ＞
+{: .text-center}
