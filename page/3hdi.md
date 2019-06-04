@@ -11,6 +11,8 @@ type: page
 
 ## 17r5 # {#v17r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: リンクを貼る**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_Hyperlinks.zip)<br />
+新しく追加された[`WP SET LINK`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-LINK.301-4115165.ja.html)コマンドを使って、4D Write Pro ドキュメントに様々な種類のリンクが貼れるようになりました：Web URL、4Dメソッド、4D Write Pro ドキュメント、開いているドキュメント内のブックマーク。リンク内容を取得するための、[`WP Get links`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-Get-links.301-4115785.ja.html)コマンドも追加されています。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: INSERT系およびSET系コマンドの拡張**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_UseTargets.zip)<br />
 INSERT系およびSET系のコマンドが改良され、対象としてレンジ以外のものも指定できるようになりました：
 [`WP SELECT`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SELECT.301-4115146.ja.html)
