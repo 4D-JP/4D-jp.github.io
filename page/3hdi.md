@@ -11,6 +11,8 @@ type: page
 
 ## 17r5 # {#v17r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビュープロパティ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_ViewSettings.zip)<br />
+新しく追加された[`WP SET VIEW PROPERTIES`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-VIEW-PROPERTIES.301-4252257.ja.html)コマンドを使って、4D Write Pro ドキュメントのビュープロパティをプログラムにより制御できるようになりました。ビュープロパティを取得するための、[`WP Get view properties`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-Get-view-properties.301-4252263.ja.html)コマンドも追加されています。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: リンクを貼る**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_Hyperlinks.zip)<br />
 新しく追加された[`WP SET LINK`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-LINK.301-4115165.ja.html)コマンドを使って、4D Write Pro ドキュメントに様々な種類のリンクが貼れるようになりました：Web URL、4Dメソッド、4D Write Pro ドキュメント、開いているドキュメント内のブックマーク。リンク内容を取得するための、[`WP Get links`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-Get-links.301-4115785.ja.html)コマンドも追加されています。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: INSERT系およびSET系コマンドの拡張**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_UseTargets.zip)<br />
