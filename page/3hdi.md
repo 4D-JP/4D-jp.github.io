@@ -11,19 +11,22 @@ type: page
 
 ## 17r5 # {#v17r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: タブの設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_SetTabs.zip)<br />
+[`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-SET-ATTRIBUTES.301-4115142.ja.html)コマンドに、新しく追加された定数[`wk tab default`](https://doc.4d.com/4Dv17R5/4D/17-R5/4D-Write-Pro-Constants.302-4115150.ja.html)または[`wk tabs`](https://doc.4d.com/4Dv17R5/4D/17-R5/4D-Write-Pro-Constants.302-4115150.ja.html)を指定することで、4D Write Pro ドキュメントのデフォルトタブ・任意のタブが定義できます。<br />
+参考：[タブの管理](https://doc.4d.com/4Dv17R5/4D/17-R5/Using-a-4D-Write-Pro-area.200-4115105.ja.html#4226039)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビュープロパティ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_ViewSettings.zip)<br />
-新しく追加された[`WP SET VIEW PROPERTIES`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-VIEW-PROPERTIES.301-4252257.ja.html)コマンドを使って、4D Write Pro ドキュメントのビュープロパティをプログラムにより制御できるようになりました。ビュープロパティを取得するための、[`WP Get view properties`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-Get-view-properties.301-4252263.ja.html)コマンドも追加されています。
+新しく追加された[`WP SET VIEW PROPERTIES`](https://doc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-VIEW-PROPERTIES.301-4252257.ja.html)コマンドを使って、4D Write Pro ドキュメントのビュープロパティをプログラムにより制御できるようになりました。ビュープロパティを取得するための、[`WP Get view properties`](https://doc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-Get-view-properties.301-4252263.ja.html)コマンドも追加されています。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: リンクを貼る**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_Hyperlinks.zip)<br />
-新しく追加された[`WP SET LINK`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-LINK.301-4115165.ja.html)コマンドを使って、4D Write Pro ドキュメントに様々な種類のリンクが貼れるようになりました：Web URL、4Dメソッド、4D Write Pro ドキュメント、開いているドキュメント内のブックマーク。リンク内容を取得するための、[`WP Get links`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-Get-links.301-4115785.ja.html)コマンドも追加されています。
+新しく追加された[`WP SET LINK`](https://doc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-LINK.301-4115165.ja.html)コマンドを使って、4D Write Pro ドキュメントに様々な種類のリンクが貼れるようになりました：Web URL、4Dメソッド、4D Write Pro ドキュメント、開いているドキュメント内のブックマーク。リンク内容を取得するための、[`WP Get links`](https://doc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-Get-links.301-4115785.ja.html)コマンドも追加されています。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: INSERT系およびSET系コマンドの拡張**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_UseTargets.zip)<br />
 INSERT系およびSET系のコマンドが改良され、対象としてレンジ以外のものも指定できるようになりました：
-[`WP SELECT`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SELECT.301-4115146.ja.html)
-[`WP SET TEXT`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-TEXT.301-4115154.ja.html)
-[`WP SET ATTRIBUTES`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-ATTRIBUTES.301-4115142.ja.html)
-[`WP INSERT DOCUMENT`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-INSERT-DOCUMENT.301-4115127.ja.html)
-[`WP INSERT PICTURE`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-INSERT-PICTURE.301-4115132.ja.html)
-[`WP Insert table`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-Insert-table.301-4115119.ja.html)
-[`WP INSERT BREAK`](https://livedoc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-INSERT-BREAK.301-4115125.ja.html)<br />
+[`WP SELECT`](https://doc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SELECT.301-4115146.ja.html)
+[`WP SET TEXT`](https://doc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-TEXT.301-4115154.ja.html)
+[`WP SET ATTRIBUTES`](https://doc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-SET-ATTRIBUTES.301-4115142.ja.html)
+[`WP INSERT DOCUMENT`](https://doc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-INSERT-DOCUMENT.301-4115127.ja.html)
+[`WP INSERT PICTURE`](https://doc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-INSERT-PICTURE.301-4115132.ja.html)
+[`WP Insert table`](https://doc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-Insert-table.301-4115119.ja.html)
+[`WP INSERT BREAK`](https://doc.4d.com/4D-Write-Pro-17-R5/4D-Write-Pro/WP-INSERT-BREAK.301-4115125.ja.html)<br />
 また、コマンドをより分かりやすくするため、一部のコマンドが名称変更されました。
 ![名称変更されたコマンド](/images/HDI_4DWP_UseTargets-CommandNameChange.png){: .align-center}
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セル位置の取得・設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DVP_SelectionCells.zip)<br />
