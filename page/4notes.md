@@ -10,7 +10,7 @@ icon: file-text-o
       <h1>{{page.title}}</h1>
       <hr>
       <ul>
-      {% for tech_note in site.tech_notes %}
+      {% for tech_note in site.tech_notes reversed %}
       <li>
       <h2><a class="post-link" href="{{ tech_note.url | prepend: site.baseurl }}">{{ tech_note.title }}</a></h2>      
     
