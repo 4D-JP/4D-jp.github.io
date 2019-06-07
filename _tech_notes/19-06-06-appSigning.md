@@ -150,7 +150,7 @@ MacOSプラットフォーム用の署名証明書は、XCodeの内部またはA
 
 #### Appleのウェブサイトから証明書を取得する
 Apple デベロッパーウェブサイトは以下のURLからアクセスできます：
-https://developer.apple.com/account/
+[https://developer.apple.com/account/](https://developer.apple.com/account/)
 
 Appleのウェブサイトから証明書を取得する手順は、何年もの間変わり続けています。現在、開発者はiTunes接続ポータルを使用して証明書を取得する必要があります。
 
@@ -247,7 +247,7 @@ Windowsでは、取り込まれた4Dアプリケーションは4Dの外で署名
 
 ### 署名のインストール (Windows SDK)
 Windows上でアプリケーションに署名するには、署名ツール・アプリケーションがすでにインストールされていることが必要です。この署名ツール・アプリケーションは、Windows SDKの一部で、以下のURLにあるマイクロソフトのウェブサイトから無料で利用できます。
-http://go.microsoft.com/fwlink/p/?linkid=84091
+[http://go.microsoft.com/fwlink/p/?linkid=84091](http://go.microsoft.com/fwlink/p/?linkid=84091)
 
 一回インストールすれば、署名ツールはコマンド・プロンプト・ウィンドウから使えます。
 
@@ -292,6 +292,6 @@ V15以前では、4D Serverがマージしたアプリケーションのビル�
 
 ### 注意点と外部リソース
 この情報は、Windowsで自分で署名した証明書を作成するためのもので、マイクロソフトのウェブサイトの下記サイトで最新の情報に更新されています：
-https://docs.microsoft.com/en-us/windows/uwp/packaging/create-certificate-package-signing
+[https://docs.microsoft.com/en-us/windows/uwp/packaging/create-certificate-package-signing](https://docs.microsoft.com/en-us/windows/uwp/packaging/create-certificate-package-signing)
 
 
