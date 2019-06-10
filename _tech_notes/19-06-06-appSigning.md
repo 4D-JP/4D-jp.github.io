@@ -97,7 +97,7 @@ C:＼signing＼cert.pfx -Password $pwd
 最初のコマンドとパラメータの内訳は：
 
 　　保存されたリターン値：$pwd  
-　　コマンド１: ConvertToSecureString  
+　　コマンド1: ConvertToSecureString  
 　　パラメータ1: - String “thePassword”  
 　　パラメータ2: - Force  
 　　パラメータ3: -AsPlainText
@@ -110,11 +110,10 @@ $pwd = ConvertTo-SecureString -String "thePassword" -Force -AsPlainText
 これによりPowerShellコードの次の行で使用される$pwdセッション変数内に、安全な文字列としてパスワード (“thePassword”)を格納します。開発者は、passwordパラメータの値を変更してから、次の例で正しいパスワードを使用します。
 使用される２番目のコマンドとパラメータの内訳は次の通りです：
 
-　　コマンド ２: ExportPfxCertificate  
-　　パラメータ 1: -cert  
-　　Cert:|LocalMachine|My|A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304  
+　　コマンド2: ExportPfxCertificate  
+　　パラメータ1: -cert Cert:|LocalMachine|My|A6B2B0B3FECC6E4E1A3B562118F18BC82B63F304  
 　　パラメータ2: -FilePath C:|signing|cert.pfx  
-　　パラメータ3: - Password $pwd
+　　パラメータ3: -Password $pwd
 
 端末に表示される２番目のコマンドは、次のようになります（行の長さとドキュメントの幅のため、１行は複数行になっています。）：
 
