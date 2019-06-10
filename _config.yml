@@ -63,8 +63,7 @@ gems: [jekyll-paginate]
 paginate: 5
 
 # sitemap
-plugins:
-  - jekyll-sitemap
+gems: [jekyll-sitemap]
 
 defaults:
   - scope:
