@@ -98,8 +98,8 @@ C:＼signing＼cert.pfx -Password $pwd
 
 　　保存されたリターン値：$pwd  
 　　コマンド1: ConvertToSecureString  
-　　パラメータ1: - String “thePassword”  
-　　パラメータ2: - Force  
+　　パラメータ1: -String “thePassword”  
+　　パラメータ2: -Force  
 　　パラメータ3: -AsPlainText
 
 ターミナルの外で書かれた最初のコマンドは以下の通りです：
