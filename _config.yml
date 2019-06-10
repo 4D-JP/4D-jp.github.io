@@ -61,3 +61,21 @@ excerpt_separator: <!--more-->
 # paginate
 gems: [jekyll-paginate]
 paginate: 5
+
+# sitemap
+plugins:
+  - jekyll-sitemap
+  
+defaults:
+  - scope:
+      path: events/*
+    values:
+      sitemap: false
+  - scope:
+      path: help/*
+    values:
+      sitemap: false
+  - scope:
+      path: learning-material/*
+    values:
+      sitemap: false
