@@ -65,7 +65,7 @@ paginate: 5
 # sitemap
 plugins:
   - jekyll-sitemap
-  
+
 defaults:
   - scope:
       path: events/*
