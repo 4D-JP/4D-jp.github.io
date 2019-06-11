@@ -48,7 +48,7 @@ attributePath comparator value {logicalOpertor attributePath comparator value}
 - attributePath: クエリを実行するためのデータクラス属性のパス。最初のレベルの属性は、”gender”のような、属性の名前です。関連するクラスの属性に対しては、”company.name”のようにドット記法を使って表現されるパスになります。
 - comparator: 比較演算子の記号はattributePathと値を比較するのに使われます。対応している記号は、=、==、===、#、！＝、<、>、<=、>=、%、あるいはキーワードのIS、IS NOT、IN、NOTです。
 - value: 値は、attributePathに従ってクエリされたエンティティの値と比較されます。ターゲット値のタイプに合致するストリング表現でなければなりません。例えば、データ値が”YYYY-MM-DD”形式である必要があり、時間は秒に置き換える必要があります。ワイルドカード文字”@”が使えます。
-- logicalOperator: 論理演算子は、必要であればクエリの中で複数の条件を組み合わせるのに使われます。二つの演算子が使用できます、AND (&, &&, and)とOR (|, ||, or)です。
+-  logicalOperator: 論理演算子は、必要であればクエリの中で複数の条件を組み合わせるのに使われます。二つの演算子が使用できます、AND (&, &&, and)とOR (|, ||, or)です。
 
 ### QUERY/QUERYBY ATTRIBUTEコマンドとの違い
 dataClass.query()メソッドは、entitySelectionを検索するためにORDA用にデザインされています。比較や論理演算子（接続詞）の記号など4DランゲージのQUERYコマンドに似ています。しかし、シンタックスや機能はQUERRYコマンドとは全く異なります。QUERYとquery( )の間の主な相違点をサンプルで見てみましょう。以下は二つのテーブル：PeopleとHealthRecordを持つストラクチャーです。HealtRecordテーブルは、プロパティにprescriptionとsymptomsがある二つのコレクションを持つadditionalInfoオブジェクト属性を持っています：
