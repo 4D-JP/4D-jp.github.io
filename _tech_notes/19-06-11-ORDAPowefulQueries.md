@@ -15,19 +15,19 @@ ORDAのクエリとそのオプションの紹介です。([原文](https://kb.4
 
 ## 概要
 ---
-ORDAの中のクエリはdataclass.query()メソッドを実行します。このquery()メソッドは検索条件としてクエリ・ストリングを使います。クエリ・ストリングには主に３つの必須のパラメータが含まれています：アトリビュート・パス、比較演算子、値と結合クエリの論理演算子。これら４つのパラメータを使うことで、開発者は、深いパスとドット記法で使われる複雑なロジックでクエリを構築することができます。クエリ・ストリングのシンタックスは、4D開発者の多くにとって全く新しいもので、4Dランゲージのクエリとは異なります。このテックノートは、クエリ・ストリング構築の最適な手段と、有効でありながらあまり知られていないクエリ・オプションを掘り下げることを目的としています。Query()の現行のドキュメントより詳しく既存のオプションの使い方を提示し、ドキュメント化されていない役に立つオプションを紹介します。
+ORDAの中のクエリは['dataclass.query()'](https://doc.4d.com/4Dv17R4/4D/17-R4/dataClassquery.305-4055297.ja.html)メソッドを実行します。このquery()メソッドは検索条件としてクエリ・ストリングを使います。クエリ・ストリングには主に３つの必須のパラメータが含まれています：アトリビュート・パス、比較演算子、値と結合クエリの論理演算子。これら４つのパラメータを使うことで、開発者は、深いパスとドット記法で使われる複雑なロジックでクエリを構築することができます。クエリ・ストリングのシンタックスは、4D開発者の多くにとって全く新しいもので、4Dランゲージのクエリとは異なります。このテックノートは、クエリ・ストリング構築の最適な手段と、有効でありながらあまり知られていないクエリ・オプションを掘り下げることを目的としています。Query()の現行のドキュメントより詳しく既存のオプションの使い方を提示し、ドキュメント化されていない役に立つオプションを紹介します。
 
 ## はじめに
 ---
 ### dataClass.query()とは何か？ 
 
-ORDAでは、dataClass.query()メソッドは、特定のdataClassの全てのエンティティの中で、クエリ・ストリングに記述された検索条件をベースにしたエンティティの検索に使われます。Query()の結果は該当するエンティティを含むentitySelectionになります。EntityCollectionは、もし該当するエンティティが見つからなければ空になります。例えば、以下のコードはEmployeeというデータクラス上でquery()メソッドを呼んで、Genderフィールドに”Male”という値を持つ全てのエンティティに対してクエリします：
+ORDAでは、['dataclass.query()'](https://doc.4d.com/4Dv17R4/4D/17-R4/dataClassquery.305-4055297.ja.html)メソッドは、特定のdataClassの全てのエンティティの中で、クエリ・ストリングに記述された検索条件をベースにしたエンティティの検索に使われます。Query()の結果は該当するエンティティを含むentitySelectionになります。EntityCollectionは、もし該当するエンティティが見つからなければ空になります。例えば、以下のコードはEmployeeというデータクラス上でquery()メソッドを呼んで、Genderフィールドに”Male”という値を持つ全てのエンティティに対してクエリします：
 
 ```
 $employees_ORDA_o:=ds.Employee.query(“gender = Male”)
 ```
 
-dataClass.query()メソッドは一つの必要なパラメータqueryStringを持ち、二つのオプショナルなパラメータvalueとquerySettingsを持っています。QueryStringパラメータは、検索条件を記述するのに使用します。Valueパラメータはプレースホルダーと共にクエリ・ストリングに値を渡すのに使用されます。querySettingsは、例えばqueryPathやqueryPlanを有効にするといった、クエリ設定を追加するために使用します。
+['dataclass.query()'](https://doc.4d.com/4Dv17R4/4D/17-R4/dataClassquery.305-4055297.ja.html)メソッドは一つの必要なパラメータqueryStringを持ち、二つのオプショナルなパラメータvalueとquerySettingsを持っています。QueryStringパラメータは、検索条件を記述するのに使用します。Valueパラメータはプレースホルダーと共にクエリ・ストリングに値を渡すのに使用されます。querySettingsは、例えばqueryPathやqueryPlanを有効にするといった、クエリ設定を追加するために使用します。
 
 QueryStringパラメータは、クエリ・ストリングによって表現される複雑な検索条件に適用できるように、様々なオプションを提供します。以下は、全ての非管理職の雇用者で30歳以上、4Dという会社で、John Smithマネージャーと仕事をしている者をクエリするサンプルです：
 
@@ -51,7 +51,7 @@ attributePath comparator value {logicalOpertor attributePath comparator value}
 - logicalOperator: 論理演算子は、必要であればクエリの中で複数の条件を組み合わせるのに使われます。二つの演算子が使用できます、AND (&, &&, and)とOR (｜, ｜｜, or)です。
 
 ### QUERY/QUERYBY ATTRIBUTEコマンドとの違い
-dataClass.query()メソッドは、entitySelectionを検索するためにORDA用にデザインされています。比較や論理演算子（接続詞）の記号など4DランゲージのQUERYコマンドに似ています。しかし、シンタックスや機能はQUERRYコマンドとは全く異なります。QUERYとquery( )の間の主な相違点をサンプルで見てみましょう。以下は二つのテーブル：PeopleとHealthRecordを持つストラクチャーです。HealtRecordテーブルは、プロパティにprescriptionとsymptomsがある二つのコレクションを持つadditionalInfoオブジェクト属性を持っています：
+['dataclass.query()'](https://doc.4d.com/4Dv17R4/4D/17-R4/dataClassquery.305-4055297.ja.html)メソッドは、entitySelectionを検索するためにORDA用にデザインされています。比較や論理演算子（接続詞）の記号など4DランゲージのQUERYコマンドに似ています。しかし、シンタックスや機能はQUERRYコマンドとは全く異なります。QUERYとquery( )の間の主な相違点をサンプルで見てみましょう。以下は二つのテーブル：PeopleとHealthRecordを持つストラクチャーです。HealtRecordテーブルは、プロパティにprescriptionとsymptomsがある二つのコレクションを持つadditionalInfoオブジェクト属性を持っています：
 
 ![図１：二つのテーブル：PeopleとHealthRecord](/images/ORDA-query/two-tables.png){: .align-center}
 
@@ -63,7 +63,7 @@ healthrecord.additionalInfo.prescription [ ].drugName in :2 AND
 healthrecord.additionalInfo.symptoms [ ] =fever”;new object” (“parameters”; new collection (new collection (“Ryan” ; “Kevin”); new collection (“Clarintin”, “Tyleol)))
 ```
 
-QUERYとQUERY BY ATTRIBUTEコマンドで同じ検索条件を使って、セレクションを入手するために、以下のコードを書きます：
+['QUERY'](https://doc.4d.com/4Dv17R4/4D/17-R4/QUERY.301-4054513.ja.html)と['QUERY BY ATTRIBUTE'](https://doc.4d.com/4Dv17R4/4D/17-R4/QUERY-BY-ATTRIBUTE.301-4054504.ja.html)コマンドで同じ検索条件を使って、セレクションを入手するために、以下のコードを書きます：
 
 ```
 QUERY ( [People];[People]firstName=”Ryan”;*)
@@ -78,7 +78,7 @@ QUERY BY ATTRIBUTE ([People];[HealthRecord]additionalInfo;”symptoms[ ]”;=;�
   この機能によってプログラム的に複雑なストリングを構築するのがよりフレキシブルになります。
 
 - マルチレベル・リレーション・クエリはattributePathを使ってより読みやすく：
-  QUERYコマンドにはリレートテーブルを複数のレベルで検索する機能がある一方、query( )のattributePathの中のドット記法はもっと多くのパスを作ります。例えば、多対個リレーション[City] → [Department] → [Region]
+  ['QUERY'](https://doc.4d.com/4Dv17R4/4D/17-R4/QUERY.301-4054513.ja.html)コマンドにはリレートテーブルを複数のレベルで検索する機能がある一方、query( )のattributePathの中のドット記法はもっと多くのパスを作ります。例えば、多対個リレーション[City] → [Department] → [Region]
 を持つ３つのテーブルに対して、以下のQUERY：
 ```
 QUERY ([Region];[City]Name=”Saint@”)
@@ -200,13 +200,13 @@ $noObjSel:=ds.People.query(“profileObj = { }”)
 ## クエリ結果をソートする
 ---
 
-dataClass.query( )は、クエリ・ストリング中のステートメントにorder byが使えて、クエリ結果をソートできます。Order byステートメントは二つのオプションの特定が必要です：’desc”は降順で、’asc’は昇順です。初期値では昇順になっています。以下はクエリ結果を降順にする使用例です：
+['dataclass.query()'](https://doc.4d.com/4Dv17R4/4D/17-R4/dataClassquery.305-4055297.ja.html)は、クエリ・ストリング中のステートメントに['order by'](https://doc.4d.com/4Dv17R4/4D/17-R4/ORDER-BY.301-4054511.ja.html)が使えて、クエリ結果をソートできます。['Order by'](https://doc.4d.com/4Dv17R4/4D/17-R4/ORDER-BY.301-4054511.ja.html)ステートメントは二つのオプションの特定が必要です：’desc”は降順で、’asc’は昇順です。初期値では昇順になっています。以下はクエリ結果を降順にする使用例です：
 
 ```
 $result:=ds.People.query(“ID >1 order by ID desc”)
 ```
 
-order byステートメントは、クエリ・ストリングの最後に追加しなければなりません。Order byの後で追加されたクエリは全て無視されます：
+['Order by'](https://doc.4d.com/4Dv17R4/4D/17-R4/ORDER-BY.301-4054511.ja.html)ステートメントは、クエリ・ストリングの最後に追加しなければなりません。Order byの後で追加されたクエリは全て無視されます：
 
 ```
 //このクエリは以前のものと同じ結果になります
@@ -217,7 +217,7 @@ $result:=ds.People.query(“ID > 1 order by ID desc AND firstName # Aaron”)　
 $result:=ds.People.query(“ID > 1 AND firstName #Aaron order by ID desc”)
 ```
 
-query( )でorder byを使うのは、検索したentitySelection上でOrder By( )をコールするのと同じ効果があります。しかし、クエリにorder byステートメントを加えることで、4Dデータエンジンはソートされたセレクションの生成しかしません。ソートしないセレクションのコピーなしに両方を別々にコールするより少しだけ良いパフォーマンスになります。しかし、文中のorder byを使うと、コードはよりコンパクトで読みやすくなります：
+query( )でorder byを使うのは、検索したentitySelection上でOrder By( )をコールするのと同じ効果があります。しかし、クエリに['Order by'](https://doc.4d.com/4Dv17R4/4D/17-R4/ORDER-BY.301-4054511.ja.html)ステートメントを加えることで、4Dデータエンジンはソートされたセレクションの生成しかしません。ソートしないセレクションのコピーなしに両方を別々にコールするより少しだけ良いパフォーマンスになります。しかし、文中のorder byを使うと、コードはよりコンパクトで読みやすくなります：
 
 ```
 //以下のクエリは同じ結果を生みます
@@ -234,7 +234,7 @@ object (“propertyPath”;”ID”;”descending”;true)))
 
 ## 概論と結論
 ---
-v17のORDAは、オブジェクト志向アプローチを使うデータアクセスの新しい方法として導入されたというだけではありません。クエリを実行するまったく新しい方法としての門戸も開きました。それはデータ駆動アプリケーションのコアでもあります。新しいdataClass.query( )メソッドは、いくつものオプションを提供し、4D開発者には親しみやすく、QUERYコマンドのように4Dデータベースのクエリに順応できます。同時に、開発者にとって複雑なクエリの構築をわずかなコードで可能にし、さらにフレキシブルにしました。Query( )のシンタックスを理解し、そのオプションを全て利用することで、ORDAは、より少ないメモリスペースを使って、複雑なクエリをより速く実行することができます。さらに重要なのが、一行に収まる直接的なクエリ・ストリングで高度な可読性を提供することです。
+v17のORDAは、オブジェクト志向アプローチを使うデータアクセスの新しい方法として導入されたというだけではありません。クエリを実行するまったく新しい方法としての門戸も開きました。それはデータ駆動アプリケーションのコアでもあります。新しい['dataclass.query()'](https://doc.4d.com/4Dv17R4/4D/17-R4/dataClassquery.305-4055297.ja.html)メソッドは、いくつものオプションを提供し、4D開発者には親しみやすく、['QUERY'](https://doc.4d.com/4Dv17R4/4D/17-R4/QUERY.301-4054513.ja.html)コマンドのように4Dデータベースのクエリに順応できます。同時に、開発者にとって複雑なクエリの構築をわずかなコードで可能にし、さらにフレキシブルにしました。['QUERY'](https://doc.4d.com/4Dv17R4/4D/17-R4/QUERY.301-4054513.ja.html)のシンタックスを理解し、そのオプションを全て利用することで、ORDAは、より少ないメモリスペースを使って、複雑なクエリをより速く実行することができます。さらに重要なのが、一行に収まる直接的なクエリ・ストリングで高度な可読性を提供することです。
 
-このテックノートは、私の経験に基づいてクエリ・ストリングを構築するベストプラクティスを紹介することが目的です。いくつかのオプションはドキュメント化されていますが、詳細は説明されていませんし、他のオプションにもまだドキュメントになっていないものがあります。ORDAとquery( )メソッドは将来のバージョンでより機能を増やして進化し続けるでしょう。Query( )メソッドは複雑なクエリをシンプルな言語で書く無限のキャパシティがあります。
+このテックノートは、私の経験に基づいてクエリ・ストリングを構築するベストプラクティスを紹介することが目的です。いくつかのオプションはドキュメント化されていますが、詳細は説明されていませんし、他のオプションにもまだドキュメントになっていないものがあります。ORDAと['QUERY'](https://doc.4d.com/4Dv17R4/4D/17-R4/QUERY.301-4054513.ja.html)メソッドは将来のバージョンでより機能を増やして進化し続けるでしょう。['QUERY'](https://doc.4d.com/4Dv17R4/4D/17-R4/QUERY.301-4054513.ja.html)メソッドは複雑なクエリをシンプルな言語で書く無限のキャパシティがあります。
 
