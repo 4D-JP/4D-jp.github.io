@@ -4,12 +4,12 @@
         <small>{{site.brief-intro}}</small>
         <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
         <nav id="headerNav">
-            <ul itemscope itemtype=”http://schema.org/SiteNavigationElement”>
-                <li itemprop=”name”>
+            <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <li itemprop="name">
                     {% if page.url == '/' %}
-                    <a itemprop=”url” class="active" href="{{site.baseurl}}/">
+                    <a itemprop="url" class="active" href="{{site.baseurl}}/">
                         {% else %}
-                    <a itemprop=”url” href="{{site.baseurl}}/">
+                    <a itemprop="url" href="{{site.baseurl}}/">
                     {% endif %}
                         <i class="fa fa-home"></i>ホーム
                     </a>
@@ -19,11 +19,11 @@
                     {% if my_page.standalone %}
                     {% else %}
                         {% if my_page.title %}
-                        <li itemprop=”name”>
+                        <li itemprop="name">
                             {% if my_page.url == page.url %}
-                            <a itemprop=”url” class="active" href="{{ my_page.url | prepend: site.baseurl }}">
+                            <a itemprop="url" class="active" href="{{ my_page.url | prepend: site.baseurl }}">
                                 {% else %}
-                            <a itemprop=”url” href="{{ my_page.url | prepend: site.baseurl }}">
+                            <a itemprop="url" href="{{ my_page.url | prepend: site.baseurl }}">
                             {% endif %}
                                 <i class="fa fa-{{my_page.icon}}"></i>{{ my_page.title }}
                             </a>
