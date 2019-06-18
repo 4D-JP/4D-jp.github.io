@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TIFF画像のタグ情報を更新する場合の注意点"
+title: "TIFF画像のタグ情報を更新する場合"
 date: 2019-06-12 10:25:00
 categories: 仕様
 tags: windows picture
