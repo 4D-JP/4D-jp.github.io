@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SQL EXECUTEを続けて実行する場合"
+title: "SQL EXECUTEを続けて実行する"
 date: 2019-06-12 10:25:00
 categories: 仕様
 tags: odbc
