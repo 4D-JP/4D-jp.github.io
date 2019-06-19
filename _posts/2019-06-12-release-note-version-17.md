@@ -4,7 +4,7 @@ title: "4D v17.2 修正リスト"
 date: 2019-06-12 10:00:00
 categories: 修正リスト
 tags: "17.2"  
-build: 238251
+build: 238379
 version: 17.2
 
 ---
