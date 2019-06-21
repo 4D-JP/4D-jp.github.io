@@ -70,7 +70,7 @@ ProcDumpInterfaceの利用方法の紹介です。([原文](https://taow.4d.com/
 ---
 例外的なモニタリングセッションで、"ProcDump"はDOSウィンドウで起動します。
 
-![図3：画面3](/images/Dump/Procdumps-3.png){: .align-center}
+![図3：画面3](/images/Dump/Procdump-3.png){: .align-center}
 
 モニタリングセッションを止めるには、DOSウィンドウでCtrl+Cの組み合わせを使います。もしくは、DOSウィンドウを閉じると監視しているアプリケーションも閉じます。
 
@@ -85,7 +85,7 @@ ProcDumpInterfaceの利用方法の紹介です。([原文](https://taow.4d.com/
   ```
   注意：このファイル("ProcdumpInterface.ini")は最初に"procdumpInterface.exe"を起動した後で自動的に生成されます。
   ```
-![図4：画面4](/images/Dump/Procdumps-4.png){: .align-center}
+![図4：画面4](/images/Dump/Procdump-4.png){: .align-center}
 
 (16) "MicrosoftSymbolServerLocation"：このパラメータにはマイクロソフトのシンボルサーバーのURLが含まれています。(http://msdl.microsoft.com/download/symbols)
 
@@ -95,7 +95,7 @@ ProcDumpInterfaceの利用方法の紹介です。([原文](https://taow.4d.com/
 
 他の設定は"ProcdumpInterface.exe"で変更可能ですが、以下は例外です：
 
-![図5：画面5](/images/Dump/Procdumps-5.png){: .align-center}
+![図5：画面5](/images/Dump/Procdump-5.png){: .align-center}
 
 (18) "CacheDirLocation"：ダウンロードファイルのパスを指定。初期設定では"procdumpInterface.exe"を含むフォルダー。
 
@@ -132,4 +132,4 @@ ProcDumpInterfaceの利用方法の紹介です。([原文](https://taow.4d.com/
  
  ## このドキュメントで使用されたキーワード
 ---
-![図6：画面6](/images/Dump/Procdumps-6.png){: .align-center} 
+![図6：画面6](/images/Dump/Procdump-6.png){: .align-center} 
