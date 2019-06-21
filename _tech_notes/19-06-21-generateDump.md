@@ -38,7 +38,7 @@ version: 11 -17
 
 最初のケース：Windowsのダイアログ「4D Serverが止まりました」を表示
 
-![図1：停止通告画面](/images/dump/4D-dumps-1.png){: .align-center}
+![図1：停止通告画面](/images/Dump/4D-dumps-1.png){: .align-center}
 
 このケースでは、Windowsは最初から自動的にダンプファイルを生成します。（"4D.exe.dmp"あるいは"4D Server.exe.dmp")
 
