@@ -31,17 +31,17 @@ type: page
 
 ## コミュニティ
 
-* [4D method](https://4dmethod.com/)
+* [4D-JUG](http://4djug.forumjap.com/) ユーザーグループ（日本語）
 
-* [ My 4D Experience](https://my4dexperience.home.blog) Gabriel Inzirilloのブログ（フランス語）
+* [4D method](https://4dmethod.com/) ユーザーグループ（英語）
 
-* [Flury Software](https://flury-software.ch/category/4d/) Olivier Fluryのブログ
-    
 * [die4dwerkstatt](https://die4dwerkstatt.de/) ユーザーグループ（ドイツ語）
 
-* [4D-JUG](http://4djug.forumjap.com/)
+* [Flury Software](https://flury-software.ch/category/4d/) Olivier Fluryのブログ（英語）
 
-* [4DTidbits](http://blog.heintz.net) Alexandar Heintzのブログ  
+* [4DTidbits](http://blog.heintz.net) Alexandar Heintzのブログ（英語）
+
+* [My 4D Experience](https://my4dexperience.home.blog) Gabriel Inzirilloのブログ（フランス語）
 
 ## サードパーティ
 
