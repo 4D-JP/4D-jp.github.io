@@ -82,7 +82,8 @@ type: page
     * RegexComponent
     * RegexLab5
     * [AJUI_Tip](https://ch-fr.4d.com/ajuitip-10)
-
+    * [AJUI_Progressbar 1.0](https://ch-fr.4d.com/ajuiprogressbar-10/)
+    
 * [Bruno Legay](https://github.com/blegay)
     * aws_component
    
