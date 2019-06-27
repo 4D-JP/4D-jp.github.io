@@ -81,8 +81,9 @@ type: page
     * AJUI_FloatingLabel
     * RegexComponent
     * RegexLab5
-    * [AJUI_Tip](https://ch-fr.4d.com/ajuitip-10)
+    * [AJUI_Tip 1.1](https://ch-fr.4d.com/ajuitip-11/)
     * [AJUI_Progressbar 1.0](https://ch-fr.4d.com/ajuiprogressbar-10/)
+    * [AJUI_Banner 1.5](https://ch-fr.4d.com/ajuibanner-15/)
     
 * [Bruno Legay](https://github.com/blegay)
     * aws_component
