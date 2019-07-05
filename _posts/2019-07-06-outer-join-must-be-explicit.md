@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OUTER JOINは暗示的でなければならない"
+title: "OUTER JOINは明示的でなければならない"
 date: 2019-07-06 12:00:00
 categories: 仕様
 tags: sql 
