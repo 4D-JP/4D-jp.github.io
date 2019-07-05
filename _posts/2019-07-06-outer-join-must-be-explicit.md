@@ -20,6 +20,6 @@ Begin SQL
 End SQL
 ```
 
-初期のバージョン（v13）では，このようなSQLを実行してもエラーが返されませんでしたが，結果も正しくありませんでした。
+初期のバージョン（v13）では，このようなSQLを実行してもエラーが返されませんでした。しかし，正しい結果が返されたわけでもありません。
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [結合のサポート](https://doc.4d.com/4Dv17R5/4D/17-R5/Support-of-joins.300-4142705.ja.html)
