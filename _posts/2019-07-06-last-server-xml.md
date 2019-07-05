@@ -11,4 +11,4 @@ version: 17.x
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [クライアントアプリケーションによる接続の管理](https://doc.4d.com/4Dv17/4D/17.2/Management-of-connections-by-client-applications.300-4402979.ja.html)
 
-``lastServer.xml``は，ビルドされたクライアントアプリケーションがビルドされたサーバーアプリケーションをブロードキャスト公開名（検索サービス）ではみつけることができなかった場合のために用意されています。ストラクチャ設定の公開名をオーバーライドするのであれば，ビルド時に[``BuildIPAdress``](https://doc.4d.com/4Dv17/4D/17/IPAddress.300-3787889.ja.html)キーを指定してIPアドレスまたはDNS名でサーバーを指定するようにしてください。
+``lastServer.xml``は，ビルドされたクライアントアプリケーションがビルドされたサーバーアプリケーションをブロードキャスト公開名（検索サービス）ではみつけることができなかった場合のために用意されています。ストラクチャ設定の公開名をオーバーライドするのであれば，ビルド時に[``BuildIPAdress``](https://doc.4d.com/4Dv17/4D/17/IPAddress.300-3787889.ja.html)キーを指定して，IPアドレスまたはDNS名でサーバーを指定するようにしてください。
