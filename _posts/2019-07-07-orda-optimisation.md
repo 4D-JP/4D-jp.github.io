@@ -121,3 +121,41 @@ End for each
 ```
 
 * データベースエンジンの統計情報を返すコマンド``Get database measures``に``clientORDA``という新しいプロパティが追加されました。ORDAの最適化により，リクエストの回数・時間・サイズが節約されていることが確認できます。
+
+
+#### 最適化コンテキスト
+
+前述したように，ORDAの最適化は，RESTリクエストでロードするべきエンティティの「必要な属性」をクライアントが学習することにより，実現しています。クエリなどの処理によって形成された「最適化コンテキスト」は，同一エンティティセレクションに対する連続的なアクセスで暗黙的に使用されるだけでなく，他の場面でも明示的に使用できるようになっています。
+
+新しいエンティティセレクションを返す下記のコマンドは，最適化コンテキスト（オブジェクト型）が渡せるようになりました。
+
+* ``dataClass.query()``
+* ``entitySelection.query()``
+* ``dataClass.fromCollection()``
+* ``dataClass.all()``
+* ``Create entity selection``
+
+**注記**: ``query()``は，すでにオブジェクト型のパラメーター``querySettings``をサポートしています。今回，このオブジェクトに``context``というプロパティが追加されました。
+
+``parameters``  
+``queryPath``  
+``queryPlan``  
+``attributes``（17r5）  
+``parameters``（17r5）  
+
+<i class="fa fa-external-link" aria-hidden="true"></i> [dataClass.query()](https://doc.4d.com/4Dv17R5/4D/17-R5/dataClassquery.305-4128666.ja.html#3765382)
+
+最適化コンテキストをサポートするコマンドには，``context``プロパティにコンテキスト名（文字列）がセットされたオブジェクトを渡すことができます。同名のコンテキストが渡されたコマンドは，同一の最適化コンテキストを共有することになります。プロセスが違っていても，最適化コンテキストを共有することができますが，異なるデータクラスに対して同じコンテキストを使用することはできません。
+
+下記のメンバーメソッドは，自動的にエンティティセレクションの最適化コンテキストを使用します。
+
+* ``entitySelection.and()``
+* ``entitySelection.minus()``
+* ``entitySelection.or()``
+* ``entitySelection.orderBy()``
+* ``entitySelection.slice()``
+* ``entitySelection.drop()``
+
+エンティティセレクションに対する処理で形成された最適化コンテキストは，``dataClass.get()``メソッドに渡すことができます。
+
+**シンタックス**: ``dataClass.get(primaryKey; {settings} )``
