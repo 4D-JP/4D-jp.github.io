@@ -32,7 +32,7 @@ For each ($e;$sel2)
 End for each
 ```
 
-* ネットワーク・トラフィック（17r4）
+##### ネットワーク・トラフィック（17r4）
 
 ``$sel2:=$ds.Employee.query("firstname = ab@")``
 
@@ -49,8 +49,6 @@ End for each
 ```
 127.0.0.1:8044/rest/Company(2))
 ```
-
-レスポンス
 
 ```js
 {__entityModel:Company,__KEY:2,__TIMESTAMP:2018-04-25T14:42:18.351Z,__STAMP:0,ID:2,name:Charlie Echo Animations,creationDate:0!0!0,revenues:82000000,extra:{a:false},employees:{__deferred:{uri:/rest/Company(2)/employees?$expand=employees}}}
@@ -70,4 +68,28 @@ End for each
 
 **ポイント**：エンティティ毎にRESTリクエストが発生します。
 
+##### ネットワーク・トラフィック（17r5）
 
+``$sel2:=$ds.Employee.query("firstname = ab@")``
+
+```
+127.0.0.1:8044/rest/Employee?$query='%7B%22model%22:%22Employee%22,%22queryItems%22:%5B%7B%22tokenType%22:%22simpleCompWithEm%22,%22attName%22:%22firstname%22,%22emName%22:%22Employee%22,%22comparaison%22:13,%22instance%22:0,%22checkForNull%22:false,%22value%22:%22ab@%22,%22diacritical%22:false%7D%5D%7D'&$method='entityset'&$progress4Dinfo='5CB39501D9854659885585A0E40A1127'&$top='80'
+```
+
+```
+127.0.0.1:8044/rest/Company(2))
+```
+
+```js
+{__entityModel:Company,__KEY:2,__TIMESTAMP:2018-04-25T14:42:18.351Z,__STAMP:0,ID:2,name:Charlie Echo Animations,creationDate:0!0!0,revenues:82000000,extra:{a:false},employees:{__deferred:{uri:/rest/Company(2)/employees?$expand=employees}}}
+```
+
+**ポイント**：ここまでは以前と変わりません。
+
+エンティティの属性はすべてロードされましたが，``For each``ブロックの中で，実際にアクセスしたのは ``firstname`` ``lastname`` ``employer.name`` の３個だけでした。さらに，エンティティセレクションのエンティティは，80個目までがすでに返されています。そこで，次回のリクエストは，81個目以降のエンティティが必要になったときに発生し，必要な属性だけが返されることになります。これが最適化です。
+
+```
+127.0.0.1:8044/rest/Employee/$entityset/E301FD6333524B30865981380A6257C1?$attributes='firstname,lastname,employer,employer.name'&$skip='1'&$top='80'
+```
+
+条件分岐により，ループ内でアクセスする属性が変動する場合はどうでしょうか。最適化で省略された属性に対するアクセスが途中で発生した場合，追加のリクエストがサーバーに送信され，その属性は次回のリクエストから「必要な属性」のリストに含まれます。
