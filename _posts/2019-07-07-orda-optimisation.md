@@ -36,7 +36,7 @@ End for each
 
 ``$sel2:=$ds.Employee.query("firstname = ab@")``
 
-```url
+```
 127.0.0.1:8044/rest/Employee?$query='%7B%22model%22:%22Employee%22,%22queryItems%22:%5B%7B%22tokenType%22:%22simpleCompWithEm%22,%22attName%22:%22firstname%22,%22emName%22:%22Employee%22,%22comparaison%22:13,%22instance%22:0,%22checkForNull%22:false,%22value%22:%22ab@%22,%22diacritical%22:false%7D%5D%7D'&$method='entityset'&$progress4Dinfo='5CB39501D9854659885585A0E40A1127'&$top='80'
 ```
 
@@ -52,7 +52,7 @@ End for each
 
 レスポンス
 
-```json
+```js
 {__entityModel:Company,__KEY:2,__TIMESTAMP:2018-04-25T14:42:18.351Z,__STAMP:0,ID:2,name:Charlie Echo Animations,creationDate:0!0!0,revenues:82000000,extra:{a:false},employees:{__deferred:{uri:/rest/Company(2)/employees?$expand=employees}}}
 ```
 
@@ -64,7 +64,7 @@ End for each
 127.0.0.1:8044/rest/Employee(309)
 ```
 
-```json
+```js
  {__entityModel:Employee,__KEY:309,__TIMESTAMP:2018-10-11T15:16:37.727Z,__STAMP:0,ID:309,firstname:Abarrane,lastname:BIASAL,salary:30709,birthdate:0!0!0,woman:true,managerID:307,employerID:2,photo:null,extra:null,heure:0,manager:{__deferred:{uri:/rest/Employee(307),__KEY:307}},employer:{__deferred:{uri:/rest/Company(2),__KEY:2}},directReports:{__deferred:{uri:/rest/Employee(309)/directReports?$expand=directReports}}}
 ```
 
