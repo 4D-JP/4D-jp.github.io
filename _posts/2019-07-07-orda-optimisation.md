@@ -158,4 +158,4 @@ End for each
 
 エンティティセレクションに対する処理で形成された最適化コンテキストは，``dataClass.get()``メソッドに渡すことができます。
 
-**シンタックス**: ``dataClass.get(primaryKey; {settings} )``
+* ``dataClass.get(primaryKey; {settings} )``
