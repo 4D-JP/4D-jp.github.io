@@ -12,6 +12,21 @@ version: 17.2
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0099624 ``CREATE VIEW``コマンドと``CASE...WHEN...END``構文が併用されているSQLを実行した場合，アプリケーションがクラッシュしました。どちらか一方が使用されていなければ，問題ありません。
+
+```sql
+CREATE OR REPLACE VIEW Mutatielog_T001 (Functie, Record, table_uid, number) AS
+SELECT functie_naam, recordid, table_uid,
+CASE
+  WHEN table_uid in ('526a221561405849a27350d9bd6217f9') THEN 1
+  WHEN table_uid in ('c54043630f8bbd4cb6cfb1c8862b3271') THEN 2
+END AS number
+FROM sys_mutatie
+WHERE sys_mutatie.administratie='t001'
+```	
+
+* ACI0099714 Microsoft Excelなどの表計算ソフトからタブ区切りテキストをコピーして4D Write Proの表にペーストした場合，文字列全体が単一のセルにすべて挿入されました。期待されるのは，区切られた文字列がそれぞれ隣接するセルに挿入されることです。
+
 * ACI0099667 メソッドの``For each``ブロックの前に不釣り合いなカッコ（開くカッコが足りない）が存在する場合，シンタックスエラーを実行すると，アプリケーションがクラッシュしました。閉じるカッコが足りない場合は問題ありません。
 
 * ACI0099461 インデックスが設定されたオブジェクト型フィールドに対するクエリで``Null``または``Undefined``を検索値に指定した場合，返される結果が正しくありませんでした。
