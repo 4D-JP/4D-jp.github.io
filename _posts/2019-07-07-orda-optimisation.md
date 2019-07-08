@@ -93,3 +93,23 @@ End for each
 ```
 
 条件分岐により，ループ内でアクセスする属性が変動する場合はどうでしょうか。最適化で省略された属性に対するアクセスが途中で発生した場合，追加のリクエストがサーバーに送信され，その属性は次回のリクエストから「必要な属性」のリストに含まれます。
+
+#### 補足情報
+
+テスト目的でORDAの最適化をオフにすることができます。
+
+```
+ds.private.setRemoteAutoFilter(False)
+```
+
+必要なケースがあると事前にわかっているのであれば，ループ処理を開始する前にエンティティセレクションのメンバーを取り出し，目的のエンティティ属性にアクセスすることより，じめからその属性が最適化されたORDAリクエストに含まれるよう，仕向けることができます。
+
+```
+$toBeMarkedAsUsed:=$sel2.first().salary // If条件で必要になることがあるのでタッチ
+For each ($e;$sel2)
+    $s:=$e.firstname+" "+$e.lastname+" works for "+$e.employer.name
+    If ($i%40=0)
+      $s:=$s+" and earns "+String($e.salary)
+    End if 
+End for each
+```
