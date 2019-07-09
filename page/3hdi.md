@@ -11,6 +11,8 @@ type: page
 
 ## 17r5 # {#v17r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 新機能を活用した汎用コード**](https://github.com/4D-JP/HDI/releases/download/17r5/ORDA_Dynamic_Code.zip)<br />
+ORDAに追加された新規メンバーメソッド[`entity.getDataClass( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitygetDataClass.305-4275760.ja.html)および[`entitySelection.getDataClass( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitySelectiongetDataClass.305-4275795.ja.html)のほか、値と属性パスのプレースホルダー、[`dataClass.{attributeName}`](https://doc.4d.com/4Dv17R5/4D/17-R5/dataClassattributeName.303-4128672.ja.html)オブジェクトを活用した、データクラスに依存しない汎用的なコードや、動的なクエリインターフェースの例を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: タブの設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_SetTabs.zip)<br />
 [`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-SET-ATTRIBUTES.301-4115142.ja.html)コマンドに、新しく追加された定数[`wk tab default`](https://doc.4d.com/4Dv17R5/4D/17-R5/4D-Write-Pro-Constants.302-4115150.ja.html)または[`wk tabs`](https://doc.4d.com/4Dv17R5/4D/17-R5/4D-Write-Pro-Constants.302-4115150.ja.html)を指定することで、4D Write Pro ドキュメントのデフォルトタブ・任意のタブが定義できます。<br />
 参考：[タブの管理](https://doc.4d.com/4Dv17R5/4D/17-R5/Using-a-4D-Write-Pro-area.200-4115105.ja.html#4226039)
