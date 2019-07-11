@@ -1,16 +1,34 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2019-07-08 13:26:00
+date: 2019-07-11 10:00:00
 categories: 修正リスト
 tags: "17.2"  
-build: 239314
+build: 239401
 version: 17.2
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099773 テキスト入力エリアのプロパティで自動ドラッグと自動ドロップを有効にした上で「ドラッグ可」と「ドロップ可」を無効にした場合，ドラッグ＆ドロップができませんでした。
+
+* ACI0099731 フランス語版のみ。Windowsで自動アップグレード用にMac版にクライアントアプリケーションをビルドしたときに表示されるメッセージにスペルミス（clienteではなくclient, de l'applicationではなくdu l'application）がありました。
+	
+* ACI0099789 Windows 64ビット版のみ。旧式プリントレイヤー（GDIモード）では，プリントプレビューで用紙の向きが無視され，横向き（landscape）に出力することができませんでした。
+
+* ACI0099759 クライアント/サーバー版のみ。エンティティセレクションを作成した後，クエリをキャンセルした場合，そのエンティティセレクションを使用するコマンドでエラー ``1303``が返されました。たとえば，``USE ENTITY SELECTION`` ``QUERY`` キャンセル ``Create entity selection``のような処理で問題が発生しました。
+
+**注記**: 17r5で導入された最適化コンテキストが無効になってしまうことが関係しています。17.xで記述されたコードの場合，同一のエンティティセレクションは暗黙的に最適化コンテキストを流用します。クエリをキャンセルした後，下記のように新しい最適化コンテキストを使用すれば，問題を回避することができます。
+
+```
+USE ENTITY SELECTION(Form.list)
+QUERY([Tabelle_1])
+$querysettings:=New object("context";"dummy")
+Form.list:=Create entity selection([Tabelle_1];$querysettings)
+UNLOAD RECORD([Tabelle_1])
+```
 
 * ACI0099624 ``CREATE VIEW``コマンドと``CASE...WHEN...END``構文が併用されているSQLを実行した場合，アプリケーションがクラッシュしました。どちらか一方が使用されていなければ，問題ありません。
 
