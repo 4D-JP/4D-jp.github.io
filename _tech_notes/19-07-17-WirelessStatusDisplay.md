@@ -567,6 +567,8 @@ WEB SEND TEXT($answer;"application/json")
 
 最初のメソッド”WemosData16x2_1”を呼んだ後に表示されるのは下記の画面です。
 
+![図 38 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-38.png){: .align-center}
+
 ## LCDに手動でデータを入力するデモ
 このデモはユーザーに、20x4と16x2の双方でLCDにデータを入力するUIを提供します。デモを起動するために、メニューバーにDemo -> SEND DATA TO LCDがあります。”WemosData20x4”、”WemosData16x2_1”と”WemosData16x2_2”のメソッドは、以下のフォームで入力されたデータをオーバーライドできるプロセス間変数を含みます。
 
