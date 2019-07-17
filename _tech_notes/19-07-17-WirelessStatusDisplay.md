@@ -384,68 +384,7 @@ Backup OK: 11/15/17Virt 1.1GBFree 25.6GUsers: 1  Proz: 4  Cache:0.01/0.4 GB
 
 このコードは20x4に合わせて、各行を20バイトに分けています。
 
-// ESP8266 with 20x4 i2c LCD
-// Compatible with the Arduino IDE 1.6.6
-// Library https://github.com/agnunez/ESP8266-I2C-LCD1602
-// Original Library https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
-// Modified for ESP8266 with GPIO-SDA GPIO2-SCL and LCD 1206 display edit library
-// and change Wire.begin( ) by Wire.begin(sda,scl) or other GPIO’s used for I2C
-// and access from lcd.begin (sda,scl)
-#include <EXP8266WiFi.h>
-#include <ESP8266WiFiMulti.h>
-#include <EXP8266HTTPClient.h>
-#include <LiqidCrystal_I2C.h>
-#include <Wire.h>
-
-LiquidCrystal_I2C lcd(0x27,20,4); // CheckI2C adderss of LCD, normally 0x27 20x4
-unit8 t heart[8] = {0x0, 0xa,0x1f, 0xe, 0x4, 0x0};  // example sprite bitmap
-int loginstatus = 0;
-EXP8266WiFiMulti WiFiMulti;
-
-void setup( )  {
-  lcd.begin(4,5);   // In ESP8266-01, SDA=4, SCL=5
-  lcd.backlight( );
-  WiFi.mode(WIFI STA);
-  WiFi.begin(“SSID”, “PASSWORD”);
-  lcd.setCursor(0,0);
-  lcd.print(“Connecting”);
-
-  while(WiFi.status( ) ! = WL_CONNECTED) {
-   lcd.setCursor (10, 0);
-   lcd.print(“. . .”);
-   delay(500);
-   lcd.print(“ “);
- }
- lcd.setCursor(0, 0);
- lcd.print(“        “);
-}
-
-void loop()  {
-  delay(5000);
-  lcd.home( );            / / At column=0, row=0
-  HTTPClient http;
-  http.begin(http://<serverIP>/4dAction/WemosData20x4);
-  int httpCode = http.GET( );
-
-  if (httpCode > 0) {
-    if (httpCode == HTTP CODE OK) {
-       String payload = http.getString( );
-       String result = payload.substring(0,20);
-       lcd.setCursor(0,0);
-       lcd.print(result1);   // Row 1
-       String result2 = payload.substring(20,40);
-       lcd.setCursor(0,1);
-       lcd.print(result2);   // Row 2
-       String result3 = payload.substring(40,60);
-       lcd.setCursor(0,2);
-       lcd.print(result3);   // Row 3
-       String result4 = payload.substring(60,80);
-       lcd.setCursor(0,3);
-       lcd.print(result4);   // Row 4
-      }
-      }
-   http.end( );
-  }
+![図 45 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-45.png){: .align-center}
 
 ### 20x4 LCDに対する4D アクションメソッド
 LCDで表示されるデータのサンプルセットは、最後のバックアップの日付、仮想メモリ、フリーメモリ、ユーザー数、プロセス数、使用するキャッシュ、になります。情報を解凍するキーとなる4Dコマンドは、GET MEMORY STATICSとGET BACKUP INFORMATIONです。前述のように、リクエストごとに80バイトのデータが送られます。
