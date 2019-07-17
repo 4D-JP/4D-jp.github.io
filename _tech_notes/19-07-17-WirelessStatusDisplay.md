@@ -570,25 +570,25 @@ WEB SEND TEXT($answer;"application/json")
 ## LCDに手動でデータを入力するデモ
 このデモはユーザーに、20x4と16x2の双方でLCDにデータを入力するUIを提供します。デモを起動するために、メニューバーにDemo -> SEND DATA TO LCDがあります。”WemosData20x4”、”WemosData16x2_1”と”WemosData16x2_2”のメソッドは、以下のフォームで入力されたデータをオーバーライドできるプロセス間変数を含みます。
 
-![図 36 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-36.png){: .align-center}
+![図 39 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-39.png){: .align-center}
 
 ## 20x4 LCDに手動でデータを入力
 各行にデータを入力できます。これがLCD行を示しています。”CHARS”は左欄に入力された文字の数を示して、20から始まります。
 
-![図 37 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-37.png){: .align-center}
+![図 40 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-40.png){: .align-center}
 
 “SEND TO LCD”ボタンを押すと、”WemosData20x4”メソッド内のプロセス間変数を修正し、下図の表示になります。
 
-![図 38 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-38.png){: .align-center}
+![図 41 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-41.png){: .align-center}
 
 ## 16x2 LCDに手動でデータを入力
 “20x4 LCD”と同様に、これは16文字で2行だけ表示できます。”CHARS”は左欄の文字数を示していて、16から始まります。
 
-![図 39 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-39.png){: .align-center}
+![図 42 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-42.png){: .align-center}
 
 “SEND TO LCD”ボタンを押すと、”WemosData16x2”と”WemosData16x2_2”メソッド内のプロセス間変数を修正し、下図の表示になります。
 
-![図 40 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-40.png){: .align-center}
+![図 43 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-43.png){: .align-center}
 
 # 終わりに
 ---
