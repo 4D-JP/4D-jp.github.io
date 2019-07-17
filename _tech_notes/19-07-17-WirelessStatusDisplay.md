@@ -390,6 +390,7 @@ Backup OK: 11/15/17Virt 1.1GBFree 25.6GUsers: 1  Proz: 4  Cache:0.01/0.4 GB
 LCDで表示されるデータのサンプルセットは、最後のバックアップの日付、仮想メモリ、フリーメモリ、ユーザー数、プロセス数、使用するキャッシュ、になります。情報を解凍するキーとなる4Dコマンドは、GET MEMORY STATICSとGET BACKUP INFORMATIONです。前述のように、リクエストごとに80バイトのデータが送られます。
 
 ![図 34 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-34.png){: .align-center}
+![図 35 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-35.png){: .align-center}
 
 WeMos ESP8266が起動してネットワークに接続している時、下記の表示が5秒ごとに現れます。
 
@@ -529,7 +530,7 @@ WEB SEND TEXT($answer;"application/json")
 
 WeMos ESP8266が起動してネットワークが接続している時、以下のように表示されます。
 
-![図 35 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-35.png){: .align-center}
+![図 46 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-46.png){: .align-center}
 
 ### ユーザー、プロセス、キャッシュに対する16x2 LCD用の4Dアクションメソッド
 LCD上に表示されるデータのサンプルセットは、限られた表示スペースですので、ユーザー数、プロセス数と使用しているキャッシュです。
