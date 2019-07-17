@@ -356,15 +356,8 @@ http.end ( );
 
 下記はクライアントがアクセスできるサンプルコードです：
 
-//  Method: Get4DData
-//  ----------------------------------------------------------------------------------------
-C_OBJECT ($obj)
-C_TEXT ($text)
+![図 44 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-44.png){: .align-center}
 
-//  some code to put into $obj
-WEB SEND TEXT (JSON stringing ($obj))
-
-//  or
 WEB SEND TEXT ($text;”application/json”)
 
 次の章では実装演習の利用とサンプルデータベースへの組み込みの説明です。
