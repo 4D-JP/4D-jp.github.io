@@ -318,7 +318,7 @@ Arduinoのコーディング言語はC/C++です。実行した時の起動は�
 このLCDは1行につき20列を含む4行で設定されます。LCDの第３行にアクセスするには、lcd.setCursor(0,2)に設定し、第４行であればlcd.setCursor(0,3)にします。
 
 LCDに対する特別な機能は、下記のレファレンスでは”Liquid Crystal”としてみることができます。下記は、サーバーからデータをリクエストしてLCDに表示するという”Loop”機能を使ったサンプルコードです：
-
+```
 delay (5000);
 
   lcd.home ( );           // At column=0, Row=0
@@ -343,7 +343,7 @@ else {
 
 }
 http.end ( );
-
+```
 この章内のコードは、WeMos ESP8266をコンパイルとアップロードした時に、4D Webサーバーへデータをリクエストするクライアントとして動きます。”<serverIP>”は4D WebサーバーIPアドレスを意味します。次の章では、4D Webサーバーにアクセスできる4Dのメソッドを作成することについて話します。 
 
 ## 4D Webサーバー
@@ -355,10 +355,18 @@ http.end ( );
 ![図 32 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-32.png){: .align-center}
 
 下記はクライアントがアクセスできるサンプルコードです：
+```
+// Method: Get4DData
+// ---------------------------------------------
+C_OBJECT($obj)
+C_TEXT($text)
 
-![図 44 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-44.png){: .align-center}
+// some code to put into $obj
+WEB SEND TEXT (JSON stringify($obj))
 
-WEB SEND TEXT ($text;”application/json”)
+// or
+WEB SEND TEXT($text;"application/json")
+```
 
 次の章では実装演習の利用とサンプルデータベースへの組み込みの説明です。
 
@@ -383,16 +391,146 @@ WEB SEND TEXT ($text;”application/json”)
 Backup OK: 11/15/17Virt 1.1GBFree 25.6GUsers: 1  Proz: 4  Cache:0.01/0.4 GB
 
 このコードは20x4に合わせて、各行を20バイトに分けています。
+```
+// ESP8266 with 20x4 i2c LCD
+// Compatible with the Arduino IDE 1.6.6
+// Library https://github.com/agnunez/ESP8266-I2C-LCD1602
+// Original Library https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
+// Modified for ESP8266 with GPIO0-SDA GPIO2-SCL and LCD1206 display edit library
+// and change Wire.begin() by Wire.begin(sda,scl) or other GPIO's used for I2C
+// and access from lcd.begin(sda,scl)
+#include <ESP8266WiFi.h>
+#include <ESP8266WiFiMulti.h>
+#include <ESP8266HTTPClient.h>
+#include <LiquidCrystal_I2C.h>
+#include <Wire.h>
 
-![図 45 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-45.png){: .align-center}
+LiquidCrystal_I2C lcd(0x27,20,4); // Check I2C address of LCD, normally 0x27 20x4
+uint8_t heart[8] = {0x0,0xa,0x1f,0x1f,0xe,0x4,0x0}; // example sprite bitmap
+int loginstatus = 0;
+ESP8266WiFiMulti WiFiMulti;
+
+void setup() {
+  lcd.begin(4,5); // In ESP8266-01, SDA=4, SCL=5
+  lcd.backlight();
+  WiFi.mode(WIFI_STA);
+  WiFi.begin("SSID", "PASSWORD");
+  lcd.setCursor(0, 0);
+  lcd.print("Connecting");
+
+  while(WiFi.status() != WL_CONNECTED) {
+   lcd.setCursor(10, 0);
+   lcd.print("...");
+   delay(500);
+   lcd.print(" ");
+  }
+  
+  lcd.setCursor(0, 0);
+  lcd.print(" ");                  ");
+}
+
+void loop() {
+  delay(5000);
+  lcd.home(); // At column=0, row=0
+  HTTPClient http;
+  http.begin("http://<serverIP>/4dAction/WemosData20x4");
+  int httpCode = http.GET();
+
+  if (httpCode > 0) {
+    if (httpCode == HTTP_CODE_OK) {
+      String payload = http.getString();
+      String result1 = payload.substring(0,20);
+      lcd.setCursor(0, 0);
+      lcd.print(result1); // Row 1
+      String result2 = payload.substring(20,40);
+      lcd.setCursor(0, 1);
+      lcd.print(result2); // Row 2
+      String result3 = payload.substring(40,60);
+      lcd.setCursor(0, 2);
+      lcd.print(result3); // Row 3
+      String result4 = payload.substring(60,80);
+      lcd.setCursor(0, 3);
+      lcd.print(result4); // Row 4
+     }
+    }
+  http.end();
+}
+```
 
 ### 20x4 LCDに対する4D アクションメソッド
 LCDで表示されるデータのサンプルセットは、最後のバックアップの日付、仮想メモリ、フリーメモリ、ユーザー数、プロセス数、使用するキャッシュ、になります。情報を解凍するキーとなる4Dコマンドは、GET MEMORY STATICSとGET BACKUP INFORMATIONです。前述のように、リクエストごとに80バイトのデータが送られます。
 
-![図 34 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-34.png){: .align-center}
-![図 35 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-35.png){: .align-center}
+```
+// ----------------------------------------------------------------------
+// Name: WemosData20x4
+// Description: 4D Action method will output the following of 80 bytes:
+//              - Backup date
+//              - Virtual memory and Free memory
+//              - Number of users and Processes
+//              - Cache used
+//
+// Example String:
+// Backup OK: 11/15/17Virt 1.1GBFree 25.6GUsers: 1 Proz: 4 Cache:0.01/0.4 GB
+//
+// Example on 20x4 LCD output:
+// Backup OK: 11/15/17
+// Virt 1.1GB Free 25.6G
+// Users: 1 Proz: 4
+// Cache: 0.01/0.4 GB
+// ----------------------------------------------------------------------
+C_DATE($lastbkdate;$nextbkdate)
+C_TIME($lastbktime;$nextbktime)
+C_TEXT($backup;$user;$cache;$mem;$answer)
+C_REAL($freememsize)
+ARRAY TEXT($arrtext;0)
+ARRAY REAL($arrreal1;0)
+ARRAY REAL($arrreal2;0)
+GET MEMORY STATISTICS(1;$arrtext;$arrreal1;$arrreal2)
+GET BACKUP INFORMATION(Last backup date;$lastbkdate;$lastbktime)
+GET BACKUP INFORMATION(Next backup date;$nextbkdate;$nextbktime)
+
+Case of
+  : ($nextbkdate<Current date)
+   $backup:="Backup last: "+String($lastbkdate)
+  : ($nextbkdate=Current date)
+   If ($nextbktime>Current time)
+    $backup:="Backup OK: "+String($lastbkdate)
+   Else
+    $backup:="Backup last: "+String($lastbkdate)
+   End if
+Else
+  $backup:="Backup OK: "+String($lastbkdate)
+End case
+
+$backup:=Substring($backup;1;18)+Substring($backup;21;22)
+$user:=Substring("Users: "+String(Count users)+"       ";1;11)+Substring("Proz:
+"+String(Count user processes)+"       ";1;9)
+$freememsize:=$arrreal1{4}
+
+If ($freememsize<(100*1024*1024)) // 1000 mb
+  $mem:="WARNING - Free Mem: "+String(Round($freememsize/(1024*1024*1024);1))+"GB"
+
+Else
+  $mem:=Substring("Virt "+String(Round($arrreal1{6}/(1024*1024*1024);1))+"GB
+";1;10)
+      $mem:=$mem+Substring("Free
+"+String(Round($freememsize/(1024*1024*1024);1))+"GB";1;10)
+End if
+
+$cache:=Substring("Cache:"+String(Round($arrreal1{2}/(1024*1024*1024);2))+"/"+String(
+Round($arrreal1{1}/(1024*1024*1024);1))+" GB      ";1;20)
+
+If (<>manualSendToLCD#1)
+ $answer:=$backup+$mem+$user+$cache
+Else
+ $answer:=<>LCDMessage20_4
+End if
+
+WEB SEND TEXT($answer;"application/json")
+```
 
 WeMos ESP8266が起動してネットワークに接続している時、下記の表示が5秒ごとに現れます。
+![図 36 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-36.png){: .align-center}
 
 ## 16x2 LCDを使ったデモ
 20x4と同様に、この章では16x2 LCD用のフルコードを提示します。スクリーンはより小さいサイズなので、二つのメソッドがこのコード内でアクセスして、同じようなデータを表示します。
@@ -407,7 +545,7 @@ BKUP OK:11/15/17VM:1.1G FM:25.6G
 Users:1 P:4 Cache:0.01/0.4GB
 
 16x2なので、行ごとに16バイトに分割します。
-
+```
 // ESP8266 with 16x2 i2c LCD
 // Compatible with the Arduino IDE 1.6.6
 // Library https://github.com/agnunez/ESP8266-I2C-LCD1602
@@ -474,10 +612,12 @@ int httpCode = http.GET();
   }
  http.end();
 }
+```
 
 ### 16x2 LCDでバックアップと仮想メモリーに対する4Dアクションメソッド
 LCDで表示されるデータのサンプルセットは、限定された表示スペースのため、最後のバックアップの日付、仮想メモリ、フリーメモリです。情報を解凍するために使われるキーとなる4Dコマンドは、GET MEMORY STATISTICSとGET BACKUP INFORMATIONです。前述のように、リクエストごとにデータは32バイトで送られます。
 
+```
 // ----------------------------------------------------------------------
 // Name: WemosData16x2_1
 // Description: 4D Action method will output the following of 32 bytes:
@@ -498,9 +638,11 @@ C_REAL($freememsize)
 ARRAY TEXT($arrtext;0)
 ARRAY REAL($arrreal1;0)
 ARRAY REAL($arrreal2;0)
+
 GET BACKUP INFORMATION(Last backup date;$lastbkdate;$lastbktime)
 GET BACKUP INFORMATION(Next backup date;$nextbkdate;$nextbktime)
 GET MEMORY STATISTICS(1;$arrtext ;$arrreal1;$arrreal2)
+
 Case of
    : ($nextbkdate<Current date)
      $backup:="BKUP last: "+String($lastbkdate)
@@ -513,6 +655,7 @@ Case of
     Else
      $backup:="BKUP OK:"+String($lastbkdate)
 End case
+
 $backup:=Substring($backup;1;14)+Substring($backup;17;18)
 $freememsize:=$arrreal1{4}
 If ($freememsize<(100*1024*1024)) // 1000 mb
@@ -521,20 +664,24 @@ Else
   $mem:=Substring("VM:"+String(Round($arrreal1{6}/(1024*1024*1024);1))+"G";1;10)
   $mem:=$mem+Substring(" FM:"+String(Round($freememsize/(1024*1024*1024);1))+"G";1;10)
 End if
+
 If (<>manualSendToLCD#1)
   $answer:=$backup+$mem
 Else
   $answer:=<>LCDMessage16_2
 End if
+
 WEB SEND TEXT($answer;"application/json")
+```
 
 WeMos ESP8266が起動してネットワークが接続している時、以下のように表示されます。
 
-![図 46 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-46.png){: .align-center}
+![図 37 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-37.png){: .align-center}
 
 ### ユーザー、プロセス、キャッシュに対する16x2 LCD用の4Dアクションメソッド
 LCD上に表示されるデータのサンプルセットは、限られた表示スペースですので、ユーザー数、プロセス数と使用しているキャッシュです。
 
+```
  // ----------------------------------------------------------------------
   // Name: WemosData16x2_2
   // Description: 4D Action method will output the following of 32 bytes:
@@ -553,6 +700,7 @@ ARRAY TEXT($arrtext;0)
 ARRAY REAL($arrreal1;0)
 ARRAY REAL($arrreal2;0)
 GET MEMORY STATISTICS(1;$arrtext;$arrreal1;$arrreal2)
+
 $user:=Substring("Users: "+String(Count users)+"    ";1;9)+Substring(" P:
 "+String(Count user processes)+"     ";1;7)
 $cache:=Substring("Cache:"+String(Round($arrreal1{2}/(1024*1024*1024);2))+"/"+String(
@@ -563,7 +711,9 @@ If (<>manualSendToLCD#1)
 Else
   $answer:=<>LCDMessage16_2
 End if
+
 WEB SEND TEXT($answer;"application/json")
+```
 
 最初のメソッド”WemosData16x2_1”を呼んだ後に表示されるのは下記の画面です。
 
