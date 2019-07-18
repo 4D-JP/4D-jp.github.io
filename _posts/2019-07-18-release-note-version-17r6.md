@@ -5,7 +5,7 @@ date: 2019-07-18 -08:00:00
 categories: 修正リスト
 tags: 17r6
 build: 239692
-version: 17r5
+version: 17r6
 ---
 
 **バージョン**: {{page.version}}  
