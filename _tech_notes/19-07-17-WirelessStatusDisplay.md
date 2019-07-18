@@ -283,7 +283,21 @@ Arduinoのコーディング言語はC/C++です。実行した時の起動は�
 ### ライブラリーの呼び出し
 “setup”機能の前に、下記のようにArduino IDE ライブラリーの中で指定された場所にWIFI、LCD、I2Cのライブラリーを呼び出します。
 
-![図 29 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-29.png){: .align-center}
+```
+#include <ESP8266WiFi.h>
+#include <ESP8266WiFiMulti.h>
+#include <ESP8266HTTPClient.h>
+#include <LiquidCrystal_I2C.h>
+#include <Wire.h>
+
+// For 16x2
+LiquidCrystal_I2C lcd(0x3F,16,2); // Check I2C address of LCD, normally 0x27 or 0x3F
+
+// OR
+
+// For 20x4
+LiquidCrystal_I2C lcd(0x3F,20,4); // Check I2C address of LCD, normally 0x27 or 0x3F
+```
 
 ### Setup機能
 “setup”機能には、初期化が必要なために一度だけ起動するコードが含まれています。ワイヤレス・ステイタス・ディスプレイ・ソリューションでは、LCDとWIFIを呼び出します。
@@ -291,12 +305,21 @@ Arduinoのコーディング言語はC/C++です。実行した時の起動は�
 #### LCD setup
 “Wire.h”ライブラリーからI2Cを経由してLCDが接続します。D1 (SCL)とD2 (SDA)に固定されています。以下のコードはLCDの初期化です：
 
-![図 30 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-30.png){: .align-center}
+```
+lcd.begin(4,5);    //In ESP8266-01, SDA=4, SCL=5
+```
 
 #### WIFI setup
 アプリケーションのループに行く前に、接続のためのWIFI設定が必要です。以下のコードはWIFI機能を呼び出し、SSIDを検索し、ネットワークを認証します。
 
-![図 31 : ](/images/WirelessStatusDisplaywith4D/17-22_wsd-31.png){: .align-center}
+```
+  WiFi.mode(WIFI_STA);
+  WiFi.begin("SSID", "Password");
+
+  while(WiFi.status() != WL_CONNECTED) {
+// Some code to display in LCD while connecting
+}
+```
 
 ### ループ機能
 “Loop”機能は、ファンクションコードの最初の行から最後の行までを実行して、それを繰り返すというコードが含まれています。以下は使用される幾つかの機能です：
