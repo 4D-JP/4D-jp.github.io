@@ -4,7 +4,7 @@ title: "4D v17r6 修正リスト"
 date: 2019-07-22 -08:00:00
 categories: 修正リスト
 tags: 17r6
-build: 239692
+build: 239820
 version: 17r6
 ---
 
