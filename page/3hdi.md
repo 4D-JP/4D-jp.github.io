@@ -9,6 +9,11 @@ type: page
 * content
 {:toc}
 
+## 17r6 # {#v17r6}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 値やフォーミュラの一括取得・設定**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_4DVP_CellValues.zip)<br />
+4D View ProAに追加された新コマンド[`VP Get values`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-Get-values.301-4385723.ja.html)および[`VP Get formulas`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-Get-formulas.301-4385776.ja.html)で値やフォーミュラの一括取得、[`VP SET VALUES`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-SET-VALUES.301-4385689.ja.html)および[`VP SET FORMULAS`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-SET-FORMULAS.301-4385750.ja.html)で値やフォーミュラの一括設定ができます。
+
 ## 17r5 # {#v17r5}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 新機能を活用した汎用コード**](https://github.com/4D-JP/HDI/releases/download/17r5/ORDA_Dynamic_Code.zip)<br />
