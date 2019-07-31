@@ -4,7 +4,7 @@ original_title: 4D Database Recovery Options – Part I
 title: "4Dデータベース修復オプション - Part I"
 author: Tai Bui
 position: Technical Services Engineer, 4D Inc.
-date: 2018-05-14 00:00:00
+date: 2019-05-21 00:00:00
 categories: セットアップ
 tags: deployment backup recovery 
 version: 17
