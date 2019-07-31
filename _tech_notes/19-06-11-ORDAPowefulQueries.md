@@ -4,7 +4,7 @@ original_title: Power your ORDA queries with queryoptions
 title: "クエリのオプションを使ってORDAクエリを活用する"
 author: Xiang Liu
 position: Technical Services Team Member, 4D Inc.
-date: 2018-12-11 00:00:00
+date: 2019-06-11 00:00:00
 categories: セットアップ
 tags: deployment ORDA query 
 version: 17
