@@ -4,7 +4,7 @@ original_title: Application Signing with 4D
 title: "4Dのアプリケーション署名"
 author: Timothy Aaron Penner
 position: Senior Technical Services Engineer, 4D Inc.
-date: 2018-09-04 00:00:00
+date: 2019-06-06 00:00:00
 categories: セットアップ
 tags: deployment certificate sign 
 version: 17
