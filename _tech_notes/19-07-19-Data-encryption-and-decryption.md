@@ -4,7 +4,7 @@ original_title: Data encryption and decryption between 4D and PHP
 title: "4DとPHP間のデータの暗号化と非暗号化"
 author: Nicolas Brachfogel
 position: Senior Developer, 4D SAS
-date: 2017-03-27 00:00:00
+date: 2019-07-19 00:00:00
 categories: セットアップ
 tags: deployment encryption
 version: 16
