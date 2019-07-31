@@ -4,7 +4,7 @@ original_title: Inexpensive Wireless Status Display solution with 4D
 title: ワイヤレス・ステータス・ディスプレイ・ソリューション
 author: Vance Vilanueva
 position: Technical Services Engineer, 4D Inc.
-date: 2017-11-16 00:00:00
+date: 2019-07-17 00:00:00
 categories: セットアップ
 tags: deployment display 
 version: 17
