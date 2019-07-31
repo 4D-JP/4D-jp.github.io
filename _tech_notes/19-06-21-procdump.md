@@ -4,7 +4,7 @@ original_title: Tool ProcDump
 title: "ProcDumpツールの使い方"
 author: Hassan Boulmarouf, Ayoub Chakri
 position: 4D SAS
-date: 2013-02-01 00:00:00
+date: 2019-06-21 00:00:00
 categories: セットアップ
 tags: deployment dump
 version: procdumpinterface v4
