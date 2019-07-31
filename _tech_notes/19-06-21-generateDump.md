@@ -4,7 +4,7 @@ original_title: Generate a Dump
 title: "ダンプファイルの生成方法について"
 author: Stephanie Tirtiat, Cedric Gareau, Ilham Aba
 position: 4D SAS
-date: 2018-10-01 00:00:00
+date: 2019-06-21 00:00:00
 categories: セットアップ
 tags: deployment dump
 version: 11 -17
