@@ -11,6 +11,14 @@ type: page
 
 ## 17r6 # {#v17r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セルの見た目の制御**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_4DVP_Style.zip)<br />
+4D View Pro にセルのスタイルを取得・設定・削除するためのコマンドが追加されました。<br />
+[`VP Get default style`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-Get-default-style.301-4362843.ja.html)、
+[`VP SET DEFAULT STYLE`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-DEFAULT-STYLE.301-4362430.ja.html)、
+[`VP ADD STYLESHEET`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-ADD-STYLESHEET.301-4351934.ja.html)、
+[`VP Get cell style`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-Get-cell-style.301-4362887.ja.html)、
+[`VP SET CELL STYLE`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-CELL-STYLE.301-4362416.ja.html)、
+[`VP SET BORDER`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-BORDER.301-4373260.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: フォーミュラを使ったクエリ**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Query_ByFormula.zip)<br />
 ORDAの[`query()`](https://livedoc.4d.com/--17-R6/ORDA/dataClassquery.305-4311816.ja.html)メンバーメソッドが拡張され、フォーミュラを扱えるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 値やフォーミュラの一括取得・設定**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_4DVP_CellValues.zip)<br />
