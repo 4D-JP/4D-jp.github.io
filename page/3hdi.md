@@ -11,6 +11,11 @@ type: page
 
 ## 17r6 # {#v17r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**カラーネームを使った色指定**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_CSS_colors.zip)<br />
+次のコマンドの色指定にカラーネームが使えるようになりました：
+[`OBJECT SET RGB COLORS`](https://doc.4d.com/4Dv17R6/4D/17-R6/OBJECT-SET-RGB-COLORS.301-4311385.ja.html)、
+[`LISTBOX SET ROW COLOR`](https://doc.4d.com/4Dv17R6/4D/17-R6/LISTBOX-SET-ROW-COLOR.301-4311148.ja.html)、
+[`LISTBOX SET GRID COLOR`](https://doc.4d.com/4Dv17R6/4D/17-R6/LISTBOX-SET-GRID-COLOR.301-4311102.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セルの見た目の制御**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_4DVP_Style.zip)<br />
 セルのスタイルを取得・設定・削除するためのコマンドが4D View Pro に追加されました。<br />
 [`VP Get default style`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-Get-default-style.301-4362843.ja.html)、
