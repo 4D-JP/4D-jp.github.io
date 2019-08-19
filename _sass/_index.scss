@@ -9,7 +9,7 @@
     p.download {
 	text-align: center;
     }
-    p > a.download {
+    p.download > a {
         background-color: #fff;
         color: #858585;
         border: 1px solid #47bbc1;
@@ -20,7 +20,7 @@
         margin: 15px 0;
         display: inline-block;
     }
-    p > a.download:before {
+    p.download > a:before {
         font-family: FontAwesome;
         content: "\f019";
         padding-right: 7px;
