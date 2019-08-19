@@ -29,3 +29,9 @@ CSS文字列がサポートされるようになったコマンドは，<span cl
 
 <code class="fourd"><span class="notranslate command">OBJECT SET RGB COLORS</span>(*;"text";"red";"Yellow")&nbsp;<br>
 <span class="notranslate comment">//instead of </span><span class="notranslate comment">OBJECT SET RGB COLORS(*;"text";0xFF0000;0xFFFF00)</span></code>
+
+それだけではありません。<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/OBJECT-GET-RGB-COLORS.301-4311417.ja.html"><span class="notranslate command">OBJECT GET RGB COLORS </span></a>コマンドからも文字列でCSSカラーが返されるようになりました。
+
+<code class="fourd"><span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$front</span>;<span class="notranslate variable">$back</span>) <br>
+<span class="notranslate command">OBJECT GET RGB COLORS</span>(*;"rectangle";<span class="notranslate variable">$front</span>;<span class="notranslate variable">$back</span>) <br>
+<span class="notranslate command">ALERT</span>(<span class="notranslate variable">$front</span>+"/ "+<span class="notranslate variable">$back</span>) <span class="notranslate comment">//returns&nbsp;#0000FF/ #90EE90</span></code>
