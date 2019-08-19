@@ -4,7 +4,6 @@ title: "CSS表記で色指定を簡単に"
 date: 2019-08-19 00:00:00
 categories: ブログ
 tags: 18.x 17r6
-version: 17r6
 author: Intissar Elmezrouai
 ---
 
