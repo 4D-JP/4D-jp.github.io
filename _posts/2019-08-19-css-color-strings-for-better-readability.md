@@ -19,7 +19,7 @@ CSS文字列がサポートされるようになったコマンドは，<span cl
 コマンドの改良により，下記の要領でオブジェクトの色指定ができるようになりました。
 
 <code class="fourd"><span class="notranslate variable">$color</span>:="blue"&nbsp;<br>
-<span class="notranslate variable">$color</span>:="#0000FF" <span class="notranslate comment">//or #FF</span><br>
+<span class="notranslate variable">$color</span>:="#0000FF" <span class="notranslate comment">//&nbsp;または #FF</span><br>
 <span class="notranslate variable">$color</span>:="RGB(0,0,255)"</code>
 
 #### 使用例
