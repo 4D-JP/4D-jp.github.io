@@ -16,7 +16,7 @@ author: Intissar Elmezrouai
 
 CSS文字列がサポートされるようになったコマンドは，<span class="notranslate command">OBJECT SET RGB COLORS</span>, <span class="notranslate command">LISTBOX SET ROW COLOR</span>, <span class="notranslate command">LISTBOX SET GRID COLOR</span> です。
 
-コマンドの改良により，下記の方式でオブジェクトの色指定ができるようになりました。
+コマンドの改良により，下記の要領でオブジェクトの色指定ができるようになりました。
 
 <code class="fourd"><span class="notranslate variable">$color</span>:="blue"&nbsp;<br>
 <span class="notranslate variable">$color</span>:="#0000FF" <span class="notranslate comment">//or #FF</span><br>
