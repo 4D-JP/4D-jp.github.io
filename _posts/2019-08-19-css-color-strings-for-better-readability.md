@@ -7,7 +7,7 @@ tags: 18.x 17r6
 author: Intissar Elmezrouai
 ---
 
-![css-768x384](https://github.com/4D-JP/4D-jp.github.io/blob/master/images/blog/08/19/css-768x384.png?raw=true)
+![css-768x384](/images/blog/08/19/css-768x384.png)
 
 既存のコマンドが改良され，さらに便利になりました。フォームオブジェクトのカラーは，数値だけでなく，直感的なCSS文字列でも指定することができます。従来のような4バイトの倍長整数（0x00RRGGBB）では，すぐに色がイメージできなかったかもしれません。255（0xFF）とではなく，単純に"blue"と記述できれば良いのに，と感じていたデベロッパーには朗報です。17r6では，CSS文字列がサポートされるようになりました！
 
