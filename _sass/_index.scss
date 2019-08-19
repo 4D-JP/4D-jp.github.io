@@ -6,6 +6,22 @@
             color: #223253;
         }
     }
+    p.download>a {
+        background-color: #fff;
+        color: #858585;
+        border: 1px solid #47bbc1;
+        border-radius: 3px;
+        font-size: 14px;
+        padding: 9px 22px;
+        transition: background 0.5s;
+        margin: 15px 0;
+        display: inline-block;
+    }
+    p.download>a:before {
+        font-family: FontAwesome;
+        content: "\f019";
+        padding-right: 7px;
+    }
     .left {
         >ul {
             padding: 0;
