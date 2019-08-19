@@ -37,6 +37,11 @@
         margin: 15px 0;
         display: inline-block;
     }
+    a.download:before {
+        font-family: FontAwesome;
+        content: "\f019";
+        padding-right: 7px;
+    }
     .wide {
         ul {
             >h2 {
