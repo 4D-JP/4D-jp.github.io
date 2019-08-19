@@ -33,7 +33,7 @@ CSS文字列がサポートされるようになったコマンドは，<span cl
 
 <code class="fourd"><span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$front</span>;<span class="notranslate variable">$back</span>) <br>
 <span class="notranslate command">OBJECT GET RGB COLORS</span>(*;"rectangle";<span class="notranslate variable">$front</span>;<span class="notranslate variable">$back</span>) <br>
-<span class="notranslate command">ALERT</span>(<span class="notranslate variable">$front</span>+"/ "+<span class="notranslate variable">$back</span>) <span class="notranslate comment">//&nbsp;#0000FF/#90EE90 が返される</span></code>
+<span class="notranslate command">ALERT</span>(<span class="notranslate variable">$front</span>+"/"+<span class="notranslate variable">$back</span>) <span class="notranslate comment">//&nbsp;#0000FF/#90EE90 が返される</span></code>
 
 リストボックスのコマンドも同じように改良されていますが，注意点があります。<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/LISTBOX-SET-ROW-COLOR.301-4311148.en.html"><span class="notranslate command">LISTBOX SET ROW COLOR</span></a> にCSS文字列が渡された場合，リストボックスや列のカラーを制御するための配列には，数値に変換された値が代入されることに留意してください。
 
