@@ -6,9 +6,9 @@
             color: #223253;
         }
     }
-	p.download {
-		text-align: center;
-	}
+    p.download {
+	text-align: center;
+    }
     p > a.download {
         background-color: #fff;
         color: #858585;
@@ -25,39 +25,39 @@
         content: "\f019";
         padding-right: 7px;
     }
-    p > span.command {
+    .command {
 	color: #339966;
 	font-weight: bold;
     }
-    p > span.comment {
+    .comment {
         color: #535353;
     }
-    p > span.constant {
+    .constant {
         color: #4D004D;
         text-decoration: underline;
     }
-    p > span.variable {
+    .variable {
         color: #0031FF;
     }
-    p > span.keyword {
+    .keyword {
         color: #034D00;
         font-weight: bold;
 
     }
-    p > span.objectattribut {
+    .objectattribut {
         color: #A0806B;
     }
-    p > span.objectfunction {
+    .objectfunction {
         color: #5F8E5E;
         font-style: italic;
     }
-    p > span.tablename {
+    .tablename {
         color: #532300;
     }
-    p > span.tableField {
+    .tableField {
         color: #323232;
     }
-    p > span.method {
+    .method {
       color: #000080;
       font-style: italic;
       font-weight: bold;
