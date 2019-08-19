@@ -26,6 +26,17 @@
             background-color: #f4efeb;
         }
     }
+    a.download {
+        background-color: #fff;
+        color: #858585;
+        border: 1px solid #47bbc1;
+        border-radius: 3px;
+        font-size: 14px;
+        padding: 9px 22px;
+        transition: background 0.5s;
+        margin: 15px 0;
+        display: inline-block;
+    }
     .wide {
         ul {
             >h2 {
