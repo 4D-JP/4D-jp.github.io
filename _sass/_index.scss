@@ -6,7 +6,7 @@
             color: #223253;
         }
     }
-    p.download>a {
+    p > a.download {
         background-color: #fff;
         color: #858585;
         border: 1px solid #47bbc1;
@@ -17,10 +17,47 @@
         margin: 15px 0;
         display: inline-block;
     }
-    p.download>a:before {
+    p > a.download:before {
         font-family: FontAwesome;
         content: "\f019";
         padding-right: 7px;
+    }
+    .command {
+	color: #339966;
+	font-weight: bold;
+    }
+    .comment {
+        color: #535353;
+    }
+    .constant {
+        color: #4D004D;
+        text-decoration: underline;
+    }
+    .variable {
+        color: #0031FF;
+    }
+    .keyword {
+        color: #034D00;
+        font-weight: bold;
+
+    }
+    .objectattribut {
+        color: #A0806B;
+    }
+    .objectfunction {
+        color: #5F8E5E;
+        font-style: italic;
+    }
+    .tablename {
+        color: #532300;
+    }
+    .tableField {
+        color: #323232;
+    }
+    .method {
+      color: #000080;
+      font-style: italic;
+      font-weight: bold;
     }
     .left {
         >ul {
