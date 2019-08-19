@@ -15,9 +15,9 @@
 	border-left: 4px solid #47bbc1;
 	overflow: auto;
     }
-    p.download {
-	text-align: center;
-    }
+//     p.download {
+// 	text-align: center;
+//     }
     p > a.download {
         background-color: #fff;
         color: #858585;
@@ -29,7 +29,7 @@
         margin: 15px 0;
         display: inline-block;
     }
-    p.download > a:before {
+    p > a.download:before {
         font-family: FontAwesome;
         content: "\f019";
         padding-right: 7px;
