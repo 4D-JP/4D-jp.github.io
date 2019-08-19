@@ -9,3 +9,5 @@ author: Intissar Elmezrouai
 ---
 
 ![css-768x384](https://user-images.githubusercontent.com/10509075/63232580-110b9280-c264-11e9-83a4-31cec77770d0.png)
+
+[カラーネームを使った色指定](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_CSS_colors.zip)
