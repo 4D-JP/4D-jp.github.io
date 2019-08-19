@@ -26,7 +26,7 @@ CSS文字列がサポートされるようになったコマンドは，<span cl
 
 <a href="https://doc.4d.com/4Dv17R6/4D/17-R6/OBJECT-SET-RGB-COLORS.301-4311385.ja.html"><span class="notranslate command">OBJECT SET RGB COLORS</span></a> コマンドには，前景色と背景色がそれぞれ文字列で渡せるようになりました。コードを記述するのが簡単になるだけでなく，可読性も向上します。
 
-<code class="fourd"><span class="notranslate command">OBJECT SET RGB COLORS</span>(*;"text";"red";"Yellow"<span class="notranslate variable">$front</span>;<span class="notranslate variable">$back</span>) <br></code>
+<code class="fourd"><span class="notranslate command">OBJECT SET RGB COLORS</span>(*;"text";"red";"Yellow") <br></code>
 
 
 
