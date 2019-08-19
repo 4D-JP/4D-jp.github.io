@@ -26,10 +26,27 @@
             background-color: #f4efeb;
         }
     }
-    p.download>a {
+    h4 {
+        font-weight: bold;
+        color: #4d6dad;
+        font-size: 20px;
+    }
+    code.fourd {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        background: #e9e9e9;
+        display: block;
+        padding: 15px;
+        color: #000;
+        border-left: 4px solid #47bbc1;
+        overflow: auto;
+    }
+    p.download {
+        text-align: center;
+    }
+    p.download > a {
         background-color: #fff;
-        color: #858585;
-        border: 1px solid #47bbc1;
+        color: #333;
+        border: 1px solid #4d6dad;
         border-radius: 3px;
         font-size: 14px;
         padding: 9px 22px;
@@ -37,10 +54,47 @@
         margin: 15px 0;
         display: inline-block;
     }
-    p.download>a:before {
+    p.download > a:before {
         font-family: FontAwesome;
         content: "\f019";
         padding-right: 7px;
+    }
+    .command {
+	color: #339966;
+	font-weight: bold;
+    }
+    .comment {
+        color: #535353;
+    }
+    .constant {
+        color: #4D004D;
+        text-decoration: underline;
+    }
+    .variable {
+        color: #0031FF;
+    }
+    .keyword {
+        color: #034D00;
+        font-weight: bold;
+
+    }
+    .objectattribut {
+        color: #A0806B;
+    }
+    .objectfunction {
+        color: #5F8E5E;
+        font-style: italic;
+    }
+    .tablename {
+        color: #532300;
+    }
+    .tableField {
+        color: #323232;
+    }
+    .method {
+      color: #000080;
+      font-style: italic;
+      font-weight: bold;
     }
     .wide {
         ul {
