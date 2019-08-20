@@ -11,16 +11,16 @@ author: Intissar Elmezrouai
 
 クイックレポートは64ビットで完全に再作成され、継続的に新しい機能が統合されています。前回のRリリースの<a href="https://blog.4d.com/ui-improvements-in-quick-report/">UI（ユーザーインターフェイス）の改良</a>に加えて、4D v17 R6はスタンドアロンレポート中のイベントを捉える機能と、小計スペースを管理する機能を追加しました。
 
-####QR REPORTコマンドのコールメソッド
+#### QR REPORTコマンドのコールメソッド
 
 <a href="https://doc.4d.com/4Dv17R6/4D/17-R6/QR-REPORT.301-4311030.ja.html"><span class="notranslate command">QR REPORT</span></a> コマンドに"methodName"パラメータを設定できるようになりました。このメソッドは管理されたイベントごとに起動するコールバックです：
 
-　- qr cmd open
-　- qr cmd save
-　- qr cmd save as
-　- qr cmd generate
-　- qr cmd page setup
-　- qr cmd print preview
+*qr cmd open
+*qr cmd save
+*qr cmd save as
+*qr cmd generate
+*qr cmd page setup
+*qr cmd print preview
  
 以下はコールのサンプルです：
 
@@ -44,12 +44,12 @@ author: Intissar Elmezrouai
 <span class="notranslate keyword">End case</span>
 </code>
 
-####リマインダー
+#### リマインダー
 
-　- もし<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/QR-REPORT.301-4311030.ja.html"><span class="notranslate command">QR REPORT</span></a> コマンドにコールバックメソッドが設定されなければ、イベントは自動で管理されます。
-　- もし<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/QR-REPORT.301-4311030.ja.html"><span class="notranslate command">QR REPORT</span></a> コマンドにコールバックメソッドが設定されたら、イベントを実行する/しないはあなた次第です。これは本質的なイベントをスタンドアロンレポートとしてあなたが管理できることを意味します。
+*もし<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/QR-REPORT.301-4311030.ja.html"><span class="notranslate command">QR REPORT</span></a> コマンドにコールバックメソッドが設定されなければ、イベントは自動で管理されます。
+*もし<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/QR-REPORT.301-4311030.ja.html"><span class="notranslate command">QR REPORT</span></a> コマンドにコールバックメソッドが設定されたら、イベントを実行する/しないはあなた次第です。これは本質的なイベントをスタンドアロンレポートとしてあなたが管理できることを意味します。
  
- ####小計スペース
+ #### 小計スペース
  
  それぞれのブレイク（小計）に対して、ページブレークあるいは異なる行高を設定できるようになりました。異なる行高の場合、違いはポイント(pt)とパーセンテージ(%)で表示できます。
  
