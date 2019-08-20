@@ -34,13 +34,13 @@ author: Intissar Elmezrouai
 <span class="notranslate command">C_LONGINT</span>(<span class="notranslate variable">$zone</span>;<span class="notranslate variable">$event</span>)<br>
 <span class="notranslate variable">$zone</span>:=<span class="notranslate variable">$1</span><br>
 <span class="notranslate variable">$event</span>:=<span class="notranslate variable">$2</span><br>
-<span class="notranslate keyword">Case of</span> <br />
-  : (<span class="notranslate variable">$event</span>=qr cmd generate) <br />
-<span class="notranslate command">QR SET HEADER AND FOOTE</span>R(<span class="notranslate variable">$zone</span>;2;"";Timestamp;"";100) <br />
-<span class="notranslate command">QR EXECUTE COMMAND</span>(<span class="notranslate variable">$zone</span>;<span class="notranslate variable">$event</span>) <br />
-  : (<span class="notranslate variable">$event</span>=qr cmd print preview) <br />
-<span class="notranslate keyword">Else</span> <br />
-<span class="notranslate command">QR EXECUTE COMMAND</span>(<span class="notranslate variable">$zone</span>;<span class="notranslate variable">$event</span>) <br />
+<span class="notranslate keyword">Case of</span><br>
+  : (<span class="notranslate variable">$event</span>=qr cmd generate) <br>
+<span class="notranslate command">QR SET HEADER AND FOOTE</span>R(<span class="notranslate variable">$zone</span>;2;"";Timestamp;"";100) <br>
+<span class="notranslate command">QR EXECUTE COMMAND</span>(<span class="notranslate variable">$zone</span>;<span class="notranslate variable">$event</span>) <br>
+  : (<span class="notranslate variable">$event</span>=qr cmd print preview) <br>
+<span class="notranslate keyword">Else</span> <br>
+<span class="notranslate command">QR EXECUTE COMMAND</span>(<span class="notranslate variable">$zone</span>;<span class="notranslate variable">$event</span>) <br>
 <span class="notranslate keyword">End case</span>
 </code>
 
