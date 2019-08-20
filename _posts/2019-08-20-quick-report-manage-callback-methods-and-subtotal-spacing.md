@@ -56,4 +56,4 @@ author: Intissar Elmezrouai
  
  それぞれのブレイク（小計）に対して、ページブレークあるいは異なる行高を設定できるようになりました。異なる行高の場合、違いはポイント(pt)とパーセンテージ(%)で表示できます。
  
-![QR1Menu-1024x564](/images/blog/08/20/QR1Menu-1024x512.png)
+![QR1Menu-1024x564](/images/blog/08/20/QR1Menu-1024x564.png)
