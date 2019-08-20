@@ -15,12 +15,12 @@ author: Intissar Elmezrouai
 
 <a href="https://doc.4d.com/4Dv17R6/4D/17-R6/QR-REPORT.301-4311030.ja.html"><span class="notranslate command">QR REPORT</span></a> コマンドに"methodName"パラメータを設定できるようになりました。このメソッドは管理されたイベントごとに起動するコールバックです：
 
-*qr cmd open
-*qr cmd save
-*qr cmd save as
-*qr cmd generate
-*qr cmd page setup
-*qr cmd print preview
+* qr cmd open
+* qr cmd save
+* qr cmd save as
+* qr cmd generate
+* qr cmd page setup
+* qr cmd print preview
  
 以下はコールのサンプルです：
 
@@ -46,8 +46,8 @@ author: Intissar Elmezrouai
 
 #### リマインダー
 
-*もし<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/QR-REPORT.301-4311030.ja.html"><span class="notranslate command">QR REPORT</span></a> コマンドにコールバックメソッドが設定されなければ、イベントは自動で管理されます。
-*もし<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/QR-REPORT.301-4311030.ja.html"><span class="notranslate command">QR REPORT</span></a> コマンドにコールバックメソッドが設定されたら、イベントを実行する/しないはあなた次第です。これは本質的なイベントをスタンドアロンレポートとしてあなたが管理できることを意味します。
+* もし<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/QR-REPORT.301-4311030.ja.html"><span class="notranslate command">QR REPORT</span></a> コマンドにコールバックメソッドが設定されなければ、イベントは自動で管理されます。
+* もし<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/QR-REPORT.301-4311030.ja.html"><span class="notranslate command">QR REPORT</span></a> コマンドにコールバックメソッドが設定されたら、イベントを実行する/しないはあなた次第です。これは本質的なイベントをスタンドアロンレポートとしてあなたが管理できることを意味します。
  
  #### 小計スペース
  
