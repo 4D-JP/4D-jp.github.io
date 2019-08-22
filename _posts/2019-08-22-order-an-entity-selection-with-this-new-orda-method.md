@@ -14,7 +14,7 @@ author: Marie-Sophie Landrieu-Yvert
 {:.download}
 [式を使ったエンティティ・セレクションのソート]("https://download.4d.com/Demos/4D_v17_R6/HDI_Order_ByFormula.zip") 
 
-ソート条件は、式がストリングあるいは<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/Formula.301-4311678.ja.html"><span class="notranslate command">Formula</a></span> オブジェクトとしてorderByFormula() メソッドに与えられた時に評価されます。
+ソート条件は、式がストリングあるいは<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/Formula.301-4311678.ja.html"><span class="notranslate command"> Formula </a></span>オブジェクトとしてorderByFormula() メソッドに与えられた時に評価されます。
 
 #### Stringとして式をソートする
 
@@ -37,7 +37,7 @@ author: Marie-Sophie Landrieu-Yvert
 <span class="notranslate variable">$companies</span>:=<span class="notranslate command">ds</span>.<span class="notranslate tablename">Companies</span>.<span class="notranslate objectfunction">all()</span><br>
 <span class="notranslate variable">$orderedCompanies</span>:=<span class="notranslate variable">$companies</span>.<span class="notranslate objectfunction">orderByFormula </span>(<span class="notranslate variable">$formula</span>;<span class="notranslate constant">dk descending</span>)</code>
 
-<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/Formula.301-4311678.ja.html"><span class="notranslate command">Formula</a></span> オブジェクトを使うことで、式をストリングとして使うよりもいくつかの利点（自動補完、コードエディター内の色指定、など）があります。
+<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/Formula.301-4311678.ja.html"><span class="notranslate command"> Formula </a></span> オブジェクトを使うことで、式をストリングとして使うよりもいくつかの利点（自動補完、コードエディター内の色指定、など）があります。
 
 <a href="https://doc.4d.com/4Dv17R6/4D/17-R6/entitySelectionorderByFormula.305-4404512.ja.html"><span class="notranslate objectfunction">orderByFomula()</a></span> メソッドはさらに多くのオプションがあります。詳しくは<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/entitySelectionorderByFormula.305-4404512.ja.html">ドキュメント</a>をチェックし、上記のサンプルデータベース (HDI)をダウンロードしてください。
 
