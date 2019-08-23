@@ -21,7 +21,6 @@ author: Marie-Sophie Landrieu-Yvert
 ここにデータクラス、Companiesがあります。これからこの企業を収益（収益 = 収入 - 支出）を基にソートします。
 
 エンティティはThis コマンドでアクセスすることに注意しましょう。
-
 <code class=“fourd”><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$companies</span>;<span class="notranslate variable">$orderedCompanies</span>;<span class="notranslate variable">$formula</span>)<br>
 <span class="notranslate variable">$formula</span>:= <span class="notranslate command">Formula</span>(<span class="notranslate command">This</span>.<span class="notranslate objectattribut">revenue</span> - <span class="notranslate command">This</span>.<span class="notranslate objectattribut">costs</span>)<br>
 <span class="notranslate variable">$companies</span>:=<span class="notranslate command">ds</span>.<span class="notranslate tablename">Companies</span>.<span class="notranslate objectfunction">all()</span><br>
