@@ -21,10 +21,12 @@ author: Marie-Sophie Landrieu-Yvert
 ここにデータクラス、Companiesがあります。これからこの企業を収益（収益 = 収入 - 支出）を基にソートします。
 
 エンティティはThis コマンドでアクセスすることに注意しましょう。
+
 <code class=“fourd”><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$companies</span>;<span class="notranslate variable">$orderedCompanies</span>;<span class="notranslate variable">$formula</span>)<br>
 <span class="notranslate variable">$formula</span>:= <span class="notranslate command">Formula</span>(<span class="notranslate command">This</span>.<span class="notranslate objectattribut">revenue</span> - <span class="notranslate command">This</span>.<span class="notranslate objectattribut">costs</span>)<br>
 <span class="notranslate variable">$companies</span>:=<span class="notranslate command">ds</span>.<span class="notranslate tablename">Companies</span>.<span class="notranslate objectfunction">all()</span><br>
-<span class="notranslate variable">$orderedCompanies</span>:=<span class="notranslate variable">$companies</span>.<span class="no-translate objectfunction">orderByFormula </span>(<span class="notranslate variable">$formula</span>;<span class="notranslate constant">dk descending</span>)</code>
+<span class="notranslate variable">$orderedCompanies</span>:=<span class="notranslate variable">$companies</span>.<span class="no-translate objectfunction">orderByFormula </span>(<span class="notranslate variable">$formula</span>;<span class="notranslate constant">dk descending</span>)
+</code>
 
 
 #### Formulaオブジェクトを使ったソート
@@ -34,7 +36,8 @@ author: Marie-Sophie Landrieu-Yvert
 <code class=“fourd”><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$companies</span>;<span class="notranslate variable">$orderedCompanies</span>;<span class="notranslate variable">$formula</span>)<br>
 <span class="notranslate variable">$formula</span>:= <span class="notranslate command">Formula</span>(<span class="notranslate command">This</span>.<span class="notranslate objectattribut">revenue</span> - <span class="notranslate command">This</span>.<span class="notranslate objectattribut">costs</span>)<br>
 <span class="notranslate variable">$companies</span>:=<span class="notranslate command">ds</span>.<span class="notranslate tablename">Companies</span>.<span class="notranslate objectfunction">all()</span><br>
-<span class="notranslate variable">$orderedCompanies</span>:=<span class="notranslate variable">$companies</span>.<span class="notranslate objectfunction">orderByFormula </span>(<span class="notranslate variable">$formula</span>;<span class="notranslate constant">dk descending</span>)</code>
+<span class="notranslate variable">$orderedCompanies</span>:=<span class="notranslate variable">$companies</span>.<span class="notranslate objectfunction">orderByFormula </span>(<span class="notranslate variable">$formula</span>;<span class="notranslate constant">dk descending</span>)
+</code>
 
 <a href="https://doc.4d.com/4Dv17R6/4D/17-R6/Formula.301-4311678.ja.html"><span class="notranslate command"> Formula </span></a> オブジェクトを使うことで、式をストリングとして使うよりもいくつかの利点（自動補完、コードエディター内の色指定、など）があります。
 
@@ -45,6 +48,7 @@ author: Marie-Sophie Landrieu-Yvert
 <a href="https://doc.4d.com/4Dv17R6/4D/17-R6/dataClassquery.305-4311816.ja.html"><span class="notranslate objectfunction">query()</span></a> メンバーメソッド自体の内部に<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/entitySelectionorderBy.305-4311825.ja.html"><span class="notranslate objectfunction">order by</span></a> ステートメントを挿入することができます。これはクラアント/サーバー・モードで使う場合には大きな利点で、クエリーとソートアクションを同じリクエスト中に組み合わせることができ、サーバーとネットワークトラフィックに送られるリクエストの数を減らします。
 
 <code class=“fourd”><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$companies</span>)<br>
-<span class="notranslate variable">$companies</span>:=<span class="notranslate command">ds</span>.<span class="notranslate tablename">Companies</span>.<span class="notranslate objectfunction">query</span>("revenue&gt; :1 order by costs desc";5000)</code>
+<span class="notranslate variable">$companies</span>:=<span class="notranslate command">ds</span>.<span class="notranslate tablename">Companies</span>.<span class="notranslate objectfunction">query</span>("revenue&gt; :1 order by costs desc";5000)
+</code>
 
 
