@@ -22,7 +22,7 @@ author: Marie-Sophie Landrieu-Yvert
 
 エンティティはThis コマンドでアクセスすることに注意しましょう。
 
-<code class=“fourd”><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$companies</span>;<span class="notranslate variable">$orderedCompanies</span>;<span class="notranslate variable">$formula</span>)<br>
+<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$companies</span>;<span class="notranslate variable">$orderedCompanies</span>;<span class="notranslate variable">$formula</span>)<br>
 <span class="notranslate variable">$formula</span>:= <span class="notranslate command">Formula</span>(<span class="notranslate command">This</span>.<span class="notranslate objectattribut">revenue</span> - <span class="notranslate command">This</span>.<span class="notranslate objectattribut">costs</span>)<br>
 <span class="notranslate variable">$companies</span>:=<span class="notranslate command">ds</span>.<span class="notranslate tablename">Companies</span>.<span class="notranslate objectfunction">all()</span><br>
 <span class="notranslate variable">$orderedCompanies</span>:=<span class="notranslate variable">$companies</span>.<span class="no-translate objectfunction">orderByFormula </span>(<span class="notranslate variable">$formula</span>;<span class="notranslate constant">dk descending</span>)
@@ -33,7 +33,7 @@ author: Marie-Sophie Landrieu-Yvert
 
 では同じ条件を使って企業をソートしますが、ストリングの代わりに、Formula オブジェクトを使い、降順でソートします。
 
-<code class=“fourd”><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$companies</span>;<span class="notranslate variable">$orderedCompanies</span>;<span class="notranslate variable">$formula</span>)<br>
+<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$companies</span>;<span class="notranslate variable">$orderedCompanies</span>;<span class="notranslate variable">$formula</span>)<br>
 <span class="notranslate variable">$formula</span>:= <span class="notranslate command">Formula</span>(<span class="notranslate command">This</span>.<span class="notranslate objectattribut">revenue</span> - <span class="notranslate command">This</span>.<span class="notranslate objectattribut">costs</span>)<br>
 <span class="notranslate variable">$companies</span>:=<span class="notranslate command">ds</span>.<span class="notranslate tablename">Companies</span>.<span class="notranslate objectfunction">all()</span><br>
 <span class="notranslate variable">$orderedCompanies</span>:=<span class="notranslate variable">$companies</span>.<span class="notranslate objectfunction">orderByFormula </span>(<span class="notranslate variable">$formula</span>;<span class="notranslate constant">dk descending</span>)
@@ -47,7 +47,7 @@ author: Marie-Sophie Landrieu-Yvert
 
 <a href="https://doc.4d.com/4Dv17R6/4D/17-R6/dataClassquery.305-4311816.ja.html"><span class="notranslate objectfunction">query()</span></a> メンバーメソッド自体の内部に<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/entitySelectionorderBy.305-4311825.ja.html"><span class="notranslate objectfunction">order by</span></a> ステートメントを挿入することができます。これはクラアント/サーバー・モードで使う場合には大きな利点で、クエリーとソートアクションを同じリクエスト中に組み合わせることができ、サーバーとネットワークトラフィックに送られるリクエストの数を減らします。
 
-<code class=“fourd”><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$companies</span>)<br>
+<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$companies</span>)<br>
 <span class="notranslate variable">$companies</span>:=<span class="notranslate command">ds</span>.<span class="notranslate tablename">Companies</span>.<span class="notranslate objectfunction">query</span>("revenue&gt; :1 order by costs desc";5000)
 </code>
 
