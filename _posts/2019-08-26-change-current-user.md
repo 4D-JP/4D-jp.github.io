@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Designerのパスワード未設定でもCHANGE CURRENT USER"
+title: "CHANGE CURRENT USERとパスワード"
 date: 2019-08-26 09:50:00
 categories: 仕様
 tags: security
