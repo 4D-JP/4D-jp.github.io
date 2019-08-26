@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Designerのパスワードと未設定とCurrent user"
+title: "Designerのパスワード未設定とCurrent user"
 date: 2019-08-26 09:50:00
 categories: 仕様
 tags: security
