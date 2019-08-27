@@ -19,7 +19,7 @@ author: Fabrice Mainguené
 
 ####ステップ・バイ・ステップ・サンプル
 
-<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-ALLOWED-METHODS.301-4433810.ja.html"><span class="notranslate command">VP SET ALLOWED METHODS</span> コマンドは、4Dメソッドを実行する新しい方法を提供します。以下のデモは4D View Proの式中にある”Birth Information” メソッドを呼び出したい場合にどのようにするかを示しています：
+<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-ALLOWED-METHODS.301-4433810.ja.html"><span class="notranslate command">VP SET ALLOWED METHODS</span></a>コマンドは、4Dメソッドを実行する新しい方法を提供します。以下のデモは4D View Proの式中にある”Birth Information” メソッドを呼び出したい場合にどのようにするかを示しています：
 
 <code><span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$1</span>)<br />
 <span class="notranslate command">C_DATE</span>(<span class="notranslate variable">$2</span>)<br />
