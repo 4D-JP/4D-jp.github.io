@@ -11,7 +11,7 @@ author: Fabrice Mainguené
 
 4D View ProはRリリース毎にさらに機能豊かになりつつあり、4D v17 R6も例外ではありません！新しいコマンドによって、4Dメソッドのパラメータ、名前、タイプとサマリーを特定することができます。そして、あなたのメソッドがより情報豊かで説明的になり、それらをエンドユーザーが使う助けになります。
 
-日にちや時間を宣言したい場合は？そのメソッドが何をするのかをユーザーが理解するのを補助するために、短い説明を与えるのはいかがでしょう。<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-ALLOWED-METHODS.301-4433810.ja.html"><span class="notranslate command">VP SET ALLOWED METHODS</span> コマンドで実行できるようになりました！
+日にちや時間を宣言したい場合は？そのメソッドが何をするのかをユーザーが理解するのを補助するために、短い説明を与えるのはいかがでしょう。<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-ALLOWED-METHODS.301-4433810.ja.html"><span class="notranslate command">VP SET ALLOWED METHODS</span></a> コマンドで実行できるようになりました！
 
 サンプルよりもこのコマンドを使う方法をより良く知る方法は何でしょう？あなたがサンプルの手順を読み終えて実行する頃までに、以下の結果が得られていることでしょう：
 
