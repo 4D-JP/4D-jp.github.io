@@ -17,7 +17,7 @@ author: Fabrice Mainguené
 
 ![BirthInformation](/images/blog/08/27/BirthInformation.png)
 
-####ステップ・バイ・ステップ・サンプル
+#### ステップ・バイ・ステップ・サンプル
 
 <a href="https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-ALLOWED-METHODS.301-4433810.ja.html"><span class="notranslate command">VP SET ALLOWED METHODS</span></a>コマンドは、4Dメソッドを実行する新しい方法を提供します。以下のデモは4D View Proの式中にある”Birth Information” メソッドを呼び出したい場合にどのようにするかを示しています：
 
@@ -29,7 +29,7 @@ author: Fabrice Mainguené
 <span class="notranslate variable">$0</span>:=<span class="notranslate variable">$1</span>+" was born on "+<span class="notranslate command">String</span>(<span class="notranslate variable">$2</span>)+" at "+<span class="notranslate command">String</span>(<span class="notranslate variable">$3</span>)<br />
 </code>
 
-####いかにしてメソッドを実行するか
+#### いかにしてメソッドを実行するか
 
 オブジェクトを作成して、メソッドのコールネームを定義するためにオブジェクトの属性を使います：
 
@@ -41,7 +41,7 @@ author: Fabrice Mainguené
 
 <p><code><span class="notranslate variable">$o</span>.<span class="notranslate objectattribut">BIRTH_INFORMATION</span>.<span class="notranslate objectattribut">method</span>:="Birth Information"</code>
 
-####各パラメータに名前とタイプを追加する
+#### 各パラメータに名前とタイプを追加する
 
 メソッドのパラメータについて情報を持ったコレクションを追加します：
 
@@ -50,13 +50,13 @@ author: Fabrice Mainguené
 <span class="notranslate variable">$o</span>.<span class="notranslate objectattribut">BIRTH_INFORMATION</span>.<span class="notranslate objectattribut">parameters</span>.<span class="notranslate objectfunction">push</span>(<span class="notranslate command">New object</span>("name";"Birthday";"type";<span class="notranslate constant">Is date</span>))<br />
 <span class="notranslate variable">$o</span>.<span class="notranslate objectattribut">BIRTH_INFORMATION</span>.<span class="notranslate objectattribut">parameters</span>.<span class="notranslate objectfunction">push</span>(<span class="notranslate command">New object</span>("name";"Time of birth";"type";<span class="notranslate constant">Is time</span>))</code>
 
-####サマリーを追加する
+#### サマリーを追加する
 
 コマンドが何をするのかについてサマリーを特定します：
 
 <code><span class="notranslate variable">$o</span>.<span class="notranslate objectattribut">BIRTH_INFORMATION</span>.<span class="notranslate objectattribut">summary</span>:="Returns a string from birth information"</code>
 
-####パラメータの数を特定する
+#### パラメータの数を特定する
 
 最後に、4D View Pro式の中にある引数の数を、最小値と最大値を追加することで制限できます。例えば、パラメータの全てが必須の場合：
 
