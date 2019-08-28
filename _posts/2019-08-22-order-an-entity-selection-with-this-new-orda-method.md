@@ -12,7 +12,7 @@ author: Marie-Sophie Landrieu-Yvert
 <a href="https://blog.4d.com/more-sophisticated-orda-queries-with-formulas/"><span class="notranslate command">前のブログ投稿</span></a>で、ORDA クエリーの中で式を適用して、洗練された複雑な検索条件をどのように構築するかを説明しました。さらに完全で強力な開発ツールを使って提供できるのが、新しいORDA メソッドの<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/entitySelectionorderByFormula.305-4404512.en.html"><span class="notranslate objectfunction">orderByFomula()</span></a> です。formulas の助けによって、プロジェクト・メソッドあるいは4D式の中で複雑な条件を使ってエンティティ・セレクションのソートができます。
 
 {:.download}
-[式を使ったエンティティ・セレクションのソート](a href="https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Order_ByFormula.zip") 
+[式を使ったエンティティ・セレクションのソート](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Order_ByFormula.zip)
 
 ソート条件は、式がストリングあるいは<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/Formula.301-4311678.ja.html"><span class="notranslate command"> Formula </span></a>オブジェクトとしてorderByFormula() メソッドに与えられた時に評価されます。
 
