@@ -1,11 +1,13 @@
 ---
 layout: post
-title: “ダイナミックフォームの入力順を簡単にカスタマイズ”
+title: "ダイナミックフォームの入力順を簡単にカスタマイズ"
 date: 2019-08-28 00:00:00
 categories: ブログ
 tags: 18.x 17r6
 author: Vanessa Talbot
 ---
+
+![entryOrder](/images/blog/08/28/entryOrder.png)
 
 <a href="https://blog.4d.com/discover-the-power-of-dynamic-forms/">ダイナミックフォーム</a>の機能は、4D v16 R6で導入され、オブジェクト内でフォームを構築したり、テキストファイルからフォームをロードしたりすることで、その場でフォームを構築できます。これは、アプリケーションのニーズに合わせてフォームが頻繁に変更される世界ではとても便利です。
 
