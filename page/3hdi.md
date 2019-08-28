@@ -11,6 +11,8 @@ type: page
 
 ## 17r6 # {#v17r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: フォーミュラを使った並べ替え**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Order_ByFormula.zip)<br />
+ORDAに[`entitySelection.orderByFormula( )`](https://livedoc.4d.com/--17-R6/ORDA/entitySelectionorderByFormula.305-4404512.ja.html)メンバーメソッドが追加され、エンティティセレクションの並べ替えにフォーミュラを使えるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**カラーネームを使った色指定**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_CSS_colors.zip)<br />
 次のコマンドの色指定にカラーネームが使えるようになりました：<br />
 [`OBJECT SET RGB COLORS`](https://doc.4d.com/4Dv17R6/4D/17-R6/OBJECT-SET-RGB-COLORS.301-4311385.ja.html)、
