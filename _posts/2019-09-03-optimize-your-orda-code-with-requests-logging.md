@@ -7,7 +7,7 @@ tags: 18.x 17r6
 author: Marie-Sophie Landrieu-Yvert
 ---
 
-![logOrdaRequests—blanc-1024x512](/images/blog/03/logOrdaRequests—blanc-1024x512.jpg)
+![logOrdaRequests—blanc-1024x512](/images/blog/03/logOrdaRequests-blanc-1024x512.jpg)
 
 これまでにクライアントと4D Server間で送信されるORDAのリクエストのトラフィックを分析する必要を感じたことはありませんか？時にサーバーからレスポンスを受け取るまでに間があることがあります。それがネットワークのトラフィックのせいなのか、あるいは最適化されていないリクエストを書いたせいなのか考えさせられる場合があります。幸いなことに、4D V17 R6は、<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/ds.301-4311854.ja.html"><span class="notranslate command">ds</span></a> オブジェクトで使用可能な新しいORDAメソッドを使って、この遅延の原因を特定することができます。これらはデバッギング機能であるだけではなく、送信されたリクエストをよりよく理解してORDAコードを最適化することもできるようになりました。
 
