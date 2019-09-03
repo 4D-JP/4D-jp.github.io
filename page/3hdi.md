@@ -11,14 +11,14 @@ type: page
 
 ## 17r6 # {#v17r6}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: フォーミュラを使った並べ替え**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Order_ByFormula.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: フォーミュラを使った並べ替え**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Order_ByFormula.zip)<span id="17-6-5"></span><br />
 ORDAに[`entitySelection.orderByFormula( )`](https://livedoc.4d.com/--17-R6/ORDA/entitySelectionorderByFormula.305-4404512.ja.html)メンバーメソッドが追加され、エンティティセレクションの並べ替えにフォーミュラを使えるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**カラーネームを使った色指定**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_CSS_colors.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**カラーネームを使った色指定**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_CSS_colors.zip)<span id="17-6-4"></span><br />
 次のコマンドの色指定にカラーネームが使えるようになりました：<br />
 [`OBJECT SET RGB COLORS`](https://doc.4d.com/4Dv17R6/4D/17-R6/OBJECT-SET-RGB-COLORS.301-4311385.ja.html)、
 [`LISTBOX SET ROW COLOR`](https://doc.4d.com/4Dv17R6/4D/17-R6/LISTBOX-SET-ROW-COLOR.301-4311148.ja.html)、
 [`LISTBOX SET GRID COLOR`](https://doc.4d.com/4Dv17R6/4D/17-R6/LISTBOX-SET-GRID-COLOR.301-4311102.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セルの見た目の制御**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_4DVP_Style.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セルの見た目の制御**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_4DVP_Style.zip)<span id="17-6-3"></span><br />
 セルのスタイルを取得・設定・削除するためのコマンドが4D View Pro に追加されました。<br />
 [`VP Get default style`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-Get-default-style.301-4362843.ja.html)、
 [`VP SET DEFAULT STYLE`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-DEFAULT-STYLE.301-4362430.ja.html)、
@@ -26,23 +26,23 @@ ORDAに[`entitySelection.orderByFormula( )`](https://livedoc.4d.com/--17-R6/ORDA
 [`VP Get cell style`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-Get-cell-style.301-4362887.ja.html)、
 [`VP SET CELL STYLE`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-CELL-STYLE.301-4362416.ja.html)、
 [`VP SET BORDER`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-BORDER.301-4373260.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: フォーミュラを使ったクエリ**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Query_ByFormula.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: フォーミュラを使ったクエリ**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Query_ByFormula.zip)<span id="17-6-2"></span><br />
 ORDAの[`query()`](https://livedoc.4d.com/--17-R6/ORDA/dataClassquery.305-4311816.ja.html)メンバーメソッドが拡張され、フォーミュラを扱えるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 値やフォーミュラの一括取得・設定**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_4DVP_CellValues.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 値やフォーミュラの一括取得・設定**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_4DVP_CellValues.zip)<span id="17-6-1"></span><br />
 4D View Pro に追加された新コマンド[`VP Get values`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-Get-values.301-4385723.ja.html)および[`VP Get formulas`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-Get-formulas.301-4385776.ja.html)で値やフォーミュラの一括取得、[`VP SET VALUES`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-SET-VALUES.301-4385689.ja.html)および[`VP SET FORMULAS`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-SET-FORMULAS.301-4385750.ja.html)で値やフォーミュラの一括設定ができます。
 
 ## 17r5 # {#v17r5}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 新機能を活用した汎用コード**](https://github.com/4D-JP/HDI/releases/download/17r5/ORDA_Dynamic_Code.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 新機能を活用した汎用コード**](https://github.com/4D-JP/HDI/releases/download/17r5/ORDA_Dynamic_Code.zip)<span id="17-5-12"></span><br />
 ORDAに追加された新規メンバーメソッド[`entity.getDataClass( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitygetDataClass.305-4275760.ja.html)および[`entitySelection.getDataClass( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitySelectiongetDataClass.305-4275795.ja.html)のほか、値と属性パスのプレースホルダー、[`dataClass.{attributeName}`](https://doc.4d.com/4Dv17R5/4D/17-R5/dataClassattributeName.303-4128672.ja.html)オブジェクトを活用した、データクラスに依存しない汎用的なコードや、動的なクエリインターフェースの例を紹介します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: タブの設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_SetTabs.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: タブの設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_SetTabs.zip)<span id="17-5-11"></span><br />
 [`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-SET-ATTRIBUTES.301-4115142.ja.html)コマンドに、新しく追加された定数[`wk tab default`](https://doc.4d.com/4Dv17R5/4D/17-R5/4D-Write-Pro-Constants.302-4115150.ja.html)または[`wk tabs`](https://doc.4d.com/4Dv17R5/4D/17-R5/4D-Write-Pro-Constants.302-4115150.ja.html)を指定することで、4D Write Pro ドキュメントのデフォルトタブ・任意のタブが定義できます。<br />
 参考：[タブの管理](https://doc.4d.com/4Dv17R5/4D/17-R5/Using-a-4D-Write-Pro-area.200-4115105.ja.html#4226039)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビュープロパティ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_ViewSettings.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビュープロパティ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_ViewSettings.zip)<span id="17-5-10"></span><br />
 新しく追加された[`WP SET VIEW PROPERTIES`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-SET-VIEW-PROPERTIES.301-4252257.ja.html)コマンドを使って、4D Write Pro ドキュメントのビュープロパティをプログラムにより制御できるようになりました。ビュープロパティを取得するための、[`WP Get view properties`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-Get-view-properties.301-4252263.ja.html)コマンドも追加されています。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: リンクを貼る**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_Hyperlinks.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: リンクを貼る**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_Hyperlinks.zip)<span id="17-5-9"></span><br />
 新しく追加された[`WP SET LINK`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-SET-LINK.301-4115165.ja.html)コマンドを使って、4D Write Pro ドキュメントに様々な種類のリンクが貼れるようになりました：Web URL、4Dメソッド、4D Write Pro ドキュメント、開いているドキュメント内のブックマーク。リンク内容を取得するための、[`WP Get links`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-Get-links.301-4115785.ja.html)コマンドも追加されています。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: INSERT系およびSET系コマンドの拡張**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_UseTargets.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: INSERT系およびSET系コマンドの拡張**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_UseTargets.zip)<span id="17-5-8"></span><br />
 INSERT系およびSET系のコマンドが改良され、対象としてレンジ以外のものも指定できるようになりました：
 [`WP SELECT`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-SELECT.301-4115146.ja.html)
 [`WP SET TEXT`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-SET-TEXT.301-4115154.ja.html)
@@ -53,7 +53,7 @@ INSERT系およびSET系のコマンドが改良され、対象としてレン�
 [`WP INSERT BREAK`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-INSERT-BREAK.301-4115125.ja.html)<br />
 また、コマンドをより分かりやすくするため、一部のコマンドが名称変更されました。
 ![名称変更されたコマンド](/images/HDI_4DWP_UseTargets-CommandNameChange.png){: .align-center}
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セル位置の取得・設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DVP_SelectionCells.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セル位置の取得・設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DVP_SelectionCells.zip)<span id="17-5-7"></span><br />
 新しく追加されたコマンドによって、4D View Pro ドキュメントの選択セルやアクティブセルの位置を設定・取得することができます：
 [`VP Get selection`](https://livedoc.4d.com/4D-View-Pro-Reference-17-R5/4D-View-Pro-Language/VP-Get-selection.301-4284608.en.html)
 [`VP Get active cell`](https://livedoc.4d.com/4D-View-Pro-Reference-17-R5/4D-View-Pro-Language/VP-Get-active-cell.301-4284491.en.html)
@@ -62,14 +62,14 @@ INSERT系およびSET系のコマンドが改良され、対象としてレン�
 [`VP RESET SELECTION`](https://livedoc.4d.com/4D-View-Pro-Reference-17-R5/4D-View-Pro-Language/VP-RESET-SELECTION.301-4285785.en.html)<br />
 また、スプレッドシートの表示を変えて、任意セルを表示枠のどこに配置するか指定できるようになりました：
 [`VP SHOW CELL`](https://livedoc.4d.com/4D-View-Pro-Reference-17-R5/4D-View-Pro-Language/VP-SHOW-CELL.301-4285938.en.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 動的なストラクチャー情報の取得**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_Database_Info.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 動的なストラクチャー情報の取得**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_Database_Info.zip)<span id="17-5-6"></span><br />
 新しく追加されたメンバーメソッドや、[データクラス属性](https://doc.4d.com/4Dv17R5/4D/17-R5/ORDA-DataClassAttribute.201-4127158.ja.html)オブジェクトの拡張によって、動的なストラクチャー情報の取得が容易になりました。これにより汎用コードを簡単に書くことができます。<br />
 [`dataClass.getInfo( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/dataClassgetInfo.305-4275830.ja.html)
 [`entity.getDataClass( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitygetDataClass.305-4275760.ja.html)
 [`entitySelection.getDataClass( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitySelectiongetDataClass.305-4275795.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ユーザーエイリアスの設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_SetUserAlias.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ユーザーエイリアスの設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_SetUserAlias.zip)<span id="17-5-5"></span><br />
 新しく追加された[`SET USER ALIAS`](https://doc.4d.com/4Dv17R5/4D/17-R5/SET-USER-ALIAS.301-4276122.ja.html)コマンドを使って、カレントユーザーのエイリアスが設定できるようになりました。これにともない、[`Current user`](https://doc.4d.com/4Dv17R5/4D/17-R5/Current-user.301-4127469.ja.html)コマンドも拡張され、定数パラメーターを受け渡せるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**データファイルの暗号化**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_Encryption.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**データファイルの暗号化**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_Encryption.zip)<span id="17-5-4"></span><br />
 データファイルの暗号化機能を紹介します。参考: [データの暗号化](https://doc.4d.com/4Dv17R5/4D/17-R5/Encrypting-data.300-4098282.ja.html)<br />
 [`Encrypt data file`](https://doc.4d.com/4Dv17R5/4D/17-R5/Encrypt-data-file.301-4032077.ja.html)
 [`Data file encryption status`](https://doc.4d.com/4Dv17R5/4D/17-R5/Data-file-encryption-status.301-4031901.ja.html)
@@ -78,45 +78,45 @@ INSERT系およびSET系のコマンドが改良され、対象としてレン�
 [`Discover data key`](https://doc.4d.com/4Dv17R5/4D/17-R5/Discover-data-key.301-4097761.ja.html)
 [`ds.provideDataKey( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/dsprovideDataKey.305-4069252.ja.html)
 [`ds.encryptionStatus( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/dsencryptionStatus.305-4166703.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 属性パスのプレースホルダーを使ったクエリ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_PlaceHolders_AttributePaths.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 属性パスのプレースホルダーを使ったクエリ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_PlaceHolders_AttributePaths.zip)<span id="17-5-3"></span><br />
 [`dataClass.query( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/dataClassquery.305-4128666.ja.html)および[`entitySelection.query( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitySelectionquery.305-4128676.ja.html)のメンバーメソッドを使う際に、属性パスのプレースホルダーが使えるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 値の命名プレースホルダーを使ったクエリ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_PlaceHolders_Values.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 値の命名プレースホルダーを使ったクエリ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_PlaceHolders_Values.zip)<span id="17-5-2"></span><br />
 [`dataClass.query( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/dataClassquery.305-4128666.ja.html)および[`entitySelection.query( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitySelectionquery.305-4128676.ja.html)のメンバーメソッドを使う際に、値の命名プレースホルダーが使えるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ファイルオブジェクト・フォルダーオブジェクト**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_FilesAndFolders.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ファイルオブジェクト・フォルダーオブジェクト**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_FilesAndFolders.zip)<span id="17-5-1"></span><br />
 新しく追加された[`File`](https://doc.4d.com/4Dv17R5/4D/17-R5/File.301-4280282.ja.html)コマンドと[`Folder`](https://doc.4d.com/4Dv17R5/4D/17-R5/Folder.301-4280288.ja.html)コマンド、およびその戻り値であるファイルオブジェクトとフォルダーオブジェクトを使って、ファイルやフォルダーの操作がオブジェクト記法で簡単にできるようになりました。<br />
 参考：[ファイルとフォルダー](https://doc.4d.com/4Dv17R5/4D/17-R5/File-and-Folder.201-4282207.ja.html)<br />
 
 ## 17r4 # {#v17r4}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: バーチャルストラクチャー**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_VirtualStructure.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: バーチャルストラクチャー**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_VirtualStructure.zip)<span id="17-4-6"></span><br />
 [`SET FIELD TITLES`](https://doc.4d.com/4Dv17R4/4D/17-R4/SET-FIELD-TITLES.301-4054009.ja.html)および[`SET TABLE TITLES`](https://doc.4d.com/4Dv17R4/4D/17-R4/SET-TABLE-TITLES.301-4054019.ja.html)コマンドで定義したバーチャルストラクチャーが 4D Write Pro 内で利用できるようになりました。<br />
 参考：[バーチャルストラクチャーのサポート](https://doc.4d.com/4Dv17R4/4D/17-R4/Managing-expressions.300-4077722.ja.html#4087988)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: レンジ座標の取得**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_MoreCoordinates.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: レンジ座標の取得**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_MoreCoordinates.zip)<span id="17-4-5"></span><br />
 [`WP Get position`](https://doc.4d.com/4Dv17R4/4D/17-R4/WP-Get-position.301-4077777.ja.html)コマンドが拡張され、4D Write Pro ドキュメント内の任意のレンジについて、ページ上の座標を取得できるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 垂直ルーラー**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_VerticalRulers.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 垂直ルーラー**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_VerticalRulers.zip)<span id="17-4-4"></span><br />
 ページモードで表示された 4D Write Pro エリアで、[垂直ルーラー](https://doc.4d.com/4Dv17R4/4D/17-R4/Using-a-4D-Write-Pro-area.200-4077726.ja.html#4101568)が使えるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セルの値の設定・取得**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DVP_SetGetCells.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セルの値の設定・取得**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DVP_SetGetCells.zip)<span id="17-4-3"></span><br />
 [`VP SET VALUE`](https://doc.4d.com/4Dv17R4/4D/17-R4/VP-SET-VALUE.301-4092966.ja.html)および[`VP Get value`](https://doc.4d.com/4Dv17R4/4D/17-R4/VP-Get-value.301-4100214.ja.html)コマンドによって、4D View Pro ドキュメントのセルの値を設定・取得することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**メール送信**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_SendMail.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**メール送信**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_SendMail.zip)<span id="17-4-2"></span><br />
 [`SMTP New transporter`](https://doc.4d.com/4Dv17R4/4D/17-R4/SMTP-New-transporter.301-4070576.ja.html)コマンドによって生成した SMTP transporter オブジェクトを使ってメールを送信することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: DOCX形式への書き出し**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_ExportDocx.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: DOCX形式への書き出し**](https://github.com/4D-JP/HDI/releases/download/17r4/HDI_4DWP_ExportDocx.zip)<span id="17-4-1"></span><br />
 [`WP EXPORT DOCUMENT`](https://doc.4d.com/4Dv17R4/4D/17-R4/WP-EXPORT-DOCUMENT.301-4077762.ja.html)および[`WP EXPORT VARIABLE`](https://doc.4d.com/4Dv17R4/4D/17-R4/WP-EXPORT-VARIABLE.301-4077758.ja.html)コマンドを使って、4D Write Pro ドキュメントから[.docx形式への書き出し](https://doc.4d.com/4Dv17R4/4D/17-R4/Exporting-in-docx-format.200-4077720.ja.html)をすることができます。
 
 ## 17r3 # {#v17r3}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**bootstrapと4Dタグ**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_Bootstrap_4DTags.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**bootstrapと4Dタグ**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_Bootstrap_4DTags.zip)<span id="17-3-7"></span><br />
 [4D 変換タグ](https://doc.4d.com/4D-Transformation-Tags.300-3907284.ja.html)をbootstrapと組み合わせて使えば、データを差し込んだ見栄えのするページを簡単に作成することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**アプリケーションの起動パラメーター**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_RelaunchAndTest.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**アプリケーションの起動パラメーター**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_RelaunchAndTest.zip)<span id="17-3-6"></span><br />
 [Database Parameters](https://doc.4d.com/Database-Parameters.302-3905958.ja.html)定数テーマに追加された定数 _User param value_ を使って、データベースをコマンドで起動する際にパラメーターを受け渡すことができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ネットワークアクティビティ情報**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_GetApplicationInfo.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ネットワークアクティビティ情報**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_GetApplicationInfo.zip)<span id="17-3-5"></span><br />
 [`Get application info`](https://doc.4d.com/Get-application-info.301-3921185.ja.html)コマンドを使って、アクティブデータベースと、そのネットワーク設定に関する情報を取得することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**テキスト形式でフォームの書き出し**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_ConvertFormToDynamicForm.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**テキスト形式でフォームの書き出し**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_ConvertFormToDynamicForm.zip)<span id="17-3-4"></span><br />
 [`FORM Convert to dynamic`](https://doc.4d.com/FORM-Convert-to-dynamic.301-3972173.ja.html)コマンドを使って、4DBファイルに保存された従来の 4DフォームをJSONファイルに変換し、ダイナミックフォームとして使用することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: XLSXファイルのインポート・エクスポート**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DVP_ExportToExcel.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: XLSXファイルのインポート・エクスポート**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DVP_ExportToExcel.zip)<span id="17-3-3"></span><br />
 [`VP IMPORT DOCUMENT`](https://doc.4d.com/VP-IMPORT-DOCUMENT.301-3935955.ja.html)および[`VP EXPORT DOCUMENT`](https://doc.4d.com/VP-EXPORT-DOCUMENT.301-3935956.ja.html)コマンドを使って、XLSXファイルをインポート・エクスポートすることができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**メソッドのオブジェクト化**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_NewFormula.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**メソッドのオブジェクト化**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_NewFormula.zip)<span id="17-3-2"></span><br />
 [`New formula`](http://doc.4d.com/New-formula.301-3958154.ja.html)コマンドを使って、メソッドをオブジェクト化することができます。オブジェクト化されたメソッドは引数として受け渡すことができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: セクションとサブセクションの操作**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DWP_ManageSections.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: セクションとサブセクションの操作**](https://github.com/4D-JP/HDI/releases/download/17r3/HDI_4DWP_ManageSections.zip)<span id="17-3-1"></span><br />
 セクションやサブセクションをコマンドにより操作することができます:
 [`WP Get section`](https://doc.4d.com/WP-Get-section.301-3921330.ja.html)
 [`WP Get sections`](https://doc.4d.com/WP-Get-sections.301-3905004.ja.html)
@@ -126,25 +126,25 @@ INSERT系およびSET系のコマンドが改良され、対象としてレン�
 
 ## 17r2 # {#v17r2}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: アンカー画像にピクチャー式を設定**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_AnchoredPictureExpressions.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: アンカー画像にピクチャー式を設定**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_AnchoredPictureExpressions.zip)<span id="17-2-3"></span><br />
 アンカー画像も[ピクチャー式](https://doc.4d.com/Handling-pictures.200-3920761.ja.html#3841026)（変数・フィールド・メソッドなど）によって定義することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: フィールドデータやメソッドを使う**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DVP_DB_Method.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: フィールドデータやメソッドを使う**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DVP_DB_Method.zip)<span id="17-2-2"></span><br />
 セルへの簡単な記述により、[フィールドへの参照](https://doc.4d.com/Field-references.300-3936010.ja.html)や[プロジェクトメソッドへの参照](https://doc.4d.com/Project-method-references.300-3935962.ja.html)を使用することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブルのページネーション**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_TablePagination.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブルのページネーション**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_TablePagination.zip)<span id="17-2-1"></span><br />
 テーブル (表) が[自動ページネーション](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3920766.ja.html#3892922)に対応し、テーブルの表示がページをまたぐ場合には行と行のあいだで分割されるようになりました。
 
 ## 17 # {#v17}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: プログラムによってドキュメントを作成**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DVP_Offscreen_doc.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: プログラムによってドキュメントを作成**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DVP_Offscreen_doc.zip)<span id="17-0-23"></span><br />
 4D View Pro ドキュメントはプログラムによっても簡単に作成することができます。<br />
 参考: [4D View Pro オブジェクト](https://doc.4d.com/Handling-4D-View-Pro-areas.300-3935959.ja.html#3429183)、[`VP IMPORT FROM OBJECT`](https://doc.4d.com/VP-IMPORT-FROM-OBJECT.301-3935958.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: ストラクチャー情報を使った汎用コード**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Dynamic_Sort_v17.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: ストラクチャー情報を使った汎用コード**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Dynamic_Sort_v17.zip)<span id="17-0-22"></span><br />
 ORDAによって取得できるストラクチャー情報を利用した、汎用的なコードによる並べ替えツールの例です。
-* <i class="fa fa-download" aria-hidden="true"></i> [**コレクション型リストボックスと複階層コレクション**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListBoxCollection_Advanced_v17.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**コレクション型リストボックスと複階層コレクション**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListBoxCollection_Advanced_v17.zip)<span id="17-0-21"></span><br />
 複数のリストボックスを使い、複階層のコレクションを表示します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: エンティティセレクションの表示**](https://github.com/4D-JP/HDI/releases/download/17/HDI_EntitySelectionInListbox.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: エンティティセレクションの表示**](https://github.com/4D-JP/HDI/releases/download/17/HDI_EntitySelectionInListbox.zip)<span id="17-0-20"></span><br />
 エンティティセレクションをコレクション型リストボックスに表示するために必要となる設定を紹介します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティセレクションの統計情報**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Statistics.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティセレクションの統計情報**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Statistics.zip)<span id="17-0-19"></span><br />
 エンティティセレクションの統計情報は[エンティティセレクションのメンバーメソッド](https://doc.4d.com/ORDA-EntitySelection.201-3905932.ja.html)を使って簡単に取得することができます: 
 [`entitySelection.sum( )`](https://doc.4d.com/entitySelectionsum.305-3907529.ja.html)
 [`entitySelection.min( )`](https://doc.4d.com/entitySelectionmin.305-3907531.ja.html)
@@ -152,12 +152,12 @@ ORDAによって取得できるストラクチャー情報を利用した、汎�
 [`entitySelection.count( )`](https://doc.4d.com/entitySelectioncount.305-3907530.ja.html)
 [`entitySelection.average( )`](https://doc.4d.com/entitySelectionaverage.305-3907535.ja.html)
 [`entitySelection.distinct( )`](https://doc.4d.com/entitySelectiondistinct.305-3907534.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティセレクションの論理演算**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Logical_Operators.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティセレクションの論理演算**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Logical_Operators.zip)<span id="17-0-18"></span><br />
 エンティティに対する論理演算は[エンティティセレクションのメンバーメソッド](https://doc.4d.com/ORDA-EntitySelection.201-3905932.ja.html)を使っておこなうことができます: 
 [`entitySelection.and( )`](https://doc.4d.com/entitySelectionand.305-3907525.ja.html)
 [`entitySelection.or( )`](https://doc.4d.com/entitySelectionor.305-3907518.ja.html)
 [`entitySelection.minus( )`](https://doc.4d.com/entitySelectionminus.305-3907519.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティとエンティティセレクションの操作**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Handling_Entities.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティとエンティティセレクションの操作**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Handling_Entities.zip)<span id="17-0-17"></span><br />
 エンティティやエンティティセレクションのもっとも基本的な操作の紹介です。<br />
 [`dataClass.newSelection( )`](https://doc.4d.com/dataClassnewSelection.305-3907509.ja.html)
 [`entitySelection.add( )`](https://doc.4d.com/entitySelectionadd.305-3907516.ja.html)
@@ -171,7 +171,7 @@ ORDAによって取得できるストラクチャー情報を利用した、汎�
 [`entity.indexOf( )`](https://doc.4d.com/entityindexOf.305-3907555.ja.html)
 [`entitySelection.isOrdered( )`](https://doc.4d.com/entitySelectionisOrdered.305-3907517.ja.html)
 [`entitySelection.slice( )`](https://doc.4d.com/entitySelectionslice.305-3907533.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 楽観的(オプティミスティック)ロック**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Optimistic_Lock.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 楽観的(オプティミスティック)ロック**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Optimistic_Lock.zip)<span id="17-0-16"></span><br />
 ORDAの基本仕様である、オプティミスティックロックがどのように動作するかについての説明です。
 [`entity.save( )`](https://doc.4d.com/entitysave.305-3907540.ja.html)
 [`entity.clone( )`](https://doc.4d.com/entityclone.305-3907549.ja.html)
@@ -180,54 +180,54 @@ ORDAの基本仕様である、オプティミスティックロックがどの�
 [`entity.touchedAttributes( )`](https://doc.4d.com/entitytouchedAttributes.305-3907548.ja.html)
 [`entity.touched( )`](https://doc.4d.com/entitytouched.305-3907547.ja.html)
 [`entity.diff( )`](https://doc.4d.com/entitydiff.305-3907546.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 悲観的(ペシミスティック)ロック**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Pessimistic_Lock.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 悲観的(ペシミスティック)ロック**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Pessimistic_Lock.zip)<span id="17-0-15"></span><br />
 ORDAでペシミスティックロックを使う方法の紹介です。
 [`entity.lock( )`](https://doc.4d.com/entitylock.305-3907542.ja.html)
 [`entity.unlock( )`](https://doc.4d.com/entityunlock.305-3907544.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**動的なテーブルフォーム**](https://github.com/4D-JP/HDI/releases/download/17/HDI_JSONTableForm_v17.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**動的なテーブルフォーム**](https://github.com/4D-JP/HDI/releases/download/17/HDI_JSONTableForm_v17.zip)<span id="17-0-14"></span><br />
 JSONファイルや、4D オブジェクト (オブジェクト型変数、あるいはオブジェクト型フィールド) によって[ダイナミックフォーム](https://doc.4d.com/Dynamic-Forms.300-3961476.ja.html)を定義することができます。ここでは、テーブルフォームを動的に生成する例を紹介します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティとオブジェクトの相互変換**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Objects_And_Collections.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティとオブジェクトの相互変換**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Objects_And_Collections.zip)<span id="17-0-13"></span><br />
 エンティティやエンティティセレクションをオブジェクトやコレクションに変換したり、その逆をおこなうメンバーメソッドの紹介です: 
 [`entity.toObject( )`](https://doc.4d.com/entitytoObject.305-3907556.ja.html)
 [`entitySelection.toCollection( )`](https://doc.4d.com/entitySelectiontoCollection.305-3907523.ja.html)
 [`entity.fromObject( )`](https://doc.4d.com/entityfromObject.305-3907557.ja.html)
 [`dataClass.fromCollection( )`](https://doc.4d.com/dataClassfromCollection.305-3907510.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティセレクションとカレントセレクションの相互変換**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Current_Selection_Bridge.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティセレクションとカレントセレクションの相互変換**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Current_Selection_Bridge.zip)<span id="17-0-12"></span><br />
 カレントセレクションからエンティティセレクションを作成したり、エンティティセレクションをカレントセレクションに反映させることができます。<br />
 [`Create entity selection`](https://doc.4d.com/Create-entity-selection.301-3907527.ja.html)
 [`USE ENTITY SELECTION`](https://doc.4d.com/USE-ENTITY-SELECTION.301-3907526.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**コレクション型リストボックス**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListboxCollection.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**コレクション型リストボックス**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListboxCollection.zip)<span id="17-0-11"></span><br />
 [コレクション型リストボックス](http://livedoc.4d.com/4Dv17R3/4D/17-R3/Overview.300-3961394.ja.html#3779401)の設定の仕方、使い方の紹介です。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: クエリ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Query.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: クエリ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Query.zip)<span id="17-0-10"></span><br />
 ORDAを使ったクエリ方法の紹介です。<br />
 [`entitySelection.query( )`](https://doc.4d.com/entitySelectionquery.305-3907515.ja.html)
 [`dataClass.query( )`](https://doc.4d.com/dataClassquery.305-3907505.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメント要素の一括取得**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_Elements.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメント要素の一括取得**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_Elements.zip)<span id="17-0-9"></span><br />
 [`WP Get elements`](https://doc.4d.com/WP-Get-elements.301-3920772.ja.html)コマンドを使って、ドキュメントの要素をすべて、あるいは種類別に一度に取得することができます。取得要素はコレクションに格納されて返されます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメント要素の位置情報**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_GetPosition.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメント要素の位置情報**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_GetPosition.zip)<span id="17-0-8"></span><br />
 [`WP Get position`](https://doc.4d.com/WP-Get-position.301-3920816.ja.html)コマンドを使って、ドキュメント要素の位置情報を取得することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 段組レイアウト**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_MultiColumn.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 段組レイアウト**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_MultiColumn.zip)<span id="17-0-7"></span><br />
 段組(カラム)レイアウトを使用した例です。<br />
 参考: [カラムの管理](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3920766.ja.html#3751928)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストの取得と挿入**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_SetGetText.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストの取得と挿入**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWP_SetGetText.zip)<span id="17-0-6"></span><br />
 [`WP Get text`](https://doc.4d.com/WP-Get-text.301-3920815.ja.html)および[`WP SET TEXT`](https://doc.4d.com/WP-SET-TEXT.301-3920814.ja.html)コマンドを使って、テキストの取得や挿入をすることができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: コンテキストメニューのカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWriteProContextualMenu.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: コンテキストメニューのカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_4DWriteProContextualMenu.zip)<span id="17-0-5"></span><br />
 右クリックで表示されるコンテキストメニューをカスタマイズする方法の紹介です。
-* <i class="fa fa-download" aria-hidden="true"></i> [**新しい For each...End for each ループ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ForEach.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**新しい For each...End for each ループ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ForEach.zip)<span id="17-0-4"></span><br />
 新しく実装された[`For each...End for each`](https://doc.4d.com/For-eachEnd-for-each.300-3907126.ja.html)ループの使用例です。コレクション内の各要素、エンティティセレクション内の各エンティティ、オブジェクト内の各プロパティの反復処理が可能です。
-* <i class="fa fa-download" aria-hidden="true"></i> [**フォームデータとFormコマンド**](https://github.com/4D-JP/HDI/releases/download/17/HDI_FormData.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**フォームデータとFormコマンド**](https://github.com/4D-JP/HDI/releases/download/17/HDI_FormData.zip)<span id="17-0-3"></span><br />
 [`DIALOG`](https://doc.4d.com/DIALOG.301-3907158.ja.html)コマンドには、フォームデータを引数として渡すことができるようになりました。渡したオブジェクトはフォームにおいて[`Form`](http://doc.4d.com/Form.301-3907390.ja.html)コマンドによって呼び出すことができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**テキスト形式でデータベースストラクチャーを書き出し**](https://github.com/4D-JP/HDI/releases/download/17/HDI_GET_STRUCTURE_INFO.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**テキスト形式でデータベースストラクチャーを書き出し**](https://github.com/4D-JP/HDI/releases/download/17/HDI_GET_STRUCTURE_INFO.zip)<span id="17-0-2"></span><br />
 [`EXPORT STRUCTURE`](http://doc.4d.com/EXPORT-STRUCTURE.301-3906050.ja.html)コマンド使って、データベースストラクチャー定義をXMLフォーマットで書き出します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティの新規作成・更新・削除**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_CRUD.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: エンティティの新規作成・更新・削除**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_CRUD.zip)<span id="17-0-1"></span><br />
 ORDAにおける、メンバーメソッドを使ったエンティティの基本操作を説明します。<br />
 [`dataClass.new( )`](https://doc.4d.com/dataClassnew.305-3907506.ja.html)
 [`entity.save( )`](https://doc.4d.com/entitysave.305-3907540.ja.html)
 [`entity.drop( )`](https://doc.4d.com/entitydrop.305-3907541.ja.html)
 [`entitySelection.drop( )`](https://doc.4d.com/entitySelectiondrop.305-3907513.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**コレクションのクエリ**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Query.zip) (v16r6)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**コレクションのクエリ**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Query.zip) (v16r6)<span id="16-6-5"></span><br />
 [`collection.query( )`](https://doc.4d.com/collectionquery.305-3730931.ja.html)メンバーメソッドを使ったコレクションのクエリ方法を紹介します。プレースホルダーを使った例、使わない例、比較演算子や、文字列をクエリする際の"@"の扱いなど。
-* <i class="fa fa-download" aria-hidden="true"></i> [**コレクションの操作**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Members.zip) (v16r6)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**コレクションの操作**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_Collection_Members.zip) (v16r6)<span id="16-6-4"></span><br />
 コマンドや、コレクションのメンバーメソッドを使った、コレクションに関わるさまざまな操作の紹介です。<br />
 [`Split string`](https://doc.4d.com/Split-string.301-3730754.ja.html)文字列をコレクションに分割します<br />
 [`collection.join( )`](https://doc.4d.com/collectionjoin.305-3730935.ja.html)コレクション要素を文字列にします<br />
@@ -261,69 +261,69 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 [`collection.reverse( )`](https://doc.4d.com/collectionreverse.305-3730942.ja.html)すべての要素を逆順に並べ替えます<br />
 [`collection.orderBy( )`](https://doc.4d.com/collectionorderBy.305-3730936.ja.html)指定した順番でコレクションの要素を並べ替えます<br />
 [`collection.orderByMethod( )`](https://doc.4d.com/collectionorderByMethod.305-3730937.ja.html)指定したメソッドが定義する順番でコレクションの要素を並べ替えます<br />
-* <i class="fa fa-download" aria-hidden="true"></i> [**動的なフォーム**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_JSONForm.zip) (v16r6)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**動的なフォーム**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_JSONForm.zip) (v16r6)<span id="16-6-3"></span><br />
 フォームをテキストで表し、4Dオブジェクトや.jsonファイルとして保存することができます。[ダイナミックフォーム](https://doc.4d.com/Dynamic-Forms.300-4201272.ja.html)は、ランタイムにおいて動的に生成されます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**共有オブジェクトとStorage**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_useSharedObjects.zip) (v16r6)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**共有オブジェクトとStorage**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_useSharedObjects.zip) (v16r6)<span id="16-6-2"></span><br />
 [共有オブジェクトおよび共有コレクション](https://doc.4d.com/Shared-objects-and-shared-collections.300-4179447.ja.html)はプロセス間でコンテンツを共有することができる、特殊なオブジェクトとコレクションです。作成された共有オブジェクト等の一覧は[`Storage`](https://doc.4d.com/Storage.301-4179448.ja.html)コマンドより取得することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: アンカー画像**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_4DWP_ImageInAbsolutePosition.zip) (v16r6)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: アンカー画像**](https://github.com/4D-JP/HDI/releases/download/16r6/HDI_4DWP_ImageInAbsolutePosition.zip) (v16r6)<span id="16-6-1"></span><br />
 [`WP Add picture`](https://doc.4d.com/WP-Add-picture.301-3726324.ja.html)コマンドを使って、4D Write Pro ドキュメントのテキストレイヤーの前面および背面に、[アンカー画像](https://doc.4d.com/Handling-pictures.200-3726275.ja.html#3624752)を追加することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**Twitter Search API との連携**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_TwitterSearchAPI.zip) (v16r5)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Twitter Search API との連携**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_TwitterSearchAPI.zip) (v16r5)<span id="16-5-9"></span><br />
 [`HTTP Request`](https://doc.4d.com/HTTP-Request.301-4178732.ja.html)コマンドを使って Twitter のアカウント認証と文字列検索を行う方法の紹介です。
-* <i class="fa fa-download" aria-hidden="true"></i> [**JSON ポインターの解決**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_JSON_Pointer.zip) (v16r5)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**JSON ポインターの解決**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_JSON_Pointer.zip) (v16r5)<span id="16-5-8"></span><br />
 新しく追加された[`JSON Resolve pointers`](https://doc.4d.com/JSON-Resolve-pointers.301-4179124.ja.html)コマンドは、引数として渡されたオブジェクトに含まれるすべての JSON ポインターを解決します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 行高さの自動設定**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DVP_AutoRowHeight.zip) (v16r5)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 行高さの自動設定**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DVP_AutoRowHeight.zip) (v16r5)<span id="16-5-7"></span><br />
 新しいリストボックスプロパティ「[自動行高](https://doc.4d.com/List-box-specific-properties.300-4201189.ja.html#3510338)」および「最小行高」「最大行高」が追加されました。<br />
 <span style="text-decoration: underline">※ この機能には 4D View Pro ライセンスが必要です。</span>
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フチなし全面の背景画像**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_BackImagePaperBox.zip) (v16r5)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フチなし全面の背景画像**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_BackImagePaperBox.zip) (v16r5)<span id="16-5-6"></span><br />
 4D Write Pro で[背景](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3726280.ja.html#3514034)画像をフチなし全面指定できるようになりました。[`WP SET ATTRIBUTES`](https://doc.4d.com/WP-SET-ATTRIBUTES.301-3726313.ja.html)コマンドで[背景属性](https://doc.4d.com/4D-Write-Pro-Attributes.300-3726323.ja.html#3690279)の`wk background clip`と`wk background origin`を`wk paper box`に指定します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ヘッダーとフッター**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_HeadersFooters.zip) (v16r5)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ヘッダーとフッター**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_HeadersFooters.zip) (v16r5)<span id="16-5-5"></span><br />
 追加された新コマンドにより、ヘッダーとフッターがプログラムにより操作できるようになりました。<br />
 [`WP Get header`](https://doc.4d.com/WP-Get-header.301-3726285.ja.html)[`WP Get body`](https://doc.4d.com/WP-Get-body.301-3726287.ja.html)[`WP Get footer`](https://doc.4d.com/WP-Get-footer.301-3726286.ja.html)[`WP Get frame`](https://doc.4d.com/WP-Get-frame.301-3726289.ja.html)[`WP SET FRAME`](https://doc.4d.com/WP-SET-FRAME.301-3726288.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャー式の使用**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_InsertPictureExpression.zip) (v16r5)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャー式の使用**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_InsertPictureExpression.zip) (v16r5)<span id="16-5-4"></span><br />
 4D Write Pro ドキュメントに、[ピクチャー式](https://doc.4d.com/4Dv17R3/4D/17-R3/Handling-pictures.200-3920761.ja.html#3841026)を挿入できるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**Get Process Activity**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_GetProcessActivity.zip) (v16r5)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Get Process Activity**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_GetProcessActivity.zip) (v16r5)<span id="16-5-3"></span><br />
 [`Get process activity`](https://doc.4d.com/Get-process-activity.301-4179078.ja.html)コマンドを使って、セッションやプロセスの情報をモニタリングする方法を紹介します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスとヘルプTips**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_ListboxHelpTips.zip) (v16r5)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスとヘルプTips**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_ListboxHelpTips.zip) (v16r5)<span id="16-5-2"></span><br />
 [`OBJECT SET HELP TIP`](https://doc.4d.com/OBJECT-SET-HELP-TIP.301-4179220.ja.html)および[`LISTBOX GET CELL POSITION`](https://doc.4d.com/LISTBOX-GET-CELL-POSITION.301-4178984.ja.html)コマンドが拡張され、リストボックス内に個別のヘルプTipsを追加できるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: リンクの挿入**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_Links.4dbase.zip) (v16r5)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: リンクの挿入**](https://github.com/4D-JP/HDI/releases/download/16r5/HDI_4DWP_Links.4dbase.zip) (v16r5)<span id="16-5-1"></span><br />
 [`WP SET ATTRIBUTES`](https://doc.4d.com/WP-SET-ATTRIBUTES.301-3726313.ja.html)コマンドで任意のレンジに`wk link url`を設定し、リンクを挿入する方法を紹介します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro プレビュー**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DViewProNewFormObject.zip) (v16r4)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro プレビュー**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DViewProNewFormObject.zip) (v16r4)<span id="16-4-9"></span><br />
 4D View Pro ドキュメントの基本操作に必要なコマンドが追加されました。<br />
 [`VP NEW DOCUMENT`](https://doc.4d.com/VP-NEW-DOCUMENT.301-3778565.ja.html)[`VP EXPORT DOCUMENT`](https://doc.4d.com/VP-EXPORT-DOCUMENT.301-3778567.ja.html)[`VP Export to object`](https://doc.4d.com/VP-Export-to-object.301-3778568.ja.html)[`VP IMPORT DOCUMENT`](https://doc.4d.com/VP-IMPORT-DOCUMENT.301-3778566.ja.html)[`VP IMPORT FROM OBJECT`](https://doc.4d.com/VP-IMPORT-FROM-OBJECT.301-3778569.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブル (表)**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Tables.zip) (v16r4)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブル (表)**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Tables.zip) (v16r4)<span id="16-4-8"></span><br />
 4D Write Pro にテーブル (表) を挿入し、表示を整える方法を紹介します。<br />
 [`WP Insert table`](https://doc.4d.com/WP-Insert-table.301-3726290.ja.html)[`WP Table append row`](https://doc.4d.com/WP-Table-append-row.301-3726291.ja.html)[`WP Table get columns`](https://doc.4d.com/WP-Table-get-columns.301-3726293.ja.html)[`WP Table get rows`](https://doc.4d.com/WP-Table-get-rows.301-3726292.ja.html)[`WP Table get cells`](https://doc.4d.com/WP-Table-get-cells.301-3726294.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**JSONオブジェクトの評価**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_JSONFileValidation.zip) (v16r4)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**JSONオブジェクトの評価**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_JSONFileValidation.zip) (v16r4)<span id="16-4-7"></span><br />
 新コマンド[`JSON Validate`](https://doc.4d.com/JSON-Validate.301-4179123.ja.html)を使って、任意のJSONオブジェクトが、あらかじめ定義したJSONスキーマに適合するかをチェックすることができます。また、適合しなかった場合のデバッグ用に、要素の位置を特定できるよう[`JSON Parse`](https://doc.4d.com/JSON-Parse.301-4179121.ja.html)コマンドが拡張されました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクト記法**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_ObjectNotationDatasource.zip) (v16r4)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクト記法**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_ObjectNotationDatasource.zip) (v16r4)<span id="16-4-6"></span><br />
 [オブジェクト記法](https://doc.4d.com/Using-object-notation.300-4179432.ja.html)の使い方を紹介します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクトとピクチャー属性**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_PictureObjectAttribute.zip) (v16r4)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクトとピクチャー属性**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_PictureObjectAttribute.zip) (v16r4)<span id="16-4-5"></span><br />
 オブジェクトの属性値にピクチャーを設定できるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**標準アクションとマルチステートオブジェクト**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_StandardActionMultiStateObject.zip) (v16r4)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**標準アクションとマルチステートオブジェクト**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_StandardActionMultiStateObject.zip) (v16r4)<span id="16-4-4"></span><br />
 チェックボックス・ポップアップメニュ・ドロップダウンリストなどのマルチステートオブジェクトで標準アクションを利用できるようになり、4D Write Pro 用のカスタムメニューバーが簡単に作成できるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**プログラムによる入力順の指定**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_TabbableObjectOrder.zip) (v16r4)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**プログラムによる入力順の指定**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_TabbableObjectOrder.zip) (v16r4)<span id="16-4-3"></span><br />
 新しいコマンド[`FORM GET ENTRY ORDER`](https://doc.4d.com/FORM-GET-ENTRY-ORDER.301-4179552.ja.html)[`FORM SET ENTRY ORDER`](https://doc.4d.com/FORM-SET-ENTRY-ORDER.301-4179553.ja.html)によってフォーム上のタブ移動による入力順を動的に指定できるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ヘルプTips表示のカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_Tips.zip) (v16r4)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ヘルプTips表示のカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_Tips.zip) (v16r4)<span id="16-4-2"></span><br />
 [`SET DATABASE PARAMETER`](https://doc.4d.com/SET-DATABASE-PARAMETER.301-4179137.ja.html)で`Tips enabled`、`Tips delay`、`Tips duration`の新パラメーターが設定できるようになりました。<br />
 参考：[`OBJECT SET HELP TIP`](https://doc.4d.com/OBJECT-SET-HELP-TIP.301-4179220.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**コレクション**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_UseCollections.zip) (v16r4)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**コレクション**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_UseCollections.zip) (v16r4)<span id="16-4-1"></span><br />
 [コレクション](https://doc.4d.com/Data-Types.300-4179320.ja.html#3687203)という新しいデータタイプが実装されました。<br />
 参考：[コレクションについて](https://doc.4d.com/About-collections.300-4179667.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 標準アクション**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_4DWP_StandardActions.zip) (v16r3)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 標準アクション**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_4DWP_StandardActions.zip) (v16r3)<span id="16-3-3"></span><br />
 4D Write Pro で使える標準アクションが多数実装されました。新コマンド[`INVOKE ACTION`](https://doc.4d.com/INVOKE-ACTION.301-4178618.ja.html)の使用含め、標準アクションを利用する方法を紹介します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**新しい標準アクション**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_NewStandardActions.zip) (v16r3)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**新しい標準アクション**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_NewStandardActions.zip) (v16r3)<span id="16-3-2"></span><br />
 新しい標準アクションをスタイル付テキストに適用する方法を紹介します。<br />
 新しく追加された[`Get action info`](https://doc.4d.com/Get-action-info.301-4178619.ja.html)コマンドを使って、任意の標準アクションについて、特定のコンテキストにおける利用可能性やステータスなどの情報を取得することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**New Object**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_NewObject.zip) (v16r3)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**New Object**](https://github.com/4D-JP/HDI/releases/download/16r3/HDI_NewObject.zip) (v16r3)<span id="16-3-1"></span><br />
 オブジェクトを初期化するための新コマンド[`New object`](https://doc.4d.com/New-object.301-4179445.ja.html)が追加されました。従来のコードと新コマンドを使ったコードを比較します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: LISTBOX SET PROPERTY**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ListboxProperties.zip) (v16r2)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: LISTBOX SET PROPERTY**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ListboxProperties.zip) (v16r2)<span id="16-2-4"></span><br />
 新コマンド[`LISTBOX SET PROPERTY`](https://doc.4d.com/LISTBOX-SET-PROPERTY.301-4178995.ja.html)を使って、リストボックスのプロパティをプログラミングにより設定するデモンストレーションです。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 選択行のハイライト**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ManageListboxHightlight.zip) (v16r2)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 選択行のハイライト**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ManageListboxHightlight.zip) (v16r2)<span id="16-2-3"></span><br />
 リストボックスにおける選択行のハイライトがカスタマイズできるようになりました。<br />
 参考：[選択行の見た目をカスタマイズ](https://doc.4d.com/Managing-List-Box-Objects.300-4178954.ja.html#3971639)
-* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクトフィールドに基づいた並べ替え**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ORDER_BY_ATTRIBUTE.zip) (v16r2)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクトフィールドに基づいた並べ替え**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_ORDER_BY_ATTRIBUTE.zip) (v16r2)<span id="16-2-2"></span><br />
 新コマンド[`ORDER BY ATTRIBUTE`](https://doc.4d.com/ORDER-BY-ATTRIBUTE.301-4178917.ja.html)を使って、オブジェクトフィールド内のプロパティに基づいてセレクションを並べ替えることができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクト配列のクエリ**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_QueryByAttribute.zip) (v16r2)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクト配列のクエリ**](https://github.com/4D-JP/HDI/releases/download/16r2/HDI_QueryByAttribute.zip) (v16r2)<span id="16-2-1"></span><br />
 [`QUERY BY ATTRIBUTE`](https://doc.4d.com/QUERY-BY-ATTRIBUTE.301-4178904.ja.html)[`QUERY SELECTION BY ATTRIBUTE`](https://doc.4d.com/QUERY-SELECTION-BY-ATTRIBUTE.301-4178916.ja.html)コマンドが拡張され、オブジェクト配列が含まれているオブジェクトフィールドのクエリが便利になりました。<br />
 参考：[配列属性のクエリ引数をリンクする](https://doc.4d.com/QUERY-BY-ATTRIBUTE.301-4178904.ja.html#3181657)
 
