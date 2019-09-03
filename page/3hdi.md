@@ -329,53 +329,53 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 
 ## 16 # {#v16}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ブックマークの操作**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Bookmarks.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ブックマークの操作**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Bookmarks.zip)<span id="16-0-18"></span><br />
 4D Write Proのブックマーク機能を紹介します。参考：[ブックマークコマンド](https://doc.4d.com/Accessing-document-contents-by-programming.300-3726304.ja.html#3507549)<br />
 [`WP CREATE BOOKMARK`](https://doc.4d.com/WP-CREATE-BOOKMARK.301-3726301.ja.html)
 [`WP GET BOOKMARKS`](https://doc.4d.com/WP-GET-BOOKMARKS.301-3726300.ja.html)
 [`WP Get bookmark range`](https://doc.4d.com/WP-Get-bookmark-range.301-3726302.ja.html)
 [`WP DELETE BOOKMARK `](https://doc.4d.com/WP-DELETE-BOOKMARK.301-3726299.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ブックマークの活用例**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InvoicesAndBookmarks.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ブックマークの活用例**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InvoicesAndBookmarks.zip)<span id="16-0-17"></span><br />
 実際にブックマークを活用したデモンストレーションです。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 4D式とフィルタリング**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Filter4DExpressions.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 4D式とフィルタリング**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Filter4DExpressions.zip)<span id="16-0-16"></span><br />
 4D Write Proのドキュメントには4D式を挿入できますが、これらはあらかじめ[`SET ALLOWED METHODS`](https://doc.4d.com/SET-ALLOWED-METHODS.301-4179548.ja.html)によって許可されている必要があります。<br />
 参考：[4D Write Pro ドキュメントに含める式の制限](https://doc.4d.com/Filter-expressions-contained-in-a-4D-Write-Pro-document.300-3726276.ja.html#2993380)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメントの操作**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InsertDoc.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメントの操作**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InsertDoc.zip)<span id="16-0-15"></span><br />
 次のコマンドを紹介します：<br />
 [`WP New`](https://doc.4d.com/WP-New.301-3726295.ja.html) ドキュメントの新規作成<br />
 [`WP INSERT DOCUMENT`](https://doc.4d.com/WP-INSERT-DOCUMENT.301-3726298.ja.html) ドキュメントの挿入<br />
 [`WP INSERT BREAK`](https://doc.4d.com/WP-INSERT-BREAK.301-3726296.ja.html) ブレークの挿入<br />
 [`WP Get page count`](https://doc.4d.com/WP-Get-page-count.301-3726297.ja.html) 総ページ数の取得
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーの挿入**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InsertPicture.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーの挿入**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_InsertPicture.zip)<span id="16-0-14"></span><br />
 [`WP INSERT PICTURE`](https://doc.4d.com/WP-INSERT-PICTURE.301-3726303.ja.html)コマンドを使って 4D Write Pro ドキュメントにピクチャーを挿入します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 印刷**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Print.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 印刷**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Print.zip)<span id="16-0-13"></span><br />
 [`WP PRINT`](https://doc.4d.com/WP-PRINT.301-3726306.ja.html)[`WP USE PAGE SETUP`](https://doc.4d.com/WP-USE-PAGE-SETUP.301-3726305.ja.html)コマンドを使った、4D Write Proドキュメントの印刷機能の紹介です。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: プリエンプティブ実行**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Thread_safety.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: プリエンプティブ実行**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_Thread_safety.zip)<span id="16-0-12"></span><br />
 ユーザーインターフェースに関わらない 4D Write Pro コマンドはプリエンプティブに実行することができます。文書作成処理をコオペラティブおよびプリエンプティブに実行した場合の処理速度を比較します。<br />
 参考：[プリエンプティブ4Dプロセス](https://doc.4d.com/Preemptive-4D-processes.300-4226849.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビューモード**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_ViewProperties.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビューモード**](https://github.com/4D-JP/HDI/releases/download/16/HDI_4DWP_ViewProperties.zip)<span id="16-0-11"></span><br />
 4D Write Pro ドキュメントの表示は複数の[ビューモードから選択](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3048088.ja.html#3052041)できます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクト型フィールドより重複しないパスや値を取得する**](https://github.com/4D-JP/HDI/releases/download/16/HDI_DISTINCT_ATTRIBUTES.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**オブジェクト型フィールドより重複しないパスや値を取得する**](https://github.com/4D-JP/HDI/releases/download/16/HDI_DISTINCT_ATTRIBUTES.zip)<span id="16-0-10"></span><br />
 オブジェクト型フィールドに含まれる重複しないパスや値を取得するためのコマンドを紹介します。<br />
 [`DISTINCT ATTRIBUTE PATHS`](https://doc.4d.com/DISTINCT-ATTRIBUTE-PATHS.301-4227275.ja.html)[`DISTINCT ATTRIBUTE VALUES`](https://doc.4d.com/DISTINCT-ATTRIBUTE-VALUES.301-4227274.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**GET PICTURE FORMATS**](https://github.com/4D-JP/HDI/releases/download/16/HDI_GetPictureFormats.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**GET PICTURE FORMATS**](https://github.com/4D-JP/HDI/releases/download/16/HDI_GetPictureFormats.zip)<span id="16-0-9"></span><br />
 新しく追加されたコマンド[`GET PICTURE FORMATS`](https://doc.4d.com/GET-PICTURE-FORMATS.301-4226801.ja.html)でピクチャーのファイル形式を取得することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: カラム自動リサイズ**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxAutoResizeColumns.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: カラム自動リサイズ**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxAutoResizeColumns.zip)<span id="16-0-8"></span><br />
 リストボックスに追加された新しいプロパティ ”カラム自動リサイズ” の紹介です。<br />
 参考：[カラムの自動リサイズの仕組み]()
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: リアルタイムな On Column Resize イベント**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxOnColumnResize.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: リアルタイムな On Column Resize イベント**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxOnColumnResize.zip)<span id="16-0-7"></span><br />
 フォームイベント[`On Column Resize`](https://doc.4d.com/Form-event.301-4227726.ja.html#3048676)がカラムリサイズ中にリアルタイムで発生するようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 行高さの指定**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxVariableRowHeight.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 行高さの指定**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ListboxVariableRowHeight.zip)<span id="16-0-6"></span><br />
 新しいコマンド[`LISTBOX SET ROW HEIGHT`](https://doc.4d.com/LISTBOX-SET-ROW-HEIGHT.301-4226911.ja.html)および[`LISTBOX Get row height`](https://doc.4d.com/LISTBOX-Get-row-height.301-4226910.ja.html)を使って、あるいは[行高さ配列](https://doc.4d.com/List-box-specific-properties.300-4253551.ja.html#3070590)を関連付けることで、リストボックスの各行の高さを個別に指定することができます。<br />
 <span style="text-decoration: underline">※ この機能には 4D View Pro ライセンスが必要です。</span>
-* <i class="fa fa-download" aria-hidden="true"></i> [**キャッシュ管理**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ManageCache.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**キャッシュ管理**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ManageCache.zip)<span id="16-0-5"></span><br />
 4D v16ではキャッシュの仕組みが刷新され、[キャッシュ管理](https://doc.4d.com/Cache-Management.201-4226165.ja.html)に役立つ次のコマンドが追加されました。これらのコマンドは64-bit版の4Dで提供されている内部アーキテクチャーに依存しているため、64-bit版でのみ正常に動作します。<br />
 [`Cache info`](https://doc.4d.com/Cache-info.301-4226247.ja.html)[`Get cache size`](https://doc.4d.com/Get-cache-size.301-4226248.ja.html)[`SET CACHE SIZE`](https://doc.4d.com/SET-CACHE-SIZE.301-4226249.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**On Mouse Up イベント**](https://github.com/4D-JP/HDI/releases/download/16/HDI_Mouse_Up_Event.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**On Mouse Up イベント**](https://github.com/4D-JP/HDI/releases/download/16/HDI_Mouse_Up_Event.zip)<span id="16-0-4"></span><br />
 ピクチャーエリアに新しく追加された[`On Mouse Up`](https://doc.4d.com/Form-event.301-4227726.ja.html#3047241)イベントの紹介です。
-* <i class="fa fa-download" aria-hidden="true"></i> [**印刷設定の保存**](https://github.com/4D-JP/HDI/releases/download/16/HDI_SavePrintSettings.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**印刷設定の保存**](https://github.com/4D-JP/HDI/releases/download/16/HDI_SavePrintSettings.zip)<span id="16-0-3"></span><br />
 4D Packプラグインのコマンドが標準コマンドになりました：[`Print settings to BLOB`](https://doc.4d.com/Print-settings-to-BLOB.301-4226252.ja.html)[`BLOB to print settings`](https://doc.4d.com/BLOB-to-print-settings.301-4226253.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**スレッドセーフ XML コマンド**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ThreadSafe_XMLCommands.zip)<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**スレッドセーフ XML コマンド**](https://github.com/4D-JP/HDI/releases/download/16/HDI_ThreadSafe_XMLCommands.zip)<span id="16-0-2"></span><br />
 DOM、SAX、XML で始まるコマンドはすべてスレッドセーフです。プリエンプティブ・プロセスで実行することによって、処理速度を上げることができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**Webプロセスとプリエンプティブ実行**](https://github.com/4D-JP/HDI/releases/download/16/HDI_WebServerPreemptive.zip)<span id="16-0-1"></span><br />
 Webサーバーおよび HTTPクライアント関連のコマンドはすべてスレッドセーフです。プリエンプティブ・プロセスで実行するためには ”プリエンプティブプロセスを使用” という新しいデータベース設定を有効にします。
