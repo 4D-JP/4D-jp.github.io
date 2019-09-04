@@ -16,7 +16,7 @@ author: Vanessa Talbot
 <code class="fourd"><span class="notranslate command">Form</span>.<span class="notranslate objectattribut">docs</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">curfolder</span>.<span class="notranslate objectfunction">folders</span>().<span class="notranslate objectfunction">concat</span>(<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">curfolder</span>.<span class="notranslate objectfunction">files</span>())</code>
 
 {:.download}
-[ファイル・フォルダーオブジェクトを利用したエクスプローラー](https://github.com/4D-JP/HDI/releases/download/4D_v17R6/HDI_FileManager.zip) 
+[ファイル・フォルダーオブジェクトを利用したエクスプローラー](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_FileManager.zip) 
 
 ![FileManager-1024x721](/images/blog/9-4/FileManager-1024x721.png)
 
