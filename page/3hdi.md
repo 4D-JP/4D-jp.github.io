@@ -11,6 +11,12 @@ type: page
 
 ## 17r6 # {#v17r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ファイル・フォルダーオブジェクトを利用したエクスプローラー**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_FileManager.zip)<span id="17-6-6"></span><br />
+ファイルオブジェクトとフォルダーオブジェクトをドット記法と組み合わせて、独自のリストボックス型ファイルエクスプローラーを作成する例を紹介します。<br />
+[`folder.files( )`](https://doc.4d.com/4Dv17R6/4D/17-R6/folderfiles.305-4311981.ja.html)
+[`folder.folders( )`](https://doc.4d.com/4Dv17R6/4D/17-R6/folderfolders.305-4311980.ja.html)
+[`folder.parent`](https://doc.4d.com/4Dv17R6/4D/17-R6/folderparent.303-4311977.ja.html)<br />
+参考：[ファイルとフォルダー](https://doc.4d.com/4Dv17R5/4D/17-R5/File-and-Folder.201-4282207.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: フォーミュラを使った並べ替え**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Order_ByFormula.zip)<span id="17-6-5"></span><br />
 ORDAに[`entitySelection.orderByFormula( )`](https://livedoc.4d.com/--17-R6/ORDA/entitySelectionorderByFormula.305-4404512.ja.html)メンバーメソッドが追加され、エンティティセレクションの並べ替えにフォーミュラを使えるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**カラーネームを使った色指定**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_CSS_colors.zip)<span id="17-6-4"></span><br />
