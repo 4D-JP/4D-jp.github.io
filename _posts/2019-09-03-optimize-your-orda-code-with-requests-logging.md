@@ -18,7 +18,7 @@ author: Marie-Sophie Landrieu-Yvert
 
 #### ファイルにログを取る
 
-ファイルにログを取るには、シンプルに<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/dsstartRequestLog.305-4385066.ja.html"><span class="notranslate command">startRequestLog()</span></a>を、ORDAリクエストがログインする場所を示す<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/File.301-4311959.ja.html"><span class="notranslate command">File</span></a>オブジェクトとともにコールするだけです。以下の例では、時々クエリーをインデックス化されていないフィールド上で走らせます。この新しい機能のおかげで、リクエストの継続時間をチェクできます：
+ファイルにログを取るには、シンプルに<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/dsstartRequestLog.305-4385066.ja.html"><span class="notranslate command">startRequestLog()</span></a>を、ORDAリクエストがログインする場所を示す<a href="https://doc.4d.com/4Dv17R6/4D/17-R6/File.301-4311959.ja.html"><span class="notranslate command">File</span></a>オブジェクトとともにコールするだけです。以下の例では、時々クエリーをインデックス化されていないフィールド上で走らせます。この新しい機能のおかげで、リクエストの継続時間をチェックできます：
 
 <code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$first</span>;<span class="notranslate variable">$e</span>)<br>
 <span class="notranslate command">C_COLLECTION</span>(<span class="notranslate variable">$log</span>)<br>
