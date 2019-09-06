@@ -11,7 +11,7 @@ tags: viewpro migration
 
 4D Viewにシートを「保護」するという概念はなく，個別にセルがロックできるようになっています。View Pro（SpreadJS）でユーザーに特定のセルだけの編集を許可する場合，シートを保護してから，ユーザーに編集を許可するセルだけをロック解除します。
 
-<i class="fa fa-external-link" aria-hidden="true"></i> https://docs.grapecity.com/help/spread-js-9/celllock.html
+<i class="fa fa-external-link" aria-hidden="true"></i> [https://docs.grapecity.com/help/spread-js-9/celllock.html](https://docs.grapecity.com/help/spread-js-9/celllock.html)
 
 一部のセルがロックされた4D Viewスプレッドシートを変換した場合，シート全体が保護された上で，特定のセルだけがロックされるようになっています。その他のセルはデフォルトでアンロックされています。これにより，ロックされたセルの設定は継承されますが，１点，問題があります。デフォルトですべてのセルがアンロックされているため，ユーザーに編集を許可するセルを除き，シート全体を保護することができない，という問題です。
 
