@@ -1,15 +1,23 @@
 ---
 layout: fix
 title: "4D v17r6 修正リスト"
-date: 2019-09-03 -08:00:00
+date: 2019-09-06 -08:00:00
 categories: 修正リスト
 tags: 17r6
-build: 241080
+build: 241191
 version: 17r6
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099895 Mac版のみ。4D WriteドキュメントをWrite Proに変換した場合，ヘッダーに余計な水平線が追加されました。
+
+* ACI0099893 Write ProをHTML形式でエクスポートした場合，段落全体に適用されたアンダーラインが表示されませんでした。``<p>``タグのCSSクラス（``text-decoration: underline``）が``style``属性（``text-decoration: none``）にオーバーライドされています。
+
+* ACI0099839 ``ST FREEZE EXPRESSIONS``を実行した場合，Write Proフッターに挿入されたページ数が「0ページ中の1ページ目」のように評価されました。
+
+**注記**: ヘッダーやフッターに対して``ST FREEZE EXPRESSIONS``を実行した場合，数式は１度だけ評価されます。したがって「合計ページ数」は正確ですが，「ページ番号」はすべて``1``となります。これは仕様です。複数のページが存在する場合，ヘッダーやフッターの数式にページ特有の情報は含めないようにしてください。
 
 * ACI0099890 ``VP Convert from 4D View``でドキュメントを変換するたびにメモリーリークが発生しました。
 
