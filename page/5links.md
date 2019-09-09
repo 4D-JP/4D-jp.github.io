@@ -78,12 +78,14 @@ type: page
     * [PDO_4D](https://php.net/pdo_4d) on [PECL](http://pecl.php.net/package/PDO_4D)
 
 * [Ajar SA](https://github.com/AJARProject)
-    * AJUI_FloatingLabel
     * RegexComponent
     * RegexLab5
     * [AJUI_Tip 1.1](https://ch-fr.4d.com/ajuitip-11/)
     * [AJUI_Progressbar 1.0](https://ch-fr.4d.com/ajuiprogressbar-10/)
     * [AJUI_Banner 1.5](https://ch-fr.4d.com/ajuibanner-15/)
+    * [AJUI_FloatingLabel 1.0](https://ch-fr.4d.com/ajuifloatinglabel)
+    * [AJ_Tools_UnitTest](https://ch-fr.4d.com/ajtoolsunittest)
+    * [AJ_Tools_xliff](https://ch-fr.4d.com/ajtoolsxliff)
     
 * [Bruno Legay](https://github.com/blegay)
     * aws_component
