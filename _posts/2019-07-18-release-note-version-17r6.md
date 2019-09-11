@@ -1,15 +1,19 @@
 ---
 layout: fix
 title: "4D v17r6 修正リスト"
-date: 2019-09-06 -08:00:00
+date: 2019-09-10 -08:00:00
 categories: 修正リスト
 tags: 17r6
-build: 241191
+build: 241272
 version: 17r6
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0099897 XLIFFシンタックスのヘルプTipsがプ正しく表示されませんでした。
+
+* ACI0099692 プロパティリストにXLIFFシンタックスで入力したヘルプTipsがプ正しく登録されませんでした。
 
 * ACI0099895 Mac版のみ。4D WriteドキュメントをWrite Proに変換した場合，ヘッダーに余計な水平線が追加されました。
 
