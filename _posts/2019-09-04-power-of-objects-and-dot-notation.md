@@ -7,7 +7,7 @@ tags: 18.x 17r6
 author: Vanessa Talbot
 ---
 
-![FileManager-1](/images/blog/9-4/FileManager-1.png)
+![FileManager-1](/images/blog/09/04/FileManager-1.png)
 
 4D v17 R5では、オブジェクトを操作してファイルあるいはフォルダの属性を検索するのがいかに簡単かをご紹介しました。この機能はオブジェクト記法のおかげで<a href="https://blog.4d.com/object-notation-to-handle-files-and-folders/">さらに簡単に</a>なっています！このブログ投稿では、ファイルとフォルダを関するインターフェイスを使った例題を公開しています。これは、4Dでは新しいことではなく、これまでの4Dコマンドでも可能でした。しかし、このバージョンからより簡単にわずかんコードでできるようになりました。
 
@@ -18,7 +18,7 @@ author: Vanessa Talbot
 {:.download}
 [ファイル・フォルダーオブジェクトを利用したエクスプローラー](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_FileManager.zip) 
 
-![FileManager-1024x721](/images/blog/9-4/FileManager-1024x721.png)
+![FileManager-1024x721](/images/blog/09/04/FileManager-1024x721.png)
 
 あなた自身がサンプルを試してみてください。ディスクファイル・ブラウザーのように動くことが分かるでしょう。あなたならこの機能のためにリストボックス の裏でどのようにコードを書くのか、ちょっと考えてみてください。最後に、デザインモードに移ってコードを見てみると、いかに短いコードが使われているかに驚くことでしょう。オブジェクト記法を使わずに同じことをしてみると、オブジェクトには10倍以上のコーディングが必要です。まだ、オブジェクト記法を試していないのなら、今こそその時です！
 
