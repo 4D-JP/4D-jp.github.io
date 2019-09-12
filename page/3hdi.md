@@ -11,6 +11,8 @@ type: page
 
 ## 17r6 # {#v17r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**デバッグ・ログ解析ツール**](https://github.com/4D-JP/HDI/releases/download/17r6/4DDebugLogAnalyserv17R6.zip)<span id="17-6-7"></span><br />
+デバッグ・ログを解析するためのツールです。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ファイル・フォルダーオブジェクトを利用したエクスプローラー**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_FileManager.zip)<span id="17-6-6"></span><br />
 ファイルオブジェクトとフォルダーオブジェクトをドット記法と組み合わせて、独自のリストボックス型ファイルエクスプローラーを作成する例を紹介します。<br />
 [`folder.files( )`](https://doc.4d.com/4Dv17R6/4D/17-R6/folderfiles.305-4311981.ja.html)
