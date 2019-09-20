@@ -24,10 +24,12 @@ iOS13のもう一つの大きな変化は、カードのような外観です。
 
 このクールなTaskアプリインターフェイスを4D for iOSで作成してみてみましょう！
 
-![4D-for-iOS-dark-mode-card-relation-ios-13](/images/blog/09/9_20/4D-for-iOS-dark-mode-card-relation-ios-13.png)
+![4D-for-iOS-dark-mode-card-relation-ios-13](/images/blog/09/9_20/4D-for-iOS-dark-mode-card-relation-ios-13.gif)
 
 #### アップルでサインイン
 アップルでサインを忘れてはいません。事実、アップル・サインインは4D Serverでフルサポートされています！既存のアップルIDを使って素早く簡単にサインインできます。”Sign in with Apple ID”をタップして、承認にはTouch IDとFace IDを使うだけです。
+
+![signInWithApple-4DforiOS](/images/blog/09/9_20/signInWithApple-4DforiOS.png)
 
 #### パッケージマネージャー
 
