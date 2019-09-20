@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 4D for iOS : iOS13について知っておくべきこと
+title: 4D for iOS：iOS13について知っておくべきこと
 date: 2019-09-19 00:00:00
 categories: ブログ
 tags: 18.x 17r6
