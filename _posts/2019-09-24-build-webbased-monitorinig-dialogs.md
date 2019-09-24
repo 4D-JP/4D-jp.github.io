@@ -34,11 +34,11 @@ author: Intissar Elmezrouai
 
 しかし、管理情報を使う他のコマンドもまた存在します。
 
-<a href=“https://blog.4d.com/retrieve-the-license-information-by-programming/”><span class="notranslate command">Get license info</span></a> : 有効なライセンスについての詳細な情報を提供するオブジェクトを返します。
-<a href=“https://blog.4d.com/enhancement-of-get-process-activity-command/“><span class="notranslate command">Get process activity</span></a> : 指定された時間に接続されているユーザー・セッション、または関連する実行中のプロセス（あるいはその両方）のスナップショットを返します。
-<a href=“https://blog.4d.com/get-machine-hardware-information-2/“><span class="notranslate command">Get system info</span></a> : オペレーティングシステムに関する情報、および（ローカルまたはリモートの）マシン上のシステムハードウェアとソフトウェアの特性を含むオブジェクトを返します。
-<a href=“https://blog.4d.com/new-command-to-get-web-server-information/“><span class="notranslate command">Web Get server info</span></a> : 4D Web Serverの現在のセッションについて、詳細なランタイム情報を含むオブジェクトを返します。
+<a href="https://blog.4d.com/retrieve-the-license-information-by-programming/"><span class="notranslate command">Get license info</span></a> : 有効なライセンスについての詳細な情報を提供するオブジェクトを返します。
+<a href="https://blog.4d.com/enhancement-of-get-process-activity-command/"><span class="notranslate command">Get process activity</span></a> : 指定された時間に接続されているユーザー・セッション、または関連する実行中のプロセス（あるいはその両方）のスナップショットを返します。
+<a href="https://blog.4d.com/get-machine-hardware-information-2/"><span class="notranslate command">Get system info</span></a> : オペレーティングシステムに関する情報、および（ローカルまたはリモートの）マシン上のシステムハードウェアとソフトウェアの特性を含むオブジェクトを返します。
+<a href="https://blog.4d.com/new-command-to-get-web-server-information/"><span class="notranslate command">Web Get server info</span></a> : 4D Web Serverの現在のセッションについて、詳細なランタイム情報を含むオブジェクトを返します。
 
-そして最後に、<a href=“https://blog.4d.com/new-server-administration-commands/“>このブログ</a>では、あなた自身の管理インターフェイスを作成できる4D v17 R4のコマンドを紹介しています。
+そして最後に、<a href="https://blog.4d.com/new-server-administration-commands/">このブログ</a>では、あなた自身の管理インターフェイスを作成できる4D v17 R4のコマンドを紹介しています。
 
 上記のコンポーネントをダウンロードして、必要に応じてカスタマイズし、テイラーメイド（誂え）体験をお楽しみください！
