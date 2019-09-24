@@ -23,14 +23,14 @@ author: Intissar Elmezrouai
 
 これらのような管理ダイアログが可能なのは、4D v16とそれ以前から存在するコマンドのおかげです。
 
-<li><span class=“no translate command”>ストラクチャー・ファイル</span></li>
-<li><span class=“no translate command”>データファイル、ログファイル</span></li>
-<li><span class=“no translate command”>アプリケーションのバージョン</span></li>
-<li><span class=“no translate command”>GET ACTIVITY SNAPSHOT</span></li>
-<li><span class=“no translate command”>VOLUME ATTRIBUTES</span></li>
-<li><span class=“no translate command”>Get 4D file</span></li>
-<li><span class=“no translate command”>GET MEMORY STATISTICS</span></li>
-<li><span class=“no translate command”>GET ACTIVITY SNAPSHOT</span></li>
+* <span class=“no translate command”>ストラクチャー・ファイル</span></li>
+* <span class=“no translate command”>データファイル、ログファイル</span></li>
+* <span class=“no translate command”>アプリケーションのバージョン</span></li>
+* <span class=“no translate command”>GET ACTIVITY SNAPSHOT</span></li>
+* <span class=“no translate command”>VOLUME ATTRIBUTES</span></li>
+* <span class=“no translate command”>Get 4D file</span></li>
+* <span class=“no translate command”>GET MEMORY STATISTICS</span></li>
+* <span class=“no translate command”>GET ACTIVITY SNAPSHOT</span></li>
 
 しかし、管理情報を使う他のコマンドもまた存在します。
 
