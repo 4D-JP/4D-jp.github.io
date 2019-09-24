@@ -23,9 +23,9 @@ author: Intissar Elmezrouai
 
 これらのような管理ダイアログが可能なのは、4D v16とそれ以前から存在するコマンドのおかげです。
 
-* <span class="no translate command">ストラクチャー・ファイル</span>
-* <span class="no translate command">データファイル、ログファイル</span>
-* <span class="no translate command">アプリケーションのバージョン</span>
+* <span class="no translate command">Structure file</span>
+* <span class="no translate command">Data file, Log file</span>
+* <span class="no translate command">Application version</span>
 * <span class="no translate command">GET ACTIVITY SNAPSHOT</span>
 * <span class="no translate command">VOLUME ATTRIBUTES</span>
 * <span class="no translate command">Get 4D file</span>
