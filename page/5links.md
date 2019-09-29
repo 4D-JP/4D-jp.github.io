@@ -58,7 +58,7 @@ type: page
 * [Pluggers Software](https://www.pluggers.nl/)
 
 * [Protée](https://www.protee.org/index.php/fr/)
-    * [ogTools pour 4D](https://www.protee.org/index.php/fr/produits/outils-de-gestion/ogtools-for-4d)
+    * [ogTools pour 4D](https://www.protee.org/index.php/en/download-en/ogtools)
     * [proTools - boutons 4D](https://www.protee.org/index.php/fr/produits/outils-de-gestion/protools)
     
 * [QualiSoft](http://association-qualisoft.eu)
