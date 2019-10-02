@@ -22,13 +22,15 @@ author: Thomas Maul
 
 以下のイメージは、コンポーネントのデフォルトのインターフェイスと、これまでの4D Server管理ウィンドウとの違いを表示しています。
 
-コンポーネントのデフォルトのインターフェイス
+コンポーネントのデフォルトのインターフェイス：
+
 ![adminWindowDBM-1024x625](/images/blog/10/adminWindowDBM-1024x625.png)
 
-4D Server管理ウィンドウ
+4D Server管理ウィンドウ：
+
 ![defaultServerAdmin](/images/blog/10/defaultServerAdmin.png)
 
-このコンポーネントのソースコードは、<a href="https://github.com/ThomasMaul/AdminWindow">Github</a>（英語版 ）から入手できます。テストするには、<span class="notranslate command">On Startup</span>データベース・メソッドの<span class="notranslate command">Monitor_Start</span>メソッドを呼び出すだけです。このように、データベースを開けばカスタマイズしたダイアログが表示されます。
+このコンポーネントのソースコードは、<a href="https://github.com/ThomasMaul/AdminWindow">Github</a>（英語版 ）から入手できます。テストするには、<span class="notranslate method">On Startup</span>データベース・メソッドの<span class="notranslate method">Monitor_Start</span>メソッドを呼び出すだけです。このように、データベースを開けばカスタマイズしたダイアログが表示されます。
 
 あなたの必要に応じてコンポーネントをカスタマイズしてください。ページやコンテンツの消去、非表示、修正は思いのままです。独自のプロセスリストなど自分だけのコンテンツや、状態変数、ライセンス情報などを追加できます。コードはクライアント端末で使うように設計されていることに留意してください（サーバーから自動的に情報を取ってきます）。
 
