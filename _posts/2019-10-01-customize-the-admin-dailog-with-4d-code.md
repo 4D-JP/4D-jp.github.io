@@ -1,5 +1,5 @@
 ---
-ayout: post
+layout: post
 title: 管理ダイアログを4Dコードでカスタマイズ
 date: 2019-10-01 00:00:00
 categories: ブログ
@@ -32,4 +32,4 @@ author: Thomas Maul
 
 あなたの必要に応じてコンポーネントをカスタマイズしてください。ページやコンテンツの消去、非表示、修正は思いのままです。独自のプロセスリストなど自分だけのコンテンツや、状態変数、ライセンス情報などを追加できます。コードはクライアント端末で使うように設計されていることに留意してください（サーバーから自動的に情報を取ってきます）。
 
-<strong>互換性ノート：このサンプルは4D v17 R5と<a href=”https://developer.4d.com/docs/en/Project/overview.html”>プロジェクト・データベース</a>で作られています。</strong>
+<strong>互換性ノート：このサンプルは4D v17 R5と<a href="https://developer.4d.com/docs/en/Project/overview.html">プロジェクト・データベース</a>で作られています。</strong>
