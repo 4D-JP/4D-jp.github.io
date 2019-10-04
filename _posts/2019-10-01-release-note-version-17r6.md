@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v17r6 修正リスト"
-date: 2019-1  10-01 -08:00:00
+date: 2019-10-01 08:00:00
 categories: 修正リスト
 tags: 17r6
 build: 242225
