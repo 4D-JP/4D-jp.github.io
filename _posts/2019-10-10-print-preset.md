@@ -6,7 +6,7 @@ categories: 仕様
 tags: mac printing
 ---
 
-![スクリーンショット](https://user-images.githubusercontent.com/10509075/66537688-53629900-eb5c-11e9-8cd9-ed5f5bc3c196.png)
+<img width="612" alt="スクリーンショット 2019-10-10 12 50 01" src="https://user-images.githubusercontent.com/10509075/66537724-7c832980-eb5c-11e9-9953-f52deef1a9ca.png">
 
 Macには，アプリケーション間で共通のプリント設定が利用できます。あるアプリケーションで印刷ダイアログを表示し，プリセットを使用して印刷した後，別のアプリケーションで
 印刷ダイアログを表示した場合，最後に使用したプリセットがデフォルトで選択されています。
