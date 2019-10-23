@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "クエリエディターの日付フォーマット"
-date: 2119-10-23 12:00:00
+date: 2019-10-23 12:00:00
 categories: 仕様
 tags: userinterface
 ---
