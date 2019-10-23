@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v17r6 修正リスト"
-date: 2019-10-16 08:00:00
+date: 2019-10-17 08:00:00
 categories: 修正リスト
 tags: 17r6
-build: 243064
+build: 243126
 version: 17r6
 ---
 
@@ -22,6 +22,8 @@ version: 17r6
 * ACI0100043 4D ViewをView Proに変換した場合，時間型の値が登録されたセルが正しく表示されないことがありました。値は存在するのですが，フォーマットが反映されていないようです。
 
 * ACI0100066 CEF版Webエリアの``blob_storage``および``GPUCache``を収容する``CEF_cache``フォルダーが``~/Library/Application Support``（Mac）あるいは``AppData\Roaming``（Windows）に作成されませんでした。ACI0099267が17r6には反映されていませんでした。
+
+* ACI0100001 4D ViewドキュメントをView Proに変換した場合，数値フォーマットのカンマ（``,``）がピリオド（``.``）に置換されてしまいました。
 
 * ACI0100045 ``HTTP Request``また``HTTP Get``でGoogleのAPIをコールした場合，ステータスコードには``200``が返されますが，レスポンスは空でした。17r5では問題ありません。
 
