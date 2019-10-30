@@ -32,7 +32,7 @@ Windowsサンプル：
 MyBuiltRemoteApp.exe --headless
 ```
 
-<span class="no translate command"><a href="https://doc.4d.com/4Dv18/4D/18/Get-application-info.301-4505388.en.html">Get application info</a></span>コマンドによって返されたオブジェクトに新しい”ヘッドレス”属性を追加しました。それによってインターフェイスの有無によらず、実行モードに依存したコードを書くほうがとても簡単となりました。
+<a href="https://doc.4d.com/4Dv18/4D/18/Get-application-info.301-4505388.en.html"><span class="no translate command">Get application info</span></a>コマンドによって返されたオブジェクトに新しい”ヘッドレス”属性を追加しました。それによってインターフェイスの有無によらず、実行モードに依存したコードを書くほうがとても簡単となりました。
 
 <strong>注意</strong>：　Windowsシステム上のサービスモードでアプリケーションが動いたとき、それは自動的にヘッドレス・アプリケーションとして実行されます。サービスを止めることで、4Dを正確な方法で終了します（例えば、macOSアクティビティ・モニターで”終了”アクションを使うように）。
 
@@ -59,7 +59,7 @@ MyBuiltRemoteApp.exe --headless
 
 #### システムの標準ストリームを使う
 
-新しいセレクター、``Into system standard outputs``、を<span class="no translate command">LOG EVENT</span>コマンドに追加し、テキストをstdoutとstderr標準ストリームへ送ることができます。ご存知のように、<span class="no translate command">LOG EVENT</span>コマンドにはオプションの”importance”パラメータがあります。そのため、イベントの重要性によって、コマンドはテキストを``Information message``と``Warning message`` に対してstdoutストリームで、``Error message``に対してstderrストリームで送ります。
+新しいセレクター、``Into system standard outputs``、を<a href="https://doc.4d.com/4Dv18/4D/18/LOG-EVENT.301-4505620.en.html"><span class="no translate command">LOG EVENT</span></a>コマンドに追加し、テキストをstdoutとstderr標準ストリームへ送ることができます。ご存知のように、<a href="https://doc.4d.com/4Dv18/4D/18/LOG-EVENT.301-4505620.en.html"><span class="no translate command">LOG EVENT</span></a>コマンドにはオプションの”importance”パラメータがあります。そのため、イベントの重要性によって、コマンドはテキストを``Information message``と``Warning message`` に対してstdoutストリームで、``Error message``に対してstderrストリームで送ります。
 
 stdoutへテキストを送る：
 <code class="fourd"><span class="no translate command">LOG EVENT</span>(<span class="notranslate variable">Info system standard outputs</span>;"This is a text for stdout";<span class="notranslate variable">Information message</span>)</code>
