@@ -61,7 +61,7 @@ MyBuiltRemoteApp.exe --headless
 
 新しいセレクター、``Into system standard outputs``、を<a href="https://doc.4d.com/4Dv18/4D/18/LOG-EVENT.301-4505620.en.html"><span class="no translate command">LOG EVENT</span></a>コマンドに追加し、テキストをstdoutとstderr標準ストリームへ送ることができます。ご存知のように、<a href="https://doc.4d.com/4Dv18/4D/18/LOG-EVENT.301-4505620.en.html"><span class="no translate command">LOG EVENT</span></a>コマンドにはオプションの”importance”パラメータがあります。そのため、イベントの重要性によって、コマンドはテキストを``Information message``と``Warning message`` に対してstdoutストリームで、``Error message``に対してstderrストリームで送ります。
 
-stdoutへテキストを送る：
+<strong>stdout</strong>へテキストを送る：
 <code class="fourd"><span class="no translate command">LOG EVENT</span>(<span class="notranslate variable">Info system standard outputs</span>;"This is a text for stdout";<span class="notranslate variable">Information message</span>)</code>
 
 
@@ -81,7 +81,7 @@ Windows：
 ```
 
 ストリームのリダイレクションの組み合わせのリマインダー：
-* <stron>1>outputFile</strong>：標準アウトプットストリームはシステムのデフォルトアウトプットの代わりにファイルに書き込まれます。ファイルはコマンドが起動した時に自動的に生成されます。もしすでに存在していれば、古いコンテンツは消去されます。
+* <strong>1>outputFile</strong>：標準アウトプットストリームはシステムのデフォルトアウトプットの代わりにファイルに書き込まれます。ファイルはコマンドが起動した時に自動的に生成されます。もしすでに存在していれば、古いコンテンツは消去されます。
 * <strong>1>>outputFile</strong>：上記のシンタックスと同じ動きをしますが、ファイルがすでに存在している場合、それはストリームのコンテンツに追加されます。
 * <strong>2>errorFile</strong>：標準エラーストリームはシステムのデフォルトアウトプットの代わりにファイルに書き込まれます。ファイルはコマンドが起動した時に自動的に生成されます。もしすでに存在していれば、古いコンテンツは消去されます。
 * <strong>2>>errorFile</strong>：記のシンタックスと同じ動きをしますが、ファイルがすでに存在している場合、それはストリームのコンテンツに追加されます。
