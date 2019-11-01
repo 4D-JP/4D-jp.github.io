@@ -18,7 +18,7 @@ author: Damien Fuzeau
 4Dをヘッドレス・モードで起動するには、新しい”<a href="https://doc.4d.com/4Dv18/4D/18/Command-Line-Interface.300-4575704.en.html">headless</a>”パラメータとCLI（コマンド・ライン・インターフェイス）を使います。これは全てのアプリケーション・タイプで有効です：4D、4D Server、スタンドアロン、リモート、マージしたアプリケーション。下記の例では、現在のディレクトリが実行可能なディレクトリになります。
 
 macOSサンプル（ターミナルがバンドルの”Contents/MacOS”フォルダーにある場合）：
-```js
+```
 ./4D\Server --headless MyDatabase.4DLink
 ./"4D Server" --headless MyDatabase.4DLink
 ./4D --headless MyDatabase.4DLink
@@ -26,7 +26,7 @@ macOSサンプル（ターミナルがバンドルの”Contents/MacOS”フォ�
 ```
 
 Windowsサンプル：
-```js
+```
 "4D Server.exe" --headless MyDatabase.4DLink
 4D.exe --headless MyDatabase.4DLink
 MyBuiltRemoteApp.exe --headless
