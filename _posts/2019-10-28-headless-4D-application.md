@@ -71,12 +71,12 @@ MyBuiltRemoteApp.exe --headless
 そしてまた、4Dとアプリケーションによって生成された情報を検索するために、stdoutとstderr標準ストリームに対してリダイレクションを使うこともできます。デフォルトでは、これらのストリームはシステムの設定によって、一般的にコンソールに直接向かい、稀にスクリーンに向かいます。例えば、以下のコマンドラインを使って、標準ストリームをファイルにリダイレクトできます。
 
 macOS：
-```js
+```
 ./4D --headless MyDatabase.4DLink 1>stdout.txt 2>stderr.txt
 ```
 
 Windows：
-```js
+```
 4D --headless MyDatabase.4DLink 1>stdout.txt 2>stderr.txt
 ```
 
