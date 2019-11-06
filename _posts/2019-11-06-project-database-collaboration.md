@@ -23,7 +23,7 @@ author: Vanessa Talbot
 * <strong>デバッグ</strong>：プロジェクト・ファイルをソース管理レポジトリ中に保存することで、支障のあるコードのソースを配置してバージョン間を簡単に比較できます。
 * <strong>運用：</strong>ソース管理レポジトリを使えば、複数のブランチ（例：開発と製造）の管理が簡単です。
 
-このリストは表面的なものですが、これらの利点は全て<a href=“https://developer.4d.com/docs/en/Project/overview.html”><span class="no translate command">プロジェクトデータベース</span></a>のおかげです。
+このリストは表面的なものですが、これらの利点は全て<a href="https://developer.4d.com/docs/en/Project/overview.html"><span class="no translate command">プロジェクトデータベース</span></a>のおかげです。
 
 Project databasesがもたらす全ての新しい機能と可能性は今後のブログで詳しく述べていきます。お楽しみに！
 
