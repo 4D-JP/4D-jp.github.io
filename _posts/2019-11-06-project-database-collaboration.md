@@ -25,6 +25,6 @@ author: Vanessa Talbot
 
 このリストは表面的なものですが、これらの利点は全て<a href="https://developer.4d.com/docs/en/Project/overview.html"><span class="no translate command">プロジェクトデータベース</span></a>のおかげです。
 
-Project databasesがもたらす全ての新しい機能と可能性は今後のブログで詳しく述べていきます。お楽しみに！
+プロジェクト・データベースがもたらす全ての新しい機能と可能性は今後のブログで詳しく述べていきます。お楽しみに！
 
 
