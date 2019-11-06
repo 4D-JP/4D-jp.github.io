@@ -9,6 +9,12 @@ type: page
 * content
 {:toc}
 
+## 18 # {#v18}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: リモートデータストア**](https://github.com/4D-JP/HDI/releases/download/18/HDI_Remote_Datastore.zip)<span id="17-6-7"></span><br />
+新しく追加された [`Open datastore`](https://doc.4d.com/4Dv18/4D/18/Open-datastore.301-4675616.ja.html) コマンドを使って、RESTリソースとして公開されている外部の 4D データベースをリモートデータストアの形で取得することができます。<br />
+これにともない、[`ds`](https://doc.4d.com/4Dv18/4D/18/ds.301-4505926.ja.html)コマンドおよび [`dataStore.getInfo( )`](https://doc.4d.com/4Dv18/4D/18/dataStoregetInfo.305-4505928.ja.html) メンバーメソッドが拡張されています。
+
 ## 17r6 # {#v17r6}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**サーバー管理用 Webインターフェース (コンポーネント)**](https://github.com/4D-JP/HDI/releases/download/17r6/ServerAdministrator_JA.zip)<span id="17-6-7"></span><br />
