@@ -126,25 +126,24 @@ Open datastoreコマンドを最初に呼び出した時は、データストア
 下記はサンプルです：
 
 <code class="fourd"><span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$1</span>;<span class="notranslate variable">$name</span>;<span class="notranslate variable">$2</span>;<span class="notranslate variable">$password</span>)
+ 
 <span class="notranslate command">C_BOOLEAN</span>(<span class="notranslate variable">$0</span>;<span class="notranslate variable">$result</span>;<span class="notranslate variable">$3</span>;<span class="notranslate variable">$digest</span>)
+
 <span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$user</span>)
 
 <span class="notranslate variable">$name</span>:=<span class="notranslate variable">$1</span> <span class="notranslate comment">// The user to provide in Open datastore command</span>
 <span class="notranslate variable">$password</span>:=<span class="notranslate variable">$2</span> <span class="notranslate comment">// The password to provide in Open datastore command</span>
 <span class="notranslate variable">$digest</span>:=<span class="notranslate variable">$3</span> <span class="notranslate comment">// True if password is hashed</span>
-
-<span class="notranslate variable">$result</span>:=<span class="notranslate command">False</span><span class="notranslate comment">
-
-//Search for the user in our Users dataclass</span>
+<span class="notranslate variable">$result</span>:=<span class="notranslate command">False</span>
+<span class="notranslate comment">//Search for the user in our Users dataclass</span>
 <span class="notranslate variable">$user</span>:=<span class="notranslate command">ds</span>.<span class="notranslate tablename">Users</span>.<span class="notranslate objectfunction">query</span>("name=:1";<span class="notranslate variable">$name</span>).<span class="notranslate objectfunction">first()
 </span>
 <span class="notranslate keyword">If</span> (<span class="notranslate variable">$user</span>#<span class="notranslate command">Null</span>)
-<span class="notranslate comment">// Passwords are hashed in Users dataclass </span>
-     <span class="notranslate keyword">If</span> (<span class="notranslate variable">$digest</span> &amp; (<span class="notranslate variable">$user</span>.<span class="notranslate objectattribut">password</span>=<span class="notranslate variable">$password</span>)) 
-           <span class="notranslate variable">$result</span>:=<span class="notranslate command">True</span>
-       <span class="notranslate keyword">End if
-End if</span>
 
+<span class="notranslate comment">// Passwords are hashed in Users dataclass </span>
+<span class="notranslate keyword">If</span> (<span class="notranslate variable">$digest</span> &amp; (<span class="notranslate variable">$user</span>.<span class="notranslate objectattribut">password</span>=<span class="notranslate variable">$password</span>)) 
+<span class="notranslate variable">$result</span>:=<span class="notranslate command">True</span>
+<span class="notranslate keyword">End if</span>
 <span class="notranslate variable">$0</span>:=<span class="notranslate variable">$result</span></code>
 
 
