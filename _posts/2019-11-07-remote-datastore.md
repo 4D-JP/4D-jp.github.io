@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 複数の4Dデータソースに興味がありますか？
-date: 2019-10-31 00:00:00
+date: 2019-11-07 00:00:00
 categories: ブログ
 tags: 18.x programming
 author: Marie-Sophie Landrieu-Yvert
@@ -70,7 +70,7 @@ Open datastoreドキュメントをチェックして、安全な接続(TLS)で�
 
 フォームメソッド：
 
-<code><span class="notranslate keyword">Case of</span>
+<code><span class="notranslate constant">Case of</span>
 : (<span class="notranslate command">FORM Event</span>.<span class="notranslate objectattribut">code</span>=<span class="notranslate constant">On Load</span>)
 <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">frenchServer</span>:="french.acme.com"
 <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">englishServer</span>:="english.acme.com"
