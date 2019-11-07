@@ -42,20 +42,22 @@ author: Marie-Sophie Landrieu-Yvert
 
 datastoreオブジェクトをローカルID “students”に関連付けます。これでORDAを使ってリモートデータベースと作業（クエリーの起動、エンティティのロード/更新など）が出るようになります。
 
-<code class="fourd"><span class="no translate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$schoolDS</span>;<span class="notranslate variable">$s</span>)
-<span class="no translate command">C_TEXT</span>(<span class="notranslate variable">$dataClass</span>)
-
-//The database contains a Students data class
-
-<span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object</span>("hostname";"school.acme.com")
-<span class="notranslate variable">$schoolDS</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo</span>;"students")  <span class="notranslate comment">//local id of this remote datastore is "students"</span>
-<span class="notranslate comment">//Start working with ORDA means</span>
-<span class="notranslate command">ALERT</span>("They are "+<span class="notranslate command">String</span>(<span class="notranslate variable">$schoolDS</span>[<span class="notranslate variable">$dataClass</span>].<span class="notranslate objectfunction">all()</span>.<span class="notranslate objectattribut">length</span>)+" students")
-
-<span class="notranslate comment">//Run an ORDA query on the Students dataclass</span>
-<span class="notranslate variable">$s</span>:=<span class="notranslate variable">$schoolDS</span>[<span class="notranslate variable">$dataClass</span>].<span class="notranslate objectfunction">query</span>("lastname=:1";"Smith").<span class="notranslate objectfunction">first()</span>
-<span class="notranslate keyword">If</span> (<span class="notranslate variable">$s</span>#<span class="notranslate command">Null</span>)
-  <span class="notranslate command">ALERT</span>("Student "+<span class="notranslate variable">$s</span>.<span class="notranslate objectattribut">lastname</span>+" lives in "+<span class="notranslate variable">$s</span>.<span class="notranslate objectattribut">address</span>.<span class="notranslate objectattribut">city</span>)
+<code class="fourd"><span class="no translate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$schoolDS</span>;<span class="notranslate variable">$s</span>)<br>
+<span class="no translate command">C_TEXT</span>(<span class="notranslate variable">$dataClass</span>)<br>
+<br>
+//The database contains a Students data class<br>
+<span class="notranslate variable">$dataClass</span>;="Students"<br>
+ <br>
+<span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object</span>("hostname";"school.acme.com")<br>
+<span class="notranslate variable">$schoolDS</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo</span>;"students")  <span class="notranslate comment">//local id of this remote datastore is "students"</span><br>
+ <br>
+<span class="notranslate comment">//Start working with ORDA means</span><br>
+<span class="notranslate command">ALERT</span>("They are "+<span class="notranslate command">String</span>(<span class="notranslate variable">$schoolDS</span>[<span class="notranslate variable">$dataClass</span>].<span class="notranslate objectfunction">all()</span>.<span class="notranslate objectattribut">length</span>)+" students")<br>
+<br>
+<span class="notranslate comment">//Run an ORDA query on the Students dataclass</span><br>
+<span class="notranslate variable">$s</span>:=<span class="notranslate variable">$schoolDS</span>[<span class="notranslate variable">$dataClass</span>].<span class="notranslate objectfunction">query</span>("lastname=:1";"Smith").<span class="notranslate objectfunction">first()</span><br>
+<span class="notranslate keyword">If</span> (<span class="notranslate variable">$s</span>#<span class="notranslate command">Null</span>)<br>
+<span class="notranslate command">ALERT</span>("Student "+<span class="notranslate variable">$s</span>.<span class="notranslate objectattribut">lastname</span>+" lives in "+<span class="notranslate variable">$s</span>.<span class="notranslate objectattribut">address</span>.<span class="notranslate objectattribut">city</span>)<br>
 <span class="notranslate keyword">End if</span>
 </code>
 
@@ -70,28 +72,28 @@ Open datastoreドキュメントをチェックして、安全な接続(TLS)で�
 
 フォームメソッド：
 
-<code class="fourd"><span class="notranslate keyword">Case of</span>  
- :(<span class="notranslate command">FORM Event</span>.<span class="notranslate objectattribut">code</span>=<span class="notranslate constant">On Load</span>)
-<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">frenchServer</span>:="french.acme.com"
-<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">englishServer</span>:="english.acme.com"
+<code class="fourd"><span class="notranslate keyword">Case of</span><br> 
+ :(<span class="notranslate command">FORM Event</span>.<span class="notranslate objectattribut">code</span>=<span class="notranslate constant">On Load</span>)<br>
+<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">frenchServer</span>:="french.acme.com"<br>
+<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">englishServer</span>:="english.acme.com"<br>
 <span class="notranslate keyword">End case</span></code>
 
 
 「フランス人の生徒を見る」ボタンの背後にあるオブジェクトメソッドです：
 
-<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$students</span>)
-<span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object()</span>
-<span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">hostname</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">frenchServer</span>
-<span class="notranslate variable">$students</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo</span>;"french") <span class="notranslate comment"> //datastore containing French students</span>
-<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">students</span>:=<span class="notranslate variable">$students</span>.<span class="notranslate objectattribut">Students</span>.<span class="notranslate objectfunction">all()</span>
+<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$students</span>)<br>
+<span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object()</span><br>
+<span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">hostname</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">frenchServer</span><br>
+<span class="notranslate variable">$students</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo</span>;"french") <span class="notranslate comment"> //datastore containing French students</span><br>
+<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">students</span>:=<span class="notranslate variable">$students</span>.<span class="notranslate objectattribut">Students</span>.<span class="notranslate objectfunction">all()</span><br>
 </code>
 
 「イギリス人の生徒を見る」ボタンの背後にあるオブジェクトメソッドです：
 
-<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$students</span>)
-<span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object()</span>
-<span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">hostname</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">englishServer</span>
-<span class="notranslate variable">$students</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo</span>;"english") <span class="notranslate comment">//datastore containing English students</span>
+<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$students</span>)<br>
+<span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object()</span><br>
+<span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">hostname</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">englishServer</span><br>
+<span class="notranslate variable">$students</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo</span>;"english") <span class="notranslate comment">//datastore containing English students</span><br>
 <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">students</span>:=<span class="notranslate variable">$students</span>.<span class="notranslate objectattribut">Students</span>.<span class="notranslate objectfunction">all()</span></code>
 
 Open datastoreコマンドを最初に呼び出した時は、データストアオブジェクトはメモリーにロードされ、セッションはサーバーで開かれます。その後の呼び出しでは、このデータストアオブジェクトの参照を返すだけです。
@@ -100,14 +102,17 @@ Open datastoreコマンドを最初に呼び出した時は、データストア
 
 公開したデータベースを安全に保つために、アクセスにフィルターをかけることができます。Open datastoreコマンドを別の面で見てみましょう。以下のようにユーザーとパスワードを渡すことができます。
 
-<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$myStudents</span>)
-<span class="notranslate command">ON ERR CALL</span>("manageErrors")
-<span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object()</span>
-<span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">hostname</span>:="students.acme.com"
-<span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">user</span>:="mary@4d.com"
-<span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">password</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">password</span>
-<span class="notranslate comment">//local id of this remote datastore is "students"</span>
-<span class="notranslate variable">$myStudents</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo<span>;"students") 
+<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$myStudents</span>)<br>
+<br>
+<span class="notranslate command">ON ERR CALL</span>("manageErrors")<br>
+<span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object()</span><br>
+<span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">hostname</span>:="students.acme.com"<br>
+<span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">user</span>:="mary@4d.com"<br>
+<span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">password</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">password</span><br>
+<br>
+<span class="notranslate comment">//local id of this remote datastore is "students"</span><br>
+<span class="notranslate variable">$myStudents</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo<span>;"students") <br>
+<br>
 <span class="notranslate command">ON ERR CALL</span>("")
 </code>
 
