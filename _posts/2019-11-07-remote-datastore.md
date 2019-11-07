@@ -70,8 +70,8 @@ Open datastoreドキュメントをチェックして、安全な接続(TLS)で�
 
 フォームメソッド：
 
-<code  class="fourd"><span class="notranslate keyword">Case of</span>  
-: (<span class="notranslate command">FORM Event</span>.<span class="notranslate objectattribut">code</span>=<span class="notranslate constant">On Load</span>)
+<code class="fourd"><span class="notranslate keyword">Case of</span>  
+ :(<span class="notranslate command">FORM Event</span>.<span class="notranslate objectattribut">code</span>=<span class="notranslate constant">On Load</span>)
 <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">frenchServer</span>:="french.acme.com"
 <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">englishServer</span>:="english.acme.com"
 <span class="notranslate keyword">End case</span></code>
@@ -79,7 +79,7 @@ Open datastoreドキュメントをチェックして、安全な接続(TLS)で�
 
 「フランス人の生徒を見る」ボタンの背後にあるオブジェクトメソッドです：
 
-<code  class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$students</span>)
+<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$students</span>)
 <span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object()</span>
 <span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">hostname</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">frenchServer</span>
 <span class="notranslate variable">$students</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo</span>;"french") <span class="notranslate comment"> //datastore containing French students</span>
