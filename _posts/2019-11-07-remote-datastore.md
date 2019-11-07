@@ -70,7 +70,7 @@ Open datastoreドキュメントをチェックして、安全な接続(TLS)で�
 
 フォームメソッド：
 
-<code><span class="notranslate constant">Case of</span>
+<code  class="fourd"><span class="notranslate keyword">Case of</span>  
 : (<span class="notranslate command">FORM Event</span>.<span class="notranslate objectattribut">code</span>=<span class="notranslate constant">On Load</span>)
 <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">frenchServer</span>:="french.acme.com"
 <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">englishServer</span>:="english.acme.com"
@@ -79,7 +79,7 @@ Open datastoreドキュメントをチェックして、安全な接続(TLS)で�
 
 「フランス人の生徒を見る」ボタンの背後にあるオブジェクトメソッドです：
 
-<code><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$students</span>)
+<code  class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$students</span>)
 <span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object()</span>
 <span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">hostname</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">frenchServer</span>
 <span class="notranslate variable">$students</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo</span>;"french") <span class="notranslate comment"> //datastore containing French students</span>
@@ -88,7 +88,7 @@ Open datastoreドキュメントをチェックして、安全な接続(TLS)で�
 
 「イギリス人の生徒を見る」ボタンの背後にあるオブジェクトメソッドです：
 
-<code><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$students</span>)
+<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$students</span>)
 <span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object()</span>
 <span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">hostname</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">englishServer</span>
 <span class="notranslate variable">$students</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo</span>;"english") <span class="notranslate comment">//datastore containing English students</span>
@@ -100,17 +100,14 @@ Open datastoreコマンドを最初に呼び出した時は、データストア
 
 公開したデータベースを安全に保つために、アクセスにフィルターをかけることができます。Open datastoreコマンドを別の面で見てみましょう。以下のようにユーザーとパスワードを渡すことができます。
 
-<code><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$myStudents</span>)
-
+<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$connectTo</span>;<span class="notranslate variable">$myStudents</span>)
 <span class="notranslate command">ON ERR CALL</span>("manageErrors")
-
 <span class="notranslate variable">$connectTo</span>:=<span class="notranslate command">New object()</span>
 <span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">hostname</span>:="students.acme.com"
 <span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">user</span>:="mary@4d.com"
 <span class="notranslate variable">$connectTo</span>.<span class="notranslate objectattribut">password</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">password</span>
 <span class="notranslate comment">//local id of this remote datastore is "students"</span>
 <span class="notranslate variable">$myStudents</span>:=<span class="notranslate command">Open datastore</span>(<span class="notranslate variable">$connectTo<span>;"students") 
-
 <span class="notranslate command">ON ERR CALL</span>("")
 </code>
 
@@ -128,7 +125,7 @@ Open datastoreコマンドを最初に呼び出した時は、データストア
 
 下記はサンプルです：
 
-<code><span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$1</span>;<span class="notranslate variable">$name</span>;<span class="notranslate variable">$2</span>;<span class="notranslate variable">$password</span>)
+<code class="fourd"><span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$1</span>;<span class="notranslate variable">$name</span>;<span class="notranslate variable">$2</span>;<span class="notranslate variable">$password</span>)
 <span class="notranslate command">C_BOOLEAN</span>(<span class="notranslate variable">$0</span>;<span class="notranslate variable">$result</span>;<span class="notranslate variable">$3</span>;<span class="notranslate variable">$digest</span>)
 <span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$user</span>)
 
