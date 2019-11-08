@@ -11,6 +11,11 @@ type: page
 
 ## 18 # {#v18}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: スタイルシート**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DWP_Stylesheets.zip)<span id="18-0-3"></span><br />
+4D Write Pro でスタイルシートが使えるようになりました。[`WP New style sheet`](https://doc.4d.com/4Dv18/4D/18/WP-New-style-sheet.301-4525302.ja.html)コマンドで新規のスタイルシートを作成し、[`WP Get style sheet`](https://doc.4d.com/4Dv18/4D/18/WP-Get-style-sheet.301-4528127.ja.html)コマンドで既存のスタイルシートを取得できます。そのほかにも次の新コマンドが追加されています:<br />
+[`WP IMPORT STYLE SHEETS`](https://doc.4d.com/4Dv18/4D/18/WP-IMPORT-STYLE-SHEETS.301-4574806.ja.html) 
+[`WP Get style sheets`](https://doc.4d.com/4Dv18/4D/18/WP-Get-style-sheets.301-4574752.ja.html) 
+[`WP DELETE STYLE SHEET`](https://doc.4d.com/4Dv18/4D/18/WP-DELETE-STYLE-SHEET.301-4525464.ja.html) 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 印刷・PDF出力**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DVP_Export_PDF.zip)<span id="18-0-2"></span><br />
 新しく追加された [`VP SET PRINT INFO`](https://doc.4d.com/4Dv18/4D/18/VP-SET-PRINT-INFO.301-4638649.ja.html)コマンドを使って、4D View Pro ドキュメントの印刷属性を設定し、[`VP PRINT`](https://doc.4d.com/4Dv18/4D/18/VP-PRINT.301-4680544.ja.html)コマンドおよび [`VP EXPORT DOCUMENT`](https://doc.4d.com/4Dv18/4D/18/VP-EXPORT-DOCUMENT.301-4522260.ja.html) コマンドを使った印刷やPDF出力機能の紹介です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: リモートデータストア**](https://github.com/4D-JP/HDI/releases/download/18/HDI_Remote_Datastore.zip)<span id="18-0-1"></span><br />
