@@ -11,13 +11,15 @@ type: page
 
 ## 18 # {#v18}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: リモートデータストア**](https://github.com/4D-JP/HDI/releases/download/18/HDI_Remote_Datastore.zip)<span id="17-6-7"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 印刷・PDF出力**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DVP_Export_PDF.zip)<span id="18-0-2"></span><br />
+新しく追加された [`VP SET PRINT INFO`](https://doc.4d.com/4Dv18/4D/18/VP-SET-PRINT-INFO.301-4638649.ja.html)コマンドを使って、4D View Pro ドキュメントの印刷属性を設定し、[`VP PRINT`](https://doc.4d.com/4Dv18/4D/18/VP-PRINT.301-4680544.ja.html)コマンドおよび [`VP EXPORT DOCUMENT`](https://doc.4d.com/4Dv18/4D/18/VP-EXPORT-DOCUMENT.301-4522260.ja.html) コマンドを使った印刷やPDF出力機能の紹介です。
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: リモートデータストア**](https://github.com/4D-JP/HDI/releases/download/18/HDI_Remote_Datastore.zip)<span id="18-0-1"></span><br />
 新しく追加された [`Open datastore`](https://doc.4d.com/4Dv18/4D/18/Open-datastore.301-4675616.ja.html) コマンドを使って、RESTリソースとして公開されている外部の 4D データベースをリモートデータストアの形で取得し、操作することができます。<br />
 これにともない、[`ds`](https://doc.4d.com/4Dv18/4D/18/ds.301-4505926.ja.html)コマンドおよび [`dataStore.getInfo( )`](https://doc.4d.com/4Dv18/4D/18/dataStoregetInfo.305-4505928.ja.html) メンバーメソッドが拡張されています。
 
 ## 17r6 # {#v17r6}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**サーバー管理用 Webインターフェース (コンポーネント)**](https://github.com/4D-JP/HDI/releases/download/17r6/ServerAdministrator_JA.zip)<span id="17-6-7"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**サーバー管理用 Webインターフェース (コンポーネント)**](https://github.com/4D-JP/HDI/releases/download/17r6/ServerAdministrator_JA.zip)<span id="17-6-8"></span><br />
 Webインターフェースを利用して 4D Server を管理するためのサンプルコンポーネントです。
 * <i class="fa fa-download" aria-hidden="true"></i> [**デバッグ・ログ解析ツール**](https://github.com/4D-JP/HDI/releases/download/17r6/4DDebugLogAnalyserv17R6.zip)<span id="17-6-7"></span><br />
 デバッグ・ログを解析するためのサンプルツールです。
