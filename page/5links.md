@@ -84,8 +84,10 @@ type: page
     * [AJUI_Progressbar 1.0](https://ch-fr.4d.com/ajuiprogressbar-10/)
     * [AJUI_Banner 1.5](https://ch-fr.4d.com/ajuibanner-15/)
     * [AJUI_FloatingLabel 1.0](https://ch-fr.4d.com/ajuifloatinglabel)
+    * [ AJUI_Breadcrumb](https://ch-fr.4d.com/ajuibreadcrumb)
     * [AJ_Tools_UnitTest](https://ch-fr.4d.com/ajtoolsunittest)
     * [AJ_Tools_xliff](https://ch-fr.4d.com/ajtoolsxliff)
+
     
 * [Bruno Legay](https://github.com/blegay)
     * aws_component
