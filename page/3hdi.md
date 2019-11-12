@@ -12,7 +12,7 @@ type: page
 ## 18 # {#v18}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**プロジェクトデータベース: スタイルシート**](https://github.com/4D-JP/HDI/releases/download/18/HDI_StyleSheet.zip)<span id="18-0-4"></span><br />
-4D v18 で正式リリースされたプロジェクトデータベースにおいて、スタイルシートの使い方も新しく、より便利になりました。この HDI では、フォームオブジェクトへのスタイルシートの適用方法を紹介します。
+4D v18 で正式リリースされたプロジェクトデータベースにおいて、スタイルシートの使い方も新しく、より便利になりました。この HDI では、フォームオブジェクトへのスタイルシートの適用例を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: スタイルシート**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DWP_Stylesheets.zip)<span id="18-0-3"></span><br />
 4D Write Pro でスタイルシートが使えるようになりました。[`WP New style sheet`](https://doc.4d.com/4Dv18/4D/18/WP-New-style-sheet.301-4525302.ja.html)コマンドで新規のスタイルシートを作成し、[`WP Get style sheet`](https://doc.4d.com/4Dv18/4D/18/WP-Get-style-sheet.301-4528127.ja.html)コマンドで既存のスタイルシートを取得できます。<br />
 そのほかにも次の新コマンドが追加されています: <br />
