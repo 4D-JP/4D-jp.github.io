@@ -30,10 +30,10 @@ author: Vanessa Talbot
 例えば、”ボタン-アクション”クラスを作成して、”ツールボックス”状で、グレイのテキストの、フォーカス化できない4ステート・ボタンを作成することができます。
 
 .buttonAction { <br>
-   iconFrames: 4; <br>
-   style: toolbar; <br>
-   stroke: grey; <br>
-   focusable: false; <br>
+　iconFrames: 4; <br>
+　style: toolbar; <br>
+　stroke: grey; <br>
+　focusable: false; <br>
 } <br>
 
 ![project-database-stylesheet](/images/blog/11-06/buttonActionClass.png)
@@ -47,10 +47,10 @@ author: Vanessa Talbot
 オブジェクトタイプ・セレクター（CSSエレメント・セレクターと同等）を使うと、データベース中の全てのオブジェクトに適用できる汎用的なプロパティーを定義できます。例えば、全てのリストボックス が２行のヘッダーを持ち、空の行は表示されない、列の背景はgainsboroとwhitesmokeにします。
 
 listbox { <br>
- headerHeight: 2em; <br>
- hideExtraBlankRows: true; <br> 
- fill: Gainsborough; <br>
- alternateFill: white smoke; <br>
+　headerHeight: 2em; <br>
+　hideExtraBlankRows: true; <br> 
+　fill: Gainsborough; <br>
+　alternateFill: white smoke; <br>
 
 ![project-database-stylesheet](/images/blog/11-06/listboxTypeSelector.png)
 
@@ -64,9 +64,9 @@ listbox { <br>
 アクションボタンにスタイルシートを作成して、アクションプロパティに特定の値を指定しないのはなぜでしょう。例えば、もしアクションプロパティが”editSubrecord”の場合：
 
 .buttonAction[action=editSubrecord] { <br>
-     icon: url(“/RESOURCES/Images/Buttons/edit.png”); <br>
-     tooltip:  “:Cliff:button_tip_EditRecord”; <br>
-     text: “:xliff:button_EditRecord” !important; <br>
+　icon: url(“/RESOURCES/Images/Buttons/edit.png”); <br>
+　tooltip:  “:Cliff:button_tip_EditRecord”; <br>
+　text: “:xliff:button_EditRecord” !important; <br>
 } <br>
 
 ![project-database-stylesheet](/images/blog/11-06/editSubrecordActionSelector.png)
