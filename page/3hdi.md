@@ -11,6 +11,17 @@ type: page
 
 ## 18 # {#v18}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブルの行やカラムの挿入と削除、選択範囲の取得**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DWP_ManageTable.zip)<span id="18-0-6"></span><br />
+4D Write Pro テーブルの行やカラムを挿入および削除するコマンドが新しく追加されました:<br />
+[`WP Table insert rows`](https://doc.4d.com/4Dv18/4D/18/WP-Table-insert-rows.301-4675336.ja.html)
+[`WP Table insert columns`](https://doc.4d.com/4Dv18/4D/18/WP-Table-insert-columns.301-4675806.ja.html)
+[`WP TABLE DELETE ROWS`](https://doc.4d.com/4Dv18/4D/18/WP-TABLE-DELETE-ROWS.301-4675983.ja.html)
+[`WP TABLE DELETE COLUMNS`](https://doc.4d.com/4Dv18/4D/18/WP-TABLE-DELETE-COLUMNS.301-4675989.ja.html)<br />
+これらの動作をおこなうための標準アクションも追加されており、コンテキストメニューからも利用できます。<br />
+また、次のコマンドが拡張され、テーブル内の選択範囲の情報を取得できるようになりました:<br />
+[`WP Table get rows`](https://doc.4d.com/4Dv18/4D/18/WP-Table-get-rows.301-4523035.ja.html)
+[`WP Table get columns`](https://doc.4d.com/4Dv18/4D/18/WP-Table-get-columns.301-4523034.ja.html)
+[`WP Table get cells`](https://doc.4d.com/4Dv18/4D/18/WP-Table-get-cells.301-4523033.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: SVG ピクチャーへの変換**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DVP_Export_SVG.zip)<span id="18-0-5"></span><br />
 新しく追加された [`VP Convert to picture`](https://doc.4d.com/4Dv18/4D/18/VP-Convert-to-picture.301-4687105.ja.html)コマンドは、4D View Pro ドキュメントを SVG ピクチャーに変換します。このピクチャーをフォームに読み込んで印刷したり、他の (4D Write Pro などの) ドキュメントに埋め込んだりすることができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**プロジェクトデータベース: スタイルシート**](https://github.com/4D-JP/HDI/releases/download/18/HDI_StyleSheet.zip)<span id="18-0-4"></span><br />
