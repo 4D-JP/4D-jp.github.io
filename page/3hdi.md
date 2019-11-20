@@ -12,8 +12,8 @@ type: page
 ## 18 # {#v18}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: イベントの扱い方**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DVP_Events.zip)<span id="18-0-7"></span><br />
-4D v18 で新しく追加された　[`FORM Event`](https://doc.4d.com/4Dv18/4D/18/FORM-Event.301-4522191.ja.html) コマンド使って、[4D View Pro エリア内で発生するイベント](https://doc.4d.com/4Dv18/4D/18/Form-event-code.301-4505020.ja.html#4614553) の情報を取得する方法を紹介します。<br />
-※ 4D v17まで使用されていた`Form event` コマンドは [`Form event code`](https://doc.4d.com/4Dv18/4D/18/Form-event-code.301-4505020.ja.html) に名称変更されています。`Form event code`　と `FORM Event.code` が返す値は同じです。
+4D v18 で新しく追加された [`FORM Event`](https://doc.4d.com/4Dv18/4D/18/FORM-Event.301-4522191.ja.html) コマンド使って、[4D View Pro エリア内で発生するイベント](https://doc.4d.com/4Dv18/4D/18/Form-event-code.301-4505020.ja.html#4614553) の情報を取得する方法を紹介します。<br />
+※ 4D v17まで使用されていた`Form event` コマンドは [`Form event code`](https://doc.4d.com/4Dv18/4D/18/Form-event-code.301-4505020.ja.html) に名称変更されています。`Form event code` と `FORM Event.code` が返す値は同じです。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブルの行やカラムの挿入と削除、選択範囲の取得**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DWP_ManageTable.zip)<span id="18-0-6"></span><br />
 4D Write Pro テーブルの行やカラムを挿入および削除するコマンドが新しく追加されました:<br />
 [`WP Table insert rows`](https://doc.4d.com/4Dv18/4D/18/WP-Table-insert-rows.301-4675336.ja.html)
