@@ -21,7 +21,7 @@ author: Vanessa Talbot
 ![project-database-stylesheet](/images/blog/12-02/structure-768x367.png)
 
 
-プロジェクト・データベースのアーキテクチャについて更に詳しくは、<a href=“https://4d-jp.github.io”>こちらのブログ</a>をチェックしてください。
+プロジェクト・データベースのアーキテクチャについて更に詳しくは、<a href="https://4d-jp.github.io">こちらのブログ</a>をチェックしてください。
 
 #### データ
 開発段階では、データをストラクチャの隣に置くのが簡単でした（例：テスティング、他のコンピュータへ移動、など）。しかし、4Dの新しい機能の多くは特定のパラメータやファイルを保管するのに「データの隣」のコンセプトを使用しているため、開発テストで、ストラクチャの横のファイルではなく、データの横のファイルを使用していることを確認するにはどうすればよいでしょうか。
@@ -44,7 +44,7 @@ author: Vanessa Talbot
 
 要約すると、4Dは「プリファレンス」という語をお互いに関連するユーザー・パラメータに対して使用し、「設定」という語はデータベースに関連するパラメータに使用しています。
 
-より詳しくは<a href=“https://blog.4d.com/deployment-made-easy-with-4d-v18/“>こちらのブログ</a>をご覧ください。
+より詳しくは<a href="https://blog.4d.com/deployment-made-easy-with-4d-v18/">こちらのブログ</a>をご覧ください。
 
 #### 具体的なサンプル
 このビデオでは、<a href=“https://blog.4d.com/project-databases-from-binary-to-text-based/“>前回のブログ</a>でコンバートした”Contacts”データベースを使用します。
