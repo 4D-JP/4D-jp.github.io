@@ -47,7 +47,7 @@ author: Vanessa Talbot
 より詳しくは<a href="https://blog.4d.com/deployment-made-easy-with-4d-v18/">こちらのブログ</a>をご覧ください。
 
 #### 具体的なサンプル
-このビデオでは、<a href=“https://blog.4d.com/project-databases-from-binary-to-text-based/“>前回のブログ</a>でコンバートした”Contacts”データベースを使用します。
+このビデオでは、<a href="https://blog.4d.com/project-databases-from-binary-to-text-based/">前回のブログ</a>でコンバートした”Contacts”データベースを使用します。
 
 最初に、ダイヤグラム中の上記のコンセプトを繰り返し実行し、それから”Contacts”データベースを使って結果を示します。
 
