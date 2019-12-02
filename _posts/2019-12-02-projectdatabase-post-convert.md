@@ -7,7 +7,7 @@ tags: 18.x programming
 author: Vanessa Talbot
 ---
 
-![project-database-stylesheet](/images/blog/12-02/CleaningAfterCnversion.png)
+![project-database-stylesheet](/images/blog/12-02/CleaningAfterConversion.png)
 
 このシリーズのブログでは、バイナリー・データベースをプロジェクト・データベースにコンバートする方法を提示してきました。全ての準備が整い、コンバートが成功したら、プロジェクト・データベースを使って作業を始めることができます。しかし、ここでいくつかの疑問が生じるかもしれません：データベース中の全てのフィアるは役に立つのか？”.4DB”ストラクチャ・ファイルがもはや不要であることは明らかです。他のファイルを消去できるのでしょうか。
 
