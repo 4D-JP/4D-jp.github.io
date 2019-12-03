@@ -3,7 +3,7 @@ layout: post
 title: "HTMLテンプレートと改行コード"
 date: 2019-12-03 10:00:00
 categories: 仕様
-tags: quick-report
+tags: quickreport
 ---
 
 クイックレポートのHTML出力には，カスタムテンプレートを使用することができます。テンプレートは，特殊な「タグ」（``PRCESS 4D TAGS``とは違うタグ）がコメント文で挿入されたHTMLテキストであり，整形されたレポートを出力するために使用されるものです。
