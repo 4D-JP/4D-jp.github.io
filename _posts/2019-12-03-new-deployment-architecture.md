@@ -12,4 +12,4 @@ tags: compatibility
 
 以前の「アーキテクチャ」は，データファイルの場所をストラクチャファイルに記録する，というものでした。そのため，``.4DC``ファイルを入れ替えるたびに，パスを再指定する必要があります。新しいアーキテクチャでは，データファイルのパスが``lastDataPath.xml``という外部ファイルに記録されるので，アプリケーションをアップデートした後もデータファイルのパスを引き継ぐことができます。詳細は，ドキュメントをご覧ください。
 
-<i class="fa fa-external-link" aria-hidden="true"></i> (互換性ページ)[https://doc.4d.com/4Dv17/4D/17.3/Compatibility-page.300-4639726.ja.html]
+<i class="fa fa-external-link" aria-hidden="true"></i> [互換性ページ](https://doc.4d.com/4Dv17/4D/17.3/Compatibility-page.300-4639726.ja.html)
