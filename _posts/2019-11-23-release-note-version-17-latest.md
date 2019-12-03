@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2019-11-29 08:00:00
+date: 2019-11-30 08:00:00
 categories: 修正リスト
 tags: "17.3"  
-build: 245115
+build: 245173
 version: 17.3
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0100178 Windows版のみ。特定のCSVファイルをインポートしようとすると，エラー``215``が返されました。
 
 * ACI0100219 ``SET PRINT OPTION``で用紙・向き・白黒・両面などを設定した後，``SET CURRENT PRINTER``を実行した場合，印刷設定がリセットされました。
 
