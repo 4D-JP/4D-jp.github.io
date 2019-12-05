@@ -11,6 +11,8 @@ type: page
 
 ## 18 # {#v18}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ヘッダーとフッターの高さ制御**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DWP_AutoFitHeaders.zip)<span id="18-0-10"></span><br />
+4D Write Pro ドキュメントのヘッダーとフッターの高さ自動調整機能を無効化できるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro ドキュメントのメール送信**](https://github.com/4D-JP/HDI/releases/download/18/HDI_sendWPDocumentByMail.zip)<span id="18-0-9"></span><br />
 4D Write Pro ドキュメントから出力した MIME を[`MAIL Convert from MIME`](https://doc.4d.com/4Dv18/4D/18/MAIL-Convert-from-MIME.301-4609764.ja.html)コマンドでメールオブジェクトに変換し、メールの本文として送信することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ファイルやフォルダーの圧縮**](https://github.com/4D-JP/HDI/releases/download/18/HDI_CompressFile.zip)<span id="18-0-8"></span><br />
