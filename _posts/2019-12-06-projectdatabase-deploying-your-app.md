@@ -40,4 +40,4 @@ author: Vanessa Talbot
 
 ビデオの最後に、得られたファイルのサイズを比較しています。.4dzは.4dcに比較して5倍小さくなっています。
 
-<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/3gaLJvIdExU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>" </p>
+<p style="text-align: center;"><iframe src="https://www.youtube.com/embed/3gaLJvIdExU" width="560" height="314" frameborder="0" allowfullscreen="allowfullscreen"></iframe>" </p>
