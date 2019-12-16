@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PROJECT DATABASEシリーズ：アプリケーションの運用
+title: PROJECT DATABASESシリーズ：アプリケーションの運用
 date: 2019-12-06 02:00:00
 categories: Tips
 tags: 18.x programming
