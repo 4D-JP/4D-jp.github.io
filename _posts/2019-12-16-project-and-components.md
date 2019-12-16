@@ -26,9 +26,10 @@ author: Vanessa Talbot
 #### What’s what?
 二つの新しいデータベース・パラメータを自由に使用できます：
 
-* もしホストデータベースがプロジェクトの場合</br>
+* もしホストデータベースがプロジェクトの場合
 <code class="fourd"><span class="notranslate variable">$isProject</span>:=<span class="notranslate command">Get database parameter</span>(<span class="notranslate constant">Is host database a project</span>)</code>
 
-* もしカレントデータベースがプロジェクトの場合</br>
+* もしカレントデータベースがプロジェクトの場合
 <code class="fourd"><span class="notranslate variable">$isProject</span>:=<span class="notranslate command">Get database parameter</span>(<span class="notranslate constant">Is current database a project</span>)</code>
+
 
