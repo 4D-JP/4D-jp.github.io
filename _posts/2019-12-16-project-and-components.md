@@ -30,5 +30,5 @@ author: Vanessa Talbot
 <code class="fourd"><span class="notranslate variable">$isProject</span>:=<span class="notranslate command">Get database parameter</span>(<span class="notranslate constant">Is host database a project</span>)</code>
 
 * もしカレントデータベースがプロジェクトの場合</br>
-<code class=“four”><span class="notranslate variable">$isProject</span>:=<span class="notranslate command">Get database parameter</span>(<span class="notranslate constant">Is current database a project</span>)</code>
+<code class="four"><span class="notranslate variable">$isProject</span>:=<span class="notranslate command">Get database parameter</span>(<span class="notranslate constant">Is current database a project</span>)</code>
 
