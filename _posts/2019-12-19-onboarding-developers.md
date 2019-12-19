@@ -7,7 +7,7 @@ tags: 18.x programming
 author: Joel Levy
 ---
 
-![project-database-stylesheet](/images/blog/12-11/sweetwater-1024x512.png)
+![project-database-stylesheet](/images/blog/12-19/sweetwater-1024x512.png)
 
 Sweetwater社の4Dデベロッパー、ジョエル・レヴィーによるブログ
 
@@ -25,12 +25,13 @@ Sweetwater社の4Dデベロッパー、ジョエル・レヴィーによるブ�
 チュートリアルが完了したら、開発者に新規のデータベースを始めてもらい、基本的な”Contact Manager”アプリケーションを作成します。このプロジェクトは通常、2-3営業日を費やします。要求に含まれるのは：
 
 * フィールドを持つ最低でも一つのテーブルを実装する
-* リストボックス＊ を実装する
+* リストボックス（＊） を実装する
 * 日付入力フォームを作る（デフォルトの入力テーブルフォームが多い）
 * csvからアプリケーションにデータを転送することが可能
 * 検索とソート
 * 基本的な印刷機能
-* Webサービス＊＊の統合
+* Webサービス（＊＊）の統合
+
 
 ＊<a href="https://blog.4d.com/tag/listbox/“>リストボックス</a> は様々なソースのデータによってコントロールされ、アプリの全体に様々な形とサイズで表示されます。新しい開発者が、セレクション、配列、コレクション制御のリストボックスに確実にアクセスできるようにすることは、本番アプリケーションを強化するプロセスにとって重要です。新しい開発者は、Contact Managerアプリの中でしばしばコレクション/オブジェクトベースのリストボックスを使う傾向があることが分かりました。 
 
@@ -44,10 +45,8 @@ Sweetwater社の4Dデベロッパー、ジョエル・レヴィーによるブ�
 
 多くの若い専門家を4Dプラットフォームに紹介できるポジションになれたことを喜んでいると、Sweetwaterの全員に話そうと思います。我々のアプリケーションを助けるだけでなく、4Dコミュニティー全体を支援することになるのです。
 
-<footer class="boxed">
-<div style="float:left; max-width : 150px; margin-right: 30px;" ></div>
-<div class="title-user"><a href="https://blog.4d.com/author/joel-ltitle="Posts by Joel Levy" rel="author">ジョエル・レヴィー  Joel Levy</a></div>
-<div class="author-description"><a href="https://www.linkedin.com/in/joel-levy-9a4530104">ジョエル</a>は、Sweetwater Sound社の4Dアプリケーションを2年間専門に担当している4Dデベロッパーです。彼のホームタウンであり、Sweetwaterのホームでもあるインディアナ州フォートウェインで勤務しています。</br>
-Sweetwaterの4Dアプリケーションは12人のチームで管理しています。</div></footer>
+##### ジョエル・レヴィー  Joel Levy
+ジョエルは、Sweetwater Sound社の4Dアプリケーションを2年間専門に担当している4Dデベロッパーです。彼のホームタウンであり、Sweetwaterのホームでもあるインディアナ州フォートウェインで勤務しています。
+Sweetwaterの4Dアプリケーションは12人のチームで管理しています。
 
 
