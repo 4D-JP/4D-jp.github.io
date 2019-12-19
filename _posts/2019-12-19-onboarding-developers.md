@@ -7,7 +7,7 @@ tags: 18.x programming
 author: Joel Levy
 ---
 
-![project-database-stylesheet](/images/blog/12-19/sweetwater-1024x512.png)
+![project-database-stylesheet](/images/blog/12-19/sweetwater-1024x512.jpg)
 
 Sweetwater社の4Dデベロッパー、ジョエル・レヴィーによるブログ
 
