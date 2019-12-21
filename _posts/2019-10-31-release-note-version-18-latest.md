@@ -12,6 +12,12 @@ version: 18.0
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0100330 ``BLOB TO VARIABLE``を``File``オブジェクトに対して使用することができませんでした。
+
+* ACI0100323 プロジェクトモードのみ。バイナリモードのコンポーネントがスタートアップ（``On host``）イベント中に``METHOD GET PATHS``でフォーム定義にアクセスした場合，アプリケーションがクラッシュしました。
+
+* ACI0100297 ``Mail``オブジェクトの``bodyStructure.type``に``multipart/related``が指定されていても，トランスポーターが``multipart/mixed``に設定しました。たとえば，``MAIL Convert from MIME``でWrite ProドキュメントをMIMEに変換した場合，メールを受信したMacのクライアントにはインラインの添付ファイルが本文の後にもう一度表示されました。
+
 * ACI0100337 ``QR PRINT``で印刷したドキュメントのマージンには，プリンターの印刷不可領域に相当するマージンが上下左右に追加されました。
 
 * ACI0100340 Windows版のみ。``QR PRINT``で出力したXPSプレビューのマージンが正しくありませんでした。
