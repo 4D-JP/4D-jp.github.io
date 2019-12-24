@@ -1,6 +1,6 @@
 ---
 layout: fix
-title: "4D v16 修正リスト"
+title: "4D v16.6 修正リスト"
 date: 2019-07-12 17:55:00
 categories: 修正リスト
 tags: "16.6"
