@@ -133,3 +133,5 @@ type: page
     * Tools_TM_export
     * UserMode_Component
     
+* [Vincent de Lachaux](https://github.com/vdelachaux)
+    * [classes](https://github.com/vdelachaux/classes)
