@@ -52,7 +52,7 @@ type: page
 * <i class="fa fa-download" aria-hidden="true"></i> [**サーバー管理用 Webインターフェース (コンポーネント)**](https://github.com/4D-JP/HDI/releases/download/17r6/ServerAdministrator_JA.zip)<span id="17-6-8"></span><br />
 Webインターフェースを利用して 4D Server を管理するためのサンプルコンポーネントです。
 * <i class="fa fa-download" aria-hidden="true"></i> [**デバッグ・ログ解析ツール**](https://github.com/4D-JP/HDI/releases/download/17r6/4DDebugLogAnalyserv17R6.zip)<span id="17-6-7"></span><br />
-デバッグ・ログを解析するためのサンプルツールです。
+デバッグ・ログを解析するためのサンプルツールです。[関連ブログ記事](https://4d-jp.github.io/2019/09/12/a-new-tool-at-your-fingertips-to-analyze-debug-logs/)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ファイル・フォルダーオブジェクトを利用したエクスプローラー**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_FileManager.zip)<span id="17-6-6"></span><br />
 ファイルオブジェクトとフォルダーオブジェクトをドット記法と組み合わせて、独自のリストボックス型ファイルエクスプローラーを作成する例を紹介します。<br />
 [`folder.files( )`](https://doc.4d.com/4Dv17R6/4D/17-R6/folderfiles.305-4311981.ja.html)
