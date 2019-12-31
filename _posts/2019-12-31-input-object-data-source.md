@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "入力フォームオブジェクトのタイプ"
+title: "入力エリアのタイプとバリアント型"
 date: 2019-12-31 12:00:00
 categories: 仕様 
 tags: "17.x"
