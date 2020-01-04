@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2019-12-21 08:00:00
+date: 2020-01-03 08:00:00
 categories: 修正リスト
 tags: "18.0"  
-build: 246179
+build: 246274
 version: 18.0
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0100343 ``HTTP Request``でリモートURLに対してPOSTメソッドを発行した場合，ステータスは``200``であっても，レスポンスが空になることがありました。
 
 * ACI0100341 プロジェクトモードのみ。JSONフォームのテキスト入力オブジェクトの``dataSourceTypeHint``プロパティを``undefined``（プロパティリストの「なし」に相当）に設定した場合，``text``として扱われました。
 
