@@ -3,7 +3,7 @@ layout: post
 title: "標準テキストとハイパーリンク"
 date: 2020-01-16 12:00:00
 categories: 仕様 
-tags: 17.x windows
+tags: 17.x windows userinterface
 version: 17.x
 ---
 
