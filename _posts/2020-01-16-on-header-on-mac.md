@@ -3,8 +3,8 @@ layout: post
 title: "Mac 64ビット版のグラフィック最適化"
 date: 2020-01-16 12:00:00
 categories: 仕様 
-tags: 17.x 
-version: 17.x mac
+tags: 17.x mac userinterface
+version: 17.x
 ---
 
 Mac 64ビット版では，出力フォームをスクロールすると，``On Header``イベントが１度ではなく，何度かコールされることがあります。これは仕様です。Mac 64ビット版（Cocoa）のグラフィック描画は最適化されており，フォームは部分的に再描画されないようになっています。
