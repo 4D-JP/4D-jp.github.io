@@ -3,7 +3,7 @@ layout: post
 title: "OB SETでオブジェクト型フィールドが更新されない"
 date: 2020-01-16 12:00:00
 categories: 仕様 
-tags: 17.x 
+tags: 17.x programming
 version: 17.x
 ---
 
