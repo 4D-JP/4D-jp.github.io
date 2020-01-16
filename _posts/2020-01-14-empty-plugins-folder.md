@@ -3,7 +3,7 @@ layout: post
 title: "4D Internet Commandsのインストール"
 date: 2020-01-14 12:00:00
 categories: 仕様 
-tags: 17.x 
+tags: 17.x internetcommands
 version: 17.x
 ---
 
