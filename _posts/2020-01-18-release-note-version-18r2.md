@@ -453,3 +453,9 @@ version: 18r2
 * ACI0100354 4D View Proでスペルチェックが使用できませんでした。
 
 * ACI0100353 ``LOG FILE TO JSON``を実行するとアプリケーションがクラッシュしました。
+
+* ACI0100440 4D Serverがインストールされたことがないマシン，あるいは``ProgramData/4D Server/VSS``ファイルが削除されたマシンでは，管理者権限で4D Serverを起動しても，VSSサービスが開始されませんでした。``Resources/VSS``フォルダーにある``installService.cmd``スクリプトを実行すれば，問題を解消することができます。
+
+* ACI0100367 Windows版のみ。``OBJECT SET FONT SIZE``の直後に``OBJECT SET FONT STYLE``を実行した場合，アプリケーションがクラッシュしました。
+
+* ACI0100432 18r2で環境設定の「ショートカット」ダイアログでデバッガのショートカットを設定した場合，v18.xでも項目が表示されました。
