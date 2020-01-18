@@ -689,7 +689,7 @@ version: 18.0
 
 * ACI0100199 ビルドしたスタンドアロン版アプリケーションの開始時に``alt``キーを押しても，MSCが起動しませんでした。
 
-ACI0100151	4D Crashes when moving (drag and drop) a filter from a toolbox to another toolbox from the same (or different) 4D version On PROJECT MODE		4D Staff	According to origin
+* ACI0100151 プロジェクトモードのみ。複数のインスタンスを起動し，アプリケーション間でデザインモードのツールボックスからフィルターをドラッグ＆ドロップした場合，アプリケーションがクラッシュしました。
 
 * ACI0100060 Windows版のみ。ODBCドライバーとMS Queryを使用し，4DからExcelにデータをインポートしようとした場合，名称にアンダースコアが含まれているテーブルにアクセスすることができませんでした。MS Excel version 14.0.xの32ビット版とODBC Driver v16.6 HF1であれば，問題ありません。MS Excel version 1808 (MS Office 365) の64ビット版とODBC Driver v16.6 HF1で問題が再現します。
 
