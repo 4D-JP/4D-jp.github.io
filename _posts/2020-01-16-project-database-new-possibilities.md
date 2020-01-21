@@ -9,25 +9,25 @@ author: Vanessa Talbot
 
 ![FormEditor](/images/blog/01-16/FormEditor.png)
 
-<a href=“https://blog.4d.com/tag/project-database/“>プロジェクトモードデータベース</a>を導入してから、いくつかの4Dダイアログのインターフェイスも修正しました。このブログでは、フォームエディターに加えた変更をいくつか提示します。
+<a href="https://blog.4d.com/tag/project-database/">プロジェクトモードデータベース</a>を導入してから、いくつかの4Dダイアログのインターフェイスも修正しました。このブログでは、フォームエディターに加えた変更をいくつか提示します。
 
 #### フォーム・アーキテクチャー
-まずは<a href=“https://developer.4d.com/docs/en/Project/architecture.html#sources-folder”>フォームがどのように組成されるのか</a>を思い出しましょう。
+まずは<a href="https://developer.4d.com/docs/en/Project/architecture.html#sources-folder">フォームがどのように組成されるのか</a>を思い出しましょう。
 
 ![FormArchitecure](/images/blog/01-16/FormArchitecture.png)
 
 フォーム名をつけたフォルダを各フォームごとに作成します：
 
-* プロジェクトフォームに対しては“/SOURCES/Forms”
-* テーブルフォームに対しては “/SOURCES/TablesForms/<TableNumber>”
+* プロジェクトフォームに対しては"/SOURCES/Forms"
+* テーブルフォームに対しては "/SOURCES/TablesForms/<TableNumber>"
 
 各フォームフォルダーは以下の項目で構成されています：
 
  フォーム・ディスクリプション
 * フォーム・メソッド
-* “オブジェクトメソッド” フォルダー
+* "オブジェクトメソッド" フォルダー
   * フォーム・オブジェクト・メソッド
-* “イメージ” フォルダー
+* "イメージ" フォルダー
   * イメージファイル
 
 #### プロパティー・リスト　TIPS
