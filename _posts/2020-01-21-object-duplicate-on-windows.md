@@ -12,3 +12,4 @@ Windows版でフォームオブジェクトを同一メソッド内で非表示�
 OBJECT SET VISIBLE (*;"object";False)
 OBJECT SET COORDINATES*;"object";$left;$top;$right;$bottom)
 OBJECT SET VISIBLE (*;"object";True)
+```
