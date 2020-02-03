@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "RELATE MANYが静かに失敗する"
+title: "RELATE MANYが使用できない場合"
 date: 2020-02-03 08:00:00
 categories: 仕様
 tags: 17.x database userinterface
