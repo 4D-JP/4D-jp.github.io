@@ -1,0 +1,11 @@
+---
+layout: post
+title: "RELATE MANYが静かに失敗する"
+date: 2020-02-03 08:00:00
+categories: 仕様
+tags: 17.x database userinterface
+---
+
+入力フォームでレコードを表示している間，そのテーブルは自動リレーションの対象から除外されます。これは編集中のレコードが意図に反してアンロードされることを防止するための措置であり，仕様です。たとえば，Ｎテーブルの入力フォームでダイアログを表示している場合，``RELATE MANY``でＮテーブルのカレントセレクションを作成することはできません。
+
+https://github.com/4D-JP/4D-jp.github.io/blob/master/_posts/2020-01-24-modal-window-disables-menu-bar.md
