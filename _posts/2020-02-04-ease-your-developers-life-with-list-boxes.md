@@ -37,7 +37,7 @@ author: Marie-Sophie Landrieu-Yvert
 
 Employeeのlastnameを表示するカラムのヘッダーをクリックした際に、lastname<strong>とfirstname</strong>属性のカラムをソートします：
 
-<code class="fourd">
+<code class="fourd"> 
 <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>:=<span class="notranslate command">FORM</span> <span class="notranslate command">Event</span><br />
 <span class="notranslate keyword">Case of</span><br />
 : (<span class="notranslate command">Form</span> <span class="notranslate command">event code</span>=<span class="notranslate constant">On Header Click</span>)<br />
@@ -57,7 +57,7 @@ Employeeのlastnameを表示するカラムのヘッダーをクリックした�
 
 setColorメソッド：
 
-<code class="fourd">
+<code class="fourd"> 
 <span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$event</span>;<span class="notranslate variable">$0</span>;<span class="notranslate variable">$meta</span>)<br />
 <span class="notranslate variable">$event</span>:=<span class="notranslate command">FORM Event</span><br />
 <span class="notranslate variable">$meta</span>:=<span class="notranslate command">New object</span><br />
