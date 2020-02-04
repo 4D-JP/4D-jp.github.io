@@ -47,6 +47,7 @@ Employeeのlastnameを表示するカラムのヘッダーをクリックした�
 <span class="notranslate keyword">End case </span>
 </code>
 
+
 #### ON DISPLAY DETAILSイベント
 
 <strong>On Display Details</strong>イベントがトリガーされる場合、追加される関連のあるプロパティ（例：isRowSelected）は<a href="https://doc.4d.com/4Dv18R2/4D/18-R2/FORM-Event.301-4802931.en.html"><span class="notranslate command">Form event</span></a>コマンドによって返されます。これはリストボックス の行の外観を管理するのに役に立ちます：
@@ -69,6 +70,7 @@ setColorメソッド：
 <span class="notranslate keyword">End case</span> <br />
 <span class="notranslate variable">$0</span>:=<span class="notranslate variable">$meta</span>
 </code>
+
 
 そして行を選択した際のリストボックス の状態です：
 
