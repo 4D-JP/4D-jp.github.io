@@ -44,7 +44,7 @@ Employeeのlastnameを表示するカラムのヘッダーをクリックした�
 <span class="notranslate keyword">if</span> (<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>="lastname")<br />
 <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>.<span class="notranslate objectfunction">orderBy</span>(<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>+", firstname")<br />
 <span class="notranslate keyword">End if</span><br />
-<span class="notranslate keyword">End case </span>
+<span class="notranslate keyword">End case </span><br />
 </code>
 
 
@@ -68,7 +68,7 @@ setColorメソッド：
 <span class="notranslate variable">$meta</span>.<span class="notranslate objectattribut">fill</span>:="lightblue"<br />
 <span class="notranslate keyword">End if</span><br />
 <span class="notranslate keyword">End case</span> <br />
-<span class="notranslate variable">$0</span>:=<span class="notranslate variable">$meta</span>
+<span class="notranslate variable">$0</span>:=<span class="notranslate variable">$meta</span><br />
 </code>
 
 
