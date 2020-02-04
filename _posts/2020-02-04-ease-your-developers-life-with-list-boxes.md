@@ -43,7 +43,8 @@ Employeeのlastnameを表示するカラムのヘッダーをクリックした�
  <span class="notranslate keyword">if</span> (<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>="lastname")<br />
   <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>.<span class="notranslate objectfunction">orderBy</span>(<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>+", firstname")<br />
  <span class="notranslate keyword">End if</span><br />
-<span class="notranslate keyword">End case </span></code>
+<span class="notranslate keyword">End case </span>
+</code>
 
 #### ON DISPLAY DETAILSイベント
 
