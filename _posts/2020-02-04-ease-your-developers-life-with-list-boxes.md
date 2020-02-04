@@ -35,15 +35,17 @@ author: Marie-Sophie Landrieu-Yvert
 
 ![Multiple 4D datasource](/images/blog/02-04/lastNameColumn_Config-1536x456.png)
 
-Employeeのlastnameを表示するカラムのヘッダーをクリックした際に、lastnema<strong>とfirstname</strong>属性のカラムをソートします：
+Employeeのlastnameを表示するカラムのヘッダーをクリックした際に、lastname<strong>とfirstname</strong>属性のカラムをソートします：
 
-<code class="fourd"><span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>:=<span class="notranslate command">FORM</span> <span class="notranslate command">Event</span><br />
+<code class="fourd">
+<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>:=<span class="notranslate command">FORM</span> <span class="notranslate command">Event</span><br />
 <span class="notranslate keyword">Case of</span><br />
 : (<span class="notranslate command">Form</span> <span class="notranslate command">event code</span>=<span class="notranslate constant">On Header Click</span>)<br />
- <span class="notranslate keyword">if</span> (<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>="lastname")<br />
-  <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>.<span class="notranslate objectfunction">orderBy</span>(<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>+", firstname")<br />
- <span class="notranslate keyword">End if</span><br />
-<span class="notranslate keyword">End case </span></code>
+<span class="notranslate keyword">if</span> (<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>="lastname")<br />
+<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>.<span class="notranslate objectfunction">orderBy</span>(<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>+", firstname")<br />
+<span class="notranslate keyword">End if</span><br />
+<span class="notranslate keyword">End case </span>
+</code>
 
 #### ON DISPLAY DETAILSイベント
 
@@ -55,16 +57,18 @@ Employeeのlastnameを表示するカラムのヘッダーをクリックした�
 
 setColorメソッド：
 
-<code class="fourd"><span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$event</span>;<span class="notranslate variable">$0</span>;<span class="notranslate variable">$meta</span>)<br />
+<code class="fourd">
+<span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$event</span>;<span class="notranslate variable">$0</span>;<span class="notranslate variable">$meta</span>)<br />
 <span class="notranslate variable">$event</span>:=<span class="notranslate command">FORM Event</span><br />
 <span class="notranslate variable">$meta</span>:=<span class="notranslate command">New object</span><br />
 <span class="notranslate keyword">Case of</span> <br />
 : (<span class="notranslate variable">$event</span>.<span class="notranslate objectattribut">code</span>=<span class="notranslate constant">On Display Detail</span>)<br />
- <span class="notranslate keyword">If</span> (<span class="notranslate variable">$event</span>.<span class="notranslate objectattribut">isRowSelected</span>) <span class="notranslate comment">//set color when row is selected</span><br />
-  <span class="notranslate variable">$meta</span>.<span class="notranslate objectattribut">fill</span>:="lightblue"<br />
- <span class="notranslate keyword">End if</span><br />
+<span class="notranslate keyword">If</span> (<span class="notranslate variable">$event</span>.<span class="notranslate objectattribut">isRowSelected</span>) <span class="notranslate comment">//set color when row is selected</span><br />
+<span class="notranslate variable">$meta</span>.<span class="notranslate objectattribut">fill</span>:="lightblue"<br />
+<span class="notranslate keyword">End if</span><br />
 <span class="notranslate keyword">End case</span> <br />
-<span class="notranslate variable">$0</span>:=<span class="notranslate variable">$meta</span></code>
+<span class="notranslate variable">$0</span>:=<span class="notranslate variable">$meta</span>
+</code>
 
 そして行を選択した際のリストボックス の状態です：
 
