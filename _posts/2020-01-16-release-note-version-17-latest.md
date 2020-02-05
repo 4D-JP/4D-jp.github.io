@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2020-01-31 08:00:00
+date: 2020-02-04 08:00:00
 categories: 修正リスト
 tags: "17.3"  
-build: 247838
+build: 248004
 version: 17.3
 ---
 
@@ -56,3 +56,5 @@ version: 17.3
 * ACI0099227  値が無限（``INF``）の数値を``OB SET``でオブジェクトのプロパティにセットした場合，値が``Null``に変換されませんでした。``INF``がセットされたオブジェクトを``JSON Parse``で解析すると，ランタイムエラーが返され，処理することができません。
 
 ``注記``: [ECMAScript](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf)およびRFC4627によれば，``Infinity``および``NaN``は``Null``に変換されるべきです。
+
+* ACI0100482 コンパイルモードで``vPict:=vPict``のように，ピクチャ型の変数に値を自己代入した場合，ピクチャが消滅しました。
