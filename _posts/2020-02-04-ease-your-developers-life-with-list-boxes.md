@@ -59,10 +59,10 @@ setColorメソッド：
 <span class="notranslate variable">$event</span>:=<span class="notranslate command">FORM Event</span><br />
 <span class="notranslate variable">$meta</span>:=<span class="notranslate command">New object</span><br />
 <span class="notranslate keyword">Case of</span> <br />
-&#x3a; (<span class="notranslate variable">$event</span>.<span class="notranslate objectattribut">code</span>=<span class="notranslate constant">On Display Detail</span>)<br />
-<span class="notranslate keyword">If</span> (<span class="notranslate variable">$event</span>.<span class="notranslate objectattribut">isRowSelected</span>) <span class="notranslate comment">//set color when row is selected</span><br />
-<span class="notranslate variable">$meta</span>.<span class="notranslate objectattribut">fill</span>:="lightblue"<br />
-<span class="notranslate keyword">End if</span><br />
+&nbsp;&#x3a; (<span class="notranslate variable">$event</span>.<span class="notranslate objectattribut">code</span>=<span class="notranslate constant">On Display Detail</span>)<br />
+<span class="notranslate keyword">&nbsp;&nbsp;If</span> (<span class="notranslate variable">$event</span>.<span class="notranslate objectattribut">isRowSelected</span>) <span class="notranslate comment">//set color when row is selected</span><br />
+<span class="notranslate variable">&nbsp;&nbsp;&nbsp;&nbsp;$meta</span>.<span class="notranslate objectattribut">fill</span>:="lightblue"<br />
+<span class="notranslate keyword">&nbsp;&nbsp;End if</span><br />
 <span class="notranslate keyword">End case</span> <br />
 <span class="notranslate variable">$0</span>:=<span class="notranslate variable">$meta</span><br /></code>
 
