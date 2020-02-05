@@ -18,7 +18,7 @@ macOS 10.14.4
 
 ・・・となっています。
 
-https://developer.4d.com/4d-for-ios/docs/en/prerequisites.html
+(https://developer.4d.com/4d-for-ios/docs/en/prerequisites.html)
 
 4D v18 LTSのシステム要件は・・・
 
@@ -26,7 +26,7 @@ macOS High Sierra (10.13) – macOS Catalina (10.15)
 
 ・・・ですが，上述した問題が発生するようであれば，MojaveまたはCatalinaを使用することが推奨されています。
 
-https://jp.4d.com/product-download/4D-v18-LTS
+(https://jp.4d.com/product-download/4D-v18-LTS)
 
 開発プラットフォームをアップグレードすることが難しい場合，下記いずれかの方法で問題を回避することができます。
 
