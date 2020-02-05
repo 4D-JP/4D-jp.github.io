@@ -37,12 +37,12 @@ author: Marie-Sophie Landrieu-Yvert
 
 Employeeのlastnameを表示するカラムのヘッダーをクリックした際に、lastname<strong>とfirstname</strong>属性のカラムをソートします：
 
-<code class="fourd"><span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>:=<span class="notranslate command">FORM</span> <span class="notranslate command">Event</span>
-<span class="notranslate keyword">Case of</span>
+<code class="fourd"><span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>:=<span class="notranslate command">FORM</span> <span class="notranslate command">Event</span><br />
+<span class="notranslate keyword">Case of</span><br />
 &nbsp;&#x3a; (<span class="notranslate command">Form</span> <span class="notranslate command">event code</span>=<span class="notranslate constant">On Header Click</span>)
-<span class="notranslate keyword">&nbsp;&nbsp;If</span> (<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>="lastname")
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>.<span class="notranslate objectfunction">orderBy</span>(<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>+", firstname")
-<span class="notranslate keyword">&nbsp;&nbsp;End if</span>
+<span class="notranslate keyword">&nbsp;&nbsp;If</span> (<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>="lastname")<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>.<span class="notranslate objectfunction">orderBy</span>(<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>+", firstname")<br />
+<span class="notranslate keyword">&nbsp;&nbsp;End if</span><br />
 <span class="notranslate keyword">End case </span></code>
 
 #### On Display Detailイベント
