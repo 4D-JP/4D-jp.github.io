@@ -37,20 +37,17 @@ author: Marie-Sophie Landrieu-Yvert
 
 Employeeのlastnameを表示するカラムのヘッダーをクリックした際に、lastname<strong>とfirstname</strong>属性のカラムをソートします：
 
-<code class="fourd"> 
-<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>:=<span class="notranslate command">FORM</span> <span class="notranslate command">Event</span><br />
+<code class="fourd"><span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>:=<span class="notranslate command">FORM</span> <span class="notranslate command">Event</span><br />
 <span class="notranslate keyword">Case of</span><br />
 : (<span class="notranslate command">Form</span> <span class="notranslate command">event code</span>=<span class="notranslate constant">On Header Click</span>)<br />
-<span class="notranslate keyword">if</span> (<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>="lastname")<br />
+<span class="notranslate keyword">If</span> (<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>="lastname")<br />
 <span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>.<span class="notranslate objectfunction">orderBy</span>(<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>+", firstname")<br />
 <span class="notranslate keyword">End if</span><br />
-<span class="notranslate keyword">End case </span><br />
-</code>
+<span class="notranslate keyword">End case </span><br /></code>
 
+#### On Display Detailイベント
 
-#### ON DISPLAY DETAILSイベント
-
-<strong>On Display Details</strong>イベントがトリガーされる場合、追加される関連のあるプロパティ（例：isRowSelected）は<a href="https://doc.4d.com/4Dv18R2/4D/18-R2/FORM-Event.301-4802931.en.html"><span class="notranslate command">Form event</span></a>コマンドによって返されます。これはリストボックス の行の外観を管理するのに役に立ちます：
+<strong>On Display Detail</strong>イベントがトリガーされる場合、追加される関連のあるプロパティ（例：isRowSelected）は<a href="https://doc.4d.com/4Dv18R2/4D/18-R2/FORM-Event.301-4802931.en.html"><span class="notranslate command">Form event</span></a>コマンドによって返されます。これはリストボックス の行の外観を管理するのに役に立ちます：
 
 以下はリストボックス の<a href="https://doc.4d.com/4Dv18R2/4D/18-R2/List-box-specific-properties.300-4824135.en.html"><em>Meta info expression</em></a>プロパティのメソッド(setColor)のサンプルです：
 
