@@ -39,7 +39,7 @@ Employeeのlastnameを表示するカラムのヘッダーをクリックした�
 
 <code class="fourd"><span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>:=<span class="notranslate command">FORM</span> <span class="notranslate command">Event</span><br />
 <span class="notranslate keyword">Case of</span><br />
-&nbsp;&#x3a; (<span class="notranslate command">Form</span> <span class="notranslate command">event code</span>=<span class="notranslate constant">On Header Click</span>)
+&nbsp;&#x3a; (<span class="notranslate command">Form</span> <span class="notranslate command">event code</span>=<span class="notranslate constant">On Header Click</span>)<br />
 <span class="notranslate keyword">&nbsp;&nbsp;If</span> (<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>="lastname")<br />
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>.<span class="notranslate objectfunction">orderBy</span>(<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>+", firstname")<br />
 <span class="notranslate keyword">&nbsp;&nbsp;End if</span><br />
