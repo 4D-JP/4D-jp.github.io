@@ -20,7 +20,7 @@ author: Marie-Sophie Landrieu-Yvert
 イベントによって、追加された関連のあるプロパティが<a href="https://doc.4d.com/4Dv18R2/4D/18-R2/FORM-Event.301-4802931.en.html"><span class="notranslate command">Form event</span></a>コマンドによって返されます。
 いくつかサンプルをチェックしてみましょう。
 
-#### ON HEADER CLICKイベント
+#### On Header Clickイベント
 
 ヘッダーオブジェクトの名称、カラムオブジェクトの名称、カラム番号は<a href="https://doc.4d.com/4Dv18R2/4D/18-R2/FORM-Event.301-4802931.en.html"><span class="notranslate command">Form event</span></a>コマンドによって返されます。以下のサンプルは、<strong>On Header Click</strong>イベントでトリガーされた時にオブジェクトを返す例です。
 
@@ -37,13 +37,13 @@ author: Marie-Sophie Landrieu-Yvert
 
 Employeeのlastnameを表示するカラムのヘッダーをクリックした際に、lastname<strong>とfirstname</strong>属性のカラムをソートします：
 
-<code class="fourd"><span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>:=<span class="notranslate command">FORM</span> <span class="notranslate command">Event</span><br />
-<span class="notranslate keyword">Case of</span><br />
-&#x3a; (<span class="notranslate command">Form</span> <span class="notranslate command">event code</span>=<span class="notranslate constant">On Header Click</span>)<br />
-<span class="notranslate keyword">If</span> (<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>="lastname")<br />
-<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>.<span class="notranslate objectfunction">orderBy</span>(<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>+", firstname")<br />
-<span class="notranslate keyword">End if</span><br />
-<span class="notranslate keyword">End case </span><br /></code>
+<code class="fourd"><span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>:=<span class="notranslate command">FORM</span> <span class="notranslate command">Event</span>
+<span class="notranslate keyword">Case of</span>
+&#x3a; (<span class="notranslate command">Form</span> <span class="notranslate command">event code</span>=<span class="notranslate constant">On Header Click</span>)
+<span class="notranslate keyword">If</span> (<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>="lastname")
+<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>:=<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">employees</span>.<span class="notranslate objectfunction">orderBy</span>(<span class="notranslate command">Form</span>.<span class="notranslate objectattribut">event</span>.<span class="notranslate objectattribut">columnName</span>+", firstname")
+<span class="notranslate keyword">End if</span>
+<span class="notranslate keyword">End case </span></code>
 
 #### On Display Detailイベント
 
