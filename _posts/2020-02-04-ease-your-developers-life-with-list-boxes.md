@@ -22,7 +22,7 @@ author: Marie-Sophie Landrieu-Yvert
 
 #### ON HEADER CLICKイベント
 
-ヘッダーオブジェクトの名称、カラムオブジェクトの名称、カラム番号は<a href="https://doc.4d.com/4Dv18R2/4D/18-R2/FORM-Event.301-4802931.en.html"><span class="notranslate command">Form event</span></a>コマンドによって返されます。以下のサンプルは、<strong>On Header Click</ strong>イベントでトリガーされた時にオブジェクトを返す例です。
+ヘッダーオブジェクトの名称、カラムオブジェクトの名称、カラム番号は<a href="https://doc.4d.com/4Dv18R2/4D/18-R2/FORM-Event.301-4802931.en.html"><span class="notranslate command">Form event</span></a>コマンドによって返されます。以下のサンプルは、<strong>On Header Click</strong>イベントでトリガーされた時にオブジェクトを返す例です。
 
 <pre>{"headerName":"headerLastname", <span class="notranslate comment">// <strong>New property</strong> - Header object name</span>
 "columnName":"lastname", <span class="notranslate comment">// <strong>New property</strong> - Column object name</span>
