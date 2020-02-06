@@ -12,7 +12,7 @@ type: page
 ## 18r2 # {#v18r2}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 行やカラムの操作**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DVP_ColumnRowManagement.zip)<span id="18-2-2"></span><br />
-新しいコマンドの追加により、行やカラムの操作が簡単におこなえます:</ br>
+新しいコマンドの追加により、行やカラムの操作が簡単におこなえます:<br />
 [`VP DELETE ROWS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-DELETE-ROWS.301-4761518.ja.html)
 [`VP DELETE COLUMNS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-DELETE-COLUMNS.301-4761512.ja.html)
 [`VP INSERT ROWS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-INSERT-ROWS.301-4761530.ja.html)
