@@ -11,6 +11,18 @@ type: page
 
 ## 18r2 # {#v18r2}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 行やカラムの操作**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DVP_ColumnRowManagement.zip)<span id="18-2-2"></span><br />
+新しいコマンドの追加により、行やカラムの操作が簡単におこなえます:</ br>
+[`VP DELETE ROWS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-DELETE-ROWS.301-4761518.ja.html)
+[`VP DELETE COLUMNS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-DELETE-COLUMNS.301-4761512.ja.html)
+[`VP INSERT ROWS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-INSERT-ROWS.301-4761530.ja.html)
+[`VP INSERT COLUMNS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-INSERT-COLUMNS.301-4761524.ja.html)
+[`VP SET ROW COUNT`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-SET-ROW-COUNT.301-4833138.ja.html)
+[`VP SET COLUMN COUNT`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-SET-COLUMN-COUNT.301-4833116.ja.html)
+[`VP SET ROW ATTRIBUTES`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-SET-ROW-ATTRIBUTES.301-4761500.ja.html)
+[`VP SET COLUMN ATTRIBUTES`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-SET-COLUMN-ATTRIBUTES.301-4761486.ja.html)
+[`VP ROW AUTOFIT`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-ROW-AUTOFIT.301-4833105.ja.html)
+[`VP COLUMN AUTOFIT`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-COLUMN-AUTOFIT.301-4833094.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスイベントの活用例**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_Listbox_Events.zip)<span id="18-2-1"></span><br />
 4D v18 で新しく追加された [`FORM Event`](https://doc.4d.com/4Dv18/4D/18/FORM-Event.301-4522191.ja.html) コマンド使い、リストボックスのイベントが提供する詳細情報の活用例を紹介します。
 
