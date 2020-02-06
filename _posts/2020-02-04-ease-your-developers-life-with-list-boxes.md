@@ -15,7 +15,7 @@ author: Marie-Sophie Landrieu-Yvert
 
 
 {:.download}
-[HDI: リストボックス ・イベントで簡単に動くサンプル](https://download.4d.com/Demos/4D_v18_R2/HDI_Listbox_Events.zip)
+[HDI: リストボックス ・イベントで簡単に動くサンプル](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_Listbox_Events.zip)
 
 イベントによって、追加された関連のあるプロパティが<a href="https://doc.4d.com/4Dv18R2/4D/18-R2/FORM-Event.301-4802931.en.html"><span class="notranslate command">Form event</span></a>コマンドによって返されます。
 いくつかサンプルをチェックしてみましょう。
