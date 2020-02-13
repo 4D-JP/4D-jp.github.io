@@ -11,8 +11,16 @@ type: page
 
 ## 18r2 # {#v18r2}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラの操作**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DWP_GetSetFormulas.zip)<span id="18-2-3"></span><br />
+新しいコマンドの追加により、4D Write Pro ドキュメントにおけるフォーミュラの操作が簡単におこなえます:<br />
+[`WP Get formulas`](https://doc.4d.com/4Dv18R2/4D/18-R2/WP-Get-formulas.301-4829012.ja.html)
+[`WP INSERT FORMULA`](https://doc.4d.com/4Dv18R2/4D/18-R2/WP-INSERT-FORMULA.301-4831015.ja.html)
+[`WP COMPUTE FORMULAS`](https://doc.4d.com/4Dv18R2/4D/18-R2/WP-COMPUTE-FORMULAS.301-4831142.ja.html)
+[`WP FREEZE FORMULAS`](https://doc.4d.com/4Dv18R2/4D/18-R2/WP-FREEZE-FORMULAS.301-4831166.ja.html)<br />
+また、$wp_pageCount や $wp_author のような予約されたローカル変数は、新しく使いやすい This.property 形式でも提供されるようになりました。
+![予約変数の対応表](/images/HDI_4DWP_GetSetFormulas-ReservedVariables.png){: .align-center}
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 行やカラムの操作**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DVP_ColumnRowManagement.zip)<span id="18-2-2"></span><br />
-新しいコマンドの追加により、行やカラムの操作が簡単におこなえます:<br />
+新しいコマンドの追加により、4D View Pro の行やカラムの操作が簡単におこなえます:<br />
 [`VP DELETE ROWS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-DELETE-ROWS.301-4761518.ja.html)
 [`VP DELETE COLUMNS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-DELETE-COLUMNS.301-4761512.ja.html)
 [`VP INSERT ROWS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-INSERT-ROWS.301-4761530.ja.html)
