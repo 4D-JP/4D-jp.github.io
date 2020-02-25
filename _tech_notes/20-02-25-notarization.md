@@ -508,9 +508,13 @@ $ ./notary_script.sh
 Mac App Storeの外で配付されるMacソフトウェアをmacOS Catalinaで実行するためには，ノタリゼーション（公証）が引き続き必要です。アプリが公証に合格するための条件は，2020年1月まで，下記のとおり緩和されています（ログに警告が出力されますが，エラーにはなりません）。
 
 　a. "Hardened Runtime"のcapabilityがentitlementsに含まれていない
+ 
 　b. コンポーネントがApple Developer IDでコード署名されていない
+ 
 　c. コード署名にセキュアなタイムスタンプが含まれていない
+ 
 　d. 10.9以前のSDKでビルドされている
+ 
 　e. "com.apple.security.get-task-allow"（プラグインのデバッグ等に必要）がentitlementsで有効にされている
 
 ### 解説：
