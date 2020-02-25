@@ -35,19 +35,17 @@ $ spctl -av {PATH_TO_APP}
 　　例：
 ```
 $ spctl -av "/Users/elui/Desktop/notarize_v18.app" 
-
 ```
 
 a. 署名が有効の場合は、出力は以下のようになります：
 ```
 /Users/elui/Desktop/notarize_v18.app: accepted
 source=Developer ID
-
 ```
 
-3. アプリを圧縮します（あるいは署名したDMGに入れます）。
+3.  アプリを圧縮します（あるいは署名したDMGに入れます）。
 
-4. アプリに特定のパスワードを生成します（公証のステップ中のログイン信任状に必要です）。
+4.  アプリに特定のパスワードを生成します（公証のステップ中のログイン信任状に必要です）。
 
 　　a. Applied.apple.comにログインします。
 
@@ -57,7 +55,7 @@ source=Developer ID
 
 　　d. このパスワードをクリップボードかキーチェーンパスワードにコピーします。後半のステップで使用します。
 
-5. 以下のターミナル・コマンドを使ってアプリを公証します：
+5.  以下のターミナル・コマンドを使ってアプリを公証します：
 
 ```
 $ xcrun altool --notarize-app --verbose --file           
@@ -86,7 +84,7 @@ No errors uploading ‘/Users/elui/Desktop/notarize_v18.zip’
 RequestUUID = 23fc455c-9314-4495-b309-808f2e4cc40e
 ```
 
-6. 全てのアップロードされたアプリの公証の履歴をチェックします（最新のアプリは一番上にリストされます）。
+6.  全てのアップロードされたアプリの公証の履歴をチェックします（最新のアプリは一番上にリストされます）。
 
 ```
 $ xcrun altool --notarization-history 0 --username {APPLE_EMAIL}
@@ -107,7 +105,7 @@ password abcd-efgh-ijkl-lmop
 
 ![図3：公証成功](/images/notarization/success.png){: .align-center}
 
-7. 公証の警告をチェックします。
+7.  公証の警告をチェックします。
 
 　　a. ステップ6からRequestUUIDを使って、以下のコマンドを走らせます：
   
@@ -133,7 +131,7 @@ $ xcrun altool --notarization-info 23fc455c-9314-4495-b309-
 
 ![図6：問題をチェック](/images/notarization/issue-check.png){: .align-center}
 
-8. 配布チケットを貼り付けます。
+8.  配布チケットを貼り付けます。
 
 　　a. チケットの目的は、Gatekeeperに「いつユーザーがダウンロードしても、あるいはアプリを動かしても、アプリが公証されている」ことを伝えて、Appleサーバーでチェックされることなく、macOS上でアプリを動かすことができるようにすることです。
 
@@ -156,7 +154,7 @@ Processing: /Users/elui/Desktop/notarize_v18.app
 The staple and validate action worked!
 ```
 
-9. 公証と貼付を成功させるために最後のチェックをします。
+9.  公証と貼付を成功させるために最後のチェックをします。
 
 　　a. もしここまでの手順が正常に実行されているならば、ステップ2と同じターミナル・コマンドを走らせます。
 
@@ -178,6 +176,7 @@ source=Notarized Developer ID
 ```
 
 　　c. 貼付が成功しているかを見るのには、以下のコマンドを走らせます：
+  
 ```
 $ stapler validate {PATH_TO_NOTARIZED_APP}
 ```
@@ -195,7 +194,7 @@ Processing: /Users/elui/Desktop/notarize_v18.app
 The validate action worked!
 ```
 
-10. ZIP/ DMG/ PKGなど公証されて貼付された4Dアプリケーションを配布する準備ができました。
+10.  ZIP/ DMG/ PKGなど公証されて貼付された4Dアプリケーションを配布する準備ができました。
 
 ## 免責事項：　2020年1月までの簡略化された公証要件
 
@@ -237,13 +236,13 @@ Https://deveoper.apple.com/documentation/budleresources/entitlements
 
 ビルドされた4Dアプリケーションは、Info.plistファイルを持っているので、このファイルをコピーしてほかのプロパティリスト・ファイルを作成することや、entitlements.plistに名前を変えて、適正なエンタイトルメントを使って修正することができます。
 
-1. /path/to/yourBuilgApp.app/Contents/に移動します。
+1.  /path/to/yourBuilgApp.app/Contents/に移動します。
 
-2. Info.plistをコピーして、ビルドされたアプリの横のような、アクセスしやすいディレクトリにペーストします。
+2.  Info.plistをコピーして、ビルドされたアプリの横のような、アクセスしやすいディレクトリにペーストします。
 
-3. Info.plistをentitlements.plistにリネームします。
+3.  Info.plistをentitlements.plistにリネームします。
 
-4. コンテンツを修正するために、entitlements.plistファイルは以下のコマンドを使ってXMLフォーマットに変換します：
+4.  コンテンツを修正するために、entitlements.plistファイルは以下のコマンドを使ってXMLフォーマットに変換します：
 
 ```
 $ plutil -convert xml1 {PATH_TO_PLIST_FILE}
@@ -256,9 +255,9 @@ $ plutil -convert xml1
 "/Users/elui/Desktop/myApp/entitlements.plist"
 ```
 
-5. Entitlements.plistをコードエディター（例：AtomやSublime）を使って開きます。変換した後で、フォーマットは読むことや編集することがとても簡単になると気づくでしょう。
+5.  Entitlements.plistをコードエディター（例：AtomやSublime）を使って開きます。変換した後で、フォーマットは読むことや編集することがとても簡単になると気づくでしょう。
 
-6. <dict>タグを持つ全てのコンテンツを削除します。結果は以下のようになります：
+6.  <dict>タグを持つ全てのコンテンツを削除します。結果は以下のようになります：
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -270,7 +269,7 @@ $ plutil -convert xml1
 </plist>
 ```
 
-7. Disable Executable Memory Protection Entitlementにtrueを付与し、ファイルを保存します。結果は次のようになります。
+7.  Disable Executable Memory Protection Entitlementにtrueを付与し、ファイルを保存します。結果は次のようになります。
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -285,7 +284,7 @@ $ plutil -convert xml1
 
 ```
 
-8. Entitlements.plistファイルは、アプリケーション内で特定のコンテンツに署名する際に使用する準備ができました。
+8.  Entitlements.plistファイルは、アプリケーション内で特定のコンテンツに署名する際に使用する準備ができました。
 
 ### 徹底的に署名する - ネイティブ・コンポーネント、フレームワーク、プラグイン
 
