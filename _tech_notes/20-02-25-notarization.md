@@ -1,7 +1,7 @@
 ---
 layout: technote
 original_title: Notarizing a Built 4D Application in v17 and v18
-title: “v17とv18の4Dアプリケーションのビルドを公証する”
+title: v17とv18の4Dアプリケーションのビルドを公証する
 author: Erick Lui
 position: Technical Services Engineer, 4D Inc.
 date: 2019-12-30 00:00:00
