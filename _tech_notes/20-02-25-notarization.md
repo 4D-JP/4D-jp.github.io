@@ -24,10 +24,10 @@ v18を使用する最大のメリットは、「アプリケーションに署�
 
 スタンドアロンでビルドされたv18アプリの公証は、以下のステップで行います：
 
-1. 「アプリケーションに署名」設定にチェックして、認証名を入力して、アプリケーションをビルドします。
+　1. 「アプリケーションに署名」設定にチェックして、認証名を入力して、アプリケーションをビルドします。
 ![図１：アプリケーションに署名設定](/images/notarization/sign-application.png){: .align-center}
 
-2.  アプリが有効な署名を持っているか確認します（オプション）：
+　2.  アプリが有効な署名を持っているか確認します（オプション）：
 ```
 $ spctl -av {PATH_TO_APP}
 ```
@@ -37,25 +37,25 @@ $ spctl -av {PATH_TO_APP}
 $ spctl -av "/Users/elui/Desktop/notarize_v18.app" 
 ```
 
-a. 署名が有効の場合は、出力は以下のようになります：
+　　a. 署名が有効の場合は、出力は以下のようになります：
 ```
 /Users/elui/Desktop/notarize_v18.app: accepted
 source=Developer ID
 ```
 
-3.  アプリを圧縮します（あるいは署名したDMGに入れます）。
+　3.  アプリを圧縮します（あるいは署名したDMGに入れます）。
 
-4.  アプリに特定のパスワードを生成します（公証のステップ中のログイン信任状に必要です）。
+　4.  アプリに特定のパスワードを生成します（公証のステップ中のログイン信任状に必要です）。
 
-　　a. Applied.apple.comにログインします。
+　　　a. Applied.apple.comにログインします。
 
-　　b. “Security”セレクションの中で、”Generate Password…”をクリックします。
+　　　b. “Security”セレクションの中で、”Generate Password…”をクリックします。
 
-　　c. ![図１：セキュリティにパスワード設定](/images/notarization/security-password.png){: .align-center}
+　　　c. ![図１：セキュリティにパスワード設定](/images/notarization/security-password.png){: .align-center}
 
-　　d. このパスワードをクリップボードかキーチェーンパスワードにコピーします。後半のステップで使用します。
+　　　d. このパスワードをクリップボードかキーチェーンパスワードにコピーします。後半のステップで使用します。
 
-5.  以下のターミナル・コマンドを使ってアプリを公証します：
+　5.  以下のターミナル・コマンドを使ってアプリを公証します：
 
 ```
 $ xcrun altool --notarize-app --verbose --file           
@@ -63,11 +63,11 @@ $ xcrun altool --notarize-app --verbose --file
 {APPLE_EMAIL} --password {APP_SPECIFIC_PASSWORD}
 ```
 
-　　a. ”-- verbose”は、情報やエラーの詳細な表示に役に立つフラッグです。
+　　　a. ”-- verbose”は、情報やエラーの詳細な表示に役に立つフラッグです。
 
-　　b. {BUNDLE_ID}は自分で名前をつけることができる識別子です。ダッシュまたはアンダースコアは使用できません。（例： com.4d.myApp)
+　　　b. {BUNDLE_ID}は自分で名前をつけることができる識別子です。ダッシュまたはアンダースコアは使用できません。（例： com.4d.myApp)
 
-　　例：
+　　　例：
 
 ```
 $ xcrun altool --notarize-app --verbose --file
@@ -75,126 +75,126 @@ $ xcrun altool --notarize-app --verbose --file
 com.4d.myApp --username elui@4d.com --password abcd-efgh-ijkllmop
 ```
 
-　　c. アプリのサイズによりますが、アップロードには数分かかる場合があります。
+　　　c. アプリのサイズによりますが、アップロードには数分かかる場合があります。
 
-　　d. アップロードに成功したら、ターミナルに出力が表示されます。
+　　　d. アップロードに成功したら、ターミナルに出力が表示されます。
   
 ```
 No errors uploading ‘/Users/elui/Desktop/notarize_v18.zip’
 RequestUUID = 23fc455c-9314-4495-b309-808f2e4cc40e
 ```
 
-6.  全てのアップロードされたアプリの公証の履歴をチェックします（最新のアプリは一番上にリストされます）。
+　6.  全てのアップロードされたアプリの公証の履歴をチェックします（最新のアプリは一番上にリストされます）。
 
 ```
 $ xcrun altool --notarization-history 0 --username {APPLE_EMAIL}
 --password {APP_SPECIFIC_PASSWORD}
 ```
 
-　　例：
+　　　例：
   
 ```
 $ xcrun altool --notarization-history 0 --username elui@4d.com -
 password abcd-efgh-ijkl-lmop
 ```
-　　a. 公証の状況は、初めてアップロードした時には”in progress”が表示されます。
+　　　a. 公証の状況は、初めてアップロードした時には”in progress”が表示されます。
   
 ![図2：In progress表示](/images/notarization/inprogress.png){: .align-center}
 
-　　b. だいたい3-5分後に、公証履歴コマンドラインを再度走らせます。公証が成功すると以下のメッセージが表示されます。
+　　　b. だいたい3-5分後に、公証履歴コマンドラインを再度走らせます。公証が成功すると以下のメッセージが表示されます。
 
 ![図3：公証成功](/images/notarization/success.png){: .align-center}
 
-7.  公証の警告をチェックします。
+　7.  公証の警告をチェックします。
 
-　　a. ステップ6からRequestUUIDを使って、以下のコマンドを走らせます：
+　　　a. ステップ6からRequestUUIDを使って、以下のコマンドを走らせます：
   
 ```
 $ xcrun altool --notarization-info {REQUEST_UUID} --username{APPLE_EMAIL}
 ```
-　　例：
+　　　例：
   
 ```
 $ xcrun altool --notarization-info 23fc455c-9314-4495-b309-
 808f2e4c&nbsp;c4&nbsp;e --username elui@4d.com
 ```
 
-　　b. ステップ4で生成されたアプリ特定のパスワードを入力します。
+　　　b. ステップ4で生成されたアプリ特定のパスワードを入力します。
 
 ![図4：パスワード入力](/images/notarization/input-password.png){: .align-center}
 
-　　c. Ctr/Cmd（コントロール/コマンド）キーをクリック、もしくはブラウザーでLogFileURLをコピー/ペーストして、JSON形式で警告/エラーを検証します。
+　　　c. Ctr/Cmd（コントロール/コマンド）キーをクリック、もしくはブラウザーでLogFileURLをコピー/ペーストして、JSON形式で警告/エラーを検証します。
 
 ![図5：エラーをチェック](/images/notarization/error-check.png){: .align-center}
 
-　　d. 何か問題がないか検証します。
+　　　d. 何か問題がないか検証します。
 
 ![図6：問題をチェック](/images/notarization/issue-check.png){: .align-center}
 
-8.  配布チケットを貼り付けます。
+　8.  配布チケットを貼り付けます。
 
-　　a. チケットの目的は、Gatekeeperに「いつユーザーがダウンロードしても、あるいはアプリを動かしても、アプリが公証されている」ことを伝えて、Appleサーバーでチェックされることなく、macOS上でアプリを動かすことができるようにすることです。
+　　　a. チケットの目的は、Gatekeeperに「いつユーザーがダウンロードしても、あるいはアプリを動かしても、アプリが公証されている」ことを伝えて、Appleサーバーでチェックされることなく、macOS上でアプリを動かすことができるようにすることです。
 
-　　b. 公証されたアプリにチケットを貼付します。
+　　　b. 公証されたアプリにチケットを貼付します。
   
 ```
 $ stapler staple {PATH_TO_NOTARIZED_APP}
 ```
 
-　　例：
+　　　例：
 
 ```
 $ stapler staple "/Users/elui/Desktop/notarize_v18.app"
 ```
 
-　　c.貼付が成功すると下記の出力が表示されます：
+　　　c. 貼付が成功すると下記の出力が表示されます：
 
 ```
 Processing: /Users/elui/Desktop/notarize_v18.app
 The staple and validate action worked!
 ```
 
-9.  公証と貼付を成功させるために最後のチェックをします。
+　9.  公証と貼付を成功させるために最後のチェックをします。
 
-　　a. もしここまでの手順が正常に実行されているならば、ステップ2と同じターミナル・コマンドを走らせます。
+　　　a. もしここまでの手順が正常に実行されているならば、ステップ2と同じターミナル・コマンドを走らせます。
 
 ```
 $ spctl -av {PATH_TO_NOTARIZED_APP}
 ```
 
-　　例：
+　　　例：
   
 ```
 $ spctl -av /Users/elui/Desktop/notarize_v18.app
 ```
 
-　　b. “Notarized Developer ID”が以下の出力のソースプロパティによってリストされているのが分かるはずです。
+　　　b. “Notarized Developer ID”が以下の出力のソースプロパティによってリストされているのが分かるはずです。
 
 ```
 notarize_v18.app: accepted
 source=Notarized Developer ID
 ```
 
-　　c. 貼付が成功しているかを見るのには、以下のコマンドを走らせます：
+　　　c. 貼付が成功しているかを見るのには、以下のコマンドを走らせます：
   
 ```
 $ stapler validate {PATH_TO_NOTARIZED_APP}
 ```
 
-　　例：
+　　　例　：
   
 ```
 $ stapler validate /Users/elui/Desktop/notarize_v18.app
 ```
 
-　　成功した出力：
+　　　成功した出力：
 
 ```
 Processing: /Users/elui/Desktop/notarize_v18.app
 The validate action worked!
 ```
 
-10.  ZIP/ DMG/ PKGなど公証されて貼付された4Dアプリケーションを配布する準備ができました。
+　10.  ZIP/ DMG/ PKGなど公証されて貼付された4Dアプリケーションを配布する準備ができました。
 
 ## 免責事項：　2020年1月までの簡略化された公証要件
 
@@ -236,13 +236,13 @@ Https://deveoper.apple.com/documentation/budleresources/entitlements
 
 ビルドされた4Dアプリケーションは、Info.plistファイルを持っているので、このファイルをコピーしてほかのプロパティリスト・ファイルを作成することや、entitlements.plistに名前を変えて、適正なエンタイトルメントを使って修正することができます。
 
-1.  /path/to/yourBuilgApp.app/Contents/に移動します。
+　1.  /path/to/yourBuilgApp.app/Contents/に移動します。
 
-2.  Info.plistをコピーして、ビルドされたアプリの横のような、アクセスしやすいディレクトリにペーストします。
+　2.  Info.plistをコピーして、ビルドされたアプリの横のような、アクセスしやすいディレクトリにペーストします。
 
-3.  Info.plistをentitlements.plistにリネームします。
+　3.  Info.plistをentitlements.plistにリネームします。
 
-4.  コンテンツを修正するために、entitlements.plistファイルは以下のコマンドを使ってXMLフォーマットに変換します：
+　4.  コンテンツを修正するために、entitlements.plistファイルは以下のコマンドを使ってXMLフォーマットに変換します：
 
 ```
 $ plutil -convert xml1 {PATH_TO_PLIST_FILE}
@@ -255,9 +255,9 @@ $ plutil -convert xml1
 "/Users/elui/Desktop/myApp/entitlements.plist"
 ```
 
-5.  Entitlements.plistをコードエディター（例：AtomやSublime）を使って開きます。変換した後で、フォーマットは読むことや編集することがとても簡単になると気づくでしょう。
+　5.  Entitlements.plistをコードエディター（例：AtomやSublime）を使って開きます。変換した後で、フォーマットは読むことや編集することがとても簡単になると気づくでしょう。
 
-6.  <dict>タグを持つ全てのコンテンツを削除します。結果は以下のようになります：
+　6.  <dict>タグを持つ全てのコンテンツを削除します。結果は以下のようになります：
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -269,7 +269,7 @@ $ plutil -convert xml1
 </plist>
 ```
 
-7.  Disable Executable Memory Protection Entitlementにtrueを付与し、ファイルを保存します。結果は次のようになります。
+　7.  Disable Executable Memory Protection Entitlementにtrueを付与し、ファイルを保存します。結果は次のようになります。
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -284,7 +284,7 @@ $ plutil -convert xml1
 
 ```
 
-8.  Entitlements.plistファイルは、アプリケーション内で特定のコンテンツに署名する際に使用する準備ができました。
+　8.  Entitlements.plistファイルは、アプリケーション内で特定のコンテンツに署名する際に使用する準備ができました。
 
 ### 徹底的に署名する - ネイティブ・コンポーネント、フレームワーク、プラグイン
 
@@ -313,7 +313,7 @@ entitlements {PATH_TO_ENTITLEMENTS.PLIST} --sign {CERTIFICATE}
 {PATH_TO_UNSIGNED_ITEM}
 ```
 
-　　例：
+　　　例：
 
 ```
 $ codesign --verbose --timestamp --deep --options=runtime --
@@ -330,7 +330,7 @@ Helper.app/Contents/MacOS/4D Helper"
 $ codesign --verbose –remove-signature {PATH_TO_SIGNED_ITEM}
 ```
 
-　　例：
+　　　例：
 
 ```
 $ codesign --verbose –remove-signature
