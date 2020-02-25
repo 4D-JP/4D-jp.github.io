@@ -11,6 +11,8 @@ type: page
 
 ## 18r2 # {#v18r2}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーの削除**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DWP_DeletePictures.zip)<span id="18-2-5"></span><br />
+新しく追加された [`WP DELETE PICTURE`](https://doc.4d.com/4Dv18R2/4D/18-R2/WP-DELETE-PICTURE.301-4735795.ja.html) コマンドを使って、4D Write Pro ドキュメントに含まれる画像を削除できます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カラムや行の固定化**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DVP_FreezePanes.zip)<span id="18-2-4"></span><br />
 新しく追加された [`VP SET FROZEN PANES`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-SET-FROZEN-PANES.301-4840199.ja.html) コマンド使って、4D View Pro ドキュメントのカラムや行を固定化することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラの操作**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DWP_GetSetFormulas.zip)<span id="18-2-3"></span><br />
