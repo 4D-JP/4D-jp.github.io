@@ -4,7 +4,7 @@ title: "4D v18.0 Hotfix 1 修正リスト"
 date: 2020-02-28 08:00:00
 categories: 修正リスト
 tags: 18.0 hotfix  
-build: 248941
+build: 249095
 version: 18.0
 ---
 
