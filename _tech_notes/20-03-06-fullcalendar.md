@@ -172,8 +172,8 @@ eventClick、eventDrop、eventResizeです。
 // $1 - extendedProps object
 <br />
 // ----------------------------------------------------
-</span><br /></code>
-<code class="fourd">
+</span><br />
+
 <span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$0</span>;<span class="notranslate variable">$1</span>;<span class="notranslate variable">$events_o</span>;<span class="notranslate variable">$event_o</span>)<br />
  <span class="notranslate keyword">If </span>(<span class="notranslate variable">$1</span>.<span class="notranslate objectattribut">ID</span>#<span class="notranslate command">Null</span>)<br />
 &nbsp;&nbsp;<span class="notranslate variable">$events_o</span>:=<span class="notranslate command">ds</span>.<span class="notranslate objectattribut">Events.<span class="notranslate command">query</span>(“ID = :1";$1.<span class="notranslate objectattribut">ID</span>)<br />
@@ -189,8 +189,7 @@ eventClick、eventDrop、eventResizeです。
 &nbsp;&nbsp;$0:=<span class="notranslate command">New object</span>(“title";$title_t;"start";<span class="notranslate variable">$start_t</span>;”end";<span class="notranslate variable">$end_t</span>;”extendedProps”;\<br />
 &nbsp;&nbsp;<span class="notranslate command">New object</span>(“ID";<span class="notranslate command">String</span>(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">ID</span>)))<br />
 &nbsp;&nbsp;<span class="notranslate keyword">End if</span><br />
-<span class="notranslate keyword">End if</span>
-</code>
+<span class="notranslate keyword">End if</span></code>
 <br />
 メソッド：<span class="notranslate method">waCallBackEventUpdate</span>
 <br />
@@ -211,8 +210,7 @@ eventClick、eventDrop、eventResizeです。
 // $3 - New end date
 <br />
 // ----------------------------------------------------
-</span><br /></code>
-<code class="fourd">
+</span><br />
 <span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$0</span>;<span class="notranslate variable">$1</span>;<span class="notranslate variable">$events_o</span>;<span class="notranslate variable">$event_o</span>;<span class="notranslate variable">$status_o</span>)<br />
 <span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$2</span>;<span class="notranslate variable">$3</span>)<br />
 <br />
@@ -229,8 +227,7 @@ eventClick、eventDrop、eventResizeです。
 &nbsp;&nbsp;<span class="notranslate command">ALERT</span>(<span class="notranslate variable">$status_o</span>.<span class="notranslate objectattribut">statusText</span>)<br />
 &nbsp;&nbsp;<span class="notranslate keyword">End if</span><br />
 &nbsp;<span class="notranslate keyword">End if</span><br />
-<span class="notranslate keyword">End if</span>
-</code>
+<span class="notranslate keyword">End if</span></code>
 
 ### カレンダー・フォーム
 
