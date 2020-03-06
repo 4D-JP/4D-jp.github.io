@@ -190,7 +190,7 @@ eventClick、eventDrop、eventResizeです。
 &nbsp;&nbsp;<span class="notranslate keyword">End if</span><br />
 <span class="notranslate keyword">End if</span>
 </ code>
-
+<br />
 メソッド：<span class="notranslate method">waCallBackEventUpdate</span>
 
 このメソッドは、ユーザがカレンダー内のイベントの移動（ドラッグ＆ドロップ）したり、リサイズした時にコールされます。イベント・レコードIDを含むオブジェクトは、第一パラメータとして渡されます。第二、第三の入力パラメータは、イベントの新しい開始日/時間と終了日/時間です。このメソッドは、イベントの４つのピースを更新します：startDate、startTime、endDateとendTimeです。
@@ -262,23 +262,23 @@ Web Areaオブジェクト・メソッドは、”On End URL Loading”イベン
 デモ・アプリケーションはビルトイン・パスワード・システムを使っています。シングル・ユーザーとマルチ・ユーザー両方のアプリケーションでカレンダーの使い勝手をデモするために書かれました。そしてまた、カレンダーを共有したりアクセス許可したりするようにデザインされています。デザイナーとしてログインするためには、パスワードは”a”を使います。
 他のユーザーに対してパスワードは設定していません。
 
-マルチユーザー・アプリケーションでは、<span class="notranslate method”>setupUserListForCalendar</span>という名のフック・メソッドが作成され、どのようなユーザー/パスワード・システム（ネイティブあるいはカスタム）とも動作できるようになります。このフックについてより知りたい場合は <span class="notranslate method”>applicationStartup</ span>という名称のメソッドの内部を見てください。
+マルチユーザー・アプリケーションでは、<span class="notranslate method">setupUserListForCalendar</span>という名のフック・メソッドが作成され、どのようなユーザー/パスワード・システム（ネイティブあるいはカスタム）とも動作できるようになります。このフックについてより知りたい場合は <span class="notranslate method">applicationStartup</span>という名称のメソッドの内部を見てください。
 
 この実装には、３つの目に見えるプロジェクト・メソッドがあります。各メソッドは自身のプロセスの中で特定のウィンドウを開きます。
 
 ![図16：execute method ](/images/TechNote/fullcalendar/fullcalendar16.png){: .align-center}
 
-メソッドの<span class="notranslate method”>openCalendarMainWindow</span>は、カレントユーザーとカレンダーを共有する全ユーザーのリストを伴うカレンダー・ウィンドウを表示します。各ユーザーは関連する色を名前の次に表示します。
+メソッドの<span class="notranslate method">openCalendarMainWindow</span>は、カレントユーザーとカレンダーを共有する全ユーザーのリストを伴うカレンダー・ウィンドウを表示します。各ユーザーは関連する色を名前の次に表示します。
 
 ![図17：Main window ](/images/TechNote/fullcalendar/fullcalendar17.png){: .align-center}
 
 各名前のチェックボックスは、カレンダー中のユーザーイベントの表示を切り替えます。
 
-メソッドの<span class="notranslate method”>openCalendarPermission</span>は、カレントユーザーのリストと関連する共有許可を表示します。このウィンドウで変更されたことは、ウィンドウが閉じられた時に自動的に保存されます。
+メソッドの<span class="notranslate method">openCalendarPermission</span>は、カレントユーザーのリストと関連する共有許可を表示します。このウィンドウで変更されたことは、ウィンドウが閉じられた時に自動的に保存されます。
 
 ![図18：calendar share permission ](/images/TechNote/fullcalendar/fullcalendar18.png){: .align-center}
 
-メソッドの<span class="notranslate method”>openCalendarWindow</span>は、カレンダーをカレントユーザーと共有する全ユーザーリスト無しにカレンダー・ウィンドウを表示します。
+メソッドの<span class="notranslate method">openCalendarWindow</span>は、カレンダーをカレントユーザーと共有する全ユーザーリスト無しにカレンダー・ウィンドウを表示します。
 
 ![図19：execute method ](/images/TechNote/fullcalendar/fullcalendar19.png){: .align-center}
 
