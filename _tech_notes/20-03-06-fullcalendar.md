@@ -211,7 +211,7 @@ eventClick、eventDrop、eventResizeです。
 // $3 - New end date
 <br />
 // ----------------------------------------------------
-</ span><br /></code>
+</span><br /></code>
 <code class="fourd">
 <span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$0</span>;<span class="notranslate variable">$1</span>;<span class="notranslate variable">$events_o</span>;<span class="notranslate variable">$event_o</span>;<span class="notranslate variable">$status_o</span>)<br />
 <span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$2</span>;<span class="notranslate variable">$3</span>)<br />
