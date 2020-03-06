@@ -214,7 +214,7 @@ eventClick、eventDrop、eventResizeです。
 </ span><br /></code>
 <code class="fourd">
 <span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$0</span>;<span class="notranslate variable">$1</span>;<span class="notranslate variable">$events_o</span>;<span class="notranslate variable">$event_o</span>;<span class="notranslate variable">$status_o</span>)<br />
-<span class="notranslate command">C_TEXT</ span>(<span class="notranslate variable">$2</span>;<span class="notranslate variable">$3</span>)<br />
+<span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$2</span>;<span class="notranslate variable">$3</span>)<br />
 <br />
 <span class="notranslate command">If</span>&nbsp;(<span class="notranslate variable">$1</span>.<span class="notranslate objectattribut">ID</span>#<span class="notranslate command">Null</span>)<br />
 &nbsp;&nbsp; <span class="notranslate variable">$events_o</span>:=<span class="notranslate command">ds</span>.<span class="notranslate objectattribut">Events</span>.<span class="notranslate command">query</span>(“ID = :1";$1.<span class="notranslate objectattribut">ID</span>)<br />
@@ -222,7 +222,7 @@ eventClick、eventDrop、eventResizeです。
 &nbsp;&nbsp;<span class="notranslate variable">$event_o</span>:=<span class="notranslate variable">$events_o</span>[0]<br />
 &nbsp;&nbsp;<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startDate</span>:=<span class="notranslate command">Date</span>(<span class="notranslate variable">$2</span>)<br />
 &nbsp;&nbsp;<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startTime</span>:=<span class="notranslate constant">gmtToTime</span> (<span class="notranslate variable">$2</span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">endDate</ span>:=<span class="notranslate command">Date</span>(<span class="notranslate variable">$3</span>)<br />
+&nbsp;&nbsp;<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">endDate</span>:=<span class="notranslate command">Date</span>(<span class="notranslate variable">$3</span>)<br />
 &nbsp;&nbsp;<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">endTime</span>:=<span class="notranslate constant">gmtToTime</span> (<span class="notranslate variable">$3</span>)<br />
 &nbsp;&nbsp;<span class="notranslate variable">$status_o</span>:=<span class="notranslate variable">$event_o</span>.<span class="notranslate command">save</span>()<br />
 &nbsp;&nbsp;If ($status_o.<span class="notranslate objectattribut">success</span>=<span class="notranslate command">False</span>)<br />
