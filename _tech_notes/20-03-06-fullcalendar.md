@@ -190,7 +190,7 @@ eventClick、eventDrop、eventResizeです。
 &nbsp;&nbsp;<span class="notranslate command">New object</span>(“ID";<span class="notranslate command">String</span>(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">ID</span>)))<br />
 &nbsp;&nbsp;<span class="notranslate keyword">End if</span><br />
 <span class="notranslate keyword">End if</span>
-</ code>
+</code>
 <br />
 メソッド：<span class="notranslate method">waCallBackEventUpdate</span>
 <br />
