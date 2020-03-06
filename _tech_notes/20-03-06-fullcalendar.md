@@ -157,7 +157,7 @@ eventClick、eventDrop、eventResizeです。
 
 以下のメソッドはcallbackメソッドです。これらはFullCalendar内部のイベントからトリガーされます。
 
-メソッド：<span class="notranslate method”>waCallBackEventEdit </span>
+メソッド：<span class="notranslate method">waCallBackEventEdit </span>
 
 ユーザーがカレンダー内のイベントをクリックした時にこのメソッドがコールされます。イベント・レコードIDを含むオブジェクトがインプットとして渡されます。メソッドはレコードを見つけ、入力ウィンドウを開き、ユーザーはレコードを編集することができます。
 
