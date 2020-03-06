@@ -123,11 +123,11 @@ calendar.render();
 }
 ```
 
-注意すべきは、<!- - #4DTEXT eventDefaultDate_t- - >は、ウェブエリアで実行されたhtmlファイルが開かれる前に、<span class="notranslate command">PROCESS 4D TAGS</ span>コマンドを通じて実行されるということです。
+注意すべきは、<!- - #4DTEXT eventDefaultDate_t- - >は、ウェブエリアで実行されたhtmlファイルが開かれる前に、<span class="notranslate command">PROCESS 4D TAGS</span>コマンドを通じて実行されるということです。
 
-JavaScript機能はわずかしかなく、コマンドの<span class="notranslate command">WA EXECUTE JAVASCRIPT FUNCTION</ span>を通じて4Dメソッドからコールされます。
+JavaScript機能はわずかしかなく、コマンドの<span class="notranslate command">WA EXECUTE JAVASCRIPT FUNCTION</span>を通じて4Dメソッドからコールされます。
 
-<strong>function change (what, val)</ strong>
+<strong>function change (what, val)</strong>
 
 　1. FullCalendarに指示して、現行のディスプレイ表示を以下のいずれかの表示に変更します：davGridMonth (month)、timeGridWeek (week)、timeGridDay (day)もしくはlistWeek (list)。
 
@@ -157,7 +157,7 @@ eventClick、eventDrop、eventResizeです。
 
 以下のメソッドはcallbackメソッドです。これらはFullCalendar内部のイベントからトリガーされます。
 
-メソッド：<span class="notranslate method”>waCallBackEventEdit </ span>
+メソッド：<span class="notranslate method”>waCallBackEventEdit </span>
 
 ユーザーがカレンダー内のイベントをクリックした時にこのメソッドがコールされます。イベント・レコードIDを含むオブジェクトがインプットとして渡されます。メソッドはレコードを見つけ、入力ウィンドウを開き、ユーザーはレコードを編集することができます。
 
@@ -172,26 +172,26 @@ eventClick、eventDrop、eventResizeです。
 // $1 - extendedProps object
 <br />
 // ----------------------------------------------------
-</ span><br />
-<span class="notranslate command">C_OBJECT</ span>(<span class="notranslate variable">$0</ span>;<span class="notranslate variable">$1</ span>;<span class="notranslate variable">$events_o</ span>;<span class="notranslate variable">$event_o</ span>)<br />
- <span class="notranslate keyword">If </ span>(<span class="notranslate variable">$1</ span>.<span class="notranslate objectattribut">ID</ span>#<span class="notranslate command">Null</ span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$events_o</ span>:=<span class="notranslate command">ds</ span>.<span class="notranslate objectattribut">Events.<span class="notranslate command">query</ span>(“ID = :1";$1.<span class="notranslate objectattribut">ID</ span>)<br />
-&nbsp;&nbsp;<span class="notranslate keyword">If</ span> (<span class="notranslate variable">$events_o</ span>.<span class="notranslate objectattribut">length</ span>>0)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</ span>:=<span class="notranslate variable">$events_o</ span>[0]<br />
-&nbsp;&nbsp;<span class="notranslate constant">editEvent</ span> (<span class="notranslate variable">$event_o</ span>)<br />
+</span><br />
+<span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$0</span>;<span class="notranslate variable">$1</span>;<span class="notranslate variable">$events_o</span>;<span class="notranslate variable">$event_o</span>)<br />
+ <span class="notranslate keyword">If </span>(<span class="notranslate variable">$1</span>.<span class="notranslate objectattribut">ID</span>#<span class="notranslate command">Null</span>)<br />
+&nbsp;&nbsp;<span class="notranslate variable">$events_o</span>:=<span class="notranslate command">ds</span>.<span class="notranslate objectattribut">Events.<span class="notranslate command">query</span>(“ID = :1";$1.<span class="notranslate objectattribut">ID</span>)<br />
+&nbsp;&nbsp;<span class="notranslate keyword">If</span> (<span class="notranslate variable">$events_o</span>.<span class="notranslate objectattribut">length</span>>0)<br />
+&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>:=<span class="notranslate variable">$events_o</span>[0]<br />
+&nbsp;&nbsp;<span class="notranslate constant">editEvent</span>(<span class="notranslate variable">$event_o</span>)<br />
 <br />
-&nbsp;&nbsp;<span class="notranslate command">C_TEXT</ span>(<span class="notranslate variable">$title_t</ span>;<span class="notranslate variable">$start_t</ span>;<span class="notranslate variable">$end_t</ span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$title_t</ span>:=<span class="notranslate command">String</span>(<span class="notranslate command">Time</ span>(<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">startTime</ span>);<span class="notranslate constant">HH MM AM PM</ span>)+” "+<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">subject</ span><br />
-&nbsp;&nbsp;<span class="notranslate variable">$start_t</ span>:=formatDate (<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">startDate</ span>;”yyyy-mm-dd"+"T"+<span class="notranslate command">String</ span>(<span class="notranslate command">Time</ span>(<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">startTime</ span>))<br />
-&nbsp;&nbsp;<span class="notranslate variable">$end_t</ span>:=formatDate (<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">endDate</ span>;”yyyy-mm-dd"+"T"+<span class="notranslate command">String</span>(<span class="notranslate command">Time</ span>(<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">endTime</ span>))<br />
-&nbsp;&nbsp;$0:=<span class="notranslate command">New object</ span>(“title";$title_t;"start";<span class="notranslate variable">$start_t</ span>;”end";<span class="notranslate variable">$end_t</ span>;”extendedProps”;\<br />
-&nbsp;&nbsp;<span class="notranslate command">New object</span>(“ID";<span class="notranslate command">String</ span>(<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">ID</ span>)))<br />
-&nbsp;&nbsp;<span class="notranslate keyword">End if</ span><br />
-<span class="notranslate keyword">End if</ span>
+&nbsp;&nbsp;<span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$title_t</span>;<span class="notranslate variable">$start_t</span>;<span class="notranslate variable">$end_t</span>)<br />
+&nbsp;&nbsp;<span class="notranslate variable">$title_t</span>:=<span class="notranslate command">String</span>(<span class="notranslate command">Time</span>(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startTime</span>);<span class="notranslate constant">HH MM AM PM</span>)+” "+<br />
+&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">subject</span><br />
+&nbsp;&nbsp;<span class="notranslate variable">$start_t</span>:=formatDate(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startDate</span>;”yyyy-mm-dd"+"T"+<span class="notranslate command">String</span>(<span class="notranslate command">Time</span>(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startTime</span>))<br />
+&nbsp;&nbsp;<span class="notranslate variable">$end_t</span>:=formatDate (<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">endDate</span>;”yyyy-mm-dd"+"T"+<span class="notranslate command">String</span>(<span class="notranslate command">Time</span>(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">endTime</span>))<br />
+&nbsp;&nbsp;$0:=<span class="notranslate command">New object</span>(“title";$title_t;"start";<span class="notranslate variable">$start_t</span>;”end";<span class="notranslate variable">$end_t</span>;”extendedProps”;\<br />
+&nbsp;&nbsp;<span class="notranslate command">New object</span>(“ID";<span class="notranslate command">String</span>(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">ID</span>)))<br />
+&nbsp;&nbsp;<span class="notranslate keyword">End if</span><br />
+<span class="notranslate keyword">End if</span>
 </ code>
 
-メソッド：<span class="notranslate method">waCallBackEventUpdate</ span>
+メソッド：<span class="notranslate method">waCallBackEventUpdate</span>
 
 このメソッドは、ユーザがカレンダー内のイベントの移動（ドラッグ＆ドロップ）したり、リサイズした時にコールされます。イベント・レコードIDを含むオブジェクトは、第一パラメータとして渡されます。第二、第三の入力パラメータは、イベントの新しい開始日/時間と終了日/時間です。このメソッドは、イベントの４つのピースを更新します：startDate、startTime、endDateとendTimeです。
 
@@ -205,23 +205,23 @@ eventClick、eventDrop、eventResizeです。
 // $3 - New end date
 // ----------------------------------------------------
 </ span><br />
-<span class="notranslate command">C_OBJECT</ span>(<span class="notranslate variable">$0</ span>;<span class="notranslate variable">$1</ span>;<span class="notranslate variable">$events_o</ span>;<span class="notranslate variable">$event_o</ span>;<span class="notranslate variable">$status_o</ span>)<br />
-<span class="notranslate command">C_TEXT</ span>(<span class="notranslate variable">$2</ span>;<span class="notranslate variable">$3</ span>)<br />
+<span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$0</span>;<span class="notranslate variable">$1</span>;<span class="notranslate variable">$events_o</span>;<span class="notranslate variable">$event_o</span>;<span class="notranslate variable">$status_o</span>)<br />
+<span class="notranslate command">C_TEXT</ span>(<span class="notranslate variable">$2</span>;<span class="notranslate variable">$3</span>)<br />
 <br />
-<span class="notranslate command">If</ span>&nbsp;(<span class="notranslate variable">$1</ span>.<span class="notranslate objectattribut">ID</ span>#<span class="notranslate command">Null</ span>)<br />
-&nbsp;&nbsp; <span class="notranslate variable">$events_o</ span>:=<span class="notranslate command">ds</ span>.<span class="notranslate objectattribut">Events</ span>.<span class="notranslate command">query</ span>(“ID = :1";$1.<span class="notranslate objectattribut">ID</ span>)<br />
-&nbsp;&nbsp; <span class="notranslate command">If</ span> (<span class="notranslate variable">$events_o</ span>.<span class="notranslate objectattribut">length</ span>>0)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</ span>:=<span class="notranslate variable">$events_o</ span>[0]<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">startDate</ span>:=<span class="notranslate command">Date</ span>(<span class="notranslate variable">$2</ span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">startTime</ span>:=<span class="notranslate constant">gmtToTime</ span> (<span class="notranslate variable">$2</ span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">endDate</ span>:=<span class="notranslate command">Date</ span>(<span class="notranslate variable">$3</ span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">endTime</span>:=<span class="notranslate constant">gmtToTime</ span> (<span class="notranslate variable">$3</ span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$status_o</ span>:=<span class="notranslate variable">$event_o</ span>.<span class="notranslate command">save</ span>()<br />
-&nbsp;&nbsp;If ($status_o.<span class="notranslate objectattribut">success</ span>=<span class="notranslate command">False</ span>)<br />
-&nbsp;&nbsp;<span class="notranslate command">ALERT</ span>(<span class="notranslate variable">$status_o</ span>.<span class="notranslate objectattribut">statusText</ span>)<br />
-&nbsp;&nbsp;<span class="notranslate keyword">End if</ span><br />
-&nbsp;<span class="notranslate keyword">End if</ span><br />
-<span class="notranslate keyword">End if</ span>
+<span class="notranslate command">If</span>&nbsp;(<span class="notranslate variable">$1</span>.<span class="notranslate objectattribut">ID</span>#<span class="notranslate command">Null</span>)<br />
+&nbsp;&nbsp; <span class="notranslate variable">$events_o</span>:=<span class="notranslate command">ds</span>.<span class="notranslate objectattribut">Events</span>.<span class="notranslate command">query</span>(“ID = :1";$1.<span class="notranslate objectattribut">ID</span>)<br />
+&nbsp;&nbsp; <span class="notranslate command">If</span> (<span class="notranslate variable">$events_o</span>.<span class="notranslate objectattribut">length</span>>0)<br />
+&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>:=<span class="notranslate variable">$events_o</span>[0]<br />
+&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startDate</span>:=<span class="notranslate command">Date</span>(<span class="notranslate variable">$2</span>)<br />
+&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startTime</span>:=<span class="notranslate constant">gmtToTime</span> (<span class="notranslate variable">$2</span>)<br />
+&nbsp;&nbsp;<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">endDate</ span>:=<span class="notranslate command">Date</span>(<span class="notranslate variable">$3</span>)<br />
+&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">endTime</span>:=<span class="notranslate constant">gmtToTime</span> (<span class="notranslate variable">$3</span>)<br />
+&nbsp;&nbsp;<span class="notranslate variable">$status_o</span>:=<span class="notranslate variable">$event_o</span>.<span class="notranslate command">save</span>()<br />
+&nbsp;&nbsp;If ($status_o.<span class="notranslate objectattribut">success</span>=<span class="notranslate command">False</span>)<br />
+&nbsp;&nbsp;<span class="notranslate command">ALERT</span>(<span class="notranslate variable">$status_o</span>.<span class="notranslate objectattribut">statusText</span>)<br />
+&nbsp;&nbsp;<span class="notranslate keyword">End if</span><br />
+&nbsp;<span class="notranslate keyword">End if</span><br />
+<span class="notranslate keyword">End if</span>
 </ code>
 
 ### カレンダー・フォーム
@@ -249,12 +249,12 @@ Web Areaオブジェクト・メソッドは、”On End URL Loading”イベン
 ### リーダーによって検査される4Dプロジェクト・メソッド
 
 以下はリーダーが検査すべき、主となるプロジェクト・メソッドのリストです。
- <span class="notranslate method”> - updateCalendar </ span>
- <span class="notranslate method”> - createCalendarData </ span>
- <span class="notranslate method”> - changeDate </ span>
- <span class="notranslate method”> - changeView </ span>
- <span class="notranslate method”> - updateTitle </ span>
- <span class="notranslate method”> - applicationStartup </ span>
+ <span class="notranslate method”> - updateCalendar </span>
+ <span class="notranslate method”> - createCalendarData </span>
+ <span class="notranslate method”> - changeDate </span>
+ <span class="notranslate method”> - changeView </span>
+ <span class="notranslate method”> - updateTitle </span>
+ <span class="notranslate method”> - applicationStartup </span>
 
 ## デモについて
 ---
@@ -262,23 +262,23 @@ Web Areaオブジェクト・メソッドは、”On End URL Loading”イベン
 デモ・アプリケーションはビルトイン・パスワード・システムを使っています。シングル・ユーザーとマルチ・ユーザー両方のアプリケーションでカレンダーの使い勝手をデモするために書かれました。そしてまた、カレンダーを共有したりアクセス許可したりするようにデザインされています。デザイナーとしてログインするためには、パスワードは”a”を使います。
 他のユーザーに対してパスワードは設定していません。
 
-マルチユーザー・アプリケーションでは、<span class="notranslate method”>setupUserListForCalendar</ span>という名のフック・メソッドが作成され、どのようなユーザー/パスワード・システム（ネイティブあるいはカスタム）とも動作できるようになります。このフックについてより知りたい場合は <span class="notranslate method”>applicationStartup</ span>という名称のメソッドの内部を見てください。
+マルチユーザー・アプリケーションでは、<span class="notranslate method”>setupUserListForCalendar</span>という名のフック・メソッドが作成され、どのようなユーザー/パスワード・システム（ネイティブあるいはカスタム）とも動作できるようになります。このフックについてより知りたい場合は <span class="notranslate method”>applicationStartup</ span>という名称のメソッドの内部を見てください。
 
 この実装には、３つの目に見えるプロジェクト・メソッドがあります。各メソッドは自身のプロセスの中で特定のウィンドウを開きます。
 
 ![図16：execute method ](/images/TechNote/fullcalendar/fullcalendar16.png){: .align-center}
 
-メソッドの<span class="notranslate method”>openCalendarMainWindow</ span>は、カレントユーザーとカレンダーを共有する全ユーザーのリストを伴うカレンダー・ウィンドウを表示します。各ユーザーは関連する色を名前の次に表示します。
+メソッドの<span class="notranslate method”>openCalendarMainWindow</span>は、カレントユーザーとカレンダーを共有する全ユーザーのリストを伴うカレンダー・ウィンドウを表示します。各ユーザーは関連する色を名前の次に表示します。
 
 ![図17：Main window ](/images/TechNote/fullcalendar/fullcalendar17.png){: .align-center}
 
 各名前のチェックボックスは、カレンダー中のユーザーイベントの表示を切り替えます。
 
-メソッドの<span class="notranslate method”>openCalendarPermission</ span>は、カレントユーザーのリストと関連する共有許可を表示します。このウィンドウで変更されたことは、ウィンドウが閉じられた時に自動的に保存されます。
+メソッドの<span class="notranslate method”>openCalendarPermission</span>は、カレントユーザーのリストと関連する共有許可を表示します。このウィンドウで変更されたことは、ウィンドウが閉じられた時に自動的に保存されます。
 
 ![図18：calendar share permission ](/images/TechNote/fullcalendar/fullcalendar18.png){: .align-center}
 
-メソッドの<span class="notranslate method”>openCalendarWindow</ span>は、カレンダーをカレントユーザーと共有する全ユーザーリスト無しにカレンダー・ウィンドウを表示します。
+メソッドの<span class="notranslate method”>openCalendarWindow</span>は、カレンダーをカレントユーザーと共有する全ユーザーリスト無しにカレンダー・ウィンドウを表示します。
 
 ![図19：execute method ](/images/TechNote/fullcalendar/fullcalendar19.png){: .align-center}
 
