@@ -249,12 +249,12 @@ Web Areaオブジェクト・メソッドは、”On End URL Loading”イベン
 ### リーダーによって検査される4Dプロジェクト・メソッド
 
 以下はリーダーが検査すべき、主となるプロジェクト・メソッドのリストです。
- <span class="notranslate method”> - updateCalendar </span>
- <span class="notranslate method”> - createCalendarData </span>
- <span class="notranslate method”> - changeDate </span>
- <span class="notranslate method”> - changeView </span>
- <span class="notranslate method”> - updateTitle </span>
- <span class="notranslate method”> - applicationStartup </span>
+ <span class="notranslate method"> - updateCalendar </span>
+ <span class="notranslate method"> - createCalendarData </span>
+ <span class="notranslate method"> - changeDate </span>
+ <span class="notranslate method"> - changeView </span>
+ <span class="notranslate method"> - updateTitle </span>
+ <span class="notranslate method"> - applicationStartup </span>
 
 ## デモについて
 ---
