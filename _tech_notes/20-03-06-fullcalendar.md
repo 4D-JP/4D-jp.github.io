@@ -32,10 +32,8 @@ FullCalendarはMITライセンス下でライセンスを発行されていま�
 
 このテクニカルノートで使用されているのはFullCalendar 4.3.1です。 https://fullcalendar.io からダウンロードできます。４つの異なる表示：month（月）、week（週）、day（日）があります。
 
-![図１：月表示](/images/TechNote/fullcalendar/fullcalendar1.png){: .align-left}
-![図２：週表示](/images/TechNote/fullcalendar/fullcalendar2.png){: .align-right}<br />
-![図３：日表示](/images/TechNote/fullcalendar/fullcalendar3.png){: .align-left}
-![図４：リスト表示](/images/TechNote/fullcalendar/fullcalendar4.png){: .align-right}
+![図１：月表示](/images/TechNote/fullcalendar/fullcalendar1.png){: .align-left}![図２：週表示](/images/TechNote/fullcalendar/fullcalendar2.png){: .align-right}<br />
+![図３：日表示](/images/TechNote/fullcalendar/fullcalendar3.png){: .align-left}![図４：リスト表示](/images/TechNote/fullcalendar/fullcalendar4.png){: .align-right}
 
 フレームワークはいくつかのフォルダで構成されていて、そこにはJavaScript、CSSとJSONが含まれています。これらのファイルはフレームワークの中の機能の本質的なものになります。したがってこれらのいずれも外さないようにしてください。
 
