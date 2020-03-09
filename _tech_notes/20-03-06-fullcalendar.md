@@ -188,7 +188,7 @@ eventClick、eventDrop、eventResizeです。
 &nbsp;&nbsp;$0:=<span class="notranslate command">New object</span>(“title";$title_t;"start";<span class="notranslate variable">$start_t</span>;”end";<span class="notranslate variable">$end_t</span>;”extendedProps”;\<br />
 &nbsp;&nbsp;<span class="notranslate command">New object</span>(“ID";<span class="notranslate command">String</span>(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">ID</span>)))<br />
 &nbsp;&nbsp;<span class="notranslate keyword">End if</span><br />
-<span class="notranslate keyword">End if</span></code>
+<span class="notranslate keyword">End if</span> </ code>
 <br />
 メソッド：<span class="notranslate method">waCallBackEventUpdate</span>
 <br />
@@ -226,7 +226,7 @@ eventClick、eventDrop、eventResizeです。
 &nbsp;&nbsp;<span class="notranslate command">ALERT</span>(<span class="notranslate variable">$status_o</span>.<span class="notranslate objectattribut">statusText</span>)<br />
 &nbsp;&nbsp;<span class="notranslate keyword">End if</span><br />
 &nbsp;<span class="notranslate keyword">End if</span><br />
-<span class="notranslate keyword">End if</span></code>
+<span class="notranslate keyword">End if</span></ code>
 
 ### カレンダー・フォーム
 
