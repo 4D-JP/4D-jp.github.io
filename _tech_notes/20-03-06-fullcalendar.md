@@ -161,72 +161,64 @@ eventClick、eventDrop、eventResizeです。
 
 ユーザーがカレンダー内のイベントをクリックした時にこのメソッドがコールされます。イベント・レコードIDを含むオブジェクトがインプットとして渡されます。メソッドはレコードを見つけ、入力ウィンドウを開き、ユーザーはレコードを編集することができます。
 
-<code class="fourd">
-<span class="notranslate comment">
+```
+
 // ----------------------------------------------------
-<br />
 // Method: waCallBackEventEdit
-<br />
 // Parameters
-<br />
 // $1 - extendedProps object
-<br />
 // ----------------------------------------------------
-</span><br />
-<span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$0</span>;<span class="notranslate variable">$1</span>;<span class="notranslate variable">$events_o</span>;<span class="notranslate variable">$event_o</span>)<br />
- <span class="notranslate keyword">If </span>(<span class="notranslate variable">$1</span>.<span class="notranslate objectattribut">ID</span>#<span class="notranslate command">Null</span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$events_o</span>:=<span class="notranslate command">ds</span>.<span class="notranslate objectattribut">Events.<span class="notranslate command">query</span>(“ID = :1";$1.<span class="notranslate objectattribut">ID</span>)<br />
-&nbsp;&nbsp;<span class="notranslate keyword">If</span> (<span class="notranslate variable">$events_o</span>.<span class="notranslate objectattribut">length</span>>0)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>:=<span class="notranslate variable">$events_o</span>[0]<br />
-&nbsp;&nbsp;<span class="notranslate constant">editEvent</span>(<span class="notranslate variable">$event_o</span>)<br />
-<br />
-&nbsp;&nbsp;<span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$title_t</span>;<span class="notranslate variable">$start_t</span>;<span class="notranslate variable">$end_t</span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$title_t</span>:=<span class="notranslate command">String</span>(<span class="notranslate command">Time</span>(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startTime</span>);<span class="notranslate constant">HH MM AM PM</span>)+” "+<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">subject</span><br />
-&nbsp;&nbsp;<span class="notranslate variable">$start_t</span>:=formatDate(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startDate</span>;”yyyy-mm-dd"+"T"+<span class="notranslate command">String</span>(<span class="notranslate command">Time</span>(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startTime</span>))<br />
-&nbsp;&nbsp;<span class="notranslate variable">$end_t</span>:=formatDate (<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">endDate</span>;”yyyy-mm-dd"+"T"+<span class="notranslate command">String</span>(<span class="notranslate command">Time</span>(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">endTime</span>))<br />
-&nbsp;&nbsp;$0:=<span class="notranslate command">New object</span>(“title";$title_t;"start";<span class="notranslate variable">$start_t</span>;”end";<span class="notranslate variable">$end_t</span>;”extendedProps”;\<br />
-&nbsp;&nbsp;<span class="notranslate command">New object</span>(“ID";<span class="notranslate command">String</span>(<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">ID</span>)))<br />
-&nbsp;&nbsp;<span class="notranslate keyword">End if</span><br />
-<span class="notranslate keyword">End if</span> </ code>
-<br />
+
+C_OBJECT($0;$1;$events_o;$event_o)
+ If ($1.ID#Null)
+&nbsp;&nbsp;$events_o<:=ds.Events.query(“ID = :1";$1.ID)
+&nbsp;&nbsp;If($events_o.length>0)
+&nbsp;&nbsp;$event_o:=$events_o[0]
+&nbsp;&nbsp;editEvent($event_o)
+
+&nbsp;&nbsp;C_TEXT($title_t;$start_t;$end_t)
+&nbsp;&nbsp;$title_t:=String(Time($event_o.startTime);HH MM AM PM)+” "+
+&nbsp;&nbsp;$event_o.subject
+&nbsp;&nbsp;$start_t:=formatDate($event_o.startDate;”yyyy-mm-dd"+"T"+String(Time($event_o.startTime))
+&nbsp;&nbsp;$end_t:=formatDate ($event_o.endDate;”yyyy-mm-dd"+"T"+String(Time($event_o.endTime))
+&nbsp;&nbsp;$0:=New object(“title";$title_t;"start";$start_t;”end";$end_t;”extendedProps”;\
+&nbsp;&nbsp;New object(“ID";String($event_o.ID)))
+&nbsp;&nbsp;End if
+End if
+```
+
 メソッド：<span class="notranslate method">waCallBackEventUpdate</span>
-<br />
+
 このメソッドは、ユーザがカレンダー内のイベントの移動（ドラッグ＆ドロップ）したり、リサイズした時にコールされます。イベント・レコードIDを含むオブジェクトは、第一パラメータとして渡されます。第二、第三の入力パラメータは、イベントの新しい開始日/時間と終了日/時間です。このメソッドは、イベントの４つのピースを更新します：startDate、startTime、endDateとendTimeです。
 
-<code class="fourd">
-<span class="notranslate comment">
+```
+
 // ----------------------------------------------------
-<br />
 // Method: waCallBackEventUpdate
-<br />
 // Parameters
-<br />
 // $1 - Event object
-<br />
 // $2 - New start date
-<br />
 // $3 - New end date
-<br />
 // ----------------------------------------------------
-</span><br />
-<span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$0</span>;<span class="notranslate variable">$1</span>;<span class="notranslate variable">$events_o</span>;<span class="notranslate variable">$event_o</span>;<span class="notranslate variable">$status_o</span>)<br />
-<span class="notranslate command">C_TEXT</span>(<span class="notranslate variable">$2</span>;<span class="notranslate variable">$3</span>)<br />
-<br />
-<span class="notranslate command">If</span>&nbsp;(<span class="notranslate variable">$1</span>.<span class="notranslate objectattribut">ID</span>#<span class="notranslate command">Null</span>)<br />
-&nbsp;&nbsp; <span class="notranslate variable">$events_o</span>:=<span class="notranslate command">ds</span>.<span class="notranslate objectattribut">Events</span>.<span class="notranslate command">query</span>(“ID = :1";$1.<span class="notranslate objectattribut">ID</span>)<br />
-&nbsp;&nbsp; <span class="notranslate command">If</span> (<span class="notranslate variable">$events_o</span>.<span class="notranslate objectattribut">length</span>>0)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>:=<span class="notranslate variable">$events_o</span>[0]<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startDate</span>:=<span class="notranslate command">Date</span>(<span class="notranslate variable">$2</span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">startTime</span>:=<span class="notranslate constant">gmtToTime</span> (<span class="notranslate variable">$2</span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</ span>.<span class="notranslate objectattribut">endDate</span>:=<span class="notranslate command">Date</span>(<span class="notranslate variable">$3</span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$event_o</span>.<span class="notranslate objectattribut">endTime</span>:=<span class="notranslate constant">gmtToTime</span> (<span class="notranslate variable">$3</span>)<br />
-&nbsp;&nbsp;<span class="notranslate variable">$status_o</span>:=<span class="notranslate variable">$event_o</span>.<span class="notranslate command">save</span>()<br />
-&nbsp;&nbsp;If ($status_o.<span class="notranslate objectattribut">success</span>=<span class="notranslate command">False</span>)<br />
-&nbsp;&nbsp;<span class="notranslate command">ALERT</span>(<span class="notranslate variable">$status_o</span>.<span class="notranslate objectattribut">statusText</span>)<br />
-&nbsp;&nbsp;<span class="notranslate keyword">End if</span><br />
-&nbsp;<span class="notranslate keyword">End if</span><br />
-<span class="notranslate keyword">End if</span></ code>
+
+C_OBJECT($0;$1;$events_o;$event_o;$status_o)
+C_TEXT($2;$3)
+
+If&nbsp;($1.ID#Null)
+&nbsp;&nbsp;$events_o:=ds.Events.query(“ID = :1";$1.ID)
+&nbsp;&nbsp;If($events_o.length>0)
+&nbsp;&nbsp;$event_o:=$events_o[0]
+&nbsp;&nbsp;$event_o.startDate:=Date($2)
+&nbsp;&nbsp;$event_o.startTime:=gmtToTime($2)
+&nbsp;&nbsp;$event_o.endDate:=Date($3)
+&nbsp;&nbsp;$event_o.endTime:=gmtToTime($3)
+&nbsp;&nbsp;$status_o:=$event_o.save()
+&nbsp;&nbsp;If($status_o.success=False)
+&nbsp;&nbsp;ALERT($status_o.statusText)
+&nbsp;&nbsp;End if
+&nbsp;End if
+End if
+```
 
 ### カレンダー・フォーム
 
