@@ -171,19 +171,19 @@ eventClick、eventDrop、eventResizeです。
 
 C_OBJECT($0;$1;$events_o;$event_o)
  If ($1.ID#Null)
-&nbsp;&nbsp;$events_o<:=ds.Events.query(“ID = :1";$1.ID)
-&nbsp;&nbsp;If($events_o.length>0)
-&nbsp;&nbsp;$event_o:=$events_o[0]
-&nbsp;&nbsp;editEvent($event_o)
+  $events_o<:=ds.Events.query(“ID = :1";$1.ID)
+  If($events_o.length>0)
+  $event_o:=$events_o[0]
+  editEvent($event_o)
 
-&nbsp;&nbsp;C_TEXT($title_t;$start_t;$end_t)
-&nbsp;&nbsp;$title_t:=String(Time($event_o.startTime);HH MM AM PM)+” "+
-&nbsp;&nbsp;$event_o.subject
-&nbsp;&nbsp;$start_t:=formatDate($event_o.startDate;”yyyy-mm-dd"+"T"+String(Time($event_o.startTime))
-&nbsp;&nbsp;$end_t:=formatDate ($event_o.endDate;”yyyy-mm-dd"+"T"+String(Time($event_o.endTime))
-&nbsp;&nbsp;$0:=New object(“title";$title_t;"start";$start_t;”end";$end_t;”extendedProps”;\
-&nbsp;&nbsp;New object(“ID";String($event_o.ID)))
-&nbsp;&nbsp;End if
+  C_TEXT($title_t;$start_t;$end_t)
+  $title_t:=String(Time($event_o.startTime);HH MM AM PM)+” "+
+  $event_o.subject
+  $start_t:=formatDate($event_o.startDate;”yyyy-mm-dd"+"T"+String(Time($event_o.startTime))
+  $end_t:=formatDate ($event_o.endDate;”yyyy-mm-dd"+"T"+String(Time($event_o.endTime))
+  $0:=New object(“title";$title_t;"start";$start_t;”end";$end_t;”extendedProps”;\
+  New object(“ID";String($event_o.ID)))
+  End if
 End if
 ```
 
@@ -204,19 +204,19 @@ End if
 C_OBJECT($0;$1;$events_o;$event_o;$status_o)
 C_TEXT($2;$3)
 
-If&nbsp;($1.ID#Null)
-&nbsp;&nbsp;$events_o:=ds.Events.query(“ID = :1";$1.ID)
-&nbsp;&nbsp;If($events_o.length>0)
-&nbsp;&nbsp;$event_o:=$events_o[0]
-&nbsp;&nbsp;$event_o.startDate:=Date($2)
-&nbsp;&nbsp;$event_o.startTime:=gmtToTime($2)
-&nbsp;&nbsp;$event_o.endDate:=Date($3)
-&nbsp;&nbsp;$event_o.endTime:=gmtToTime($3)
-&nbsp;&nbsp;$status_o:=$event_o.save()
-&nbsp;&nbsp;If($status_o.success=False)
-&nbsp;&nbsp;ALERT($status_o.statusText)
-&nbsp;&nbsp;End if
-&nbsp;End if
+If ($1.ID#Null)
+  $events_o:=ds.Events.query(“ID = :1";$1.ID)
+  If($events_o.length>0)
+  $event_o:=$events_o[0]
+  $event_o.startDate:=Date($2)
+  $event_o.startTime:=gmtToTime($2)
+  $event_o.endDate:=Date($3)
+  $event_o.endTime:=gmtToTime($3)
+  $status_o:=$event_o.save()
+  If($status_o.success=False)
+  ALERT($status_o.statusText)
+  End if
+ End if
 End if
 ```
 
