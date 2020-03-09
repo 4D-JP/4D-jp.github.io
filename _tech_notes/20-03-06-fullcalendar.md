@@ -173,7 +173,6 @@ eventClick、eventDrop、eventResizeです。
 <br />
 // ----------------------------------------------------
 </span><br />
-
 <span class="notranslate command">C_OBJECT</span>(<span class="notranslate variable">$0</span>;<span class="notranslate variable">$1</span>;<span class="notranslate variable">$events_o</span>;<span class="notranslate variable">$event_o</span>)<br />
  <span class="notranslate keyword">If </span>(<span class="notranslate variable">$1</span>.<span class="notranslate objectattribut">ID</span>#<span class="notranslate command">Null</span>)<br />
 &nbsp;&nbsp;<span class="notranslate variable">$events_o</span>:=<span class="notranslate command">ds</span>.<span class="notranslate objectattribut">Events.<span class="notranslate command">query</span>(“ID = :1";$1.<span class="notranslate objectattribut">ID</span>)<br />
