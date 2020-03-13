@@ -4,7 +4,7 @@ original_title: Preemptive Processes on 4D Remote
 title: 4Dリモートにおけるプリエンプティブ・プロセス
 author: Timothy Aaron Penner
 position: Senior Technical Services Engineer
-date: 2020-03-011 00:00:00
+date: 2020-03-13 00:00:00
 categories: テックノート
 tags: development plugin
 version: v18
