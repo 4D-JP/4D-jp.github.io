@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v18.1 修正リスト"
-date: 2020-03-20 08:00:00
+date: 2020-03-23 08:00:00
 categories: 修正リスト
 tags: "18.1"  
 build: 249751
