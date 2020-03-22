@@ -91,6 +91,8 @@ type: page
     
 * [Bruno Legay](https://github.com/blegay)
     * aws_component
+    * jwt_component
+    * acme_component
    
 * [Fine Arts Museums of San Francisco](https://github.com/famsf)
     * pecl-pdo-4d
