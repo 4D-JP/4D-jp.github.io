@@ -333,11 +333,11 @@ GItでは、ブランチはシンプルに特定のコミットへのポイン�
 
 ### Demo 1: リモート・レポジトリとの相互通信
 
-1. プロジェクト・フォルダに移り、git bashを起動（右クリック）
-2. **Git ini**を使ってgitレポジトリを初期化
-3. <strong>Git remote add origin "link_to_repo"</strong>を使ってリモート・レポジトリを追加
-4. **Git branch -set -upstream-to = origin/master master**を使って、リモート・ブランチ・マスターへアップストーム（逆流）のリンクを追加
-5. 以下を使用して、プロジェクト・ファイルからローカルでリモートのレポジトリに対してファイルを追加、コミットそしてプッシュします：
+１. プロジェクト・フォルダに移り、git bashを起動（右クリック）
+２. **Git ini**を使ってgitレポジトリを初期化
+３. <strong>Git remote add origin "link_to_repo"</strong>を使ってリモート・レポジトリを追加
+４. **Git branch -set -upstream-to = origin/master master**を使って、リモート・ブランチ・マスターへアップストーム（逆流）のリンクを追加
+５. 以下を使用して、プロジェクト・ファイルからローカルでリモートのレポジトリに対してファイルを追加、コミットそしてプッシュします：
 
 - <strong>git add</strong>
 - <strong>git commit -m "committing our project folder"</strong>
@@ -349,8 +349,8 @@ GItでは、ブランチはシンプルに特定のコミットへのポイン�
 
 もしも全てのオペレーションが実行に成功している場合は、このような結果になるはずです。
 
-6. サンプル・データベース、my_4D_project (my_4D_project.4DProject)をv17R5で開きます。
-7. メソッド “meth_alert_1”にコメントを加えて修正しましょう。
+６. サンプル・データベース、my_4D_project (my_4D_project.4DProject)をv17R5で開きます。
+７. メソッド “meth_alert_1”にコメントを加えて修正しましょう。
 
 ![図31：meth_alert_1](/images/TechNote/Github-on-4D/git-hub-on-4d31.png){: .align-center}
 
@@ -358,9 +358,9 @@ GItでは、ブランチはシンプルに特定のコミットへのポイン�
 
 ![図32：git statusを実行　ワーキング・ツリー](/images/TechNote/Github-on-4D/git-hub-on-4d32.png){: .align-center}
 
-8. では、ステップ5と同じコマンドを実行して修正を保存しましょう。（コミット・メッセージの変更を試してみます。）一度実行すれば、git statusはトラックされない、あるいはステージされないファイルを返します。
+８. では、ステップ5と同じコマンドを実行して修正を保存しましょう。（コミット・メッセージの変更を試してみます。）一度実行すれば、git statusはトラックされない、あるいはステージされないファイルを返します。
 
-9. 例えば最後のコミットが不完全な場合、それを元に戻すには以下のコマンドが必要です：
+９. 例えば最後のコミットが不完全な場合、それを元に戻すには以下のコマンドが必要です：
 
 <strong>git reset -hard parameter, パラメータは下記のようになります：</strong>
 
@@ -394,8 +394,8 @@ GItでは、ブランチはシンプルに特定のコミットへのポイン�
 
 一度重複したら、複製のデータベースをv17R5のセカンド・インスタンスとして開きます（v17R5フォルダを複製する必要はありません。exeファイルをもう一度実行すれば新しいインスタンスを開きます）。
 
-1. 新しいプロジェクト・フォルダに行き、（右クリックで）git bashを実行します。
-2. コンフリクトのシミュレーションのために、新しいデータベースのmeth_alert_2を開き、以下のように修正します：
+１. 新しいプロジェクト・フォルダに行き、（右クリックで）git bashを実行します。
+２. コンフリクトのシミュレーションのために、新しいデータベースのmeth_alert_2を開き、以下のように修正します：
 
 ![図37：meth_alert_2](/images/TechNote/Github-on-4D/git-hub-on-4d37.png){: .align-center}
 
@@ -403,17 +403,17 @@ GItでは、ブランチはシンプルに特定のコミットへのポイン�
 
 ![図38：新しい変更をコミット](/images/TechNote/Github-on-4D/git-hub-on-4d38.png){: .align-center}
 
-3. 同時に、ユーザー１が同じメソッドを修正すると決めたので、最初のデータベースの同じメソッドの修正が下記の通りになります：
+３. 同時に、ユーザー１が同じメソッドを修正すると決めたので、最初のデータベースの同じメソッドの修正が下記の通りになります：
 
 ![図39：同じメソッドの修正](/images/TechNote/Github-on-4D/git-hub-on-4d29.png){: .align-center}
 
-4. 新しい変更をコミットしてプッシュします。
+４. 新しい変更をコミットしてプッシュします。
 
 ![図40：新しい変更をコミット](/images/TechNote/Github-on-4D/git-hub-on-4d40.png){: .align-center}
 
 リモート・レポジトリが新しいコミットを持っているかどうかを確認するためにgit fetchを実行するのを忘れたことが重要です。この場合、そうせずにプッシュしようとするとエラーが発生します（更新が拒否されました…）。
 
-5. 提案されたように git pullを実行するとコンフリクトが発生します。下記をご覧ください：
+５. 提案されたように git pullを実行するとコンフリクトが発生します。下記をご覧ください：
 
 ![図41：コンフリクトが発生](/images/TechNote/Github-on-4D/git-hub-on-4d41.png){: .align-center}
 
@@ -426,7 +426,7 @@ GItでは、ブランチはシンプルに特定のコミットへのポイン�
 
 - 4Dエディター：これはメソッドにのみ有効です。そのjsonファイルはエディターに正確に表示されるからです。サンプルのフォームは表示されません。そのjsonファイルが4Dによってインタプリタにされてレンダリングされなければならないからです。
 
-6. 三番目のメソッド（4Dエディター）を見ると、このケースではメソッドのコンフリクトを扱っています：
+６. 三番目のメソッド（4Dエディター）を見ると、このケースではメソッドのコンフリクトを扱っています：
 
 ![図42：メソッドのコンフリクト](/images/TechNote/Github-on-4D/git-hub-on-4d42.png){: .align-center}
  
@@ -483,8 +483,8 @@ GItでは、ブランチはシンプルに特定のコミットへのポイン�
 
 ブランチは明らかにGITの主要な機能で、このデモでは基本的なブランチ機能と操作について説明します。
 
-1. プロジェクト・フォルダへ移動して、git bashを実行（右クリック）
-2. 新しいブランチを作成してfeature1と名付けます
+１. プロジェクト・フォルダへ移動して、git bashを実行（右クリック）
+２. 新しいブランチを作成してfeature1と名付けます
 
 ![図52：feature1を作成](/images/TechNote/Github-on-4D/git-hub-on-4d52.png){: .align-center}
 
@@ -494,11 +494,11 @@ GItでは、ブランチはシンプルに特定のコミットへのポイン�
 - <strong>git checkout branch name：</strong>git ブランチ間のナビゲーションを可能にするように設計されたgitコマンド。特定のブランチをチェックアウトすると、その特定のブランチに保存されているバージョンに適合するようにワーキング・ディレクトリをアップデートします。
 - <strong>git checkout -b branch_name：</strong>新しいブランチを作成し操作する（チェックアウト）
 
-3. 新しいメソッドを作成して”new_feature_1”と名付け、あるコードを入力します。
+３. 新しいメソッドを作成して”new_feature_1”と名付け、あるコードを入力します。
 
 ![図53：new feature1を作成](/images/TechNote/Github-on-4D/git-hub-on-4d53.png){: .align-center}
 
-4. ローカルとリモートの両方の変更を保存するには、下記を参照してください：
+４. ローカルとリモートの両方の変更を保存するには、下記を参照してください：
 
 ![図54：ローカルを変更](/images/TechNote/Github-on-4D/git-hub-on-4d54.png){: .align-center}
 
@@ -520,7 +520,7 @@ new_feature_1メソッドはマスター・ブランチにはまだ存在しま�
 
 ![図58：new feature1ブランチをマージ](/images/TechNote/Github-on-4D/git-hub-on-4d29.png){: .align-center}
 
-5. マスター・ブランチを使って、feature1に変更をマージします：
+５. マスター・ブランチを使って、feature1に変更をマージします：
 
 ![図59：feature1に変更をマージ](/images/TechNote/Github-on-4D/git-hub-on-4d59.png){: .align-center}
 
@@ -530,7 +530,7 @@ new_feature_1メソッドはマスター・ブランチにはまだ存在しま�
 
 <font color="red">重要な特記事項</font>：開発者が最後の２ステップ（４と５）をスキップしてしまったと想像してください。様々な理由で起こり得ることです（コミットの準備ができていない、featureコードが不完全…）。その後、問題点などを修正するためにマスター・ブランチに切り替えます。最初は大丈夫に見えますが、featureブランチから全てのメソッドやファイルを理解しようとすると、マスター・ブランチからは接続できても間違ったブランチにコミットして、プロダクションの失敗やコンフリクトを起こして終了することがあります。</font>
 
-6. featureブランチをチェックアウトして、4Dの中に新しいメソッド、new_feature_2を作成します。マスター・ブランチへ戻り、ブランチのコンセプト全体に対する反対するメソッドがまだ存在することに留意してください。
+６. featureブランチをチェックアウトして、4Dの中に新しいメソッド、new_feature_2を作成します。マスター・ブランチへ戻り、ブランチのコンセプト全体に対する反対するメソッドがまだ存在することに留意してください。
 
 ![図61：feature1ブランチをチェックアウト](/images/TechNote/Github-on-4D/git-hub-on-4d61.png){: .align-center}
 
@@ -538,23 +538,23 @@ new_feature_1メソッドはマスター・ブランチにはまだ存在しま�
 
 これは、ブランチ間で切り替えることが必要となるならいつでもgit stashを使って、簡単に保護できます。一方でまだ変更が保留されているのは保存されません。git stashはワーキング・ディレクトリ+インデックスの現状を記録し、ローカルの修正を保存します。
 
-7. <strong>git stash</strong>はGITでトラックされるファイルを保存するだけです。事前に<strong>git add</strong>を実行する必要があります。
+７. <strong>git stash</strong>はGITでトラックされるファイルを保存するだけです。事前に<strong>git add</strong>を実行する必要があります。
 
 ![図63：git stashで保存](/images/TechNote/Github-on-4D/git-hub-on-4d63.png){: .align-center}
 
 ![図64：git addを実行](/images/TechNote/Github-on-4D/git-hub-on-4d64.png){: .align-center}
 
-8. もう一度マスター・ブランチに切り替えると、メソッドは隠されたため、もう存在しません。
+８. もう一度マスター・ブランチに切り替えると、メソッドは隠されたため、もう存在しません。
 
 ![図65：マスター・ブランチに切り替え](/images/TechNote/Github-on-4D/git-hub-on-4d65.png){: .align-center}
 
 ![図66：メソッドなし](/images/TechNote/Github-on-4D/git-hub-on-4d66.png){: .align-center}
 
-9. 保留している機能を戻す準備をするには、フィーチャー・ブランチに切り替えて<strong>git stash apply</strong>を実行して4Dメソッドのnew_fearure_2を得るようにします。
+９. 保留している機能を戻す準備をするには、フィーチャー・ブランチに切り替えて<strong>git stash apply</strong>を実行して4Dメソッドのnew_fearure_2を得るようにします。
 
 ![図67：フィーチャー・ブランチに切り替え](/images/TechNote/Github-on-4D/git-hub-on-4d67.png){: .align-center}
 
-10. フィーチャー・ブランチは簡単に削除できます：<strong>Git branchi d feature1</strong>。削除される前に異なるブランチ上にある必要があります。
+１０. フィーチャー・ブランチは簡単に削除できます：<strong>Git branchi d feature1</strong>。削除される前に異なるブランチ上にある必要があります。
 
 ![図68：フィーチャー・ブランチを削除](/images/TechNote/Github-on-4D/git-hub-on-4d68.png){: .align-center}
 
