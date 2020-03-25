@@ -229,9 +229,9 @@ GCMを使うには、最新のインストーラーをダウンロードし、GC
 ![図16：git add コマンド](/images/TechNote/Github-on-4D/git-hub-on-4d16.png){: .align-center}
 
 ### git addパラメータ：
-<strong>git add <directory>：</strong> 特定のディレクトリの全ファイルをインデックスに追加します。
+<strong>git add ＜directory＞：</strong> 特定のディレクトリの全ファイルをインデックスに追加します。
 
-<strong>git add <file>：</strong> 特定のファイルをインデックスに追加します。
+<strong>git add ＜file＞：</strong> 特定のファイルをインデックスに追加します。
 
 <strong>git add .：</strong> 新しいファイル、削除されたファイル、あるいは変更されたファイルを探してワーキング・ディレクトリ全体を捜査し、それらのファイルをインデックスに追加します。
 
