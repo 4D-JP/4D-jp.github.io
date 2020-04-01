@@ -756,4 +756,4 @@ version: 18r2
 
 * ACI0100527 ``VP EXPORT DOCUMENT``の速度に問題がありました。``39``MB程度のドキュメントをエクスポートするのに``5``分ほどかかりました。
 
-**注記**: ``VP Export to object'のオプション指定で``includeFormatInfo``を``False``に設定することにより，オブジェクトのサイズを節約できるようになりました。このコマンドは，``VP EXPORT DOCUMENT``が内部的に使用しています。
+**注記**: ``VP Export to object``のオプション指定で``includeFormatInfo``を``False``に設定することにより，オブジェクトのサイズを節約できるようになりました。このコマンドは，``VP EXPORT DOCUMENT``が内部的に使用しています。
