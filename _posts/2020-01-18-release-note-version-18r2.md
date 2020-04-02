@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v18r2 修正リスト"
-date: 2020-03-28 08:00:00
+date: 2020-04-02 08:00:00
 categories: 修正リスト
 tags: 18r2  
-build: 250453
+build: 250469
 version: 18r2
 
 ---
