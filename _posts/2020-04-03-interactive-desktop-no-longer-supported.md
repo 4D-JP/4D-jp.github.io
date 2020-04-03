@@ -11,5 +11,5 @@ v18（厳密には17r6）以降，4D ServerアプリケーションをWindowsの
 
 v18以降，サービスとして登録されたアプリケーションは，ヘッドレスモードで実行されます。このモードでは，一切のユーザーインタフェースが抑制され，アプリケーションからの出力はシステムイベントログや標準ストリーム（コマンドライン・インタフェース）に送られます。「デスクトップとの対話」は非サポートとなります。
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [doc.4d.com/](https://doc.4d.com/4Dv18/4D/18/Registering-a-Database-as-a-Service.300-4672427.ja.html)  
-<i class="fa fa-external-link" aria-hidden="true"></i> [blog.4d.com](https://blog.4d.com/headless-4d-applications/)
+<i class="fa fa-external-link" aria-hidden="true"></i> [データベースをサービスとして登録](https://doc.4d.com/4Dv18/4D/18/Registering-a-Database-as-a-Service.300-4672427.ja.html)  
+<i class="fa fa-external-link" aria-hidden="true"></i> [Headless 4D applications](https://blog.4d.com/headless-4d-applications/)
