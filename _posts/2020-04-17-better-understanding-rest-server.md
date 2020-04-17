@@ -21,11 +21,11 @@ author: Intissar Elmezrouai
 
 では、セッションの扱い方をよく理解できたところで、さらに前進します。始める前に、4D RESTサーバーを開始しえて、構成します。さらに始める前に、この<a href="https://blog.4d.com/test-the-powerful-4d-rest-server-with-postman">ブログ</a>あるいは<a href="https://developer.4d.com/docs/ja/REST/configuration.html">ドキュメントセンター</a>を参照してください。
 
-## ON REST AUTHENTIFICATIONメソッド
+## ON REST AUTHENTICATIONメソッド
 
-データベースメソッドの<strong><span class="notranslate method"><span style="color: #222222;">On REST Authentification</span></span></strong>によって、4D上でRESTセッションの開き方のコントロールをカスタマイズする方法が使えるようになります。RESTセッションを開くリクエストを受けた時、接続確認（例：ユーザー名とパスワード）がリクエストのヘッダーに提供されます。<strong><span class="notranslate method"><span style="color: #222222;">On REST Authentification</span></span></strong>データベースメソッドが呼ばれるので、これらの認証を評価でき、<strong>True</strong>（セッションの開始を承認）あるいは<strong>False</strong>（セッションの開始を拒否）を返します。
+データベースメソッドの<strong><span class="notranslate method"><span style="color: #222222;">On REST Authentication</span></span></strong>によって、4D上でRESTセッションの開き方のコントロールをカスタマイズする方法が使えるようになります。RESTセッションを開くリクエストを受けた時、接続確認（例：ユーザー名とパスワード）がリクエストのヘッダーに提供されます。<strong><span class="notranslate method"><span style="color: #222222;">On REST Authentication</span></span></strong>データベースメソッドが呼ばれるので、これらの認証を評価でき、<strong>True</strong>（セッションの開始を承認）あるいは<strong>False</strong>（セッションの開始を拒否）を返します。
 
- ![on rest authentification](/images/blog/04-20/better-understanding2.png)
+ ![on rest authentication](/images/blog/04-20/better-understanding2.png)
 
 <strong>注記</strong>：このデータベースメソッドがデータベースへの独自のアクセスコントロールのコーディングに使われている間、アクセスは4Dユーザー・グループを使って制限することも可能です。データベースを表示している際に、データベース設定 > Web > RESTリソース・タブにアクセスを許可されたグループを選択します。この<a href="https://blog.4d.com/multiple-4d-data-sources-interested/">ブログ</a>で記憶を取り戻してください。
 
@@ -33,11 +33,11 @@ author: Intissar Elmezrouai
 
 セッションの開始を図解するには、ログインとパスワードを伴うサブミッション・フォームを想像しましょう。POST リクエストの<strong>ヘッダー</strong>内の認証情報を送るのにPostmanを使っています。RESTを通じて4Dアプリケーション内のセッションを開くために、<strong>$directory/login:</strong>を使います。
 
- ![on rest authentification](/images/blog/04-20/better-understanding3.png)
+ ![on rest authentication](/images/blog/04-20/better-understanding3.png)
 
 4Dに戻ってどうなるか見てみましょう。
 
- ![on rest authentification](/images/blog/04-20/better-understanding4.png)
+ ![on rest authentication](/images/blog/04-20/better-understanding4.png)
 
 ご覧の通り、データベースメソッドはパラメータを受け取ります。
 
@@ -51,7 +51,7 @@ author: Intissar Elmezrouai
 
 一度リクエストが受け取られると、サーバーはセッションを開き、セッションクッキーをクライアント (WASID4D)へ送り返します：
 
- ![on rest authentification](/images/blog/04-20/better-understanding5.png)
+ ![on rest authentication](/images/blog/04-20/better-understanding5.png)
 
 これでセッションが作成されました。結果として生じるHTTPリクエストへそのIDを返すにはどうしたらよいでしょう。
 
