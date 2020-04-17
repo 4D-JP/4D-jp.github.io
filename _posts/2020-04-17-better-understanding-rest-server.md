@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 4D RESTセッションの理解を深める
-date: 2020-04-15 01:00:00
+date: 2020-04-17 01:00:00
 categories: ブログ
 tags: 18.x programming RESTserver  web
 author: Intissar Elmezrouai
@@ -23,7 +23,7 @@ author: Intissar Elmezrouai
 
 ## ON REST AUTHENTIFICATIONメソッド
 
-データベースメソッドの<strong><span class="notranslate method"><span style="color: #222222;">On REST Authentification</strong></span>によって、4D上でRESTセッションの開き方のコントロールをカスタマイズする方法が使えるようになります。RESTセッションを開くリクエストを受けた時、接続確認（例：ユーザー名とパスワード）がリクエストのヘッダーに提供されます。<span class="notranslate method"><span style="color: #222222;"><strong>On REST Authentification</strong></span>データベースメソッドが呼ばれるので、これらの認証を評価でき、<strong>True</strong>（セッションの開始を承認）あるいは<strong>False</strong>（セッションの開始を拒否）を返します。
+データベースメソッドの<strong><span class="notranslate method"><span style="color: #222222;">On REST Authentification</ span></strong>によって、4D上でRESTセッションの開き方のコントロールをカスタマイズする方法が使えるようになります。RESTセッションを開くリクエストを受けた時、接続確認（例：ユーザー名とパスワード）がリクエストのヘッダーに提供されます。<strong><span class="notranslate method"><span style="color: #222222;">On REST Authentification</span></strong>データベースメソッドが呼ばれるので、これらの認証を評価でき、<strong>True</strong>（セッションの開始を承認）あるいは<strong>False</strong>（セッションの開始を拒否）を返します。
 
  ![on rest authentification](/images/blog/04-20/better-understanding2.png)
 
@@ -45,6 +45,7 @@ author: Intissar Elmezrouai
 - パスワードには$2
 - $3は、パスワードがハッシュされたらTrueを、されなかったらFalseを返します。
 - $4はコーラーのIPアドレスを保持します。
+
 
 <strong>注記</strong>：現実には、パスワードはハッシュされて、暗号化されていない状態で送られることはありません。<strong>ハッシュされたパスワード</strong>を送るには、<strong>password-4D</strong>の代わりにhashed-password-4Dパラメータを使うことができます。この<a href="https://developer.4d.com/docs/ja/REST/directory.html#directorylogin">コードサンプル</a>でどのように処理するかチェックしてください。
 
