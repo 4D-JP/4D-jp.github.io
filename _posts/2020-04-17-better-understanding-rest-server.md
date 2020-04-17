@@ -23,7 +23,7 @@ author: Intissar Elmezrouai
 
 ## ON REST AUTHENTIFICATIONメソッド
 
-データベースメソッドの<strong><span class="notranslate method"><span style="color: #222222;">On REST Authentification</ span></strong>によって、4D上でRESTセッションの開き方のコントロールをカスタマイズする方法が使えるようになります。RESTセッションを開くリクエストを受けた時、接続確認（例：ユーザー名とパスワード）がリクエストのヘッダーに提供されます。<strong><span class="notranslate method"><span style="color: #222222;">On REST Authentification</span></strong>データベースメソッドが呼ばれるので、これらの認証を評価でき、<strong>True</strong>（セッションの開始を承認）あるいは<strong>False</strong>（セッションの開始を拒否）を返します。
+データベースメソッドの<strong><span class="notranslate method"><span style="color: #222222;">On REST Authentification</span></span></strong>によって、4D上でRESTセッションの開き方のコントロールをカスタマイズする方法が使えるようになります。RESTセッションを開くリクエストを受けた時、接続確認（例：ユーザー名とパスワード）がリクエストのヘッダーに提供されます。<strong><span class="notranslate method"><span style="color: #222222;">On REST Authentification</span></span></strong>データベースメソッドが呼ばれるので、これらの認証を評価でき、<strong>True</strong>（セッションの開始を承認）あるいは<strong>False</strong>（セッションの開始を拒否）を返します。
 
  ![on rest authentification](/images/blog/04-20/better-understanding2.png)
 
