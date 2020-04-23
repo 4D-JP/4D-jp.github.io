@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2020-04-08 08:00:00
+date: 2020-04-22 08:00:00
 categories: 修正リスト
 tags: "17.4"  
-build: 250854
+build: 251257
 version: 17.4
 ---
 
@@ -88,3 +88,5 @@ version: 17.4
 **注記**: ``Tickcount``は，ティック数を``32``ビットで返します。修正により，``uptime``プロパティは別の手段でコンピューターの稼働時間を返すようになりました。一般的に，Windowsでは``GetTickCount64``，Macでは``sysctl``と``CTL_KERN`` ``KERN_BOOTTIME``，Linuxでは``clock_gettime``と``CLOCK_MONOTONIC`` ``timespec``が使用できます。
 
 * ACI0100501 ``Get license info``から最新の情報を取得するためには，ライセンスのリフレッシュを実行する必要がありました。
+
+* ACI0100620 日本語ではないシステム言語設定で日本語のファイル名を添付して``SMTP_Send``を実行した場合，エラー``-43``が返されました。
