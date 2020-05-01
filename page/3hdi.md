@@ -11,6 +11,9 @@ type: page
 
 ## 18r2 # {#v18r2}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**POP3 を使ったメール受信**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_POP3MailDownloading.zip)<span id="18-2-6"></span><br />
+POP3 transporter オブジェクトを使って、POP3 プロトコルによるメールの受信ができます。<br />
+参考：[Eメールオブジェクト](https://doc.4d.com/4Dv18R2/4D/18-R2/Email-object.300-4825407.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーの削除**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DWP_DeletePictures.zip)<span id="18-2-5"></span><br />
 新しく追加された [`WP DELETE PICTURE`](https://doc.4d.com/4Dv18R2/4D/18-R2/WP-DELETE-PICTURE.301-4735795.ja.html) コマンドを使って、4D Write Pro ドキュメントに含まれる画像を削除できます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カラムや行の固定化**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DVP_FreezePanes.zip)<span id="18-2-4"></span><br />
