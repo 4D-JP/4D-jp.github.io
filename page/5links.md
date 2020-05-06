@@ -111,10 +111,14 @@ type: page
     * sideORDA  
     * Form-object-hilite
     
+* [Koichi Harada](https://github.com/KoichiHaradaEndor)
+
 * [Lutz Epperlein](https://github.com/elutz)
     * vc-framework-v17
     * mobileesp-4D    
-   
+    
+* [Mickaël Rottiers](https://github.com/mickaelr4d)
+
 * [Orchard Software](https://github.com/OrchardSoftware)   
     * 4D-Win32API
 
