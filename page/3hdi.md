@@ -11,7 +11,7 @@ type: page
 
 ## 18r3 # {#v18r3}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: LISTBOX SELECT ROWS 新コマンド**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_ListBoxSelectRows.zip)<span id="18-3-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 新コマンド LISTBOX SELECT ROWS**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_ListBoxSelectRows.zip)<span id="18-3-3"></span><br />
 新しく追加された [`LISTBOX SELECT ROWS`](https://doc.4d.com/4Dv18R3/4D/18-R3/LISTBOX-SELECT-ROWS.301-4959830.ja.html) コマンドは、エンティティセレクション型リストボックスおよびコレクション型リストボックスにおいて、選択行を指定するエンティティセレクションおよびコレクションを引数として受け取ります。また、現在の選択行に対するアクション (置換・追加・削除) も指定することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**クラス: 継承**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_ClassAndInheritance.zip)<span id="18-3-2"></span><br />
 クラス継承の例を紹介します。
