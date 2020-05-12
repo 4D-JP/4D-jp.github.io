@@ -9,6 +9,12 @@ type: page
 * content
 {:toc}
 
+## 18r3 # {#v18r3}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**クラス: コンストラクターとメンバーメソッド**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Class-master.zip)<span id="18-3-1"></span><br />
+クラスを定義、利用することができるようになりました。クラスの基本となるコンストラクターとメンバーメソッドの例を紹介します。<br />
+参考：[クラス](https://developer.4d.com/docs/ja/Concepts/classes.html)
+
 ## 18r2 # {#v18r2}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**POP3 を使ったメール受信**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_POP3MailDownloading.zip)<span id="18-2-6"></span><br />
