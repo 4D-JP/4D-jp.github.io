@@ -93,6 +93,11 @@ type: page
     * aws_component
     * jwt_component
     * acme_component
+    
+* [Eric Marchand](https://github.com/mesopelagique)
+    * Formula Composition
+    * kaluza-cli
+    * CollectionUtils
    
 * [Fine Arts Museums of San Francisco](https://github.com/famsf)
     * pecl-pdo-4d
@@ -103,7 +108,7 @@ type: page
     * [4d-plugin-curl](https://github.com/miyako/4d-plugin-curl-v2)
     * [4d-component-wkhtmltopdf](https://github.com/miyako/4d-component-wkhtmltopdf)
     * [4d-plugin-phonetic)](https://github.com/miyako/4d-plugin-x-phonetic) よみがな抽出
-    * [4d-plugin-text-input-service)](https://github.com/miyako/4d-plugin-text-input-service) 日本語入力メソッド切り替え（Mac）
+    * [4d-plugin-text-input-service)](https://github.com/miyako/4d-plugin-text-input-context) 日本語入力メソッド切り替え（Mac）
     * [4d-plugin-input-method-manager](https://github.com/miyako/4d-plugin-input-method-manager) 日本語入力メソッド切り替え（Windows）
     * [4d-plugin-mecab](https://github.com/miyako/4d-plugin-mecab-v2) 日本語形態素解析
 
