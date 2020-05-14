@@ -117,6 +117,7 @@ type: page
     * Form-object-hilite
     
 * [Koichi Harada](https://github.com/KoichiHaradaEndor)
+    * [HTTPServer](https://github.com/KoichiHaradaEndor/HTTPServer)
 
 * [Lutz Epperlein](https://github.com/elutz)
     * vc-framework-v17
