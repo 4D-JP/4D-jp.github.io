@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v17.4 Hotfix 1 修正リスト"
-date: 2020-04-23 08:00:00
+date: 2020-05-14 08:00:00
 categories: 修正リスト
 tags: 17.4 hotfix  
 build: 251873
