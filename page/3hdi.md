@@ -12,7 +12,7 @@ type: page
 ## 18r3 # {#v18r3}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: シートオプション**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_4DVP_SheetOptions.zip)<span id="18-3-4"></span><br />
-新しく追加された [`VP SET SHEET OPTIONS`](https://doc.4d.com/4Dv18R3/4D/18-R3/VP-SET-SHEET-OPTIONS.301-4850835.ja.html) コマンドを使って、4D View Pro のシートオプション (セルデータの領域外表示、枠線やヘッダーの表示、シートの保護、枠線・タブ・選択の色指定) を設定することができます。<br />
+新しく追加された [`VP SET SHEET OPTIONS`](https://doc.4d.com/4Dv18R3/4D/18-R3/VP-SET-SHEET-OPTIONS.301-4850835.ja.html) コマンドを使って、4D View Pro のシートオプション (セルデータの領域外表示、枠線やヘッダーの表示、シートの保護、枠線・タブ・選択の色指定など) を設定することができます。<br />
 参考：[4D View Pro シートオプション](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-View-Pro-Sheet-Options.300-4850975.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 新コマンド LISTBOX SELECT ROWS**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_ListBoxSelectRows.zip)<span id="18-3-3"></span><br />
 新しく追加された [`LISTBOX SELECT ROWS`](https://doc.4d.com/4Dv18R3/4D/18-R3/LISTBOX-SELECT-ROWS.301-4959830.ja.html) コマンドは、エンティティセレクション型リストボックスおよびコレクション型リストボックスにおいて、選択行を指定するエンティティセレクションおよびコレクションを引数として受け取ります。また、現在の選択行に対するアクション (置換・追加・削除) も指定することができます。
