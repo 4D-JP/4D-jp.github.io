@@ -11,6 +11,9 @@ type: page
 
 ## 18r3 # {#v18r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Web server オブジェクト**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_MultipleWebServers.zip)<span id="18-3-5"></span><br />
+新しく追加された [`WEB Server`](https://doc.4d.com/4Dv18R3/4D/18-R3/WEB-Server.301-4851507.ja.html) コマンドを使って、Web server オブジェクトを取得し、Web サーバーを操作することができます。<br />
+また、4D アプリケーション内で利用可能なすべての Web server オブジェクトを返す [`WEB Server list`](https://doc.4d.com/4Dv18R3/4D/18-R3/WEB-Server-list.301-4851515.ja.html) コマンドも追加されました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: シートオプション**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_4DVP_SheetOptions.zip)<span id="18-3-4"></span><br />
 新しく追加された [`VP SET SHEET OPTIONS`](https://doc.4d.com/4Dv18R3/4D/18-R3/VP-SET-SHEET-OPTIONS.301-4850835.ja.html) コマンドを使って、4D View Pro のシートオプション (セルデータの領域外表示、枠線やヘッダーの表示、シートの保護、枠線・タブ・選択の色指定など) を設定することができます。<br />
 参考：[4D View Pro シートオプション](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-View-Pro-Sheet-Options.300-4850975.ja.html)
