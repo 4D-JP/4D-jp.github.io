@@ -2,7 +2,7 @@
 layout: post
 title: "PROJECT DATABASESシリーズ：バイナリからテキストベースへ"
 date: 2019-11-8 01:00:00
-categories: ブログ
+categories: ブログ PROJECTDATABASESシリーズ
 tags: 18.x programming
 author: Vanessa Talbot
 ---
