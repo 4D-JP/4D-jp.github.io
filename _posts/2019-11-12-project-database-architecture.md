@@ -2,7 +2,7 @@
 layout: post
 title: PROJECT DATABASESシリーズ：アーキテクチャ
 date: 2019-11-12 02:00:00
-categories: Tips
+categories: Tips PROJECTDATABASESシリーズ
 tags: 18.x programming
 author: Vanessa Talbot
 ---
