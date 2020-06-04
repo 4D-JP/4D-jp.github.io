@@ -2,7 +2,7 @@
 layout: post
 title: PROJECT DATABASESシリーズ：コンバートした後
 date: 2019-12-02 02:00:00
-categories: Tips
+categories: Tips PROJECTDATABASESシリーズ
 tags: 18.x programming
 author: Vanessa Talbot
 ---
