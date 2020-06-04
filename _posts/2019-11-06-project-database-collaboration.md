@@ -2,7 +2,7 @@
 layout: post
 title: PROJECT DATABASEシリーズ：コラボレーション・ソリューション以上
 date: 2019-11-6 00:00:00
-categories: ブログ
+categories: ブログ PROJECTDATABASESシリーズ
 tags: 18.x programming
 author: Vanessa Talbot
 ---
