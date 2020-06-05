@@ -11,6 +11,9 @@ type: page
 
 ## 18r3 # {#v18r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro 機能: 文書保護**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_4DWP_Protection.zip)<span id="18-3-7"></span><br />
+4D Write Pro にドキュメントの保護機能が追加されました。[`wk protected`](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-Write-Pro-Constants.302-4929640.ja.html)属性を使ってドキュメント要素に対して保護の有無を設定し、ドキュメント属性である[`wk protection enabled`](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-Write-Pro-Constants.302-4929640.ja.html)を使うことで、保護を有効化・無効化することができます。<br />
+参考：[プロテクション](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-Write-Pro-Attributes.300-4929638.ja.html#4936134)
 * <i class="fa fa-download" aria-hidden="true"></i> [**アクティビティのモニタリング**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Monitor_Activity.zip)<span id="18-3-6"></span><br />
 新しく追加された [`START MONITORING ACTIVITY`](https://doc.4d.com/4Dv18R3/4D/18-R3/START-MONITORING-ACTIVITY.301-4936186.ja.html) コマンドを使って、指定以上の時間を要した 4Dランゲージ実行、ネットワークリクエスト、4D データなどのオペレーションを記録することができます。また、このコマンドと連携して使われる [`Get Monitored Activity`](https://doc.4d.com/4Dv18R3/4D/18-R3/Get-Monitored-Activity.301-4936249.ja.html)と [`STOP MONITORING ACTIVITY`](https://doc.4d.com/4Dv18R3/4D/18-R3/STOP-MONITORING-ACTIVITY.301-4936217.ja.html) コマンドも追加されました。<br />
 なお、ネットワークアクティビティでは 4DRequestsLog ファイルと同じ情報が、4D ランゲージ実行では 4DDebugLog ファイルと同じ情報が取得されます (参考: [ログファイルの詳細](https://doc.4d.com/4Dv18R3/4D/18-R3/Description-of-log-files.300-4919535.ja.html))。
@@ -131,7 +134,7 @@ ORDAの[`query()`](https://livedoc.4d.com/--17-R6/ORDA/dataClassquery.305-431181
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 新機能を活用した汎用コード**](https://github.com/4D-JP/HDI/releases/download/17r5/ORDA_Dynamic_Code.zip) (v17r5)<span id="17-5-12"></span><br />
 ORDAに追加された新規メンバーメソッド[`entity.getDataClass( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitygetDataClass.305-4275760.ja.html)および[`entitySelection.getDataClass( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/entitySelectiongetDataClass.305-4275795.ja.html)のほか、値と属性パスのプレースホルダー、[`dataClass.{attributeName}`](https://doc.4d.com/4Dv17R5/4D/17-R5/dataClassattributeName.303-4128672.ja.html)オブジェクトを活用した、データクラスに依存しない汎用的なコードや、動的なクエリインターフェースの例を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: タブの設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_SetTabs.zip) (v17r5)<span id="17-5-11"></span><br />
-[`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-SET-ATTRIBUTES.301-4115142.ja.html)コマンドに、新しく追加された定数[`wk tab default`](https://doc.4d.com/4Dv17R5/4D/17-R5/4D-Write-Pro-Constants.302-4115150.ja.html)または[`wk tabs`](https://doc.4d.com/4Dv17R5/4D/17-R5/4D-Write-Pro-Constants.302-4115150.ja.html)を指定することで、4D Write Pro ドキュメントのデフォルトタブ・任意のタブが定義できます。<br />
+[`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-SET-ATTRIBUTES.301-4115142.ja.html)コマンドに、新しく追加された定数[`wk tab default`](https://doc.4d.com/4Dv18/4D/18/4D-Write-Pro-Constants.302-4523006.ja.html)または[`wk tabs`](https://doc.4d.com/4Dv18/4D/18/4D-Write-Pro-Constants.302-4523006.ja.html)を指定することで、4D Write Pro ドキュメントのデフォルトタブ・任意のタブが定義できます。<br />
 参考：[タブの管理](https://doc.4d.com/4Dv17R5/4D/17-R5/Using-a-4D-Write-Pro-area.200-4115105.ja.html#4226039)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビュープロパティ**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DWP_ViewSettings.zip) (v17r5)<span id="17-5-10"></span><br />
 新しく追加された[`WP SET VIEW PROPERTIES`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-SET-VIEW-PROPERTIES.301-4252257.ja.html)コマンドを使って、4D Write Pro ドキュメントのビュープロパティをプログラムにより制御できるようになりました。ビュープロパティを取得するための、[`WP Get view properties`](https://doc.4d.com/4Dv17R5/4D/17-R5/WP-Get-view-properties.301-4252263.ja.html)コマンドも追加されています。
