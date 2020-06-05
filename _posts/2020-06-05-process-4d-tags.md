@@ -22,7 +22,7 @@ PROCESS 4D TAGS($in;$out)
 
 テンプレートに
 
-```
+```4d
 $in:="<!--#4dif false-->abc<!--#4dendif-->\r"
 PROCESS 4D TAGS($in;$out)
 ```
