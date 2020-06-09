@@ -552,7 +552,7 @@ ACI0100657 ``WEB Server``オブジェクトをインスタンス化して開始�
 
 * ACI0100877 Mac版のみ。iPadのシステム環境設定で4D for iOSアプリの「Send feedback」を有効にした場合，アプリからフィードバックが送信できるようになりますが，実際にはフィードバックメニューを操作することができませんでした。
 
-![Untitled](https://user-images.githubusercontent.com/10509075/84198629-c868e280-aade-11ea-9261-c45cad17ed21.png)
+<image width="334" src="https://user-images.githubusercontent.com/10509075/84198629-c868e280-aade-11ea-9261-c45cad17ed21.png" />
 
 * ACI0100835 メソッドエディターでプロジェクトメソッド名を選択して「定義に移動」した場合，エディターでそのメソッドが開きませんでした。
 
