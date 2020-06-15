@@ -11,7 +11,7 @@ version: 18.x
 
 例：
 
-```4d
+```
 
 $in:="<!--#4dif false-->abc<!--#4dendif-->"
 PROCESS 4D TAGS($in;$out)
@@ -19,7 +19,7 @@ PROCESS 4D TAGS($in;$out)
 
 ``$out``には``$in``の内容がそのまま返されます。
 
-```4d
+```
 $in:="<!--#4dif false-->abc<!--#4dendif-->\r"
 PROCESS 4D TAGS($in;$out)
 ```
