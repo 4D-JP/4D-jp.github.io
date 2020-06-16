@@ -11,6 +11,8 @@ type: page
 
 ## 18r3 # {#v18r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**オフスクリーン Web エリア**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Offscreen_WebArea.zip)<span id="18-3-8"></span><br />
+新しく追加された [`WA Run offscreen area`](https://doc.4d.com/4Dv18R3/4D/18-R3/WA-Run-offscreen-area.301-4968859.ja.html) コマンドを使って、オフスクリーンの (メモリにしか存在せず、表示されない) Web エリアが作成できるようになりました。この Web エリアは Web ページを自動的に読み込んで解析するといったことに使用できます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro 機能: 文書保護**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_4DWP_Protection.zip)<span id="18-3-7"></span><br />
 4D Write Pro にドキュメントの保護機能が追加されました。[`wk protected`](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-Write-Pro-Constants.302-4929640.ja.html)属性を使ってドキュメント要素に対して保護の有無を設定し、ドキュメント属性である[`wk protection enabled`](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-Write-Pro-Constants.302-4929640.ja.html)を使うことで、保護を有効化・無効化することができます。<br />
 参考：[プロテクション](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-Write-Pro-Attributes.300-4929638.ja.html#4936134)
