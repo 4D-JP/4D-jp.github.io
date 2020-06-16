@@ -142,6 +142,8 @@ type: page
     * Tag Editor
     * TinyMCE
     
+* [Tim Penner](https://github.com/tpenner)    
+    
 * [Thomas Maul](https://github.com/ThomasMaul)
     * Barcode_SVG
     * Tools_TM_export
