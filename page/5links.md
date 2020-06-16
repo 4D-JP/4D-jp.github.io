@@ -94,6 +94,8 @@ type: page
     * jwt_component
     * acme_component
     
+* [Eric Juhel](https://github.com/Jim-Fergus)
+
 * [Eric Marchand](https://github.com/mesopelagique)
     * Formula Composition
     * kaluza-cli
