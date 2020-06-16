@@ -109,7 +109,7 @@ type: page
 
     * [4d-plugin-curl](https://github.com/miyako/4d-plugin-curl-v2)
     * [4d-component-wkhtmltopdf](https://github.com/miyako/4d-component-wkhtmltopdf)
-    * [4d-plugin-phonetic)](https://github.com/miyako/4d-plugin-x-phonetic) よみがな抽出
+    * [4d-plugin-phonetic](https://github.com/miyako/4d-plugin-x-phonetic) よみがな抽出
     * [4d-plugin-mecab](https://github.com/miyako/4d-plugin-mecab-v2) 日本語形態素解析
 
 * [Kirk Brooks](https://github.com/KirkBrooks)
