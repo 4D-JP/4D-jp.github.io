@@ -122,6 +122,8 @@ type: page
 * [Laurent Esnault](https://github.com/laurent-esnault)
     * [discourse-highlight.js-4d](https://github.com/laurent-esnault/discourse-highlight.js-4d)
     
+* [Lutz Veith](https://github.com/lveith)    
+    
 * [Lutz Epperlein](https://github.com/elutz)
     * vc-framework-v17
     * mobileesp-4D    
