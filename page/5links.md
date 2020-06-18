@@ -15,6 +15,8 @@ type: page
 
 * [ブログ（英文）](https://blog.4d.com/)
 
+* [フォーラム](https://discuss.4d.com/)
+
 ## テクニカル情報
 
 * [ナレッジベース（日本）](http://kb.4d-japan.com/)
