@@ -119,6 +119,9 @@ type: page
 * [Koichi Harada](https://github.com/KoichiHaradaEndor)
     * [HTTPServer](https://github.com/KoichiHaradaEndor/HTTPServer)
 
+* [Laurent Esnault](https://github.com/laurent-esnault)
+    * [discourse-highlight.js-4d](https://github.com/laurent-esnault/discourse-highlight.js-4d)
+    
 * [Lutz Epperlein](https://github.com/elutz)
     * vc-framework-v17
     * mobileesp-4D    
