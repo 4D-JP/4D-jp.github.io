@@ -113,7 +113,7 @@ SOAP DECLARATION(arrText;Text array;SOAP output;"arrText")
 
 * ACI0100893 「外部ファイルのユーザー設定」が有効にされている場合，サーバー側の管理画面でクライアントをドロップすることができませんでした。
 
-ACI0100847	[144104] The command SET CURRENT PRINTER("") fails to reset the default printer with 4d 64 bits		taow.4d.com	According to origin
+* ACI0100847 64ビット版のみ。``SET CURRENT PRINTER("")``でカレントプリンターをデフォルトプリンターにリセットすることができませんでした。
 
 * ACI0100794 自己署名証明書など，信頼されていない証明書を使用しているHTTPSページはCEF版の統合Webエリアに表示されませんでした。
 
