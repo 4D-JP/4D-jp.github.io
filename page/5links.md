@@ -149,9 +149,9 @@ type: page
     * proTools - 4D buttons
 
 * [Rolf Bachmann](https://github.com/4dgeek)
-    * JSON Editor
-    * Tag Editor
-    * TinyMCE
+    * [JSON Editor](https://github.com/4dgeek/4d-component-jsonEditor)
+    * [Tag Editor](https://github.com/4dgeek/4d-component-tagEditor)
+    * [TinyMCE](https://github.com/4dgeek/4d-component-tinymce)
     
 * [Tim Penner](https://github.com/tpenner)    
     
