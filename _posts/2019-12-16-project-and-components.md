@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PROJECT DATABASEシリーズ：プロジェクト・データベースとコンポーネント
+title: PROJECT DATABASESシリーズ：プロジェクト・データベースとコンポーネント
 date: 2019-12-11 02:00:00
 categories: Product PROJECTDATABASESシリーズ
 tags: 18.x programming
