@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2020-07-04 08:00:00
+date: 2020-07-06 08:00:00
 categories: 修正リスト
 tags: "18.2"
-build: 253786
+build: 253847
 version: 18.2
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0100989 Windows版のみ。ダウンロードしたインストーラーの開発元が「4D SAS」ではなく「未確認」と表示されました。
 
 * ACI0100756 ``OB Is empty``にフォーミュラオブジェクトを渡した場合，``True``が返されました。
 
