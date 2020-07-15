@@ -88,14 +88,18 @@ type: page
 * [Ajar SA](https://github.com/AJARProject)
     * RegexComponent
     * RegexLab5
-    * [AJUI_Tip 1.1](https://ch-fr.4d.com/ajuitip-11/)
-    * [AJUI_Progressbar 1.0](https://ch-fr.4d.com/ajuiprogressbar-10/)
-    * [AJUI_Banner 1.5](https://ch-fr.4d.com/ajuibanner-15/)
-    * [AJUI_FloatingLabel 1.0](https://ch-fr.4d.com/ajuifloatinglabel)
-    * [ AJUI_Breadcrumb](https://ch-fr.4d.com/ajuibreadcrumb)
+    * [AJUI_Tip](https://ch-fr.4d.com/ajuitip-11/)
+    * [AJUI_Progressbar](https://ch-fr.4d.com/ajuiprogressbar-10/)
+    * [AJUI_Banner](https://ch-fr.4d.com/ajuibanner-15/)
+    * [AJUI_FloatingLabel](https://ch-fr.4d.com/ajuifloatinglabel)
+    * [AJUI_Breadcrumb](https://ch-fr.4d.com/ajuibreadcrumb)
+    * [AJUI_Progressbar](https://github.com/AJARProject/AJUI_Progressbar)
+    * [AJUI_Library](https://github.com/AJARProject/AJUI_Library)
+    * [AJUI_macros](https://github.com/AJARProject/AJUI_macros)
+    * [AJUI_Animate](https://github.com/AJARProject/AJUI_Animate)
+    * [AJUI_Button](https://github.com/AJARProject/AJUI_Button)
     * [AJ_Tools_UnitTest](https://ch-fr.4d.com/ajtoolsunittest)
     * [AJ_Tools_xliff](https://ch-fr.4d.com/ajtoolsxliff)
-
     
 * [Bruno Legay](https://github.com/blegay)
     * aws_component
