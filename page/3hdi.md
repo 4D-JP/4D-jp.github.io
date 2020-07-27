@@ -9,6 +9,11 @@ type: page
 * content
 {:toc}
 
+## 18r4 # {#v18r4}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes.zip)<span id="18-4-1"></span><br />
+4D v18 R4 では、データモデルに基づく高レベルのクラスが提供され、それぞれにクラス関数を定義できるようになりました。
+
 ## 18r3 # {#v18r3}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**オフスクリーン Web エリア**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Offscreen_WebArea.zip)<span id="18-3-8"></span><br />
