@@ -14,12 +14,12 @@ version: 18r4
 
 * ACI0101028 Windows版のみ。PHPフォルダーに必要なランタイムDLLファイルがありませんでした。
 
-- concrt140.dll
-- msvcp140.dll
-- msvcp140_1.dll
-- msvcp140_2.dll
-- vccorlib140.dll
-- vcruntime140.dll
+	- concrt140.dll
+	- msvcp140.dll
+	- msvcp140_1.dll
+	- msvcp140_2.dll
+	- vccorlib140.dll
+	- vcruntime140.dll
 
 * ACI0100937
 
