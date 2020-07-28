@@ -11,6 +11,8 @@ type: page
 
 ## 18r4 # {#v18r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラスとRESTサーバー**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes_REST_Server.zip)<span id="18-4-2"></span><br />
+ORDA のデータモデルクラスに定義されたクラス関数は RESTリクエストで呼び出すことができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes.zip)<span id="18-4-1"></span><br />
 4D v18 R4 では、データモデルに基づく高レベルのクラスが提供され、それぞれにクラス関数を定義できるようになりました。
 
