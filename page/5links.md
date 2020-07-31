@@ -112,8 +112,10 @@ type: page
 
 * [Eric Marchand](https://github.com/mesopelagique)
     * Formula Composition
-    * kaluza-cli
+    * [kaluza-cli](https://github.com/mesopelagique/Kaluza)
     * CollectionUtils
+    * [Mesopotamia](https://github.com/mesopelagique/Mesopotamia)
+    * [Iterable](https://github.com/mesopelagique/Iterable)
    
 * [Fine Arts Museums of San Francisco](https://github.com/famsf)
     * pecl-pdo-4d
