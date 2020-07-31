@@ -1,15 +1,17 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2020-07-28 08:00:00
+date: 2020-07-30 08:00:00
 categories: 修正リスト
 tags: "18.2"
-build: 254423
+build: 254492
 version: 18.2
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101050 プロジェクトモードのみ。進捗バーのタイトルフォントカラーを設定することができませんでした。
 
 * ACI0101045 Mac版のみ。Write Proエリアに表示されたテキストのフォントを"Times New Roman"から"Times"に変更した場合，テキストがボールド体になりました。
 
