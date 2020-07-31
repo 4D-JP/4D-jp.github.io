@@ -110,7 +110,7 @@ type: page
 
 * [Eric Juhel](https://github.com/Jim-Fergus)
 
-* [Eric Marchand](https://github.com/mesopelagique)
+* [Eric Marchand](https://mesopelagique.github.io)
     * Formula Composition
     * [kaluza-cli](https://github.com/mesopelagique/Kaluza)
     * CollectionUtils
