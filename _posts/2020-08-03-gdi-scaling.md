@@ -54,3 +54,10 @@ https://blogs.windows.com/windowsdeveloper/2017/05/19/improving-high-dpi-experie
 
 <img width="557" alt="app" src="https://user-images.githubusercontent.com/10509075/89242168-d9942280-d63b-11ea-8081-a1d3ae7015c2.png">
 
+### 既知の問題
+
+MDIウィンドウの「閉じるボタン」上でマウスポインターを移動すると，ボタンが高速で点滅するという現象が報告されています。これはGDIスケーリングの不具合であることがわかっています。「高 DPI 設定」を「アプリケーション」に変更した場合，あるいは96 DPIの画面であれば，問題は発生しません。
+
+具体的には，Win32 APIの[``WindowFromPoint``](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-windowfrompoint)をウィンドウプロセスマネージャーの``WM_NCMOUSEMOVE``メッセージ処理中に呼び出すと，ボタンのハイライト表示がリセットされることがわかっています。
+
+Mac/Windowsの違いを吸収し，過去のバージョンでデザインされたフォーム等を高解像度ディスプレイで同じように表示するためには，WindowsのGDIスケーリングを利用するのが，最良のソリューションであるように思われます。4D側でこの現象を解消することは，現状，困難かもしれません。
