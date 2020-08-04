@@ -43,3 +43,14 @@ GDIスケーリングは，おもにテキストの表示を鮮明にするこ�
 <img width="368" alt="dpi" src="https://user-images.githubusercontent.com/10509075/89241117-f9761700-d638-11ea-908f-a786ac08404d.png">
 
 アプリには，開発者が設定したデフォルトの表示モードがありますが，「プロパティ＞互換性＞高 DPI 設定の変更」で上書きすることもできます。「**システム（拡張）**」がGDIスケーリングです。4D v18は，このモードに設定されています。「**アプリケーション**」に設定した場合，スケーリングが無効となります。「**システム**」は，Creators Update（Windows 10 1703）以前のスケーリングです。 
+
+ユーザーは，プロパティで自由にスケーリングの設定を変更することができます。，IT管理者は，System Center Configuration Manager (SCCM) やMicrosoft IntuneでGDIスケーリングのポリシーを設定することにより，これを制御したいと考えるかもしれません。
+
+**参考資料**
+
+https://blogs.windows.com/windowsdeveloper/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/
+
+前述したように，4DはGDIとDirect2Dを併用しています。GDIスケーリングを無効にした場合，Direct2Dで描画されている部分は鮮明に表示され，そうでない部分は96 DPIの位置とサイズにレンダリングされます。「システムスタイルシート」は自動的に調整されますが，その他のフォントサイズは絶対値で計算されるので，文字が小さくなります。スケーリングが適用されないため，画面のレイアウトは変わりますが，**すべて鮮明に表示される**というメリットがあります。
+
+<img width="557" alt="app" src="https://user-images.githubusercontent.com/10509075/89242168-d9942280-d63b-11ea-8081-a1d3ae7015c2.png">
+
