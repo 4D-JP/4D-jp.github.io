@@ -26,7 +26,7 @@ GDIに限らず，Windowsアプリには，下記のDPIモードが用意され�
 
 **ウィンドウ別にDPIを管理する**。上述したモードを組み合わせてアプリを開発することができます。
 
-https://docs.microsoft.com/ja-jp/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows
+[High DPI Desktop Application Development on Windows](https://docs.microsoft.com/ja-jp/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows)
 
 GDIスケーリングは，実際のDPIと同等以上（x2, x3, x4など）の解像度でテキストやベクトル図形をレンダリングした後，Desktop Window Manager (DWM) が合成したビットマップを画面に表示するというものです。画面の解像度96の倍数であれば，DWMは使用されません。いずれにしても，単純な拡大よりも鮮明な表示が期待できます。[96 DPIのデータしか持ち合わせていないビットマップ画像](https://docs.microsoft.com/ja-jp/windows/win32/gdi/device-independent-bitmaps?redirectedfrom=MSDN)は，引き延ばされてレンダリングされるため，ぼやけて表示されます。また，実際のDPIが96の倍数でなかった場合，単純な拡大ほどではありませんが，テキストやベクトル図形であっても，ぼやけて表示されるという限界があります。
 
