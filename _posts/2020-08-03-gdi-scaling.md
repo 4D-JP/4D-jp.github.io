@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GDIスケーリング論考"
-date: 2020-08-33 12:00:00
+date: 2020-08-03 12:00:00
 categories: 仕様
 tags: 18.x windows graphics
 ---
