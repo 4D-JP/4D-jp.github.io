@@ -48,7 +48,7 @@ GDIスケーリングは，おもにテキストの表示を鮮明にするこ�
 
 **参考資料**
 
-https://blogs.windows.com/windowsdeveloper/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/
+[Improving the high-DPI experience in GDI based Desktop Apps](https://blogs.windows.com/windowsdeveloper/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/)
 
 前述したように，4DはGDIとDirect2Dを併用しています。GDIスケーリングを無効にした場合，Direct2Dで描画されている部分は鮮明に表示され，そうでない部分は96 DPIの位置とサイズにレンダリングされます。「システムスタイルシート」は自動的に調整されますが，その他のフォントサイズは絶対値で計算されるので，文字が小さくなります。スケーリングが適用されないため，画面のレイアウトは変わりますが，**すべて鮮明に表示される**というメリットがあります。
 
