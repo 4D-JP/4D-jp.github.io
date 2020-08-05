@@ -11,6 +11,8 @@ type: page
 
 ## 18r4 # {#v18r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: オフスクリーンエリア**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DVP_Offscreen.zip)<span id="18-4-3"></span><br />
+新しく追加された [`VP Run offscreen area`](https://doc.4d.com/4Dv18R4/4D/18-R4/VP-Run-offscreen-area.301-5042473.ja.html) コマンドを使って、オフスクリーンの (メモリにしか存在せず、表示されない) 4D View Pro エリアが作成できるようになりました。このオフスクリーンエリアはドキュメントのエクスポートなどに利用できます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラスとRESTサーバー**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes_REST_Server.zip)<span id="18-4-2"></span><br />
 ORDA のデータモデルクラスに定義されたクラス関数は RESTリクエストで呼び出すことができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes.zip)<span id="18-4-1"></span><br />
