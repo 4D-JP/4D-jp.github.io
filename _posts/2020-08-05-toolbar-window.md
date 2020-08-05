@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "すべてを置換"
+title: "ツールバータイプのウィンドウ"
 date: 2020-08-05 12:00:00
 categories: 仕様
 tags: 18.x windows
