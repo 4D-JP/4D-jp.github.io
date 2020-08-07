@@ -1,15 +1,19 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2020-08-03 08:00:00
+date: 2020-08-04 08:00:00
 categories: 修正リスト
 tags: "18.2"
-build: 254642
+build: 254677
 version: 18.2
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101066 ``MAIL Convert from MIME``に渡されたMIMEデータに``CRLF``コードが含まれていない場合，アプリケーションがハングしました。ただし，空の文字列であれば問題ありません。
+
+* ACI0100725 ``SMTP Transporter``でメールを送信した場合，``\r\n``文字列がQuoted-Printableエンコーディングされて``=0D=0D``になりました。大概のメールクライアントでは問題ありませんが，OutlookまたはOutlook Expressではメール本文の表示が崩れました。
 
 * ACI0101034 Windows版のみ。サーバー側で「4D Serverについて…」画面を表示してから閉じようとした場合，アプリケーションがフリーズしました。
 
