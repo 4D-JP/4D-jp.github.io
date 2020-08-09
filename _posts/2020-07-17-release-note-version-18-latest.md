@@ -11,6 +11,8 @@ version: 18.2
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0100981 Write Proに改行だけを返すメソッドが数式として改行の直前に挿入されている場合，フッターで``This.pageCount``というフォーミュラを評価すると，アプリケーションがクラッシュしました。
+
 * ACI0101066 ``MAIL Convert from MIME``に渡されたMIMEデータに``CRLF``コードが含まれていない場合，アプリケーションがハングしました。ただし，空の文字列であれば問題ありません。
 
 * ACI0100725 ``SMTP Transporter``でメールを送信した場合，``\r\n``文字列がQuoted-Printableエンコーディングされて``=0D=0D``になりました。大概のメールクライアントでは問題ありませんが，OutlookまたはOutlook Expressではメール本文の表示が崩れました。
