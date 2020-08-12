@@ -11,6 +11,8 @@ type: page
 
 ## 18r4 # {#v18r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラが返すキャリッジリターンの扱い**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DWP_ParagraphBreaks.zip)<span id="18-4-5"></span><br />
+新しいドキュメント設定プロパティ [wk break paragraphs in formulas](https://doc.4d.com/4Dv18R4/4D/18-R4/4D-Write-Pro-Attributes.300-5038135.ja.html#5039441) が追加されました。[`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv18R4/4D/18-R4/WP-SET-ATTRIBUTES.301-5038145.ja.html) コマンドを使ってこれを指定することで、4D Write Pro ドキュメント内のフォーミュラが返すキャリッジリターン文字を改行・改段落のどちらとして認識するか選択することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: PDFへのエクスポート**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DWP_ExportPDF.zip)<span id="18-4-4"></span><br />
 [`WP EXPORT DOCUMENT`](https://doc.4d.com/4Dv18R4/4D/18-R4/WP-EXPORT-DOCUMENT.301-5038146.ja.html) コマンドを使って、4D Write Pro ドキュメントを PDF のファイルまたは BLOB 変数にエクスポートできるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: オフスクリーンエリア**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DVP_Offscreen.zip)<span id="18-4-3"></span><br />
