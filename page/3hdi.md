@@ -11,6 +11,10 @@ type: page
 
 ## 18r4 # {#v18r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 計算の停止・再開・強制**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DVP_Suspend_Resume.zip)<span id="18-4-8"></span><br />
+新しく追加された [`VP SUSPEND COMPUTING`](https://doc.4d.com/4Dv18R4/4D/18-R4/VP-SUSPEND-COMPUTING.301-5056265.ja.html)、
+[`VP RESUME COMPUTING`](https://doc.4d.com/4Dv18R4/4D/18-R4/VP-RESUME-COMPUTING.301-5056276.ja.html)、および
+[`VP RECOMPUTE FORMULAS`](https://doc.4d.com/4Dv18R4/4D/18-R4/VP-RECOMPUTE-FORMULAS.301-5056287.ja.html)コマンドを使って、4D View Pro エリアの自動計算を停止・再開・強制することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**IMAP を使ったメール受信**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_IMAPMailDownloading.zip)<span id="18-4-7"></span><br />
 IMAP transporter オブジェクトを使って、IMAP プロトコルによるメールの受信ができます。<br />
 参考：[Eメールオブジェクト](https://doc.4d.com/4Dv18R4/4D/18-R4/Email-object.300-4981948.ja.html)
