@@ -11,6 +11,8 @@ type: page
 
 ## 18r4 # {#v18r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**CryptoKey クラスを使った署名と検証**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_Cryptokey_class.zip)<span id="18-4-6"></span><br />
+4D クラスストアに新しく追加された [CryptoKey クラス](http://developer.4d.com/docs/ja/API/cryptoClass.html) を利用して、電子メッセージに署名を付与したり、これを検証したりすることができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラが返すキャリッジリターンの扱い**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DWP_ParagraphBreaks.zip)<span id="18-4-5"></span><br />
 新しいドキュメント設定プロパティ [`wk break paragraphs in formulas`](https://doc.4d.com/4Dv18R4/4D/18-R4/4D-Write-Pro-Attributes.300-5038135.ja.html#5039441) が追加されました。[`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv18R4/4D/18-R4/WP-SET-ATTRIBUTES.301-5038145.ja.html) コマンドを使ってこれを指定することで、4D Write Pro ドキュメント内のフォーミュラが返すキャリッジリターン文字を改行・改段落のどちらとして認識するか選択することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: PDFへのエクスポート**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DWP_ExportPDF.zip)<span id="18-4-4"></span><br />
