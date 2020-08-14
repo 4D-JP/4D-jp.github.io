@@ -11,6 +11,9 @@ type: page
 
 ## 18r4 # {#v18r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP を使ったメール受信**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_IMAPMailDownloading.zip)<span id="18-4-7"></span><br />
+IMAP transporter オブジェクトを使って、IMAP プロトコルによるメールの受信ができます。<br />
+参考：[Eメールオブジェクト](https://doc.4d.com/4Dv18R4/4D/18-R4/Email-object.300-4981948.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**CryptoKey クラスを使った署名と検証**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_Cryptokey_class.zip)<span id="18-4-6"></span><br />
 4D クラスストアに新しく追加された [CryptoKey クラス](http://developer.4d.com/docs/ja/API/cryptoClass.html) を利用して、電子メッセージに署名を付与したり、これを検証したりすることができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラが返すキャリッジリターンの扱い**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DWP_ParagraphBreaks.zip)<span id="18-4-5"></span><br />
