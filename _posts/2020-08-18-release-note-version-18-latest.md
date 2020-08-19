@@ -3,9 +3,9 @@ layout: fix
 title: "4D v18.2 Hotfix 2 修正リスト"
 date: 2020-08-18 08:00:00
 categories: 修正リスト
-tags: "18.2"
+tags: 18.2 hotfix
 build: 254885
-version: 18.2
+version: 18.2 Hotfix 2
 ---
 
 **バージョン**: {{page.version}}  
