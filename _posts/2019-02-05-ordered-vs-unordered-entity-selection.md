@@ -3,7 +3,7 @@ layout: post
 title: "エンティティセレクション"
 date: 2019-02-05 00:46:00
 categories: 仕様 
-tags: 17.x orda
+tags: 17.x ORDA
 version: 17.x
 ---
 
