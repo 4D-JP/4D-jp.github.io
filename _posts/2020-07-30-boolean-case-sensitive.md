@@ -3,7 +3,7 @@ layout: post
 title: "ブール型は大文字と小文字を区別する"
 date: 2020-07-30 12:00:00
 categories: 仕様
-tags: 18.x orda
+tags: 18.x ORDA
 ---
 
 コレクション型に対し，文字列の``True``または``False``でクエリを実行した場合，ブール値はヒットしません。これは仕様です。
