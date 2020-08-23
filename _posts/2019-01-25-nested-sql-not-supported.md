@@ -3,7 +3,7 @@ layout: post
 title: "Begin SQL/End SQLがスレッドセーフに"
 date: 2019-01-25 16:39:43
 categories: リリースノート 
-tags: 17r4 sql orda  
+tags: 17r4 sql ORDA  
 version: 17r4  
 ---
 
