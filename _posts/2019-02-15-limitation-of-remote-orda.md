@@ -3,7 +3,7 @@ layout: post
 title: "クライアント/サーバー版はWrite ProドキュメントをORDAで更新できない"
 date: 2019-02-15 10:31:00
 categories: 注意点 
-tags: 17r4 orda writepro viewpro 17r5
+tags: 17r4 ORDA writepro viewpro 17r5
 version: 17r4
 ---
 
