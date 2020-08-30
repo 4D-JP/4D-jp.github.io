@@ -18,6 +18,4 @@ SET MENU BAR(1) //not thread safe
 
 チェックの対象から外されるのは，4Dコマンドだけであることに留意してください。プリエンプティブモードで実行できないプロジェクトメソッドをチェックから除外することはできません。
 
-この点はドキュメントに明記されています。
-
-https://doc.4d.com/4Dv18R3/4D/18-R3/Preemptive-4D-processes.300-4901397.ja.html
+この点は[ドキュメント](https://doc.4d.com/4Dv18R3/4D/18-R3/Preemptive-4D-processes.300-4901397.ja.html)に明記されています。
