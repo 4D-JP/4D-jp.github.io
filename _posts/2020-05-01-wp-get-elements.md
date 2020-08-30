@@ -3,7 +3,7 @@ layout: post
 title: "Write Proドキュメントの要素リストを取得する"
 date: 2020-05-01 12:00:00
 categories: 仕様
-tags: write-pro
+tags: writepro
 version: 18.x
 ---
 
