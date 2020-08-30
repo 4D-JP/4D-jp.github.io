@@ -3,7 +3,7 @@ layout: post
 title: "クイックレポートエリアのカスタマイズ"
 date: 2020-05-21 12:00:00
 categories: 仕様
-tags: quick-report
+tags: quickreport
 version: 18.x
 ---
 
