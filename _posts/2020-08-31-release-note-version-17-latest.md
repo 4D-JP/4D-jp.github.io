@@ -1,11 +1,11 @@
 ---
 layout: fix
-title: "4D v17 修正リスト"
-date: 2020-08-07 08:00:00
+title: "4D v17.4  Hotfix 2 修正リスト"
+date: 2020-08-31 08:00:00
 categories: 修正リスト
-tags: "17.4"  
-build: 254764
-version: 17.4
+tags: 17.4 hotfix  
+build: 255151
+version: 17.4 Hotfix 2
 ---
 
 **バージョン**: {{page.version}}  
