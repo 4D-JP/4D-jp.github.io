@@ -1,6 +1,6 @@
 ---
 layout: fix
-title: "4D v17.4  Hotfix 2 修正リスト"
+title: "4D v17.4 Hotfix 2 修正リスト"
 date: 2020-08-31 08:00:00
 categories: 修正リスト
 tags: 17.4 hotfix  
