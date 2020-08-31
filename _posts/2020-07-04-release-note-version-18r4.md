@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18r4 修正リスト"
-date: 2020-08-28 08:00:00
+date: 2020-08-29 08:00:00
 categories: 修正リスト
 tags: 18r4  
-build: 255311
+build: 255349
 version: 18r4
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0100980 hMailServerから``POP3 Transporter``の``getMail()``メソッドでメールを受信しようとした場合，``Null``が返されることがありました。
 
 * ACI0101137 ファイル名にドイツ語のアクセント記号が含まれる添付ファイルを``MAIL Convert from MIME``で送信することができませんでした。
 
