@@ -1,16 +1,28 @@
 ---
 layout: fix
 title: "4D v18r4 修正リスト"
-date: 2020-09-02 08:00:00
+date: 2020-09-10 08:00:00
 categories: 修正リスト
 tags: 18r4  
-build: 255450
+build: 255759
 version: 18r4
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101083 4D for iOSの「公開」セクションでプッシュ通知を有効にしても，アプリの「通知」が有効になりませんでした。``.4Dmobileapp``ファイルの``pushNotification``は``true``にセットされ，``pushCertificate``にもファイルパスがセットされますが，生成されたXcodeプロジェクトの``.entitlements``ファイルが空でした。
+
+	push notifications are not activated in mobile applications after generation		4D Staff	According to origin
+
+* ACI0101018 パイナリモードのみ。エクスプローラーの「ホーム」ページに「クラス」という項目が表示されました。クラスは，プロジェクトモードに特有のものです。
+
+**注記**: コンテキストメニューも修正されました。
+
+* ACI0101180 4D for iOSの同期では，１度に``100``件を超えるレコードが削除できませんでした。
+
+* ACI0101150 重複キーが検出された場合にRESTサーバーから返されるレスポンスに問題がありました。JSONの後に空のノード（``{}``）がありました。
 
 * ACI0101104 Mac版のみ。矢印キーを使用してソフトハイフン記号を越えようとした場合，キャレットがテキストの冒頭に移動しました。
 
