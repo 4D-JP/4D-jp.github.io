@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v17 修正リスト"
-date: 2020-09-28 08:00:00
+date: 2020-10-14 08:00:00
 categories: 修正リスト
 tags: 17.4  
-build: 256583
+build: 257162
 version: 17.4
 ---
 
