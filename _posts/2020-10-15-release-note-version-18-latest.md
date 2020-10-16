@@ -11,7 +11,11 @@ version: 18.3
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0101114 Mac版のみ。ポップアップ/ドロップダウンメニューに大文字/小文字の区別またはアクセント記号だけが違っている値が表示されている場合，カレント項目ではない行にチェックマークが表示されました。
+
 * ACI0099364 Mac 64ビット版のみ。プラグインSDKの``PA_GetCarbonPageFormat``および``PA_GetCarbonPrintSettings``が``null``を返しました。
+
+**注記**: 修正により，``PA_GetCarbonPrintSettings``および``PA_GetCarbonPageFormat``は4Dが内部的に使用しているプリント設定のコピーを返すようになりました。32ビット版（carbon）とは違い，コピーなので，変更は本来のプリント設定に反映されません。オブジェクトは4Dが保有しているため，開放はしないでください。同じように``PA_GetWindowsPRINTDLG``は``PRINTDLGW``のコピーを返すようになりました。
 
 * ACI0101294 ``VP Convert to picture``はシート番号を``0``ではなく``1``からカウントしました。
 
