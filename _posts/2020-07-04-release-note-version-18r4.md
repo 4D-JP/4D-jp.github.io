@@ -4,7 +4,7 @@ title: "4D v18r4 修正リスト"
 date: 2020-10-13 08:00:00
 categories: 修正リスト
 tags: 18r4  
-build: 257187
+build: 257152
 version: 18r4
 
 ---
