@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "暗黙的なパラメーター宣言"
+title: "タブコントールオブジェクトのデータソース"
 date: 2020-10-14 12:00:00
 categories: 仕様
 tags: 18.x form programming 
