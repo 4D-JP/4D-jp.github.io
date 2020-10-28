@@ -9,6 +9,11 @@ type: page
 * content
 {:toc}
 
+## 18r5 # {#v18r5}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス関数のスコープ**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_ORDA_FunctionsScope.zip)<span id="18-5-1"></span><br />
+4D v18 R5 では、[データモデルクラス](https://developer.4d.com/docs/ja/ORDA/ordaClasses.html)関数のスコープを定義するためのキーワード ([`local`](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E9%96%A2%E6%95%B0) および [`exposed`](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E5%85%AC%E9%96%8Bvs%E9%9D%9E%E5%85%AC%E9%96%8B%E9%96%A2%E6%95%B0)) が使えるようになりました。
+
 ## 18r4 # {#v18r4}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: プロパティの取得・設定**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_LISTBOXES_Properties_v2.zip)<span id="18-4-9"></span><br />
@@ -32,7 +37,8 @@ IMAP transporter オブジェクトを使って、IMAP プロトコルによる�
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラスとRESTサーバー**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes_REST_Server.zip)<span id="18-4-2"></span><br />
 ORDA のデータモデルクラスに定義されたクラス関数は RESTリクエストで呼び出すことができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes.zip)<span id="18-4-1"></span><br />
-4D v18 R4 では、データモデルに基づく高レベルのクラスが提供され、それぞれにクラス関数を定義できるようになりました。
+4D v18 R4 では、ORDA データモデルに基づく高レベルのクラスが提供され、それぞれにクラス関数を定義できるようになりました。<br />
+参照: [データモデルクラス](https://developer.4d.com/docs/Rx/ja/ORDA/ordaClasses.html)
 
 ## 18r3 # {#v18r3}
 
