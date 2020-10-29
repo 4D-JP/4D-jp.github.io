@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v18r5 修正リスト"
-date: 2020-10-24 08:00:00
+date: 2020-10-28 08:00:00
 categories: 修正リスト
 tags: 18r5  
-build: 257628
+build: 257701
 version: 18r5
 
 ---
@@ -13,6 +13,8 @@ version: 18r5
 **ビルド**: {{page.build}}  
 
 * ACI0101304 Mac版のみ。ようこそ画面など，CEF版Webエリアを使用しているフォームを表示した場合，終了直前にアプリケーションがクラッシュしました。
+
+* ACI0101334 Write Proドキュメントを``.docx``形式でエクスポートした場合，リスト項目（数字または記号）がMicrosoft Wordで正しく表示されませんでした。
 
 * ACI0101328 フランス語版のみ。Write Proツールバーの「画像」タブの表示が正しくありませんでした。「Images」の代わりに「Import/Export」と表示されました。
 
