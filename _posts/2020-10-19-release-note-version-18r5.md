@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18r5 修正リスト"
-date: 2020-10-31 08:00:00
+date: 2020-11-03 08:00:00
 categories: 修正リスト
 tags: 18r5  
-build: 257843
+build: 257856
 version: 18r5
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101308 ``MAIL convert from MIME``でメールの件名が正しくデコードされないことがありました。折り返されたUTF-8 quoted printableのエスケープ文字がそのまま返される場合がありました。
 
 * ACI0101330 Mac版のみ。システムフォントをスタイルシート経由で設定した場合，ボタンタイトルのフォントをボールド体にすることができませんでした。R3では問題ありません。
 
