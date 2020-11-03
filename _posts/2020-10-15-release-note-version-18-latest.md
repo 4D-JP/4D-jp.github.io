@@ -1,15 +1,17 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2020-10-30 08:00:00
+date: 2020-11-03 08:00:00
 categories: 修正リスト
 tags: "18.3"
-build: 257823
+build: 257857
 version: 18.3
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101308 ``MAIL convert from MIME``でメールの件名が正しくデコードされないことがありました。折り返されたUTF-8 quoted printableのエスケープ文字がそのまま返される場合がありました。
 
 * ACI0101349 同じフォーミュラが挿入されている4D Write Proドキュメントをインポート・エクスポート・表示・印刷した場合，数式の値が正しくありませんでした。同じフォーミュラは``1``回しか評価されないためです。``ST COMPUTE EXPRESSIONS``で明示的に再計算すれば，問題ありません。
 
