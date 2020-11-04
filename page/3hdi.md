@@ -11,6 +11,8 @@ type: page
 
 ## 18r5 # {#v18r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カスタムファンクション**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_4DVP_allow_formulas.zip)<span id="18-5-2"></span><br />
+[`VP SET CUSTOM FUNCTIONS`](https://doc.4d.com/4Dv18R5/4D/18-R5/VP-SET-CUSTOM-FUNCTIONS.301-5062623.ja.html) を使って、4D View Pro で使用できるカスタムファンクションを作成することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス関数のスコープ**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_ORDA_FunctionsScope.zip)<span id="18-5-1"></span><br />
 4D v18 R5 では、[データモデルクラス](https://developer.4d.com/docs/ja/ORDA/ordaClasses.html)関数のスコープを定義するためのキーワード ([`local`](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E9%96%A2%E6%95%B0) および [`exposed`](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E5%85%AC%E9%96%8Bvs%E9%9D%9E%E5%85%AC%E9%96%8B%E9%96%A2%E6%95%B0)) が使えるようになりました。
 
