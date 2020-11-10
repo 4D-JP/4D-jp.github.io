@@ -11,6 +11,9 @@ type: page
 
 ## 18r5 # {#v18r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 共有可能なエンティティセレクション**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_Shareable_EntitySelection.zip)<span id="18-5-3"></span><br />
+4D v18 R5 では、特定のエンティティセレクションを複数プロセスやワーカー間で共有できるようになりました。ただし、共有不可のエンティティセレクションも存在します。共有不可のエンティティセレクションは、新しく追加された [`entitySelection.copy()`](https://livedoc.4d.com/4Dv18R5/4D/18-R5/entitySelectioncopy.305-5170105.ja.html) コマンドや、拡張された [`OB Copy`](https://doc.4d.com/4Dv18R5/4D/18-R5/OB-Copy.301-5128463.ja.html) コマンドを使って、共有可能なエンティティセレクションとしてコピーすることが可能です。<br />
+参照：[共有可能なエンティティセレクション/共有不可のエンティティセレクション](https://doc.4d.com/4Dv18R5/4D/18-R5/Entity-selections.300-5126508.ja.html#5169945)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カスタムファンクション**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_4DVP_allow_formulas.zip)<span id="18-5-2"></span><br />
 [`VP SET CUSTOM FUNCTIONS`](https://doc.4d.com/4Dv18R5/4D/18-R5/VP-SET-CUSTOM-FUNCTIONS.301-5062623.ja.html) を使って、4D View Pro で使用できるカスタムファンクションを作成することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス関数のスコープ**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_ORDA_FunctionsScope.zip)<span id="18-5-1"></span><br />
