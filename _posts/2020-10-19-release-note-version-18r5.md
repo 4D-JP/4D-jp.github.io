@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18r5 修正リスト"
-date: 2020-11-05 08:00:00
+date: 2020-11-06 08:00:00
 categories: 修正リスト
 tags: 18r5  
-build: 257952
+build: 257984
 version: 18r5
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101379 Windows版のみ。デフォルトのファイル名を``*.gif``に設定して``WRITE PICTURE FILE``を実行した場合，保存ダイアログに間違ったファイル拡張子（``.4pct``）が表示されました。
 
 * ACI0101234 ``FORM SCREENSHOT``から返される出力フォームの画像は最終レコードが含まれていませんでした。
 
