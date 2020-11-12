@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 透明なリストボックス"
+title: "透明なリストボックス"
 date: 2020-11-12 12:00:00
 categories: 仕様
 tags: 18.x userinterface listbox
