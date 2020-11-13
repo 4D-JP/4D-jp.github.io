@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D v18r5 修正リスト"
-date: 2020-11-12 08:00:00
+date: 2020-11-13 08:00:00
 categories: 修正リスト
 tags: 18r5  
-build: 258206
+build: 258285
 version: 18r5
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101412 ``IMAP Transporter``の``getMail()``メソッドで取得したメールオブジェクトには本文がありませんでした。
+
+* ACI0101371 コンパイルされたストラクチャファイル（``.4DC``）で``FORM Convert to dynamic``を実行した場合，オブジェクトメソッドがロードされませんでした。 
+
+* ACI0101361 ``SHOW PROCESS``を実行するたびにプロセスの非表示と表示が切り替わるために画面がちらつきました。
 
 * ACI0101416 Mac版のみ。印刷ダイアログでユーザーがプレビューを有効にした場合，``SET PRINT PREVIEW``でプレビューを無効しても``WP PRINT``でプレビューが表示されました。``Print form``では問題ありません。
 
