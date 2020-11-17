@@ -11,8 +11,6 @@ version: 18.3
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
-* ACI0101414 `MAIL Convert from MIME`でMIMEを処理した場合，``Content-Disposition``ヘッダーの``name``パラメーターが正しく解析されませんでした。通常，`name`は`Content-Type`ヘッダーに記述されますが，Thunderbirdのようなメールクライアントはどちらに記述されていたとしても添付ファイル名を表示することができます。
-
 * ACI0101390 新規エンティティのリレーション属性が``0``件のエンティティセレクションだった場合，``entitySelection.orderBy()``を実行すると，リレーションで結ばれたデータクラスの全エンティティが返されました。
 
 * ACI0101371 コンパイルされたストラクチャファイル（``.4DC``）で``FORM Convert to dynamic``を実行した場合，オブジェクトメソッドがロードされませんでした。 
