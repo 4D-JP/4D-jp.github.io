@@ -1,16 +1,28 @@
 ---
 layout: fix
 title: "4D v18r5 修正リスト"
-date: 2020-11-13 08:00:00
+date: 2020-11-14 08:00:00
 categories: 修正リスト
 tags: 18r5  
-build: 258285
+build: 258326
 version: 18r5
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101414 `MAIL Convert from MIME`でMIMEを処理した場合，``Content-Disposition``ヘッダーの``name``パラメーターが正しく解析されませんでした。通常，`name`は`Content-Type`ヘッダーに記述されますが，Thunderbirdのようなメールクライアントはどちらに記述されていたとしても添付ファイル名を表示することができます。
+
+* ACI0101372 クラスのコードにシンタックスエラーが存在する場合，間違った行番号がコンパイラーに表示されました。
+
+* ACI0101357 `IMAP Transporter`でdovecotメールサーバーにログインすることができませんでした。
+
+* ACI0101356 `buildapp.4dsettings`の`ClientServerSystemFolderName`オプションを使用してサーバーアプリケーションをビルドした場合，キャッシュフォルダー名が`info.plist`ではなく`catalog.4dcatalog`に記録されました。
+
+* ACI0101345 `#DECLARE`をメソッドの第`1`行以外に記述した場合，メソッドエディターには警告が表示されますが，コンパイルエラーにはなりませんでした。
+
+* ACI0101325 名前付き引数を参照するようなフォーミュラをコンパイルすることができませんでした。
 
 * ACI0101412 ``IMAP Transporter``の``getMail()``メソッドで取得したメールオブジェクトには本文がありませんでした。
 
