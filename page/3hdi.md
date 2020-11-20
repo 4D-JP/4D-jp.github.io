@@ -11,6 +11,9 @@ type: page
 
 ## 18r5 # {#v18r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 小数点揃え**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_4DWP_SetupDecimalTabs.zip)<span id="18-5-4"></span><br />
+[`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv18R5/4D/18-R5/WP-SET-ATTRIBUTES.301-5125607.ja.html) コマンドで
+[`wk tab decimal separator`](https://doc.4d.com/4Dv18R5/4D/18-R5/4D-Write-Pro-Attributes.300-5125597.ja.html#5171902) セレクターを使用して、4D Write Pro ドキュメントの小数点揃えの設定を変更できるようになりました。点基準、カンマ基準、最初の点またはカンマ基準、システム設定基準で小数点を揃えることができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 共有可能なエンティティセレクション**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_Shareable_EntitySelection.zip)<span id="18-5-3"></span><br />
 4D v18 R5 では、特定のエンティティセレクションを複数プロセスやワーカー間で共有できるようになりました。ただし、共有不可のエンティティセレクションも存在します。共有不可のエンティティセレクションは、新しく追加された [`entitySelection.copy()`](https://livedoc.4d.com/4Dv18R5/4D/18-R5/entitySelectioncopy.305-5170105.ja.html) コマンドや、拡張された [`OB Copy`](https://doc.4d.com/4Dv18R5/4D/18-R5/OB-Copy.301-5128463.ja.html) コマンドを使って、共有可能なエンティティセレクションとしてコピーすることが可能です。<br />
 参照：[共有可能なエンティティセレクション/共有不可のエンティティセレクション](https://doc.4d.com/4Dv18R5/4D/18-R5/Entity-selections.300-5126508.ja.html#5169945)
