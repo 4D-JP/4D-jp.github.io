@@ -107,7 +107,9 @@ type: page
     * acme_component
     
 * [Cannon Smith](https://github.com/cannonsmith)
-
+    * [DevQuickOpen](https://github.com/cannonsmith/DevQuickOpen) Xcodeの"素早く開く"やSpotlightのようにフォーム・メソッド・クラスを開く
+    * [DevSync](https://github.com/cannonsmith/DevSync)
+    
 * [Eric Juhel](https://github.com/Jim-Fergus)
 
 * [Eric Marchand](https://mesopelagique.github.io)
