@@ -86,8 +86,9 @@ type: page
     * [PDO_4D](https://php.net/pdo_4d) on [PECL](http://pecl.php.net/package/PDO_4D)
 
 * [Ajar SA](https://github.com/AJARProject)
-    * RegexComponent
-    * RegexLab5
+    * [AJ_Tools_Regex](https://github.com/AJARProject/AJ_Tools_Regex)
+    * [AJ_Tools_UnitTest](https://ch-fr.4d.com/ajtoolsunittest)
+    * [AJ_Tools_xliff](https://ch-fr.4d.com/ajtoolsxliff)
     * [AJUI_Tip](https://ch-fr.4d.com/ajuitip-11/)
     * [AJUI_Progressbar](https://ch-fr.4d.com/ajuiprogressbar-10/)
     * [AJUI_Banner](https://ch-fr.4d.com/ajuibanner-15/)
@@ -98,9 +99,7 @@ type: page
     * [AJUI_macros](https://github.com/AJARProject/AJUI_macros)
     * [AJUI_Animate](https://github.com/AJARProject/AJUI_Animate)
     * [AJUI_Button](https://github.com/AJARProject/AJUI_Button)
-    * [AJ_Tools_UnitTest](https://ch-fr.4d.com/ajtoolsunittest)
-    * [AJ_Tools_xliff](https://ch-fr.4d.com/ajtoolsxliff)
-    
+
 * [Bruno Legay](https://github.com/blegay)
     * aws_component
     * jwt_component
