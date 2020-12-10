@@ -6,7 +6,7 @@ categories: 仕様
 tags: 18r4 imap network
 ---
 
-`IMAP Transporter`の`getBoxInfo()`は，どんなメールボックスでも選択できるわけではありません。たとえば，Gmailの`INBOX`にIMAPで接続した場合，`[Gmail]`というメールボックスが返されますが，このメールボックスは階層構造の「ノード」なので，単独で選択することができません。
+`IMAP Transporter`の`getBoxInfo()`は，どんなメールボックスでも選択できるわけではありません。たとえば，GmailにIMAPで接続した場合，`[Gmail]`というメールボックスが返されますが，このメールボックスは階層構造の「ノード」なので，単独で選択することができません。
 
 * INBOX
 * [Gmail]
