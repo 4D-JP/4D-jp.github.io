@@ -27,7 +27,7 @@ If ($status.success)
   $boxList:=$transporter.getBoxList()
   For each ($box;$boxList)
     If ($box.selectable)
-    $boxInfo:=$transporter.getBoxInfo($box.name)
+      $boxInfo:=$transporter.getBoxInfo($box.name)
     End if
   End for each
 End if
