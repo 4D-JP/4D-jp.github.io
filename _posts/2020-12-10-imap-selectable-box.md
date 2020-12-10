@@ -22,16 +22,13 @@ tags: 18r4 imap network
 
 ```
 $transporter:=IMAP New transporter($server)
-
 $status:=$transporter.checkConnection()
-
 If ($status.success)
-
-$boxList:=$transporter.getBoxList()
-
-For each ($box;$boxList)
-If ($box.selectable)
-$boxInfo:=$transporter.getBoxInfo($box.name)
+  $boxList:=$transporter.getBoxList()
+  For each ($box;$boxList)
+    If ($box.selectable)
+    $boxInfo:=$transporter.getBoxInfo($box.name)
+    End if
+  End for each
 End if
-End for each
 ```
