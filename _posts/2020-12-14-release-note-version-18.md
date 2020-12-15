@@ -1,7 +1,7 @@
 ---
 layout: fix
-title: "4D v18 修正リスト"
-date: 2020-12-09 08:00:00
+title: "4D v18.3 Hotfix 3 修正リスト"
+date: 2020-12-14 08:00:00
 categories: 修正リスト
 tags: "18.3"
 build: 259337
