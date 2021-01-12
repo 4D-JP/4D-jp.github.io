@@ -1,15 +1,23 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-01-08 08:00:00
+date: 2021-01-09 08:00:00
 categories: 修正リスト
 tags: "18.3"
-build: 260265
+build: 260307
 version: 18.3
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101599 macOS Big Surのみ。4D Serverの管理画面にシステムバージョンが「macOS 10.16」と表示されました。
+
+* ACI0101535 Write ProのHunspellスペルチェッカーをオランダ語（`nl_NL`）に設定した場合，「t.a.v.」というアクロニムがワードとして認識されませんでした。
+
+**注記**: 追加の辞書は[freeoffice.com](https://www.freeoffice.com/fr/telecharger/dictionnaires)からダウンロードできます。
+
+* ACI0101446 macOS Big Surのみ。`command`+`.`（キャンセル）のキーボードショートカットを設定することも入力することもできませんでした。
 
 * ACI0101432 `Field name`にオブジェクト型のプロパティを渡した場合，コンパイルエラーになりました。
 
