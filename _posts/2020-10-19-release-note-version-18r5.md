@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18r5 修正リスト"
-date: 2021-01-08 08:00:00
+date: 2021-01-09 08:00:00
 categories: 修正リスト
 tags: 18r5  
-build: 260288
+build: 260330
 version: 18r5
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101599 macOS Big Surのみ。4D Serverの管理画面にシステムバージョンが「macOS 10.16」と表示されました。
 
 * ACI0101594 [`#DECLARE`](https://developer.4d.com/docs/ja/Concepts/parameters.html)構文を使用しているメソッドの戻り値のパラメーター名が省略されている場合，未定義が返されました。ACI0101458が修正されたことによる副作用のようです。
 
