@@ -22,7 +22,7 @@ version: 18r5
 900566 2020-12-11 22:47:48 [APPL] ERROR - 4D request, send, critical net trigger, error -10002, task #-1
 900567 2020-12-11 22:47:48 [APPL] ERROR - 4D controller task, critical net error signal, task #-2
 ```
-**注記**: 接続リクエストは２ステップで構成されていますが，第１ステップが不成功に終わった場合，特殊な条件で第２ステップに進むことがあり，その場合が想定されてなかったことが原因でした。Microsoftのソケット実装は，この点で仕様に曖昧であることも関係しています。
+**注記**: 接続リクエストは２ステップで構成されていますが，第１ステップが不成功に終わった場合，特殊な条件で第２ステップに進むことがあり，その場合が想定されてなかったことが原因でした。Microsoftのソケット実装は，この点で仕様に曖昧な点があることも関係しています。
 
 > Until the connection attempt completes on a nonblocking socket, all subsequent calls to connect on the same socket will fail with the error code `WSAEALREADY`, and `WSAEISCONN` when the connection completes successfully. Due to ambiguities in version 1.1 of the Windows Sockets specification, error codes returned from connect while a connection is already pending may vary among implementations. As a result, it is not recommended that applications use multiple calls to connect to detect connection completion. If they do, they must be prepared to handle `WSAEINVAL` and `WSAEWOULDBLOCK` error values the same way that they handle `WSAEALREADY`, to assure robust operation.
   
