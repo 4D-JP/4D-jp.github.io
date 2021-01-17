@@ -1,15 +1,41 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-01-13 08:00:00
+date: 2021-01-15 08:00:00
 categories: 修正リスト
 tags: "18.3"
-build: 260394
+build: 260505
 version: 18.3
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101600 ヌル終点エラー（ネットワーク切断）が突発的に発生しました。ネットワークリクエストログ（サーバー側）を解析すると，プロセスがアイドル接続タイムアウトから復帰するタイミングでネットワーク接続の例外が発生していることがわかります。
+
+```
+900562 2020-12-11 22:47:48 [APPL] INFO - 4D application, resume connection, task #-1
+900563 2020-12-11 22:47:48 [APPL] ERROR - 4D client session, restore, failed to create connection, task #-1
+900564 2020-12-11 22:47:48 [APPL] ERROR - 4D connection, failed to use, task #-1
+900565 2020-12-11 22:47:48 [srvr] ERROR - [16] 4D connection, write exactly, failed to write, task #-1, socket -1
+900566 2020-12-11 22:47:48 [APPL] ERROR - 4D request, send, critical net trigger, error -10002, task #-1
+900567 2020-12-11 22:47:48 [APPL] ERROR - 4D controller task, critical net error signal, task #-2
+```
+**注記**: 接続リクエストは２ステップで構成されていますが，第１ステップが不成功に終わった場合，特殊な条件で第２ステップに進むことがあり，その場合が想定されてなかったことが原因でした。Microsoftのソケット実装は，この点で仕様に曖昧であることも関係しています。
+
+> -Until the connection attempt completes on a nonblocking socket, all subsequent calls to connect on the same socket will fail with the error code `WSAEALREADY`, and `WSAEISCONN` when the connection completes successfully. Due to ambiguities in version 1.1 of the Windows Sockets specification, error codes returned from connect while a connection is already pending may vary among implementations. As a result, it is not recommended that applications use multiple calls to connect to detect connection completion. If they do, they must be prepared to handle `WSAEINVAL` and `WSAEWOULDBLOCK` error values the same way that they handle `WSAEALREADY`, to assure robust operation.
+  
+<i class="fa fa-external-link" aria-hidden="true"></i> https://docs.microsoft.com/en-us/windows/win32/api/winsock2/nf-winsock2-connect
+
+* ACI0101579 フォーミュラのパラメーターに4D Viewエリアの参照変数が使用されているスプレッドシートをView Proに変換した場合，エリアの参照変数が消えました。
+
+* ACI0101575 プロジェクトモードのみ。オブジェクトメソッドが定義されているフォームオブジェクトをコピー＆ペーストした後，そのオブジェクトをコピーして別のフォームにコピー＆ペーストした場合，コピーされたオブジェクトおよびコピーからコピーされたオブジェクトのメソッドに制御コードが追加されました。元のオブジェクトは問題ありません。フォームオブジェクトのコピー＆ペーストで問題が発生し，オブジェクトの複製では発生しません。
+
+**注記**: コードのバイトオーダーマーク（BOM）が重ねてコピーされていたことが原因でした。
+
+* ACI0101484 Webサービス（SOAP）でオブジェクト型を入力変数に使用した場合，サーバーがクラッシュしました。
+
+**注記**: `SOAP DECLARATION`は`Is collection`や`Is object`をサポートしていません。修正により，エラーが返されるようになりました。
 
 * ACI0101611 Windows版のみ。Citrixプラットフォームでタスクパーのウィンドウを閉じた場合，アプリケーションが正常に終了しませんでした。Citrixでタスクパーを右クリックしてウィンドウを閉じると`WM_SYSCOMMAND`の`SC_CLOSE`ではなく`WM_CLOSE`イベントが送信されますが，4DのMDIウィンドウがこのイベントを処理しないためにアプリケーションが終了せず，バックグランドで非常に高いCPU使用率のまま動き続けてしまうことが原因です。
 
