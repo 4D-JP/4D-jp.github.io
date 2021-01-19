@@ -12,6 +12,14 @@ version: 18r6
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0101465 View Proエリアは`SET ALLOWED METHODS'`に対応しているはずですが，ワイルドカード文字（`@`）による一括指定ができませんでした。
+
+* ACI0101569 View Proエリアで日付型のパラメーターを受け取るフォーミュラに日付型を渡さなかった場合，エリアが`1`分間ほどフリーズした状態になりました。`VP SET CUSTOM FUNCTIONS`と`VP SET ALLOWED METHODS`のどちらでも問題が再現します。
+
+* ACI0101451 コンパイルモードのみ。リレートテーブルのオブジェクト型フィールドに対して`ORDER BY ATTRIBUTE`を実行した場合，正しい結果が返されませんでした。ビルド`258357`は問題ありませんでした。
+
+* ACI0101513 データベース設定でスケーラブルセッションを有効にした後，Webサーバーを再起動した場合，`Session`オブジェクトが`Null`を返しました。
+
 * ACI0101029 Windows版のみ。CEF版のWebエリアで`WA SET PAGE CONTENT`を使用し，ページをリロードした場合，`$4d`オブジェクトでプロジェクトメソッドが呼び出せなくなることがありました。
 
 **注記**: [CEFのアップデート](https://www.magpcss.org/ceforum/viewtopic.php?f=6&t=17231)で`CefProcessHandler` `setContent` などのAPIが廃止されたことに伴い，ページをリロードした後にブリッジを再アクティベートすることができなくなったことが原因でした。`WA SET PAGE CONTENT`の実装が完全に作り直され，[プロバイダーでリソースの読み込みをインターセプトする仕組み](https://bitbucket.org/chromiumembedded/cef/commits/18b5f727017ba0d5816687536cbeefe4b640c9ef)になりました。なお，ベースURLを指定しなかった場合のURLは`file:///`となります。URLを省略することは許されないためです。また，URLを`about:blank`に設定した場合はページのコンテンツは無視されます。空のページは空だからです。
