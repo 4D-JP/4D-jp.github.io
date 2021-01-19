@@ -385,3 +385,18 @@ Use ($o)
 	$o.b:=52 // $oが属する$o2グループはプロテクトされていないのでエラー
 End use 
 ```
+
+* ACI0101596 処理に時間を要するコマンドの監視を有効にした状態で`QUERY BY FORMULA`を実行した場合，アプリケーションがクラッシュしました。
+
+* ACI0101578 View Proエリアのフォーミュラ`COLUMNLETTER`のパラメーターを省略した場合，カレント列の文字が返されるはずですが，無効なフォーミュラであるというエラーが返されました。
+
+* ACI0101566 [`VP SET CUSTOM FUNCTIONS`](https://doc.4d.com/4Dv18R5/4D/18-R5/VP-SET-CUSTOM-FUNCTIONS.301-5062623.ja.html)でプロジェクトメソッドをフォーミュラとして登録した場合，日付型の`value`プロパティを有するオブジェクト型ではなく，`year` `month` `day`のプロパティを有するオブジェクトが`$1`に渡されました。`VP SET ALLOWED METHODS`であれば問題ありません。
+
+```
+$allowedMethods:=New object
+$allowedMethods.testDate:=New object
+$allowedMethods.testDate.formula:=Formula(testDate)
+$allowedMethods.testDate.minParams:=1
+$allowedMethods.testDate.maxParams:=1
+VP SET CUSTOM FUNCTIONS("ViewProArea"; $allowedMethods)
+```
