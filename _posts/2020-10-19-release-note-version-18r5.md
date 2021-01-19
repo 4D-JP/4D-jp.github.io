@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v18r5 修正リスト"
-date: 2021-01-15 08:00:00
+date: 2021-01-18 08:00:00
 categories: 修正リスト
 tags: 18r5  
 build: 260507
