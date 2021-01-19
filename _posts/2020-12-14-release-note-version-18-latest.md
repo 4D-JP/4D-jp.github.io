@@ -1,15 +1,17 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-01-15 08:00:00
+date: 2021-01-19 08:00:00
 categories: 修正リスト
 tags: "18.3"
-build: 260505
+build: 260568
 version: 18.3
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101581 CEF版Webエリアに空のページを表示した状態で`WA OPEN WEB INSPECTOR`を実行した場合，アプリケーションがクラッシュしました。
 
 * ACI0101460 `IMAP_MsgLst`でアクセント付き文字（`é` `ê` `ë` `â`）が正しく返されませんでした。
 
