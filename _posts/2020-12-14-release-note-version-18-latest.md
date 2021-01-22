@@ -1,15 +1,21 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-01-19 08:00:00
+date: 2021-01-21 08:00:00
 categories: 修正リスト
 tags: "18.3"
-build: 260568
+build: 260672
 version: 18.3
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101323 `WEB Get server info`のプロパティ`webInactiveProcessTimeout`および`webMaxConcurrentProcesses`には，デフォルト値が常に返されました。データベース設定または`WEB SET OPTION`で変更した値が返されるべきです。
+
+* ACI0100986 Write Proドキュメントに挿入されたフォーミュラを`ST Get expressions`と`ST get content type`でループ処理した場合，アプリケーションが無反応になりました。
+
+**注記**: 18r2以降，フォーミュラを処理するだけであれば，最適化された`WP Get formulas`を使用することができます。
 
 * ACI0101581 CEF版Webエリアに空のページを表示した状態で`WA OPEN WEB INSPECTOR`を実行した場合，アプリケーションがクラッシュしました。
 
