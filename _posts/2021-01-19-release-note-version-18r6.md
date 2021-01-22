@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D v18r6 修正リスト"
-date: 2021-01-19 08:00:00
+date: 2021-01-21 08:00:00
 categories: 修正リスト
 tags: 18r6
-build: 260545
+build: 260704
 version: 18r6
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101629 `4D CSS`の`serveCss`および`4D Mobile App Server`の`MobileAppServer`メソッドの属性が「非表示」に設定されていませんでした。
+
+* ACI0101592 サーバーアプリケーションの`Resources/Internal User Components`フォルダーにラベルエディターコンポーネント（`4D Labels.4dbase`）がインストールされていませんでした。そのため，サーバー側で`PRINT LABEL`を実行することができません。プロジェクトの`Components`に自分でコンポーネントのコピーをインストールする必要があります。
 
 * ACI0101601 Write Proドキュメントを`.docx`形式でエクスポートした場合，数式がフィールドとして書き出されませんでした。
 
