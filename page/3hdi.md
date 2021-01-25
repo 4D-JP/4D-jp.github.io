@@ -12,7 +12,7 @@ type: page
 ## 18r5 # {#v18r5}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 共有可能/追加可能なエンティティセレクションの操作**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_Shareable_ES_Enhancements.zip)<span id="18-5-5"></span><br />
-エンティティセレクションをもとに、別のエンティティセレクションを作成するとき、その特性は継承されます。例外が [`entitySelection.copy()`](https://livedoc.4d.com/4Dv18R5/4D/18-R5/entitySelectioncopy.305-5170105.ja.html) を使った場合で、共有可能 (追加不可) エンティティセレクションを追加可能 (共有不可) にしたり、その逆が可能です。<br />
+エンティティセレクションをもとに別のエンティティセレクションを作成すると、その特性が継承されます。例外が [`entitySelection.copy()`](https://livedoc.4d.com/4Dv18R5/4D/18-R5/entitySelectioncopy.305-5170105.ja.html) を使った場合で、共有可能 (追加不可) エンティティセレクションを追加可能 (共有不可) にしたり、その逆が可能です。<br />
 また、新しく追加された [`entitySelection.isAlterable()`](https://doc.4d.com/4Dv18R5/4D/18-R5/entitySelectionisAlterable.305-5290413.ja.html) を使って、エンティティセレクションの特性が共有可能か追加可能かを確認することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 小数点揃え**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_4DWP_SetupDecimalTabs.zip)<span id="18-5-4"></span><br />
 [`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv18R5/4D/18-R5/WP-SET-ATTRIBUTES.301-5125607.ja.html) コマンドで
