@@ -12,6 +12,14 @@ version: 18r6
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0101285 4D Viewから変換されたView Proドキュメントに長いフォーミュラが挿入されている場合，スプレッドシートをロードするのに数分を要しました。長いフォーミュラとは，`25`個の`AVERAGE`を計算して合計を求めるような数式のことです。v17では問題ありませんでした。
+
+**注記**: 非同期コールのパフォーマンスを改善するため，4Dを修正することに加え，SpreadJSのバージョンが`14.0.4`に[アップデート](https://www.grapecity.com/forums/spreadjs/custom-async-function-call)されました。
+
+* ACI0101581 CEF版Webエリアに空のページを表示した状態で`WA OPEN WEB INSPECTOR`を実行した場合，アプリケーションがクラッシュしました。
+
+* ACI0101628 階層リストのデータソース（変数または式）に`Form.var`のようなオブジェクト記法を入力することができませんでした。
+
 * ACI0101610 `$name:=Field name(variable.prop)`および`$name:=Field name(variable.prop->)`のようなコードがコンパイルエラー（パラメーター不足）になりました。
 
 * ACI0101629 `4D CSS`の`serveCss`および`4D Mobile App Server`の`MobileAppServer`メソッドの属性が「非表示」に設定されていませんでした。
