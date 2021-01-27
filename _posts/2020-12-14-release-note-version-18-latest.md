@@ -4,7 +4,7 @@ title: "4D v18 修正リスト"
 date: 2021-01-23 08:00:00
 categories: 修正リスト
 tags: "18.3"
-build: 260768
+build: 260779
 version: 18.3
 ---
 
