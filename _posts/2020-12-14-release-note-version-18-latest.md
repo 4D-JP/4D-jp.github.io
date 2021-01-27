@@ -1,15 +1,17 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-01-21 08:00:00
+date: 2021-01-23 08:00:00
 categories: 修正リスト
 tags: "18.3"
-build: 260672
+build: 260768
 version: 18.3
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101610 `$name:=Field name(variable.prop)`および`$name:=Field name(variable.prop->)`のようなコードがコンパイルエラー（パラメーター不足）になりました。
 
 * ACI0101323 `WEB Get server info`のプロパティ`webInactiveProcessTimeout`および`webMaxConcurrentProcesses`には，デフォルト値が常に返されました。データベース設定または`WEB SET OPTION`で変更した値が返されるべきです。
 
