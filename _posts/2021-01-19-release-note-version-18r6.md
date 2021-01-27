@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18r6 修正リスト"
-date: 2021-01-21 08:00:00
+date: 2021-01-26 08:00:00
 categories: 修正リスト
 tags: 18r6
-build: 260704
+build: 260866
 version: 18r6
 
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101610 `$name:=Field name(variable.prop)`および`$name:=Field name(variable.prop->)`のようなコードがコンパイルエラー（パラメーター不足）になりました。
 
 * ACI0101629 `4D CSS`の`serveCss`および`4D Mobile App Server`の`MobileAppServer`メソッドの属性が「非表示」に設定されていませんでした。
 
