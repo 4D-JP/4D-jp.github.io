@@ -1,15 +1,47 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-01-23 08:00:00
+date: 2021-01-29 08:00:00
 categories: 修正リスト
 tags: "18.3"
-build: 260779
+build: 261070
 version: 18.3
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101630 `PRINT LABEL`で行毎に出力されるラベルの数が正しくありませんでした。
+
+* ACI0101570 `DELETE SELECTION`でレコードを削除した場合，オブジェクト型フィールドのインデックスに問題が発生し，データファイルが破損しました。クラスターインデックスが削除されたレコードを参照しているというエラーであり，MSCによる修復が必要です。
+
+* ACI0101563 `VP Convert from 4D View`で4D Viewドキュメント（`.4PV`ファイル）を変換できないことがありました。
+
+**注記**: SpreadJS 12の不具合により，「名前の重複」例外が発生した場合，再描画がブロックされ，エリアがレンダリングされなかったことが原因でした。
+
+* ACI0101487 Windows版のコンパイルモードのみ。`DIALOG`コマンドでアプリケーション全体がフリーズすることがありました。
+
+* ACI0101648
+
+View Proスプレッドシートの``ROUND``関数にセルの参照ではなく，数式を渡した場合，正しくない値が返されることがありました。たとえば，`=ROUND((0,54+0,57)/2;2)`のようなセルには`0.55`ではなく`0.56`と表示されます。v18が使用しているSpreadJS 12の問題です。R5（SpreadJS 13）R5（SpreadJS 14）では問題ありません。
+
+**注記**: SpreadJSをアップデートするのではなく，問題のコード部分にパッチがあてられました。
+
+```js
+// Code v12
+function mt_round(number, numDigits) {
+        return MathHelper._round(number, numDigits);
+}
+// Code v13
+function mt_round(number, numDigits) {
+    number = Common_1.Common._NumberHelper._fixNumber(number, 15 );
+    return MathHelper._round(number, numDigits);
+}
+```
+
+* ACI0101643 メソッドをコンパイルすると，「ローカル変数の合計サイズが32KBを超えています」というエラーが返されることがありました。ACI0101186が修正されたことによる副作用のようです。
+
+* ACI0101534 `MSG_Extract`で添付ファイルを保存した場合，ファイル名のアクセント文字が無視されました。ACI0098362が修正されたことによる副作用のようです。
 
 * ACI0101610 `$name:=Field name(variable.prop)`および`$name:=Field name(variable.prop->)`のようなコードがコンパイルエラー（パラメーター不足）になりました。
 
