@@ -33,7 +33,7 @@ End for each
 $result:=$entitySelection.orderBy()
 ```
 
-複雑な統計処理などにより，コンテキストが肥大化してしまった場合，`dataClass.get()`で新しいコンテキストを作成することができます。
+コンテキストが肥大化してしまった場合，`dataClass.get()`で新しいコンテキストを作成することができます。
 
 ```4d
 $logFile:=Folder(fk logs folder).file("ORDARequests.txt")
