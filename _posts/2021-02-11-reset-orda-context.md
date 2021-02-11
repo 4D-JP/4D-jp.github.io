@@ -47,5 +47,5 @@ End for each
 
 $key:=$anEntity.getKey() //プライマリーキー
 $entitySelection:=ds[$anEntity.getDataClass().getInfo().name].get($key) //新しいコンテキスト
-$result:=$entitySelection.orderBy()
+$result:=$entitySelection.orderBy() //軽い処理
 ```
