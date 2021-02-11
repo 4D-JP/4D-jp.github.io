@@ -20,7 +20,7 @@ ORDAのコンテキストは，クライアント/サーバーのパフォーマ
 
 ORDAコンテキストは，クエリの用途に対して特化されたものであるべきです。コンテキストから属性を除外することはできないので，コンテキストを汎用的に使用した場合，属性のリストが肥大化してパフォーマンスが低下する恐れがあります。リレーション属性にアクセスする場合は特にそうです。たとえば，下記のコードはマルチレベルのリレーション属性にアクセスしているため，指数的にコンテキストが肥大化し，一括処理の後は非常に処理が重くなります。ORDAリクエストログをみれば，一括処理の後，レベルのリレーション属性がそれぞれ最大`80`件ずつ返されていることがわかります。
 
-```4d
+```
 $logFile:=Folder(fk logs folder).file("ORDARequests.txt")
 ds.startRequestLog($logFile)
 
@@ -35,7 +35,7 @@ $result:=$entitySelection.orderBy() //重い処理
 
 コンテキストが肥大化してしまった場合，`dataClass.get()`で新しいコンテキストを作成することができます。
 
-```4d
+```
 $logFile:=Folder(fk logs folder).file("ORDARequests.txt")
 ds.startRequestLog($logFile)
 
