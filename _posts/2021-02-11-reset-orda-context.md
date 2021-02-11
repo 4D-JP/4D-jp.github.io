@@ -30,7 +30,7 @@ For each ($entity; $entitySelection)
     $relatedData:=$entity.link.link.link.link.toCollection()
 End for each
 
-$result:=$entitySelection.orderBy()
+$result:=$entitySelection.orderBy() //重い処理
 ```
 
 コンテキストが肥大化してしまった場合，`dataClass.get()`で新しいコンテキストを作成することができます。
