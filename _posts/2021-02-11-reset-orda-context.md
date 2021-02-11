@@ -14,7 +14,7 @@ ORDAで作成したエンティティセレクションには固有のORDAコン
 * `dataClass.all()`
 * `Create entity selection`
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [https://blog.4d.com/use-orda-to-boost-performance-in-client-server-mode/](Use ORDA to boost performance in Client/Server mode)
+<i class="fa fa-external-link" aria-hidden="true"></i> [Use ORDA to boost performance in Client/Server mode](https://blog.4d.com/use-orda-to-boost-performance-in-client-server-mode/)
 
 ORDAのコンテキストは，クライアント/サーバーのパフォーマンスを最適化するために使用されます。具体的には，REST APIでサーバーから転送されるデータクラス属性のリストを内部的に管理し，リクエストされた属性だけを追加してゆくことにより，クエリの特性を自動的に「学習」するために使用されます。通常，コンテキストを意識してコーディングする必要はありませんが，条件分岐を含むエンティティセレクションの一括処理などでアクセスする可能性のあるすべての属性が事前にわかっているのであれば，必要な属性名すべてにアクセスしてコンテキストを最適化し，不足した属性をループ内で補うためのネットワークリクエストが発生することを防ぐこともできます。コンテキストはフォームの描画にも使用されており，リストボックスのカラム内で使用されている属性（非表示カレムを含む）が初期コンテキストとなります。
 
