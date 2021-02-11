@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ORDAのコンテキストのリセット"
+title: "ORDAコンテキストのリセット"
 date: 2021-02-11 12:00:00
 categories: 注意点
 tags: userinterface orda
