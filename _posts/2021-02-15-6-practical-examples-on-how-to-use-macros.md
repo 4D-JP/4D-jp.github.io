@@ -29,6 +29,7 @@ author: Vanessa Talbot
 * ピクチャーパスの検証
 * CSSファイルを開く
 * XLIFF参照の検証
+
 など
 
 いくつかの例を実際に見てみましょう。
@@ -42,26 +43,26 @@ author: Vanessa Talbot
 まず、JSONマクロファイル (FormMacros.json) 内で、次のようにマクロを宣言します:
 
 <pre class="notranslate">{
-{
+      {
    "macros": {
       "赤に設定する": {
          "class": "SetRedColor"
       }
 }</pre>
 
-次に4D内で、マクロによって呼び出される "SetRedColor" クラスを作成します。
-このクラスの関数として、呼び出し時に実行される onInvoke 関数を設定します。
-実行時にこの関数に渡される引数には、フォームエディターの情報が含まれています。
-引数内の “currentSelection” プロパティから、選択されているフォームオブジェクトのコレクションが取得できます。
-コレクションに格納されている各フォームオブジェクトの属性を変更します。
-最後に、戻り値として "currentPage" 属性を返すことで、4Dに変更内容を通知します。
+次に4D内で、マクロによって呼び出される "SetRedColor" クラスを作成します。<br />
+このクラスの関数として、呼び出し時に実行される onInvoke 関数を設定します。<br />
+実行時にこの関数に渡される引数には、フォームエディターの情報が含まれています。<br />
+引数内の “currentSelection” プロパティから、選択されているフォームオブジェクトのコレクションが取得できます。<br />
+コレクションに格納されている各フォームオブジェクトの属性を変更します。<br />
+最後に、戻り値として "currentPage" 属性を返すことで、4Dに変更内容を通知します。<br />
 
 コードは次のようになります:
 
 <code class="fourd"><span class="notranslate keyword">Function onInvoke</span>(<span class="notranslate variable">$editor</span> : <span class="notranslate command">Object</span>) : <span class="notranslate command">Object</span><br>
 &nbsp;<span class="notranslate keyword">var</span> <span class="notranslate variable">$name</span> : <span class="notranslate command">Text</span><br>
 &nbsp;<span class="notranslate keyword">If</span> (<span class="notranslate variable">$editor</span>.<span class="notranslate objectattribut">editor</span>.<span class="notranslate objectattribut">currentSelection</span>.<span class="notranslate objectattribut">length</span>&gt;0) <br>
-&nbsp;<span class="notranslate comment">/ 選択オブジェクトのstroke属性を "red" に設定します</span><br>
+&nbsp;<span class="notranslate comment">// 選択オブジェクトのstroke属性を "red" に設定します</span><br>
 &nbsp; <span class="notranslate keyword">For each</span> (<span class="notranslate variable">$name</span>;<span class="notranslate variable">$editor</span>.<span class="notranslate objectattribut">editor</span>.<span class="notranslate objectattribut">currentSelection</span>)<br>
 &nbsp;&nbsp; <span class="notranslate variable">$editor</span>.<span class="notranslate objectattribut">editor</span>.<span class="notranslate objectattribut">currentPage</span>.<span class="notranslate objectattribut">objects</span>[<span class="notranslate variable">$name</span>].<span class="notranslate objectattribut">stroke</span>:="red"<br>
 &nbsp; <span class="notranslate keyword">End for each</span> <br>
@@ -102,8 +103,6 @@ JSONマクロファイル (FormMacros.json) 内で、同じ "SetFontColor" ク�
 
 "SetFontColor" クラスの onInvoke 関数には例1と同じコードが再利用できます。異なる点は "red" という文字列で色を指定する代わりに、変数 This.color を使うことです。
 
-このマクロのコードを格納している "SetFontColor" クラスを HDI内で確認してください。
-
 
 #### 例3: メソッド付きのフォームオブジェクトを追加する
 
@@ -138,17 +137,12 @@ JSONマクロファイル (FormMacros.json) 内で、同じ "SetFontColor" ク�
 
 作成したばかりのフォームオブジェクトを編集しやすいよう、"currentSelection" を対象に clear() および push() することで、このフォームオブジェクトを選択します。最後に、戻り値として　"currentPage" 属性とともに "currentSelection" 属性も返し、4Dに変更内容を通知します。
 
-このマクロのコードを格納している "AddButton" クラスを HDI内で確認してください。
-
-
 
 #### 例4: フォームで使用されているピクチャーパスを確認する
 
 フォームを編集するだけでなく、フォームの情報、属性、プロパティを検証するマクロも作れます。たとえば、複数のページを持つフォーム内で使用されているピクチャーパスを検証することができます。
 
 ![ピクチャーパスの検証](/images/blog/20210215/CheckInvalidImagePath.png)
-
-このマクロのコードを格納している "CheckImagePath" クラスを HDI内で確認してください。
 
 
 #### 例5: マクロでモーダルウィンドウを開く
@@ -165,10 +159,9 @@ JSONマクロファイル (FormMacros.json) 内で、同じ "SetFontColor" ク�
 
 4Dでオブジェクトを整列するには "整列" ダイアログも使用できますが、いくつかのオブジェクトを選択して、ターゲットオブジェクト (マクロ呼び出し時にマウスカーソルが置かれているオブジェクト) を基準に位置を揃えることもできます。
 
-次のようなコードが書けます:
-
-選択されているオブジェクトは “currentSelection” プロパティから取得します。
-ターゲットオブジェクトの名称は “target” プロパティから取得します。
+コードを書く際には:
+* 選択されているオブジェクトは “currentSelection” プロパティから取得します。
+* ターゲットオブジェクトの名称は “target” プロパティから取得します。
 
 ![オブジェクトの整列-デバッガー画面](/images/blog/20210215/MacroAlignDebugger.png)
 
