@@ -67,12 +67,12 @@ author: Vanessa Talbot
 &nbsp;&nbsp; <span class="notranslate variable">$editor</span>.<span class="notranslate objectattribut">editor</span>.<span class="notranslate objectattribut">currentPage</span>.<span class="notranslate objectattribut">objects</span>[<span class="notranslate variable">$name</span>].<span class="notranslate objectattribut">stroke</span>:="red"<br>
 &nbsp; <span class="notranslate keyword">End for each</span> <br>
 &nbsp;<span class="notranslate keyword">Else</span> <br>
-&nbsp; <span class="notranslate command">ALERT</span>("Please, select a form object.")<br>
+&nbsp; <span class="notranslate command">ALERT</span>("フォームオブジェクトを選択してください。")<br>
 &nbsp;<span class="notranslate keyword">End if </span><br>
 &nbsp;<span class="comment">// 4D に変更内容を通知します</span> <br>
 &nbsp;<span class="notranslate variable">$0</span>:=<span class="notranslate command">New object</span>("currentPage";<span class="notranslate variable">$editor</span>.<span class="notranslate objectattribut">editor</span>.<span class="notranslate objectattribut">currentPage</span>)</code>
 
-マクロが実行するには、フォームエディター上でコンテキストメニューを開き、「マクロ ＞ 赤に設定する」 を選択します。
+マクロが実行するには、フォームエディター上でコンテキストメニューを開き、「マクロ ＞ 赤に設定する」 を選択します。<br />
 マクロのコードを格納している "SetRedColor" クラスを HDI内で確認してください。
 
 
@@ -106,9 +106,9 @@ JSONマクロファイル (FormMacros.json) 内で、同じ "SetFontColor" ク�
 
 #### 例3: メソッド付きのフォームオブジェクトを追加する
 
-マクロを使って、メソッドの付いたフォームオブジェクトをフォームに追加することができます。メソッドを紐づける方法は複数あります。[オンラインマニュアル](https://developer.4d.com/docs/ja/FormEditor/macros.html)にて、それらの方法を説明しています。
+マクロを使って、メソッドの付いたフォームオブジェクトをフォームに追加することができます。メソッドを紐づける方法は複数あります。[オンラインマニュアル](https://developer.4d.com/docs/ja/FormEditor/macros.html#method-%E5%B1%9E%E6%80%A7)にて、それらの方法を説明しています。
 
-このHDIの例では、メソッドのコードが4Dに渡されます。当該メソッドファイルは実行時に 4D によって作成されます。
+このHDIの例では、メソッドのコードをオブジェクトに格納して4Dに渡します。当該メソッドファイルは実行時に 4D によって作成されます。
 
 <code class="fourd"><span class="notranslate keyword">Function onInvoke</span>(<span class="notranslate variable">$editor</span> : <span class="notranslate command">Object</span>)-&gt;<span class="notranslate variable">$result</span> : <span class="notranslate command">Object</span><br>
 &nbsp;<span class="notranslate keyword">var</span> <span class="notranslate variable">$btnHello</span> : <span class="notranslate command">Object</span><br>
@@ -135,7 +135,8 @@ JSONマクロファイル (FormMacros.json) 内で、同じ "SetFontColor" ク�
 &nbsp;<span class="notranslate variable">$result</span>.<span class="notranslate objectattribut">currentPage</span>:=<span class="notranslate variable">$editor.<span class="notranslate objectattribut">editor</span></span>.<span class="notranslate objectattribut">currentPage</span> <br>
 </code>
 
-作成したばかりのフォームオブジェクトを編集しやすいよう、"currentSelection" を対象に clear() および push() することで、このフォームオブジェクトを選択します。最後に、戻り値として　"currentPage" 属性とともに "currentSelection" 属性も返し、4Dに変更内容を通知します。
+作成したばかりのフォームオブジェクトを編集しやすいよう、"currentSelection" を対象に clear() および push() を使用することで、このフォームオブジェクトを選択します。<br />
+最後に、戻り値として　"currentPage" 属性とともに "currentSelection" 属性も返し、4Dに変更内容を通知します。
 
 
 #### 例4: フォームで使用されているピクチャーパスを確認する
