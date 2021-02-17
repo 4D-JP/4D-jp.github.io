@@ -13,7 +13,7 @@ type: page
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**フォームエディターマクロ**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_FormMacro.zip)<span id="18-5-6"></span><br />
 4D v18 R5 ではマクロが導入されました。フォームエディター上で繰り返しおこなうタスクを自動化するのに、マクロは非常に便利です。<br />
-参照：[ブログ記事: マクロの使用例 6つ](https://4d-jp.github.io/2021/02/15/6-practical-examples-on-how-to-use-macros/)、[オンラインマニュアル: フォームエディターマクロ](http://developer.4d.com/docs/ja/FormEditor/macros.html)
+参照：[マクロの使用例 6つ (ブログ記事)](https://4d-jp.github.io/2021/02/15/6-practical-examples-on-how-to-use-macros/)、[フォームエディターマクロ](http://developer.4d.com/docs/ja/FormEditor/macros.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 共有可能/追加可能なエンティティセレクションの操作**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_Shareable_ES_Enhancements.zip)<span id="18-5-5"></span><br />
 エンティティセレクションをもとに別のエンティティセレクションを作成すると、その特性が継承されます。例外が [`entitySelection.copy()`](https://livedoc.4d.com/4Dv18R5/4D/18-R5/entitySelectioncopy.305-5170105.ja.html) を使った場合で、共有可能 (追加不可) エンティティセレクションを追加可能 (共有不可) にしたり、その逆が可能です。<br />
 また、新しく追加された [`entitySelection.isAlterable()`](https://doc.4d.com/4Dv18R5/4D/18-R5/entitySelectionisAlterable.305-5290413.ja.html) を使って、エンティティセレクションの特性が共有可能か追加可能かを確認することができます。
