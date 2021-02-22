@@ -12,6 +12,8 @@ version: 18r6
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0101710 Windows版のみ。`CFBundleShortVersionString`にビルド番号が含まれていませんでした。
+ 
 * ACI0101731 コンパイルモードのみ。`EXECUTE FORMULA`で変数を作成し，しばらくアプリケーションを使用していると，変数が未定義になり，シンタックスエラー（未知の変数に対するポインターあるいは不正なポインターの使用）が返されました。
 
 * ACI0101721 Mac版のみ。`MAIL Convert from MIME`を実行した場合，アプリケーションがクラッシュすることがありました。
