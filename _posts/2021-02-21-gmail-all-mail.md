@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "`[Gmail]/All Mail`メールボックスとIMAP"
+title: "[Gmail]/All MailメールボックスとIMAP"
 date: 2021-02-21 12:00:00
 categories: 仕様
 tags: 18r5 imap
