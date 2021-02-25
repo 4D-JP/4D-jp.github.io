@@ -539,7 +539,7 @@ End SQL
 
 ```
 $o:=New shared object
-$o2:=New shared object:
+$o2:=New shared object
 Use ($o) 
 	Use ($o2)
 		$o2.a:=$o  // 代入により$oは$o2グループに編入される
