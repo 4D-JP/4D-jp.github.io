@@ -14,7 +14,7 @@ v18では，より正確なPDFドキュメントが出力できるよう，フ�
 
 [Manage Printing and PDF export](https://blog.4d.com/4d-view-pro-manage-printing-and-pdf-export/)
 
-埋め込みに対応しているのは，OpenType（``.otf`` ``.ttf``）フォントです。SpreadJSが内部的に使用している``pdkKit``の制限により，Unicodeマップを有するフォントだけが使用できます。システムにプリインストールされているフォントには，Unicodeマップを有さないものもあるため，エクスポートの前にフォントファイルがスキャンされ，埋め込みができるかどうか，判断されるようになっています（SpreadJSがデフォルトでサポートしているフォントはスキップします）。フォントファイルのスキャンは，下記の仕様に基づいて実行されます。
+埋め込みに対応しているのは，OpenType（``.otf`` ``.ttf``）フォントです。SpreadJSが内部的に使用している``pdfkit``の制限により，Unicodeマップを有するフォントだけが使用できます。システムにプリインストールされているフォントには，Unicodeマップを有さないものもあるため，エクスポートの前にフォントファイルがスキャンされ，埋め込みができるかどうか，判断されるようになっています（SpreadJSがデフォルトでサポートしているフォントはスキップします）。フォントファイルのスキャンは，下記の仕様に基づいて実行されます。
 
 [OpenType® specification](https://docs.microsoft.com/en-us/typography/opentype/spec/)
 
