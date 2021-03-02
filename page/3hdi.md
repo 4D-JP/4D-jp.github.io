@@ -9,6 +9,13 @@ type: page
 * content
 {:toc}
 
+## 18r6 # {#v18r6}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP: メールのコピー・移動・削除**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_IMAPMailCopy.zip)<span id="18-6-1"></span><br />
+IMAP Transporter の関数 [`IMAP_transporter.copy( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transportercopy.305-5197555.ja.html)、
+[`IMAP_transporter.move( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transportermove.305-5197556.ja.html)、
+[`IMAP_transporter.expunge( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transporterexpunge.305-5221757.ja.html) を使って、サーバー上のメールをコピー・移動・削除する方法を紹介します。
+
 ## 18r5 # {#v18r5}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**フォームエディターマクロ**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_FormMacro.zip)<span id="18-5-6"></span><br />
