@@ -11,6 +11,9 @@ type: page
 
 ## 18r6 # {#v18r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: On Before Keystroke イベント**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_LISTBOXES_BeforeKeystroke.zip)<span id="18-6-2"></span><br />
+リストボックスにおいて、編集中のセルがなくても文字入力とともに `On Before Keystroke` イベントが発生するようになりました。このイベントを利用してクエリやハイライトなどの操作をおこなうことができます。<br />
+また、[`Is editing text`](https://doc.4d.com/4Dv18R6/4D/18-R6/Get-edited-text.301-5198452.ja.html) コマンドが追加され、これにより `On Before Keystroke` イベントが生成されたときに進行中の入力があるかどうかを検知することができるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**IMAP Transporter: メールのコピー・移動・削除**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_IMAPMailCopy.zip)<span id="18-6-1"></span><br />
 IMAP Transporter の関数 [`IMAP_transporter.copy( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transportercopy.305-5197555.ja.html)、
 [`IMAP_transporter.move( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transportermove.305-5197556.ja.html)、
