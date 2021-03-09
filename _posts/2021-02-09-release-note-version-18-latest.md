@@ -11,7 +11,7 @@ version: 18.4
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
-* ACI0098296 `HTTP Get`で[http://maps.googleapis.com](http://maps.googleapis.com) のAPIをコールした場合，ステータスコード`403`を返されました。
+* ACI0098296 `HTTP Get`で [http://maps.googleapis.com](http://maps.googleapis.com) のAPIをコールした場合，ステータスコード`403`を返されました。
 
 * ACI0101622  4D for iOSの「ラベル＆アイコン」セクションでフィールドにカスタムフォーマッターを設定し，「フォーム」セクションでフィールドをモデルにドラッグ＆ドロップした後，「ラベル＆アイコン」セクションでデフォルトのフォーマッターをフィールドに設定した場合，`project.4dmobileapp`ファイル内に不正なフォーマットが記述され，データの同期中にアプリがクラッシュしました。フィールドをモデルから削除し，再度，ドラッグ＆ドロップすれば問題ありません。
 
