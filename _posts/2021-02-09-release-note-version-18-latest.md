@@ -11,6 +11,10 @@ version: 18.4
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0101740 macOS Big Surのみ。統合Webエリアで [accounts.google.com ](https://myaccount.google.com/) で開こうとした場合，アプリケーションがクラッシュしました。
+
+**注記**: CEF 86は，近隣のスマートフォンを検索するためと思われますが，このページが開かれると自動的にBluetoothを使用するようです。macOS Big Surは，`Info.plist`に必要な`NSBluetoothAlwaysUsageDescription`キーが存在しない場合，Bluetoothにアクセスしようとしたアプリを強制的に終了します。修正により，クラッシュはしないようになりましたが，初回にBluetoothアクセスの許可を求めるダイアログが表示されるかもしれません。
+
 * ACI0098296 `HTTP Get`で [http://maps.googleapis.com](http://maps.googleapis.com) のAPIをコールした場合，ステータスコード`403`を返されました。
 
 * ACI0101622  4D for iOSの「ラベル＆アイコン」セクションでフィールドにカスタムフォーマッターを設定し，「フォーム」セクションでフィールドをモデルにドラッグ＆ドロップした後，「ラベル＆アイコン」セクションでデフォルトのフォーマッターをフィールドに設定した場合，`project.4dmobileapp`ファイル内に不正なフォーマットが記述され，データの同期中にアプリがクラッシュしました。フィールドをモデルから削除し，再度，ドラッグ＆ドロップすれば問題ありません。
