@@ -12,6 +12,8 @@ version: 18r6
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0101580 View ProスプレッドシートをPDF形式でエクスポートした場合，標準体で出力されるべきセルのテキストがボールド体で出力されることがありました。
+ 
 * ACI0101740 macOS Big Surのみ。統合Webエリアで [accounts.google.com ](https://myaccount.google.com/) で開こうとした場合，アプリケーションがクラッシュしました。
 
 * ACI0101706 `New process`で同じ名前のプロセスをほぼ同時に起動した場合，ランタイムエクスプローラーに表示されるプロセス番号が一緒になりました。
