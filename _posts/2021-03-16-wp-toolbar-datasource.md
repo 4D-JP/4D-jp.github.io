@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ODBCドライバーのインストール中にエラー"
+title: "ツールバーウィジェットのデータソースは変数でなければならない"
 date: 2021-03-14 12:00:00
 categories: 仕様
 tags: writepro 
