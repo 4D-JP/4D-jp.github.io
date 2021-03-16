@@ -2,7 +2,7 @@
 layout: post
 title: "新規リストボックスのカラムサイズ"
 date: 2021-03-14 12:00:00
-categories: 仕様
+categories: 注意点
 tags: projectmode listbox
 ---
 
