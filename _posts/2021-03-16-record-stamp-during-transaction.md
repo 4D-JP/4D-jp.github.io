@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "トランザクションのロックスタンプ"
+title: "トランザクション中のロックスタンプ"
 date: 2021-03-14 12:00:00
 categories: 仕様
 tags: orda transaction
