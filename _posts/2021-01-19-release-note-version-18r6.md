@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v18r6 修正リスト"
-date: 2021-03-24 08:00:00
+date: 2021-03-25 08:00:00
 categories: 修正リスト
 tags: 18r6
-build: 263439
+build: 263482
 version: 18r6
 
 ---
