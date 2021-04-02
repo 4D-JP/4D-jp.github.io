@@ -151,6 +151,9 @@ type: page
     
 * [Mickaël Rottiers](https://github.com/mickaelr4d)
 
+* [Mixage-Software](https://github.com/Mixage-Software)
+    * 4D-Report-Manager
+
 * [Orchard Software](https://github.com/OrchardSoftware)   
     * 4D-Win32API
 
