@@ -100,6 +100,9 @@ type: page
     * [AJUI_Animate](https://github.com/AJARProject/AJUI_Animate)
     * [AJUI_Button](https://github.com/AJARProject/AJUI_Button)
 
+* [Bruno Di Gleria](https://github.com/Mixage-Software)
+    * 4D-Report-Manager
+    
 * [Bruno Legay](https://github.com/blegay)
     * aws_component
     * jwt_component
@@ -150,9 +153,6 @@ type: page
     * mobileesp-4D    
     
 * [Mickaël Rottiers](https://github.com/mickaelr4d)
-
-* [Mixage-Software](https://github.com/Mixage-Software)
-    * 4D-Report-Manager
 
 * [Orchard Software](https://github.com/OrchardSoftware)   
     * 4D-Win32API
