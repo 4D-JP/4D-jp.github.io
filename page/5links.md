@@ -152,6 +152,9 @@ type: page
 * [Orchard Software](https://github.com/OrchardSoftware)   
     * 4D-Win32API
 
+* [Patrick Poly](https://github.com/patrick-poly)
+    * [edit-inherited-form](https://github.com/patrick-poly/edit-inherited-form) 
+
 * [PhenX](https://github.com/PhenX)
     * [4d-dumper](https://github.com/PhenX/4d-dumper)
     
@@ -173,3 +176,6 @@ type: page
     
 * [Vincent de Lachaux](https://github.com/vdelachaux)
     * [classes](https://github.com/vdelachaux/classes)
+
+* [Wai-Kin Chau](https://github.com/creativeArtie)
+    * [4DUnitTest](https://github.com/creativeArtie/4DUnitTest)
