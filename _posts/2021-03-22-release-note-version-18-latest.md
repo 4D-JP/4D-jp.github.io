@@ -11,7 +11,7 @@ version: 18.4
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
-* ACI0100164 Windows版のみ。`PRINT SELECTION`でフォームを印刷した場合，v15よりも時間がかかりました。`SET PRINT OPTION` で `Legacy printing layer option` オプション;を有効にし，旧式プリントレイヤー（GDI）を使用すれば問題ありません。また，プリントマージンを変更しなければ問題ありません。
+* ACI0100164 Windows版のみ。`PRINT SELECTION`でフォームを印刷した場合，v15よりも時間がかかりました。`SET PRINT OPTION` で `Legacy printing layer option` オプションを有効にし，旧式プリントレイヤー（GDI）を使用すれば問題ありません。また，プリントマージンを変更しなければ問題ありません。
 
 * ACI0101843 `U+FFFF` または `U+FFFE` のような制御文字を含むテキストをスタイル付きテキスト入力エリアにペーストすることができませんでした。外部HTMLソースには，制御文字が含まれていることがあります。
 
