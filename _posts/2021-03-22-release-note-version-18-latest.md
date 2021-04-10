@@ -1,15 +1,17 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-04-07 08:00:00
+date: 2021-04-08 08:00:00
 categories: 修正リスト
 tags: "18.4"
-build: 264251
+build: 264390
 version: 18.4
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0100164 Windows版のみ。`PRINT SELECTION`でフォームを印刷した場合，v15よりも時間がかかりました。`SET PRINT OPTION` で `Legacy printing layer option` オプション;を有効にし，旧式プリントレイヤー（GDI）を使用すれば問題ありません。また，プリントマージンを変更しなければ問題ありません。
 
 * ACI0101843 `U+FFFF` または `U+FFFE` のような制御文字を含むテキストをスタイル付きテキスト入力エリアにペーストすることができませんでした。外部HTMLソースには，制御文字が含まれていることがあります。
 
