@@ -11,7 +11,7 @@ version: 19.0
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
-* ACI0100164 Windows版のみ。`PRINT SELECTION`でフォームを印刷した場合，v15よりも時間がかかりました。`SET PRINT OPTION` で `Legacy printing layer option` オプション;を有効にし，旧式プリントレイヤー（GDI）を使用すれば問題ありません。また，プリントマージンを変更しなければ問題ありません。
+* ACI0100164 Windows版のみ。`PRINT SELECTION`でフォームを印刷した場合，v15よりも時間がかかりました。`SET PRINT OPTION` で `Legacy printing layer option` オプションを有効にし，旧式プリントレイヤー（GDI）を使用すれば問題ありません。また，プリントマージンを変更しなければ問題ありません。
 
 **注記**: `PRINT SELECTION`でフォームを印刷した場合，Direct2Dプリントレイヤーでは，３個のコマンドがプリンタードライバーに送信されますが，修正前はそれぞれのコマンドが`CT~~CD,~CC^~CT~`で始まっていたため，ZebraDesigner GK420dのようなドライバーはコマンド毎に用紙設定をリセットし，余計な時間がかかりました。GDIプリントレイヤーでは，`CT~~CD,~CC^~CT~`で始まるコマンドが１個だけ送信されるので，用紙設定がリセットされることはなく，それだけ速く印刷ができました。
 
