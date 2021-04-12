@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-04-08 08:00:00
+date: 2021-04-09 08:00:00
 categories: 修正リスト
 tags: "18.4"
-build: 264390
+build: 264451
 version: 18.4
 ---
 
