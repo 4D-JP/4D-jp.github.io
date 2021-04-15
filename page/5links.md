@@ -129,6 +129,8 @@ type: page
     * pecl-pdo-4d
     * 4d-mysqldump
 
+* [Guillaume Kotulski](https://github.com/gkotulski/)
+
 * [Keisuke Miyako](https://github.com/miyako)
 
 * [Kirk Brooks](https://github.com/KirkBrooks)
