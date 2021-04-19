@@ -1,15 +1,17 @@
 ---
 layout: fix
 title: "4D v19 修正リスト"
-date: 2022-04-16 08:00:00
+date: 2022-04-17 08:00:00
 categories: 修正リスト
 tags: "19.0"
-build: 264880
+build: 264959
 version: 19.0
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
+
+* ACI0101877 インポート＆エクスポートダイアログの上部にあるオブジェクトがダークモードに対応していませんでした。
 
 * ACI0101880 プロジェクトモードのみ。コンボボックスのJSONスキーマ（`formsSchema.json`）が正しくありませんでした。`dataSourceTypeHint`は`integer`ではなく`text`であるべきです。
 
