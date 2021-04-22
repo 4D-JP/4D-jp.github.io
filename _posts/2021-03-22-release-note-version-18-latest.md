@@ -11,6 +11,8 @@ version: 18.4
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0101654 リボンインターフェースからスタイルを設定した場合，`VP SET CELL STYLE`に`Null`を渡しても`parentName`プロパティがクリアされず，スタイルをリセットすることができませんでした。
+
 * ACI0101887 Windows版のみ。コンボボックスをクリックするたびに`On Activate`および`On Deactivate`イベントが発生しました。
  
 * ACI0101860 定数の`wk list font family`でWrite Proドキュメントの段落番号フォントをファミリー名で設定しようとした場合，エラー`205`（無効な定数）が返されました。
