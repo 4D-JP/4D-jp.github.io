@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-04-15 08:00:00
+date: 2021-04-19 08:00:00
 categories: 修正リスト
 tags: "18.4"
-build: 264856
+build: 265015
 version: 18.4
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0101887 Windows版のみ。コンボボックスをクリックするたびに`On Activate`および`On Deactivate`イベントが発生しました。
+ 
 * ACI0101860 定数の`wk list font family`でWrite Proドキュメントの段落番号フォントをファミリー名で設定しようとした場合，エラー`205`（無効な定数）が返されました。
 
 **注記**: 修正により，定数名は`_o_ wk list font family`に変更され，値が`listFont`（`wk list font`と同じ値）になりました。
