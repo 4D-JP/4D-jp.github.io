@@ -11,6 +11,9 @@ type: page
 
 ## 18r6 # {#v18r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**スケーラブル Web セッション**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_ScalableSession.zip)<span id="18-6-3"></span><br />
+4D v18 R6 より、スケーラブル Web セッションが使用できるようになりました。ストラクチャー設定の「[スケーラブルセッション(マルチプロセスセッション)](https://doc.4d.com/4Dv18R6/4D/18-R6/WebOptions-I-page.300-5217843.ja.html#5229239)」を有効にすると、新しい [`Session`](https://doc.4d.com/4Dv18R6/4D/18-R6/Session.301-5225575.ja.html) コマンドは、カレントのスケーラブル Web セッションに対応した [`Session オブジェクト`](https://developer.4d.com/docs/Rx/ja/API/sessionClass.html) を返します。<br />
+このオブジェクトの [`storage`プロパティ](https://developer.4d.com/docs/Rx/ja/API/sessionClass.html#storage) を使って、同セッション内で共有したいデータを保存することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: On Before Keystroke イベント**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_LISTBOXES_BeforeKeystroke.zip)<span id="18-6-2"></span><br />
 リストボックスにおいて、編集中のセルがなくても文字入力とともに `On Before Keystroke` イベントが発生するようになりました。このイベントを利用してクエリやハイライトなどの操作をおこなうことができます。<br />
 また、[`Is editing text`](https://doc.4d.com/4Dv18R6/4D/18-R6/Get-edited-text.301-5198452.ja.html) コマンドが追加され、これにより `On Before Keystroke` イベントが生成されたときに進行中の入力があるかどうかを検知することができるようになりました。
