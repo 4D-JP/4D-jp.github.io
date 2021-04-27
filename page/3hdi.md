@@ -11,6 +11,8 @@ type: page
 
 ## 18r6 # {#v18r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 検索と置換**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_4DVP_Find.zip)<span id="18-6-4"></span><br />
+4D v18 R6 で追加された新しい [`VP Find`](https://doc.4d.com/4Dv18R6/4D/18-R6/VP-Find.301-5184846.ja.html) コマンドを使って、4D View Pro ドキュメント内の値を検索・置換できるようになりました。このコマンドにはさまざまな検索条件を追加することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**スケーラブル Web セッション**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_ScalableSession.zip)<span id="18-6-3"></span><br />
 4D v18 R6 より、スケーラブル Web セッションが使用できるようになりました。ストラクチャー設定の「[スケーラブルセッション(マルチプロセスセッション)](https://doc.4d.com/4Dv18R6/4D/18-R6/WebOptions-I-page.300-5217843.ja.html#5229239)」を有効にすると、新しい [`Session`](https://doc.4d.com/4Dv18R6/4D/18-R6/Session.301-5225575.ja.html) コマンドは、カレントのスケーラブル Web セッションに対応した [`Session オブジェクト`](https://developer.4d.com/docs/Rx/ja/API/sessionClass.html) を返します。<br />
 このオブジェクトの [`storage`プロパティ](https://developer.4d.com/docs/Rx/ja/API/sessionClass.html#storage) を使って、同セッション内で共有したいデータを保存することができます。
