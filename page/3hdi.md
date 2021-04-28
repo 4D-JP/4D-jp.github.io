@@ -11,6 +11,8 @@ type: page
 
 ## 18r6 # {#v18r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP Transporter: サーバーへのメールの保存**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_IMAPAppend.zip)<span id="18-6-6"></span><br />
+新しく追加された [`IMAP_transporter.append( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transporterappend.305-5219267.ja.html) を使って、ローカルで作成したメールをメールサーバーに保存することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**メール: OAuth2.0 を使った接続**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_OAuth2_mail.zip)<span id="18-6-5"></span><br />
 OAuth2.0 を使って IMAP および SMTP transporter を作成し、Gmailサーバーに接続するサンプルです。Gmailサーバーにおける OAuth2.0 の仕組みの詳細は、Google の [OAuth2.0を使用してGoogleAPIにアクセスする](https://developers.google.com/identity/protocols/oauth2) を参照ください。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 検索と置換**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_4DVP_Find.zip)<span id="18-6-4"></span><br />
