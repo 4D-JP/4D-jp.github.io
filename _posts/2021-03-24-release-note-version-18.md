@@ -1,6 +1,6 @@
 --- 
 layout: fix
-title: "4D v18 Hotfix 2 修正リスト"
+title: "4D v18.4 Hotfix 2 修正リスト"
 date: 2021-03-24 08:00:00
 categories: 修正リスト
 tags: 18.4 hotfix
