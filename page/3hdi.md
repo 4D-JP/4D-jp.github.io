@@ -11,6 +11,10 @@ type: page
 
 ## 18r6 # {#v18r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: ドキュメントの読み込み完了確認**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_4DVP_End_Loading.zip)<span id="18-6-8"></span><br />
+オフスクリーンエリアで開いた 4D View Pro ドキュメントが読み込みが完了したかを確認するのに、
+`on VP Range Changed` と `on Timer` イベントを組み合わせて利用します。<br />
+参考：[`VP Run offscreen area`](https://doc.4d.com/4Dv19/4D/19/VP-Run-offscreen-area.301-5443003.ja.html) の [例題2](https://doc.4d.com/4Dv19/4D/19/VP-Run-offscreen-area.301-5443003.ja.html#5381874)
 * <i class="fa fa-download" aria-hidden="true"></i> [**IMAP Transporter: メール検索**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_IMAPMailSearching.zip)<span id="18-6-7"></span><br />
 [`IMAP_transporter.searchMails( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transportersearchMails.305-5197554.ja.html) を使って、メールサーバー上で選択されているメールボックス内のメールを検索することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**IMAP Transporter: サーバーへのメールの保存**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_IMAPAppend.zip)<span id="18-6-6"></span><br />
