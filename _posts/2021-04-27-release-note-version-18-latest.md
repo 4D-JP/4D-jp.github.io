@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-05-01 08:00:00
+date: 2021-05-08 08:00:00
 categories: 修正リスト
 tags: "18.4"
-build: 265455
+build: 265738
 version: 18.4
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0101729 `shift`キーを押しながら上下矢印キーを入力してリストボックス行の選択範囲を拡大しようとした場合，範囲が移動するだけで，常に一定の行数が選択されました。
+
+* ACI0101725 `LISTBOX SELECT ROW`と`lk remove from selection`でリストボックスの行を選択した後，`shift`キーを押しながらクリックまたは上下矢印キーの操作で選択範囲を変更しようとした場合，コマンドで選択を解除した行が選択の起点となりました。
+ 
 * ACI0101900 `application/pdf`形式のファイルが添付されたメールを`MAIL Convert from MIME`で処理した場合，添付ファイルが失われてました。
 
 * ACI0101744 4D WriteドキュメントをWrite Proに変換した場合，スタイルが正しく適用されないことがありました。
