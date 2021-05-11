@@ -1,16 +1,28 @@
 ---
 layout: fix
 title: "4D v19 修正リスト"
-date: 2021-05-06 08:00:00
+date: 2021-05-08 08:00:00
 categories: 修正リスト
 tags: "19.0"
-build: 265690
+build: 265779
 version: 19.0
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0101944 View Proスプレッドシートのフォントリストをマウスオーバーしたときに表示されるヘルプTipsに完全なフォントファミリー名が表示されませんでした。
+
+![fontname](https://user-images.githubusercontent.com/10509075/117739168-b20c5f00-b238-11eb-90f8-5b55a9b19b2a.png)
+
+* ACI0101810 配列型リストボックスに表示されているブール型の列を高速でクリックし，ブール値を立て続けに更新した場合，すべての操作に対して`On Data Change`イベントが発生しませんでした。整数型の列であれば，イベントがスタックされます。
+
+* ACI0101729 `shift`キーを押しながら上下矢印キーを入力してリストボックス行の選択範囲を拡大しようとした場合，範囲が移動するだけで，常に一定の行数が選択されました。
+
+* ACI0101725	Unexpected behavior when selecting a row in a listbox by click with Shift key or arrow key after execute LISTBOX SELECT ROW(*;"List box";4;lk remove from selection)		4D Staff	According to origin
+
+* ACI0101408 `HTTP SET OPTION`の`HTTP timeout`オプションが`HTTP Get`の動作に反映されませんでした。つまり，サーバー接続に成功し，なかなか応答が返されず，切断もされない場合，いつまでもレスポンスを待ちました。
+ 
 * ACI0101969 メールのエンコーティングが`us-ascii`だった場合，`CR` `.` `CR` という文字列（dot-stuffing）以降の本文が切り捨てられました。`quoted-printable`エンコーディングであれば，問題ありません。
 
 * ACI0101908 標準テキストだけのメールを`MAIL Convert from MIME`に渡した場合，本文のないメールオブジェクトが返されました。`Content-Type`ヘッダーが存在しない場合に問題が発生します。[RFC 1342](https://www.w3.org/Protocols/rfc1341/4_Content-Type.html)によれば，このヘッダーは省略しても良いことになっています。
