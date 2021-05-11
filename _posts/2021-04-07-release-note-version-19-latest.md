@@ -19,7 +19,7 @@ version: 19.0
 
 * ACI0101729 `shift`キーを押しながら上下矢印キーを入力してリストボックス行の選択範囲を拡大しようとした場合，範囲が移動するだけで，常に一定の行数が選択されました。
 
-* ACI0101725	Unexpected behavior when selecting a row in a listbox by click with Shift key or arrow key after execute LISTBOX SELECT ROW(*;"List box";4;lk remove from selection)		4D Staff	According to origin
+* ACI0101725 `LISTBOX SELECT ROW`と`lk remove from selection`でリストボックスの行を選択した後，`shift`キーを押しながらクリックまたは上下矢印キーの操作で選択範囲を変更しようとした場合，コマンドで選択を解除した行が選択の起点となりました。
 
 * ACI0101408 `HTTP SET OPTION`の`HTTP timeout`オプションが`HTTP Get`の動作に反映されませんでした。つまり，サーバー接続に成功し，なかなか応答が返されず，切断もされない場合，いつまでもレスポンスを待ちました。
  
