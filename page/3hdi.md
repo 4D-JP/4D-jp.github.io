@@ -16,8 +16,8 @@ type: page
 [`.createBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#createbox)、
 [`.deleteBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#deletebox)、
 [`.renameBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#renamebox)、
-[`.subscribe( )`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#subscribe)、
-[`.unsubscribe( )`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#unsubscribe) を使ってメールボックスを操作する方法を紹介します。
+[`.subscribe()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#subscribe)、
+[`.unsubscribe()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#unsubscribe) を使ってメールボックスを操作する方法を紹介します。
 
 ## 18r6 # {#v18r6}
 
