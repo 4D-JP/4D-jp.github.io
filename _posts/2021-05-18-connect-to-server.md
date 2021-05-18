@@ -9,7 +9,7 @@ version: 18r5
 
 ビルド版のクライアントアプリは，公開名またはIPアドレスに基づき，自動的にサーバーを発見して接続を試みますが，`Alt`キーを押しながら起動することにより，「サーバーに接続」ダイアログでサーバーを指定することもできます。同一マシン上に同名のクライアントアプリがインストールされている場合，それぞれのクライアントで接続したサーバーの情報は，いずれも同じ設定ファイルに記録されるため，最後に終了したクライアントのサーバーがデフォルトのサーバーとなります。これは仕様です。
 
-**サーバー側**のキャッシュフォルダーパスは「アプリケーション/ストラクチャ名」です。v18r5以降，ビルドプロジェクトファイル（*buildApp.4DSettings*）の`ServerStructureFolderName`でキャッシュフォルダーパスのストラクチャ名を設定できるようになりました。この仕組みは，同名のサーバーアプリケーション（たとえばバージョン違い）を同一マシンにインストールするような場合に便利です。
+**サーバー側**のキャッシュフォルダーパスは「アプリケーション/ストラクチャ名」です。v18r5以降，ビルドプロジェクトファイル（*buildApp.4DSettings*）の[`ServerStructureFolderName`](https://doc.4d.com/4Dv18R6/4D/18-R6/ServerStructureFolderName.300-5360359.ja.html)でキャッシュフォルダーパスのストラクチャ名を設定できるようになりました。この仕組みは，同名のサーバーアプリケーション（たとえばバージョン違い）を同一マシンにインストールするような場合に便利です。
 
 <i class="fa fa-external-link" aria-hidden="true"></i> https://blog.4d.com/multiple-instances-of-merged-server-applications-on-the-same-machine/
 
@@ -26,7 +26,7 @@ version: 18r5
 </plist>
 ```
 
-**クライアント側**のキャッシュフォルダー名は「ストラクチャ名_サーバーアドレス_ポート番号_ハッシュ値」です。３桁のハッシュ値は，クライアントアプリのファイルパスに基づいて計算されます。v18r5以降，ビルドプロジェクトファイル（*buildApp.4DSettings*）の`ClientServerSystemFolderName`でキャッシュフォルダー名をカスタマイズできるようになりました。この仕組みは，別々のサーバーに接続する同名のクライアントアプリケーションを同一マシンにインストールするような場合に便利です。
+**クライアント側**のキャッシュフォルダー名は「ストラクチャ名_サーバーアドレス_ポート番号_ハッシュ値」です。３桁のハッシュ値は，クライアントアプリのファイルパスに基づいて計算されます。v18r5以降，ビルドプロジェクトファイル（*buildApp.4DSettings*）の[`ClientServerSystemFolderName`](https://doc.4d.com/4Dv18R6/4D/18-R6/ClientServerSystemFolderName.300-5360360.ja.html)でキャッシュフォルダー名をカスタマイズできるようになりました。この仕組みは，別々のサーバーに接続する同名のクライアントアプリケーションを同一マシンにインストールするような場合に便利です。
 
 <i class="fa fa-external-link" aria-hidden="true"></i> https://blog.4d.com/multiple-servers-one-shared-local-resources/
 
@@ -50,6 +50,6 @@ v18では，起動後，すぐにサーバーに接続するクライアント�
 OPEN DATABASE("path_to_server.4dlink")
 ```
 
-起動時にサーバーを検索する代わりにローカルのデータベースプロジェクトを開始するには，ビルドプロジェクトファイル（*buildApp.4DSettings*）の`DatabaseToEmbedInClientWinFolder` `DatabaseToEmbedInClientMacFolder` を使用します。これらのキーが設定されている場合，*EnginedServer.4Dlink* の代わりにデータベースプロジェクト（*.4DC* または *.4DZ*）がビルド版クライアントアプリの *Database* フォルダーにコピーされます。*Default data* の仕組みを併用することにより，初回起動時に「データファイルを開く」ダイアログが表示されることを回避できます。
+起動時にサーバーを検索する代わりにローカルのデータベースプロジェクトを開始するには，ビルドプロジェクトファイル（*buildApp.4DSettings*）の[`DatabaseToEmbedInClientWinFolder`](https://doc.4d.com/4Dv18/4D/18/DatabaseToEmbedInClientWinFolder.300-4688077.ja.html) [`DatabaseToEmbedInClientMacFolder`](https://doc.4d.com/4Dv18/4D/18/DatabaseToEmbedInClientMacFolder.300-4688049.ja.html) を使用します。これらのキーが設定されている場合，*EnginedServer.4Dlink* の代わりにデータベースプロジェクト（*.4DC* または *.4DZ*）がビルド版クライアントアプリの *Database* フォルダーにコピーされます。*Default data* の仕組みを併用することにより，初回起動時に「データファイルを開く」ダイアログが表示されることを回避できます。
 
 <i class="fa fa-external-link" aria-hidden="true"></i> https://blog.4d.com/deployment-made-easy-with-4d-v18/
