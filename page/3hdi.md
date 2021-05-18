@@ -11,6 +11,8 @@ type: page
 
 ## 19 # {#v19}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**フォームオブジェクト: コレクションによる規定値の設定**](https://github.com/4D-JP/HDI/releases/download/19/HDI_UseCollectionsInForms.zip)<span id="19-0-2"></span><br />
+v19では、タブコントロール・コンボボックス・ドロップダウンメニューの規定値をコレクションによって設定することができるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**IMAP transporter: メールボックスの操作**](https://github.com/4D-JP/HDI/releases/download/19/HDI_IMAPMailboxes.zip)<span id="19-0-1"></span><br />
 [`IMAP_transporter`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html) クラスの関数 
 [`.createBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#createbox)、
