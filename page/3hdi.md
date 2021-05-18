@@ -9,6 +9,16 @@ type: page
 * content
 {:toc}
 
+## 19 # {#v19}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP transporter: メールボックスの操作**](https://github.com/4D-JP/HDI/releases/download/19/HDI_IMAPMailboxes.zip)<span id="19-0-1"></span><br />
+[`IMAP_transporter`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html) クラスの関数 
+[`.createBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#createbox)、
+[`.deleteBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#deletebox)、
+[`.renameBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#renamebox)、
+[`.subscribe( )`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#subscribe)、
+[`.unsubscribe( )`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#unsubscribe) を使ってメールボックスを操作する方法を紹介します。
+
 ## 18r6 # {#v18r6}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: ドキュメントの読み込み完了確認**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_4DVP_End_Loading.zip)<span id="18-6-8"></span><br />
