@@ -15,7 +15,7 @@ version: 19.0
  
 * ACI0101968 ピクチャを返すフォーミュラをJavaScriptでView Proエリアに表示しようとした場合，アプリケーションがフリーズしました。ピクチャが`1`枚であれば，問題ありません。ピクチャを返さないフォーミュラも問題ありません。
 
-```4d
+```
 WA Evaluate JavaScript(*;"area";"Utils.spread.getActiveSheet().options.showFormulas = true;")
 ```
 
