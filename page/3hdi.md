@@ -11,6 +11,8 @@ type: page
 
 ## 19 # {#v19}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: docxファイルのインポート**](https://github.com/4D-JP/HDI/releases/download/19/HDI_4DWP_ImportDocx.zip)<span id="19-0-4"></span><br />
+4D v19より、.docx ファイルを 4D Write Pro にインポートできるようになりました。[`WP Import document`](https://doc.4d.com/4Dv19/4D/19/WP-Import-document.301-5390187.ja.html) および [.docx フォーマットのファイルの読み込み方](https://doc.4d.com/4Dv19/4D/19/Importing-and-Exporting-in-docx-format.200-5390147.ja.html#5473301) 参照。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ブレークの取得**](https://github.com/4D-JP/HDI/releases/download/19/HDI_4DWP_GetUserBreaks.zip)<span id="19-0-3"></span><br />
 新しい [`WP Get breaks`](https://doc.4d.com/4Dv19/4D/19/WP-Get-breaks.301-5441632.ja.html) コマンドを使って、ドキュメント内にあるブレークの種類と位置を取得できるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**フォームオブジェクト: コレクションによる規定値の設定**](https://github.com/4D-JP/HDI/releases/download/19/HDI_UseCollectionsInForms.zip)<span id="19-0-2"></span><br />
