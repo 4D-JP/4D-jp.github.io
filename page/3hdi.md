@@ -11,6 +11,8 @@ type: page
 
 ## 19 # {#v19}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ブレークの取得**](https://github.com/4D-JP/HDI/releases/download/19/HDI_4DWP_GetUserBreaks.zip)<span id="19-0-3"></span><br />
+新しい [`WP Get breaks`](https://doc.4d.com/4Dv19/4D/19/WP-Get-breaks.301-5441632.ja.html) コマンドを使って、ドキュメント内にあるブレークの種類と位置を取得できるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**フォームオブジェクト: コレクションによる規定値の設定**](https://github.com/4D-JP/HDI/releases/download/19/HDI_UseCollectionsInForms.zip)<span id="19-0-2"></span><br />
 v19では、タブコントロール・コンボボックス・ドロップダウンメニューの規定値をコレクションによって設定することができるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**IMAP transporter: メールボックスの操作**](https://github.com/4D-JP/HDI/releases/download/19/HDI_IMAPMailboxes.zip)<span id="19-0-1"></span><br />
