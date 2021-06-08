@@ -11,6 +11,8 @@ type: page
 
 ## 19 # {#v19}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 時間型カラムとフッターの自動計算**](https://github.com/4D-JP/HDI/releases/download/19/HDI_LISTBOXES_Demo_V2.zip)<span id="19-0-5"></span><br />
+コレクション/エンティティセレクション型のリストボックスでも、カラムに時間を表示し、フッターに自動計算を表示することができるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: docxファイルのインポート**](https://github.com/4D-JP/HDI/releases/download/19/HDI_4DWP_ImportDocx.zip)<span id="19-0-4"></span><br />
 4D v19より、.docx ファイルを 4D Write Pro にインポートできるようになりました。<br />
 参照: [`WP Import document`](https://doc.4d.com/4Dv19/4D/19/WP-Import-document.301-5390187.ja.html) コマンド、 [.docx フォーマットのファイルの読み込み方](https://doc.4d.com/4Dv19/4D/19/Importing-and-Exporting-in-docx-format.200-5390147.ja.html#5473301) 。
