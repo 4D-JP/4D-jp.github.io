@@ -11,6 +11,8 @@ type: page
 
 ## 19 # {#v19}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**プロジェクトをコマンドでコンパイル**](https://github.com/4D-JP/HDI/releases/download/19/HDI_CompileProject.zip)<span id="19-0-6"></span><br />
+新しい [`Compile project`](https://livedoc.4d.com/--19/-/Compile-project.301-5457347.ja.html) コマンドを使って、プロジェクトをプログラムからコンパイルできるようになりました。このコマンドを使うと、カレントプロジェクト以外のプロジェクトもコンパイルすることが可能です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 時間型カラムとフッターの自動計算**](https://github.com/4D-JP/HDI/releases/download/19/HDI_LISTBOXES_Demo_V2.zip)<span id="19-0-5"></span><br />
 コレクション/エンティティセレクション型のリストボックスでも、カラムに時間を表示し、フッターに自動計算を表示することができるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: docxファイルのインポート**](https://github.com/4D-JP/HDI/releases/download/19/HDI_4DWP_ImportDocx.zip)<span id="19-0-4"></span><br />
@@ -60,13 +62,13 @@ Gmailに関する注意点: [Gmail/All MailメールボックスとIMAP (ブロ�
 4D v18 R5 ではマクロが導入されました。フォームエディター上で繰り返しおこなうタスクを自動化するのに、マクロは非常に便利です。<br />
 参照：[マクロの使用例 6つ (ブログ記事)](https://4d-jp.github.io/2021/02/15/6-practical-examples-on-how-to-use-macros/)、[フォームエディターマクロ](http://developer.4d.com/docs/ja/FormEditor/macros.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 共有可能/追加可能なエンティティセレクションの操作**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_Shareable_ES_Enhancements.zip)<span id="18-5-5"></span><br />
-エンティティセレクションをもとに別のエンティティセレクションを作成すると、その特性が継承されます。例外が [`entitySelection.copy()`](https://livedoc.4d.com/4Dv18R5/4D/18-R5/entitySelectioncopy.305-5170105.ja.html) を使った場合で、共有可能 (追加不可) エンティティセレクションを追加可能 (共有不可) にしたり、その逆が可能です。<br />
-また、新しく追加された [`entitySelection.isAlterable()`](https://doc.4d.com/4Dv18R5/4D/18-R5/entitySelectionisAlterable.305-5290413.ja.html) を使って、エンティティセレクションの特性が共有可能か追加可能かを確認することができます。
+エンティティセレクションをもとに別のエンティティセレクションを作成すると、その特性が継承されます。例外が [`entitySelection.copy()`](https://doc.4d.com/4Dv19/4D/19/entitySelectioncopy.305-5391689.ja.html) を使った場合で、共有可能 (追加不可) エンティティセレクションを追加可能 (共有不可) にしたり、その逆が可能です。<br />
+また、新しく追加された [`entitySelection.isAlterable()`](https://doc.4d.com/4Dv19/4D/19/entitySelectionisAlterable.305-5391690.ja.html) を使って、エンティティセレクションの特性が共有可能か追加可能かを確認することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 小数点揃え**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_4DWP_SetupDecimalTabs.zip)<span id="18-5-4"></span><br />
 [`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv18R5/4D/18-R5/WP-SET-ATTRIBUTES.301-5125607.ja.html) コマンドで
 [`wk tab decimal separator`](https://doc.4d.com/4Dv18R5/4D/18-R5/4D-Write-Pro-Attributes.300-5125597.ja.html#5171902) セレクターを使用して、4D Write Pro ドキュメントの小数点揃えの設定を変更できるようになりました。点基準、カンマ基準、最初の点またはカンマ基準、システム設定基準で小数点を揃えることができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 共有可能なエンティティセレクション**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_Shareable_EntitySelection.zip)<span id="18-5-3"></span><br />
-4D v18 R5 では、特定のエンティティセレクションを複数プロセスやワーカー間で共有できるようになりました。ただし、共有不可のエンティティセレクションも存在します。共有不可のエンティティセレクションは、新しく追加された [`entitySelection.copy()`](https://livedoc.4d.com/4Dv18R5/4D/18-R5/entitySelectioncopy.305-5170105.ja.html) コマンドや、拡張された [`OB Copy`](https://doc.4d.com/4Dv18R5/4D/18-R5/OB-Copy.301-5128463.ja.html) コマンドを使って、共有可能なエンティティセレクションとしてコピーすることが可能です。<br />
+4D v18 R5 では、特定のエンティティセレクションを複数プロセスやワーカー間で共有できるようになりました。ただし、共有不可のエンティティセレクションも存在します。共有不可のエンティティセレクションは、新しく追加された [`entitySelection.copy()`](https://doc.4d.com/4Dv19/4D/19/entitySelectioncopy.305-5391689.ja.html) コマンドや、拡張された [`OB Copy`](https://doc.4d.com/4Dv19/4D/19/OB-Copy.301-5392284.ja.html) コマンドを使って、共有可能なエンティティセレクションとしてコピーすることが可能です。<br />
 参照：[共有可能なエンティティセレクション/共有不可のエンティティセレクション](https://doc.4d.com/4Dv18R5/4D/18-R5/Entity-selections.300-5126508.ja.html#5169945)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カスタムファンクション**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_4DVP_allow_formulas.zip)<span id="18-5-2"></span><br />
 [`VP SET CUSTOM FUNCTIONS`](https://doc.4d.com/4Dv18R5/4D/18-R5/VP-SET-CUSTOM-FUNCTIONS.301-5062623.ja.html) を使って、4D View Pro で使用できるカスタムファンクションを作成することができます。
@@ -205,7 +207,7 @@ Webインターフェースを利用して 4D Server を管理するためのサ
 [`folder.parent`](https://doc.4d.com/4Dv17R6/4D/17-R6/folderparent.303-4311977.ja.html)<br />
 参考：[ファイルとフォルダー](https://doc.4d.com/4Dv17R6/4D/17-R6/File-and-Folder.201-4310307.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: フォーミュラを使った並べ替え**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Order_ByFormula.zip) (v17r6)<span id="17-6-5"></span><br />
-ORDAに[`entitySelection.orderByFormula( )`](https://livedoc.4d.com/--17-R6/ORDA/entitySelectionorderByFormula.305-4404512.ja.html)メンバーメソッドが追加され、エンティティセレクションの並べ替えにフォーミュラを使えるようになりました。
+ORDAに[`entitySelection.orderByFormula( )`](https://doc.4d.com/4Dv18/4D/18.4/entitySelectionorderByFormula.305-5234035.ja.html)メンバーメソッドが追加され、エンティティセレクションの並べ替えにフォーミュラを使えるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**カラーネームを使った色指定**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_CSS_colors.zip) (v17r6)<span id="17-6-4"></span><br />
 次のコマンドの色指定にカラーネームが使えるようになりました：<br />
 [`OBJECT SET RGB COLORS`](https://doc.4d.com/4Dv17R6/4D/17-R6/OBJECT-SET-RGB-COLORS.301-4311385.ja.html)、
@@ -220,7 +222,7 @@ ORDAに[`entitySelection.orderByFormula( )`](https://livedoc.4d.com/--17-R6/ORDA
 [`VP SET CELL STYLE`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-CELL-STYLE.301-4362416.ja.html)、
 [`VP SET BORDER`](https://doc.4d.com/4Dv17R6/4D/17-R6/VP-SET-BORDER.301-4373260.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: フォーミュラを使ったクエリ**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Query_ByFormula.zip) (v17r6)<span id="17-6-2"></span><br />
-ORDAの[`query()`](https://livedoc.4d.com/--17-R6/ORDA/dataClassquery.305-4311816.ja.html)メンバーメソッドが拡張され、フォーミュラを扱えるようになりました。
+ORDAの[`query()`](https://doc.4d.com/4Dv18/4D/18.4/dataClassquery.305-5233999.ja.html)メンバーメソッドが拡張され、フォーミュラを扱えるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 値やフォーミュラの一括取得・設定**](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_4DVP_CellValues.zip) (v17r6)<span id="17-6-1"></span><br />
 4D View Pro に追加された新コマンド[`VP Get values`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-Get-values.301-4385723.ja.html)および[`VP Get formulas`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-Get-formulas.301-4385776.ja.html)で値やフォーミュラの一括取得、[`VP SET VALUES`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-SET-VALUES.301-4385689.ja.html)および[`VP SET FORMULAS`](https://livedoc.4d.com/4D-View-Pro-17-R6/4D-View-Pro/VP-SET-FORMULAS.301-4385750.ja.html)で値やフォーミュラの一括設定ができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 新機能を活用した汎用コード**](https://github.com/4D-JP/HDI/releases/download/17r5/ORDA_Dynamic_Code.zip) (v17r5)<span id="17-5-12"></span><br />
@@ -245,13 +247,13 @@ INSERT系およびSET系のコマンドが改良され、対象としてレン�
 ![名称変更されたコマンド](/images/HDI_4DWP_UseTargets-CommandNameChange.png){: .align-center}
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: セル位置の取得・設定**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_4DVP_SelectionCells.zip) (v17r5)<span id="17-5-7"></span><br />
 新しく追加されたコマンドによって、4D View Pro ドキュメントの選択セルやアクティブセルの位置を設定・取得することができます：
-[`VP Get selection`](https://livedoc.4d.com/4D-View-Pro-Reference-17-R5/4D-View-Pro-Language/VP-Get-selection.301-4284608.en.html)
-[`VP Get active cell`](https://livedoc.4d.com/4D-View-Pro-Reference-17-R5/4D-View-Pro-Language/VP-Get-active-cell.301-4284491.en.html)
-[`VP SET SELECTION`](https://livedoc.4d.com/4D-View-Pro-Reference-17-R5/4D-View-Pro-Language/VP-SET-SELECTION.301-4285448.en.html)
-[`VP SET ACTIVE CELL`](https://livedoc.4d.com/4D-View-Pro-Reference-17-R5/4D-View-Pro-Language/VP-SET-ACTIVE-CELL.301-4285405.en.html)
-[`VP RESET SELECTION`](https://livedoc.4d.com/4D-View-Pro-Reference-17-R5/4D-View-Pro-Language/VP-RESET-SELECTION.301-4285785.en.html)<br />
+[`VP Get selection`](https://doc.4d.com/4Dv18/4D/18/VP-Get-selection.301-4522251.ja.html)
+[`VP Get active cell`](https://doc.4d.com/4Dv18/4D/18/VP-Get-active-cell.301-4522287.ja.html)
+[`VP SET SELECTION`](https://doc.4d.com/4Dv18/4D/18/VP-SET-SELECTION.301-4522250.ja.html)
+[`VP SET ACTIVE CELL`](https://doc.4d.com/4Dv18/4D/18/VP-SET-ACTIVE-CELL.301-4522248.ja.html)
+[`VP RESET SELECTION`](https://doc.4d.com/4Dv18/4D/18/VP-RESET-SELECTION.301-4522249.ja.html)<br />
 また、スプレッドシートの表示を変えて、任意セルを表示枠のどこに配置するか指定できるようになりました：
-[`VP SHOW CELL`](https://livedoc.4d.com/4D-View-Pro-Reference-17-R5/4D-View-Pro-Language/VP-SHOW-CELL.301-4285938.en.html)
+[`VP SHOW CELL`](https://doc.4d.com/4Dv18/4D/18/VP-SHOW-CELL.301-4522247.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 動的なストラクチャー情報の取得**](https://github.com/4D-JP/HDI/releases/download/17r5/HDI_Database_Info.zip) (v17r5)<span id="17-5-6"></span><br />
 新しく追加されたメンバーメソッドや、[データクラス属性](https://doc.4d.com/4Dv17R5/4D/17-R5/ORDA-DataClassAttribute.201-4127158.ja.html)オブジェクトの拡張によって、動的なストラクチャー情報の取得が容易になりました。これにより汎用コードを簡単に書くことができます。<br />
 [`dataClass.getInfo( )`](https://doc.4d.com/4Dv17R5/4D/17-R5/dataClassgetInfo.305-4275830.ja.html)
@@ -378,7 +380,7 @@ JSONファイルや、4D オブジェクト (オブジェクト型変数、あ�
 [`Create entity selection`](https://doc.4d.com/Create-entity-selection.301-3907527.ja.html)
 [`USE ENTITY SELECTION`](https://doc.4d.com/USE-ENTITY-SELECTION.301-3907526.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**コレクション型リストボックス**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ListboxCollection.zip)<span id="17-0-11"></span><br />
-[コレクション型リストボックス](http://livedoc.4d.com/4Dv17R3/4D/17-R3/Overview.300-3961394.ja.html#3779401)の設定の仕方、使い方の紹介です。
+[コレクション型リストボックス](https://doc.4d.com/4Dv18/4D/18/Overview.300-4575643.ja.html#3779401)の設定の仕方、使い方の紹介です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: クエリ**](https://github.com/4D-JP/HDI/releases/download/17/HDI_ORDA_Query.zip)<span id="17-0-10"></span><br />
 ORDAを使ったクエリ方法の紹介です。<br />
 [`entitySelection.query( )`](https://doc.4d.com/entitySelectionquery.305-3907515.ja.html)
