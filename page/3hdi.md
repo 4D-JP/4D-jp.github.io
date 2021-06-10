@@ -11,6 +11,8 @@ type: page
 
 ## 19 # {#v19}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**データの暗号化**](https://github.com/4D-JP/HDI/releases/download/19/HDI_BLOB_Encryption.zip)<span id="19-0-7"></span><br />
+[`Encrypt data BLOB`](https://doc.4d.com/4Dv19/4D/19/Encrypt-data-BLOB.301-5449220.ja.html)[`Decrypt data BLOB`](https://doc.4d.com/4Dv19/4D/19/Decrypt-data-BLOB.301-5449312.ja.html) コマンドを使って、パスフレーズとソルト付与によるBLOBの暗号化・復号化ができます。外部保存の機密文書(PDFファイル)を暗号化・復号化するサンプルアプリケーションを使って、この機能を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**プロジェクトをコマンドでコンパイル**](https://github.com/4D-JP/HDI/releases/download/19/HDI_CompileProject.zip)<span id="19-0-6"></span><br />
 新しい [`Compile project`](https://livedoc.4d.com/--19/-/Compile-project.301-5457347.ja.html) コマンドを使って、プロジェクトをプログラムからコンパイルできるようになりました。このコマンドを使うと、カレントプロジェクト以外のプロジェクトもコンパイルすることが可能です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 時間型カラムとフッターの自動計算**](https://github.com/4D-JP/HDI/releases/download/19/HDI_LISTBOXES_Demo_V2.zip)<span id="19-0-5"></span><br />
