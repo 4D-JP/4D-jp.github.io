@@ -4,7 +4,7 @@ title: "4D v18 修正リスト"
 date: 2021-06-08 08:00:00
 categories: 修正リスト
 tags: "18.5"
-build: 266671
+build: 266755
 version: 18.5
 ---
 
