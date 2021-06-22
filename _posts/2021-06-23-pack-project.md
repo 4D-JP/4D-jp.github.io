@@ -18,18 +18,18 @@ tags: v19 project
 
 過去のバージョンで開発されたストラクチャの場合，アプリケーション配付の新しいアーキテクチャに合わせる必要があります。
 
-#### 初回データファイルをRead Onlyにする
+##### 初回データファイルをRead Onlyにする
 
 * v15で追加された[Default Data](https://doc.4d.com/4Dv18/4D/18/Data-file-management-in-final-applications.300-4575558.ja.html)
 
-#### 最後に使用したデータファイルの場所をストラクチャに書き込まない
+##### 最後に使用したデータファイルの場所をストラクチャに書き込まない
 
 * v16で追加された[アプリケーション配布のアーキテクチャー](https://doc.4d.com/4Dv18/4D/18/Compatibility-page.300-4575476.ja.html)
 
-#### データベース設定をストラクチャに書き込まない
+##### データベース設定をストラクチャに書き込まない
 
 * v16で追加された[データファイル用のユーザー設定](https://doc.4d.com/4Dv18/4D/18/User-settings.300-4575465.ja.html)
 
-#### バックアップ設定をストラクチャと同じ階層に保存しない
+##### バックアップ設定をストラクチャと同じ階層に保存しない
 
 * v18の[backup.4DSettings](https://doc.4d.com/4Dv18/4D/18/Configuration-and-trace-files.300-4575598.ja.html)
