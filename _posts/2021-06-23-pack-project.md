@@ -34,7 +34,7 @@ tags: v19 project
 
 * v18の[backup.4DSettings](https://doc.4d.com/4Dv18/4D/18/Configuration-and-trace-files.300-4575598.ja.html)
 
-#### ストラクチャ書き換えコマンドを使用しない
+##### ストラクチャ書き換えコマンドを使用しない
 
 * SET PICTURE TO LIBRARY
 * SAVE LIST
