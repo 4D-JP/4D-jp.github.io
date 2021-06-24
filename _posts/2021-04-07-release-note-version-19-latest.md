@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D v19 修正リスト"
-date: 2021-06-19 08:00:00
+date: 2021-06-23 08:00:00
 categories: 修正リスト
 tags: "19.0"
-build: 267266
+build: 267413
 version: 19.0
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0101952 `Encrypt data BLOB`および`Decrypt data BLOB`がスレッドセーフではありませんでした。
+
+* ACI0102068 `Associated standard action`という定数がメニューアイテムプロパティと階層リストの両テーマに存在し，値がそれぞれ違っていました。
+
+* ACI0102024 データファイルの暗号化を有効にした場合，レコードが登録されていないテーブルにはMSCが警告マークを表示しました。
+ 
 * ACI0099046 macOS Big Surのみ。結合文字のダイアクリティカルマーク（`^`など）を入力した場合，別々の文字になりました。
 
 * ACI0102053 `GET HIGHLIGHT `を実行するたびに返される値が増えてゆきました。
