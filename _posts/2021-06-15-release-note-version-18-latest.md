@@ -11,6 +11,10 @@ version: 18.5
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}}  
 
+* ACI0101824 `VP SET CELL STYLE`に`VP Row`または`VP Column`を渡すことができませんでした。
+
+* ACI0099046 macOS Big Surのみ。結合文字のダイアクリティカルマーク（`^`など）を入力した場合，別々の文字になりました。
+ 
 * ACI0101952 `Encrypt data BLOB`および`Decrypt data BLOB`がスレッドセーフではありませんでした。
 
 * ACI0102068 `Associated standard action`という定数がメニューアイテムプロパティと階層リストの両テーマに存在し，値がそれぞれ違っていました。
