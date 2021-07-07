@@ -1,15 +1,23 @@
 ---
 layout: fix
 title: "4D v19 修正リスト"
-date: 2021-07-06 08:00:00
+date: 2021-07-07 08:00:00
 categories: 修正リスト
 tags: "19.0"
-build: 268050
+build: 268154
 version: 19.0
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102157 `APPLY TO SELECTION`のフォーミュラにローカル変数が使用されている場合，コンパイルモードでエラーが返されました。`EXECUTE FORMULA`を実行しているわけではないので，コンパイルモードでも問題ないはずです。
+
+```4d
+ALL RECORDS([Table_1])
+C_TEXT($t)
+APPLY TO SELECTION([Table_1]; $t:=$t+[Table_1]Field_2)
+````
 
 * ACI0102140 スケーラブルWebセッションを有効に設定し，REST API経由で同一のプロジェクトメソッドを連続コールした場合，アプリケーションがクラッシュしました。
  
