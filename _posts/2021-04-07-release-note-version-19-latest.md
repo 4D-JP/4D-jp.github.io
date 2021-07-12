@@ -1,10 +1,10 @@
 ---
 layout: fix
-title: "4D v19 修正リスト"
-date: 2021-07-07 08:00:00
+title: "4D v19.0 修正リスト"
+date: 2021-07-12 08:00:00
 categories: 修正リスト
 tags: "19.0"
-build: 268154
+build: 168337
 version: 19.0
 ---
 
