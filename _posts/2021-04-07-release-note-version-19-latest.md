@@ -15,7 +15,7 @@ version: 19.0
 
 * ACI0102157 `APPLY TO SELECTION`のフォーミュラにローカル変数が使用されている場合，コンパイルモードでエラーが返されました。`EXECUTE FORMULA`を実行しているわけではないので，コンパイルモードでも問題ないはずです。
 
-```4d
+```
 ALL RECORDS([Table_1])
 C_TEXT($t)
 APPLY TO SELECTION([Table_1]; $t:=$t+[Table_1]Field_2)
