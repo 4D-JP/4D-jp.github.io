@@ -11,6 +11,8 @@ type: page
 
 ## 19 # {#v19}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D変換タグ: 4DEACH**](https://github.com/4D-JP/HDI/releases/download/19/HDI_4DEACHTag.zip)<span id="19-0-8"></span><br />
+[`4DEACH`](https://developer.4d.com/docs/19/ja/Tags/tags.html#4deach-%E3%81%A8-4dendeach) が新たに変換タグとして追加されました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**データの暗号化**](https://github.com/4D-JP/HDI/releases/download/19/HDI_BLOB_Encryption.zip)<span id="19-0-7"></span><br />
 [`Encrypt data BLOB`](https://doc.4d.com/4Dv19/4D/19/Encrypt-data-BLOB.301-5449220.ja.html)[`Decrypt data BLOB`](https://doc.4d.com/4Dv19/4D/19/Decrypt-data-BLOB.301-5449312.ja.html) コマンドを使って、パスフレーズとソルト付与によるBLOBの暗号化・復号化ができます。外部保存の機密文書(PDFファイル)を暗号化・復号化するサンプルアプリケーションを使って、この機能を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**プロジェクトをコマンドでコンパイル**](https://github.com/4D-JP/HDI/releases/download/19/HDI_CompileProject.zip)<span id="19-0-6"></span><br />
