@@ -396,3 +396,7 @@ ACI0101926	4DdebugLog contains empty command when executing SQL request		4D Staf
 * ACI0101848 コンパイラーメソッドが存在する場合，メソッドエディターのコード補完でプロジェクトメソッドが候補として表示されませんでした。
 
 * ACI0102154 *Mobile/medias/icons/*に追加した4D Mobileのカスタムアイコンが「ラベル＆アイコン」セクションのパネルに表示されませんでした。
+
+* ACI0102152 4D MobileのターゲットをAndroidに設定した場合，Android SDKが自動的にダウンロードされませんでした。[URL]（https://resources-download.4d.com/sdk/19R2/267957/android/android.zip）が正しくありませんでした。
+
+* ACI0100954 フィールドを連結した式が設定されているクイックレポートの列を非表示にしてから非表示を解除した場合，式が「C1」に変化しました。
