@@ -412,3 +412,7 @@ version: 19r2
 * ACI0101514 クライアント/サーバー版のみ。`OB Instance of`で`entity` `dataClass` `entitySelection`といったORDAクラスを判定することができませんでした。
 
 * ACI0102102 コンパイルモードのみ。`OBJECT Get title(Self->)`が空の文字列を返しました。
+
+* ACI0102162 Windows版のみ。4D Mobileのプロジェクトエディターでシミュレーターのリストを表示しようとした場合，シンタックスエラーが返されました。
+
+* ACI0101926 `Begin SQL`と`End SQL`の間に実行したSQLリクエストがデバッグログに記録されませんでした。
