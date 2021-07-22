@@ -408,3 +408,7 @@ version: 19r2
 * ACI0102073`MAIL New attachement`に`File`オブジェクトを渡すことができませんでした。
 
 * ACI0102072 `MailAttachement`オブジェクトに`path`プロパティがありませんでした。
+
+* ACI0101514 クライアント/サーバー版のみ。`OB Instance of`で`entity` `dataClass` `entitySelection`といったORDAクラスを判定することができませんでした。
+
+* ACI0102102 コンパイルモードのみ。`OBJECT Get title(Self->)`が空の文字列を返しました。
