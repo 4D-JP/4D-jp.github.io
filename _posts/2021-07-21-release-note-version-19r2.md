@@ -400,3 +400,11 @@ ACI0101926	4DdebugLog contains empty command when executing SQL request		4D Staf
 * ACI0102152 4D MobileのターゲットをAndroidに設定した場合，Android SDKが自動的にダウンロードされませんでした。[URL](https://resources-download.4d.com/sdk/19R2/267957/android/android.zip)が正しくありませんでした。
 
 * ACI0100954 フィールドを連結した式が設定されているクイックレポートの列を非表示にしてから非表示を解除した場合，式が「C1」に変化しました。
+
+* ACI0102163 パスに括弧が含まれる場合，Androidアプリのビルドに失敗しました。
+
+* ACI0101946 フォント名の末尾に数字が使用されている場合（例：Wingdings 3），View ProスプレッドシートのSVGエクスポートが失敗しました。
+
+* ACI0102080 Apple Siliconターゲットのみ。`C_LONGINT`で宣言した変数に整数部が`6`桁の実数を代入した場合，小数部が切り捨てられました。
+
+* ACI0102073`'MAIL New attachement`に`File`オブジェクトを渡すことができませんでした。また，返されるオブジェクトには`path`および`platformPath`プロパティがありませんでした。
