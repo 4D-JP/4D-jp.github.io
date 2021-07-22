@@ -407,4 +407,6 @@ ACI0101926	4DdebugLog contains empty command when executing SQL request		4D Staf
 
 * ACI0102080 Apple Siliconターゲットのみ。`C_LONGINT`で宣言した変数に整数部が`6`桁の実数を代入した場合，小数部が切り捨てられました。
 
-* ACI0102073`'MAIL New attachement`に`File`オブジェクトを渡すことができませんでした。また，返されるオブジェクトには`path`および`platformPath`プロパティがありませんでした。
+* ACI0102073`MAIL New attachement`に`File`オブジェクトを渡すことができませんでした。
+
+* ACI0102072 `MailAttachement`オブジェクトに`path`プロパティがありませんでした。
