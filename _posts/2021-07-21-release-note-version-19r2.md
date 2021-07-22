@@ -333,8 +333,6 @@ version: 19r2
 
 * ACI0101927 絞り込まれたエンティティセレクションに対して空のコレクションと`NOT IN`条件でクエリを実行した場合，データクラスの全エンティティが返されました。
 
-ACI0101926	4DdebugLog contains empty command when executing SQL request		4D Staff	According to origin
-
 * ACI0101923 Mac版バイナリモードのみ。CEF版のWebエリアがデフォルトで表示されませんでした。
 
 * ACI0101922 プロジェクトモードのみ。フォームの１ページ目にWebエリアが配置されている場合，ページを切り替えて１ページ目に戻った場合，Webページが表示されませんでした。
@@ -395,7 +393,7 @@ ACI0101926	4DdebugLog contains empty command when executing SQL request		4D Staf
 
 * ACI0101848 コンパイラーメソッドが存在する場合，メソッドエディターのコード補完でプロジェクトメソッドが候補として表示されませんでした。
 
-* ACI0102154 *Mobile/medias/icons/*に追加した4D Mobileのカスタムアイコンが「ラベル＆アイコン」セクションのパネルに表示されませんでした。
+* ACI0102154 `Mobile/medias/icons/`に追加した4D Mobileのカスタムアイコンが「ラベル＆アイコン」セクションのパネルに表示されませんでした。
 
 * ACI0102152 4D MobileのターゲットをAndroidに設定した場合，Android SDKが自動的にダウンロードされませんでした。[URL](https://resources-download.4d.com/sdk/19R2/267957/android/android.zip)が正しくありませんでした。
 
