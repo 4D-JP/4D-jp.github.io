@@ -34,112 +34,97 @@ v19では、タブコントロール・コンボボックス・ドロップダ�
 [`.renameBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#renamebox)、
 [`.subscribe()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#subscribe)、
 [`.unsubscribe()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#unsubscribe) を使ってメールボックスを操作する方法を紹介します。
-
-## 18r6 # {#v18r6}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: ドキュメントの読み込み完了確認**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_4DVP_End_Loading.zip)<span id="18-6-8"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: ドキュメントの読み込み完了確認**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_4DVP_End_Loading.zip) (v18r6)<span id="18-6-8"></span><br />
 オフスクリーンエリアで開いた 4D View Pro ドキュメントが読み込みが完了したかを確認するのに、
 `on VP Range Changed` と `on Timer` イベントを組み合わせて利用します。<br />
 参考：[`VP Run offscreen area`](https://doc.4d.com/4Dv19/4D/19/VP-Run-offscreen-area.301-5443003.ja.html) の [例題2](https://doc.4d.com/4Dv19/4D/19/VP-Run-offscreen-area.301-5443003.ja.html#5381874)
-* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP Transporter: メール検索**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_IMAPMailSearching.zip)<span id="18-6-7"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP Transporter: メール検索**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_IMAPMailSearching.zip) (v18r6)<span id="18-6-7"></span><br />
 [`IMAP_transporter.searchMails( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transportersearchMails.305-5197554.ja.html) を使って、メールサーバー上で選択されているメールボックス内のメールを検索することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP Transporter: サーバーへのメールの保存**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_IMAPAppend.zip)<span id="18-6-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP Transporter: サーバーへのメールの保存**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_IMAPAppend.zip) (v18r6)<span id="18-6-6"></span><br />
 新しく追加された [`IMAP_transporter.append( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transporterappend.305-5219267.ja.html) を使って、ローカルで作成したメールをメールサーバーに保存することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**メール: OAuth2.0 を使った接続**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_OAuth2_mail.zip)<span id="18-6-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**メール: OAuth2.0 を使った接続**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_OAuth2_mail.zip) (v18r6)<span id="18-6-5"></span><br />
 OAuth2.0 を使って IMAP および SMTP transporter を作成し、Gmailサーバーに接続するサンプルです。Gmailサーバーにおける OAuth2.0 の仕組みの詳細は、Google の [OAuth2.0を使用してGoogleAPIにアクセスする](https://developers.google.com/identity/protocols/oauth2) を参照ください。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 検索と置換**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_4DVP_Find.zip)<span id="18-6-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 検索と置換**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_4DVP_Find.zip) (v18r6)<span id="18-6-4"></span><br />
 4D v18 R6 で追加された新しい [`VP Find`](https://doc.4d.com/4Dv18R6/4D/18-R6/VP-Find.301-5184846.ja.html) コマンドを使って、4D View Pro ドキュメント内の値を検索・置換できるようになりました。このコマンドにはさまざまな検索条件を追加することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**スケーラブル Web セッション**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_ScalableSession.zip)<span id="18-6-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**スケーラブル Web セッション**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_ScalableSession.zip) (v18r6)<span id="18-6-3"></span><br />
 4D v18 R6 より、スケーラブル Web セッションが使用できるようになりました。ストラクチャー設定の「[スケーラブルセッション(マルチプロセスセッション)](https://doc.4d.com/4Dv18R6/4D/18-R6/WebOptions-I-page.300-5217843.ja.html#5229239)」を有効にすると、新しい [`Session`](https://doc.4d.com/4Dv18R6/4D/18-R6/Session.301-5225575.ja.html) コマンドは、カレントのスケーラブル Web セッションに対応した [`Session オブジェクト`](https://developer.4d.com/docs/Rx/ja/API/sessionClass.html) を返します。<br />
 このオブジェクトの [`storage`プロパティ](https://developer.4d.com/docs/Rx/ja/API/sessionClass.html#storage) を使って、同セッション内で共有したいデータを保存することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: On Before Keystroke イベント**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_LISTBOXES_BeforeKeystroke.zip)<span id="18-6-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: On Before Keystroke イベント**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_LISTBOXES_BeforeKeystroke.zip) (v18r6)<span id="18-6-2"></span><br />
 リストボックスにおいて、編集中のセルがなくても文字入力とともに `On Before Keystroke` イベントが発生するようになりました。このイベントを利用してクエリやハイライトなどの操作をおこなうことができます。<br />
 また、[`Is editing text`](https://doc.4d.com/4Dv18R6/4D/18-R6/Get-edited-text.301-5198452.ja.html) コマンドが追加され、これにより `On Before Keystroke` イベントが生成されたときに進行中の入力があるかどうかを検知することができるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP Transporter: メールのコピー・移動・削除**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_IMAPMailCopy.zip)<span id="18-6-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP Transporter: メールのコピー・移動・削除**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_IMAPMailCopy.zip) (v18r6)<span id="18-6-1"></span><br />
 IMAP Transporter の関数 [`IMAP_transporter.copy( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transportercopy.305-5197555.ja.html)、
 [`IMAP_transporter.move( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transportermove.305-5197556.ja.html)、
 [`IMAP_transporter.expunge( )`](https://doc.4d.com/4Dv18R6/4D/18-R6/IMAP-transporterexpunge.305-5221757.ja.html) を使って、サーバー上のメールをコピー・移動・削除する方法を紹介します。<br />
 Gmailに関する注意点: [Gmail/All MailメールボックスとIMAP (ブログ記事)](https://4d-jp.github.io/2021/02/21/gmail-all-mail//)
-
-## 18r5 # {#v18r5}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**フォームエディターマクロ**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_FormMacro.zip)<span id="18-5-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**フォームエディターマクロ**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_FormMacro.zip) (v18r5)<span id="18-5-6"></span><br />
 4D v18 R5 ではマクロが導入されました。フォームエディター上で繰り返しおこなうタスクを自動化するのに、マクロは非常に便利です。<br />
 参照：[マクロの使用例 6つ (ブログ記事)](https://4d-jp.github.io/2021/02/15/6-practical-examples-on-how-to-use-macros/)、[フォームエディターマクロ](http://developer.4d.com/docs/ja/FormEditor/macros.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 共有可能/追加可能なエンティティセレクションの操作**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_Shareable_ES_Enhancements.zip)<span id="18-5-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 共有可能/追加可能なエンティティセレクションの操作**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_Shareable_ES_Enhancements.zip) (v18r5)<span id="18-5-5"></span><br />
 エンティティセレクションをもとに別のエンティティセレクションを作成すると、その特性が継承されます。例外が [`entitySelection.copy()`](https://doc.4d.com/4Dv19/4D/19/entitySelectioncopy.305-5391689.ja.html) を使った場合で、共有可能 (追加不可) エンティティセレクションを追加可能 (共有不可) にしたり、その逆が可能です。<br />
 また、新しく追加された [`entitySelection.isAlterable()`](https://doc.4d.com/4Dv19/4D/19/entitySelectionisAlterable.305-5391690.ja.html) を使って、エンティティセレクションの特性が共有可能か追加可能かを確認することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 小数点揃え**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_4DWP_SetupDecimalTabs.zip)<span id="18-5-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 小数点揃え**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_4DWP_SetupDecimalTabs.zip) (v18r5)<span id="18-5-4"></span><br />
 [`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv18R5/4D/18-R5/WP-SET-ATTRIBUTES.301-5125607.ja.html) コマンドで
 [`wk tab decimal separator`](https://doc.4d.com/4Dv18R5/4D/18-R5/4D-Write-Pro-Attributes.300-5125597.ja.html#5171902) セレクターを使用して、4D Write Pro ドキュメントの小数点揃えの設定を変更できるようになりました。点基準、カンマ基準、最初の点またはカンマ基準、システム設定基準で小数点を揃えることができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 共有可能なエンティティセレクション**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_Shareable_EntitySelection.zip)<span id="18-5-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 共有可能なエンティティセレクション**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_Shareable_EntitySelection.zip) (v18r5)<span id="18-5-3"></span><br />
 4D v18 R5 では、特定のエンティティセレクションを複数プロセスやワーカー間で共有できるようになりました。ただし、共有不可のエンティティセレクションも存在します。共有不可のエンティティセレクションは、新しく追加された [`entitySelection.copy()`](https://doc.4d.com/4Dv19/4D/19/entitySelectioncopy.305-5391689.ja.html) コマンドや、拡張された [`OB Copy`](https://doc.4d.com/4Dv19/4D/19/OB-Copy.301-5392284.ja.html) コマンドを使って、共有可能なエンティティセレクションとしてコピーすることが可能です。<br />
 参照：[共有可能なエンティティセレクション/共有不可のエンティティセレクション](https://doc.4d.com/4Dv18R5/4D/18-R5/Entity-selections.300-5126508.ja.html#5169945)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カスタムファンクション**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_4DVP_allow_formulas.zip)<span id="18-5-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カスタムファンクション**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_4DVP_allow_formulas.zip) (v18r5)<span id="18-5-2"></span><br />
 [`VP SET CUSTOM FUNCTIONS`](https://doc.4d.com/4Dv18R5/4D/18-R5/VP-SET-CUSTOM-FUNCTIONS.301-5062623.ja.html) を使って、4D View Pro で使用できるカスタムファンクションを作成することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス関数のスコープ**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_ORDA_FunctionsScope.zip)<span id="18-5-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス関数のスコープ**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_ORDA_FunctionsScope.zip) (v18r5)<span id="18-5-1"></span><br />
 4D v18 R5 では、[データモデルクラス](https://developer.4d.com/docs/ja/ORDA/ordaClasses.html)関数のスコープを定義するためのキーワード ([`local`](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E9%96%A2%E6%95%B0) および [`exposed`](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E5%85%AC%E9%96%8Bvs%E9%9D%9E%E5%85%AC%E9%96%8B%E9%96%A2%E6%95%B0)) が使えるようになりました。
-
-## 18r4 # {#v18r4}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: プロパティの取得・設定**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_LISTBOXES_Properties_v2.zip)<span id="18-4-9"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: プロパティの取得・設定**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_LISTBOXES_Properties_v2.zip) (v18r4)<span id="18-4-9"></span><br />
 [`LISTBOX SET PROPERTY`](https://doc.4d.com/4Dv18R4/4D/18-R4/LISTBOX-SET-PROPERTY.301-4982971.ja.html)、および
 [`LISTBOX Get property`](https://doc.4d.com/4Dv18R4/4D/18-R4/LISTBOX-Get-property.301-4983017.ja.html) コマンドを使って、リストボックスのプロパティを設定する方法を紹介します。4D v18 R4 では "行の移動可" プロパティが新たに追加され、配列型のリストボックスに対して適用することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 計算の停止・再開・強制**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DVP_Suspend_Resume.zip)<span id="18-4-8"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 計算の停止・再開・強制**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DVP_Suspend_Resume.zip) (v18r4)<span id="18-4-8"></span><br />
 新しく追加された [`VP SUSPEND COMPUTING`](https://doc.4d.com/4Dv18R4/4D/18-R4/VP-SUSPEND-COMPUTING.301-5056265.ja.html)、
 [`VP RESUME COMPUTING`](https://doc.4d.com/4Dv18R4/4D/18-R4/VP-RESUME-COMPUTING.301-5056276.ja.html)、および
 [`VP RECOMPUTE FORMULAS`](https://doc.4d.com/4Dv18R4/4D/18-R4/VP-RECOMPUTE-FORMULAS.301-5056287.ja.html) コマンドを使って、4D View Pro エリアの計算を停止・再開・強制することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP を使ったメール受信**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_IMAPMailDownloading.zip)<span id="18-4-7"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP を使ったメール受信**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_IMAPMailDownloading.zip) (v18r4)<span id="18-4-7"></span><br />
 IMAP transporter オブジェクトを使って、IMAP プロトコルによるメールの受信ができます。<br />
 参考：[Eメールオブジェクト](https://doc.4d.com/4Dv18R4/4D/18-R4/Email-object.300-4981948.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**CryptoKey クラスを使った署名と検証**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_Cryptokey_class.zip)<span id="18-4-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**CryptoKey クラスを使った署名と検証**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_Cryptokey_class.zip) (v18r4)<span id="18-4-6"></span><br />
 4D クラスストアに新しく追加された [CryptoKey クラス](http://developer.4d.com/docs/ja/API/cryptoClass.html) を利用して、電子メッセージに署名を付与したり、これを検証したりすることができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラが返すキャリッジリターンの扱い**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DWP_ParagraphBreaks.zip)<span id="18-4-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラが返すキャリッジリターンの扱い**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DWP_ParagraphBreaks.zip) (v18r4)<span id="18-4-5"></span><br />
 新しいドキュメント設定プロパティ [`wk break paragraphs in formulas`](https://doc.4d.com/4Dv18R4/4D/18-R4/4D-Write-Pro-Attributes.300-5038135.ja.html#5039441) が追加されました。[`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv18R4/4D/18-R4/WP-SET-ATTRIBUTES.301-5038145.ja.html) コマンドを使ってこれを指定することで、4D Write Pro ドキュメント内のフォーミュラが返すキャリッジリターン文字を改行・改段落のどちらとして認識するか選択することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: PDFへのエクスポート**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DWP_ExportPDF.zip)<span id="18-4-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: PDFへのエクスポート**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DWP_ExportPDF.zip) (v18r4)<span id="18-4-4"></span><br />
 [`WP EXPORT DOCUMENT`](https://doc.4d.com/4Dv18R4/4D/18-R4/WP-EXPORT-DOCUMENT.301-5038146.ja.html) コマンドを使って、4D Write Pro ドキュメントを PDF のファイルまたは BLOB 変数にエクスポートできるようになりました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: オフスクリーンエリア**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DVP_Offscreen.zip)<span id="18-4-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: オフスクリーンエリア**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DVP_Offscreen.zip) (v18r4)<span id="18-4-3"></span><br />
 新しく追加された [`VP Run offscreen area`](https://doc.4d.com/4Dv18R4/4D/18-R4/VP-Run-offscreen-area.301-5042473.ja.html) コマンドを使って、オフスクリーンの (メモリにしか存在せず、表示されない) 4D View Pro エリアが作成できるようになりました。このオフスクリーンエリアはドキュメントのエクスポートなどに利用できます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラスとRESTサーバー**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes_REST_Server.zip)<span id="18-4-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラスとRESTサーバー**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes_REST_Server.zip) (v18r4)<span id="18-4-2"></span><br />
 ORDA のデータモデルクラスに定義されたクラス関数は RESTリクエストで呼び出すことができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes.zip)<span id="18-4-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes.zip) (v18r4)<span id="18-4-1"></span><br />
 4D v18 R4 では、ORDA データモデルに基づく高レベルのクラスが提供され、それぞれにクラス関数を定義できるようになりました。<br />
 参照: [データモデルクラス](https://developer.4d.com/docs/Rx/ja/ORDA/ordaClasses.html)
-
-## 18r3 # {#v18r3}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**オフスクリーン Web エリア**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Offscreen_WebArea.zip)<span id="18-3-8"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**オフスクリーン Web エリア**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Offscreen_WebArea.zip) (v18r3)<span id="18-3-8"></span><br />
 新しく追加された [`WA Run offscreen area`](https://doc.4d.com/4Dv18R3/4D/18-R3/WA-Run-offscreen-area.301-4968859.ja.html) コマンドを使って、オフスクリーンの (メモリにしか存在せず、表示されない) Web エリアが作成できるようになりました。この Web エリアは Web ページを自動的に読み込んで解析するといったことに使用できます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro 機能: 文書保護**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_4DWP_Protection.zip)<span id="18-3-7"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro 機能: 文書保護**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_4DWP_Protection.zip) (v18r3)<span id="18-3-7"></span><br />
 4D Write Pro にドキュメントの保護機能が追加されました。[`wk protected`](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-Write-Pro-Constants.302-4929640.ja.html)属性を使ってドキュメント要素に対して保護の有無を設定し、ドキュメント属性である[`wk protection enabled`](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-Write-Pro-Constants.302-4929640.ja.html)を使うことで、保護を有効化・無効化することができます。<br />
 参考：[プロテクション](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-Write-Pro-Attributes.300-4929638.ja.html#4936134)
-* <i class="fa fa-download" aria-hidden="true"></i> [**アクティビティのモニタリング**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Monitor_Activity.zip)<span id="18-3-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**アクティビティのモニタリング**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Monitor_Activity.zip) (v18r3)<span id="18-3-6"></span><br />
 新しく追加された [`START MONITORING ACTIVITY`](https://doc.4d.com/4Dv18R3/4D/18-R3/START-MONITORING-ACTIVITY.301-4936186.ja.html) コマンドを使って、指定以上の時間を要した 4Dランゲージ実行、ネットワークリクエスト、4D データなどのオペレーションを記録することができます。また、このコマンドと連携して使われる [`Get Monitored Activity`](https://doc.4d.com/4Dv18R3/4D/18-R3/Get-Monitored-Activity.301-4936249.ja.html)と [`STOP MONITORING ACTIVITY`](https://doc.4d.com/4Dv18R3/4D/18-R3/STOP-MONITORING-ACTIVITY.301-4936217.ja.html) コマンドも追加されました。<br />
 なお、ネットワークアクティビティでは 4DRequestsLog ファイルと同じ情報が、4D ランゲージ実行では 4DDebugLog ファイルと同じ情報が取得されます (参考: [ログファイルの詳細](https://doc.4d.com/4Dv18R3/4D/18-R3/Description-of-log-files.300-4919535.ja.html))。
-* <i class="fa fa-download" aria-hidden="true"></i> [**Web server オブジェクト**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_MultipleWebServers.zip)<span id="18-3-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Web server オブジェクト**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_MultipleWebServers.zip) (v18r3)<span id="18-3-5"></span><br />
 新しく追加された [`WEB Server`](https://doc.4d.com/4Dv18R3/4D/18-R3/WEB-Server.301-4851507.ja.html) コマンドを使って、Web server オブジェクトを取得し、Web サーバーを操作することができます。<br />
 また、4D アプリケーション内で利用可能なすべての Web server オブジェクトを返す [`WEB Server list`](https://doc.4d.com/4Dv18R3/4D/18-R3/WEB-Server-list.301-4851515.ja.html) コマンドも追加されました。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: シートオプション**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_4DVP_SheetOptions.zip)<span id="18-3-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: シートオプション**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_4DVP_SheetOptions.zip) (v18r3)<span id="18-3-4"></span><br />
 新しく追加された [`VP SET SHEET OPTIONS`](https://doc.4d.com/4Dv18R3/4D/18-R3/VP-SET-SHEET-OPTIONS.301-4850835.ja.html) コマンドを使って、4D View Pro のシートオプション (セルデータの領域外表示、枠線やヘッダーの表示、シートの保護、枠線・タブ・選択の色指定など) を設定することができます。<br />
 参考：[4D View Pro シートオプション](https://doc.4d.com/4Dv18R3/4D/18-R3/4D-View-Pro-Sheet-Options.300-4850975.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 新コマンド LISTBOX SELECT ROWS**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_ListBoxSelectRows.zip)<span id="18-3-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 新コマンド LISTBOX SELECT ROWS**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_ListBoxSelectRows.zip) (v18r3)<span id="18-3-3"></span><br />
 新しく追加された [`LISTBOX SELECT ROWS`](https://doc.4d.com/4Dv18R3/4D/18-R3/LISTBOX-SELECT-ROWS.301-4959830.ja.html) コマンドは、エンティティセレクション型リストボックスおよびコレクション型リストボックスにおいて、選択行を指定するエンティティセレクションおよびコレクションを引数として受け取ります。また、現在の選択行に対するアクション (置換・追加・削除) も指定することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**クラス: 継承**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_ClassAndInheritance.zip)<span id="18-3-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**クラス: 継承**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_ClassAndInheritance.zip) (v18r3)<span id="18-3-2"></span><br />
 クラス継承の例を紹介します。
-* <i class="fa fa-download" aria-hidden="true"></i> [**クラス: コンストラクターとメンバーメソッド**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Class.zip)<span id="18-3-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**クラス: コンストラクターとメンバーメソッド**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Class.zip) (v18r3)<span id="18-3-1"></span><br />
 クラスを定義、利用することができるようになりました。クラスの基本となるコンストラクターとメンバーメソッドの例を紹介します。<br />
 参考：[クラス](https://developer.4d.com/docs/ja/Concepts/classes.html)
-
-## 18r2 # {#v18r2}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**POP3 を使ったメール受信**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_POP3MailDownloading.zip)<span id="18-2-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**POP3 を使ったメール受信**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_POP3MailDownloading.zip) (v18r2)<span id="18-2-6"></span><br />
 POP3 transporter オブジェクトを使って、POP3 プロトコルによるメールの受信ができます。<br />
 参考：[Eメールオブジェクト](https://doc.4d.com/4Dv18R2/4D/18-R2/Email-object.300-4825407.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーの削除**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DWP_DeletePictures.zip)<span id="18-2-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーの削除**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DWP_DeletePictures.zip) (v18r2)<span id="18-2-5"></span><br />
 新しく追加された [`WP DELETE PICTURE`](https://doc.4d.com/4Dv18R2/4D/18-R2/WP-DELETE-PICTURE.301-4735795.ja.html) コマンドを使って、4D Write Pro ドキュメントに含まれる画像を削除できます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カラムや行の固定化**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DVP_FreezePanes.zip)<span id="18-2-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カラムや行の固定化**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DVP_FreezePanes.zip) (v18r2)<span id="18-2-4"></span><br />
 新しく追加された [`VP SET FROZEN PANES`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-SET-FROZEN-PANES.301-4840199.ja.html) コマンド使って、4D View Pro ドキュメントのカラムや行を固定化することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラの操作**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DWP_GetSetFormulas.zip)<span id="18-2-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラの操作**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DWP_GetSetFormulas.zip) (v18r2)<span id="18-2-3"></span><br />
 新しいコマンドの追加により、4D Write Pro ドキュメントにおけるフォーミュラの操作が簡単におこなえます:<br />
 [`WP Get formulas`](https://doc.4d.com/4Dv18R2/4D/18-R2/WP-Get-formulas.301-4829012.ja.html)
 [`WP INSERT FORMULA`](https://doc.4d.com/4Dv18R2/4D/18-R2/WP-INSERT-FORMULA.301-4831015.ja.html)
@@ -147,7 +132,7 @@ POP3 transporter オブジェクトを使って、POP3 プロトコルによる�
 [`WP FREEZE FORMULAS`](https://doc.4d.com/4Dv18R2/4D/18-R2/WP-FREEZE-FORMULAS.301-4831166.ja.html)<br />
 また、$wp_pageCount や $wp_author のような予約されたローカル変数は、新しく使いやすい This.property 形式でも提供されるようになりました。
 ![予約変数の対応表](/images/HDI_4DWP_GetSetFormulas-ReservedVariables.png){: .align-center}
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 行やカラムの操作**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DVP_ColumnRowManagement.zip)<span id="18-2-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 行やカラムの操作**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_4DVP_ColumnRowManagement.zip) (v18r2)<span id="18-2-2"></span><br />
 新しいコマンドの追加により、4D View Pro の行やカラムの操作が簡単におこなえます:<br />
 [`VP DELETE ROWS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-DELETE-ROWS.301-4761518.ja.html)
 [`VP DELETE COLUMNS`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-DELETE-COLUMNS.301-4761512.ja.html)
@@ -159,7 +144,7 @@ POP3 transporter オブジェクトを使って、POP3 プロトコルによる�
 [`VP SET COLUMN ATTRIBUTES`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-SET-COLUMN-ATTRIBUTES.301-4761486.ja.html)
 [`VP ROW AUTOFIT`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-ROW-AUTOFIT.301-4833105.ja.html)
 [`VP COLUMN AUTOFIT`](https://doc.4d.com/4Dv18R2/4D/18-R2/VP-COLUMN-AUTOFIT.301-4833094.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスイベントの活用例**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_Listbox_Events.zip)<span id="18-2-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックスイベントの活用例**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_Listbox_Events.zip) (v18r2)<span id="18-2-1"></span><br />
 4D v18 で新しく追加された [`FORM Event`](https://doc.4d.com/4Dv18/4D/18/FORM-Event.301-4522191.ja.html) コマンド使い、リストボックスのイベントが提供する詳細情報の活用例を紹介します。
 
 ## 18 # {#v18}
