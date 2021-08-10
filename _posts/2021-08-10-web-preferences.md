@@ -6,7 +6,7 @@ categories: 仕様
 tags: v19 webarea
 ---
 
-v19では，[WA SET PREFERENCE](https://doc.4d.com/4Dv19/4D/19/WA-SET-PREFERENCE.301-5393011.ja.html)の定数[_o_WA enable JavaScript ](https://doc.4d.com/4Dv19/4D/19/Web-Area.302-5393313.ja.html)が廃止され，WebエリアのJavaScriptを無効にすることができないように仕様が変更されました。
+v19では，[WA SET PREFERENCE](https://doc.4d.com/4Dv19/4D/19/WA-SET-PREFERENCE.301-5393011.ja.html)の定数[\_o_WA enable JavaScript](https://doc.4d.com/4Dv19/4D/19/Web-Area.302-5393313.ja.html)が廃止され，WebエリアのJavaScriptを無効にすることはできないように仕様が変更されました。
 
 以前のバージョンでは，システム版のWebエリアであれば，コマンドでWebエリアのJavaScriptを無効にすることができました。CEF版のWebエリアは，常にJavaScriptが有効でした。
 
