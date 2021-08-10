@@ -10,7 +10,7 @@ v19では，[WA SET PREFERENCE](https://doc.4d.com/4Dv19/4D/19/WA-SET-PREFERENCE
 
 以前のバージョンでは，システム版のWebエリアであれば，コマンドでWebエリアのJavaScriptを無効にすることができました。CEF版のWebエリアは，常にJavaScriptが有効でした。
 
-v19では，macOS Big Surに対応するため，システム版のWebエリアがmacOS 10.10の[WKWebView](https://developer.apple.com/documentation/webkit/wkwebview)にアップデートされています。`WA Get page content`に相当するシステムAPIが廃止されているため，内部的にJavaScriptが使用されています。また，フォントサイズを増減するAPIはBig Sur以降でなければ使用できないため，Catalina以前では内部的にJavaScriptが使用されています。いずれにしても，WKWebViewをインスタンス化した後に当該設定を変更することはできないため，下記のオプションは廃止されました。
+v19では，macOS Big Surに対応するため，システム版のWebエリアがmacOS 10.10の[WKWebView](https://developer.apple.com/documentation/webkit/wkwebview)にアップデートされました。「WA Get page content](https://doc.4d.com/4Dv19/4D/19/WA-Get-page-content.301-5393009.ja.html)に相当するシステムAPIが廃止されているため，内部的にJavaScriptが使用されています。また，フォントサイズを増減するAPIはBig Sur以降でなければ使用できないため，Catalina以前では内部的にJavaScriptが使用されています。いずれにしても，WKWebViewをインスタンス化した後に当該設定を変更することはできないため，下記のオプションは廃止されました。
 
 * _o_WA enable plugins 
 * _o_WA enable JavaScript
