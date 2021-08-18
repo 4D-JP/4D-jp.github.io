@@ -3,7 +3,7 @@ layout: fix
 title: "4D v18.5 Hotfix 1 修正リスト"
 date: 2021-07-21 08:00:00
 categories: 修正リスト
-tags: "18.5"
+tags: 18.5 hotfix
 build: 268483
 version: 18.5
 ---
