@@ -45,7 +45,7 @@ type: page
 
 * [My 4D Experience](https://my4dexperience.home.blog) Gabriel Inzirilloのブログ（フランス語）
 
-* [Wat’s 4D Mail News](https://4dmemo.jirokichi-shouten.com)
+* [Wat’s 4D Mail News](https://4dmemo.jirokichi-shouten.com) 株式会社治郎吉商店のブログ
   
 ## サードパーティ
 
