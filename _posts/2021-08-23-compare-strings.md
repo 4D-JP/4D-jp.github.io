@@ -7,4 +7,4 @@ tags: 19.x unicode
 version: 19.x
 ---
 
-v19では，[Compare strings](https://doc.4d.com/4Dv19/4D/19/Compare-strings.301-5392237.ja.html)という関数が追加されています。既存の[Position](https://doc.4d.com/4Dv19/4D/19/Position.301-5392252.ja.html)も拡張されました。コマンドには[skグループの定数](https://doc.4d.com/4Dv19/4D/19/Strings.302-5393273.ja.html)の定数を渡すことができます。
+v19では，[Compare strings](https://doc.4d.com/4Dv19/4D/19/Compare-strings.301-5392237.ja.html)という関数が追加されています。既存の[Position](https://doc.4d.com/4Dv19/4D/19/Position.301-5392252.ja.html)も拡張されました。いずれのコマンドも[skグループの定数](https://doc.4d.com/4Dv19/4D/19/Strings.302-5393273.ja.html)に対応しています。
