@@ -55,6 +55,30 @@ Positionのデフォルトも同一ですが，後述するように**Position�
 
 https://speakerdeck.com/miyako/v19-part-2?slide=47
 
+---
+
+#### 半角と全角の区別とは
+
+[Unicode Standard Annex #11](https://unicode.org/reports/tr11/tr11-8.html)に詳述されているように，Unicodeでは文字列の幅を下記のように分類しています。
+
+* Wide
+* Narrow
+* Full
+* Half
+* Ambiguous
+* Neutral
+
+日本語にあてはめて表現すると下記のようになります。
+
+* 全角の平仮名と片仮名と漢字と記号
+* 半角の平仮名と片仮名
+* 全角の英数
+* 半角の英数
+* ギリシア文字やキリル文字（Shift_JISでは全角・Unicodeでは半角）
+* アラビア文字など
+
+sk width insensitiveは，平仮名・片仮名・英数の文字列比較で全角と半角を区別しないというものです。
+
 #### 濁音はアクセント記号
 
 「清音と濁音」を区別しない場合，必然的に「全角と半角」「大文字と小文字」は区別しないことになります。言い換えるなら，「全角と半角」「大文字と小文字」いずれかを区別する場合，必然的に「清音と濁音」も区別することになります。「清音と濁音」を区別せずに（sk diacritic insensitive）他の違いを区別することはできません。
