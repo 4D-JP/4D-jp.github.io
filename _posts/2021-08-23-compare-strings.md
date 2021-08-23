@@ -30,3 +30,13 @@ v19では，[Compare strings](https://doc.4d.com/4Dv19/4D/19/Compare-strings.301
 |  L5  | 区別する | 区別する | 区別する | 区別する |
 
 各レベルは上位レベルの基準を含んでいます。つまり，L3=L1+L2+L3です。L1とL3を採用し，L2は採用しない，といったことはできないことに留意する必要があります。
+
+この原則は，Compare stringsおよびPositionの渡すことができる定数の組み合わせにも適用されます。有効な値は，下記の組み合わせに限られるということです。
+
+| レベル | Stringsテーマの定数 | 
+| ---- | ---- |
+|  L1  | sk width insensitive+sk kana insensitive+sk case insensitive+sk diacritic insensitive |
+|  L2  | sk width insensitive+sk kana insensitive+sk case insensitive |
+|  L3  | sk width insensitive+sk kana insensitive |
+|  L4  | sk width insensitive | 
+|  L5  | sk char codes | 
