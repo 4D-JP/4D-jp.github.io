@@ -40,3 +40,11 @@ v19では，[Compare strings](https://doc.4d.com/4Dv19/4D/19/Compare-strings.301
 |  L3  | sk width insensitive+sk kana insensitive |
 |  L4  | sk width insensitive | 
 |  L5  | sk char codes | 
+
+**注記*: 何も指定しなかった場合，デフォルトは
+
+* sk case insensitive+sk kana insensitive
+
+となります（データ言語「日本語」の場合）。
+
+https://speakerdeck.com/miyako/v19-part-2?slide=47
