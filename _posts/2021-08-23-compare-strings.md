@@ -47,6 +47,10 @@ v19では，[Compare strings](https://doc.4d.com/4Dv19/4D/19/Compare-strings.301
 
 となります（データ言語「日本語」の場合）。
 
-Positionのデフォルトも同一ですが，後述するようにPositionはsk width insensitiveをサポートしていません。
+Positionのデフォルトも同一ですが，後述するように**Positionはsk width insensitiveをサポートしていない**ため，振る舞い上のデフォルトは
+
+* sk kana insensitive+sk case insensitive 
+
+となります。
 
 https://speakerdeck.com/miyako/v19-part-2?slide=47
