@@ -53,7 +53,7 @@ Positionのデフォルトも同一ですが，後述するように**Position�
 
 となります。
 
-https://speakerdeck.com/miyako/v19-part-2?slide=47
+<i class="fa fa-external-link" aria-hidden="true"></i> https://speakerdeck.com/miyako/v19-part-2?slide=47
 
 ---
 
@@ -91,7 +91,7 @@ sk case insensitiveは，アルファベットに加え，このような文字�
 
 このオプションが有効にされている場合，長音記号や踊り字は単独の文字とみなされます。無効にされている場合，いずれもアクセント記号の一種とみなされます。
 
-https://speakerdeck.com/miyako/v19-part-2?slide=51
+<i class="fa fa-external-link" aria-hidden="true"></i> https://speakerdeck.com/miyako/v19-part-2?slide=51
 
 ---
 
