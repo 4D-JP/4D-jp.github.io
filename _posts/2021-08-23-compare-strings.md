@@ -41,7 +41,7 @@ v19では，[Compare strings](https://doc.4d.com/4Dv19/4D/19/Compare-strings.301
 |  L4  | sk width insensitive | 
 |  L5  | sk char codes | 
 
-**注記*: 何も指定しなかった場合，デフォルトは
+**注記**: 何も指定しなかった場合，デフォルトは
 
 * sk case insensitive+sk kana insensitive
 
