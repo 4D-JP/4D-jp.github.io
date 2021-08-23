@@ -41,10 +41,12 @@ v19では，[Compare strings](https://doc.4d.com/4Dv19/4D/19/Compare-strings.301
 |  L4  | sk width insensitive | 
 |  L5  | sk char codes | 
 
-**注記**: 何も指定しなかった場合，デフォルトは
+**注記**: 何も指定しなかった場合，デフォルトは等価性（文字列演算子の`#`および`=`）の称号順序である「L2」，つまり
 
-* sk case insensitive+sk kana insensitive
+* sk width insensitive+sk kana insensitive+sk case insensitive 
 
 となります（データ言語「日本語」の場合）。
+
+Positionのデフォルトも同一ですが，後述するようにPositionはsk width insensitiveをサポートしていません。
 
 https://speakerdeck.com/miyako/v19-part-2?slide=47
