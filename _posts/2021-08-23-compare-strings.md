@@ -35,15 +35,9 @@ v19では，[Compare strings](https://doc.4d.com/4Dv19/4D/19/Compare-strings.301
 
 | レベル | Stringsテーマの定数 | 
 | ---- | ---- |
-|  L1  | sk width insensitive
-+sk kana insensitive
-+sk case insensitive
-+sk diacritic insensitive |
-|  L2  | sk width insensitive
-+sk kana insensitive
-+sk case insensitive |
-|  L3  | sk width insensitive
-+sk kana insensitive |
+|  L1  | sk width insensitive<br/>sk kana insensitive<br/>sk case insensitive<br/>sk diacritic insensitive |
+|  L2  | sk width insensitive<br/>sk kana insensitive<br/>sk case insensitive |
+|  L3  | sk width insensitive<br/>sk kana insensitive |
 |  L4  | sk width insensitive | 
 |  L5  | sk char codes | 
 
