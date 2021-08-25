@@ -3,7 +3,7 @@ layout: post
 title: "TLSのバージョン"
 date: 2021-08-26 12:00:00
 categories: 注意点
-tags: 18.0 http
+tags: 18.x http
 version: 18
 ---
 
