@@ -3,7 +3,7 @@ layout: post
 title: "View Proの用紙設定"
 date: 2021-08-26 12:00:00
 categories: 注意点
-tags: 18.0 viewpro
+tags: 18.x viewpro
 version: 18
 ---
 
