@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19.0 Hotfix 1 修正リスト"
-date: 2021-08-26 08:00:00
+date: 2021-08-30 08:00:00
 categories: 修正リスト
 tags: 19.0 hotfix
-build: 269650
+build: 269571
 version: 19.0
 ---
 
