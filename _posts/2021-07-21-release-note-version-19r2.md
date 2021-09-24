@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19r2 修正リスト"
-date: 2021-09-23 08:00:00
+date: 2021-09-24 08:00:00
 categories: 修正リスト
 tags: 19r2
-build: 271080
+build: 271107
 version: 19r2
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0102327 Windows版のインストーラーで4D Internet Commandsをインストールした場合，macOSではプラグインが認識されませんでした。*Info.plist*ファイルの*CFBundleExecutable*キーが"4D InternetCommands"ではなく"${PRODUCT_NAME}"となっているためです。
+ 
 * ACI0102209 プロジェクトモードのみ。ビルド版アプリケーションでユーザーが`command`+`shift`+`F9`のキーコンビネーションを入力してランタイムエクスプローラーが表示することを阻止する手段がありませんでした。カレントユーザーは常に*Designer*であるためです。
 
 * ACI0102202 ストラクチャエディターの検索エリアが正しく動作しませんでした。
