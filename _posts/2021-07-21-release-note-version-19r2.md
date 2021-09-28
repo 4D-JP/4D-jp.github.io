@@ -4,7 +4,7 @@ title: "4D v19r2 修正リスト"
 date: 2021-09-24 08:00:00
 categories: 修正リスト
 tags: 19r2
-build: 271107
+build: 271172
 version: 19r2
 permalink: /202/:slug/
 ---
