@@ -6,7 +6,7 @@ categories: 修正リスト
 tags: 19r2
 build: 271107
 version: 19r2
-permalink: /:version/:title
+permalink: /:title
 ---
 
 **バージョン**: {{page.version}}  
