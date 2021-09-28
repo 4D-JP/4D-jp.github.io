@@ -6,6 +6,7 @@ categories: 修正リスト
 tags: "18.5"
 build: 271078
 version: 18.5
+permalink: /:y_day/:slug/
 ---
 
 **バージョン**: {{page.version}}  
