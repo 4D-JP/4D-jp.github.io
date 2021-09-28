@@ -6,6 +6,7 @@ categories: 修正リスト
 tags: "19.0"
 build: 271148
 version: 19.0
+permalink: /:y_day/:slug/
 ---
 
 **バージョン**: {{page.version}}  
