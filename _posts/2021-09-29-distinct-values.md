@@ -37,7 +37,7 @@ $values:=ds.Table_1.all().obj.distinct("prop")
 
 ORDAでは，クラシック言語の自動リレーションの代わりにプロジェクションを使用し，リレーション先を参照するクエリを実行したり，逆にクエリからリレーション先のデータを参照したりすることができます（プロジェクション）。
 
-エンティティセレクションをオブジェクト記法で発展させた場合，パスがリレーション名であればプロジェクションはエンティセレクションを返しますが，パスがフィールド名であればコレクションをします。つまり，ORDAのオブジェクト記法には`RELATE MANY SELECTION`や`RELATE ONE SELECTION`だけでなく`SELECTION TO ARRAY`のような働きもあるということです。
+エンティティセレクションをオブジェクト記法で発展させた場合，パスがリレーション名であればプロジェクションはエンティセレクションを返しますが，パスがフィールド名であればコレクションを返します。つまり，ORDAのオブジェクト記法には`RELATE MANY SELECTION`や`RELATE ONE SELECTION`だけでなく`SELECTION TO ARRAY`のような働きもあるということです。
 
 複数の属性からコレクションを作成したい場合は[`entitySelection.toCollection()`](https://doc.4d.com/4Dv19/4D/19/entitySelectiontoCollection.305-5391677.ja.html)や[`entitySelection.extract()`](https://doc.4d.com/4Dv19/4D/19/entitySelectionextract.305-5391688.ja.html)を使用することができます。
 
