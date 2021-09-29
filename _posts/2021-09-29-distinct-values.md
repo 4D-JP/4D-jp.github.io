@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "オブジェクト型のdistinct"
+title: "オブジェクト型のdistinct values"
 date: 2021-09-29 12:25:00
 categories: ランゲージ
 tags: orda collection 19
