@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "View Pro数式の評価順序"
+title: "View Pro数式の評価"
 date: 2021-09-29 11:31:00
 categories: 仕様
 tags: viewpro
