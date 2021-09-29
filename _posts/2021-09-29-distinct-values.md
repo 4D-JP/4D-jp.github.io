@@ -27,7 +27,7 @@ $values:=ds.Table_1.all().distinct("obj.prop") //#2
 * リレーション属性のスカラー値
 * ストレージ属性のオブジェクト型プロパティ
 
-はプロジェクションと`collection.distinct()`で取り出すことができます。
+は，プロジェクションと`collection.distinct()`で取り出すことができます。
 
 ```
 $values:=ds.Table_1.all().obj.distinct("prop")
