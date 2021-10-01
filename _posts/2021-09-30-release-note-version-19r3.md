@@ -12,6 +12,16 @@ permalink: /274/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0102234 設定ファイル*logConfig.json*でORDAログを開始することができませんでした。
+
+* ACI0102163 Windows版のみ。4Dのパスに括弧が含まれている場合，4D for Androidでプロジェクトをビルドしようとすると，エラーが返されました。
+
+* ACI0102162 Windows版のみ。4D for Androidのプロジェクトエディターを開き，シミュレーターボタンをクリックした場合，ランタイムエラーが表示されました。
+
+* ACI0102154 4D for iOSの「ラベル＆アイコン」セクションには，は，*Mobile/medias/icons/* フォルダーにインストールしたカスタムアイコンが表示されませんでした
+
+* ACI0101990 一部の新コマンド（`WP Find all` `WP Find next` `WP Find previous` `Compile project`）は，メソッドエディターでヘルプTipsが表示されませんでした。
+
 * ACI0102300 デバイスにダウンロードされていないレコードの共有ユニバーサルリンクを開こうとした場合，まず同期が実行されるべきですが，すぐにリンクを開こうとするため，要求したレコードが表示されませんでした。
  
 * ACI0102327 Windows版のインストーラーで4D Internet Commandsをインストールした場合，macOSではプラグインが認識されませんでした。*Info.plist*ファイルの*CFBundleExecutable*キーが"4D InternetCommands"ではなく"${PRODUCT_NAME}"となっているためです。
