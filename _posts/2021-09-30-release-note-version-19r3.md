@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D v19r3 修正リスト"
-date: 2021-10-01 08:00:00
+date: 2021-10-02 08:00:00
 categories: 修正リスト
 tags: 19r3
-build: 271368
+build: 271511
 version: 19r3
 permalink: /274/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102356 Windows版のみ。内部コンポーネント*4D NetKit.4dbase*がサーバーにインストールされていませんでした。
+
+* ACI0101978 LDAPの`objectGUID`が文字化けしたテキスト形式で返されました。`LDAP Search`は，数値を文字列に変換して返しますが，GUIDはバイナリ形式のデータが無効な文字列に変換されます。
+
+**注記**: バイナリ形式の`objectGUID`は，Microsoft Active Directoryに特有のプロパティです。Ubuntuのようなプラットフォームでは，このプロパティが存在しないか，文字列で管理されています。修正により，16真数の文字列が返されるようになりました。
 
 * ACI0102234 設定ファイル*logConfig.json*でORDAログを開始することができませんでした。
 
