@@ -1,16 +1,28 @@
 ---
 layout: fix
 title: "4D v19r3 修正リスト"
-date: 2021-10-02 08:00:00
+date: 2021-10-06 08:00:00
 categories: 修正リスト
 tags: 19r3
-build: 271511
+build: 271643
 version: 19r3
 permalink: /274/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102345 Mac版のみ。Xcodeのバージョンを変更した場合，Apple Siliconターゲットの再コンパイルが失敗することがありました。C++のプリコンパイルヘッダーファイル（`.PCH`）のフォーマットが合っていないためです。問題を解消するためにはXcodeのキャッシュファイルを削除する必要があります。
+
+* ACI0102293 デバッグログが記録されている状況で`_o_QUERY SUBRECORDS`を実行した場合，アプリケーションがクラッシュしました。
+
+* ACI0102261 View Proエリアのピボットテーブルにフィールドをドラッグ＆ドロップすることができませんでした。
+
+**注記**: 修正により，[*WA enable URL drop*](https://doc.4d.com/4Dv19/4D/19/WA-SET-PREFERENCE.301-5393011.ja.html)の振る舞いが見直されました。この設定は，ファイルパスをWebエリアをドロップし，表示中のページから離れてしまうことを防止するため，デフォルトで`False`に設定されていました。しかし，同時にページ内でのドラッグ＆ドロップも禁止されてしまうという弊害もあります。修正により，ファイルおよびURLのドロップだけがオプションで制御されるようになりました。
+
+* ACI0102101 Windows版のみ。HTMLエディターの[TinyMCE](https://www.tiny.cloud)をCEF版のWebエリアに表示した場合，スペスチェックが使用できませんでした。
+
+**注記**: Windows版のCEFは，[ネイティブスペルチェッカー](https://www.magpcss.org/ceforum/viewtopic.php?f=6&t=18269)への移行を進めています。修正により，*WinUseBrowserSpellChecker*は無効化されています。
 
 * ACI0102356 Windows版のみ。内部コンポーネント*4D NetKit.4dbase*がサーバーにインストールされていませんでした。
 
