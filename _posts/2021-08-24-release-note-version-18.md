@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-10-09 08:00:00
+date: 2021-10-12 08:00:00
 categories: 修正リスト
 tags: "18.5"
-build: 271775
+build: 271834
 version: 18.5
 permalink: /236/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102031 `4DSCRIPT`の実行コンテキストで２回以上`SET DATABASE PARAMETER`の`SQL Engine case sensitivity`を変更した場合，デッドロックが発生し，アプリケーションがハングしました。
+
+* ACI0101978 LDAPの`objectGUID`が文字化けしたテキスト形式で返されました。`LDAP Search`は，数値を文字列に変換して返しますが，GUIDはバイナリ形式のデータが無効な文字列に変換されます。
 
 * ACI0102369 クライアント/サーバー版のみ。日付型と似たような形式（`nnnn-nn-nn`）の文字列を検索条件の値として渡した場合，`dataClass.query()`が正しい結果を返しませんでした。文字列が日付として評価されているようです。プレースホルダーを使用した場合に問題が発生します。文字列リテラルであれば問題ありません。
 
