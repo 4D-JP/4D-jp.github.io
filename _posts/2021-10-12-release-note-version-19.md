@@ -12,7 +12,7 @@ permalink: /285/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
-* ACI0102331
+* ACI0102331 リストボックスの列にCSSで背景色（`alternateFill`および`fill`）が設定されている場合，クラスの背景色がエディターに反映されませんでした。
 
 * ACI0102031 `4DSCRIPT`の実行コンテキストで２回以上`SET DATABASE PARAMETER`の`SQL Engine case sensitivity`を変更した場合，デッドロックが発生し，アプリケーションがハングしました。
 
