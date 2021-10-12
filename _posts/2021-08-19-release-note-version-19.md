@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v19.0 Hotfix 2 修正リスト"
-date: 2021-10-11 08:00:00
+date: 2021-10-12 08:00:00
 categories: 修正リスト
 tags: 19.0 hotfix
 build: 271738
