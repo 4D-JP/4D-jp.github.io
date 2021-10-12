@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19r3 修正リスト"
-date: 2021-10-09 08:00:00
+date: 2021-10-12 08:00:00
 categories: 修正リスト
 tags: 19r3
-build: 271784
+build: 271849
 version: 19r3
 permalink: /274/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102331 リストボックスの列にCSSで背景色（`alternateFill`および`fill`）が設定されている場合，クラスの背景色がエディターに反映されませんでした。
 
 * ACI0102370 クライアント/サーバー版のみ。ORDAの`query()`のパラメーターにコンテキストオブジェクトを渡した場合，シンタックスエラーが返されました。
 
