@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19 修正リスト"
-date: 2021-10-19 08:00:00
+date: 2021-10-20 08:00:00
 categories: 修正リスト
 tags: "19.0"
-build: 272145
+build: 272208
 version: 19.0
 permalink: /285/:slug/
 ---
@@ -12,6 +12,8 @@ permalink: /285/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0102381 Windows版のみ。`Print Form`で印刷したフォーム上のテキスト入力オブジェクトに対し，`OBJECT SET FONT`で*Calibri Bold Italic*フォントを設定した場合，ボールド属性だけが適用され，イタリック属性が適用されませんでした。`OBJECT SET FONT STYLE`で`Bold`+`Italic`を設定すれば問題ありません。
+ 
 * ACI0102361 サービスまたはヘッドレスモードでサーバーを起動した場合，`INTEGRATE MIRROR LOG FILE`（厳格モード）がエラーを返しました。
 
 * ACI0102316 クライアント/サーバー版のみ。エンティティセレクション型のリストボックスに自動計算フッターを表示した場合，エンティティセレクションに変化がなく，再計算の必要がなくても，再描画のたびにネットワークリクエストがサーバーに送信されました。
