@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19 修正リスト"
-date: 2021-10-20 08:00:00
+date: 2021-10-21 08:00:00
 categories: 修正リスト
 tags: "19.0"
-build: 272208
+build: 272275
 version: 19.0
 permalink: /285/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102296 プロジェクトモードのみ。`QUERY BY EXAMPLE`でフォームを表示した場合，フィールドに値を入力することができませんでした。
 
 * ACI0102381 Windows版のみ。`Print Form`で印刷したフォーム上のテキスト入力オブジェクトに対し，`OBJECT SET FONT`で*Calibri Bold Italic*フォントを設定した場合，ボールド属性だけが適用され，イタリック属性が適用されませんでした。`OBJECT SET FONT STYLE`で`Bold`+`Italic`を設定すれば問題ありません。
  
