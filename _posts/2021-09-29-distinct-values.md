@@ -3,7 +3,7 @@ layout: post
 title: "オブジェクト型のdistinct values"
 date: 2021-09-29 12:25:00
 categories: ランゲージ
-tags: orda collection 19
+tags: orda collection 19.x
 version: 19
 ---
 
