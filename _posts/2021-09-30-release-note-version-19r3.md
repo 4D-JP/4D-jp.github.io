@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D v19r3 修正リスト"
-date: 2021-10-21 08:00:00
+date: 2021-10-26 08:00:00
 categories: 修正リスト
 tags: 19r3
-build: 272267
+build: 272406
 version: 19r3
 permalink: /274/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102255 HTTPサーバーを停止した場合，ログイン中のWebエクスプローラーおよびWebスタジオのセッシュンが終了しました。WebAdminコンポーネントはHTTPサーバーの状態に左右されないはずです。
+
+* ACI0100940 クイックレポートのセルにフォーマットが設定されているのに，リストでは「なし」が選択されていることがありました。
+
+* ACI0102362 `OPEN RUNTIME EXPLORER`のヘルプTipsが表示されませんでした。
 
 * ACI0102381 Windows版のみ。`Print Form`で印刷したフォーム上のテキスト入力オブジェクトに対し，`OBJECT SET FONT`で*Calibri Bold Italic*フォントを設定した場合，ボールド属性だけが適用され，イタリック属性が適用されませんでした。`OBJECT SET FONT STYLE`で`Bold`+`Italic`を設定すれば問題ありません。
 
