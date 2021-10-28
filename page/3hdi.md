@@ -9,6 +9,11 @@ type: page
 * content
 {:toc}
 
+## 19r2 # {#v19r2}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーフォーマットの変更**](https://github.com/4D-JP/HDI/releases/download/19r2/HDI_4DWP_FormatPictures.zip)<span id="19-2-1"></span><br />
+4D Write Pro に新しく `wk image display mode` 属性が追加され、インラインおよびアンカーピクチャーのフォーマットが変更できるようになりました。また、新しい `wk background display mode` の追加によって、背景画像のフォーマットも簡単に変更できるようになりました。これらの属性の値として使用できる定数は[4D Write Pro ＞ ピクチャーを管理する ＞ 背景画像](https://doc.4d.com/4Dv19R2/4D/19-R2/Handling-pictures.200-5514111.ja.html#5524063) の章にて説明しています。
+
 ## 19 # {#v19}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D変換タグ: 4DEACH**](https://github.com/4D-JP/HDI/releases/download/19/HDI_4DEACHTag.zip)<span id="19-0-8"></span><br />
