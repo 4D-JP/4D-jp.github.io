@@ -3,7 +3,7 @@ layout: post
 title: "ARRAY TO LISTとSAVE LIST"
 date: 2021-06-23 12:00:00
 categories: 仕様
-tags: v19 project
+tags: v19 projectmode
 ---
 
 プロジェクトモードでは，特に指定しない限り，書き込み禁止のパッケージ（拡張子`.4DZ`の圧縮されたプロジェクトフォルダー）がビルドされます。ビルド後にプロジェクト（ストラクチャー）を更新することはできない点に留意してください。つまり，テーブルやフィールドを追加するようなSQL，`SAVE LIST` `ARRAY TO LIST` `SET PICTURE TO LIBRARY` `CREATE INDEX`などのコマンドは使用できません。これは仕様です。
