@@ -15,5 +15,5 @@ tags: programming network
 * ACI0101408 [v18.5 Hotfix 1](https://4d-jp.github.io/2021/07/21/release-note-version-18/) | [v19.0](https://4d-jp.github.io/2021/07/14/release-note-version-19/) | [19r2](https://4d-jp.github.io/202/release-note-version-19r2/)
   * `HTTP SET OPTION`の`HTTP timeout`オプションが`HTTP Get`の動作に反映されませんでした。つまり，サーバー接続に成功し，なかなか応答が返されず，切断もされない場合，いつまでもレスポンスを待ちました。 
 
-* ACI0102310 [v19](https://4d-jp.github.io/285/release-note-version-19/)
+* ACI0102310 [v19.0 Nightly Build > Hotfix 2](https://4d-jp.github.io/285/release-note-version-19/)
   * `HTTP Request`を続けて何度も実行した場合，`#17`（未実装の制御命令）エラーが返されることがありました。実際にはタイムアウトエラーが発生しています。`HTTP SET OPTION`で設定した秒数以内にレスポンスを読むことができなかった場合にエラーが返されます。 
