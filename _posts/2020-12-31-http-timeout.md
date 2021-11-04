@@ -3,7 +3,7 @@ layout: post
 title: "HTTP timeoutは接続タイムアウトではない"
 date: 2020-12-31 12:00:00
 categories: 仕様
-tags: programming network 
+tags: programming network http
 ---
 
 `HTTP SET OPTION`で設定できる`HTTP timeout`は，**接続タイムアウトではありません**。v18/19の初期リリースは，実装が間違っており，サーバー接続タイムアウト（サーバーがダウンしている場合，いつまでもレスポンスを待ち続けるようなことを避けるためのタイムアウト）にこのオプションが適用されていました。正しい動作は，HTTPレスポンスのタイムアウト（サーバーとの接続が確立された後，HTTPレスポンスが返されるまで待機する時間の上限）です。
