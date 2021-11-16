@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-11-11 08:00:00
+date: 2021-11-16 08:00:00
 categories: 修正リスト
 tags: "18.5"
-build: 272916
+build: 272974
 version: 18.5
 permalink: /288/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102457 壊れた`.eml`ファイルを`MAIL Convert from MIME`で読み込もうとした場合，アプリケーションがクラッシュすることがありました。
 
 * ACI0102440 Windows版のみ。複数のページにTIFF画像が挿入されている4D WriteドキュメントをWrite Proに変換し，印刷しようとした場合，不明なエラーが返されました。`.xps`またはMicrosoft Print to PDFでは問題ありません。
 
