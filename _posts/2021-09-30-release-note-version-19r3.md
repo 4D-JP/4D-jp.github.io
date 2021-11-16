@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19r3 修正リスト"
-date: 2021-11-11 08:00:00
+date: 2021-11-16 08:00:00
 categories: 修正リスト
 tags: 19r3
-build: 272900
+build: 272979
 version: 19r3
 permalink: /274/:slug/
 ---
@@ -12,6 +12,8 @@ permalink: /274/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0102457 壊れた`.eml`ファイルを`MAIL Convert from MIME`で読み込もうとした場合，アプリケーションがクラッシュすることがありました。
+ 
 * ACI0102391 *IMAP Transporter*の`getMIMEAsBlob`がなかなか結果を返さないことがありました。特定のメールサーバーで問題が発生します。Gmailアカウントでは問題ありません。ACI0102365とは別の問題です。
 
 * ACI0102406 Windows版のみ。ボリュームシャドウコピーが有効にされているWindows Serverでファイルメニューの「最近使用したプロジェクトを開く」で別のプロジェクトに切り替えた場合，アプリケーションがクラッシュすることがありました。 VSSを管理しているスレッドでクラッシュが発生しています。Windows Server 2022で問題が発生します。以前のバージョンでは問題ないようです。
