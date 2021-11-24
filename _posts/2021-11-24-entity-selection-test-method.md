@@ -7,6 +7,8 @@ tags: orda class
 version: 19
 ---
 
+データクラスのエンティティセレクション実装を拡張し，クラス関数を追加した場合，`Null`との比較演算でクラスメソッドの有無をテストすることはできません。これは仕様です。
+
 ```
 var $es : cs.myTableSelection
 
