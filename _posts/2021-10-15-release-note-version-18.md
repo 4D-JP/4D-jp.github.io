@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-11-16 08:00:00
+date: 2021-11-19 08:00:00
 categories: 修正リスト
 tags: "18.5"
-build: 272974
+build: 273131
 version: 18.5
 permalink: /288/:slug/
 ---
@@ -12,6 +12,12 @@ permalink: /288/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0102443 フランス語版のみ。`OPEN RUNTIME EXPLORER`のコマンド名がローカライズされていませんでした。
+
+**注記**: 文法的に正しいのは*OUVRIR EXPLORATEUR D'EXECUTION*ですが，トークンにアポストロフィー記号を含めることはできないため，フランス語版のコマンド名は`OUVRIR EXPLORATEUR EXECUTION`となっています。
+
+* ACI0100443 Mac版のみ。Apple Magic Mouse 2は非常に感度が高いため，簡単にドラッグ＆ドロップイベントが発生し，フォームオブジェクト*On Drag Over*イベントで`$0:=-1`を実行しても，マウスポインターが「ドロップ」アイコンに変化することがありました。
+ 
 * ACI0102457 壊れた`.eml`ファイルを`MAIL Convert from MIME`で読み込もうとした場合，アプリケーションがクラッシュすることがありました。
 
 * ACI0102440 Windows版のみ。複数のページにTIFF画像が挿入されている4D WriteドキュメントをWrite Proに変換し，印刷しようとした場合，不明なエラーが返されました。`.xps`またはMicrosoft Print to PDFでは問題ありません。
