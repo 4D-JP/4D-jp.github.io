@@ -5,7 +5,7 @@ date: 2021-11-24 08:00:00
 categories: 修正リスト
 tags: "19.0"
 build: 273275
-version: 19.0
+version: 19.1
 permalink: /285/:slug/
 ---
 
