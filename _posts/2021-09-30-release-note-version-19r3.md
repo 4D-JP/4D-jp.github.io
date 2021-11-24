@@ -1,16 +1,36 @@
 ---
 layout: fix
 title: "4D v19r3 修正リスト"
-date: 2021-11-16 08:00:00
+date: 2021-11-23 08:00:00
 categories: 修正リスト
 tags: 19r3
-build: 272979
+build: 273228
 version: 19r3
 permalink: /274/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102475 Mac版のみ。メソッドまたはクラスをエディターで開こうとした場合，中途半端なメソッドエディターウィンドウ（バグ画面）が表示されることがありました。
+
+* ACI0102446 文字列の添字シンタックス（``string[[index]]``）とドット記法を組み合わせた場合，シンタックスエラーになりました。
+
+```
+var $a : Text
+var $b : Object
+$a:=$a[[$b.c]]
+```
+
+* ACI0102368 フォームを表示した直後に`FORM GOTO PAGE`でページ移動した場合，一瞬だけページ`1`が表示されました。
+
+* ACI0102452 クラスのインスタンスを`JSON Stringify`で文字列として出力した場合，[計算プロパティ](https://developer.4d.com/docs/ja/Concepts/classes.html#function-get-と-function-set)の内容がスタンドアロン版とクライアント版で微妙に違っていました。クライアント版では`readOnly`プロパティが返されません。
+
+**注記**: 修正により，デスクトップ版・サーバー版・クライアント版すべてのORDAで同じプロパティが返されるようになりました。返されるのは`name` `kind` `exposed` `readOnly` `type` `fieldType`です。`autoFilled` `indexed` `keywordIndexed` `mandatory` `unique`は返されません。
+
+* ACI0102349 プロジェクトモードのみ。入力不可・フォーカス不可のオブジェクトが入力順プロパティ（`entryOrder`）に含まれている場合，タブ移動がそのオブジェクトで終わってしまい，どのオブジェクトもフォーカスされていない状態になりました。期待されるのは，入力順が直近の入力可・フォーカス可オブジェクトにタブ移動することです。
+
+**注記**: プロジェクトモードでは「[タブ有効](https://docs.4d.com/4Dv19/4D/19/Data-entry-controls-and-assistance.300-5416782.ja.html)」というプロパティが廃止されており，[入力順](https://developer.4d.com/docs/ja/FormEditor/formEditor.html#データの入力順)プロパティ（`entryOrder`）でタブ移動の可否が決定することに留意してください。フォーカス可のテキスト入力オブジェクトは，たとえ入力不可であってもフォーカスすることができます。修正により，入力不可でフォーカス可のテキスト入力オブジェクトは，クリックまたはコマンド（**GOTO OBJECT**）あるいはフォームを表示した直後に入力順が先頭だった場合にのみフォーカスを得ることができ，タブによる移動ではフォーカスされないことになりました。
 
 * ACI0102457 壊れた`.eml`ファイルを`MAIL Convert from MIME`で読み込もうとした場合，アプリケーションがクラッシュすることがありました。
  
