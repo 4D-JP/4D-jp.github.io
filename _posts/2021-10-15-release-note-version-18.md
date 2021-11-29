@@ -1,11 +1,11 @@
 ---
 layout: fix
-title: "4D v18 修正リスト"
+title: "4D v18.5 Hotfix 4 修正リスト"
 date: 2021-11-25 08:00:00
 categories: 修正リスト
-tags: "18.5"
+tags: 18.5 hotfix
 build: 273292
-version: 18.5
+version: 18.5 Hotfix 4
 permalink: /288/:slug/
 ---
 
