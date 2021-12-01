@@ -1,10 +1,10 @@
 ---
 layout: fix
-title: "4D v19 修正リスト"
+title: "4D v19.1 修正リスト"
 date: 2021-11-26 08:00:00
 categories: 修正リスト
 tags: "19.1"
-build: 273359
+build: 273454
 version: 19.1
 permalink: /285/:slug/
 ---
