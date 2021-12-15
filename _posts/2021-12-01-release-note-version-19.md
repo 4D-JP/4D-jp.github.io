@@ -1,6 +1,6 @@
 ---
 layout: fix
-title: "4D v19.1 修正リスト"
+title: "4D v19 修正リスト"
 date: 2021-12-15 08:00:00
 categories: 修正リスト
 tags: "19.1"
