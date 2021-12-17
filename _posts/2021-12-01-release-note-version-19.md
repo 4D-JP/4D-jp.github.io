@@ -4,13 +4,21 @@ title: "4D v19 修正リスト"
 date: 2021-12-16 08:00:00
 categories: 修正リスト
 tags: "19.1"
-build: 274119
+build: 274123
 version: 19.1
 permalink: /335/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102418 [自動行高](https://doc.4d.com/4Dv19/4D/19/List-box-column-specific-properties.300-5416755.ja.html)に設定されたリストボックスを`Print object`で印刷した場合，最終行がページにまたがって出力されたり，途切れて出力されることがありました。問題が発生する条件は，用紙のマージン設定や印刷するリストボックスの内容に左右されます。
+
+* ACI0102380  データ言語が「日本語」に設定されており，「テキスト検索用の文字列比較を使用する」モードが有効にされている場合，`Compare strings`でカナを区別しない比較（`sk kana insensitive`）が正しく動作しませんでした。`sk diacritic insensitive`または`sk case insensitive`を併用すれば問題ありません。
+
+**注記**: ICUのレベル`3`コレーション（アクセントの有無および文字列の大小を区別する）と言語特有の`Alternate`指定（テキスト検索用の文字列比較を使用する）を併用することはできません。言語特有の`Alternate`指定が有効にされている場合，レベル`2`コレーションが使用されます。修正により，文字列の大小を区別するための`CaseLevel`オプションが追加されました。このオプションは，レベル`1`コレーションをベースに文字列の大小だけを区別するモードで使用されているオプションと同じものです。つまり，他言語ではアクセントの有無および文字列の大小を区別するためにレベル`3`コレーションが使用されますが，日本語版では，レベル`2`コレーションと文字列の大小を区別するための`CaseLevel`オプションが併用されるようになりました。
+
+<i class="fa fa-external-link" aria-hidden="true"></i> [ICU Documentation](https://unicode-org.github.io/icu/userguide/collation/concepts.html)
 
 * ACI0102506 アカウント情報の氏名または会社名にアクセント記号が使用されている場合，ライセンスのアクティベーションができませんでした。
 
