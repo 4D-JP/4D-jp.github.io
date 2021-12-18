@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "リストボックスのハイライトセット"
-date: 2021-12-18 00:00:00
+date: 2021-12-17 00:00:00
 categories: 仕様
 tags: userinterface listbox server
 version: 19r3
