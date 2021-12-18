@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "クイックレポートエリアの埋め込み"
-date: 2021-12-18 11:31:00
+date: 2021-12-18 00:00:00
 categories: 仕様
 tags: userinterface quickreport
 version: 19
