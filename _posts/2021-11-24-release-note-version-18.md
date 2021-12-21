@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2021-12-17 08:00:00
+date: 2021-12-18 08:00:00
 categories: 修正リスト
 tags: "18.5"
-build: 274158
+build: 274286
 version: "18.5"
 permalink: /328/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102534 クライアントが終了してもサーバー側のエンティティセレクションが解放されないことがありました。
 
 * ACI0102418 [自動行高](https://doc.4d.com/4Dv19/4D/19/List-box-column-specific-properties.300-5416755.ja.html)に設定されたリストボックスを`Print object`で印刷した場合，最終行がページにまたがって出力されたり，途切れて出力されることがありました。問題が発生する条件は，用紙のマージン設定や印刷するリストボックスの内容に左右されます。
 
