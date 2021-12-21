@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v19 修正リスト"
-date: 2021-12-20 08:00:00
+date: 2021-12-18 08:00:00
 categories: 修正リスト
 tags: "19.1"
 build: 274299
