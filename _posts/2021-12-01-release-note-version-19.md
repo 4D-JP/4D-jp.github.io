@@ -96,7 +96,7 @@ $a:=$a[[$b.c]]
 
 * ACI0102164 Windows版のみ。サーバー管理画面の検索ツールの虫眼鏡アイコンがテキスト入力の邪魔になっていました。
 
-* ACI0101994	Listbox vertical aligns Text too high in colums linked to a choice list.		taow.4d.com	According to origin
+* ACI0101994 リストボックスのセルに選択リストが設定されている場合，テキストの垂直揃えが通常のセルよりも少しだけ高くなりました。
 
 * ACI0101929 クイックレポートエディターのクロスタブツールに問題がありました。セルを選択したときに表示される吹き出し（ポップアップウィンドウ）の位置が左に寄っていました。
 
