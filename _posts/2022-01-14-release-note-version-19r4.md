@@ -12,6 +12,18 @@ permalink: /14/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0102407 `Storage`に対して`Use`構文を使用した場合，不要な警告がメソッドエディターのマージンに表示されました。
+
+* ACI0102403 メソッドを`\`記号で改行した場合，ローカル変数のコード補完で正しい候補文字列が表示されませんでした。
+ 
+* ACI0102318 `SET DATABASE PARAMETER`と`APPLY TO SELECTION`を同時に実行した場合，アプリケーションがクラッシュしました。
+
+* ACI0102311	Changing the background color & alignment of objects via the contextual menu doesn't work		4D Staff	According to origin
+
+* ACI0102292 `New OAuth2 provider`に無効なパラメーターが渡された場合，エラーが返されませんでした。
+
+* ACI0102271 フランス語版のみ。View Proインターフェースのピボットテーブルのメニュー文字列がいくつか途切れていました。
+ 
 * ACI0102464 `WP Get view properties`は，スペルチェックの情報（標準アクションの`spell/enabled`）ではなく自動スペルチェックの情報（`OBJECT Get auto spellcheck`）を返しました。
 
 **注記**: 自動スペルチェックがプロパティで有効にされていない場合，`spellEnabled`を`true`に設定すると，初回だけ自動スペルチェックおよび入力中のスペルチェックが有効になります（互換性のため）。有効にされていれば，入力中のスペルチェックだけが有効になります。その後，
