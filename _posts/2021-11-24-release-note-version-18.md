@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2022-01-13 08:00:00
+date: 2022-01-18 08:00:00
 categories: 修正リスト
 tags: "18.5"
-build: 274954
+build: 275110
 version: "18.5"
 permalink: /328/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102557 Windows版のみ。`Info.plist`ファイルのキー`CFBundleShortVersionString`にビルド番号が反映されていませんでした。値は`18.5 build 18.00000`ではなく，実際のビルド番号であるべきです。
+
+**注記**: ビルドされたアプリケーションの場合，コマンド[`Application version`](https://doc.4d.com/4Dv19/4D/19.1/Application-version.301-5653582.ja.html)から返されるビルド番号に「意味はなく」常に`0`が返される点には変わりません。
 
 * ACI0102576 リストボックスのヘッダーの画像ソースに値が設定されていない場合，ストラクチャをプロジェクトに変換すると，当該プロパティが存在しないリストボックスになりました。
 
