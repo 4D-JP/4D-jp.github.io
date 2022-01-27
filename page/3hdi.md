@@ -9,6 +9,11 @@ type: page
 * content
 {:toc}
 
+## 19r3 # {#v19r3}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**クラス: 計算プロパティ**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_CS_ComputedProperties.zip)<span id="19-3-1"></span><br />
+`Function get` および `Function set` キーワードを使って、クラスに [計算プロパティ](https://developer.4d.com/docs/Rx/ja/Concepts/classes.html#function-get-%E3%81%A8-function-set) が追加できるようになりました。
+
 ## 19r2 # {#v19r2}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーフォーマットの変更**](https://github.com/4D-JP/HDI/releases/download/19r2/HDI_4DWP_FormatPictures.zip)<span id="19-2-1"></span><br />
