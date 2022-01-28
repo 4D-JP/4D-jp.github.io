@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2022-01-18 08:00:00
+date: 2022-01-19 08:00:00
 categories: 修正リスト
 tags: "18.5"
-build: 275110
+build: 275434
 version: "18.5"
 permalink: /328/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0101791 コンパイルされていないプロジェクトの*On Startup*データベースメソッドで`BUILD APPLICATION`を使用した場合，コンパイラーのエラーログファイルが出力されませんでした。*On Startup*のタイミングでは，デザインモードがセットアップされていないためです。
 
 * ACI0102557 Windows版のみ。`Info.plist`ファイルのキー`CFBundleShortVersionString`にビルド番号が反映されていませんでした。値は`18.5 build 18.00000`ではなく，実際のビルド番号であるべきです。
 
