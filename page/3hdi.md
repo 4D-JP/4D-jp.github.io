@@ -11,6 +11,8 @@ type: page
 
 ## 19r3 # {#v19r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: 計算属性**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_ORDA_ComputedAttributes.zip)<span id="19-3-2"></span><br />
+ORDAクラスに [計算属性](https://developer.4d.com/docs/Rx/ja/ORDA/ordaClasses.html#%E8%A8%88%E7%AE%97%E5%B1%9E%E6%80%A7) が追加できるようになりました。それぞれ専用の関数を設定することで、計算属性値を取得・設定・クエリ・並べ替えすることが可能です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**クラス: 計算プロパティ**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_CS_ComputedProperties.zip)<span id="19-3-1"></span><br />
 `Function get` および `Function set` キーワードを使って、クラスに [計算プロパティ](https://developer.4d.com/docs/Rx/ja/Concepts/classes.html#function-get-%E3%81%A8-function-set) が追加できるようになりました。
 
