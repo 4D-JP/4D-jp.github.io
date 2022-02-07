@@ -88,8 +88,8 @@ permalink: /14/:slug/
  
 * ACI0102318 `SET DATABASE PARAMETER`と`APPLY TO SELECTION`を同時に実行した場合，アプリケーションがクラッシュしました。
 
-* ACI0102311	Changing the background color & alignment of objects via the contextual menu doesn't work		4D Staff	According to origin
-
+* ACI0102311 フォームエディターのコンテキストメニューからオブジェクトの整列や背景カラーを変更することができませんでした。
+ 
 * ACI0102292 `New OAuth2 provider`に無効なパラメーターが渡された場合，エラーが返されませんでした。
 
 * ACI0102271 フランス語版のみ。View Proインターフェースのピボットテーブルのメニュー文字列がいくつか途切れていました。
