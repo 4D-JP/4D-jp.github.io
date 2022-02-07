@@ -11,6 +11,8 @@ type: page
 
 ## 19r3 # {#v19r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 継続セクションブレーク**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_4DWP_ContinuousSectionBreaks.zip)<span id="19-3-4"></span><br />
+4D Write Pro に、改ページを強制しない [継続したセクションブレーク](https://doc.4d.com/4Dv19R3/4D/19-R3/Using-a-4D-Write-Pro-area.200-5606485.ja.html#5615462) が追加されました。これにより、ページ内で複数のセクションを管理できるようになり、同じページ上で異なる段組の設定ができるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: フォーミュラのハイライト**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_4DWP_HightlightFormulas.zip)<span id="19-3-3"></span><br />
 4D Write Pro に新しい表示オプションが追加され、ドキュメントに含まれるフォーミュラを、値表示・参照表示のいずれの場合でもハイライトすることができるようになりました。
 ハイライトは `wk formula highlight` および `wk formula highlight color` を使って設定します。<br />
