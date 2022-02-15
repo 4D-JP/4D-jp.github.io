@@ -4,7 +4,7 @@ title: "4D v19 修正リスト"
 date: 2022-02-14 08:00:00
 categories: 修正リスト
 tags: "19.1"
-build: 276045
+build: 276097
 version: "19.1"
 permalink: /19/:slug/
 ---
@@ -12,6 +12,8 @@ permalink: /19/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0102646 Mac版のみ。システムWebエリアで`WA EXECUTE JAVASCRIPT FUNCTION`を実行することができませんでした。
+ 
 * ACI0102653 `SET DATABASE LOCALIZATION`でローカライズ言語を変更した場合，Write Proエリアのコンテキストメニューにシステム言語とローカライズ言語が混ざって表示されました。
 
 **注記**: ドロップダウンメニューや`FONT STYLE LIST`から返されるフォントスタイル名は，常にシステム言語で表示されます。これは仕様です。修正により，シンタックスチェックなどの項目がローカライズ言語で表示されるようになりました。
