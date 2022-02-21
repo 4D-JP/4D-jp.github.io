@@ -11,6 +11,9 @@ type: page
 
 ## 19r4 # {#v19r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: テーブル行内部の自動改ページ**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DWP_PageBreaksInTableRows.zip)<span id="19-4-2"></span><br />
+4D Write Pro に新しい `wk page break inside row` 属性が追加され、テーブルの行内部の自動改ページができるようになりました。<br />
+参考: [表のページ分け](https://doc.4d.com/4Dv19R4/4D/19-R4/Using-a-4D-Write-Pro-area.200-5760411.ja.html#5798838)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: エイリアス属性**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_ORDA_Aliases.zip)<span id="19-4-1"></span><br />
 ORDAクラスに [エイリアス属性](https://doc4d.github.io/docs/ja/ORDA/ordaClasses.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E5%B1%9E%E6%80%A7-1) を定義できるようになりました。
 
