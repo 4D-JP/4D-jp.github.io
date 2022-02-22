@@ -11,6 +11,8 @@ type: page
 
 ## 19r4 # {#v19r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**View Pro: ワークブックオプションの管理**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DVP_workbook_options.zip)<span id="19-4-3"></span><br />
+新しい [`VP SET WORKBOOK OPTIONS`](https://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-set-workbook-options) コマンドを使って、様々なワークブックオプションを管理することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: テーブル行内部の自動改ページ**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DWP_PageBreaksInTableRows.zip)<span id="19-4-2"></span><br />
 4D Write Pro に新しい `wk page break inside row` 属性が追加され、テーブルの行内部の自動改ページができるようになりました。<br />
 参考: [表のページ分け](https://doc.4d.com/4Dv19R4/4D/19-R4/Using-a-4D-Write-Pro-area.200-5760411.ja.html#5798838)
