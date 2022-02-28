@@ -11,6 +11,8 @@ type: page
 
 ## 19r4 # {#v19r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**システムワーカー**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_Systemworker.zip)<span id="19-4-4"></span><br />
+新しい [`SystemWorker`](http://developer.4d.com/docs/ja/API/SystemWorkerClass.html) クラスを使って、外部プロセスを非同期に実行することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**View Pro: ワークブックオプションの管理**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DVP_workbook_options.zip)<span id="19-4-3"></span><br />
 新しい [`VP SET WORKBOOK OPTIONS`](https://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-set-workbook-options) コマンドを使って、様々なワークブックオプションを管理することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: テーブル行内部の自動改ページ**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DWP_PageBreaksInTableRows.zip)<span id="19-4-2"></span><br />
