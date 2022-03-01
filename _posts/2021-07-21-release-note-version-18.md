@@ -85,8 +85,6 @@ version: 18.5
 
 * ACI0101691 `MAIL Convert to MIME `で出力されるメ--ルの`Content-Type`ヘッダーに不要なアンダースコア記号（`_`）が挿入されることがありました。
 
-* ACI0101408 `HTTP SET OPTION`の`HTTP timeout`オプションが`HTTP Get`の動作に反映されませんでした。つまり，サーバー接続に成功し，なかなか応答が返されず，切断もされない場合，いつまでもレスポンスを待ちました。
-
 * ACI0101348 ユーザー設定が有効にされたアプリケーションをビルドし，Program Filesにインストールして，書き込みが許可されている場所にデータフォルダーを作成した場合，`OPEN SETTINGS WINDOW`で`User settings for data file`を開こうとすると，アプリケーションがクラッシュしました。`Structure settings`であれば，開くことができます。
 
 * ACI0101309 `VP Import from object`に`Null`または空のオブジェクトを渡した場合，エラーが返されました。期待されるのは，新規スプレッドシートが作成されることです。
