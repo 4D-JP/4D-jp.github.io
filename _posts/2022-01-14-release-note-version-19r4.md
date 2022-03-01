@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v19r4 修正リスト"
-date: 2022-02-28 08:00:00
+date: 2022-03-01 08:00:00
 categories: 修正リスト
 tags: 19r4
 build: 276457
