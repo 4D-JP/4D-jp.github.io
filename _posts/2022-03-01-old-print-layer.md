@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "旧式プリントレイヤー"
-date: 2022-03-01 15:00:00
+date: 2022-02-28 15:00:00
 categories: 仕様
 tags: windows printing
 version: 19r4
