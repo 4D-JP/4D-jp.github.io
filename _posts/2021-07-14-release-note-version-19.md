@@ -232,8 +232,6 @@ WA Evaluate JavaScript(*;"area";"Utils.spread.getActiveSheet().options.showFormu
 * ACI0101729 `shift`キーを押しながら上下矢印キーを入力してリストボックス行の選択範囲を拡大しようとした場合，範囲が移動するだけで，常に一定の行数が選択されました。
 
 * ACI0101725 `LISTBOX SELECT ROW`と`lk remove from selection`でリストボックス行の選択を解除した後，`shift`キーを押しながらクリックまたは上下矢印キーの操作で選択範囲を変更しようとした場合，コマンドで選択を解除した行が選択の起点となりました。
-
-* ACI0101408 `HTTP SET OPTION`の`HTTP timeout`オプションが`HTTP Get`の動作に反映されませんでした。つまり，サーバー接続に成功し，なかなか応答が返されず，切断もされない場合，いつまでもレスポンスを待ちました。
  
 * ACI0101969 メールのエンコーティングが`us-ascii`だった場合，`CR` `.` `CR` という文字列（dot-stuffing）以降の本文が切り捨てられました。`quoted-printable`エンコーディングであれば，問題ありません。
 
