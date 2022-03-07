@@ -6,7 +6,7 @@ categories: 修正リスト
 tags: "19.2"
 build: 276674
 version: "19.2"
-permalink: /19/:slug/
+permalink: /66/:slug/
 ---
 
 **バージョン**: {{page.version}}  
