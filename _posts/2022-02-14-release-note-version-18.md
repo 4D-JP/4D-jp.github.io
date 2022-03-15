@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2022-03-07 08:00:00
+date: 2022-03-12 08:00:00
 categories: 修正リスト
 tags: "18.5"
-build: 276669
+build: 277068
 version: "18.5" 
 permalink: /45/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102121 入力フォームにView Proエリアを表示し，自動アクションのナビゲーションを使用して別レコードに移動した場合，View Proエリアのデータソースオブジェクトが空になりました。
 
 * ACI0102736 `EXECUTE ON CLIENT`のパラメーターにオブジェクト型を渡した場合，メモリーリークが発生しました。
 
