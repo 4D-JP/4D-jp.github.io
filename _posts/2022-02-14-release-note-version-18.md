@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2022-03-12 08:00:00
+date: 2022-03-17 08:00:00
 categories: 修正リスト
 tags: "18.5"
-build: 277068
+build: 277303
 version: "18.5" 
 permalink: /45/:slug/
 ---
@@ -12,6 +12,8 @@ permalink: /45/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0102689 `Char(2)`のようなASCII制御コードをセパレーターに使用して`Split string`で文字列をコレクションに分解した場合，正しい結果が返されませんでした。
+ 
 * ACI0102121 入力フォームにView Proエリアを表示し，自動アクションのナビゲーションを使用して別レコードに移動した場合，View Proエリアのデータソースオブジェクトが空になりました。
 
 * ACI0102736 `EXECUTE ON CLIENT`のパラメーターにオブジェクト型を渡した場合，メモリーリークが発生しました。
