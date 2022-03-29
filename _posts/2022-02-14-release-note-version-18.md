@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v18 修正リスト"
-date: 2022-03-17 08:00:00
+date: 2022-03-29 08:00:00
 categories: 修正リスト
 tags: "18.5"
-build: 277303
+build: 277740
 version: "18.5" 
 permalink: /45/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0101229 クライアント側で`SET DATABASE PARAMETER`を使用してクライアント側WebサーバーのHTTP"ポート番号（`Client HTTPS port ID`）を変更した場合，設定したポート番号ではなく，スタンドアロン版のポート番号が使用されました。
 
 * ACI0102689 `Char(2)`のようなASCII制御コードをセパレーターに使用して`Split string`で文字列をコレクションに分解した場合，正しい結果が返されませんでした。
  
