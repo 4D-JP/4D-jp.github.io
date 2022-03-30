@@ -7,7 +7,7 @@ tags: compiler deployment build
 version: "19.x"
 ---
 
-[`Compile project`](https://developer.4d.com/docs/ja/Project/building.html)コマンドを使用すれば，デザインモードを操作することなく，自動的にカレントプロジェクトをコンパイルすることができます。たとえば，ソースコードをGitリポジトリにコミットするたびにクラウド上で自動的にプロジェクトがコンパイルされるよう，[GitHub Action](https://docs.github.com/en/actions/learn-github-actions)をセットアップすることができます。GitHubは最新のmacOSおよびXcodeも提供しているので，Apple Siliconターゲットもサポートできます。
+[`Compile project`](https://developer.4d.com/docs/ja/Project/building.html)コマンドを使用すれば，デザインモードを操作することなく，自動的にカレントプロジェクトをコンパイルすることができます。たとえば，ソースコードをGitリポジトリにコミットするたびにクラウド上で自動的にプロジェクトがコンパイルされるよう，[GitHub Action](https://docs.github.com/en/actions/learn-github-actions)をセットアップすることができます。GitHubは最新のmacOSおよびXcodeを提供しているので，Apple Siliconターゲットもサポートできます。
 
 ブログ記事: <i class="fa fa-external-link" aria-hidden="true"></i> https://blog.4d.com/how-to-automate-the-compilation/
 
