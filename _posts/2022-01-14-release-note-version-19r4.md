@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19r4 修正リスト"
-date: 2022-03-30 08:00:00
+date: 2022-03-31 08:00:00
 categories: 修正リスト
 tags: 19r4
-build: 277851
+build: 277928
 version: 19r4
 permalink: /14/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102785 `VP All`でレンジを作成し，`VP SET CELL STYLE`で*backColor*を`Null`に設定してデフォルトのスタイル属性をクリアした後，`VP Cells`で作成したレンジの*backColor*を設定しようとした場合，*backColor*以外の属性はクリアされ，*backColor*は変更されませんでした。
 
 * ACI0102810 Windows版のみ。電源に接続されていないノートパソコンからサーバーに接続し，クライアントを起動したままシステムを放置した場合，スリープの解除後にクライアントがサーバーに自動再接続できませんでした。
 
