@@ -1,9 +1,9 @@
 ---
 layout: fix
-title: "4D v19.2 修正リスト"
+title: "4D v19.2 Hotfix 2 修正リスト"
 date: 2022-04-21 08:00:00
 categories: 修正リスト
-tags: 19.2 
+tags: 19.2 hotfix 
 build: 278695
 version: "19.2"
 permalink: /88/:slug/
