@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "クラスターBツリーインデックスはエンティティセレクション"
-date: 2022-04-26 15:00:00
+date: 2022-04-25 15:00:00
 categories: 仕様
 tags: database orda index memory
 version: 19.x
