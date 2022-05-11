@@ -55,8 +55,7 @@ ORDAクラスに [計算属性](https://developer.4d.com/docs/Rx/ja/ORDA/ordaCla
 ## 19 # {#v19}
 
 * <span style="color:red;text-decoration:underline">(v19.2)</span> <i class="fa fa-download" aria-hidden="true"></i> [**Compare Strings**](https://github.com/4D-JP/HDI/releases/download/19/HDI_CompareStrings.zip)<span id="19-0-9"></span><br />
-v19では、[Strings](https://doc.4d.com/4Dv19/4D/19.1/Strings.302-5654328.ja.html) 定数テーマに複数の新たな定数が追加されました。これらの定数は既存の [`Position
-`](https://doc.4d.com/4Dv19/4D/19.1/Position.301-5653307.ja.html) コマンドにおいて、強力なオプションとして使用することができます。また、重複の検出や並べ替えをおこなう目的で文字列を比較するための新しい [`Compare strings`](https://doc.4d.com/4Dv19/4D/19.1/Compare-strings.301-5653292.ja.html) コマンドも追加されています。<br/>
+v19では、[Strings](https://doc.4d.com/4Dv19/4D/19.1/Strings.302-5654328.ja.html) 定数テーマに複数の新たな定数が追加されました。これらの定数は既存の [`Position`](https://doc.4d.com/4Dv19/4D/19.1/Position.301-5653307.ja.html) コマンドにおいて、強力なオプションとして使用することができます。また、重複の検出や並べ替えをおこなう目的で文字列を比較するための新しい [`Compare strings`](https://doc.4d.com/4Dv19/4D/19.1/Compare-strings.301-5653292.ja.html) コマンドも追加されています。<br/>
 ※ 4D v19.2 で日本語環境での動作が修正されました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D変換タグ: 4DEACH**](https://github.com/4D-JP/HDI/releases/download/19/HDI_4DEACHTag.zip)<span id="19-0-8"></span><br />
 [`4DEACH`](https://developer.4d.com/docs/19/ja/Tags/tags.html#4deach-%E3%81%A8-4dendeach) が新たに変換タグとして追加されました。<br />
