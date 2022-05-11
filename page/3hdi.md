@@ -11,6 +11,9 @@ type: page
 
 ## 19r5 # {#v19r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 段落のリンク**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_LinkedParagraphs.zip)<span id="19-5-3"></span><br />
+4D Write Pro の段落を、次の段落とリンクするための新しい `wk keep with next` 属性が追加されました。これを設定すると、改ページやカラムブレークにより、離してはいけない段落同士が分離されてしまうことを防げます。<br />
+参考:[段落ブレーク＞自動ブレークを管理する＞次の段落につなげる](https://doc.4d.com/4Dv19R5/4D/19-R5/Using-a-4D-Write-Pro-area.200-5827439.ja.html#5864778)
 * <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 繰り返し表示されるテーブルヘッダー行**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_RepeatedHeaders.zip)<span id="19-5-2"></span><br />
 4D v19R5 より、4D Write Pro のテーブルは、最大5行までのヘッダー行を持てるようになりました。<br />
 参考:[テーブルの管理＞繰り返し表示されるヘッダー行](https://doc.4d.com/4Dv19R5/4D/19-R5/Using-a-4D-Write-Pro-area.200-5827439.ja.html#5859192)
