@@ -7,9 +7,7 @@ tags: orda development server
 version: 19r5
 ---
 
-19r2では[`4D.Blob`オブジェクト](https://blog.4d.com/create-a-blob-attribute-in-an-object/)が使用できるようになり，19r3ではORDAでBLOBフィールドが使用できるようになりました。この機会にクラシックコードをORDAで書き換えることを検討しているかもしれません。
-
-BLOBフィールドをORDAで扱うのであれば，クライアント側キャッシュのサイズに気を配ると良いでしょう。
+19r2では[`4D.Blob`オブジェクト](https://blog.4d.com/create-a-blob-attribute-in-an-object/)が使用できるようになり，19r3ではORDAでBLOBフィールドが使用できるようになりました。この機会にクラシックコードをORDAで書き換えることを検討しているかもしれません。BLOBフィールドをORDAで扱うのであれば，クライアント側キャッシュのサイズに気を配ると良いでしょう。
 
 #### クライアント側ORDAキャッシュとは
 
