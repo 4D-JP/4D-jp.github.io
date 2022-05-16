@@ -2,8 +2,8 @@
 layout: post
 title: "クライアント側キャッシュ"
 date: 2022-05-16 15:00:00
-categories: 注意点
-tags: orda
+categories: Tips
+tags: orda development server
 version: 19r5
 ---
 
