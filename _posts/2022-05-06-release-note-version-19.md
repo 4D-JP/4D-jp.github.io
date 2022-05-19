@@ -3,7 +3,7 @@ layout: fix
 title: "4D v19.3 修正リスト"
 date: 2022-05-17 08:00:00
 categories: 修正リスト
-tags: 19.3
+tags: "19.3"
 build: 279466
 version: "19.3"
 permalink: /126/:slug/
