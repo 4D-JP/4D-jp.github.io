@@ -11,6 +11,12 @@ type: page
 
 ## 19r5 # {#v19r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DVP_DataContext.zip)<span id="19-5-5"></span><br />
+4D View Pro ドキュメントのシートにデータコンテキストを関連付けることができるようになりました。オブジェクトまたはコレクションをバインドすることで、それらの内容をシートのセルに自動で表示することができます。<br />
+参考: [`VP SET DATA CONTEXT`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-set-data-context)、
+[`VP Get data context`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-get-data-context)、
+[`VP SET BINDING PATH`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-set-binding-path)、
+[`VP Get binding path`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-get-binding-path)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_ORDA.zip)<span id="19-5-4"></span><br />
 4D v19R5 より、4D Write Pro ドキュメントにデータコンテキストを関連付けることができるようになりました。これにより、テンプレートドキュメント内で、エンティティやエンティティセレクションといった ORDAデータのほか、任意のオブジェクトデータを利用することができます。<br />
 参考: [`WP SET DATA CONTEXT`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-SET-DATA-CONTEXT.301-5866708.ja.html)、[`WP Get data context`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-Get-data-context.301-5866737.ja.html)
