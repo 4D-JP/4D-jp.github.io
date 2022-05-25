@@ -11,6 +11,9 @@ type: page
 
 ## 19r5 # {#v19r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**親フォームとサブフォーム間の通信**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4D_SubformCommunication.zip)<span id="19-5-6"></span><br />
+新しく追加された [`OBJECT Get subform container value`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-Get-subform-container-value.301-5862192.ja.html) および [`OBJECT SET SUBFORM CONTAINER VALUE`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-SET-SUBFORM-CONTAINER-VALUE.301-5862140.ja.html) コマンドを使い、親フォームとサブフォーム間でスカラー型の変数あるいは式を同期させることができます。<br />
+参考: [サブフォーム](https://doc4d.github.io/docs/ja/FormObjects/subformOverview.html#%E8%A6%AA%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%A8%E3%82%B5%E3%83%96%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%AE%E5%90%8C%E6%9C%9F-%E5%8D%98%E4%B8%80%E5%80%A4)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DVP_DataContext.zip)<span id="19-5-5"></span><br />
 4D View Pro ドキュメントのシートにデータコンテキストを関連付けることができるようになりました。オブジェクトまたはコレクションをバインドすることで、それらの内容をシートのセルに自動で表示することができます。<br />
 参考: [`VP SET DATA CONTEXT`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-set-data-context)、
