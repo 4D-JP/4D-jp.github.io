@@ -11,6 +11,17 @@ type: page
 
 ## 19r5 # {#v19r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDAキャッシュの管理とRESTリクエストの最適化**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_ORDA_ContextAndRequestsOptimization.zip)<span id="19-5-7"></span><br />
+パフォーマンスのさらなる向上のため、ORDAキャッシュを管理する機能とRESTリクエストを最適化する機能が追加されました。<br />
+ [`dataClass.setRemoteCacheSettings()`](http://developer.4d.com/docs/en/API/DataClassClass.html#setremotecachesettings)、
+ [`dataClass.getRemoteCache()`](http://developer.4d.com/docs/en/API/DataClassClass.html#getremotecache)、
+ [`dataClass.clearRemoteCache()`](http://developer.4d.com/docs/en/API/DataClassClass.html#clearremotecache)、
+ [`entitySelection.getRemoteContextAttributes()`](http://developer.4d.com/docs/en/API/EntitySelectionClass.html#getremotecontextattributes)、
+ [`entity.getRemoteContextAttributes()`](http://developer.4d.com/docs/en/API/EntityClass.html#getremotecontextattributes)、
+ [`dataStore.getRemoteContextInfo()`](http://developer.4d.com/docs/en/API/DataStoreClass.html#getremotecontextinfo)、
+ [`dataStore.getAllRemoteContexts()`](http://developer.4d.com/docs/en/API/DataStoreClass.html#getallremotecontexts)、
+ [`dataStore.clearAllRemoteContexts()`](http://developer.4d.com/docs/en/API/DataStoreClass.html#clearallremotecontexts)、
+ [`dataStore.setRemoteContextInfo()`](http://developer.4d.com/docs/en/API/DataStoreClass.html#setremotecontextinfo)
 * <i class="fa fa-download" aria-hidden="true"></i> [**親フォームとサブフォーム間の通信**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4D_SubformCommunication.zip)<span id="19-5-6"></span><br />
 新しく追加された [`OBJECT Get subform container value`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-Get-subform-container-value.301-5862192.ja.html) および [`OBJECT SET SUBFORM CONTAINER VALUE`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-SET-SUBFORM-CONTAINER-VALUE.301-5862140.ja.html) コマンドを使い、親フォームとサブフォーム間でスカラー型の変数あるいは式を同期させることができます。<br />
 参考: [サブフォーム](https://doc4d.github.io/docs/ja/FormObjects/subformOverview.html#%E8%A6%AA%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%A8%E3%82%B5%E3%83%96%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%AE%E5%90%8C%E6%9C%9F-%E5%8D%98%E4%B8%80%E5%80%A4)
