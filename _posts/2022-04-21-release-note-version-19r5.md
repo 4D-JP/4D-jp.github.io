@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19r5 修正リスト"
-date: 2022-05-31 08:00:00
+date: 2022-06-01 08:00:00
 categories: 修正リスト
 tags: 19r5
-build: 279737
+build: 279771
 version: 19r5
 permalink: /111/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102814 Mac版のみ。ビルドプロジェクトファイルの`CommonCopyright`を設定して`BUILD APPLICATION`を実行した場合，アプリケーションがクラッシュしました。
 
 * ACI0102938 Windows版プロジェクトモードのみ。グループボックスの描画にDirectWriteが使用されませんでした。スタティックテキストとレンダリングが違います。
 
