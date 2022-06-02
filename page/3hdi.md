@@ -9,7 +9,7 @@ type: page
 * content
 {:toc}
 
-* <span style="color:red;text-decoration:underline">(v19.3)</span> <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 文字列の検索と置換**](https://github.com/4D-JP/HDI/releases/download/19/HDI_4DWP_FindAndReplace.zip)<span id="19-0-10"></span><br />
+* <span style="color:red;text-decoration:underline">(v19.3)</span> <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 文字列の検索と置換**](https://github.com/4D-JP/HDI/releases/download/19/HDI_4DWP_FindAndReplace.zip)<span id="19-0-10"></span><br />
 v19では、新しい 4D Write Pro コマンド [WP Find all](https://doc.4d.com/4Dv19/4D/19/WP-Find-all.301-5391091.ja.html) が追加され、文字列の検索および置換が容易にできるようになりました。<br/>
 ※ 4D v19.3 で日本語環境での動作が修正されました。
 
