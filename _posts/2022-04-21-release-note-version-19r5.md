@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19r5 修正リスト"
-date: 2022-06-01 08:00:00
+date: 2022-06-02 08:00:00
 categories: 修正リスト
 tags: 19r5
-build: 279771
+build: 279818
 version: 19r5
 permalink: /111/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102994 環境設定ダイアログで「Project ソースファイルにトークンを含める」チェックボックスを有効にしても，設定が保存されませんでした。
 
 * ACI0102814 Mac版のみ。ビルドプロジェクトファイルの`CommonCopyright`を設定して`BUILD APPLICATION`を実行した場合，アプリケーションがクラッシュしました。
 
