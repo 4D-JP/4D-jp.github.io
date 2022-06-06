@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D v19.3 修正リスト"
-date: 2022-06-02 08:00:00
+date: 2022-06-03 08:00:00
 categories: 修正リスト
 tags: "19.3"
-build: 279817
+build: 279850
 version: "19.3"
 permalink: /153/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102959 デバッガが接続されていないサーバーで直接RESTリクエストを処理した場合，予備プロセスおよび10分後に消滅するRESTプロセスが作成されました。
+
+**注記**: [`Open datastore`](https://developer.4d.com/docs/ja/API/DataStoreClass.html)を使用せずにREST APIをダイレクトに呼び出した場合，セッション識別子（クッキー）は送信されません。修正により，そのような場合は新規RESTプロセスを作成するのではなく，予備プロセスが利用されるようになりました。
+
+* ACI0102943 Write Proドキュメントで表の最終行を削除した場合，最終行と一緒に直後のセクションブレークも削除されました。
 
 * ACI0102968	プラグインSDKのエントリーポイント`EX_GET_FIELD`でBLOBフィールドの値を取得できませんでした。
 
