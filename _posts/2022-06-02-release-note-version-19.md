@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D v19.3 修正リスト"
-date: 2022-06-03 08:00:00
+date: 2022-06-04 08:00:00
 categories: 修正リスト
 tags: "19.3"
-build: 279850
+build: 279871
 version: "19.3"
 permalink: /153/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0102972 プロジェクトモードのみ。バイナリモードからデータベースを変換した場合，*Designer*アクセスグループからユーザーが外されました。*Administrator*グループの設定だけが正しくエクスポートされます。
+
+* ACI0102923 SQLで`8001`バイト以上のデータをSybaseの画像フィールドに送信した場合，`255`バイトでデータが途切れました。ODBC Proプラグインでは問題ありません。
+
+**注記**: 修正により，[`SQL SET OPTION:`](https://doc.4d.com/4Dv19/4D/19.1/SQL-SET-OPTION.301-5653382.ja.html)に新しいオプション*SQL data chunk size*が追加されました。デフォルト値は`8000`です。Sybase ODBC driverは，断片化された*PutData*命令に対応していないため，バイナリデータを一気に送信する必要があります。Oracle・MySQL・Microsoft SQL Serverなどのデータベース管理システムでは，特に設定を変更する必要はないはずです。
 
 * ACI0102959 デバッガが接続されていないサーバーで直接RESTリクエストを処理した場合，予備プロセスおよび10分後に消滅するRESTプロセスが作成されました。
 
