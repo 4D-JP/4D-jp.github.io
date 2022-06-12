@@ -1,11 +1,11 @@
 ---
 layout: fix
-title: "4D v18 修正リスト"
-date: 2022-05-21 08:00:00
+title: "4D v18.6 修正リスト"
+date: 2022-06-10 08:00:00
 categories: 修正リスト
-tags: "18.5"
-build: 279601
-version: "18.5" 
+tags: "18.6"
+build: 279978
+version: "18.6" 
 permalink: /45/:slug/
 ---
 
