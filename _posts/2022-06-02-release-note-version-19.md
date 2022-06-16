@@ -1,16 +1,26 @@
 ---
 layout: fix
 title: "4D v19.3 修正リスト"
-date: 2022-06-10 08:00:00
+date: 2022-06-15 08:00:00
 categories: 修正リスト
 tags: "19.3"
-build: 280041
+build: 280186
 version: "19.3"
 permalink: /153/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103011 ユーザー名に空の文字列を指定した場合，SMTPのOAuth 2.0トークン認証は失敗しますが， トランスポーターの`checkConnection()`が`True`を返しました。
+
+* ACI0102858 Mac版プロジェクトモードのみ。リストフォームの余剰行にチェックボックスやラジオボタンが表示されました。レコードのない行にフィールドが表示されるべきではありません。
+
+* ACI0101808 Windows版のみ。Direct2Dレンダリングが無効にされている場合，Write Proエリアを使用することができませんでした。
+
+```
+SET DATABASE PARAMETER(Direct2D status; Direct2D disabled)
+```
 
 * ACI0102983 `TRACE`またはプレークポイントでデバッガが起動しないことがありました。
 
