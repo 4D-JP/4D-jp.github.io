@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19r4 Hotfix 2 修正リスト"
-date: 2022-06-20 08:00:00
+date: 2022-06-22 08:00:00
 categories: 修正リスト
 tags: 19r4
-build: 279334
+build: 280170
 version: 19r4
 permalink: /171/:slug/
 ---
