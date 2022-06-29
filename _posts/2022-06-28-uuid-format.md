@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Windows版のUUIDフォーマット"
-date: 2022-06-13 15:00:00
+date: 2022-06-18 15:00:00
 categories: 仕様
 tags: programming windows
 version: 19
