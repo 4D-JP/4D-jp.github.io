@@ -11,4 +11,4 @@ version: 19
 
 > 注: オブジェクトに他のプラットフォームのフォントが設定されている場合，その高さはカレントのプラットフォーム用に選択されたフォントに適するよう自動で調整されます。 オブジェクトを描画する際この点を考慮に入れるべきです。
 
-https://doc.4d.com/4Dv17/4D/17.5/Overview.300-5254196.ja.html
+<i class="fa fa-external-link" aria-hidden="true"></i> [スタイルシート概要](https://doc.4d.com/4Dv17/4D/17.5/Overview.300-5254196.ja.html)
