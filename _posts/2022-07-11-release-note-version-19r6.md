@@ -18,7 +18,7 @@ permalink: /192/:slug/
 
 * ACI0102324 `OBJECT SET STYLE SHEET`でパスワードフォントを解除することができませんでした。
 
-**注記**: [ドキュメント](https://doc.4d.com/4Dv19/4D/19.1/OBJECT-SET-STYLE-SHEET.301-5653487.ja.html)に明記されているように，`OBJECT SET FONT`や`OBJECT SET FONT SIZE`を使用すればオブジェクトのスタイルシートは自動的に解除されるように修正されました。また，空の文字列を渡した場合もオブジェクトのスタイルシートは自動的に解除されるようになりました。
+**注記**: [ドキュメント](https://doc.4d.com/4Dv19/4D/19.1/OBJECT-SET-STYLE-SHEET.301-5653487.ja.html)に明記されているように，`OBJECT SET FONT`や`OBJECT SET FONT SIZE`を使用すればオブジェクトのスタイルシートは自動的に解除されるように修正されました。また，空の文字列を渡した場合も自動的に解除されるようになりました。
 
 * ACI0103012 Mac版のみ。macOS 12 Montereyでは，Retinaディスプレイにタブコントロールが小さく表示されました，また，アイコンがぼやけて表示されました。
  
