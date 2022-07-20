@@ -11,7 +11,7 @@ type: page
 
 ## 19r6 # {#v19r6}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**フォーミュラをコマンドに使う**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_formula_in_commands.zip)<span id="19-6-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**フォーミュラを関数やコマンド内で使う**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_formula_in_commands.zip)<span id="19-6-2"></span><br />
 コードを呼び出す Collectionクラス関数は、formula 引数として Formulaオブジェクトをサポートするようになりました。<br />
 また、
 [`EXECUTE METHOD IN SUBFORM`](https://doc.4d.com/4Dv19R6/4D/19-R6/EXECUTE-METHOD-IN-SUBFORM.301-5910907.ja.html)、
