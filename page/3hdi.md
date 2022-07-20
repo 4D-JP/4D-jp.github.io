@@ -11,6 +11,12 @@ type: page
 
 ## 19r6 # {#v19r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**フォーミュラをコマンドに使う**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_formula_in_commands.zip)<span id="19-6-2"></span><br />
+コードを呼び出す Collectionクラス関数は、formula 引数として Formulaオブジェクトをサポートするようになりました。<br />
+また、
+[`EXECUTE METHOD IN SUBFORM`](https://doc.4d.com/4Dv19R6/4D/19-R6/EXECUTE-METHOD-IN-SUBFORM.301-5910907.ja.html)、
+[`CALL FORM`](https://doc.4d.com/4Dv19R6/4D/19-R6/CALL-FORM.301-5910890.ja.html)、
+[`CALL WORKER`](https://doc.4d.com/4Dv19R6/4D/19-R6/CALL-WORKER.301-5911386.ja.html) コマンドも Formulaオブジェクトをサポートするようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**HTTPRequest クラス**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_HTTP_Classes.zip)<span id="19-6-1"></span><br />
 新しい [`HTTPRequest`](http://developer.4d.com/docs/ja/API/HTTPRequestClass.html)クラスを使って、HTTPRequest オブジェクト を扱うことができます。このオブジェクトは、HTTPサーバーへのリクエストの設定と送信、および HTTPサーバーのレスポンスを処理するのに使用します。
 
