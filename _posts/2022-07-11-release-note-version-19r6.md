@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19r6 修正リスト"
-date: 2022-07-19 08:00:00
+date: 2022-07-21 08:00:00
 categories: 修正リスト
 tags: 19r6
-build: 281204
+build: 281268
 version: 19r6
 permalink: /192/:slug/
 ---
@@ -12,6 +12,12 @@ permalink: /192/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103096 `SMTP Transporter`で送信した*Quote-Printable*エンコーディングのメール本文は`76`文字で改行していないため，一部のセキュリティソフトでスパンメール扱いになりました。
+
+**注記**: [RFC 5522](https://datatracker.ietf.org/doc/html/rfc5322#section-2.1.1)ではメールの`1`行は`998`文字を超えてはならず（MUST），改行コードを含めて`78`文字以内に改行することが勧められています（SHOULD）。しかしながら[RFC 1341](https://www.w3.org/Protocols/rfc1341/5_Content-Transfer-Encoding.html)では`76`文字を超えてはならない，となっているので，修正により，*Quote-Printable*エンコーディングについては`76`文字で改行するようになりました。
+
+* ACI0103084 プロジェクトモードのみ。サブフォームでは入力不可のブール型フィールドが入力可のチェックボックスとして表示されえました。
+ 
 * ACI0103068 Mac版のみ。タブコントロールをクリックした場合，ボタンをリリースするまで，フォーカスされたテキスト入力エリアのフォーカスが失われました。
 
 * ACI0103091 特定のメールサーバーで`IMAP Transporter`の`move()`関数が「IMAP MOVE command not supported by serve」というエラーを返しました。OutlookやThunderbirdでは問題がないので，サーバーの問題ではないはずです。
