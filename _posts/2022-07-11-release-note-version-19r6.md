@@ -12,7 +12,7 @@ permalink: /192/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
-* ACI0103096 `SMTP Transporter`で送信した*Quote-Printable*エンコーディングのメール本文は`76`文字で改行していないため，一部のセキュリティソフトでスパンメール扱いになりました。
+* ACI0103096 `SMTP Transporter`で送信した*Quoted-Printable*エンコーディングのメール本文は`76`文字で改行していないため，一部のセキュリティソフトでスパンメール扱いになりました。
 
 **注記**: [RFC 5522](https://datatracker.ietf.org/doc/html/rfc5322#section-2.1.1)ではメールの`1`行は`998`文字を超えてはならず（MUST），改行コードを含めて`78`文字以内に改行することが勧められています（SHOULD）。しかしながら[RFC 1341](https://www.w3.org/Protocols/rfc1341/5_Content-Transfer-Encoding.html)では`76`文字を超えてはならない，となっているので，修正により，*Quote-Printable*エンコーディングについては`76`文字で改行するようになりました。
 
