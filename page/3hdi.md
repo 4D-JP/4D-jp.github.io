@@ -11,6 +11,10 @@ type: page
 
 ## 19r6 # {#v19r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: プロパティの取得・設定**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_LISTBOXES_Properties_v3.zip)<span id="19-6-3"></span><br />
+[`LISTBOX SET PROPERTY`](https://doc.4d.com/4Dv19R6/4D/19-R6/LISTBOX-SET-PROPERTY.301-5911042.ja.html)、および
+[`LISTBOX Get property`](https://doc.4d.com/4Dv19R6/4D/19-R6/LISTBOX-Get-property.301-5911088.ja.html) コマンドを使って、リストボックスのプロパティを設定する方法を紹介します。<br />
+4D v19 R6 では "横方向パディング" および "縦方向パディング" プロパティが新たに追加され、内マージンの設定が可能になりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**フォーミュラを関数やコマンド内で使う**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_formula_in_commands.zip)<span id="19-6-2"></span><br />
 コードを呼び出す Collectionクラス関数は、formula 引数として Formulaオブジェクトをサポートするようになりました。<br />
 また、
