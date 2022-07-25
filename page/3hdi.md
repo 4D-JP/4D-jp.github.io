@@ -11,6 +11,9 @@ type: page
 
 ## 19r6 # {#v19r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブルとデータソースの関連付け**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_ORDA_Tables.zip)<span id="19-6-4"></span><br />
+4D Write Pro ドキュメントのテーブルに、コレクションやエンティティセレクションをデータソースとして関連づけられるようになりました。<br />
+参照: [データソースに基づくテーブル ](https://livedoc.4d.com/4Dv19R6/4D/19-R6/Handling-tables.200-5908411.ja.html#5908491)
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: プロパティの取得・設定**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_LISTBOXES_Properties_v3.zip)<span id="19-6-3"></span><br />
 [`LISTBOX SET PROPERTY`](https://doc.4d.com/4Dv19R6/4D/19-R6/LISTBOX-SET-PROPERTY.301-5911042.ja.html)、および
 [`LISTBOX Get property`](https://doc.4d.com/4Dv19R6/4D/19-R6/LISTBOX-Get-property.301-5911088.ja.html) コマンドを使って、リストボックスのプロパティを設定する方法を紹介します。<br />
