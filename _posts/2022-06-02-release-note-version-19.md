@@ -26,8 +26,6 @@ permalink: /153/:slug/
 
 * ACI0102993 空のフォルダーを圧縮した.zipファイルを`ZIP Read archive`で開いた場合，`zip.root.folders`に空のルートフォルダーが返されませんでした。
 
-* ACI0102993 空のフォルダーを圧縮した.zipファイルを`ZIP Read archive`で開いた場合，`zip.root.folders`に空のルートフォルダーが返されませんでした。
-
 * ACI0103084 プロジェクトモードのみ。サブフォームでは入力不可のブール型フィールドが入力可のチェックボックスとして表示されえました。
 
 * ACI0103091 特定のメールサーバーで`IMAP Transporter`の`move()`関数が「IMAP MOVE command not supported by serve」というエラーを返しました。OutlookやThunderbirdでは問題がないので，サーバーの問題ではないはずです。
