@@ -11,6 +11,8 @@ type: page
 
 ## 19r6 # {#v19r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: テーブルとデータコンテキスト**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DVP_CreateTables.zip)<span id="19-6-5"></span><br />
+新しく追加された [`VP CREATE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-create-table) と [`VP REMOVE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-remove-table) コマンドを使って、テーブルの作成と削除ができるようになりました。このテーブルにデータコンテキストを関連付けることで、コレクションやオブジェクトに格納されたデータを簡単に表示できます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブルとデータソースの関連付け**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_ORDA_Tables.zip)<span id="19-6-4"></span><br />
 4D Write Pro ドキュメントのテーブルに、コレクションやエンティティセレクションをデータソースとして関連づけられるようになりました。<br />
 参照: [データソースに基づくテーブル](https://livedoc.4d.com/4Dv19R6/4D/19-R6/Handling-tables.200-5908411.ja.html#5908491)
