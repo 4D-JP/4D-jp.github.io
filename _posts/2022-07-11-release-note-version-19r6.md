@@ -22,7 +22,7 @@ permalink: /192/:slug/
  
 * ACI0103068 Mac版のみ。タブコントロールをクリックした場合，ボタンをリリースするまで，フォーカスされたテキスト入力エリアのフォーカスが失われました。
 
-* ACI0103091 特定のメールサーバーで`IMAP Transporter`の`move()`関数が「IMAP MOVE command not supported by serve」というエラーを返しました。OutlookやThunderbirdでは問題がないので，サーバーの問題ではないはずです。
+* ACI0103091 特定のメールサーバーで`IMAP Transporter`の`move()`関数が「IMAP MOVE command not supported by server」というエラーを返しました。OutlookやThunderbirdでは問題がないので，サーバーの問題ではないはずです。
 
 * ACI0103079 Windows版のみ。スクリーンの解像度が`125%`または`150%`に設定されている場合，ピクチャオブジェクトの下に`1px`の白い隙間が発生しました。
 
