@@ -286,7 +286,7 @@ permalink: /192/:slug/
 
 * ACI0102931 MIMEのバウンダリー文字列に`"boundary Wed, 27 Apr 2022 08:46:59 +0200 boundary"`のような文字列が使用されていた場合，`MAIL Convert from MIME`で添付ファイルが抽出できませんでした。
 
-* ACI0102929 *SVG_New_embedded_image*でSVGにSVGを挿入した場合，エクスポートしたピクチャがブラウザに表示されませんでした。`xlink:href`が`data:image/svg+xml;base64,`から始まっていないためです。
+* ACI0102929 `SVG_New_embedded_image`でSVGにSVGを挿入した場合，エクスポートしたピクチャがブラウザに表示されませんでした。`xlink:href`が`data:image/svg+xml;base64,`から始まっていないためです。
 
 * ACI0102924 .DOCX形式でエクスポートしたWrite Proドキュメントのフッターマージンが正しくないことがありました。
 
