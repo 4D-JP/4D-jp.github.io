@@ -108,8 +108,6 @@ permalink: /192/:slug/
 
 * ACI0103062 4D Go MobileでiOSアプリをデバイスにインストールすることができませんでした。エラーは表示されませんが，USB接続されたデバイスを確認すると，アプリがインストールされていません。
 
-ACI0103058	actions rejected by the server because of a field does not display the cause when trying to resend the request to the server		4D Staff	According to origin
-
 * ACI0100583 HTTPサーバーの停止と開始を繰り返した場合，TLSの証明書チェーンに同一の証明書が何度も追加されました。
 
 * ACI0102834 Apple Siliconコンパイルモードのみ。「サーバー側で実行」メソッドで`Count parameters`を使用した場合，正しい数が返されませんでした。
