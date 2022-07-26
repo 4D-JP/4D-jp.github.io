@@ -70,8 +70,6 @@ permalink: /192/:slug/
 
 * ACI0102986 4D Go Mobileのアクションパラメーター名を表示するリスト画面がダークモードに対応していませんでした。
 
-* ACI0102967	4D remote disconnected if another 4D remote in the same machine is connected		4D Staff	According to origin
-
 * ACI0102912 4D Go Mobileの更新アクションでピクチャ型フィールドを更新しなかった場合，データがサーバーに送信されませんでした。
 
 * ACI0102393 Windows版のみ。サーバー管理画面のプロセス検索バーの虫眼鏡アイコンがテキストの上に表示されました。
