@@ -136,8 +136,6 @@ permalink: /192/:slug/
 
 * ACI0103004 *On Load*イベントで`FORM SET INPUT`を実行した場合，リストボックスをダブルクリックしたときに使用される入力フォームが変更されないことがありました。
 
-ACI0102999	Web Server object override the HTTP CERTIFICATES FOLDER settings		4D Staff	According to origin
-
 * ACI0102997 クライアント/サーバー版のみ。`Selection to JSON`の速度に問題がありました。また以前のバージョンと比較してCPUを多く消費しました。外部ストレージにSSDではなくHDDを使用している場合に違いが顕著です。
 
 * ACI0102996 `SMTP New Transporter`で送信したメールが途中で途切れることがありました。
