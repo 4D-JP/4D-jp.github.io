@@ -78,6 +78,6 @@ SET DATABASE PARAMETER(Direct2D status; Direct2D disabled)
 
 * ACI0102929 *SVG_New_embedded_image*でSVGにSVGを挿入した場合，エクスポートしたピクチャがブラウザに表示されませんでした。`xlink:href`が`data:image/svg+xml;base64,`から始まっていないためです。
 
-* ACI0102908 コンパイルモードのみ。*collection.map()*や*collection.find()*のようなファンクションで実行したメソッドのポインター型で宣言されているパラメーターに`Null`を渡した場合，シンタックスエラー`#54`が返されました。
+* ACI0102908 コンパイルモードのみ。`collection.map()`や`collection.find()`のようなファンクションで実行したメソッドのポインター型で宣言されているパラメーターに`Null`を渡した場合，シンタックスエラー`#54`が返されました。
 
 * ACI0102489 Mac版のみ。タブコントロールのアイコンが正しく表示されませんでした。右側のタブほど左に位置がずれて表示されます。
