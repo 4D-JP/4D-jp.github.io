@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D v19r6 修正リスト"
-date: 2022-07-22 08:00:00
+date: 2022-07-26 08:00:00
 categories: 修正リスト
 tags: 19r6
-build: 281297
+build: 281374
 version: 19r6
 permalink: /192/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103103 4D Go Mobileのアクションに特定のフィールドをリンクしなかった場合，テキスト型の入力コントロール以外を設定することができませんでした。
+
+* ACI0103070 Write Proドキュメントのセクション`2`がセクション`1`に統合されることがありました。
+
+* ACI0103057 4D Go Mobileの未完了アクション画面からにパーセンテージまたは整数またはバーコード型のフィールドを更新することができませんでした。
 
 * ACI0102999 `4D.WebServer`オブジェクトの *certificateFolder* プロパティを使用して証明書フォルダーの場所を設定した場合，`HTTP CERTIFICATES FOLDER`の設定が上書きされました。
 
