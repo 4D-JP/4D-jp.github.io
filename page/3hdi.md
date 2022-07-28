@@ -69,8 +69,8 @@ type: page
 新しい [`SystemWorker`](http://developer.4d.com/docs/ja/API/SystemWorkerClass.html) クラスを使って、外部プロセスを非同期に実行することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**View Pro: ワークブックオプションの管理**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DVP_workbook_options.zip)<span id="19-4-3"></span><br />
 新しい [`VP SET WORKBOOK OPTIONS`](https://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-set-workbook-options) コマンドを使って、様々なワークブックオプションを管理することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: テーブル行内部の自動改ページ**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DWP_PageBreaksInTableRows.zip)<span id="19-4-2"></span><br />
-4D Write Pro に新しい `wk page break inside row` 属性が追加され、テーブルの行内部の自動改ページができるようになりました。<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 表組みの行内部の自動改ページ**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DWP_PageBreaksInTableRows.zip)<span id="19-4-2"></span><br />
+4D Write Pro に新しい `wk page break inside row` 属性が追加され、表組みの行内部の自動改ページができるようになりました。<br />
 参考: [表のページ分け](https://doc.4d.com/4Dv19R4/4D/19-R4/Using-a-4D-Write-Pro-area.200-5760411.ja.html#5798838)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: エイリアス属性**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_ORDA_Aliases.zip)<span id="19-4-1"></span><br />
 ORDAクラスに [エイリアス属性](https://doc4d.github.io/docs/ja/ORDA/ordaClasses.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E5%B1%9E%E6%80%A7-1) を定義できるようになりました。
@@ -258,14 +258,14 @@ POP3 transporter オブジェクトを使って、POP3 プロトコルによる�
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: イベントの扱い方**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DVP_Events.zip)<span id="18-0-7"></span><br />
 4D v18 で新しく追加された [`FORM Event`](https://doc.4d.com/4Dv18/4D/18/FORM-Event.301-4522191.ja.html) コマンド使って、[4D View Pro エリア内で発生するイベント](https://doc.4d.com/4Dv18/4D/18/Form-event-code.301-4505020.ja.html#4614553) の情報を取得する方法を紹介します。<br />
 <span style="color:red;text-decoration:underline">※ 4D v17まで使用されていた`Form event` コマンドは [`Form event code`](https://doc.4d.com/4Dv18/4D/18/Form-event-code.301-4505020.ja.html) に名称変更されています。`Form event code` と `FORM Event.code` が返す値は同じです。</span>
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブルの行やカラムの挿入と削除、選択範囲の取得**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DWP_ManageTable.zip)<span id="18-0-6"></span><br />
-4D Write Pro テーブルの行やカラムを挿入および削除するコマンドが新しく追加されました:<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みの行やカラムの挿入と削除、選択範囲の取得**](https://github.com/4D-JP/HDI/releases/download/18/HDI_4DWP_ManageTable.zip)<span id="18-0-6"></span><br />
+4D Write Pro の表組みの行やカラムを挿入および削除するコマンドが新しく追加されました:<br />
 [`WP Table insert rows`](https://doc.4d.com/4Dv18/4D/18/WP-Table-insert-rows.301-4675336.ja.html)
 [`WP Table insert columns`](https://doc.4d.com/4Dv18/4D/18/WP-Table-insert-columns.301-4675806.ja.html)
 [`WP TABLE DELETE ROWS`](https://doc.4d.com/4Dv18/4D/18/WP-TABLE-DELETE-ROWS.301-4675983.ja.html)
 [`WP TABLE DELETE COLUMNS`](https://doc.4d.com/4Dv18/4D/18/WP-TABLE-DELETE-COLUMNS.301-4675989.ja.html)<br />
 これらの動作をおこなうための標準アクションも追加されており、コンテキストメニューからも利用できます。<br />
-また、次のコマンドが拡張され、テーブル内の選択範囲の情報を取得できるようになりました:<br />
+また、次のコマンドが拡張され、表内の選択範囲の情報を取得できるようになりました:<br />
 [`WP Table get rows`](https://doc.4d.com/4Dv18/4D/18/WP-Table-get-rows.301-4523035.ja.html)
 [`WP Table get columns`](https://doc.4d.com/4Dv18/4D/18/WP-Table-get-columns.301-4523034.ja.html)
 [`WP Table get cells`](https://doc.4d.com/4Dv18/4D/18/WP-Table-get-cells.301-4523033.ja.html)
@@ -401,8 +401,8 @@ INSERT系およびSET系のコマンドが改良され、対象としてレン�
 アンカー画像も[ピクチャー式](https://doc.4d.com/Handling-pictures.200-3920761.ja.html#3841026)（変数・フィールド・メソッドなど）によって定義することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: フィールドデータやメソッドを使う**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DVP_DB_Method.zip) (v17r2)<span id="17-2-2"></span><br />
 セルへの簡単な記述により、[フィールドへの参照](https://doc.4d.com/Field-references.300-3936010.ja.html)や[プロジェクトメソッドへの参照](https://doc.4d.com/Project-method-references.300-3935962.ja.html)を使用することができます。
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブルのページネーション**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_TablePagination.zip) (v17r2)<span id="17-2-1"></span><br />
-テーブル (表) が[自動ページネーション](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3920766.ja.html#3892922)に対応し、テーブルの表示がページをまたぐ場合には行と行のあいだで分割されるようになりました。
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みのページネーション**](https://github.com/4D-JP/HDI/releases/download/17r2/HDI_4DWP_TablePagination.zip) (v17r2)<span id="17-2-1"></span><br />
+表組みが[自動ページネーション](https://doc.4d.com/Using-a-4D-Write-Pro-area.200-3920766.ja.html#3892922)に対応し、表組みの表示がページをまたぐ場合には行と行のあいだで分割されるようになりました。
 
 ## 17 # {#v17}
 
@@ -561,8 +561,8 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro プレビュー**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DViewProNewFormObject.zip) (v16r4)<span id="16-4-9"></span><br />
 4D View Pro ドキュメントの基本操作に必要なコマンドが追加されました。<br />
 [`VP NEW DOCUMENT`](https://doc.4d.com/VP-NEW-DOCUMENT.301-3778565.ja.html)[`VP EXPORT DOCUMENT`](https://doc.4d.com/VP-EXPORT-DOCUMENT.301-3778567.ja.html)[`VP Export to object`](https://doc.4d.com/VP-Export-to-object.301-3778568.ja.html)[`VP IMPORT DOCUMENT`](https://doc.4d.com/VP-IMPORT-DOCUMENT.301-3778566.ja.html)[`VP IMPORT FROM OBJECT`](https://doc.4d.com/VP-IMPORT-FROM-OBJECT.301-3778569.ja.html)
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テーブル (表)**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Tables.zip) (v16r4)<span id="16-4-8"></span><br />
-4D Write Pro にテーブル (表) を挿入し、表示を整える方法を紹介します。<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組み**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_4DWritePro_Tables.zip) (v16r4)<span id="16-4-8"></span><br />
+4D Write Pro に表組みを挿入し、表示を整える方法を紹介します。<br />
 [`WP Insert table`](https://doc.4d.com/WP-Insert-table.301-3726290.ja.html)[`WP Table append row`](https://doc.4d.com/WP-Table-append-row.301-3726291.ja.html)[`WP Table get columns`](https://doc.4d.com/WP-Table-get-columns.301-3726293.ja.html)[`WP Table get rows`](https://doc.4d.com/WP-Table-get-rows.301-3726292.ja.html)[`WP Table get cells`](https://doc.4d.com/WP-Table-get-cells.301-3726294.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**JSONオブジェクトの評価**](https://github.com/4D-JP/HDI/releases/download/16r4/HDI_JSONFileValidation.zip) (v16r4)<span id="16-4-7"></span><br />
 新コマンド[`JSON Validate`](https://doc.4d.com/JSON-Validate.301-4179123.ja.html)を使って、任意のJSONオブジェクトが、あらかじめ定義したJSONスキーマに適合するかをチェックすることができます。また、適合しなかった場合のデバッグ用に、要素の位置を特定できるよう[`JSON Parse`](https://doc.4d.com/JSON-Parse.301-4179121.ja.html)コマンドが拡張されました。
