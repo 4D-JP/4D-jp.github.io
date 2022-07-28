@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19r6 修正リスト"
-date: 2022-07-27 08:00:00
+date: 2022-07-28 08:00:00
 categories: 修正リスト
 tags: 19r6
-build: 281424
+build: 281459
 version: 19r6
 permalink: /192/:slug/
 ---
