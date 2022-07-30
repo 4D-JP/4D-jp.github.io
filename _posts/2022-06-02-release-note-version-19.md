@@ -1,10 +1,10 @@
 ---
 layout: fix
-title: "4D v19.3 修正リスト"
-date: 2022-07-27 08:00:00
+title: "4D v19.3 Hotfix 2 修正リスト"
+date: 2022-07-29 08:00:00
 categories: 修正リスト
-tags: "19.3"
-build: 281393
+tags: 19.3 hotfix
+build: 281510
 version: "19.3"
 permalink: /153/:slug/
 ---
