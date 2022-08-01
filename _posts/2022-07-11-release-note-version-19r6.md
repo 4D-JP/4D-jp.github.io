@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19r6 修正リスト"
-date: 2022-07-29 08:00:00
+date: 2022-08-01 08:00:00
 categories: 修正リスト
 tags: 19r6
-build: 281497
+build: 281536
 version: 19r6
 permalink: /192/:slug/
 ---
@@ -12,6 +12,8 @@ permalink: /192/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103090 `COMBINE PICTURES`で合成したピクチャを`SVG_New_embedded_image`コマンドでSVGに挿入することができませんでした。第６パラメーターに *.png* などのコーデックを指定すれば問題ありません。 
+ 
 * ACI0103114 メソッドエディター上でフォームを選択して，メニューまたはキーボードショートカットでフォームエディターにジャンプすることができませんでした。ACI0102855が修正されたことによる副作用のようです。
 
 * ACI0103104 フランス語版のみ。View Proエリアのローカライズに問題がありました。SpreadJS v15で追加された Mise en page タブに表示される一部の用語が不自然でした。
