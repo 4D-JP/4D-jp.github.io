@@ -32,6 +32,6 @@ tags: 19.x projectmode
  
 開発モードで接続したという情報は *.4DLink* ファイルに反映されます。その場合，プロジェクト名にはサーバーの公開名とアドレスに "(development mode)" という文字列が追加されます。
 
-フォルダー共有は，Windows/macOSそれぞれのオペレーションシステムが提供する基本的な仕組み（AFP, SMB/CIFS）を使用することができます。アクセス速度が問題であれば，NAS（Network Attached Storage）の導入を検討することができます。
+フォルダー共有は，Windows/macOSそれぞれのオペレーションシステムが提供する基本的な仕組み（AFP, SMB/CIFS）を使用することができます。アクセス速度が問題であれば，NAS（Network Attached Storage）の導入を検討すると良いかもしれません。
 
 https://blog.4d.com/developing-concurrently-on-4d-server-in-project-mode/
