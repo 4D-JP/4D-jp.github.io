@@ -34,4 +34,4 @@ tags: 19.x projectmode
 
 フォルダー共有は，Windows/macOSそれぞれのオペレーションシステムが提供する基本的な仕組み（AFP, SMB/CIFS）を使用することができます。アクセス速度が問題であれば，NAS（Network Attached Storage）の導入を検討すると良いかもしれません。
 
-https://blog.4d.com/developing-concurrently-on-4d-server-in-project-mode/
+<i class="fa fa-external-link" aria-hidden="true"></i> [Developing Concurrently on 4D Server in Project Mode](https://blog.4d.com/developing-concurrently-on-4d-server-in-project-mode/)
