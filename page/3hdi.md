@@ -11,6 +11,10 @@ type: page
 
 ## 19r6 # {#v19r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**メール: OAuth2を使って、Microsoftアカウントからメールを送信する**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_office365_SendMail.zip)<span id="19-6-6"></span><br />
+4D NetKit が提供する OAuth2Provider クラス、および Office365クラスを使って、Microsoftアカウントと連携してメールを送信する方法を紹介します。<br />
+参照: [4D NetKit](https://github.com/4d/4D-NetKit/tree/19RX)<br />
+[メール: Microsoft ID プラットフォームから Oauth2.0アクセストークンを取得](https://4d-jp.github.io/hdi/#v19r3)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みとデータコンテキスト**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DVP_CreateTables.zip)<span id="19-6-5"></span><br />
 新しく追加された [`VP CREATE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-create-table) と [`VP REMOVE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-remove-table) コマンドを使って、表組みの作成と削除ができるようになりました。この表組みにデータコンテキストを関連付けることで、コレクションやオブジェクトに格納されたデータを簡単に表示できます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みとデータソースの関連付け**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_ORDA_Tables.zip)<span id="19-6-4"></span><br />
