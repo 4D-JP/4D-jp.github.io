@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19r6 修正リスト"
-date: 2022-08-30 08:00:00
+date: 2022-09-01 08:00:00
 categories: 修正リスト
 tags: 19r6
-build: 282087
+build: 282147
 version: 19r6
 permalink: /192/:slug/
 ---
@@ -12,6 +12,8 @@ permalink: /192/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103133 プロジェクトモードのみ。変数あるいは式にヌルポインターを設定して`OBJECT DUPLICATE`で複製した階層ポップアップメニューボブジェクトに対してを`OBJECT SET ENABLED`を実行した場合，エラーが返されました。
+ 
 * ACI0103167 4D NetKitの`OAuth2Provider`クラスに渡された`expires_in`を過ぎた場合，`refresh_token`を使用してトークンを更新する代わりにブラウザを起動して新しい`access_token`を取得するところから認証プロセスが再開されました。
 
 * ACI0103155 Windows版バイナリモードのみ。OEM版のサーバーアプリケーションが起動できませんでした。ACI0102692と似ていますが，バイナリモードでなければ問題ありません。
