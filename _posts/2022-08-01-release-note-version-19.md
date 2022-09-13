@@ -1,13 +1,15 @@
 ---
 layout: fix
 title: "4D v19.3 修正リスト"
-date: 2022-09-07 08:00:00
+date: 2022-09-09 08:00:00
 categories: 修正リスト
 tags: "19.3"
-build: 282299
+build: 282375
 version: "19.3"
 permalink: /213/:slug/
 ---
+
+* ACI0103128 OracleやMicrosoft SQL Serverなどのデータベースに対し，`SQL EXECUTE `でODBCクエリを実行した場合，少なくレコードが返されることがありました。結果に`Null`が含まれている場合に問題が発生します。ACI0102720が修正されたことによる副作用のようです。
 
 * ACI0103151 `GRAPH`で作成したチャートの凡例に日本語のテキストを使用した場合，文字が途切れることがありました。
 
