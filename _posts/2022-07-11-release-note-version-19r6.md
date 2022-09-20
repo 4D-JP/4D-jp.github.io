@@ -12,6 +12,12 @@ permalink: /192/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103228 Mac版のみ。4D Go Mobileで複数の並び替えアクションを設定した場合，ビルドしたiOSアプリケーションのリストフォームで１番目以外の並び替えアクションが実行できませんでした。
+
+* ACI0103172 `VP SET DATE TIME VALUE`を使用し，日付を*vk pattern sortable date time* または* vk pattern universal sortable date time* フォーマットで設定した場合，アポストロフィ記号が表示されました。
+
+* ACI0103171 Windows版のみ。リレーションで結ばれたテーブルの名前に大文字が使用されていない場合，Androidアプリケーションのビルドができませんでした。
+ 
 * ACI0103028 Mac版のみ。PHPプロセス数を`1`に限定した場合，`PHP Execute`の内部コマンド`quit_4d_php`または`relaunch_4d_php`の完了に`10`秒を要しました。
 
 * ACI0102921 データファイルのユーザー設定および`ServerEmbedsProjectDirectoryFile`キーを有効にしてビルドしたクライアント/サーバー版アプリケーションでユーザー/グループのアクセス権とは無関係のデータベース設定を変更した場合，*settings.4DSettings* だけでなく，*directory.json* ファイルも自動的に作成されました。
