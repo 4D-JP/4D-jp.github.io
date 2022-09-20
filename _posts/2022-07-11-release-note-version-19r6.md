@@ -12,6 +12,12 @@ permalink: /192/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103169 4D Go Mobileで公開したピクチャフィールドにプライオリティーフォーマッターを設定した場合，アセットサイズ属性が考慮されず，画像がフルサイズで表示されました。
+
+* ACI0103164 4D Go MobileでAndroidアプリケーションをビルドした場合，整数フィールドに設定したJSONデータフォーマッターが無視され，値が整数として表示されました。
+
+* ACI0103179 *On Before Keystroke* イベントで`FILTER KEYSTROKE`を実行した場合，入力エリアの冒頭にカーソルが移動しました。
+
 * ACI0103228 Mac版のみ。4D Go Mobileで複数の並び替えアクションを設定した場合，ビルドしたiOSアプリケーションのリストフォームで１番目以外の並び替えアクションが実行できませんでした。
 
 * ACI0103172 `VP SET DATE TIME VALUE`を使用し，日付を*vk pattern sortable date time* または* vk pattern universal sortable date time* フォーマットで設定した場合，アポストロフィ記号が表示されました。
