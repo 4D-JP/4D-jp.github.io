@@ -23,7 +23,7 @@ permalink: /259/:slug/
 
 * ACI0103080 Windows版のみ。`SET CURRENT PRINTER`で`PDFCreator`をカレントプリンターに設定することができませんでした。
 
-**注記**: 4Dがサポートしている`PDFCreator`のバージョンは`1.7.3`（または`1.7.x`）です。`2.0.0`以降のバージョンでは，`PDFCreator`のAPIが大幅に変更されており，さらにWindows標準のMicrosoft Print to PDFが使用できるため，`1.7.x`以外のバージョンはサポートされないことになりました。定数の`PDFCreator`が使用された場合，4Dは`1.7.x`のAPIをコールして`PDFCreator`を特定するようになっています。そのため，新しいバージョンの`PDFCreator`（たとえば`4.4.2`）だけがインストールされているWindowsでは，指定プリンターがみつかりませんでした。逆に，定数ではなく，実際のプリンター名を指定すれば，どのバージョンの`PDFCreator`でも選択することができます。しかし，非対応のプリントドライバーと`SET PRINT OPTION`で*Destination option* を`2`（ファイル）に指定した場合，生成されるのは拡張子に関わりなくPostScriptファイルであり，PDFファイルにではありません。`PDFCreator`のAPIに互換性がないためです。今回，修正されたのは`SET CURRENT PRINTER`に定数の`PDFCreator`を渡した場合の動作だけであり，最新バージョンの`PDFCreator`に正式対応したわけではないことに留意してください。
+**注記**: 4Dがサポートしている`PDFCreator`のバージョンは`1.7.3`（または`1.7.x`）です。`2.0.0`以降のバージョンでは，`PDFCreator`のAPIが大幅に変更されており，さらにWindows標準のMicrosoft Print to PDFが使用できるため，`1.7.x`以外のバージョンはサポートされないことになりました。定数の`PDFCreator`が使用された場合，4Dは`1.7.x`のAPIをコールして`PDFCreator`を特定するようになっています。そのため，新しいバージョンの`PDFCreator`（たとえば`4.4.2`）だけがインストールされているWindowsでは，指定プリンターがみつかりませんでした。逆に，定数ではなく，実際のプリンター名を指定すれば，どのバージョンの`PDFCreator`でも選択することができます。しかし，非対応のプリントドライバーと`SET PRINT OPTION`で*Destination option* を`2`（ファイル）に指定した場合，生成されるのは拡張子に関わりなくPostScriptファイルであり，PDFファイルではありません。`PDFCreator`のAPIに互換性がないためです。今回，修正されたのは`SET CURRENT PRINTER`に定数の`PDFCreator`を渡した場合の動作だけであり，最新バージョンの`PDFCreator`に正式対応したわけではないことに留意してください。
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [Migrating from PDFCreator 1.7 to 2.0](https://github.com/4D-JP/4D-jp.github.io/files/9612987/migration_1.7____2.0_.pdf)
 
