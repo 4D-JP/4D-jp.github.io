@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19.4 修正リスト"
-date: 2022-09-29 08:00:00
+date: 2022-10-01 08:00:00
 categories: 修正リスト
 tags: "19.4"
-build: 282852
+build: 282902
 version: "19.4"
 permalink: /259/:slug/
 ---
