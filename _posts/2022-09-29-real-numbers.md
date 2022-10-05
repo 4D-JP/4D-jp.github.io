@@ -9,7 +9,7 @@ tags: 19.x programming
 
 実数の計算は，一般の算数とは違うことに留意してください。たとえば，下記の計算は`-0.1`になりそうなものですが，実際にはそうではありません。これは仕様です。<i class="fa fa-external-link" aria-hidden="true"></i> [IEEE 754](https://ja.wikipedia.org/wiki/IEEE_754)
 
-```4d
+```
 ALERT(String(64-64.1))
 ```
 
