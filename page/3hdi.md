@@ -11,6 +11,9 @@ type: page
 
 ## 19r6 # {#v19r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 空ピクチャーの非表示化**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_HideEmptyPictures.zip)<span id="19-6-7"></span><br />
+4D Write Pro ドキュメントに含まれる空ピクチャーを非表示にできるようになりました (デフォルトでは空の四角を表示)。<br />
+参照: [空のピクチャー](https://doc.4d.com/4Dv19R6/4D/19-R6/Handling-pictures.200-5903894.ja.html#5938250)
 * <i class="fa fa-download" aria-hidden="true"></i> [**メール: OAuth2を使って、Microsoftアカウントからメールを送信する**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_office365_SendMail.zip)<span id="19-6-6"></span><br />
 4D NetKit が提供する OAuth2Provider クラス、および Office365クラスを使って、Microsoftアカウントと連携してメールを送信する方法を紹介します。<br />
 参照: [4D NetKit](https://github.com/4d/4D-NetKit/tree/19RX)、HDI "[メール: Microsoft ID プラットフォームから Oauth2.0アクセストークンを取得](https://4d-jp.github.io/hdi/#v19r3)"
