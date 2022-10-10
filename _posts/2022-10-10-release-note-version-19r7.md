@@ -12,6 +12,8 @@ permalink: /283/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103207 4D Go Mobileのアクションタブに表示されるフィールド名がXLIFF参照のようにローカライズ処理されました。
+
 * ACI0103363 4D Go MobileでビルドしたAndroidアプリでHTTPSサーバーに接続することができませんでした。
 
 * ACI0103241 Application Support (Mac) またはApp Data/Roaming (Windows) に作成される*dataCollection.json* ファイルにデータベースの`databases`コレクションの内容が正しくありませんでした。
