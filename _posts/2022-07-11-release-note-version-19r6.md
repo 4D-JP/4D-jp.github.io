@@ -52,7 +52,7 @@ permalink: /192/:slug/
 
 * ACI0103228 Mac版のみ。4D Go Mobileで複数の並び替えアクションを設定した場合，ビルドしたiOSアプリケーションのリストフォームで１番目以外の並び替えアクションが実行できませんでした。
 
-* ACI0103172 `VP SET DATE TIME VALUE`を使用し，日付を*vk pattern sortable date time* または* vk pattern universal sortable date time* フォーマットで設定した場合，アポストロフィ記号が表示されました。
+* ACI0103172 `VP SET DATE TIME VALUE`を使用し，日付を*vk pattern sortable date time* または*vk pattern universal sortable date time* フォーマットで設定した場合，アポストロフィ記号が表示されました。
 
 * ACI0103171 Windows版のみ。リレーションで結ばれたテーブルの名前に大文字が使用されていない場合，Androidアプリケーションのビルドができませんでした。
  
