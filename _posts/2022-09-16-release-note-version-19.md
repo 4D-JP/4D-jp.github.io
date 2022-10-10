@@ -53,7 +53,7 @@ permalink: /259/:slug/
 
 * ACI0103183 4D Go Mobileのリレーションアクションを実行した場合，エンティティの`parent`属性が*On Mobile App Action* データベースメソッドに返されませんでした。
 
-* ACI0103172 `VP SET DATE TIME VALUE`を使用し，日付を*vk pattern sortable date time* または* vk pattern universal sortable date time* フォーマットで設定した場合，アポストロフィ記号が表示されました。
+* ACI0103172 `VP SET DATE TIME VALUE`を使用し，日付を*vk pattern sortable date time* または*vk pattern universal sortable date time* フォーマットで設定した場合，アポストロフィ記号が表示されました。
 
 * ACI0103171 Windows版のみ。リレーションで結ばれたテーブルの名前に大文字が使用されていない場合，Androidアプリケーションのビルドができませんでした。
 
