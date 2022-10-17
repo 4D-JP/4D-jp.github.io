@@ -1,13 +1,25 @@
 ---
 layout: fix
 title: "4D v19.4 修正リスト"
-date: 2022-10-13 08:00:00
+date: 2022-10-14 08:00:00
 categories: 修正リスト
 tags: "19.4"
-build: 283073
+build: 283145
 version: "19.4"
 permalink: /259/:slug/
 ---
+
+* ACI0101670 時間型の値を返すフォーミュラを`formula.call()`または`formula.apply()`で評価した場合，実数型が返されました。
+ 
+* ACI0103244 文字列フィールドの最大文字数にサロゲート文字がかかってしまい，片側だけ（例: `Char(55356)`）がレコードに保存された場合，`LOG FILE TO JSON`のようにフィールド値をダンプするコマンドで二重引用符（`"`）が制御文字に飲み込まれてしまい，JSONを解析することができませんでした。半端なサロゲート文字は切り捨てられるべきです。
+
+* ACI0103226 Windows版のみ。Write Proドキュメントのスプール名がプリントジョブのキューに表示されませんでした。
+
+**注記**: *wk title* 属性の値が表示されるようになりました。
+
+* ACI0103193 フランス語版のみ。定数の`Backup settings file`および`Backup settings file for data`の名称が不適切でした。
+
+**注記**: `Fichier configuration sauvegarde`および`Fichier configuration sauvegarde pour le fichier de données`に名称が改定されました。
 
 * ACI0103378 Windows版のみ。複数のモニターが接続されている場合，カラーピッカーが表示されず，操作がブロックされることがありました。
 
