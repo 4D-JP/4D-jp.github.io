@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "高解像度ディスプレイの座標計算"
-date: 2022-10-18 08:00:00
+date: 2022-10-17 08:00:00
 categories: 仕様
 tags: 19.x windows dpi
 ---
