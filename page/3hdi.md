@@ -18,7 +18,7 @@ type: page
 4D NetKit が提供する OAuth2Provider クラス、および Office365クラスを使って、Microsoftアカウントと連携してメールを送信する方法を紹介します。<br />
 参照: [4D NetKit](https://github.com/4d/4D-NetKit/tree/19RX)、HDI "[メール: Microsoft ID プラットフォームから Oauth2.0アクセストークンを取得](https://4d-jp.github.io/hdi/#v19r3)"
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みとデータコンテキスト**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DVP_CreateTables.zip)<span id="19-6-5"></span><br />
-新しく追加された [`VP CREATE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-create-table) と [`VP REMOVE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-remove-table) コマンドを使って、表組みの作成と削除ができるようになりました。この表組みにデータコンテキストを関連付けることで、コレクションやオブジェクトに格納されたデータを簡単に表示できます。
+新しく追加された [`VP CREATE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-create-table) と [`VP REMOVE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-remove-table) コマンドを使って、表組みの作成と削除ができるようになりました。この表組みにデータコンテキストを関連付けることで、コレクションやオブジェクトに格納されたデータを簡単に表示できます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みとデータソースの関連付け**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_ORDA_Tables.zip)<span id="19-6-4"></span><br />
 4D Write Pro ドキュメントの表組みに、コレクションやエンティティセレクションをデータソースとして関連づけられるようになりました。<br />
 参照: [データソースに基づくテーブル](https://livedoc.4d.com/4Dv19R6/4D/19-R6/Handling-tables.200-5908411.ja.html#5908491)
@@ -33,30 +33,30 @@ type: page
 [`CALL FORM`](https://doc.4d.com/4Dv19R6/4D/19-R6/CALL-FORM.301-5910890.ja.html)、
 [`CALL WORKER`](https://doc.4d.com/4Dv19R6/4D/19-R6/CALL-WORKER.301-5911386.ja.html) コマンドも Formulaオブジェクトをサポートするようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**HTTPRequest クラス**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_HTTP_Classes.zip)<span id="19-6-1"></span><br />
-新しい [`HTTPRequest`](http://developer.4d.com/docs/ja/API/HTTPRequestClass.html)クラスを使って、HTTPRequest オブジェクト を扱うことができます。このオブジェクトは、HTTPサーバーへのリクエストの設定と送信、および HTTPサーバーのレスポンスを処理するのに使用します。
+新しい [`HTTPRequest`](http://developer.4d.com/docs/ja/API/HTTPRequestClass/)クラスを使って、HTTPRequest オブジェクト を扱うことができます。このオブジェクトは、HTTPサーバーへのリクエストの設定と送信、および HTTPサーバーのレスポンスを処理するのに使用します。
 
 ## 19r5 # {#v19r5}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDAキャッシュの管理とRESTリクエストの最適化**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_ORDA_ContextAndRequestsOptimization.zip)<span id="19-5-7"></span><br />
 パフォーマンスのさらなる向上のため、ORDAキャッシュを管理する機能とRESTリクエストを最適化する機能が追加されました。<br />
- [`dataClass.setRemoteCacheSettings()`](http://developer.4d.com/docs/en/API/DataClassClass.html#setremotecachesettings)、
- [`dataClass.getRemoteCache()`](http://developer.4d.com/docs/en/API/DataClassClass.html#getremotecache)、
- [`dataClass.clearRemoteCache()`](http://developer.4d.com/docs/en/API/DataClassClass.html#clearremotecache)、
- [`entitySelection.getRemoteContextAttributes()`](http://developer.4d.com/docs/en/API/EntitySelectionClass.html#getremotecontextattributes)、
- [`entity.getRemoteContextAttributes()`](http://developer.4d.com/docs/en/API/EntityClass.html#getremotecontextattributes)、
- [`dataStore.getRemoteContextInfo()`](http://developer.4d.com/docs/en/API/DataStoreClass.html#getremotecontextinfo)、
- [`dataStore.getAllRemoteContexts()`](http://developer.4d.com/docs/en/API/DataStoreClass.html#getallremotecontexts)、
- [`dataStore.clearAllRemoteContexts()`](http://developer.4d.com/docs/en/API/DataStoreClass.html#clearallremotecontexts)、
- [`dataStore.setRemoteContextInfo()`](http://developer.4d.com/docs/en/API/DataStoreClass.html#setremotecontextinfo)
+ [`dataClass.setRemoteCacheSettings()`](http://developer.4d.com/docs/ja/API/DataClassClass/#setremotecachesettings)、
+ [`dataClass.getRemoteCache()`](http://developer.4d.com/docs/ja/API/DataClassClass/#getremotecache)、
+ [`dataClass.clearRemoteCache()`](http://developer.4d.com/docs/ja/API/DataClassClass/#clearremotecache)、
+ [`entitySelection.getRemoteContextAttributes()`](http://developer.4d.com/docs/ja/API/EntitySelectionClass/#getremotecontextattributes)、
+ [`entity.getRemoteContextAttributes()`](http://developer.4d.com/docs/ja/API/EntityClass/#getremotecontextattributes)、
+ [`dataStore.getRemoteContextInfo()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#getremotecontextinfo)、
+ [`dataStore.getAllRemoteContexts()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#getallremotecontexts)、
+ [`dataStore.clearAllRemoteContexts()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#clearallremotecontexts)、
+ [`dataStore.setRemoteContextInfo()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#setremotecontextinfo)
 * <i class="fa fa-download" aria-hidden="true"></i> [**親フォームとサブフォーム間の通信**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4D_SubformCommunication.zip)<span id="19-5-6"></span><br />
 新しく追加された [`OBJECT Get subform container value`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-Get-subform-container-value.301-5862192.ja.html) および [`OBJECT SET SUBFORM CONTAINER VALUE`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-SET-SUBFORM-CONTAINER-VALUE.301-5862140.ja.html) コマンドを使い、親フォームとサブフォーム間でスカラー型の変数あるいは式を同期させることができます。<br />
 参考: [サブフォーム](https://doc4d.github.io/docs/ja/FormObjects/subformOverview.html#%E8%A6%AA%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%A8%E3%82%B5%E3%83%96%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%AE%E5%90%8C%E6%9C%9F-%E5%8D%98%E4%B8%80%E5%80%A4)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DVP_DataContext.zip)<span id="19-5-5"></span><br />
 4D View Pro ドキュメントのシートにデータコンテキストを関連付けることができるようになりました。オブジェクトまたはコレクションをバインドすることで、それらの内容をシートのセルに自動で表示することができます。<br />
-参考: [`VP SET DATA CONTEXT`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-set-data-context)、
-[`VP Get data context`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-get-data-context)、
-[`VP SET BINDING PATH`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-set-binding-path)、
-[`VP Get binding path`](http://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-get-binding-path)
+参考: [`VP SET DATA CONTEXT`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-set-data-context)、
+[`VP Get data context`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-get-data-context)、
+[`VP SET BINDING PATH`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-set-binding-path)、
+[`VP Get binding path`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-get-binding-path)
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_ORDA.zip)<span id="19-5-4"></span><br />
 4D v19R5 より、4D Write Pro ドキュメントにデータコンテキストを関連付けることができるようになりました。これにより、テンプレートドキュメント内で、エンティティやエンティティセレクションといった ORDAデータのほか、任意のオブジェクトデータを利用することができます。<br />
 参考: [`WP SET DATA CONTEXT`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-SET-DATA-CONTEXT.301-5866708.ja.html)、[`WP Get data context`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-Get-data-context.301-5866737.ja.html)
@@ -72,9 +72,9 @@ type: page
 ## 19r4 # {#v19r4}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**システムワーカー**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_Systemworker.zip)<span id="19-4-4"></span><br />
-新しい [`SystemWorker`](http://developer.4d.com/docs/ja/API/SystemWorkerClass.html) クラスを使って、外部プロセスを非同期に実行することができます。
+新しい [`SystemWorker`](http://developer.4d.com/docs/ja/API/SystemWorkerClass/) クラスを使って、外部プロセスを非同期に実行することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**View Pro: ワークブックオプションの管理**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DVP_workbook_options.zip)<span id="19-4-3"></span><br />
-新しい [`VP SET WORKBOOK OPTIONS`](https://developer.4d.com/docs/ja/ViewPro/method-list.html#vp-set-workbook-options) コマンドを使って、様々なワークブックオプションを管理することができます。
+新しい [`VP SET WORKBOOK OPTIONS`](https://developer.4d.com/docs/ja/ViewPro/method-list/#vp-set-workbook-options) コマンドを使って、様々なワークブックオプションを管理することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 表組みの行内部の自動改ページ**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DWP_PageBreaksInTableRows.zip)<span id="19-4-2"></span><br />
 4D Write Pro に新しい `wk page break inside row` 属性が追加され、表組みの行内部の自動改ページができるようになりました。<br />
 参考: [表のページ分け](https://doc.4d.com/4Dv19R4/4D/19-R4/Using-a-4D-Write-Pro-area.200-5760411.ja.html#5798838)
@@ -98,9 +98,9 @@ Webエリアの `埋め込みWebレンダリングエンジンを使用`プロ�
 ハイライトは `wk formula highlight` および `wk formula highlight color` を使って設定します。<br />
 参照: [4D Write Pro標準アクションの使用](https://doc.4d.com/4Dv19R3/4D/19-R3/Using-4D-Write-Pro-standard-actions.200-5606489.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: 計算属性**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_ORDA_ComputedAttributes.zip)<span id="19-3-2"></span><br />
-ORDAクラスに [計算属性](https://developer.4d.com/docs/Rx/ja/ORDA/ordaClasses.html#%E8%A8%88%E7%AE%97%E5%B1%9E%E6%80%A7) が追加できるようになりました。それぞれ専用の関数を設定することで、計算属性値を取得・設定・クエリ・並べ替えすることが可能です。
+ORDAクラスに [計算属性](https://developer.4d.com/docs/ja/ORDA/ordaClasses/#%E8%A8%88%E7%AE%97%E5%B1%9E%E6%80%A7) が追加できるようになりました。それぞれ専用の関数を設定することで、計算属性値を取得・設定・クエリ・並べ替えすることが可能です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**クラス: 計算プロパティ**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_CS_ComputedProperties.zip)<span id="19-3-1"></span><br />
-`Function get` および `Function set` キーワードを使って、クラスに [計算プロパティ](https://developer.4d.com/docs/Rx/ja/Concepts/classes.html#function-get-%E3%81%A8-function-set) が追加できるようになりました。
+`Function get` および `Function set` キーワードを使って、クラスに [計算プロパティ](https://developer.4d.com/docs/ja/Concepts/classes/#function-get-%E3%81%A8-function-set) が追加できるようになりました。
 
 ## 19r2 # {#v19r2}
 
@@ -116,7 +116,7 @@ v19では、新しい 4D Write Pro コマンド [WP Find all](https://doc.4d.com
 v19では、[Strings](https://doc.4d.com/4Dv19/4D/19.1/Strings.302-5654328.ja.html) 定数テーマに複数の新たな定数が追加されました。これらの定数は既存の [`Position`](https://doc.4d.com/4Dv19/4D/19.1/Position.301-5653307.ja.html) コマンドにおいて、強力なオプションとして使用することができます。また、重複の検出や並べ替えをおこなう目的で文字列を比較するための新しい [`Compare strings`](https://doc.4d.com/4Dv19/4D/19.1/Compare-strings.301-5653292.ja.html) コマンドも追加されています。<br/>
 ※ 4D v19.2 で日本語環境での動作が修正されました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D変換タグ: 4DEACH**](https://github.com/4D-JP/HDI/releases/download/19/HDI_4DEACHTag.zip)<span id="19-0-8"></span><br />
-[`4DEACH`](https://developer.4d.com/docs/19/ja/Tags/tags.html#4deach-%E3%81%A8-4dendeach) が新たに変換タグとして追加されました。<br />
+[`4DEACH`](https://developer.4d.com/docs/ja/Tags/tags/#4deach-%E3%81%A8-4dendeach) が新たに変換タグとして追加されました。<br />
 これを使って、エンティティセレクション / コレクション / オブジェクトプロパティをループすることができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**データの暗号化**](https://github.com/4D-JP/HDI/releases/download/19/HDI_BLOB_Encryption.zip)<span id="19-0-7"></span><br />
 [`Encrypt data BLOB`](https://doc.4d.com/4Dv19/4D/19/Encrypt-data-BLOB.301-5449220.ja.html)[`Decrypt data BLOB`](https://doc.4d.com/4Dv19/4D/19/Decrypt-data-BLOB.301-5449312.ja.html) コマンドを使って、パスフレーズとソルト付与によるBLOBの暗号化・復号化ができます。外部保存の機密文書(PDFファイル)を暗号化・復号化するサンプルアプリケーションを使って、この機能を紹介します。
@@ -132,12 +132,12 @@ v19では、[Strings](https://doc.4d.com/4Dv19/4D/19.1/Strings.302-5654328.ja.ht
 * <i class="fa fa-download" aria-hidden="true"></i> [**フォームオブジェクト: コレクションによる規定値の設定**](https://github.com/4D-JP/HDI/releases/download/19/HDI_UseCollectionsInForms.zip)<span id="19-0-2"></span><br />
 v19では、タブコントロール・コンボボックス・ドロップダウンメニューの規定値をコレクションによって設定することができるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**IMAP transporter: メールボックスの操作**](https://github.com/4D-JP/HDI/releases/download/19/HDI_IMAPMailboxes.zip)<span id="19-0-1"></span><br />
-[`IMAP_transporter`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html) クラスの関数 
-[`.createBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#createbox)、
-[`.deleteBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#deletebox)、
-[`.renameBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#renamebox)、
-[`.subscribe()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#subscribe)、
-[`.unsubscribe()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass.html#unsubscribe) を使ってメールボックスを操作する方法を紹介します。
+[`IMAP_transporter`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass/) クラスの関数 
+[`.createBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass/#createbox)、
+[`.deleteBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass/#deletebox)、
+[`.renameBox()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass/#renamebox)、
+[`.subscribe()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass/#subscribe)、
+[`.unsubscribe()`](http://developer.4d.com/docs/ja/API/IMAPTransporterClass/#unsubscribe) を使ってメールボックスを操作する方法を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: ドキュメントの読み込み完了確認**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_4DVP_End_Loading.zip) (v18r6)<span id="18-6-8"></span><br />
 オフスクリーンエリアで開いた 4D View Pro ドキュメントが読み込みが完了したかを確認するのに、
 `on VP Range Changed` と `on Timer` イベントを組み合わせて利用します。<br />
@@ -151,8 +151,8 @@ OAuth2.0 を使って IMAP および SMTP transporter を作成し、Gmailサー
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 検索と置換**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_4DVP_Find.zip) (v18r6)<span id="18-6-4"></span><br />
 4D v18 R6 で追加された新しい [`VP Find`](https://doc.4d.com/4Dv18R6/4D/18-R6/VP-Find.301-5184846.ja.html) コマンドを使って、4D View Pro ドキュメント内の値を検索・置換できるようになりました。このコマンドにはさまざまな検索条件を追加することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**スケーラブル Web セッション**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_ScalableSession.zip) (v18r6)<span id="18-6-3"></span><br />
-4D v18 R6 より、スケーラブル Web セッションが使用できるようになりました。ストラクチャー設定の「[スケーラブルセッション(マルチプロセスセッション)](https://doc.4d.com/4Dv18R6/4D/18-R6/WebOptions-I-page.300-5217843.ja.html#5229239)」を有効にすると、新しい [`Session`](https://doc.4d.com/4Dv18R6/4D/18-R6/Session.301-5225575.ja.html) コマンドは、カレントのスケーラブル Web セッションに対応した [`Session オブジェクト`](https://developer.4d.com/docs/Rx/ja/API/sessionClass.html) を返します。<br />
-このオブジェクトの [`storage`プロパティ](https://developer.4d.com/docs/Rx/ja/API/sessionClass.html#storage) を使って、同セッション内で共有したいデータを保存することができます。
+4D v18 R6 より、スケーラブル Web セッションが使用できるようになりました。ストラクチャー設定の「[スケーラブルセッション(マルチプロセスセッション)](https://doc.4d.com/4Dv18R6/4D/18-R6/WebOptions-I-page.300-5217843.ja.html#5229239)」を有効にすると、新しい [`Session`](https://doc.4d.com/4Dv18R6/4D/18-R6/Session.301-5225575.ja.html) コマンドは、カレントのスケーラブル Web セッションに対応した [`Session オブジェクト`](https://developer.4d.com/docs/ja/API/sessionClass/) を返します。<br />
+このオブジェクトの [`storage`プロパティ](https://developer.4d.com/docs/ja/API/sessionClass/#storage) を使って、同セッション内で共有したいデータを保存することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: On Before Keystroke イベント**](https://github.com/4D-JP/HDI/releases/download/18r6/HDI_LISTBOXES_BeforeKeystroke.zip) (v18r6)<span id="18-6-2"></span><br />
 リストボックスにおいて、編集中のセルがなくても文字入力とともに `On Before Keystroke` イベントが発生するようになりました。このイベントを利用してクエリやハイライトなどの操作をおこなうことができます。<br />
 また、[`Is editing text`](https://doc.4d.com/4Dv18R6/4D/18-R6/Get-edited-text.301-5198452.ja.html) コマンドが追加され、これにより `On Before Keystroke` イベントが生成されたときに進行中の入力があるかどうかを検知することができるようになりました。
@@ -163,7 +163,7 @@ IMAP Transporter の関数 [`IMAP_transporter.copy( )`](https://doc.4d.com/4Dv18
 Gmailに関する注意点: [Gmail/All MailメールボックスとIMAP (ブログ記事)](https://4d-jp.github.io/2021/02/21/gmail-all-mail//)
 * <i class="fa fa-download" aria-hidden="true"></i> [**フォームエディターマクロ**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_FormMacro.zip) (v18r5)<span id="18-5-6"></span><br />
 4D v18 R5 ではマクロが導入されました。フォームエディター上で繰り返しおこなうタスクを自動化するのに、マクロは非常に便利です。<br />
-参照：[マクロの使用例 6つ (ブログ記事)](https://4d-jp.github.io/2021/02/15/6-practical-examples-on-how-to-use-macros/)、[フォームエディターマクロ](http://developer.4d.com/docs/ja/FormEditor/macros.html)
+参照：[マクロの使用例 6つ (ブログ記事)](https://4d-jp.github.io/2021/02/15/6-practical-examples-on-how-to-use-macros/)、[フォームエディターマクロ](http://developer.4d.com/docs/ja/FormEditor/macros/)
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: 共有可能/追加可能なエンティティセレクションの操作**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_Shareable_ES_Enhancements.zip) (v18r5)<span id="18-5-5"></span><br />
 エンティティセレクションをもとに別のエンティティセレクションを作成すると、その特性が継承されます。例外が [`entitySelection.copy()`](https://doc.4d.com/4Dv19/4D/19/entitySelectioncopy.305-5391689.ja.html) を使った場合で、共有可能 (追加不可) エンティティセレクションを追加可能 (共有不可) にしたり、その逆が可能です。<br />
 また、新しく追加された [`entitySelection.isAlterable()`](https://doc.4d.com/4Dv19/4D/19/entitySelectionisAlterable.305-5391690.ja.html) を使って、エンティティセレクションの特性が共有可能か追加可能かを確認することができます。
@@ -176,7 +176,7 @@ Gmailに関する注意点: [Gmail/All MailメールボックスとIMAP (ブロ�
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カスタムファンクション**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_4DVP_allow_formulas.zip) (v18r5)<span id="18-5-2"></span><br />
 [`VP SET CUSTOM FUNCTIONS`](https://doc.4d.com/4Dv18R5/4D/18-R5/VP-SET-CUSTOM-FUNCTIONS.301-5062623.ja.html) を使って、4D View Pro で使用できるカスタムファンクションを作成することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス関数のスコープ**](https://github.com/4D-JP/HDI/releases/download/18r5/HDI_ORDA_FunctionsScope.zip) (v18r5)<span id="18-5-1"></span><br />
-4D v18 R5 では、[データモデルクラス](https://developer.4d.com/docs/ja/ORDA/ordaClasses.html)関数のスコープを定義するためのキーワード ([`local`](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E9%96%A2%E6%95%B0) および [`exposed`](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E5%85%AC%E9%96%8Bvs%E9%9D%9E%E5%85%AC%E9%96%8B%E9%96%A2%E6%95%B0)) が使えるようになりました。
+4D v18 R5 では、[データモデルクラス](https://developer.4d.com/docs/ja/ORDA/ordaClasses/)関数のスコープを定義するためのキーワード ([`local`](http://developer.4d.com/docs/ja/ORDA/ordaClasses/#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E9%96%A2%E6%95%B0) および [`exposed`](http://developer.4d.com/docs/ja/ORDA/ordaClasses/#%E5%85%AC%E9%96%8Bvs%E9%9D%9E%E5%85%AC%E9%96%8B%E9%96%A2%E6%95%B0)) が使えるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: プロパティの取得・設定**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_LISTBOXES_Properties_v2.zip) (v18r4)<span id="18-4-9"></span><br />
 [`LISTBOX SET PROPERTY`](https://doc.4d.com/4Dv18R4/4D/18-R4/LISTBOX-SET-PROPERTY.301-4982971.ja.html)、および
 [`LISTBOX Get property`](https://doc.4d.com/4Dv18R4/4D/18-R4/LISTBOX-Get-property.301-4983017.ja.html) コマンドを使って、リストボックスのプロパティを設定する方法を紹介します。4D v18 R4 では "行の移動可" プロパティが新たに追加され、配列型のリストボックスに対して適用することができます。
@@ -188,7 +188,7 @@ Gmailに関する注意点: [Gmail/All MailメールボックスとIMAP (ブロ�
 IMAP transporter オブジェクトを使って、IMAP プロトコルによるメールの受信ができます。<br />
 参考：[Eメールオブジェクト](https://doc.4d.com/4Dv18R4/4D/18-R4/Email-object.300-4981948.ja.html)
 * <i class="fa fa-download" aria-hidden="true"></i> [**CryptoKey クラスを使った署名と検証**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_Cryptokey_class.zip) (v18r4)<span id="18-4-6"></span><br />
-4D クラスストアに新しく追加された [CryptoKey クラス](http://developer.4d.com/docs/ja/API/cryptoClass.html) を利用して、電子メッセージに署名を付与したり、これを検証したりすることができます。
+4D クラスストアに新しく追加された [CryptoKey クラス](http://developer.4d.com/docs/ja/API/cryptoClass/) を利用して、電子メッセージに署名を付与したり、これを検証したりすることができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラが返すキャリッジリターンの扱い**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DWP_ParagraphBreaks.zip) (v18r4)<span id="18-4-5"></span><br />
 新しいドキュメント設定プロパティ [`wk break paragraphs in formulas`](https://doc.4d.com/4Dv18R4/4D/18-R4/4D-Write-Pro-Attributes.300-5038135.ja.html#5039441) が追加されました。[`WP SET ATTRIBUTES`](https://doc.4d.com/4Dv18R4/4D/18-R4/WP-SET-ATTRIBUTES.301-5038145.ja.html) コマンドを使ってこれを指定することで、4D Write Pro ドキュメント内のフォーミュラが返すキャリッジリターン文字を改行・改段落のどちらとして認識するか選択することができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: PDFへのエクスポート**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_4DWP_ExportPDF.zip) (v18r4)<span id="18-4-4"></span><br />
@@ -199,7 +199,7 @@ IMAP transporter オブジェクトを使って、IMAP プロトコルによる�
 ORDA のデータモデルクラスに定義されたクラス関数は RESTリクエストで呼び出すことができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データモデルクラス**](https://github.com/4D-JP/HDI/releases/download/18r4/HDI_ORDA_Classes.zip) (v18r4)<span id="18-4-1"></span><br />
 4D v18 R4 では、ORDA データモデルに基づく高レベルのクラスが提供され、それぞれにクラス関数を定義できるようになりました。<br />
-参照: [データモデルクラス](https://developer.4d.com/docs/Rx/ja/ORDA/ordaClasses.html)
+参照: [データモデルクラス](https://developer.4d.com/docs/ja/ORDA/ordaClasses/)
 * <i class="fa fa-download" aria-hidden="true"></i> [**オフスクリーン Web エリア**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Offscreen_WebArea.zip) (v18r3)<span id="18-3-8"></span><br />
 新しく追加された [`WA Run offscreen area`](https://doc.4d.com/4Dv18R3/4D/18-R3/WA-Run-offscreen-area.301-4968859.ja.html) コマンドを使って、オフスクリーンの (メモリにしか存在せず、表示されない) Web エリアが作成できるようになりました。この Web エリアは Web ページを自動的に読み込んで解析するといったことに使用できます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro 機能: 文書保護**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_4DWP_Protection.zip) (v18r3)<span id="18-3-7"></span><br />
@@ -220,7 +220,7 @@ ORDA のデータモデルクラスに定義されたクラス関数は RESTリ�
 クラス継承の例を紹介します。
 * <i class="fa fa-download" aria-hidden="true"></i> [**クラス: コンストラクターとメンバーメソッド**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Class.zip) (v18r3)<span id="18-3-1"></span><br />
 クラスを定義、利用することができるようになりました。クラスの基本となるコンストラクターとメンバーメソッドの例を紹介します。<br />
-参考：[クラス](https://developer.4d.com/docs/ja/Concepts/classes.html)
+参考：[クラス](https://developer.4d.com/docs/ja/Concepts/classes/)
 * <i class="fa fa-download" aria-hidden="true"></i> [**POP3 を使ったメール受信**](https://github.com/4D-JP/HDI/releases/download/18r2/HDI_POP3MailDownloading.zip) (v18r2)<span id="18-2-6"></span><br />
 POP3 transporter オブジェクトを使って、POP3 プロトコルによるメールの受信ができます。<br />
 参考：[Eメールオブジェクト](https://doc.4d.com/4Dv18R2/4D/18-R2/Email-object.300-4825407.ja.html)
