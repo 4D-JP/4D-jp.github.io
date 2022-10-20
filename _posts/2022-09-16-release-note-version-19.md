@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v19.4 Hotfix 1 修正リスト"
-date: 2022-10-14 08:00:00
+date: 2022-10-20 08:00:00
 categories: 修正リスト
 tags: 19.4 hotfix
 build: 283145
