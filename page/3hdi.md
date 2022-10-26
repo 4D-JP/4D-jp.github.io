@@ -9,6 +9,18 @@ type: page
 * content
 {:toc}
 
+## 19r7 # {#v19r7}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みの列の管理**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DVP_TablesManagement.zip)<span id="19-7-3"></span><br />
+新しく追加された　[`VP INSERT TABLE COLUMNS`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-insert-table-columns)、
+[`VP REMOVE TABLE COLUMNS`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-remove-table-columns)、
+[`VP SET TABLE COLUMN ATTRIBUTES`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-set-table-column-attributes)、
+[`VP Get table column index`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-get-table-column-index) を使って表組に列を追加・削除する方法を紹介します。
+* <i class="fa fa-download" aria-hidden="true"></i> [**フォームオブジェクトの角の丸み**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_RoundedCorner.zip)<span id="19-7-2"></span><br />
+静的テキストおよび入力オブジェクトのプロパティに [`角の半径`](http://developer.4d.com/docs/ja/FormObjects/propertiesCoordinatesAndSizing#%E8%A7%92%E3%81%AE%E5%8D%8A%E5%BE%84) が追加され、角の丸みを設定できるようになりました。
+* <i class="fa fa-download" aria-hidden="true"></i> [**FileHandle クラス**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_FileHandle.zip)<span id="19-7-1"></span><br />
+新しく追加された　[`FileHandle　クラス`](http://developer.4d.com/docs/ja/API/FileHandleClass) で、ファイルの書き込み・読み取りが容易にできるようになりました。
+
 ## 19r6 # {#v19r6}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 空ピクチャーの非表示化**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_HideEmptyPictures.zip)<span id="19-6-7"></span><br />
