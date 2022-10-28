@@ -19,7 +19,7 @@ type: page
 * <i class="fa fa-download" aria-hidden="true"></i> [**フォームオブジェクトの角の丸み**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_RoundedCorner.zip)<span id="19-7-2"></span><br />
 静的テキストおよび入力オブジェクトのプロパティに [`角の半径`](http://developer.4d.com/docs/ja/FormObjects/propertiesCoordinatesAndSizing#%E8%A7%92%E3%81%AE%E5%8D%8A%E5%BE%84) が追加され、角の丸みを設定できるようになりました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**FileHandle クラス**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_FileHandle.zip)<span id="19-7-1"></span><br />
-新しく追加された　[`FileHandle　クラス`](http://developer.4d.com/docs/ja/API/FileHandleClass) で、ファイルを毎回開いたり閉じたりする必要なく書き込み・読み取りが容易にできるようになりました。
+新しく追加された　[`FileHandle　クラス`](http://developer.4d.com/docs/ja/API/FileHandleClass) で、ファイルを毎回開いたり閉じたりする必要なく、書き込み・読み取りが容易にできるようになりました。
 
 ## 19r6 # {#v19r6}
 
