@@ -11,6 +11,8 @@ type: page
 
 ## 19r7 # {#v19r7}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラの簡略表示**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_DisplayFormulas.zip)<span id="19-7-6"></span><br />
+新しく追加された [フォーミュラソースを記号として表示](https://doc.4d.com/4Dv19R7/4D/19-R7/Managing-formulas.300-6011882.ja.html#6014416) プロパティを使って、ドキュメントのフォーミュラを ⓕ 記号として簡略に表示することができます。これは、エンドユーザーがフォーミュラの詳細な定義を知る必要がない場合に便利です。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメントの変更検知**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_ModifiedDocuments.zip)<span id="19-7-5"></span><br />
 新しい [`.modified`](https://doc.4d.com/4Dv19R7/4D/19-R7/4D-Write-Pro-Attributes.300-6011946.ja.html#6015862) プロパティを使って、ドキュメントが変更されたかどうかを検知できます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 複数行のドラッグ＆ドロップ**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_LB_DragAndDrop.zip)<span id="19-7-4"></span><br />
