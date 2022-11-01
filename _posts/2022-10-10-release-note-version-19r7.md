@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19r7 修正リスト"
-date: 2022-10-26 08:00:00
+date: 2022-10-29 08:00:00
 categories: 修正リスト
 tags: 19r7
-build: 100087
+build: 100097
 version: 19r7
 permalink: /283/:slug/
 ---
@@ -12,6 +12,10 @@ permalink: /283/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103430 大量のRESTリクエストを処理するとサーバーがクラッシュすることがありました。
+ 
+* ACI0103392 Windows版のみ。高解像ディスプレイのSDIモードでは`DRAG WINDOW`が正しく動作しませんでした。ドラッグしているウィンドウがマウスポインターの位置に表示されません。
+ 
 * ACI0103239 Mac版のみ。*clang* を使用したApple Siliconターゲットのコンパイル速度が遅くなりました。
 
 * ACI0103433 カレントモバイルプロジェクトを開くことができないことがありました。
