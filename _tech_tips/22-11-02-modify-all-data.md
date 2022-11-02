@@ -1,10 +1,10 @@
 ---
 layout: technote
 title: "すべてのテーブルのデータにアクセスする方法（その１）"
-position: 20221102
+position: 20221102001
 date: 2022-11-02 00:00:00
 categories: ヒント
-tags: DynamicForm listbox orda
+tags: DynamicForm listbox ORDA
 version: 19
 ---
 
