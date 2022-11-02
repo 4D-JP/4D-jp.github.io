@@ -4,8 +4,8 @@ title: "すべてのテーブルのデータにアクセスする方法（その
 position: 20221102001
 date: 2022-11-02 00:00:00
 categories: ヒント
-tags: DynamicForm ORDA
-version: 19
+tags: DynamicForm listbox ORDA
+version: 18 19
 ---
 
 すべてのテーブルのデータにアクセスするためのメソッドサンプルを紹介します。
