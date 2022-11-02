@@ -54,7 +54,10 @@ collections:
   tech_notes:
     output: true
     permalink: /:collection/:path/
-
+  tech_tips:
+    output: true
+    permalink: /:collection/:path/
+    
 # excerpt
 excerpt_separator: <!--more-->
 
