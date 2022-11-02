@@ -10,27 +10,27 @@ icon: question
       <h1>{{page.title}}</h1>
       <hr>
       <ul>
-      {% for tech_note in site.tech_notes reversed %}
+      {% for tech_tip in site.tech_tips reversed %}
       <li>
-      <h2><a class="post-link" href="{{ tech_note.url | prepend: site.baseurl }}">{{ tech_note.title }}</a></h2>      
+      <h2><a class="post-link" href="{{ tech_tip.url | prepend: site.baseurl }}">{{ tech_tip.title }}</a></h2>      
     
         <div class="label">
               
           <div class="label-card">
-            <i class="fa fa-calendar"></i>{{ tech_note.date | date: "%F" }}
+            <i class="fa fa-calendar"></i>{{ tech_tip.date | date: "%F" }}
           </div>
               
           <div class="label-card">
-          {% if tech_note.author %}<i class="fa fa-user"></i>{{ tech_note.author }}
+          {% if tech_tip.author %}<i class="fa fa-user"></i>{{ tech_tip.author }}
           {% endif %}
           </div>
           
           <div class="label-card">
-            {% if tech_note.meta %}<i class="fa fa-key"></i>{{ tech_note.meta }}  {% endif %}
+            {% if tech_tip.meta %}<i class="fa fa-key"></i>{{ tech_tip.meta }}  {% endif %}
           </div>
         
             {% capture categories %}
-                {% for category in tech_note.categories %}
+                {% for category in tech_tip.categories %}
                     <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
                 {% endfor %}
             {% endcapture %}
@@ -44,7 +44,7 @@ icon: question
             {% endunless %}
             
             {% capture tags %}
-                {% for tag in tech_note.tags %}
+                {% for tag in tech_tip.tags %}
                     <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
                 {% endfor %}
             {% endcapture %}   
@@ -59,7 +59,7 @@ icon: question
         
         </div> 
         <div class="excerpt">
-          {{tech_note.excerpt}}
+          {{tech_tip.excerpt}}
         </div>
         
       </li>
