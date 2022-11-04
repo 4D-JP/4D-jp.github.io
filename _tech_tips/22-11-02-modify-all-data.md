@@ -26,7 +26,7 @@ version: 18 19
 
 ## サンプル
 
-```4d
+```4d:sample.4dm
 Case of 
 	: (FORM Event=Null)
 		
