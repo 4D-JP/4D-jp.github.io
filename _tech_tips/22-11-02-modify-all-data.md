@@ -26,7 +26,7 @@ version: 18 19
 
 ## サンプル
 
-```4d
+```
 Case of 
 	: (FORM Event=Null)
 		
