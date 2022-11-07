@@ -1,13 +1,15 @@
 ---
 layout: fix
 title: "4D v19.4 修正リスト"
-date: 2022-11-04 08:00:00
+date: 2022-11-05 08:00:00
 categories: 修正リスト
 tags: "19.4"
-build: 283450
+build: 283479
 version: "19.4" 
 permalink: /293/:slug/
 ---
+
+* ACI0103438 Mac版のみ。文字列定数に`U+02DC`（`˜`）が使用されている場合，Apple Siliconターゲットのコンパイルがエラーを返しました。
 
 * ACI0103395 `WP SET ATTRIBUTES`の定数`wk page orientation`の後にセレクターとは無関係の定数`wk section index`が候補として表示されました。
 
