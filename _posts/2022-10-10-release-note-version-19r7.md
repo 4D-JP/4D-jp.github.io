@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19r7 修正リスト"
-date: 2022-11-07 08:00:00
+date: 2022-11-09 08:00:00
 categories: 修正リスト
 tags: 19r7
-build: 100121
+build: 100125
 version: 19r7
 permalink: /283/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103465 ブール型の変数を`Formula`で作成した`4D.Function`オブジェクトにパラメーターとしてキャプチャさせることができませんでした。
 
 * ACI0103440 インタープリターモードのみ。`#DECLARE`構文で戻り値を宣言せず，コンパイラー宣言（`C_DATE` `C_LONGINT`など）で`$0`を宣言した場合，アプリケーションがクラッシュしました。コンパイルモードでは問題ありません。
 
