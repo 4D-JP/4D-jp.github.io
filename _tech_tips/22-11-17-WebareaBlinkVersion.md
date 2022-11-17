@@ -38,6 +38,13 @@ Case of
 		
 	: (Form event code=On Load)
 		
+		//外部リンクをフィルタリングする
+		ARRAY TEXT($url; 0)
+		ARRAY BOOLEAN($filter; 0)
+		APPEND TO ARRAY($url; "*.*")
+		APPEND TO ARRAY($filter; False)
+		WA SET URL FILTERS(*; "Web Area"; $url; $filter)
+		//情報を表示
 		WA OPEN URL(*; "Web Area"; "chrome://version/")
 		
 End case 
