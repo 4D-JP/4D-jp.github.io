@@ -8,6 +8,10 @@ tags: system mac
 
 Mac版で`LOG EVENT`に*4D debug message* オプションを指定して出力したメッセージはコンソールの標準ログ（デバイス）に出力されます。コマンドが呼び出しているのは`syslog()`です。かつてMac OS Xでは*system.log* にメッセージが出力されましたが，Appleの仕様が変更され，*system.log* はオペレーションシステムのコンポーネントがレポートを出力するファイルとされています。
 
+```4d
+LOG EVENT(Into 4D debug message; "¯\\_(⊙︿⊙)_//¯"; Error message)
+```
+
 <img width="852" alt="" src="https://user-images.githubusercontent.com/10509075/203306189-5a5aebb2-4e6c-4c7f-9dae-216088907d3a.png">
 
 <i class="fa fa-external-link" aria-hidden="true"></i> https://support.apple.com/en-gb/guide/console/cnsl664be99a/1.1/mac/12.0
