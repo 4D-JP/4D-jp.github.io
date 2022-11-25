@@ -93,7 +93,7 @@ End case
 //GraphQL APIのエンドポイントはたったの１つ
 $url:="https://api.github.com/graphql"
 
-//クエリ文字列（JSON似ているがJSONではない）
+//クエリ文字列（JSONに似ているがJSONではない）
 $query:="query {\n viewer {\n login\n email\n }\n}"
 
 //ヘッダーに個人用アクセストークンをセットする
