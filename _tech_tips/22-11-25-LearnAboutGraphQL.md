@@ -10,6 +10,8 @@ version: 19
 
 GraphQLの利用方法を学ぶ最初の一歩として、GitHubで公開されているGraphQL APIを使い、ログインができているかを確認する例題を作成してみました。
 
+<!--more-->
+
 関連URL: [https://docs.github.com/ja/graphql](https://docs.github.com/ja/graphql)
 
 GraphQL APIは、基本的にJSONフォーマットでGraphQLサーバーと会話しますので、４Ｄのオブジェクト型変数との親和性が高く、シンプルなコードで利用することができます。
