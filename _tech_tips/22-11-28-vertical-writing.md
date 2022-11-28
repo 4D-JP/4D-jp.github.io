@@ -51,17 +51,6 @@ SVGでテキストを表示するとき、正しいサイズで文字を表示�
 // SVGを組み立ててピクチャー変数で受け取る
 $text:=\
 "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>"+\
-"<svg height=\"300\" width=\"300\">"+\
-"<text x=\"150\" y=\"60\" fill=\"red\" font-size=\"32px\" writing-mode=\"tb\">縦書きの例</text>"+\
-"</svg>"
-$xml:=DOM Parse XML variable($text)
-SVG EXPORT TO PICTURE($xml; $pict)
-DOM CLOSE XML($xml)
-
-// 表示するためのフォームを組み立てる
-// SVGを組み立ててピクチャー変数で受け取る
-$text:=\
-"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>"+\
 "<svg height=\"500\" width=\"300\">"+\
 "<text x=\"150\"  y=\"60\" fill=\"red\" font-size=\"32px\" writing-mode=\"tb\">縦書きスーパーテキスト</text>"+\
 "</svg>"
