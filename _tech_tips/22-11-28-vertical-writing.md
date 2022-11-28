@@ -25,7 +25,7 @@ SVGはXMLですので、実際には次のようなXMLを組み立ててフォ�
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <svg>
-<text x="10"  y="10" fill="red" writing-mode="tb">縦書きスーパーテキスト</text>
+<text x="10" y="10" fill="red" writing-mode="tb">縦書きスーパーテキスト</text>
 </svg>
 ```
 
@@ -37,7 +37,7 @@ SVGはXMLですので、実際には次のようなXMLを組み立ててフォ�
 $text:=\
 "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>"+\
 "<svg>"+\
-"<text x=\"10\"  y=\"10\" fill=\"red\" writing-mode=\"tb\">縦書きスーパーテキスト</text>"+\
+"<text x=\"10\" y=\"10\" fill=\"red\" writing-mode=\"tb\">縦書きスーパーテキスト</text>"+\
 "</svg>"
 $svg:=DOM Parse XML variable($text)
 SVGTool_SHOW_IN_VIEWER($svg)
@@ -52,7 +52,7 @@ SVGでテキストを表示するとき、正しいサイズで文字を表示�
 $text:=\
 "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>"+\
 "<svg height=\"300\" width=\"300\">"+\
-"<text x=\"150\"  y=\"60\" fill=\"red\" font-size=\"32px\" writing-mode=\"tb\">縦書きの例</text>"+\
+"<text x=\"150\" y=\"60\" fill=\"red\" font-size=\"32px\" writing-mode=\"tb\">縦書きの例</text>"+\
 "</svg>"
 $xml:=DOM Parse XML variable($text)
 SVG EXPORT TO PICTURE($xml; $pict)
