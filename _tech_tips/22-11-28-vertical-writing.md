@@ -21,7 +21,8 @@ SVGで縦書きをするためには、writing-modeプロパティにtbをセッ
 CSS Writing Modes Level 3になると、writing-modeプロパティにvertical-rlなどをセットしますが、４ＤのSVGでは利用できませんので注意が必要です。
 
 SVGはXMLですので、実際には次のようなXMLを組み立ててフォームなどで表示することになります。
-```svg
+
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <svg>
 <text x="10"  y="10" fill="red" writing-mode="tb">縦書きスーパーテキスト</text>
@@ -58,11 +59,22 @@ SVG EXPORT TO PICTURE($xml; $pict)
 DOM CLOSE XML($xml)
 
 // 表示するためのフォームを組み立てる
+// SVGを組み立ててピクチャー変数で受け取る
+$text:=\
+"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>"+\
+"<svg height=\"500\" width=\"300\">"+\
+"<text x=\"150\"  y=\"60\" fill=\"red\" font-size=\"32px\" writing-mode=\"tb\">縦書きスーパーテキスト</text>"+\
+"</svg>"
+$xml:=DOM Parse XML variable($text)
+SVG EXPORT TO PICTURE($xml; $pict)
+DOM CLOSE XML($xml)
+
+// 表示するためのフォームを組み立てる
 $page:=New object
 $page.objects:=New object
 $page.objects.Input:=New object(\
 "type"; "input"; \
-"left"; 0; "top"; 0; "width"; 300; "height"; 300; \
+"left"; 0; "top"; 0; "width"; 300; "height"; 500; \
 "dataSource"; "Form.svg"; \
 "dataSourceTypeHint"; "picture"; \
 "enterable"; False; \
