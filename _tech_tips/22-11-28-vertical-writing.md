@@ -72,7 +72,7 @@ $dynForm:=New object("rightMargin"; 0; "bottomMargin"; 0)
 $dynForm.pages:=New collection($page)
 
 // ピクチャー変数をダイナミックフォームのパラメーターでフォームに渡す
-$ref:=Open form window($dynForm; )
+$ref:=Open form window($dynForm)
 DIALOG($dynForm; New object("svg"; $pict))
 ```
 
