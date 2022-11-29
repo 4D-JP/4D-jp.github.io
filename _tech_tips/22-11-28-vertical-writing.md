@@ -95,7 +95,7 @@ Else
 	$dynForm.markerHeader:=0  //SVGが印刷されるようにマーカーを調整
 	$dynForm.markerBody:=500  //SVGが印刷されるようにマーカーを調整
 	//WindowsではGDIモードを利用する
-	SET PRINT OPTION(Legacy printing layer option; 1)  //Windowsで必須
+	SET PRINT OPTION(Legacy printing layer option; 1)  //Windowsで必須（Macでは無視される）
 	//印刷の開始
 	PRINT SETTINGS
 	OPEN PRINTING JOB
