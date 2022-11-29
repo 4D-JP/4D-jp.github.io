@@ -43,7 +43,7 @@ $svg:=DOM Parse XML variable($text)
 SVGTool_SHOW_IN_VIEWER($svg)
 DOM CLOSE XML($svg)
 ```
-font-family属性でフォントファミリーを指定できますが、Windowsでは将来の互換性を確保するためには、DirectWriteフォントファミリーを使用することが推奨されます。
+font-family属性でフォントファミリーを指定できますが、Windowsでは将来の互換性を確保するためにDirectWriteフォントファミリーを使用することが推奨されます。
 
 応用としては、SVGを記述したファイルをResourcesフォルダに配置して、それをFileコマンドなどで読み込むようにすることで、メンテナンス性を高められると思います。
 また、SVGは基本的にXMLですので、SVGに4Dタグを埋め込み、PROCESS 4D TAGSコマンドで評価させてダイナミックに値を変更することも良い方法だと思います。
