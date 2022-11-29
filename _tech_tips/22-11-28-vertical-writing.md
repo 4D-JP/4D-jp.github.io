@@ -22,7 +22,7 @@ CSS Writing Modes Level 3になると、writing-modeプロパティにvertical-r
 
 SVGはXMLですので、実際には次のようなXMLを組み立ててフォームなどで表示することになります。
 
-```xml
+```svg
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <svg>
 <text x="10" y="10" fill="red" writing-mode="tb">縦書きスーパーテキスト</text>
