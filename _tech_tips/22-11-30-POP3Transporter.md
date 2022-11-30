@@ -86,10 +86,10 @@ For each ($mail; $mailInfo)  // コレクションをループして処理する
 		// 添付ファイルをサーバーからダウンロードしてレコードに保存
 		If ($mailObject.attachments#Null)
 			For ($i; 0; $mailObject.attachments.length-1)
-				$blob:=$mailObject.attachments[$i].getContent()
-				BASE64 ENCODE($blob)
-				$newRecord.content.attachments[$i].object:=Convert to text($blob; "UTF-8")
-				For each ($propaty; $mailObject.attachments[$i])
+				$blob:=$mailObject.attachments[$i].getContent() // 添付ファイルをダウンロード
+				BASE64 ENCODE($blob)　// オブジェクトとして保存するためBase64エンコード
+				$newRecord.content.attachments[$i].object:=Convert to text($blob; "UTF-8")　// オブジェクトとして保存
+				For each ($propaty; $mailObject.attachments[$i]) 　// 他のプロパティもオブジェクトとして保存
 					$newRecord.content.attachments[$i][$propaty]:=$mailObject.attachments[$i][$propaty]
 				End for each 
 			End for 
@@ -109,7 +109,7 @@ End for each
 $selection:=ds.mails.query("id = :1"; $id)  // $idで復元するメールを探す
 If ($selection.length#0)  // 該当メールがあるか
 	$path:=Select folder("保存先のフォルダーを指定してください")
-	For each ($attach; $selection[0].content.attachments)  // 添付ファイルの数に合わせてループ
+	For each ($attach; $selection[0].content.attachments)  // すべての添付ファイルをループして処理する
 		$file:=File($path+$attach.name; fk platform path)  // 生成するファイルのファイルオブジェクトを取得
 		If ($file.exists=False)  // ファイルは存在しないことを確認
 			CONVERT FROM TEXT($attach.object; "UTF-8"; $blob)
