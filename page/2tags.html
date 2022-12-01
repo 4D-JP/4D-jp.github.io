@@ -11,7 +11,7 @@ icon: tags
         <hr>
             {% capture tags %}
                 {% for tag in site.tags %}
-                    {% assign posts = site.tags[tag] | where_exp:"post", "post.category != '修正リスト' " %}
+                    {% assign posts = site.tags[tag] | where_exp:"post", "post.categories != '修正リスト' " %}
                         {% if posts.size != 0 %}
                             {{ tag[0] }}
                         {% endif %}
@@ -26,6 +26,8 @@ icon: tags
             
             {% assign sorted_tags = post_tags | uniq | sort %}
             
+        <h1>{{ post_tags }}</h2>
+        
             <ul>
                 
                 {% for tag in sorted_tags %}
@@ -94,7 +96,7 @@ icon: tags
                 
                 
                 {% if site.tags[tag] %}
-                    {% assign posts = site.tags[tag] | where_exp:"post", "post.category != '修正リスト' " %}
+                    {% assign posts = site.tags[tag] | where_exp:"post", "post.categories != '修正リスト' " %}
                     {% for post in posts %}
                     <li>
                         <time>
