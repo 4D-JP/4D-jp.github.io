@@ -19,33 +19,64 @@ icon: tags
         {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
         
         {% assign post_tags = tags | split:' ' %}
-        {% assign all_tags = techtip_tags | concat:technote_tags | concat:post_tags %}
-        {% assign sortedtags = all_tags | uniq | sort %}
+        
+        {% assign tech_tags = techtip_tags | concat:technote_tags %}
+        {% assign sorted_tech_tags = tech_tags | uniq | sort %}
+        
+        {% assign all_tags = post_tags | concat:tech_tags %}
+        {% assign sorted_tags = all_tags | uniq | sort %}
         
         <ul>
                 
-        {% for tag in sortedtags %}
+        {% for tag in sorted_tech_tags %}
             
 <h2 id="{{ tag }}">{{ tag }}</h2>
-    
-  {% for tech_note in site.tech_notes %}
-    {% if tech_note.tags contains tag %}
+
+  {% for tech_tip in site.tech_tips %}
+    {% if tech_tip.tags contains tag %}
     <li>
-        <i class="fa fa-file-text-o"></i><a class="title" href="{{ tech_note.url }}">{{ tech_note.title }}</a>
-        
+        <i class="fa fa-question"></i><a class="title" href="{{ tech_tip.url }}">{{ tech_tip.title }}</a>
         {% capture categories %}
-            {% for category in tech_note.categories %}
+            {% for category in tech_tip.categories %}
                 <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
             {% endfor %}
-        {% endcapture %}
-        
+        {% endcapture %}  
         {% capture category_size %}{{ categories | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
         {% unless category_size == '0' %}
             <span class="categories">
               <i class="fa fa-th-list"></i>{{ categories }}
             </span>             
-        {% endunless %}
+        {% endunless %}            
+        {% capture tags %}
+            {% for tag in tech_tip.tags %}
+                <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+            {% endfor %}
+        {% endcapture %}   
+        {% capture tag_size %}{{ tags | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
+        {% unless category_size == '0' %}
+          <span class="pageTag">
+          <i class="fa fa-tags"></i>{{ tags }}
+        </span>         
+        {% endunless %}         
+    </li>            
+    {% endif %}
+  {% endfor %}
             
+  {% for tech_note in site.tech_notes %}
+    {% if tech_note.tags contains tag %}
+    <li>
+        <i class="fa fa-file-text-o"></i><a class="title" href="{{ tech_note.url }}">{{ tech_note.title }}</a>
+        {% capture categories %}
+            {% for category in tech_note.categories %}
+                <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+            {% endfor %}
+        {% endcapture %}  
+        {% capture category_size %}{{ categories | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
+        {% unless category_size == '0' %}
+            <span class="categories">
+              <i class="fa fa-th-list"></i>{{ categories }}
+            </span>             
+        {% endunless %}            
         {% capture tags %}
             {% for tag in tech_note.tags %}
                 <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
@@ -79,13 +110,10 @@ icon: tags
                     タグ
                 </div>
                 <ul id="content-side" class="content-ul">
-                    {% for tag in sortedtags %}
+                    {% for tag in sorted_tech_tags %}
                     <li>
                         {% assign tag_size = 0 %}
-                        {% if site.tags[tag] %}
-                            {% assign tag_size = site.tags[tag].size %}
-                        {% endif %}
-                        
+
                         {% for tech_note in site.tech_notes %}
                             {% if tech_note.tags contains tag %}
                                 {% assign tag_size = tag_size | plus: 1 %}
