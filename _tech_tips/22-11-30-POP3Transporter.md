@@ -64,9 +64,9 @@ XMLで記述しますと次のようになります。
 // サーバーアカウントの設定
 var $server : Object
 $server:=New object
-$server.host:="pop.gmail.com"  // 必須
+$server.host:="pop.example.com"  // 必須
 $server.port:=995
-$server.user:="4d@gmail.com"
+$server.user:="4d@example.com"
 $server.password:="XXXXXXXX"
 
 // トランスポーターオブジェクトの生成（メールサーバーにログイン）
