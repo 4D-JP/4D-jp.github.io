@@ -9,28 +9,15 @@ icon: tags
     <div class="left">
         <h1>{{page.title}}</h1>
         <hr>
-            {% capture tags %}
-                {% for tag in site.tags %}
-                    {% assign posts = site.tags[tag] | where_exp:"post", "post.categories != '修正リスト' " %}
-                        {% if posts.size != 0 %}
-                            {{ tag[0] }}
-                        {% endif %}
-                    {% endfor %}
-            {% endcapture %}
-            {% assign post_tags = tags | split:' ' %}
-        
+                
             {% assign technote_tags = site.tech_notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
             {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
             {% assign tech_tags = techtip_tags | concat:technote_tags %}
             {% assign sorted_tech_tags = tech_tags | uniq | sort %}
-            
-            {% assign sorted_tags = post_tags | uniq | sort %}
-            
-        <h1>{{ post_tags }}</h2>
-        
+    
             <ul>
                 
-                {% for tag in sorted_tags %}
+                {% for tag in sorted_tech_tags %}
                 
                 <h2 id="{{ tag }}">{{ tag }}</h2>
                 
@@ -94,21 +81,6 @@ icon: tags
                 {% endif %}
                 {% endfor %}
                 
-                
-                {% if site.tags[tag] %}
-                    {% assign posts = site.tags[tag] | where_exp:"post", "post.categories != '修正リスト' " %}
-                    {% for post in posts %}
-                    <li>
-                        <time>
-                            {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                        </time>
-                        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-                        {% include category.html %}
-                        {% include tag.html %}
-                    </li>
-                    {% endfor %}                    
-                {% endif %}
-
                 {% endfor %}
             </ul>
         </div>
@@ -123,15 +95,10 @@ icon: tags
                         タグ
                     </div>
                     <ul id="content-side" class="content-ul">
-                        {% for tag in sorted_tags %}
+                        {% for tag in sorted_tech_tags %}
                         <li>
                             {% assign tag_size = 0 %}
-                            
-                            {% if site.tags[tag] %}
-                            {% assign posts = site.tags[tag] | where_exp:"post", "post.category != '修正リスト' " %}
-                            {% assign tag_size = posts.size %}
-                            {% endif %}
-                            
+                                                        
                             {% for tech_note in site.tech_notes %}
                             {% if tech_note.tags contains tag %}
                             {% assign tag_size = tag_size | plus: 1 %}
@@ -143,12 +110,8 @@ icon: tags
                             {% assign tag_size = tag_size | plus: 1 %}
                             {% endif %}
                             {% endfor %}
-                            
-                            <!-- css id starting with number is illegal -->
-                            
-                            {% assign tagid = tag | replace_first: "1", "\31" %}
-                            
-                            <a class="scroll" href="#{{ tagid }}">
+                                                                                    
+                            <a href="#{{ tag }}">
                                 {{ tag }} ({{ tag_size }})
                             </a>
                         </li>
