@@ -17,7 +17,7 @@ icon: tags
             {% endunless %}
             {% endcapture %}
             {% endfor %}
-            {% assign sorted_post_tags = post_tags | uniq | sort %}
+            {% assign sorted_post_tags = post_tags | join: ' '  | split: ' ' | uniq | sort %}
         
             {% assign technote_tags = site.tech_notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
             {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
