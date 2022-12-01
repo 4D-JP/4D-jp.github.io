@@ -9,154 +9,153 @@ icon: tags
     <div class="left">
         <h1>{{page.title}}</h1>
         <hr>
-        {% capture tags %}
-          {% for tag in site.tags %}
-            {% assign posts = site.tags[tag] | where_exp:"post", "post.category != '修正リスト' " %}
-            {% if posts.size != 0 %}
-                {{ tag[0] }}
-            {% endif %}       
-          {% endfor %}
-        {% endcapture %}
+            {% capture tags %}
+                {% for tag in site.tags %}
+                    {% assign posts = site.tags[tag] | where_exp:"post", "post.category != '修正リスト' " %}
+                        {% if posts.size != 0 %}
+                            {{ tag[0] }}
+                        {% endif %}
+                    {% endfor %}
+            {% endcapture %}
+            {% assign post_tags = tags | split:' ' %}
         
-        {% assign technote_tags = site.tech_notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
-        {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
-        
-        {% assign post_tags = tags | split:' ' %}
-        
-        {% assign tech_tags = techtip_tags | concat:technote_tags %}
-        {% assign sorted_tech_tags = tech_tags | uniq | sort %}
-        
-        {% assign all_tags = post_tags | concat:tech_tags %}
-        {% assign sorted_tags = all_tags | uniq | sort %}
-        
-        <ul>
+            {% assign technote_tags = site.tech_notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
+            {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
+            {% assign tech_tags = techtip_tags | concat:technote_tags %}
+            {% assign sorted_tech_tags = tech_tags | uniq | sort %}
+            
+            {% assign sorted_tags = post_tags | uniq | sort %}
+            
+            <ul>
                 
-        {% for tag in sorted_tags %}
-            
-<h2 id="{{ tag }}">{{ tag }}</h2>
-
-  {% for tech_tip in site.tech_tips %}
-    {% if tech_tip.tags contains tag %}
-    <li>
-        <i class="fa fa-question"></i><a class="title" href="{{ tech_tip.url }}">{{ tech_tip.title }}</a>
-        {% capture categories %}
-            {% for category in tech_tip.categories %}
-                <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
-            {% endfor %}
-        {% endcapture %}  
-        {% capture category_size %}{{ categories | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
-        {% unless category_size == '0' %}
-            <span class="categories">
-              <i class="fa fa-th-list"></i>{{ categories }}
-            </span>             
-        {% endunless %}            
-        {% capture tags %}
-            {% for tag in tech_tip.tags %}
-                <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
-            {% endfor %}
-        {% endcapture %}   
-        {% capture tag_size %}{{ tags | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
-        {% unless category_size == '0' %}
-          <span class="pageTag">
-          <i class="fa fa-tags"></i>{{ tags }}
-        </span>         
-        {% endunless %}         
-    </li>            
-    {% endif %}
-  {% endfor %}
-            
-  {% for tech_note in site.tech_notes %}
-    {% if tech_note.tags contains tag %}
-    <li>
-        <i class="fa fa-file-text-o"></i><a class="title" href="{{ tech_note.url }}">{{ tech_note.title }}</a>
-        {% capture categories %}
-            {% for category in tech_note.categories %}
-                <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
-            {% endfor %}
-        {% endcapture %}  
-        {% capture category_size %}{{ categories | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
-        {% unless category_size == '0' %}
-            <span class="categories">
-              <i class="fa fa-th-list"></i>{{ categories }}
-            </span>             
-        {% endunless %}            
-        {% capture tags %}
-            {% for tag in tech_note.tags %}
-                <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
-            {% endfor %}
-        {% endcapture %}   
-        {% capture tag_size %}{{ tags | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
-        {% unless category_size == '0' %}
-          <span class="pageTag">
-          <i class="fa fa-tags"></i>{{ tags }}
-        </span>         
-        {% endunless %}         
-    </li>            
-    {% endif %}
-  {% endfor %}
- 
-  {% for post in site.tags[tag] %}
-    {% if post.category != '修正リスト' %}
-    <li>
-        <time>
-        {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-        </time>
-        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-        {% include category.html %}
-        {% include tag.html %}
-    </li>
-    {% endif %}
-  {% endfor %}          
-            
-{% endfor %}
-</ul>
-</div>
-    
-    
-    <button class="anchor"><i class="fa fa-anchor"></i></button>
-    <div class="right">
-        <div class="wrap">
-
-            <!-- Content -->
-            <div class="side content">
-                <div>
-                    タグ
-                </div>
-                <ul id="content-side" class="content-ul">
-                    {% for tag in sorted_tech_tags %}
+                {% for tag in sorted_tags %}
+                
+                <h2 id="{{ tag }}">{{ tag }}</h2>
+                
+                {% for tech_tip in site.tech_tips %}
+                {% if tech_tip.tags contains tag %}
+                <li>
+                    <i class="fa fa-question"></i><a class="title" href="{{ tech_tip.url }}">{{ tech_tip.title }}</a>
+                    {% capture categories %}
+                    {% for category in tech_tip.categories %}
+                    <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}
+                    {% endcapture %}
+                    {% capture category_size %}{{ categories | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
+                    {% unless category_size == '0' %}
+                    <span class="categories">
+                        <i class="fa fa-th-list"></i>{{ categories }}
+                    </span>
+                    {% endunless %}
+                    {% capture tags %}
+                    {% for tag in tech_tip.tags %}
+                    <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}
+                    {% endcapture %}
+                    {% capture tag_size %}{{ tags | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
+                    {% unless category_size == '0' %}
+                    <span class="pageTag">
+                        <i class="fa fa-tags"></i>{{ tags }}
+                    </span>
+                    {% endunless %}
+                </li>
+                {% endif %}
+                {% endfor %}
+                
+                {% for tech_note in site.tech_notes %}
+                {% if tech_note.tags contains tag %}
+                <li>
+                    <i class="fa fa-file-text-o"></i><a class="title" href="{{ tech_note.url }}">{{ tech_note.title }}</a>
+                    {% capture categories %}
+                    {% for category in tech_note.categories %}
+                    <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}
+                    {% endcapture %}
+                    {% capture category_size %}{{ categories | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
+                    {% unless category_size == '0' %}
+                    <span class="categories">
+                        <i class="fa fa-th-list"></i>{{ categories }}
+                    </span>
+                    {% endunless %}
+                    {% capture tags %}
+                    {% for tag in tech_note.tags %}
+                    <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}
+                    {% endcapture %}
+                    {% capture tag_size %}{{ tags | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
+                    {% unless category_size == '0' %}
+                    <span class="pageTag">
+                        <i class="fa fa-tags"></i>{{ tags }}
+                    </span>
+                    {% endunless %}
+                </li>
+                {% endif %}
+                {% endfor %}
+                
+                
+                {% if site.tags[tag] %}
+                    {% assign posts = site.tags[tag] | where_exp:"post", "post.category != '修正リスト' " %}
+                    {% for post in posts %}
                     <li>
-                        {% assign tag_size = 0 %}
+                        <time>
+                            {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                        </time>
+                        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+                        {% include category.html %}
+                        {% include tag.html %}
+                    </li>
+                    {% endfor %}                    
+                {% endif %}
 
-                        {% if site.tags[tag] %}
+                {% endfor %}
+            </ul>
+        </div>
+        
+        <button class="anchor"><i class="fa fa-anchor"></i></button>
+        <div class="right">
+            <div class="wrap">
+                
+                <!-- Content -->
+                <div class="side content">
+                    <div>
+                        タグ
+                    </div>
+                    <ul id="content-side" class="content-ul">
+                        {% for tag in sorted_tags %}
+                        <li>
+                            {% assign tag_size = 0 %}
+                            
+                            {% if site.tags[tag] %}
                             {% assign posts = site.tags[tag] | where_exp:"post", "post.category != '修正リスト' " %}
                             {% assign tag_size = posts.size %}
-                        {% endif %}
-                        
-                        {% for tech_note in site.tech_notes %}
+                            {% endif %}
+                            
+                            {% for tech_note in site.tech_notes %}
                             {% if tech_note.tags contains tag %}
-                                {% assign tag_size = tag_size | plus: 1 %}
+                            {% assign tag_size = tag_size | plus: 1 %}
                             {% endif %}
-                        {% endfor %}
-                        
-                        {% for tech_tip in site.tech_tips %}
+                            {% endfor %}
+                            
+                            {% for tech_tip in site.tech_tips %}
                             {% if tech_tip.tags contains tag %}
-                                {% assign tag_size = tag_size | plus: 1 %}
+                            {% assign tag_size = tag_size | plus: 1 %}
                             {% endif %}
+                            {% endfor %}
+                            
+                            <!-- css id starting with number is illegal -->
+                            
+                            {% assign tagid = tag | replace_first: '0', '\30' | replace_first: '1', '\31' | replace_first: '2', '\32' | replace_first: '3', '\33'  | replace_first: '4', '\34' | replace_first: '5', '\35' | replace_first: '6', '\36'  | replace_first: '7', '\37' | replace_first: '8', '\38' | replace_first: '9', '\39' %}
+                            
+                            <a class="scroll" href="#{{ tagid }}">
+                                {{ tag }} ({{ tag_size }})
+                            </a>
+                        </li>
                         {% endfor %}
                         
-                        <!-- css id starting with number is illegal -->
-                        
-                        {% assign tagid = tag | replace_first: '0', '\30' | replace_first: '1', '\31' | replace_first: '2', '\32' | replace_first: '3', '\33'  | replace_first: '4', '\34' | replace_first: '5', '\35' | replace_first: '6', '\36'  | replace_first: '7', '\37' | replace_first: '8', '\38' | replace_first: '9', '\39' %}
-                        
-                        <a class="scroll" href="#{{ tagid }}">
-                            {{ tag }} ({{ tag_size }})
-                        </a>
-                    </li>
-                    {% endfor %}
-
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+    <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+   
