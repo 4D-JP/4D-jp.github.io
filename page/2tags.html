@@ -9,12 +9,17 @@ icon: tags
     <div class="left">
         <h1>{{page.title}}</h1>
         <hr>
-                
+            
+        {% assign posts = site.posts | where_exp : "post", "unless post.categories contains '修正リスト' " %}
+        {% assign posts_tags = posts | map: 'tags' | join: ' '  | split: ' ' | uniq %}
+        
             {% assign technote_tags = site.tech_notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
             {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
             {% assign tech_tags = techtip_tags | concat:technote_tags %}
             {% assign sorted_tech_tags = tech_tags | uniq | sort %}
     
+        <p>{{ posts_tags }}</p>
+        
             <ul>
                 
                 {% for tag in sorted_tech_tags %}
