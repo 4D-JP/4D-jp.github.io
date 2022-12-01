@@ -4,7 +4,7 @@ title: "シンプルなPOP3トランスポーターの例題"
 position: 20221130001
 date: 2022-11-30 00:00:00
 categories: ヒント
-tags: HTTP REST
+tags: mail pop3
 version: 19
 ---
 
