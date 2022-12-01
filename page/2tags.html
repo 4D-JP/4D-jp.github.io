@@ -9,14 +9,14 @@ icon: tags
     <div class="left">
         <h1>{{page.title}}</h1>
         <hr>
-            
-            {% for post in site.posts %}
+
             {% capture post_tags %}
-            {% unless post.categories contains '修正リスト' %}
-            {{ post.tags }}
-            {% endunless %}
+                {% for post in site.posts %}
+                    {% unless post.categories contains '修正リスト' %}
+                        {{ post.tags }}
+                    {% endunless %}
+                {% endfor %}
             {% endcapture %}
-            {% endfor %}
         
         <p>{{ post_tags }}</p>
         
@@ -93,18 +93,7 @@ icon: tags
                 {% endif %}
                 {% endfor %}
                 
-                {% for post in site.posts | where_exp: "post", "post.tags contains tag" %}
-                    {% unless post.categories contains '修正リスト' %}
-                        <li>
-                        <time>
-                        {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                        </time>
-                        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-                        {% include category.html %}
-                        {% include tag.html %}
-                        </li>
-                    {% endunless %}
-                {% endfor %}
+
                
                 {% endfor %}
             </ul>
