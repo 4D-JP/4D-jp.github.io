@@ -24,8 +24,8 @@ icon: tags
             {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
             {% assign tech_tags = techtip_tags | concat:technote_tags %}
             {% assign list_tags = tech_tags | concat:other_tags %}
-            {% assign sorted_tech_tags = tech_tags | uniq | sort %}
-            {% assign sorted_list_tags = list_tags | uniq | sort %}
+            {% assign sorted_tech_tags = tech_tags | uniq | sort_natural | reverse %}
+            {% assign sorted_list_tags = list_tags | uniq | sort_natural | reverse %}
         
             <ul>
                 
