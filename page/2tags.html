@@ -35,7 +35,8 @@ icon: tags
             </li>
           {% endfor %}
             
-  {% for tech_note in site.tech_notes %}
+  {% assign all_posts = site.tech_notes | concat:site.tech_tips %}          
+  {% for tech_note in all_posts %}
     {% if tech_note.tags contains tag %}
     <li>
         
