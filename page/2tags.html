@@ -26,21 +26,8 @@ icon: tags
                 
         {% for tag in sortedtags %}
             
-          <h2 id="{{ tag }}">{{ tag }}</h2>
-            
-          <!--  
-          {% for post in site.tags[tag] %}
-            <li>
-                <time>
-                {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                </time>
-                <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-                {% include category.html %}
-                {% include tag.html %}
-            </li>
-          {% endfor %}
-          -->
-            
+<h2 id="{{ tag }}">{{ tag }}</h2>
+    
   {% for tech_note in site.tech_notes %}
     {% if tech_note.tags contains tag %}
     <li>
@@ -113,7 +100,9 @@ icon: tags
                         
                         <!-- css id starting with number is illegal -->
                         
-                        <a class="scroll" href="#{{ tag }}">
+                        {% assign tagid = tag | replace_first: '0', '\30' | replace_first: '1', '\31' | replace_first: '2', '\32' | replace_first: '3', '\33'  | replace_first: '4', '\34' | replace_first: '5', '\35' | replace_first: '6', '\36'  | replace_first: '7', '\37' | replace_first: '8', '\38' | replace_first: '9', '\39' %}
+                        
+                        <a class="scroll" href="#{{ tagid }}">
                             {{ tag }} ({{ tag_size }})
                         </a>
                     </li>
