@@ -24,8 +24,8 @@ icon: tags
             {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
             {% assign tech_tags = techtip_tags | concat:technote_tags %}
             {% assign list_tags = tech_tags | concat:other_tags %}
-            {% assign sorted_tech_tags = tech_tags | uniq | sort_natural | reverse %}
-            {% assign sorted_list_tags = list_tags | uniq | sort_natural | reverse %}
+            {% assign sorted_tech_tags = tech_tags | uniq | sort_natural  %}
+            {% assign sorted_list_tags = list_tags | uniq | sort_natural  %}
         
             <ul>
                 
@@ -124,7 +124,7 @@ icon: tags
                         タグ
                     </div>
                     <ul id="content-side" class="content-ul">
-                        {% for tag in sorted_tech_tags %}
+                        {% for tag in sorted_list_tags %}
                         <li>
                             {% assign tag_size = 0 %}
                                                         
@@ -139,6 +139,13 @@ icon: tags
                             {% assign tag_size = tag_size | plus: 1 %}
                             {% endif %}
                             {% endfor %}
+                            
+                            {% for post in site.posts %}
+{% if post.tags contains tag %}
+                    {% unless post.categories contains '修正リスト' %}
+{% assign tag_size = tag_size | plus: 1 %}
+                    {% endunless %}
+{% endfor %}
                                                                                     
                             <a href="#{{ tag }}">
                                 {{ tag }} ({{ tag_size }})
