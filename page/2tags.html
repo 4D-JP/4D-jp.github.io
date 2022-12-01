@@ -13,13 +13,12 @@ icon: tags
             {% capture post_tags %}
                 {% for post in site.posts %}
                     {% unless post.categories contains '修正リスト' %}
-                    {% assign post_tag = post.tags | join: ' ' %}
-                        {{ post_tag }}
+                        {{ post.tags }}
                     {% endunless %}
                 {% endfor %}
             {% endcapture %}
         
-            {% assign other_tags = post_tags | split: ' ' %}
+            {% assign other_tags = post_tags | join: ' ' | split: ' ' %}
 
             {% assign technote_tags = site.tech_notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
             {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
@@ -92,22 +91,6 @@ icon: tags
                 {% endif %}
                 {% endfor %}
                 
-                
-{% for post in site.posts %}
-{% if post.tags contains tag %}
-{% unless post.categories contains '修正リスト' %}
-<li>
-<time>
-{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-</time>
-<a class="title" href="{{ post.url }}">{{ post.title }}</a>
-{% include category.html %}
-{% include tag.html %}
-</li>
-{% endif %}
-{% endunless %}
-{% endfor %}
-                
 
                
                 {% endfor %}
@@ -140,7 +123,7 @@ icon: tags
                             {% endif %}
                             {% endfor %}
                                                                                     
-                            <a class="scroll" href="#{{ tag }}">
+                            <a href="#{{ tag }}">
                                 {{ tag }} ({{ tag_size }})
                             </a>
                         </li>
