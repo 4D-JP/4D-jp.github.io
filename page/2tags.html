@@ -13,9 +13,8 @@ icon: tags
             {% capture post_tags %}
                 {% for post in site.posts %}
                     {% unless post.categories contains '修正リスト' %}
-                    {% for tag in post.tags %}
-                        {{ tag }}
-                    {% endfor %}
+                    {% assign post_tag = post.tags | join: ' ' %}
+                        {{ post_tag }}
                     {% endunless %}
                 {% endfor %}
             {% endcapture %}
