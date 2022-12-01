@@ -18,7 +18,8 @@ icon: tags
                 {% endfor %}
             {% endcapture %}
         
-        <p>{{ post_tags }}</p>
+        {% assign sorted_post_tags = post_tags | split: ' ' | uniq | sort %}
+        <p>{{ sorted_post_tags }}</p>
         
                 
         
