@@ -11,7 +11,10 @@ icon: tags
         <hr>
         {% capture tags %}
           {% for tag in site.tags %}
-            {{ tag[0] }}
+            {% assign posts = site.tags[tag] | where_exp:"post", "post.category != '修正リスト' " %}
+            {% if posts.size != 0 %}
+                {{ tag[0] }}
+            {% endif %}       
           {% endfor %}
         {% endcapture %}
         
@@ -28,7 +31,7 @@ icon: tags
         
         <ul>
                 
-        {% for tag in sorted_tech_tags %}
+        {% for tag in sorted_tags %}
             
 <h2 id="{{ tag }}">{{ tag }}</h2>
 
@@ -92,11 +95,21 @@ icon: tags
     {% endif %}
   {% endfor %}
  
-          
+  {% for post in site.tags[tag] %}
+    {% if post.category != '修正リスト' %}
+    <li>
+        <time>
+        {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+        </time>
+        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+        {% include category.html %}
+        {% include tag.html %}
+    </li>
+    {% endif %}
+  {% endfor %}          
             
-            
-    {% endfor %}
-    </ul>
+{% endfor %}
+</ul>
 </div>
     
     
@@ -114,6 +127,11 @@ icon: tags
                     <li>
                         {% assign tag_size = 0 %}
 
+                        {% if site.tags[tag] %}
+                            {% assign posts = site.tags[tag] | where_exp:"post", "post.category != '修正リスト' " %}
+                            {% assign tag_size = posts.size %}
+                        {% endif %}
+                        
                         {% for tech_note in site.tech_notes %}
                             {% if tech_note.tags contains tag %}
                                 {% assign tag_size = tag_size | plus: 1 %}
