@@ -140,13 +140,9 @@ icon: tags
                             {% endif %}
                             {% endfor %}
                             
-                            {% for post in site.posts %}
-{% if post.tags contains tag %}
-                    {% unless post.categories contains '修正リスト' %}
-{% assign tag_size = tag_size | plus: 1 %}
-                    {% endunless %}
-{% endfor %}
-                                                                                    
+
+                            
+                            
                             <a href="#{{ tag }}">
                                 {{ tag }} ({{ tag_size }})
                             </a>
