@@ -13,12 +13,12 @@ icon: tags
             {% capture post_tags %}
                 {% for post in site.posts %}
                     {% unless post.categories contains '修正リスト' %}
-                        {{ post.tags }}
+                        {{ post.tags | join: ' ' }}
                     {% endunless %}
                 {% endfor %}
             {% endcapture %}
         
-            {% assign other_tags = post_tags | join: ' ' | split: ' ' %}
+            {% assign other_tags = post_tags | split: ' ' %}
 
             {% assign technote_tags = site.tech_notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
             {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
