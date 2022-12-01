@@ -17,7 +17,10 @@ icon: tags
             {% endunless %}
             {% endcapture %}
             {% endfor %}
-            {% assign sorted_post_tags = post_tags | join: ' '  | split: ' ' | uniq | sort %}
+        
+        <p>{{ post_tags }}</p>
+        
+                
         
             {% assign technote_tags = site.tech_notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
             {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
@@ -26,7 +29,7 @@ icon: tags
             
             <ul>
                 
-                {% for tag in sorted_post_tags %}
+                {% for tag in sorted_tech_tags %}
                 
                 <h2 id="{{ tag }}">{{ tag }}</h2>
                 
