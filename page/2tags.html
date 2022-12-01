@@ -22,12 +22,14 @@ icon: tags
 
             {% assign technote_tags = site.tech_notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
             {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
-            {% assign tech_tags = techtip_tags | concat:technote_tags | concat:other_tags %}
+            {% assign tech_tags = techtip_tags | concat:technote_tags %}
+            {% assign list_tags = tech_tags | concat:other_tags %}
             {% assign sorted_tech_tags = tech_tags | uniq | sort %}
-            
+            {% assign sorted_list_tags = list_tags | uniq | sort %}
+        
             <ul>
                 
-                {% for tag in sorted_tech_tags %}
+                {% for tag in list_tags %}
                 
                 <h2 id="{{ tag }}">{{ tag }}</h2>
                 
@@ -91,6 +93,19 @@ icon: tags
                 {% endif %}
                 {% endfor %}
                 
+{% for post in site.posts %}
+    {% if post.tags contains tag %}
+        <li>
+        <time>
+        {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+        </time>
+        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+        {% include category.html %}
+        {% include tag.html %}
+        </li>           
+    {% endif %}        
+{% endfor %}
+
 
                
                 {% endfor %}
