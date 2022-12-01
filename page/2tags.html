@@ -144,7 +144,7 @@ icon: tags
                             
                             <!-- css id starting with number is illegal -->
                             
-                            {% assign tagid = tag | replace_first: '0', '\30' | replace_first: '1', '\31' | replace_first: '2', '\32' | replace_first: '3', '\33'  | replace_first: '4', '\34' | replace_first: '5', '\35' | replace_first: '6', '\36'  | replace_first: '7', '\37' | replace_first: '8', '\38' | replace_first: '9', '\39' %}
+                            {% assign tagid = tag | replace_first: "1", "\31" %}
                             
                             <a class="scroll" href="#{{ tagid }}">
                                 {{ tag }} ({{ tag_size }})
