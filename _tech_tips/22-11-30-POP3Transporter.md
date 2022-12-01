@@ -42,7 +42,7 @@ XMLで記述しますと次のようになります。
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
 <base>
-	<table name="mails" uuid="12345678901234567890123456789000" id="2" prevent_journaling="true">
+	<table name="mails" uuid="12345678901234567890123456789000" id="1" prevent_journaling="true">
 		<field name="id" uuid="12345678901234567890123456789001" type="10" limiting_length="255" unique="true" autogenerate="true" not_null="true" id="1">
 			<field_extra/>
 		</field>
