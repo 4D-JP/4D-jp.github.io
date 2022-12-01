@@ -13,7 +13,9 @@ icon: tags
             {% capture post_tags %}
                 {% for post in site.posts %}
                     {% unless post.categories contains '修正リスト' %}
-                        {{ post.tags }}
+                    {% for tag in post.tags %}
+                        {{ tag }}
+                    {% endfor %}
                     {% endunless %}
                 {% endfor %}
             {% endcapture %}
@@ -91,6 +93,22 @@ icon: tags
                 {% endif %}
                 {% endfor %}
                 
+                
+{% for post in site.posts %}
+{% if post.tags contains tag %}
+{% unless post.categories contains '修正リスト' %}
+<li>
+<time>
+{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+</time>
+<a class="title" href="{{ post.url }}">{{ post.title }}</a>
+{% include category.html %}
+{% include tag.html %}
+</li>
+{% endif %}
+{% endunless %}
+{% endfor %}
+                
 
                
                 {% endfor %}
@@ -123,7 +141,7 @@ icon: tags
                             {% endif %}
                             {% endfor %}
                                                                                     
-                            <a href="#{{ tag }}">
+                            <a class="scroll" href="#{{ tag }}">
                                 {{ tag }} ({{ tag_size }})
                             </a>
                         </li>
