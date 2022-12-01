@@ -16,14 +16,19 @@ icon: tags
         {% endcapture %}
         
         {% assign technote_tags = site.tech_notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
+        {% assign techtip_tags = site.tech_tips | map: 'tags' | join: ' '  | split: ' ' | uniq %}
+        
         {% assign post_tags = tags | split:' ' %}
-        {% assign all_tags = post_tags | concat:technote_tags %}
+        {% assign all_tags = techtip_tags | concat:technote_tags | concat:post_tags %}
         {% assign sortedtags = all_tags | uniq | sort %}
         
         <ul>
+                
         {% for tag in sortedtags %}
             
           <h2 id="{{ tag }}">{{ tag }}</h2>
+            
+          <!--  
           {% for post in site.tags[tag] %}
             <li>
                 <time>
@@ -34,12 +39,11 @@ icon: tags
                 {% include tag.html %}
             </li>
           {% endfor %}
+          -->
             
-  {% assign all_posts = site.tech_notes | concat:site.tech_tips %}          
-  {% for tech_note in all_posts %}
+  {% for tech_note in site.tech_notes %}
     {% if tech_note.tags contains tag %}
     <li>
-        
         <i class="fa fa-file-text-o"></i><a class="title" href="{{ tech_note.url }}">{{ tech_note.title }}</a>
         
         {% capture categories %}
@@ -47,6 +51,7 @@ icon: tags
                 <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
             {% endfor %}
         {% endcapture %}
+        
         {% capture category_size %}{{ categories | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
         {% unless category_size == '0' %}
             <span class="categories">
@@ -65,7 +70,6 @@ icon: tags
           <i class="fa fa-tags"></i>{{ tags }}
         </span>         
         {% endunless %}         
-
     </li>            
     {% endif %}
   {% endfor %}
@@ -73,10 +77,11 @@ icon: tags
           
             
             
-        {% endfor %}
-        </ul>
-
-    </div>
+    {% endfor %}
+    </ul>
+</div>
+    
+    
     <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="right">
         <div class="wrap">
@@ -99,11 +104,14 @@ icon: tags
                                 {% assign tag_size = tag_size | plus: 1 %}
                             {% endif %}
                         {% endfor %}
+                        
                         {% for tech_tip in site.tech_tips %}
                             {% if tech_tip.tags contains tag %}
                                 {% assign tag_size = tag_size | plus: 1 %}
                             {% endif %}
                         {% endfor %}
+                        
+                        <!-- css id starting with number is illegal -->
                         
                         <a class="scroll" href="#{{ tag }}">
                             {{ tag }} ({{ tag_size }})
