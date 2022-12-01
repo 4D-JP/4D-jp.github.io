@@ -95,6 +95,7 @@ icon: tags
                 
 {% for post in site.posts %}
     {% if post.tags contains tag %}
+    {% unless post.categories contains '修正リスト' %}
         <li>
         <time>
         {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
@@ -103,6 +104,7 @@ icon: tags
         {% include category.html %}
         {% include tag.html %}
         </li>           
+    {% endunless %}
     {% endif %}        
 {% endfor %}
 
