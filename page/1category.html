@@ -9,109 +9,148 @@ icon: th-list
     <div class="left">
         <h1>{{page.title}}</h1>
         <hr>
-        {% capture categories %}
-          {% for category in site.categories %}
+            {% capture categories %}
+            {% for category in site.categories %}
             {{ category[0] }}
-          {% endfor %}
-        {% endcapture %}
-        
-        {% assign technote_categories = site.tech_notes | map: 'categories' | join: ' '  | split: ' ' | uniq %}
-        {% assign post_categories = categories | split:' ' %}
-        {% assign all_categories = post_categories | concat:technote_categories %}
-        {% assign sortedcategories = all_categories | uniq | sort %}   
-        
-        <ul>
-
-            {% for category in sortedcategories %}
+            {% endfor %}
+            {% endcapture %}
             
-            <h2 id="{{category}}">{{category}}</h2>
+            {% assign technote_categories = site.tech_notes | map: 'categories' | join: ' '  | split: ' ' | uniq %}
+            {% assign techtip_categories = site.tech_tips | map: 'categories' | join: ' '  | split: ' ' | uniq %}
+            {% assign post_categories = categories | split:' ' %}
+            {% assign all_categories = post_categories | concat:technote_categories | concat:techtip_categories %}
+            {% assign sortedcategories = all_categories | uniq | sort %}
             
-          
-               
-                      {% for post in site.categories[category] %}
-                        {% if post.url %}
-                        <li>
-                            <time>
-                            {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                            </time>
-                            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-
-                            {% include category.html %}
-                            {% include tag.html %}
-                        </li>
-                        {% endif %}
-                    {% endfor %}          
-         
-         
-            
-              {% for tech_note in site.tech_notes %}
+            <ul>
+                
+                {% for category in sortedcategories %}
+                
+                <h2 id="{{category}}">{{category}}</h2>
+                
+                {% for tech_note in site.tech_notes %}
                 {% if tech_note.categories contains category %}
                 <li>
                     <i class="fa fa-file-text-o"></i><a class="title" href="{{ tech_note.url }}">{{ tech_note.title }}</a>
                     
                     {% capture categories %}
-                        {% for category in tech_note.categories %}
-                            <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
-                        {% endfor %}
+                    {% for category in tech_note.categories %}
+                    <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}
                     {% endcapture %}
                     
                     {% capture category_size %}{{ categories | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
                     {% unless category_size == '0' %}
-                        <span class="categories">
-                          <i class="fa fa-th-list"></i>{{ categories }}
-                        </span>             
+                    <span class="categories">
+                        <i class="fa fa-th-list"></i>{{ categories }}
+                    </span>
                     {% endunless %}
                     
                     {% capture tags %}
                     {% for tag in tech_note.tags %}
-                        <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+                    <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
                     {% endfor %}
-                    {% endcapture %}   
+                    {% endcapture %}
                     {% capture tag_size %}{{ tags | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
                     {% unless category_size == '0' %}
-                        <span class="pageTag">
-                          <i class="fa fa-tags"></i>{{ tags }}
-                        </span>         
-                    {% endunless %} 
+                    <span class="pageTag">
+                        <i class="fa fa-tags"></i>{{ tags }}
+                    </span>
+                    {% endunless %}
                     
                 </li>
                 {% endif %}
-              {% endfor %}
-            
-            
-            {% endfor %}
-        </ul>
-    </div>
-    <button class="anchor"><i class="fa fa-anchor"></i></button>
-    <div class="right">
-        <div class="wrap">
-
-            <!-- Content -->
-            <div class="side content">
-                <div>
-                    カテゴリー
-                </div>
-                <ul id="content-side" class="content-ul">
-                    {% for category in sortedcategories %}
+                {% endfor %}
+                
+                {% for tech_tip in site.tech_tips %}
+                {% if tech_tip.categories contains category %}
+                <li>
+                    <i class="fa fa-question"></i><a class="title" href="{{ tech_tip.url }}">{{ tech_tip.title }}</a>
+                    
+                    {% capture categories %}
+                    {% for category in tech_tip.categories %}
+                    <a href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}
+                    {% endcapture %}
+                    
+                    {% capture category_size %}{{ categories | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
+                    {% unless category_size == '0' %}
+                    <span class="categories">
+                        <i class="fa fa-th-list"></i>{{ categories }}
+                    </span>
+                    {% endunless %}
+                    
+                    {% capture tags %}
+                    {% for tag in tech_tip.tags %}
+                    <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag }}" title="Tag: {{ tag }}" rel="tag">{{ tag | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}
+                    {% endcapture %}
+                    {% capture tag_size %}{{ tags | strip_newlines | replace: ' ', '' | size }}{% endcapture %}
+                    {% unless category_size == '0' %}
+                    <span class="pageTag">
+                        <i class="fa fa-tags"></i>{{ tags }}
+                    </span>
+                    {% endunless %}
+                    
+                </li>
+                {% endif %}
+                {% endfor %}
+                
+                {% for post in site.categories[category] %}
+                {% if post.url %}
+                <li>
+                    <time>
+                        {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                    </time>
+                    <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+                    
+                    {% include category.html %}
+                    {% include tag.html %}
+                </li>
+                {% endif %}
+                {% endfor %}                
+                
+                {% endfor %}
+            </ul>
+        </div>
+        <button class="anchor"><i class="fa fa-anchor"></i></button>
+        <div class="right">
+            <div class="wrap">
+                
+                <!-- Content -->
+                <div class="side content">
+                    <div>
+                        カテゴリー
+                    </div>
+                    <ul id="content-side" class="content-ul">
+                        {% for category in sortedcategories %}
                         <li>
                             
-                        {% assign category_size = 0 %}
-                        {% if site.categories[category] %}
-                            {% assign category_size = site.categories[category].size %}
-                        {% endif %}
-                        {% for tech_note in site.tech_notes %}
+                            {% assign category_size = 0 %}
+                            {% if site.categories[category] %}
+                                {% assign category_size = site.categories[category].size %}
+                            {% endif %}
+                            
+                            {% for tech_note in site.tech_notes %}
                             {% if tech_note.categories contains category %}
                                 {% assign category_size = category_size | plus: 1 %}
                             {% endif %}
-                        {% endfor %}
+                            {% endfor %}
+                            
+                            {% for tech_tip in site.tech_tips %}
+                            {% if tech_tip.categories contains category %}
+                                {% assign category_size = category_size | plus: 1 %}
+                            {% endif %}
+                            {% endfor %}
+                            
                             <a class="scroll" href="#{{ category }}">
                                 {{ category }} ({{ category_size }})
                             </a>
                         </li>
-                    {% endfor %}
-                </ul>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+    <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+    
