@@ -9,7 +9,6 @@ layout: default
         <hr>
         <ul>
             {% for post in paginator.posts %}
-            {% unless post.categories contains '修正リスト' %}
               <li>
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -34,15 +33,13 @@ layout: default
                     {% include tag.html %}
                     </div>
                 </div>
+                {% unless post.categories contains '修正リスト' %}
                 <div class="excerpt">
                     {{post.excerpt}}
-                </div>
-  <!--               <div class="read-all">
-                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>全文</a>
-                </div>   -->
+                </div>                      
+                {% endunless %}
                 <hr>
-              </li>
-            {% endunless %}
+              </li>            
             {% endfor %}
         </ul>
         <!-- Pagination links -->
