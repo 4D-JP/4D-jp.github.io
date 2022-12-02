@@ -1,17 +1,9 @@
 ---
 layout: post
-title: "LOG EVENT"
-date: 2022-11-21 12:00:00
+title: "ボタンにFormは設定できない"
+date: 2019-09-06 12:00:00
 categories: 仕様
-tags: system mac
+tags: userinterface form
 ---
 
-Mac版で`LOG EVENT`に*4D debug message* オプションを指定して出力したメッセージはコンソールの標準ログ（デバイス）に出力されます。コマンドが呼び出しているのは`syslog()`です。かつてすべてのデバッグメッセージは*system.log* に出力されましたが，現在はオペレーションシステムのコンポーネントが*system.log* にメッセージを出力することになっています。
-
-```4d
-LOG EVENT(Into 4D debug message; "¯\\_(⊙︿⊙)_//¯"; Error message)
-```
-
-<img width="852" alt="" src="https://user-images.githubusercontent.com/10509075/203306189-5a5aebb2-4e6c-4c7f-9dae-216088907d3a.png">
-
-<i class="fa fa-external-link" aria-hidden="true"></i> https://support.apple.com/en-gb/guide/console/cnsl664be99a/1.1/mac/12.0
+ボタン型のフォームオブジェクトに``Form.button``のような数式を設定することはできません。これは仕様です。チェックボックス等とは違い，ボタンに標準アクションとオブジェクトメソッドの両方が設定できることが関係しています。内部的なコードが見直された影響で，``Form.button``のような数式はボタンに設定できないことになりました。
