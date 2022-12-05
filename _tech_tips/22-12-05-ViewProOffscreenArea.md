@@ -45,7 +45,7 @@ version: 19
 	$cells.push(New object("name"; "セルB4"; "range"; New collection(1; 3; 1; 1)))
 	$name:=Select document(""; ""; "ファイルを選択してください"; Allow alias files)
 	If (OK=1)
-	   $result:=VP_offscreen_area(New object("path"; Document; "cells"; $cells))
+	   $result:=本メソッド(New object("path"; Document; "cells"; $cells))
 	   ALERT(JSON Stringify($result; *))  //取り出したセルの情報を表示
 	End if 
 	
