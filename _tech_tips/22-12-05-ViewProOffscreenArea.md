@@ -32,6 +32,7 @@ version: 19
 またドキュメントの読み込みと展開は、非同期で行われるので、タイマーイベントを利用して処理する点にも注目してください。
 
 ```4d
+
 /*
 	
 	引数説明
@@ -70,11 +71,18 @@ Case of
 		
 		This.result:=New object  // 戻り値を初期化
 		VP IMPORT DOCUMENT(This.area; This.path)  // ドキュメントを読み込む（非同期）
-		SET TIMER(1)  // 読み込み完了を待つ（要調整）
+		This.isWaiting:=True  // 読み込み完了待機中
+		SET TIMER(10)  // 読み込み完了のタイミングを見計らいタイマーを掛ける（要調整）
+		
+	: (FORM Event.code=On VP Range Changed)  // 表計算中の１つの計算項目が終了した
+		If (This.isWaiting)  // 待機中？
+			SET TIMER(10)  // 計算の完了を感知したのでタイマーを再スタートさせる
+		End if 
 		
 	: (FORM Event.code=On Timer)  // ドキュメントが読み込まれたタイミング
 		
 		SET TIMER(0)  // タイマー終了
+		This.isWaiting:=False  // 待機完了し処理に入ることを宣言
 		//セルの値を取り出して戻り値にセット
 		This.result.cells:=New collection
 		For each ($row; This.cells)
