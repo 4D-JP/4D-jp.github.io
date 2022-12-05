@@ -63,7 +63,6 @@ Case of
 		$params.onEvent:=Formula from string(Current method name)  //イベントを自分自身にコールバックして処理する
 		
 		// オフスクリーンエリアを開く
-		var $result : Object
 		$result:=VP Run offscreen area($params)
 		
 		
