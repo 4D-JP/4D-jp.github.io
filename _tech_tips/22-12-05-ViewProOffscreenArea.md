@@ -68,7 +68,6 @@ Case of
 		
 		
 	: (FORM Event.code=On VP Ready)  // オフスクリーンで4D View Proエリアの準備ができた
-		
 		This.result:=New object  // 戻り値を初期化
 		VP IMPORT DOCUMENT(This.area; This.path)  // ドキュメントを読み込む（非同期）
 		This.isWaiting:=True  // 読み込み完了待機中
@@ -80,7 +79,6 @@ Case of
 		End if 
 		
 	: (FORM Event.code=On Timer)  // ドキュメントが読み込まれたタイミング
-		
 		SET TIMER(0)  // タイマー終了
 		This.isWaiting:=False  // 待機完了し処理に入ることを宣言
 		//セルの値を取り出して戻り値にセット
