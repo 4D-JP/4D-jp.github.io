@@ -12,6 +12,22 @@ permalink: /283/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103507 クエリにインデックスクエリとシーケンシャルクエリの両方が含まれている場合，順序によって速度に大幅な違いが発生することがありました。たとえば下記のコードはまったく同じクエリ条件ですが，先にインデックスクエリを実行してから明示的にシーケンシャルクエリを実行する前者のほうが半分の時間で完了します。
+
+```4d
+QUERY([Inventory]; [Inventory]AdPriceChangeDate>=$dStartdate; *)
+QUERY([Inventory];  & ; [Inventory]AdPriceChangeDate<=$dEndDate)
+QUERY SELECTION([Inventory]; [Inventory]Modified_At#$md)
+```
+```4d
+QUERY([Inventory]; [Inventory]AdPriceChangeDate>=$dStartdate; *)
+QUERY([Inventory];  & ; [Inventory]AdPriceChangeDate<=$dEndDate; *)
+QUERY([Inventory];  & ; [Inventory]Modified_At#$md)
+```
+* ACI0103451 旧式セッション管理のクッキー名がストラクチャファイル名ではなく（文字化けした）サーバー公開名が組み込まれました。
+
+* ACI0103426 IPv6が有効な環境でHTTPリクエストを発行した場合，散発的にエラーコード`30`が返されました。
+
 * ACI0103457 mac OS 13 Venturaのみ。高さが`23`に満たないコンボボックスにフォーカスが移動されたときの表示が正しくありませんでした。
 
 * ACI0103498 フォームオブジェクトのデータソースをテキストからピクチャに変更した場合，フォント属性などテキスト特有のプロパティ（`stroke, fontTheme, textDecoration, fontWeight, fontStyle, fontFamily, fontSize`）がリセットされませんでした。
