@@ -23,7 +23,7 @@ permalink: /293/:slug/
 
 * ACI0103518 Windows版のみ。ビルドしたクライアントアプリがクラッシュすることがありました。
 
-* ACI0103493 mac OS 13 Venturaのみ。アプリケーションが最前面ではないときにパレット型のウィンドウを作成した場合，アプリケーションを最前面に移動してもウィンドウが表示されませんでした。パレット型のウィンドウには*Controller form window* *Palette form window* *Toolbar form window* が含まれます。
+* ACI0103493 mac OS 13 Venturaのみ。アプリケーションが最前面ではないときにパレット型のウィンドウを作成した場合，アプリケーションを最前面に移動してもウィンドウが表示されませんでした。パレット型のウィンドウには*Controller form window*, *Palette form window*, *Toolbar form window* が含まれます。
 
 * ACI0103457 mac OS 13 Venturaのみ。高さが`23`に満たないコンボボックスにフォーカスが移動されたときの表示が正しくありませんでした。
 
