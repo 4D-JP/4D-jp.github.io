@@ -17,7 +17,7 @@ permalink: /293/:slug/
 
 * ACI0103497 バイナリデータベースをプロジェクトに変換した場合，フォームエディターにピクチャオブジェクトのタイトルが自動スタイルシートで描画されませんでした。
 
-* ACI0103496 バイナリデータベースをプロジェクトに変換した場合，`フォント属性などテキスト特有のプロパティ（`stroke, fontTheme, textDecoration, fontWeight, fontStyle, fontFamily, fontSize`）がピクチャオブジェクトに付与されました。
+* ACI0103496 バイナリデータベースをプロジェクトに変換した場合，フォント属性などテキスト特有のプロパティ（`stroke, fontTheme, textDecoration, fontWeight, fontStyle, fontFamily, fontSize`）がピクチャオブジェクトに付与されました。
 
 * ACI0103437 `OPEN URL`にブラウザ名と`*`オプションの両方を渡した場合，`#`などエンコードするべきでない文字を含むURLを開くことができませんでした。
 
