@@ -4,7 +4,7 @@ title: "シンプルなPOP3トランスポーターの例題"
 position: 20221130001
 date: 2022-11-30 00:00:00
 categories: ヒント
-tags: mail pop3　transporter
+tags: mail transporter pop3
 version: 19
 ---
 
@@ -108,6 +108,7 @@ End for each
 レコードから添付ファイルを復元するコードは、次のようになります。
 
 ```4d
+$id:="10101010"  // 添付ファイルを復元するメールid
 $selection:=ds.mails.query("id = :1"; $id)  // $idで復元するメールを探す
 If ($selection.length#0)  // 該当メールがあるか
 	$path:=Select folder("保存先のフォルダーを指定してください")
