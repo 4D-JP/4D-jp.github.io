@@ -144,7 +144,7 @@ String(Date([mails]content.sendAt))+" "+String(Time([mails]content.sendAt))
 検索の場合ですが、ORDAですと非常に直感的に記述できます。
 
 ```4d
-$address:=Request("検索するアドレスを入力してください"; $address)  // 検索するメールアドレスを入力
+$address:=Request("検索するアドレスを入力してください")  // 検索するメールアドレスを入力
 If ($address#"")  // メールアドレスは入力されたか？
 	$selection:=ds.mails.query("content.from[].email = :1"; $address)  // $addressの値でfromを検索して$selectionに収める
 End if 
