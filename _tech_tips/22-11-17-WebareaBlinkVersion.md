@@ -24,7 +24,7 @@ Case of
 		$page.objects:=New object
 		$page.objects["Web Area"]:=New object(\
 		"type"; "webArea"; \
-		"left"; 0; "top"; 0; "width"; 700; "height"; 450; \
+		"left"; 0; "top"; 0; "width"; 750; "height"; 450; \
 		"sizingY"; "grow"; "sizingX"; "grow"; \
 		"webEngine"; "embedded"; \
 		"method"; Current method name; \
