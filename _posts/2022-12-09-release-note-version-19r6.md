@@ -3,9 +3,9 @@ layout: fix
 title: "4D v19r6 Hotfix 2 修正リスト"
 date: 2022-12-09 08:00:00
 categories: 修正リスト
-tags: 19r6
+tags: 19r6 hotfix
 build: 283927
-version: 19r6 hotfix
+version: 19r6
 permalink: /192/:slug/
 ---
 
