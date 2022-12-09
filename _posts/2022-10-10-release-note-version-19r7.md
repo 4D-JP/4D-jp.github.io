@@ -4,7 +4,7 @@ title: "4D v19r7 修正リスト"
 date: 2022-11-19 08:00:00
 categories: 修正リスト
 tags: 19r7
-build: 100150
+build: 100190
 version: 19r7
 permalink: /283/:slug/
 ---
