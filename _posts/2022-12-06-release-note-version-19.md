@@ -1,13 +1,17 @@
 ---
 layout: fix
 title: "4D v19.5 修正リスト"
-date: 2022-12-05 08:00:00
+date: 2022-12-08 08:00:00
 categories: 修正リスト
 tags: "19.5"
-build: 283893
+build: 283988
 version: "19.5" 
 permalink: /341/:slug/
 ---
+
+* ACI0092218 Mac版のみ。PDFファイルスタティックピクチャとして配置されたフォームを`Print form`と`PAGE SETUP`で印刷した場合，アプリケーションがクラッシュすることがありました。
+
+* ACI0103519 プロジェクトモードのみ。`Scaled to fit proportional`または`Scaled to fit prop centered`が設定されたリストボックスのピクチャ列に対して`OBJECT Get format`を使用した場合，空の文字列が返されました。
 
 * ACI0103419 リストボックスの自動行高さプロパティを有効にした場合，` lk auto row height`を`lk no`に戻すことができませんでした。
 
