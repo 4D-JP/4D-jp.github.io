@@ -81,11 +81,10 @@ $transporter:=POP3 New transporter($server)
 var $mailInfo : Collection
 $mailInfo:=$transporter.getMailInfoList()
 For each ($mail; $mailInfo)  // コレクションをループして処理する
-	$selection:=ds.mails.query("id = :1"; $mail.id)
-	If ($selection.length=0)  // 同じidが無いとき
-		$newRecord:=ds.mails.new()
+	If (ds.mails2.get($mail.id)=Null) // 同じidを持つメールが無いとき
+		$newRecord:=ds.mails.new() // 新しいエンティティ（レコード）を用意
 		$newRecord.id:=$mail.id
-		$mailObject:=$transporter.getMail($mail.number)  // メールオブジェクトを取り出す
+		$mailObject:=$transporter.getMail($mail.number)  // POP3サーバーからメールを取り出す（メールのダウンロード）
 		$newRecord.content:=OB Copy($mailObject)  // メールオブジェクトから単純なオブジェクトに変換して保存
 		// 添付ファイルをサーバーからダウンロードしてレコードに保存
 		If ($mailObject.attachments#Null)
@@ -93,12 +92,12 @@ For each ($mail; $mailInfo)  // コレクションをループして処理する
 				$blob:=$mailObject.attachments[$i].getContent() // 添付ファイルをダウンロード
 				BASE64 ENCODE($blob)　// オブジェクトとして保存するためBase64エンコード
 				$newRecord.content.attachments[$i].object:=Convert to text($blob; "UTF-8")　// オブジェクトとして保存
-				For each ($propaty; $mailObject.attachments[$i]) 　// 他のプロパティもオブジェクトとして保存
-					$newRecord.content.attachments[$i][$propaty]:=$mailObject.attachments[$i][$propaty]
+				For each ($propaty; $mailObject.attachments[$i]) 　// 他のすべてのプロパティもループして処理
+					$newRecord.content.attachments[$i][$propaty]:=$mailObject.attachments[$i][$propaty] // プロパティ値をコピー
 				End for each 
 			End for 
 		End if 
-		$newRecord.save()
+		$newRecord.save() // エンティティを保存
 	End if 
 End for each 
 ```
