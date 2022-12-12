@@ -108,7 +108,7 @@ End for each
 レコードから添付ファイルを復元するコードは、次のようになります。
 
 ```4d
-$id:="10101010"  // 添付ファイルを復元するメールid
+$id:="0001234567abcdef"  // 添付ファイルを復元するメールid
 $selection:=ds.mails.query("id = :1"; $id)  // $idで復元するメールを探す
 If ($selection.length#0)  // 該当メールがあるか
 	$path:=Select folder("保存先のフォルダーを指定してください")
