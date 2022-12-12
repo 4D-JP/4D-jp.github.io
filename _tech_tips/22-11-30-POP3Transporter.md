@@ -81,7 +81,7 @@ $transporter:=POP3 New transporter($server)
 var $mailInfo : Collection
 $mailInfo:=$transporter.getMailInfoList()
 For each ($mail; $mailInfo)  // コレクションをループして処理する
-	If (ds.mails2.get($mail.id)=Null) // 同じidを持つメールが無いとき
+	If (ds.mails.get($mail.id)=Null) // 同じidを持つメールが無いとき
 		$newRecord:=ds.mails.new() // 新しいエンティティ（レコード）を用意
 		$newRecord.id:=$mail.id
 		$mailObject:=$transporter.getMail($mail.number)  // POP3サーバーからメールを取り出す（メールのダウンロード）
