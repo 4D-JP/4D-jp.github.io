@@ -97,7 +97,7 @@ For each ($mail; $mailInfo)  // コレクションをループして処理する
 				End for each 
 			End for 
 		End if 
-		$newRecord.save() // エンティティを保存
+		$result:=$newRecord.save() // エンティティを保存
 	End if 
 End for each 
 ```
