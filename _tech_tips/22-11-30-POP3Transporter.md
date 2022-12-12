@@ -124,6 +124,41 @@ If ($selection.length#0)  // 該当メールがあるか
 End if
 ```
 
+上のコードですと、query()を使い検索していますが、メールidは重複しない値なので、get()を使ってエンティティを直接取り出すこともできます。
+get()を使う場合は、次のようなコードになります。
+
+```4d
+$id:="0001234567abcdef"  // 添付ファイルを復元するメールid
+var $entity : cs.mailsEntity  // mailsEntityクラスはmailsテーブルを作成したときに自動で作られる
+$entity:=ds.mails.get($id)  // $idで復元するメールを探す
+If ($entity#Null)  // 該当メールがあるか
+	$path:=Select folder("保存先のフォルダーを指定してください")
+	For each ($attach; $entity.content.attachments)  // すべての添付ファイルをループして処理する
+		$file:=File($path+$attach.name; fk platform path)  // 生成するファイルのファイルオブジェクトを取得
+		If ($file.exists=False)  // ファイルは存在しないことを確認
+			CONVERT FROM TEXT($attach.object; "UTF-8"; $blob)
+			BASE64 DECODE($blob)  // Base64からバイナリーに復元
+			$result:=$file.setContent($blob)  // ファイルに書き出す
+		End if 
+	End for each 
+End if 
+```
+
+get()を使うときの注意点は、ヌルが返される可能性を考慮します。
+もし、上のコードで変数定義でcs.mailsEntityを宣言しないと、ds.mails.get($id)の結果がヌルのときにエラーになります。
+
+実は、変数を利用する前に、その変数がどのような特徴を持ったオブジェクトであるかを定義することは重要です。
+上の例題コードでは、mailsEntityクラスであることを宣言して、mailsテーブルのエンティティのインスタンスが入ることを明示することで、ds.mails.get($id)の結果がヌルのときでもエラーとはならずに処理されます。
+mailsEntityクラスは、[クラスストア](https://developer.4d.com/docs/ja/Concepts/classes/#cs)で定義されたクラスで、mailsテーブルを作成したときに自動で定義された[エンティティクラス](https://developer.4d.com/docs/ja/API/EntityClass)になります。
+
+query()の例題では、ヌルが返されることはないので手を抜いてクラスストアの定義を省略しましたが、手抜きせずにコーディングするなら[エンティティセレクションクラス](https://developer.4d.com/docs/ja/API/EntitySelectionClass)であることを宣言します。
+
+```4d
+var $selection : cs.mailsSelection
+$selection:=ds.mails.query("id = :1"; $id)
+```
+
+
 ## おまけ
 
 カレントレコードを使い表示する詳細フォームで、件名（subject)を表示するには、変数フォームオブジェクトを配置して、式プロパティの欄に、変数の代わりに次のような式を書くだけです。
