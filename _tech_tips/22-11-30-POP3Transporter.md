@@ -236,7 +236,7 @@ get()を使うときの注意点は、ヌルが返される可能性を考慮し
 もし、上のコードで変数定義でcs.mailsEntityを宣言しないと、ds.mails.get($id)の結果がヌルのときにエラーになります。
 
 実は、変数を利用する前に、その変数がどのような特徴を持ったオブジェクトであるかを定義することは重要です。
-上の例題コードでは、mailsEntityクラスであることを宣言して、mailsテーブルのエンティティのインスタンスが入ることを明示することで、ds.mails.get($id)の結果がヌルのときでもエラーとはならずに処理されます。
+上の例題コードでは、mailsEntity[クラス](https://developer.4d.com/docs/ja/Concepts/classes/)であることを宣言して、mailsテーブルのエンティティのインスタンスが入ることを明示することで、ds.mails.get($id)の結果がヌルのときでもエラーとはならずに処理されます。
 mailsEntityクラスは、[クラスストア](https://developer.4d.com/docs/ja/Concepts/classes/#cs)で定義されたクラスで、mailsテーブルを作成したときに自動で定義された[エンティティクラス](https://developer.4d.com/docs/ja/API/EntityClass)になります。
 
 query()の例題では、ヌルが返されることはないので手を抜いてクラスストアの定義を省略しましたが、手抜きせずにコーディングするなら[エンティティセレクションクラス](https://developer.4d.com/docs/ja/API/EntitySelectionClass)であることを宣言します。
