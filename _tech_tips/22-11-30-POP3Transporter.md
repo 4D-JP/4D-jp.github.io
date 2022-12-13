@@ -36,7 +36,7 @@ POP3トランスポーターを使い、メールサーバーにログインし�
 |id |文字列[^id] |メッセージの固有ID（主キーとして利用可能） |
 |content |オブジェクト |メール本体のオブジェクト（ヘッダー、本文等） |
 
-[^id]: idはPOP3サーバーにて受信された時に割り振られる固有の番号で、番号はメッセージを受信した日付と時間を使用して計算され、POP3サーバーによって値が割り当てられます。詳細は[POP3Transporterリファレンス](https://developer.4d.com/docs/ja/API/POP3TransporterClass/#getmailinfo)を参照。
+[^id]: idはPOP3サーバーにて受信された時に割り振られる固有の番号です。詳細は[POP3Transporterリファレンス](https://developer.4d.com/docs/ja/API/POP3TransporterClass/#getmailinfo)および[RFC1939 UIDLコマンド](https://www.rfc-editor.org/rfc/rfc1939#page-12)を参照。
 
 XMLで記述しますと次のようになります。
 
