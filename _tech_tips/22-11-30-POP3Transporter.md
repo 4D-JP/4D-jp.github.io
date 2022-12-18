@@ -116,6 +116,8 @@ mailsテーブルには、メールに関する情報は、すべて入ってい
 ですので、SubjectやFromなどのフィールドを用意する必要は全くありません。
 contentフィールドを使いこなすことで、無駄なフィールドを作らずに利用できます。
 
+上記で、POP3トランスポーターの完成になります。ですが、受信したオブジェクトの使い方などをさらに解説したいと思います。
+
 ## 詳細フォームでデータを表示
 
 カレントレコードを使い表示する詳細フォームで、件名（subject)を表示するには、変数フォームオブジェクトを配置して、式プロパティの欄に、変数の代わりに次のような式を書くだけです。
@@ -130,13 +132,17 @@ contentフィールド中のsubjectプロパティを式として参照するの
 同様にして他のフィールドを表示することも可能ですが、単純なプロパティの参照ではない式の場合は、表示はできますが入力することはできません。
 
 例えばsendAtプロパティは、グリニッジ標準時間で表現されているので、そのまま表示するとローカルの日時とずれがあるため、実際の送信日時が分かりにくいものになります。
-それを解消するためにDateコマンドやTimeコマンドを使い、ローカルな日時に変換し表示する下のような式を書いたときは、入力はできません。
+それを解消するためにDateコマンドやTimeコマンドを使い、ローカルな日時に変換し表示するにはプログラムが必要になります。
+
+しかしメソッドを用意する必要はありません。
+
+式の欄には１行のプログラムを書くこともできます。ですので、次のようなコードを式の欄に直接記述することができます。当然ながら、こうしたプログラムや一意な参照ができないような式の場合は、入力することはできなくなります。
 
 ```4d
 String(Date([mails]content.sendAt))+" "+String(Time([mails]content.sendAt))
 ```
 
-本文は、テキストとHTMLに分かれて保存されています。
+メール本文は、テキストとHTMLに分かれて保存されています。
 Webエリアを利用すると、HTMLを表示することもできます。
 
 例えば、Webエリアをフォームに配置して、On Loadイベントで動作するオブジェクトメソッドに次のコードを記述することで、HTMLメールがそのまま表示されます。
@@ -145,17 +151,10 @@ Webエリアを利用すると、HTMLを表示することもできます。
 // Webエリア・オブジェクトメソッド
 Case of 
 	: (FORM Event.code=On Load)
-		//　外部リンクをクリックしたときの処理
-		ARRAY TEXT($filters; 0)
-		ARRAY BOOLEAN($AllowDeny; 0)
-		APPEND TO ARRAY($filters; "*.*")  // すべてのサイト
-		APPEND TO ARRAY($AllowDeny; False)  // 不許可
-		WA SET URL FILTERS(*; OBJECT Get name; $filters; $AllowDeny)
-		// メール本文の取り出し
 		If ([mails]content.bodyValues.p0002#Null)  // HTML本文はあるか？
 			WA SET PAGE CONTENT(*; OBJECT Get name; [mails]content.bodyValues.p0002.value; "")  // HTML本文
 		Else 
-			WA SET PAGE CONTENT(*; OBJECT Get name; Replace string([mails]content.bodyValues.p0001.value; "\r"; "<br/>\r"); "")  // テキスト本文（ちょっと乱暴な方法）
+			WA SET PAGE CONTENT(*; OBJECT Get name; Replace string([mails]content.bodyValues.p0001.value; "\r"; "<br/>\r"); "")  // HTLM化したテキスト本文を表示（ちょっと乱暴な方法）
 		End if 
 End case 
 ```
@@ -163,7 +162,59 @@ End case
 ただし、HTMLメールをそのまま表示するのは要注意です。
 
 スパムメールなどをそのまま表示すると、Javascriptやimgタグなどがパースされて動作した結果、何かしらのリスクを追うことになりかねません。
-十分に注意してください。
+十分に注意する必要があります。
+
+そこで、外部リンクをクリックしたようなときやイメージが表示されないように、HTMLをそのまま表示せずに手を入れたコードも紹介します。
+```4d
+// Webエリア・オブジェクトメソッド
+Case of 
+	: (FORM Event.code=On Load)
+		ARRAY LONGINT($pos; 0)  // 正規表現用
+		ARRAY LONGINT($len; 0)  // 正規表現用
+		// 外部リンクをクリックしたときの処理
+		ARRAY TEXT($filters; 0)
+		ARRAY BOOLEAN($AllowDeny; 0)
+		APPEND TO ARRAY($filters; "*.*")  // すべてのサイト
+		APPEND TO ARRAY($AllowDeny; False)  // 不許可
+		WA SET URL FILTERS(*; OBJECT Get name; $filters; $AllowDeny)  // 表示するデータのフィルター
+		WA SET EXTERNAL LINKS FILTERS(*; OBJECT Get name; $filters; $AllowDeny)  // リンクのフィルター
+		WA SET PREFERENCE(*; OBJECT Get name; WA enable contextual menu; True)  // 標準のコンテキストメニューを使えるようにする
+		WA SET PREFERENCE(*; OBJECT Get name; WA enable Web inspector; True)  //デバッグのためインスペクターを使えるようにする
+		// メール本文の取り出してWebエリアにセットする
+		If ([mails]content.bodyValues.p0002#Null)  // HTML本文はあるか？
+			//HTMLを取り出す
+			$html:=[mails]content.bodyValues.p0002.value
+			// 画像等のリンクを無効化
+			While (Match regex("(src|data-src)=['\"](http.+?)['\"]"; $html; 1; $pos; $len))  // ソースとして記述されたURLを探す
+				//$url:=Substring($html; $pos{2}; $len{2}) // 削除するURL
+				$html:=Substring($html; 1; $pos{2}-1)+Substring($html; $pos{2}+$len{2})  // URLを削除
+			End while 
+			WA SET PAGE CONTENT(*; OBJECT Get name; $html; "")  // HTML本文を表示
+		Else 
+			//HTMLを取り出す
+			$html:=[mails]content.bodyValues.p0001.value
+			// テキストをHTML化
+			$html:=Replace string($html; "\r\n"; "<br/>")
+			$html:=Replace string($html; "\r"; "<br/>")
+			$html:=Replace string($html; "\n"; "<br/>")
+			WA SET PAGE CONTENT(*; OBJECT Get name; $html; "")  // HTLM化したテキスト本文を表示
+		End if 
+		
+	: (FORM Event.code=On URL Filtering)
+		ARRAY LONGINT($pos; 0)  // 正規表現用
+		ARRAY LONGINT($len; 0)  // 正規表現用
+		$link:=WA Get last filtered URL(*; OBJECT Get name)  // フィルターしたリンクを取り出す
+		CONFIRM(Choose(Match regex("://(.+?)/"; $link; 1; $pos; $len); "Site: "+Substring($link; $pos{1}; $len{1})+"\r\r"+$link; $link); "ブラウザで開く")  // リンク情報を表示
+		If (OK=1)  // リンクを開くことを許可したか？
+			OPEN URL($link)  // リンクを開く
+		End if 
+End case 
+```
+
+しかし、これでも不十分かもしれません。
+なぜなら、悪意あるJavascriptが記述されている場合など、スパムメールのすべての手口を防いでいるとは言えないからです。
+
+新しい手法について考え、常に刷新して対応することが、セキュリティの第一歩であることを忘れないでください。
 
 ## 受信データの検索
 
