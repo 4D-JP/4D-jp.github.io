@@ -262,6 +262,9 @@
     }
 }
 
+sup::before { content: "[注" }
+sup::after { content: "]" }
+
 .text-left {
   text-align: left;
 }
