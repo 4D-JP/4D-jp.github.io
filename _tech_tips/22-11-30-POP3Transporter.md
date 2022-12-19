@@ -164,7 +164,8 @@ End case
 スパムメールなどをそのまま表示すると、Javascriptやimgタグなどがパースされて動作した結果、何かしらのリスクを追うことになりかねません。
 十分に注意する必要があります。
 
-そこで、外部リンクをクリックしたようなときやイメージが表示されないように、HTMLをそのまま表示せずに手を入れたコードも紹介します。
+そこで、外部リンクをクリックしたようなときの処理や、いきなりイメージが表示されないようにHTML本文を編集してから表示するコードも紹介しておきます。
+
 ```4d
 // Webエリア・オブジェクトメソッド
 Case of 
@@ -181,7 +182,7 @@ Case of
 		WA SET PREFERENCE(*; OBJECT Get name; WA enable contextual menu; True)  // 標準のコンテキストメニューを使えるようにする
 		WA SET PREFERENCE(*; OBJECT Get name; WA enable Web inspector; True)  //デバッグのためインスペクターを使えるようにする
 		// メール本文の取り出してWebエリアにセットする
-		If ([mails]content.bodyValues.p0002#Null)  // HTML本文はあるか？
+		If ([mails]content.bodyValues.p0002#Null)  // HTMLのソースはあるか？
 			//HTMLを取り出す
 			$html:=[mails]content.bodyValues.p0002.value
 			// 画像等のリンクを無効化
@@ -191,13 +192,13 @@ Case of
 			End while 
 			WA SET PAGE CONTENT(*; OBJECT Get name; $html; "")  // HTML本文を表示
 		Else 
-			//HTMLを取り出す
+			//本文を取り出す
 			$html:=[mails]content.bodyValues.p0001.value
 			// テキストをHTML化
 			$html:=Replace string($html; "\r\n"; "<br/>")
 			$html:=Replace string($html; "\r"; "<br/>")
 			$html:=Replace string($html; "\n"; "<br/>")
-			WA SET PAGE CONTENT(*; OBJECT Get name; $html; "")  // HTLM化したテキスト本文を表示
+			WA SET PAGE CONTENT(*; OBJECT Get name; $html; "")  // HTLM化した本文を表示
 		End if 
 		
 	: (FORM Event.code=On URL Filtering)
@@ -249,7 +250,7 @@ contentフィールドのオブジェクト構造を把握することで、利�
 
 ```4d
 $id:="0001234567abcdef"  // 添付ファイルを復元するメールid
-$selection:=ds.mails.query("id = :1"; $id)  // $idで復元するメールを探す
+$selection:=ds.mails.query("id = :1"; $id)  // メールを検索する
 If ($selection.length#0)  // 該当メールがあるか
 	$path:=Select folder("保存先のフォルダーを指定してください")
 	For each ($attach; $selection[0].content.attachments)  // すべての添付ファイルをループして処理する
@@ -268,8 +269,8 @@ get()を使う場合は、次のようなコードになります。
 
 ```4d
 $id:="0001234567abcdef"  // 添付ファイルを復元するメールid
-var $entity : cs.mailsEntity  // mailsEntityクラスはmailsテーブルを作成したときに自動で作られる
-$entity:=ds.mails.get($id)  // $idで復元するメールを探す
+var $entity : cs.mailsEntity  // mailsEntityクラスのオブジェクトであることを明示的に宣言
+$entity:=ds.mails.get($id)  // メールをロードする
 If ($entity#Null)  // 該当メールがあるか
 	$path:=Select folder("保存先のフォルダーを指定してください")
 	For each ($attach; $entity.content.attachments)  // すべての添付ファイルをループして処理する
@@ -283,8 +284,8 @@ If ($entity#Null)  // 該当メールがあるか
 End if 
 ```
 
-get()を使うときの注意点は、ヌルが返される可能性を考慮します。
-もし、上のコードで変数定義でcs.mailsEntityを宣言しないと、ds.mails.get($id)の結果がヌルのときにエラーになります。
+get()を使うときの注意点は、ヌルが返される可能性を考慮することです。
+もし、上のコードの２行目で、変数$entityがcs.mailsEntityのオブジェクトであることを宣言しないと、ds.mails.get($id)の結果がヌルのときにエラーになります。
 
 実は、変数を利用する前に、その変数がどのような特徴を持ったオブジェクトであるかを定義することは重要です。
 上の例題コードでは、mailsEntity[クラス](https://developer.4d.com/docs/ja/Concepts/classes/)であることを宣言して、mailsテーブルのエンティティのインスタンスが入ることを明示することで、ds.mails.get($id)の結果がヌルのときでもエラーとはならずに処理されます。
@@ -293,7 +294,7 @@ mailsEntityクラスは、[クラスストア](https://developer.4d.com/docs/ja/
 query()の例題では、ヌルが返されることはないので手を抜いてクラスストアの定義を省略しましたが、手抜きせずにコーディングするなら[エンティティセレクションクラス](https://developer.4d.com/docs/ja/API/EntitySelectionClass)であることを宣言します。
 
 ```4d
-var $selection : cs.mailsSelection
+var $selection : cs.mailsSelection //mailsSelectionクラスのオブジェクトであることを宣言
 $selection:=ds.mails.query("id = :1"; $id)
 ```
 ## まとめ
