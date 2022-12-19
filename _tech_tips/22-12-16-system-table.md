@@ -107,3 +107,80 @@ End case
 
 その結果SELECTで指定したカラムが、そのままリストボックスに表示されます。
 リストボックスとSQLの親和性が高いことが、よく分かると思います。
+
+## 応用編
+
+先程の例題で、すべての重複不可のフィールドがリスト化できました。
+ですが、そのリストには主キーが含まれています。
+
+もし主キーを省いてリスト化したいときは、どのようにすればよいのでしょうか。
+
+主キーの情報は_USER_CONSTRAINTSテーブルに含まれていますが、このテーブルにはテーブルの情報はありますが、フィールド（カラム）の情報が含まれていません。
+フィールドのリストを作るためには、複数のテーブルをまたいでの検索を考えることになります。
+直ぐに思いつくのは結合（JOIN）を使うことですが、ここではちょっと別の方法を使用してみました。
+
+この例題では、別のテーブルの検索結果を用いて検索を行うINを使用しています。
+テーブルとフィールドの複数の条件を利用するため、同じ条件のSELECTを２つ使います。
+少し助長な感じもしますが、これで目的を果たすことができます。
+
+```4d
+Case of 
+	: (FORM Event=Null)
+		
+		// リストボックスの定義
+		$page:=New object("objects"; New object)
+		$page.objects["List Box"]:=New object(\
+		"type"; "listbox"; \
+		"left"; 5; "top"; 5; "width"; 500; "height"; 500; \
+		"sizingY"; "grow"; \
+		"scrollbarHorizontal"; "hidden"; \
+		"dataSource"; "SystemTable"; \
+		"enterable"; False; \
+		)
+		
+		// 表示するためのフォームを組み立てる
+		$dynForm:=New object(\
+		"rightMargin"; 5; "bottomMargin"; 5; \
+		"windowSizingX"; "fixed"; \
+		"events"; New collection("onLoad"); \
+		"method"; Current method name; \
+		)
+		$dynForm.pages:=New collection($page)
+		
+		$ref:=Open form window($dynForm)
+		DIALOG($dynForm)
+		
+	: (FORM Event.code=On Load)
+		
+		// リストフォームにシステムテーブルの情報を表示
+		Begin SQL
+			SELECT TABLE_NAME,TABLE_ID,COLUMN_NAME,COLUMN_ID
+			FROM _USER_COLUMNS
+			WHERE UNIQUENESS = True
+			AND NOT (
+			  (
+			    _USER_COLUMNS.TABLE_ID IN (
+			      SELECT _USER_CONS_COLUMNS.TABLE_ID
+			      FROM _USER_CONS_COLUMNS
+			      INNER JOIN _USER_CONSTRAINTS
+			      ON _USER_CONS_COLUMNS.CONSTRAINT_ID = _USER_CONSTRAINTS.CONSTRAINT_ID
+			      WHERE _USER_CONSTRAINTS.CONSTRAINT_TYPE = 'P'
+			    )
+			  AND
+			    _USER_COLUMNS.COLUMN_ID IN (
+			      SELECT _USER_CONS_COLUMNS.COLUMN_ID
+			      FROM _USER_CONS_COLUMNS
+			      INNER JOIN _USER_CONSTRAINTS
+			      ON _USER_CONS_COLUMNS.CONSTRAINT_ID = _USER_CONSTRAINTS.CONSTRAINT_ID
+			      WHERE _USER_CONSTRAINTS.CONSTRAINT_TYPE = 'P'
+			    )  
+			  )
+			)
+			INTO :SystemTable
+		End SQL
+		
+End case 
+```
+
+このように、一見するとリスト化できないような印象を受けるリストも、上手くテーブルの関係を紐解くと必ずSQLで表現することができるはずです。
+４Ｄの一般的なクエリと比較すると、まるでパズルを組み立てたようになりますが、SQLとリストボックスの親和性の高さを利用できる利点は確かにあると思います。
