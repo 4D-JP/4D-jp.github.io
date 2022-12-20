@@ -4,7 +4,7 @@ title: "クライアント・サーバーのResourcesフォルダー"
 position: 20221119001
 date: 2022-11-19 00:00:00
 categories: ヒント
-tags: Resources
+tags: server
 version: 19
 ---
 
