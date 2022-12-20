@@ -145,6 +145,9 @@ type: page
 * [Koichi Harada](https://github.com/KoichiHaradaEndor)
     * [HTTPServer](https://github.com/KoichiHaradaEndor/HTTPServer)
 
+* [J. Douglas Cryer](https://github.com/jdcryer)
+    * [MicrosoftGraph_4D](https://github.com/jdcryer/MicrosoftGraph_4D)
+
 * [Laurent Esnault](https://github.com/laurent-esnault)
     * [discourse-highlight.js-4d](https://github.com/laurent-esnault/discourse-highlight.js-4d)
     
