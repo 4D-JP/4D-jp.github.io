@@ -265,6 +265,8 @@
 sup::before { content: "[注" }
 sup::after { content: "]" }
 
+.footnotes { border-top: 1px solid #e0e0e0; }
+
 .text-left {
   text-align: left;
 }
