@@ -4,7 +4,7 @@ title: "GraphQLの利用方法を学ぶ"
 position: 20221125001
 date: 2022-11-25 00:00:00
 categories: ヒント
-tags: HTTP REST
+tags: http rest
 version: 19
 ---
 
