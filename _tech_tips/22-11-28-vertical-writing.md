@@ -4,7 +4,7 @@ title: "縦書きの表示／印刷"
 position: 20221128001
 date: 2022-11-28 00:00:00
 categories: ヒント
-tags: SVG
+tags: svg
 version: 17 18 19
 ---
 
