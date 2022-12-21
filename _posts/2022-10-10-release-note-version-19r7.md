@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19r7 修正リスト"
-date: 2022-12-09 08:00:00
+date: 2022-12-20 08:00:00
 categories: 修正リスト
 tags: 19r7
-build: 100206
+build: 100245
 version: 19r7
 permalink: /283/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103573 Windows版のみ。`PRINT SETTINGS`でプリント設定ダイアログを表示した場合，アプリケーションがクラッシュすることがありました。
 
 * ACI0103562 バイナリモードのみ。ハイライトボタンを3Dボタンに変更した場合，キーボードショートカットの設定がクリアされました。
 
