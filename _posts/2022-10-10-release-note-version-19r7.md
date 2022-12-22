@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19r7 修正リスト"
-date: 2022-12-20 08:00:00
+date: 2022-12-21 08:00:00
 categories: 修正リスト
 tags: 19r7
-build: 100245
+build: 100253
 version: 19r7
 permalink: /283/:slug/
 ---
@@ -12,6 +12,8 @@ permalink: /283/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103462 Mac版のみ。システム環境設定の地域を英国，言語をオランダ語に設定し，日付フォーマット*Internal date short* を使用した場合，`DD-MM-YYYY`ではなく`DD/MM/YYYY`形式で日付が表示されました。
+ 
 * ACI0103573 Windows版のみ。`PRINT SETTINGS`でプリント設定ダイアログを表示した場合，アプリケーションがクラッシュすることがありました。
 
 * ACI0103562 バイナリモードのみ。ハイライトボタンを3Dボタンに変更した場合，キーボードショートカットの設定がクリアされました。
