@@ -146,7 +146,10 @@ Case of
 		
 	: (FORM Event.code=On Timer)
 		
-		SET TIMER(0)
+		//描画された3秒後に呼ばれる
+		SET TIMER(0)  //タイマーをクリア
+		
+		//ピクチャを消去
 		var $pict : Picture
 		OBJECT SET VALUE("Output Pict"; $pict*0)
 		WA SET PAGE CONTENT(*; "Web Area"; ""; "")
