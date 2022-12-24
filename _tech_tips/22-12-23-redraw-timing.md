@@ -40,7 +40,7 @@ Webエリアは、４Ｄのプロセスと非同期で動作していること�
 Case of 
 	: (FORM Event=Null)
 		
-		//編集メニューを表示する
+		//編集メニューを表示するためのメニューバー指定
 		SET MENU BAR(1)
 		
 		//フォーム用のオブジェクトを用意
@@ -96,22 +96,23 @@ Case of
 		"left"; 460; "top"; 10; "width"; 200; "height"; 16; \
 		)
 		
+		//フォームを表示
 		$ref:=Open form window($form)
 		DIALOG($form)
-		CLOSE WINDOW($ref)
+		CLOSE WINDOW($ref)  //クローズするときはウィンドウの参照を渡すのがオススメ
 		
 	: (FORM Event.code=On Clicked)
 		
-		//入力エリアのピクチャを取り出し
+		//入力エリアの画像を取り出し
 		var $pict : Picture
 		$pict:=OBJECT Get value("Input Pict")
 		
 		If (Picture size($pict)#0)
 			
-			//ピクチャ変数にピクチャを表示
+			//ピクチャ変数に画像を表示
 			OBJECT SET VALUE("Output Pict"; $pict)
 			
-			//Webエリアにピクチャを表示
+			//Webエリアに画像を表示
 			var $blobPict; Blob
 			PICTURE TO BLOB($pict; $blobPict; "image/png")
 			var $encodedPict : Text
@@ -121,7 +122,7 @@ Case of
 			
 		End if 
 		
-		//ペーストボードのピクチャを取り出す
+		//ペーストボードの画像を取り出す
 		GET PICTURE FROM PASTEBOARD($pict)
 		
 		//メニュー表示
@@ -149,10 +150,10 @@ Case of
 		//描画された3秒後に呼ばれる
 		SET TIMER(0)  //タイマーをクリア
 		
-		//ピクチャを消去
-		var $pict : Picture
-		OBJECT SET VALUE("Output Pict"; $pict*0)
-		WA SET PAGE CONTENT(*; "Web Area"; ""; "")
+		//表示している画像を消去
+		var $pict : Picture  //空のピクチャ変数
+		OBJECT SET VALUE("Output Pict"; $pict)  //空のピクチャ変数で消去
+		WA SET PAGE CONTENT(*; "Web Area"; ""; "")  //空のソースで消去
 		
 End case 
 ```
