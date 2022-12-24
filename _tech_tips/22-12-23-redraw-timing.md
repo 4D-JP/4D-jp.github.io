@@ -96,7 +96,7 @@ Case of
 		"left"; 460; "top"; 10; "width"; 200; "height"; 16; \
 		)
 		
-		$ref:=Open form window($form; Movable form dialog box)
+		$ref:=Open form window($form)
 		DIALOG($form)
 		CLOSE WINDOW($ref)
 		
@@ -126,7 +126,7 @@ Case of
 		
 		//メニュー表示
 		$menu:=Create menu
-		APPEND MENU ITEM($menu; Choose(Picture size($pict)=0; "("; "")+"ペースト")
+		APPEND MENU ITEM($menu; Choose(Picture size($pict)=0; "("; "")+"ペースト")  //ペースボードに画像があるときだけ使えるようにする
 		SET MENU ITEM PARAMETER($menu; -1; "paste")
 		APPEND MENU ITEM($menu; "-")
 		APPEND MENU ITEM($menu; "変数にはピクチャが描画されない")
