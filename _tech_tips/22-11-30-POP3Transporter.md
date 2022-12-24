@@ -154,7 +154,7 @@ Case of
 		If ([mails]content.bodyValues.p0002#Null)  // HTML本文はあるか？
 			WA SET PAGE CONTENT(*; OBJECT Get name; [mails]content.bodyValues.p0002.value; "")  // HTML本文
 		Else 
-			WA SET PAGE CONTENT(*; OBJECT Get name; Replace string([mails]content.bodyValues.p0001.value; "\r"; "<br/>\r"); "")  // HTLM化したテキスト本文を表示（ちょっと乱暴な方法）
+			WA SET PAGE CONTENT(*; OBJECT Get name; "<pre>"+[mails]content.bodyValues.p0001.value+"</pre>"; "")  // テキスト本文をpreタグで表示
 		End if 
 End case 
 ```
@@ -192,13 +192,7 @@ Case of
 			End while 
 			WA SET PAGE CONTENT(*; OBJECT Get name; $html; "")  // HTML本文を表示
 		Else 
-			//本文を取り出す
-			$html:=[mails]content.bodyValues.p0001.value
-			// テキストをHTML化
-			$html:=Replace string($html; "\r\n"; "<br/>")
-			$html:=Replace string($html; "\r"; "<br/>")
-			$html:=Replace string($html; "\n"; "<br/>")
-			WA SET PAGE CONTENT(*; OBJECT Get name; $html; "")  // HTLM化した本文を表示
+			WA SET PAGE CONTENT(*; OBJECT Get name; "<pre>"+[mails]content.bodyValues.p0001.value+"</pre>"; "")  // テキスト本文をpreタグで表示
 		End if 
 		
 	: (FORM Event.code=On URL Filtering)
