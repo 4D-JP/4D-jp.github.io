@@ -13,7 +13,7 @@ type: page
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 下部キャリーオーバー行**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_CarryOverRows.zip)<span id="19-7-7"></span><br />
 データソースに紐づいた表組みを使用する際、表が複数ページに分割される場合に [下部キャリーオーバー行](https://doc.4d.com/4Dv19R7/4D/19-R7/Handling-tables.200-6011887.ja.html#6021028) を表示できるようになりました。これは通常、小計を表示するのに使用します。<br />
-　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: キャリーオーバー行を導入](https://blog.4d.com/ja/4d-write-pro-carry-over-rows-are-available/)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: キャリーオーバー行を導入](https://blog.4d.com/ja/4d-write-pro-carry-over-rows-are-available/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラの簡略表示**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_DisplayFormulas.zip)<span id="19-7-6"></span><br />
 新しく追加された [フォーミュラソースを記号として表示](https://doc.4d.com/4Dv19R7/4D/19-R7/Managing-formulas.300-6011882.ja.html#6014416) プロパティを使って、ドキュメントのフォーミュラを ⓕ 記号として簡略に表示することができます。これは、エンドユーザーがフォーミュラの詳細な定義を知る必要がない場合に便利です。<br />
@@ -25,22 +25,22 @@ type: page
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 複数行のドラッグ＆ドロップ**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_LB_DragAndDrop.zip)<span id="19-7-4"></span><br />
 リストボックスから複数行をドラッグ＆ドロップする際、"alt" キーを使わなくても自然に操作できるようになりました。<br />
-<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [リストボックス – Altキーよ、さようなら！](https://blog.4d.com/ja/list-boxes-say-goodbye-to-alt-key/)<br />
+　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [リストボックス – Altキーよ、さようなら！](https://blog.4d.com/ja/list-boxes-say-goodbye-to-alt-key/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みの列の管理**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DVP_TablesManagement.zip)<span id="19-7-3"></span><br />
 新しく追加された　[`VP INSERT TABLE COLUMNS`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-insert-table-columns)、
 [`VP REMOVE TABLE COLUMNS`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-remove-table-columns)、
 [`VP SET TABLE COLUMN ATTRIBUTES`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-set-table-column-attributes)、
 [`VP Get table column index`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-get-table-column-index) を使って表組に列を追加・削除する方法を紹介します。<br />
-<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: 行と列を管理する新しいコマンド](https://blog.4d.com/ja/4d-view-pro-new-commands-to-manage-rows-columns/)<br />
+　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: 行と列を管理する新しいコマンド](https://blog.4d.com/ja/4d-view-pro-new-commands-to-manage-rows-columns/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**フォームオブジェクトの角の丸み**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_RoundedCorner.zip)<span id="19-7-2"></span><br />
 静的テキストおよび入力オブジェクトのプロパティに [`角の半径`](http://developer.4d.com/docs/ja/FormObjects/propertiesCoordinatesAndSizing#%E8%A7%92%E3%81%AE%E5%8D%8A%E5%BE%84) が追加され、角の丸みを設定できるようになりました。<br />
-<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [角の丸み、登場！](https://blog.4d.com/ja/say-hello-to-rounded-corners/)<br />
+　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [角の丸み、登場！](https://blog.4d.com/ja/say-hello-to-rounded-corners/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**FileHandle クラス**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_FileHandle.zip)<span id="19-7-1"></span><br />
 新しく追加された　[`FileHandle　クラス`](http://developer.4d.com/docs/ja/API/FileHandleClass) で、ファイルを毎回開いたり閉じたりする必要なく、書き込み・読み取りが容易にできるようになりました。<br />
-<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ファイル、フォルダー…そしてファイルハンドル!](https://blog.4d.com/ja/files-folders-and-now-file-handles/)
+　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ファイル、フォルダー…そしてファイルハンドル!](https://blog.4d.com/ja/files-folders-and-now-file-handles/)
 
 ## 19r6 # {#v19r6}
 
