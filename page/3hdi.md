@@ -13,15 +13,15 @@ type: page
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 下部キャリーオーバー行**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_CarryOverRows.zip)<span id="19-7-7"></span><br />
 データソースに紐づいた表組みを使用する際、表が複数ページに分割される場合に [下部キャリーオーバー行](https://doc.4d.com/4Dv19R7/4D/19-R7/Handling-tables.200-6011887.ja.html#6021028) を表示できるようになりました。これは通常、小計を表示するのに使用します。<br />
-<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: キャリーオーバー行を導入](https://blog.4d.com/ja/4d-write-pro-carry-over-rows-are-available/)<br />
+　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: キャリーオーバー行を導入](https://blog.4d.com/ja/4d-write-pro-carry-over-rows-are-available/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラの簡略表示**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_DisplayFormulas.zip)<span id="19-7-6"></span><br />
 新しく追加された [フォーミュラソースを記号として表示](https://doc.4d.com/4Dv19R7/4D/19-R7/Managing-formulas.300-6011882.ja.html#6014416) プロパティを使って、ドキュメントのフォーミュラを ⓕ 記号として簡略に表示することができます。これは、エンドユーザーがフォーミュラの詳細な定義を知る必要がない場合に便利です。<br />
-<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: ユーザーフレンドリーな式表示](https://blog.4d.com/ja/4d-write-pro-user-friendly-display-of-formulas/)<br />
-<hr>
+　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: ユーザーフレンドリーな式表示](https://blog.4d.com/ja/4d-write-pro-user-friendly-display-of-formulas/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメントの変更検知**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_ModifiedDocuments.zip)<span id="19-7-5"></span><br />
 新しい [`.modified`](https://doc.4d.com/4Dv19R7/4D/19-R7/4D-Write-Pro-Attributes.300-6011946.ja.html#6015862) プロパティを使って、ドキュメントが変更されたかどうかを検知できます。<br />
-<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro – ドキュメントの変更を検知](https://blog.4d.com/ja/4d-write-pro-document-modification-detection/)<br />
+　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro – ドキュメントの変更を検知](https://blog.4d.com/ja/4d-write-pro-document-modification-detection/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 複数行のドラッグ＆ドロップ**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_LB_DragAndDrop.zip)<span id="19-7-4"></span><br />
 リストボックスから複数行をドラッグ＆ドロップする際、"alt" キーを使わなくても自然に操作できるようになりました。<br />
