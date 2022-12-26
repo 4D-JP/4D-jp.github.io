@@ -46,27 +46,40 @@ type: page
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 空ピクチャーの非表示化**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_HideEmptyPictures.zip)<span id="19-6-7"></span><br />
 4D Write Pro ドキュメントに含まれる空ピクチャーを非表示にできるようになりました (デフォルトでは空の四角を表示)。<br />
-参照: [空のピクチャー](https://doc.4d.com/4Dv19R6/4D/19-R6/Handling-pictures.200-5903894.ja.html#5938250)
+参照: [空のピクチャー](https://doc.4d.com/4Dv19R6/4D/19-R6/Handling-pictures.200-5903894.ja.html#5938250)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 空ピクチャーの非表示化](https://blog.4d.com/ja/4d-write-pro-disable-visibility-of-empty-images/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**メール: OAuth2を使って、Microsoftアカウントからメールを送信する**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_office365_SendMail.zip)<span id="19-6-6"></span><br />
 4D NetKit が提供する OAuth2Provider クラス、および Office365クラスを使って、Microsoftアカウントと連携してメールを送信する方法を紹介します。<br />
-参照: [4D NetKit](https://github.com/4d/4D-NetKit/tree/19RX)、HDI "[メール: Microsoft ID プラットフォームから Oauth2.0アクセストークンを取得](https://4d-jp.github.io/hdi/#v19r3)"
+参照: [4D NetKit](https://github.com/4d/4D-NetKit/tree/19RX)、HDI "[メール: Microsoft ID プラットフォームから Oauth2.0アクセストークンを取得](https://4d-jp.github.io/hdi/#v19r3)"<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Microsoft 365: 電子メールの送信](https://blog.4d.com/ja/microsoft-365-send-emails/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みとデータコンテキスト**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DVP_CreateTables.zip)<span id="19-6-5"></span><br />
-新しく追加された [`VP CREATE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-create-table) と [`VP REMOVE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-remove-table) コマンドを使って、表組みの作成と削除ができるようになりました。この表組みにデータコンテキストを関連付けることで、コレクションやオブジェクトに格納されたデータを簡単に表示できます。
+新しく追加された [`VP CREATE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-create-table) と [`VP REMOVE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-remove-table) コマンドを使って、表組みの作成と削除ができるようになりました。この表組みにデータコンテキストを関連付けることで、コレクションやオブジェクトに格納されたデータを簡単に表示できます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: コレクションを表組みとして表示](https://blog.4d.com/ja/4d-view-pro-display-your-collections-as-tables/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みとデータソースの関連付け**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_ORDA_Tables.zip)<span id="19-6-4"></span><br />
 4D Write Pro ドキュメントの表組みに、コレクションやエンティティセレクションをデータソースとして関連づけられるようになりました。<br />
-参照: [データソースに基づくテーブル](https://livedoc.4d.com/4Dv19R6/4D/19-R6/Handling-tables.200-5908411.ja.html#5908491)
+参照: [データソースに基づくテーブル](https://livedoc.4d.com/4Dv19R6/4D/19-R6/Handling-tables.200-5908411.ja.html#5908491)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: エンティティセレクションやコレクションで表組みを動的に埋める](https://blog.4d.com/ja/4d-write-pro-dynamically-fill-tables-with-entity-selections-collections/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: プロパティの取得・設定**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_LISTBOXES_Properties_v3.zip)<span id="19-6-3"></span><br />
 [`LISTBOX SET PROPERTY`](https://doc.4d.com/4Dv19R6/4D/19-R6/LISTBOX-SET-PROPERTY.301-5911042.ja.html)、および
 [`LISTBOX Get property`](https://doc.4d.com/4Dv19R6/4D/19-R6/LISTBOX-Get-property.301-5911088.ja.html) コマンドを使って、リストボックスのプロパティを設定する方法を紹介します。<br />
-4D v19 R6 では "横方向パディング" および "縦方向パディング" プロパティが新たに追加され、内マージンの設定が可能になりました。
+4D v19 R6 では "横方向パディング" および "縦方向パディング" プロパティが新たに追加され、内マージンの設定が可能になりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [リストボックス: もっと美しく、もっと便利に](https://blog.4d.com/ja/list-boxes-more-control-more-beauty/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**フォーミュラを関数やコマンド内で使う**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_formula_in_commands.zip)<span id="19-6-2"></span><br />
 コードを呼び出す Collectionクラス関数は、formula 引数として Formulaオブジェクトをサポートするようになりました。<br />
 また、
 [`EXECUTE METHOD IN SUBFORM`](https://doc.4d.com/4Dv19R6/4D/19-R6/EXECUTE-METHOD-IN-SUBFORM.301-5910907.ja.html)、
 [`CALL FORM`](https://doc.4d.com/4Dv19R6/4D/19-R6/CALL-FORM.301-5910890.ja.html)、
-[`CALL WORKER`](https://doc.4d.com/4Dv19R6/4D/19-R6/CALL-WORKER.301-5911386.ja.html) コマンドも Formulaオブジェクトをサポートするようになりました。
+[`CALL WORKER`](https://doc.4d.com/4Dv19R6/4D/19-R6/CALL-WORKER.301-5911386.ja.html) コマンドも Formulaオブジェクトをサポートするようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [コレクションとコールバックコマンドにおけるフォーミュラの使用](https://blog.4d.com/ja/the-use-of-formulas-in-collections-callback-commands/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**HTTPRequest クラス**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_HTTP_Classes.zip)<span id="19-6-1"></span><br />
-新しい [`HTTPRequest`](http://developer.4d.com/docs/ja/API/HTTPRequestClass/)クラスを使って、HTTPRequest オブジェクト を扱うことができます。このオブジェクトは、HTTPサーバーへのリクエストの設定と送信、および HTTPサーバーのレスポンスを処理するのに使用します。
+新しい [`HTTPRequest`](http://developer.4d.com/docs/ja/API/HTTPRequestClass/)クラスを使って、HTTPRequest オブジェクト を扱うことができます。このオブジェクトは、HTTPサーバーへのリクエストの設定と送信、および HTTPサーバーのレスポンスを処理するのに使用します。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [HTTPクラス: 非同期の HTTPリクエストを実行する新しい方法](https://blog.4d.com/ja/http-classes-a-new-way-to-perform-asynchronous-http-requests/)
 
 ## 19r5 # {#v19r5}
 
