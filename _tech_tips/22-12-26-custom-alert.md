@@ -502,19 +502,16 @@ For ($i; 1; $max)
 	
 	//_ALERT_を標準に戻す
 	While (Match regex("(?m)^\t*(_ALERT_\\(.*?\\->OK;)"; $code; 1; $pos; $len))
-		//$code:=Substring($code; 1; $pos{1}-1)+"ALERT("+Substring(Replace string($code; "->OK;"; ""); $pos{1}+$len{1})
 		$code:=Substring($code; 1; $pos{1}-1)+"ALERT("+Substring($code; $pos{1}+$len{1})
 	End while 
 	
 	//_Request_を標準に戻す
 	While (Match regex("(?m)^[^/]+:=(_Request_\\(.*?\\->OK;)"; $code; 1; $pos; $len))
-		//$code:=Substring($code; 1; $pos{1}-1)+"Request("+Substring(Replace string($code; "->OK;"; ""); $pos{1}+$len{1})
 		$code:=Substring($code; 1; $pos{1}-1)+"Request("+Substring($code; $pos{1}+$len{1})
 	End while 
 	
 	//_CONFIRM_を標準に戻す
 	While (Match regex("(?m)^\t*(_CONFIRM_\\(.*?\\->OK;)"; $code; 1; $pos; $len))
-		//$code:=Substring($code; 1; $pos{1}-1)+"CONFIRM("+Substring(Replace string($code; "->OK;"; ""); $pos{1}+$len{1})
 		$code:=Substring($code; 1; $pos{1}-1)+"CONFIRM("+Substring($code; $pos{1}+$len{1})
 	End while 
 	
