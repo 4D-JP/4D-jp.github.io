@@ -32,7 +32,10 @@ version: 17, 18, 19
 | CONFIRM | \_CONFIRM_ |
 | Request | \_Request_ |
 
-パラメーターの並びは、基本的に同じですが、メソッドをコンポーネント化して利用できるように、メソッドにはシステム変数のOK変数へのポインターも渡すようにします。
+パラメーターの並びは、基本的に同じですが、メソッドをコンポーネント化して利用できるように、メソッドにはシステム変数のOK変数へのポインターも渡すようにしています。
+
+また、デザインは標準コマンドに似せて作りましたが、$fontSize変数にフォントサイズを設定するとフォントの大きさが変わりますので、フォントサイズを変えると標準コマンドとの区別が付きやすいと思います。
+もちろん、フォントサイズを変えると、デザインの見直しが必要になるのは当然です。
 
 ###  \_ALERT_メソッド
 
@@ -414,8 +417,7 @@ $max:=Size of array($methods)
 For ($i; 1; $max)
 	
 	//進捗バー
-	Progress SET MESSAGE($ref; $methods{$i})
-	Progress SET PROGRESS($ref; $i/$max)
+	Progress SET PROGRESS($ref; $i/$max; $methods{$i})
 	
 	//メソッドのコードを変数にロード
 	METHOD GET CODE($methods{$i}; $code; *)
@@ -438,16 +440,6 @@ For ($i; 1; $max)
 	//変換したコードをメソッドに保存
 	METHOD SET CODE($methods{$i}; $code; *)
 	
-	//エラーがあったときの警告を表示（本当はログに書き込むのが良い）
-	Case of 
-		: (Error=-9766)
-			ALERT("「"+$methods{$i}+"」を更新できませんでした")
-			Error:=0
-		: (Error#0)
-			ALERT("「"+$methods{$i}+"」を処理中にエラーが発生しました\rError code: "+String(Error))
-			Error:=0
-	End case 
-	
 End for 
 
 Progress QUIT($ref)
@@ -467,7 +459,7 @@ ALERT("インストールしました")
 /*
 	
 	目的
-	全てのメソッド内の下記カスタムコマンドを標準コマンドの呼び出しに変更する
+	全てのメソッド内の下記メソッド呼び出しを標準コマンドの呼び出しに変更する
 	
 	_ALERT_
 	_Request_
@@ -494,42 +486,35 @@ $max:=Size of array($methods)
 For ($i; 1; $max)
 	
 	//進捗バー
-	Progress SET MESSAGE($ref; $methods{$i})
-	Progress SET PROGRESS($ref; $i/$max)
+	Progress SET PROGRESS($ref; $i/$max; $methods{$i})
 	
 	//メソッドのコードを変数にロード
 	METHOD GET CODE($methods{$i}; $code; *)
 	
 	//_ALERT_を標準に戻す
 	While (Match regex("(?m)^\t*(_ALERT_\\(.*?\\->OK;)"; $code; 1; $pos; $len))
+		//$code:=Substring($code; 1; $pos{1}-1)+"ALERT("+Substring(Replace string($code; "->OK;"; ""); $pos{1}+$len{1})
 		$code:=Substring($code; 1; $pos{1}-1)+"ALERT("+Substring($code; $pos{1}+$len{1})
 	End while 
 	
 	//_Request_を標準に戻す
 	While (Match regex("(?m)^[^/]+:=(_Request_\\(.*?\\->OK;)"; $code; 1; $pos; $len))
+		//$code:=Substring($code; 1; $pos{1}-1)+"Request("+Substring(Replace string($code; "->OK;"; ""); $pos{1}+$len{1})
 		$code:=Substring($code; 1; $pos{1}-1)+"Request("+Substring($code; $pos{1}+$len{1})
 	End while 
 	
 	//_CONFIRM_を標準に戻す
 	While (Match regex("(?m)^\t*(_CONFIRM_\\(.*?\\->OK;)"; $code; 1; $pos; $len))
+		//$code:=Substring($code; 1; $pos{1}-1)+"CONFIRM("+Substring(Replace string($code; "->OK;"; ""); $pos{1}+$len{1})
 		$code:=Substring($code; 1; $pos{1}-1)+"CONFIRM("+Substring($code; $pos{1}+$len{1})
 	End while 
 	
 	//変換したコードをメソッドに保存
 	METHOD SET CODE($methods{$i}; $code; *)
 	
-	//エラーがあったときの警告を表示（本当はログに書き込むのが良い）
-	Case of 
-		: (Error=-9766)
-			ALERT("更新できませんでした")
-			Error:=0
-		: (Error#0)
-			ALERT("エラーが発生しました\rError code:"+String(Error))
-			Error:=0
-	End case 
-	
 End for 
 
+//進捗バーを閉じる
 Progress QUIT($ref)
 
 ALERT("アンインストールしました")
@@ -546,8 +531,9 @@ ALERT("アンインストールしました")
 | メッセージの長さに合わせてウィンドウがある程度調整される | いつも同じ大きさ |
 | OK／キャンセルボタンの位置と大きさはタイトルの長さに合わせて調整される | いつも同じ位置と大きさ |
 
+もちろん、このような振る舞いの差は、メソッド作り込むことで改善できます。
 
-テスト用のメソッドも紹介しておきます。
+もう一つおまけですが、テスト用のメソッドも紹介しておきます。
 
 このメソッドの置き換えを目標にして、上記の例題メソッドを作成しました。
 
