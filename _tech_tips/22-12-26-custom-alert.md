@@ -327,8 +327,8 @@ End case
 
 出典：[Tips: 全メソッドのパスを得るコード](https://kb.4d-japan.com/Tips/2385/)
 
-このめそっどは、XF_all_method_pathとして作成しておきます。
-インストール／アンインストールのメソッドからは、XF_all_method_pathメソッドとして呼び出しています。
+このメソッドは、XF_all_method_pathの名称で作成しておきます。
+インストール／アンインストールのメソッドからは、XF_all_method_pathメソッドを呼び出して、すべてのメソッドパスを一度に取得しています。
 
 ```4d
 /*
