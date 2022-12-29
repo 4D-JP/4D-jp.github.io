@@ -12,6 +12,8 @@ permalink: /283/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103591 Windows版のみ。Write Proエリアのタブがビットマップ風の読みづらいフォントで表示されました。
+ 
 * ACI0103462 Mac版のみ。システム環境設定の地域を英国，言語をオランダ語に設定し，日付フォーマット*Internal date short* を使用した場合，`DD-MM-YYYY`ではなく`DD/MM/YYYY`形式で日付が表示されました。
  
 * ACI0103573 Windows版のみ。`PRINT SETTINGS`でプリント設定ダイアログを表示した場合，アプリケーションがクラッシュすることがありました。
