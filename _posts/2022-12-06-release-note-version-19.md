@@ -1,13 +1,15 @@
 ---
 layout: fix
 title: "4D v19 修正リスト"
-date: 2022-12-21 08:00:00
+date: 2022-12-24 08:00:00
 categories: 修正リスト
 tags: "19.5"
-build: 284195
+build: 284239
 version: "19.5" 
 permalink: /341/:slug/
 ---
+
+* ACI0102704 メソッドエディターで`Is table number valid`コマンドを選択し，*F1* キーまたは`command`+`K`を入力した場合，間違ったドキュメントのページにジャンプしました。リダイレクトが正しく機能していないようです。
 
 * ACI0103462 Mac版のみ。システム環境設定の地域を英国，言語をオランダ語に設定し，日付フォーマット*Internal date short* を使用した場合，`DD-MM-YYYY`ではなく`DD/MM/YYYY`形式で日付が表示されました。
  
