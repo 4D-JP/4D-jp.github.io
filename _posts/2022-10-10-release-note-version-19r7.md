@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D v19r7 修正リスト"
-date: 2022-12-21 08:00:00
+date: 2023-01-05 08:00:00
 categories: 修正リスト
 tags: 19r7
-build: 100253
+build: 100256
 version: 19r7
-permalink: /283/:slug/
+permalink: /23283/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103466 最前面に移動したメソッドエディターのロックを解除してタイプ入力を再開した場合，それまでに外部ツールで編集した内容がエディターにリロードされませんでした。
+
+* ACI0103596 4D Go MobileでAndroidアプリをビルドした場合，SQLiteデータベースの作成中に`org.sqlite.SQLiteException`例外が返されました。
 
 * ACI0103591 Windows版のみ。Write Proエリアのタブがビットマップ風の読みづらいフォントで表示されました。
  
