@@ -6,7 +6,7 @@ categories: 修正リスト
 tags: 19r7
 build: 100256
 version: 19r7
-permalink: /23283/:slug/
+permalink: /2022/283/:slug/
 ---
 
 **バージョン**: {{page.version}}  
