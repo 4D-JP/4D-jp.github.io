@@ -18,13 +18,13 @@ permalink: /2023/10/:slug/
 
 * ACI0103606 REST APIでピクチャフィールドを更新した後に返されるURLが間違っていました。
 
-```url
+```
 /rest/TableName?$method=update
 ```
 
 というリクエストを送信した場合，
 
-```url
+```
 {__deferred:{uri:/rest/Employees[1428]/photo?$imageformat=best&$version=699&$expand=photo,mediatype:image/jpeg,height:197,width:256,image:true}}
 ```
 
