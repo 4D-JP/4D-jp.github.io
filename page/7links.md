@@ -180,6 +180,9 @@ type: page
     * [Tag Editor](https://github.com/4dgeek/4d-component-tagEditor)
     * [TinyMCE](https://github.com/4dgeek/4d-component-tinymce)
     
+* [T. Fornalik](https://github.com/dbyte)    
+    * [4D-Filewatcher](https://github.com/dbyte/4D-Filewatcher)
+   
 * [Tim Penner](https://github.com/tpenner)    
     
 * [Thomas Maul](https://github.com/ThomasMaul)
