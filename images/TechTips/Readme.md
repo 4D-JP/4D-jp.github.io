@@ -1,0 +1,1 @@
+tech_tips用画像
