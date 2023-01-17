@@ -15,13 +15,18 @@ version: 17, 18, 19
 
 例えば、ある共通する名前で始まるようなオブジェクトをすべて削除するようなケースを考えてみます。
 
-最初に、すべてのフォームのソースにアクセスする方法ですが、ソースファイルのリストを生成する必要があります。
-これは`Folder`コマンドを使うと、１行で表現することが可能です。
+最初に、すべてのフォームのソースにアクセスする方法ですが、`Folder`コマンドを使うと１行で表現することが可能です。
 
 ```4d
 $files:=Folder("/PACKAGE/Project/Sources").files(fk recursive+fk ignore invisible).query("fullName = 'form.4DForm'")
 ```
-上記のリストを処理し、条件に合うオブジェクトを削除するコードは、次のようになります。
+`Folder`コマンドにわたすパスは、プラットフォームに関係なくPOSIX形式です。
+上記の場合、`Folder`コマンドによって`/PACKAGE/Project/Sources`配下にあるファイルすべてがリスト化され、そのリストからファイル名が`form.4DForm`であるファイルだけに`query()`を使い絞り込みしています。
+ドット記法でつなげることで、複数の動作をたった１行にまとめることができます。
+
+このようにリストは簡単に作成することができます。
+
+このリストをループして処理し、条件に合うオブジェクトを削除するコードは、次のようになります。
 
 ```4d
 $files:=Folder("/PACKAGE/Project/Sources").files(fk recursive+fk ignore invisible).query("fullName = 'form.4DForm'")
