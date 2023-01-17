@@ -9,6 +9,14 @@ type: page
 * content
 {:toc}
 
+
+## 19r8 # {#v19r8}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: コレクション/エンティティセレクション型での自動行高**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_LISTBOX_VariableRowHeight.zip)<span id="19-8-1"></span><br />
+コレクション/エンティティセレクション型のリストボックスでも自動行高が設定できるようになりました。
+<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [コレクション型のリストボックスにおける自動行高](https://blog.4d.com/ja/variable-row-heights-in-collection-based-list-boxes/)<br />
+
 ## 19r7 # {#v19r7}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 下部キャリーオーバー行**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_CarryOverRows.zip)<span id="19-7-7"></span><br />
