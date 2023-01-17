@@ -1,6 +1,6 @@
 ---
 layout: technote
-title: "テンプレートを利用したSVGの動的利用"
+title: "テンプレートを利用したSVG画像の動的生成"
 position: 20230113
 date: 2023-01-17 00:00:00
 categories: ヒント
