@@ -26,7 +26,7 @@ $files:=Folder("/PACKAGE/Project/Sources").files(fk recursive+fk ignore invisibl
 ```4d
 $files:=Folder("/PACKAGE/Project/Sources").files(fk recursive+fk ignore invisible).query("fullName = 'form.4DForm'")
 For each ($fileForm; $files)  //フォームソースファイルを順次処理する
-	$form:=JSON Parse($fileForm.getText())  //ソース読み出してオブジェクト変数に収める
+	$form:=JSON Parse($fileForm.getText())  //ソースを読み出してオブジェクト変数に収める
 	$edited:=False  //フォームの編集フラグを初期化
 	For each ($page; $form.pages)  //フォームの各ページを処理する
 		For each ($name; $page.objects)  //各ページに配置されたフォームオブジェクトを処理する
