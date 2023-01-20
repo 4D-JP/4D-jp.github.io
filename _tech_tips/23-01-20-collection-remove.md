@@ -2,7 +2,7 @@
 layout: technote
 title: "コレクションの要素を削除するときは最後から"
 position: 20230120
-date: 2023-01-20 8:00:00
+date: 2023-01-20 0:00:00
 categories: ヒント
 tags: collection
 version: 18, 19
