@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19r8 修正リスト"
-date: 2023-01-20 08:00:00
+date: 2023-01-24 08:00:00
 categories: 修正リスト
 tags: 19r8
-build: 100096
+build: 100107
 version: 19r8
 permalink: /2023/10/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103645 Mac版のみ。タブコントロールのベースラインが低くレンダリングされました。
 
 * ACI0103642 *keep-alive* モードを指定せずに`HTTP Request`コマンドを実行した場合，ステータスコード`503`と空のレスポンスが返されることがありました。
 
