@@ -120,6 +120,8 @@ type: page
 * [Dani Beaubien](https://github.com/dbeaubien)
     * [4D Github API](https://github.com/dbeaubien/4D-Github-API-Component)
     * [Manifest Generator](https://github.com/dbeaubien/Manifest-Generator-4D-Component)
+    * [Component for Reading Delimited Text Files](https://github.com/dbeaubien/File_TableDelimited)
+    * [Component to provide analysis capabilities on the 4d source and data](https://github.com/dbeaubien/CodeAnalysis)
     
 * [Eric Juhel](https://github.com/Jim-Fergus)
 
