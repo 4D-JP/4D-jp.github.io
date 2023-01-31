@@ -1,13 +1,31 @@
 ---
 layout: fix
 title: "4D v19.5 修正リスト"
-date: 2023-01-25 08:00:00
+date: 2023-01-28 08:00:00
 categories: 修正リスト
 tags: "19.5" 
-build: 284694
+build: 284757
 version: "19.5" 
 permalink: /2023/5/:slug/
 ---
+
+* ACI0103653 テーブルのレコードがすべてキャッシュされている場合，複数条件のインデックス検索速度が大幅に低下しました。ACI0103507が修正されたことによる副作用のようです。
+
+* ACI0103608 クライアント/サーバー版のみ。*On Startup* で`CHANGE CURRENT USER`を使用した場合，デザインモードでセットしたブレークポイントが保存されませんでした。
+
+* ACI0103537 Windows版のみ。Write Proツールバーのタブがビットマップフォントで表示されました。
+
+**注記**: データベース設定（*.4DSettings*）の*win_form_text_directwrite* を`true`に設定することにより，Direct2Dが使用されるようになりました。この属性が設定されていない場合，レンダリングモードは自動となり，19r3以降で作成されたプロジェクトではDirect2D，そうでなければGDIとなります。
+
+```xml
+<preferences stamp="…">
+<com.4d>
+<database>
+<misc win_form_text_directwrite="true"/>
+</database>
+</com.4d>
+</preferences>
+```
 
 * ACI0103644 診断ログ（データベースパラメーター`79`）を有効にした場合，Webプロセスで発生したエラーがログファイルに出力されますが，スタックトレースは出力されませんでした。ヘッドレスモードでは問題ありません。
 
