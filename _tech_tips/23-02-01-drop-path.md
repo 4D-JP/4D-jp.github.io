@@ -124,7 +124,7 @@ Case of
 		//フォームの初期化
 		Form.path:=""
 		Form.files:=New collection
-	: 
+		
 	: (FORM Event.code=On Timer)  //リストボックスの更新がリクエストされた
 		SET TIMER(0)
 		//リストボックスを更新
