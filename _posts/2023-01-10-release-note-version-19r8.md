@@ -34,7 +34,7 @@ permalink: /2023/10/:slug/
 
 * ACI0103653 テーブルのレコードがすべてキャッシュされている場合，複数条件のインデックス検索速度が大幅に低下しました。ACI0103507が修正されたことによる副作用のようです。
 
-ACI0103639 フォームの異なるページに同名のオブジェクトが存在する場合，Apple Siliconターゲットのコンパイルで*Internal error while compiling with clang* というエラーが返されました。
+* ACI0103639 フォームの異なるページに同名のオブジェクトが存在する場合，Apple Siliconターゲットのコンパイルで*Internal error while compiling with clang* というエラーが返されました。
 
 * ACI0103608 クライアント/サーバー版のみ。*On Startup* で`CHANGE CURRENT USER`を使用した場合，デザインモードでセットしたブレークポイントが保存されませんでした。
 
