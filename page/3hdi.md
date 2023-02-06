@@ -12,9 +12,13 @@ type: page
 
 ## 19r8 # {#v19r8}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストボックス**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_4DWP_UseTextBoxes.zip)<span id="19-8-2"></span><br />
+4D Write Pro でテキストボックスを利用できるようになりました。<br />
+参照: [テキストボックスの管理](https://doc.4d.com/4Dv19R8/4D/19-R8/Using-a-4D-Write-Pro-area.200-6130476.ja.html#6131907)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro : フローティングテキストボックス！](https://blog.4d.com/ja/4d-write-pro-say-welcome-to-floating-text-boxes/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: コレクション/エンティティセレクション型での自動行高**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_LISTBOX_VariableRowHeight.zip)<span id="19-8-1"></span><br />
-コレクション/エンティティセレクション型のリストボックスでも自動行高が設定できるようになりました。
-<br />
+コレクション/エンティティセレクション型のリストボックスでも自動行高が設定できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [コレクション型のリストボックスにおける自動行高](https://blog.4d.com/ja/variable-row-heights-in-collection-based-list-boxes/)<br />
 
 ## 19r7 # {#v19r7}
