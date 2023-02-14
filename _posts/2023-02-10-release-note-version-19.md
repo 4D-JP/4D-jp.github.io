@@ -1,0 +1,14 @@
+---
+layout: fix
+title: "4D v19.5 修正リスト"
+date: 2023-02-10 08:00:00
+categories: 修正リスト
+tags: v19 
+build: 285005
+version: "19.5"
+permalink: /2023/41/:slug/
+---
+
+**バージョン**: {{page.version}}  
+**ビルド**: {{page.build}} 
+
