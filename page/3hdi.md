@@ -12,6 +12,11 @@ type: page
 
 ## 19r8 # {#v19r8}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Webセッションとアクセス権限**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_Permissions.zip)<span id="19-8-4"></span><br />
+4D のスケーラブルWebセッションに権限を付与することで、データへのアクセスを詳細に管理できるようになりました。<br />
+参照: [ORDA ＞ 権限](http://developer.4d.com/docs/ja/ORDA/privileges)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [完全な権限システムでデータアクセスをフィルタリングする](https://blog.4d.com/ja/filter-access-to-your-data-with-a-complete-system-of-permissions/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みとテーマ**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_4DVP_tableStyle.zip)<span id="19-8-3"></span><br />
 4D View Pro の表組みにテーマを適用できるようになりました。 [`VP SET TABLE THEME`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-set-table-theme) コマンドが追加されたほか、 [`VP CREATE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-create-table) コマンドが拡張され、テーマオプションをサポートするようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: 表組みのスタイルをカスタマイズ](https://blog.4d.com/ja/4d-view-pro-customize-the-style-of-your-tables/)<br />
