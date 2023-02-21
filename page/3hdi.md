@@ -12,6 +12,11 @@ type: page
 
 ## 19r8 # {#v19r8}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Office365: メールのコピー・移動・返信・削除**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_Office365_manage_mails.zip)<span id="19-8-6"></span><br />
+Microsoft の Graph API を使用してメールをコピー・移動・返信・削除する方法を紹介します。<br />
+参照: [4D NetKit](https://github.com/4d/4D-NetKit/tree/19RX)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Microsoft 365: Microsoft Graph API でメールをコピー、移動、返信、削除する](https://blog.4d.com/ja/microsoft-365-copy-move-reply-and-delete-emails-with-the-microsoft-graph-api/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**Office365: メールの受信**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_Office365_get_mails.zip)<span id="19-8-5"></span><br />
 Microsoft の Graph API を使用してメールを受信する方法を紹介します。<br />
 参照: [4D NetKit](https://github.com/4d/4D-NetKit/tree/19RX)<br />
