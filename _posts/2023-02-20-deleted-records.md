@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "アドレステーブル"
+title: "削除レコードとアドレステーブル"
 date: 2023-02-20 09:00:00
 categories: 仕様
 tags: orda database programming
