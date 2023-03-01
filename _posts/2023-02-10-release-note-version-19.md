@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19.5 修正リスト"
-date: 2023-02-21 08:00:00
+date: 2023-03-01 08:00:00
 categories: 修正リスト
 tags: v19 
-build: 285162
+build: 285268
 version: "19.5"
 permalink: /2023/41/:slug/
 ---
@@ -12,6 +12,7 @@ permalink: /2023/41/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103505 ポルトガル語版のみ。データベース設定画面の「互換性（Compatibilidade）」ボタンのタイトルが完全に表示されませんでした。
 
 * ACI0103715 Mac版のみ。コンボボックスのフォーカス表示がポップアップメニューのものとは違いました。
 
