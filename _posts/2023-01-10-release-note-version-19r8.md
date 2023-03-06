@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19r8 修正リスト"
-date: 2023-03-02 08:00:00
+date: 2023-03-03 08:00:00
 categories: 修正リスト
 tags: 19r8
-build: 100183
+build: 100187
 version: 19r8
 permalink: /2023/10/:slug/
 ---
@@ -12,6 +12,10 @@ permalink: /2023/10/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103759 `WP Get sections`にメモリリークがあり，ハングやクラッシュに至ることがありました。
+
+* ACI0103723 `VP MOVE CELLS` `VP Copy to object` `VP PASTE FROM OBJECT`が大量のメモリを消費し，処理に時間を要しました。
+ 
 * ACI0103753 Windows版のみ。リストボックスに関連づけられたコンボボックス型のドロップダウンメニューに`25`個以上の項目が存在する場合，入力エリアにテキストを入力した上で矢印アイコンをクリックすると，メニューが表示された後すぐに閉じられました。
 
 * ACI0103747 Visual Studio Codeに4D-Analyzerをインストールして4Dのトリガを開いた場合，LSPサーバーがクラッシュし，コードがトークン表示されませんでした。
