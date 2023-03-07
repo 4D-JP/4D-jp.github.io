@@ -125,24 +125,32 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
  [`dataStore.getAllRemoteContexts()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#getallremotecontexts)、
  [`dataStore.clearAllRemoteContexts()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#clearallremotecontexts)、
  [`dataStore.setRemoteContextInfo()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#setremotecontextinfo)
+ 
 * <i class="fa fa-download" aria-hidden="true"></i> [**親フォームとサブフォーム間の通信**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4D_SubformCommunication.zip)<span id="19-5-6"></span><br />
 新しく追加された [`OBJECT Get subform container value`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-Get-subform-container-value.301-5862192.ja.html) および [`OBJECT SET SUBFORM CONTAINER VALUE`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-SET-SUBFORM-CONTAINER-VALUE.301-5862140.ja.html) コマンドを使い、親フォームとサブフォーム間でスカラー型の変数あるいは式を同期させることができます。<br />
 参考: [サブフォーム](https://doc4d.github.io/docs/ja/FormObjects/subformOverview.html#%E8%A6%AA%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%A8%E3%82%B5%E3%83%96%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%AE%E5%90%8C%E6%9C%9F-%E5%8D%98%E4%B8%80%E5%80%A4)
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [フォームとサブフォームの通信を簡単に](https://blog.4d.com/ja/form-and-subform-communication-made-easy/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DVP_DataContext.zip)<span id="19-5-5"></span><br />
 4D View Pro ドキュメントのシートにデータコンテキストを関連付けることができるようになりました。オブジェクトまたはコレクションをバインドすることで、それらの内容をシートのセルに自動で表示することができます。<br />
 参考: [`VP SET DATA CONTEXT`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-set-data-context)、
 [`VP Get data context`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-get-data-context)、
 [`VP SET BINDING PATH`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-set-binding-path)、
 [`VP Get binding path`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-get-binding-path)
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_ORDA.zip)<span id="19-5-4"></span><br />
 4D v19R5 より、4D Write Pro ドキュメントにデータコンテキストを関連付けることができるようになりました。これにより、テンプレートドキュメント内で、エンティティやエンティティセレクションといった ORDAデータのほか、任意のオブジェクトデータを利用することができます。<br />
 参考: [`WP SET DATA CONTEXT`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-SET-DATA-CONTEXT.301-5866708.ja.html)、[`WP Get data context`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-Get-data-context.301-5866737.ja.html)
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 段落のリンク**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_LinkedParagraphs.zip)<span id="19-5-3"></span><br />
 4D Write Pro の段落を、次の段落とリンクするための新しい `wk keep with next` 属性が追加されました。これを設定すると、改ページやカラムブレークにより、離してはいけない段落同士が分離されてしまうことを防げます。<br />
 参考: [段落ブレーク＞自動ブレークを管理する＞次の段落につなげる](https://doc.4d.com/4Dv19R5/4D/19-R5/Using-a-4D-Write-Pro-area.200-5827439.ja.html#5864778)
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 繰り返し表示される表組みのヘッダー行**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_RepeatedHeaders.zip)<span id="19-5-2"></span><br />
 4D v19R5 より、4D Write Pro の表組みは、最大5行までのヘッダー行を持てるようになりました。<br />
 参考: [テーブルの管理＞繰り返し表示されるヘッダー行](https://doc.4d.com/4Dv19R5/4D/19-R5/Using-a-4D-Write-Pro-area.200-5827439.ja.html#5859192)
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 表組みのヘッダー行](https://blog.4d.com/ja/4d-write-pro-say-hello-to-table-headers/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**Copy Parameters**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_CopyParameters.zip)<span id="19-5-1"></span><br />
 新しく追加された [`Copy parameters`](https://doc.4d.com/4Dv19R5/4D/19-R5/Copy-parameters.301-5872607.ja.html) コマンドを使い、関数/メソッドから関数/メソッドへと引数を転送することができます。
 
