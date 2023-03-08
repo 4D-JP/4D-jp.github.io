@@ -1,0 +1,183 @@
+---
+layout: technote
+title: "特定の文字のパターンを抽出する方法（その２）"
+position: 20230308001
+date: 2023-03-08 00:00:00
+categories: ヒント
+tags: 
+version: 18 19
+---
+
+[前の記事](./23-02-16-extract-text/)では、正規表現を用いて特定のパターンの文字列を抽出しましたが、今回は特定のパターンの文字列を抽出して、それを元に削除する方法について考えてみます。
+
+<!--more-->
+
+## 目標
+
+例題では、HTMLファイルのBODY部を抽出して、そのタグを全て消去することを目指します。
+
+XMLコマンドでも同様のことが可能ですが、XMLとは違いHTMLはパースに失敗するようなソースも多いので、正規表現を用いて行うのが非常に有用です。
+またXMLでパースに失敗するような不完全なXMLデータも、正規表現を用いることで必要な情報を抜き出すことも可能でしょう。
+
+## 例題HTML
+
+例題で使うHTMLは、4DのWebサーバー機能を有効にしたときに生成されるファイルを元にしたものを利用しました。
+少し、ハードルを高くするため、次のように手を入れました。
+
+1. コメント行の文章中に<がある
+2. <の数が>よりも多い
+3. 複数行に亘るタグがある
+
+HTMLのソースコードは次のとおりです。
+
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>4D Application Webサーバーへようこそ</title>
+<style type="text/css">
+<!--
+h2 {
+font: 16px "ヒラギノ角ゴ Pro W3", "メイリオ", "ＭＳ Ｐゴシック", Verdana, Arial, Helvetica, sans-serif;
+}
+p {
+font: 12px "ヒラギノ角ゴ Pro W3", "メイリオ", "ＭＳ Ｐゴシック", Verdana, Arial, Helvetica, sans-serif;
+}
+-->
+</style>
+</head>
+<body>
+<!--
+ここにオリジナルには無いコメントがありますが、その中に"<"があるところに注目してください
+コメント中の"<"や">"があっても正規表現でスパッと解決です
+-->
+<div align="center">
+<table
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+	width="675"
+><!--複数の行にまたがる１つのタグにも注目してください-->
+<tr>
+<td> 
+<h2 align="center">4D Webサーバーのデフォルトホームページへようこそ!</h2>
+<p align="center">これは<strong><b>4D Webサーバー</b></strong> のデフォルトホームページです。<br>この<strong>テストページ</strong>は4D プリケーションから送信されています。</p>
+<p align="center">Webマスターの方、おめでとうございます！<br>あなたのWebサーバーは正常に起動されました。<br>あとはデフォルトの &quot;index.html&quot; ファイルをあなたのページと入れ替えてください。</p>
+<p align="center">4D Webサーバーを設定する方法については、マニュアルをご覧ください。</p>
+<p align="center"><b>重要</b>: このWebページやWebサイトは、4D SASやその子会社によって所有または管理されるものではありません。このサイトに関するお問い合わせは、サイトの所有者またはWebマスタにお願いいたします。</p>
+<p align="center">&copy;1995-2022 4D, Inc., 4D SAS and its Licensors.<br>All rights reserved.</p>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+```
+
+## 正規表現でタグを削除
+
+いよいよ本題のコードです。
+
+正規表現式は複数行を一度に評価するように書いてあります。
+複数行で評価させるポイントは…
+
+1. (?m)で複数行を扱うことを宣言（注：このケースでは無くても大丈夫）
+1. 任意文字を表すのに[\s\S]を使う
+
+任意文字を.（ドット）で表現していまいますと、改行コードなどが含まれていないので、複数行の評価では当たらいてくれない箇所が生まれてしまいます。
+そこで、\sと\Sを組み合わせて、任意文字として利用しています。
+
+|  記号  |  意味  |. 備考  |
+| ---- | ---- |
+| \s | -すべての空白文字 | 半角スペース、\t、\n、\r、\f |
+| \S | 空白文字以外のすべて |  |
+
+[\s\S]を使うことで、コード全体がシンプルにまとまります。
+実際のコードは次のとおりです。
+
+```4d
+//データファイルの位置を基点にしてファイル選択を促す
+$name:=Select document(Folder("/DATA/").platformPath; "html;htm"; "HTMLファイルを選択してください"; Allow alias files)
+
+If (OK=1)
+	
+	//対象のファイルを読み込む
+	$htmlfile:=File(Document; fk platform path)
+	$html:=$htmlfile.getText()
+	
+	//正規表現式での評価の結果を配列で受け取るようにする
+	ARRAY LONGINT($pos; 0)
+	ARRAY LONGINT($len; 0)
+	
+	//ヘッダ部を削除
+	If (Match regex("<body"; $html; 1; $pos; $len))
+		$html:=Substring($html; $pos{0})
+	End if 
+	
+	//最初にコメントを削除
+	While (Match regex("(?m)(<!--[\\s\\S]*?-->)"; $html; 1; $pos; $len))
+		$html:=Substring($html; 1; $pos{1}-1)+Substring($html; $pos{1}+$len{1})
+	End while 
+	
+	//タグを削除
+	While (Match regex("(?m)(<[\\s\\S]+?>)"; $html; 1; $pos; $len))
+		$html:=Substring($html; 1; $pos{1}-1)+Substring($html; $pos{1}+$len{1})
+	End while 
+	
+	//拡張子をテキストに変更して保存
+	$newfile:=File($htmlfile.parent.path+$htmlfile.name+".txt").setText($html)
+	
+End if 
+```
+
+## コードの解説
+
+見ていただければ、きっとご理解いただけると思いますが、一応解説をしておきます。
+
+ヘッダ部を最初に削除していますが、bodyタグを見つけて、bodyタグ先頭からのテキストを切り出すことで実現しています。
+言い換えるなら「ボディ部だけにする」といったところでしょうか。
+
+次にコメントを削除していますが、コメントにはタグの残りカスのようなものが含まれていることが多く、それらが後々悪影響を及ぼすことがあるので、最初にコメントを削除しています。
+
+タグを削除するところですが、例題のHTMLのtableタグが複数の行にまたがる記述になっていても問題なく評価されている点に注目してください。
+これは、任意文字を[\s\S]と記述したことで複数でも問題なく評価できています。
+
+## まとめ
+
+正規表現式は奥の深いものですので、文字を扱うコードが何やら複雑になってしまったようなときには、正規表現式で評価することを検討してみてください。
+
+## おまけ
+
+例題のHTMLの原型は、数値文字参照が用いられています。
+数値文字参照は文字化けを防ぐ有効な方法ですが、この記事を書くに当たり、HTMLコードを読みやすくする目的で数値文字参照を文字に変換したソースを用いています。
+数値文字参照を文字に変換するために用いたコードを最後に付記しておきますので、ご参考になると幸いです。
+
+```4d
+
+
+//データファイルの位置を基点にしてファイル選択を促す
+$name:=Select document(Folder("/DATA/").platformPath; "html;htm"; "HTMLファイルを選択してください"; Allow alias files)
+
+If (OK=1)
+	
+	//対象のファイルを読み込む
+	$htmlfile:=File(Document; fk platform path)
+	$text:=$htmlfile.getText()
+	
+	//正規表現式での評価の結果を配列で受け取るようにする
+	ARRAY LONGINT($pos; 0)
+	ARRAY LONGINT($len; 0)
+	
+	//すべての数値文字参照を文字に変換
+	While (Match regex("&#x([0-9A-F]+);"; $text; 1; $pos; $len))
+		$charcode:=Substring($text; $pos{1}; $len{1})
+		$code:=OB Get(New object("num"; "0x"+$charcode); "num"; Is longint)  //オブジェクト型変数を経由して倍長整数で取り出すことで16->10進数に変換
+		$char:=Char($code)
+		$text:=Replace string($text; "&#x"+$charcode+";"; $char)
+	End while 
+	
+	//新しいファイルとして書き出す
+	$newfile:=File($htmlfile.parent.path+$htmlfile.name+"-2"+$htmlfile.extension).setText($text)
+	
+End if 
+```
