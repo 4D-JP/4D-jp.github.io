@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19r8 修正リスト"
-date: 2023-03-03 08:00:00
+date: 2023-03-07 08:00:00
 categories: 修正リスト
 tags: 19r8
-build: 100187
+build: 100189
 version: 19r8
 permalink: /2023/10/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103587 Windows版のみ。文字列リテラルとして記述されているプロジェクトメソッド名やフォーム名を*Alt*+ダブルクリックした場合，そのメソッドやフォームがエディターで開きませんでした。*Control*+`K`で開くことはできます。
 
 * ACI0103759 `WP Get sections`にメモリリークがあり，ハングやクラッシュに至ることがありました。
 
