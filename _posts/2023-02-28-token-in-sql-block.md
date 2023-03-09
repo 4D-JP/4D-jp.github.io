@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "サーバー上でトランザクション"
+title: "SQLブロック内の4Dトークン"
 date: 2023-02-28 09:00:00
 categories: 仕様
 tags: development sql
