@@ -140,7 +140,8 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_ORDA.zip)<span id="19-5-4"></span><br />
 4D v19R5 より、4D Write Pro ドキュメントにデータコンテキストを関連付けることができるようになりました。これにより、テンプレートドキュメント内で、エンティティやエンティティセレクションといった ORDAデータのほか、任意のオブジェクトデータを利用することができます。<br />
-参考: [`WP SET DATA CONTEXT`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-SET-DATA-CONTEXT.301-5866708.ja.html)、[`WP Get data context`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-Get-data-context.301-5866737.ja.html)
+参考: [`WP SET DATA CONTEXT`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-SET-DATA-CONTEXT.301-5866708.ja.html)、[`WP Get data context`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-Get-data-context.301-5866737.ja.html)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA と 4D Write Pro : パワーカップル!](https://blog.4d.com/ja/orda-and-4d-write-pro-the-power-couple/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 段落のリンク**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_LinkedParagraphs.zip)<span id="19-5-3"></span><br />
 4D Write Pro の段落を、次の段落とリンクするための新しい `wk keep with next` 属性が追加されました。これを設定すると、改ページやカラムブレークにより、離してはいけない段落同士が分離されてしまうことを防げます。<br />
