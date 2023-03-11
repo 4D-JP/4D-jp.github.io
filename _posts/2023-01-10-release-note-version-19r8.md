@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19r8 修正リスト"
-date: 2023-03-07 08:00:00
+date: 2023-03-09 08:00:00
 categories: 修正リスト
 tags: 19r8
-build: 100189
+build: 100190
 version: 19r8
 permalink: /2023/10/:slug/
 ---
