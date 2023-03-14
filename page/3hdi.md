@@ -137,7 +137,8 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 参考: [`VP SET DATA CONTEXT`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-set-data-context)、
 [`VP Get data context`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-get-data-context)、
 [`VP SET BINDING PATH`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-set-binding-path)、
-[`VP Get binding path`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-get-binding-path)
+[`VP Get binding path`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-get-binding-path)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: データコンテキストを使ったデータ表示](https://blog.4d.com/ja/4d-view-pro-populate-your-sheets-with-a-data-context/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_ORDA.zip)<span id="19-5-4"></span><br />
 4D v19R5 より、4D Write Pro ドキュメントにデータコンテキストを関連付けることができるようになりました。これにより、テンプレートドキュメント内で、エンティティやエンティティセレクションといった ORDAデータのほか、任意のオブジェクトデータを利用することができます。<br />
@@ -155,7 +156,8 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 表組みのヘッダー行](https://blog.4d.com/ja/4d-write-pro-say-hello-to-table-headers/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**Copy Parameters**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_CopyParameters.zip)<span id="19-5-1"></span><br />
-新しく追加された [`Copy parameters`](https://doc.4d.com/4Dv19R5/4D/19-R5/Copy-parameters.301-5872607.ja.html) コマンドを使い、関数/メソッドから関数/メソッドへと引数を転送することができます。
+新しく追加された [`Copy parameters`](https://doc.4d.com/4Dv19R5/4D/19-R5/Copy-parameters.301-5872607.ja.html) コマンドを使い、関数/メソッドから関数/メソッドへと引数を転送することができます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [パラメーターを簡単に管理する方法](https://blog.4d.com/ja/a-seamless-way-to-manage-parameters/)<br />
 
 ## 19r4 # {#v19r4}
 
