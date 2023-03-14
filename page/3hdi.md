@@ -124,7 +124,8 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
  [`dataStore.getRemoteContextInfo()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#getremotecontextinfo)、
  [`dataStore.getAllRemoteContexts()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#getallremotecontexts)、
  [`dataStore.clearAllRemoteContexts()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#clearallremotecontexts)、
- [`dataStore.setRemoteContextInfo()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#setremotecontextinfo)
+ [`dataStore.setRemoteContextInfo()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#setremotecontextinfo)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - RESTリクエストの管理によるパフォーマンスの最適化](https://blog.4d.com/ja/orda-optimize-performance-with-full-control-over-rest-requests/)<br />
  
 * <i class="fa fa-download" aria-hidden="true"></i> [**親フォームとサブフォーム間の通信**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4D_SubformCommunication.zip)<span id="19-5-6"></span><br />
 新しく追加された [`OBJECT Get subform container value`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-Get-subform-container-value.301-5862192.ja.html) および [`OBJECT SET SUBFORM CONTAINER VALUE`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-SET-SUBFORM-CONTAINER-VALUE.301-5862140.ja.html) コマンドを使い、親フォームとサブフォーム間でスカラー型の変数あるいは式を同期させることができます。<br />
