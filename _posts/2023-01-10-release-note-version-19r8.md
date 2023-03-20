@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19r8 修正リスト"
-date: 2023-03-13 08:00:00
+date: 2023-03-19 08:00:00
 categories: 修正リスト
 tags: 19r8
-build: 100196
+build: 100197
 version: 19r8
 permalink: /2023/10/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103786 `IMAPTransporter`の`checkConnection()`メソッドで接続をチェックせずに`createBox()`を実行した場合，アプリケーションがクラッシュしました。
 
 * ACI0103713 エンティティセレクション型のリストボックスで自動行高さを有効にした場合，動的に追加したセルや行の内容が正しく表示されませんでした。明示的にリストボックスを再描画する必要があります。
 
