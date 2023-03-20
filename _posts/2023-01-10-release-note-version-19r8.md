@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D v19r8 修正リスト"
-date: 2023-03-19 08:00:00
+date: 2023-03-20 08:00:00
 categories: 修正リスト
 tags: 19r8
-build: 100197
+build: 100200
 version: 19r8
 permalink: /2023/10/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103737 クライアント/サーバー版のみ。`entity.save(dk auto merge)`でBLOB型の属性を保存した場合，`0`バイトのBLOBが保存されました。
+
+* ACI0103712 クライアント/サーバー版のみ。コンパイルモードでプライマリーキー値にカンマ記号（`,`）が含まれているエンティティに`dataClass.get()`でアクセスした場合，クライアントがクラッシュしました。
 
 * ACI0103786 `IMAPTransporter`の`checkConnection()`メソッドで接続をチェックせずに`createBox()`を実行した場合，アプリケーションがクラッシュしました。
 
