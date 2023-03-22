@@ -175,7 +175,8 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - ページレイアウトをより詳細に管理](https://blog.4d.com/ja/4d-write-pro-more-control-on-page-layout/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: エイリアス属性**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_ORDA_Aliases.zip)<span id="19-4-1"></span><br />
-ORDAクラスに [エイリアス属性](https://doc4d.github.io/docs/ja/ORDA/ordaClasses.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E5%B1%9E%E6%80%A7-1) を定義できるようになりました。
+ORDAクラスに [エイリアス属性](https://doc4d.github.io/docs/ja/ORDA/ordaClasses.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E5%B1%9E%E6%80%A7-1) を定義できるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - エイリアス属性](https://blog.4d.com/ja/orda-say-hello-to-aliases/)<br />
 
 ## 19r3 # {#v19r3}
 
