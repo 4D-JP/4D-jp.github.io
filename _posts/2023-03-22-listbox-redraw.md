@@ -22,7 +22,7 @@ end case
 ```4d
 Case of
 : (Form event code=On Resize)
-  SETTIMER(-1)
+  SET TIMER(-1)
 : (Form event code=On Timer)
   REDRAW(OBJECT Get pointer(Object named; "ListBox")->)
   SET TIMER(0)
