@@ -14,7 +14,7 @@ tags: programming userinterface listbox
 Case of
 : (Form event code=On Resize) 
   REDRAW(OBJECT Get pointer(Object named; "ListBox")->)
-end case
+End case
 ```
 
 * リサイズ後に再描画
@@ -26,5 +26,5 @@ Case of
 : (Form event code=On Timer)
   REDRAW(OBJECT Get pointer(Object named; "ListBox")->)
   SET TIMER(0)
-end case
+End case
 ```
