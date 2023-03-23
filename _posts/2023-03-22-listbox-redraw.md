@@ -15,6 +15,7 @@ Case of
 : (Form event code=On Resize) 
   REDRAW(OBJECT Get pointer(Object named; "ListBox")->)
 end case
+```
 
 * リサイズ後に再描画
 
