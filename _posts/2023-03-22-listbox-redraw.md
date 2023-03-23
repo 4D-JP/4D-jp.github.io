@@ -28,3 +28,5 @@ Case of
   SET TIMER(0)
 End case
 ```
+
+*On Display Detail* イベントは，リストボックスが垂直方向に拡大された場合，追加された行を再描画するためにも発生します（ACI0103758）。
