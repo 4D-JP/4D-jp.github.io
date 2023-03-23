@@ -162,14 +162,21 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 ## 19r4 # {#v19r4}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**システムワーカー**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_Systemworker.zip)<span id="19-4-4"></span><br />
-新しい [`SystemWorker`](http://developer.4d.com/docs/ja/API/SystemWorkerClass/) クラスを使って、外部プロセスを非同期に実行することができます。
+新しい [`SystemWorker`](http://developer.4d.com/docs/ja/API/SystemWorkerClass/) クラスを使って、外部プロセスを非同期に実行することができます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [外部プロセスを非同期で起動する](https://blog.4d.com/ja/launch-an-external-process-asynchronously/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**View Pro: ワークブックオプションの管理**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DVP_workbook_options.zip)<span id="19-4-3"></span><br />
-新しい [`VP SET WORKBOOK OPTIONS`](https://developer.4d.com/docs/ja/ViewPro/method-list/#vp-set-workbook-options) コマンドを使って、様々なワークブックオプションを管理することができます。
+新しい [`VP SET WORKBOOK OPTIONS`](https://developer.4d.com/docs/ja/ViewPro/method-list/#vp-set-workbook-options) コマンドを使って、様々なワークブックオプションを管理することができます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro:ワークブックオプション](https://blog.4d.com/ja/4d-view-pro-workbook-options/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 表組みの行内部の自動改ページ**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DWP_PageBreaksInTableRows.zip)<span id="19-4-2"></span><br />
 4D Write Pro に新しい `wk page break inside row` 属性が追加され、表組みの行内部の自動改ページができるようになりました。<br />
-参考: [表のページ分け](https://doc.4d.com/4Dv19R4/4D/19-R4/Using-a-4D-Write-Pro-area.200-5760411.ja.html#5798838)
+参考: [表のページ分け](https://doc.4d.com/4Dv19R4/4D/19-R4/Using-a-4D-Write-Pro-area.200-5760411.ja.html#5798838)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - ページレイアウトをより詳細に管理](https://blog.4d.com/ja/4d-write-pro-more-control-on-page-layout/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: エイリアス属性**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_ORDA_Aliases.zip)<span id="19-4-1"></span><br />
-ORDAクラスに [エイリアス属性](https://doc4d.github.io/docs/ja/ORDA/ordaClasses.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E5%B1%9E%E6%80%A7-1) を定義できるようになりました。
+ORDAクラスに [エイリアス属性](https://doc4d.github.io/docs/ja/ORDA/ordaClasses.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E5%B1%9E%E6%80%A7-1) を定義できるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - エイリアス属性](https://blog.4d.com/ja/orda-say-hello-to-aliases/)<br />
 
 ## 19r3 # {#v19r3}
 
