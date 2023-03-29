@@ -186,7 +186,8 @@ Microsoft ID プラットフォームから Oauth2.0アクセストークンを�
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**Webエリア: Webカメラの使用**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_Webcam.zip)<span id="19-3-6"></span><br />
 Webエリアの `埋め込みWebレンダリングエンジンを使用`プロパティを有効にすることで、コードを書くことなく Webカメラが
-使用できることを紹介します。
+使用できることを紹介します。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Webエリアが Webカメラに対応](https://blog.4d.com/ja/webcam-support-in-web-areas/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: SVGへの書き出し**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_4DWP_ExportSVG.zip)<span id="19-3-5"></span><br />
 [`WP EXPORT DOCUMENT`](https://livedoc.4d.com/4D-Write-Pro-19-R3/4D-Write-Pro/WP-EXPORT-DOCUMENT.301-5606518.ja.html) および [`WP EXPORT VARIABLE`](https://livedoc.4d.com/4D-Write-Pro-19-R3/4D-Write-Pro/WP-EXPORT-VARIABLE.301-5606522.ja.html) コマンドの機能が拡張され、4D Write Pro ドキュメントを SVG に書き出せるようになりました。<br />
