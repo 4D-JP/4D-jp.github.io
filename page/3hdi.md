@@ -195,7 +195,8 @@ Webエリアの `埋め込みWebレンダリングエンジンを使用`プロ�
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro ドキュメントをSVG形式で書き出す](https://blog.4d.com/ja/export-4d-write-pro-documents-to-svg-format/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 継続セクションブレーク**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_4DWP_ContinuousSectionBreaks.zip)<span id="19-3-4"></span><br />
-4D Write Pro に、改ページを強制しない [継続したセクションブレーク](https://doc.4d.com/4Dv19R3/4D/19-R3/Using-a-4D-Write-Pro-area.200-5606485.ja.html#5615462) が追加されました。これにより、ページ内で複数のセクションを管理できるようになり、同じページ上で異なる段組の設定ができるようになりました。
+4D Write Pro に、改ページを強制しない [継続したセクションブレーク](https://doc.4d.com/4Dv19R3/4D/19-R3/Using-a-4D-Write-Pro-area.200-5606485.ja.html#5615462) が追加されました。これにより、ページ内で複数のセクションを管理できるようになり、同じページ上で異なる段組の設定ができるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - 継続セクションブレーク](https://blog.4d.com/ja/4d-write-pro-continuous-section-breaks/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: フォーミュラのハイライト**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_4DWP_HightlightFormulas.zip)<span id="19-3-3"></span><br />
 4D Write Pro に新しい表示オプションが追加され、ドキュメントに含まれるフォーミュラを、値表示・参照表示のいずれの場合でもハイライトすることができるようになりました。
@@ -204,16 +205,18 @@ Webエリアの `埋め込みWebレンダリングエンジンを使用`プロ�
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: フォーミュラはいずこ](https://blog.4d.com/ja/4d-write-pro-where-are-my-formulas/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: 計算属性**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_ORDA_ComputedAttributes.zip)<span id="19-3-2"></span><br />
-ORDAクラスに [計算属性](https://developer.4d.com/docs/ja/ORDA/ordaClasses/#%E8%A8%88%E7%AE%97%E5%B1%9E%E6%80%A7) が追加できるようになりました。それぞれ専用の関数を設定することで、計算属性値を取得・設定・クエリ・並べ替えすることが可能です。
+ORDAクラスに [計算属性](https://developer.4d.com/docs/ja/ORDA/ordaClasses/#%E8%A8%88%E7%AE%97%E5%B1%9E%E6%80%A7) が追加できるようになりました。それぞれ専用の関数を設定することで、計算属性値を取得・設定・クエリ・並べ替えすることが可能です。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDAの計算属性によるマジックショー！](https://blog.4d.com/ja/a-magic-show-awaits-you-with-ordas-calculated-attributes/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**クラス: 計算プロパティ**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_CS_ComputedProperties.zip)<span id="19-3-1"></span><br />
 `Function get` および `Function set` キーワードを使って、クラスに [計算プロパティ](https://developer.4d.com/docs/ja/Concepts/classes/#function-get-%E3%81%A8-function-set) が追加できるようになりました。<br />
-　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [クラスに計算プロパティが登場！](https://blog.4d.com/ja/need-a-magic-wand-here-are-computed-class-properties//)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [クラスに計算プロパティが登場！](https://blog.4d.com/ja/need-a-magic-wand-here-are-computed-class-properties/)<br />
 
 ## 19r2 # {#v19r2}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーフォーマットの変更**](https://github.com/4D-JP/HDI/releases/download/19r2/HDI_4DWP_FormatPictures.zip)<span id="19-2-1"></span><br />
-4D Write Pro に新しく `wk image display mode` 属性が追加され、インラインおよびアンカーピクチャーのフォーマットが変更できるようになりました。また、新しい `wk background display mode` の追加によって、背景画像のフォーマットも簡単に変更できるようになりました。これらの属性の値として使用できる定数は [4D Write Pro ＞ ピクチャーを管理する ＞ 背景画像](https://doc.4d.com/4Dv19R2/4D/19-R2/Handling-pictures.200-5514111.ja.html#5524063) の章にて説明しています。
+4D Write Pro に新しく `wk image display mode` 属性が追加され、インラインおよびアンカーピクチャーのフォーマットが変更できるようになりました。また、新しい `wk background display mode` の追加によって、背景画像のフォーマットも簡単に変更できるようになりました。これらの属性の値として使用できる定数は [4D Write Pro ＞ ピクチャーを管理する ＞ 背景画像](https://doc.4d.com/4Dv19R2/4D/19-R2/Handling-pictures.200-5514111.ja.html#5524063) の章にて説明しています。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - 新しいピクチャーフォーマット](https://blog.4d.com/ja/4d-write-pro-new-image-formats/)<br />
 
 ## 19 # {#v19}
 
