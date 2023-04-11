@@ -166,6 +166,8 @@ type: page
     
 * [Mickaël Rottiers](https://github.com/mickaelr4d)
 
+* [Milan Adamov](https://github.com/madamov)
+
 * [Orchard Software](https://github.com/OrchardSoftware)   
     * 4D-Win32API
 
