@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D v19.6 修正リスト"
-date: 2023-04-17 08:00:00
+date: 2023-04-18 08:00:00
 categories: 修正リスト
 tags: v19 
-build: 286252
+build: 286269
 version: "19.6"
 permalink: /2023/79/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103732 `SET DATABASE PARAMETER`で *4D Remote mode timeout* を変更した場合，`WEB GET OPTION`で設定した *Web Client IP address to listen* がリセットされました。
+
+**注記**: コマンドで待ち受けポート番号を変更した場合，新しい設定はメモリに置かれ，*settings.4DSettings* ファイルは更新されません。`SET DATABASE PARAMETER`で *settings.4DSettings* ファイルを更新した場合，リロードされたファイルでメモリ上の設定が上書きされてしまうことが問題でした。
+
+* ACI0103470 クライアント/サーバー版のみ。"Main"という名前のワーカーを起動した場合，ランタイムエクスプローラーにプロセス番号`0`（こちらも"Main"というプロセス名）が表示され，サーバーが正常に終了できないことがありました。
 
 * ACI0103554 サービス起動した4D Serverをタスクマネージャーで再起動できないことがありました。CEFをビルドから除外すれば問題ありません。
 
