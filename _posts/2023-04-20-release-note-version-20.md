@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v20 修正リスト"
-date: 2023-04-20 08:00:00
+date: 2023-04-22 08:00:00
 categories: 修正リスト
 tags: v20 
 build: 100170
