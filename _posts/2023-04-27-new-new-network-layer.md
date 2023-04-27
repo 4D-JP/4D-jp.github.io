@@ -67,7 +67,7 @@ v15では，旧式ネットワークレイヤーの弱点を克服し，[スリ�
 
 #### QUIC
 
-上述したように，4Dのネットワークレイヤーは，初代（v3からv2004）・旧式（v11からv15）・ServerNet（v15からv19）いずれもTCP/IPプロトコルをベースに4Dが独自に開発したものです。一方，業界ではTCPを使用しない，QUICに注目が集まっています。
+上述したように，4Dのネットワークレイヤーは，初代（v3からv2004）・旧式（v11からv15）・ServerNet（v15からv19）いずれもTCP/IPプロトコルをベースに4Dが独自に開発したものです。一方，業界ではTCPを使用しない，QUICが注目を集めています。
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [QUIC](https://ja.wikipedia.org/wiki/QUIC)
 
