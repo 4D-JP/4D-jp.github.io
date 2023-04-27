@@ -1,10 +1,10 @@
 ---
 layout: fix
-title: "4D v19.6 修正リスト"
+title: "4D v19.6 Hotfix 1 修正リスト"
 date: 2023-04-18 08:00:00
 categories: 修正リスト
-tags: v19 
-build: 286269
+tags: v19 hotfix
+build: 286366
 version: "19.6"
 permalink: /2023/79/:slug/
 ---
@@ -12,6 +12,10 @@ permalink: /2023/79/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103554 サービス起動した4D Serverをタスクマネージャーで再起動できないことがありました。CEFをビルドから除外すれば問題ありません。
+
+* ACI0103716 コレクション型またはエンティティセレクション型のリストボックスでは，`control`+`Z` による入力の取り消しができませんでした。配列型のリストボックスであれば問題ありません。編集メニューの項目プロパティ「イベントを発生させない」を有効にするか，`SET MENU ITEM PROPERTY`で`"4D_execute_without_validating"`を`True`に設定すれば問題ありません。
+ 
 * ACI0103732 `SET DATABASE PARAMETER`で *4D Remote mode timeout* を変更した場合，`WEB GET OPTION`で設定した *Web Client IP address to listen* がリセットされました。
 
 **注記**: コマンドで待ち受けポート番号を変更した場合，新しい設定はメモリに置かれ，*settings.4DSettings* ファイルは更新されません。`SET DATABASE PARAMETER`で *settings.4DSettings* ファイルを更新した場合，リロードされたファイルでメモリ上の設定が上書きされてしまうことが問題でした。
