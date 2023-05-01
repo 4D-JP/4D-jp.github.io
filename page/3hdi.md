@@ -13,7 +13,7 @@ type: page
 ## 20 # {#v20}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ボタン等の新しいプロパティ**](https://github.com/4D-JP/HDI/releases/download/20/HDI_Buttons.zip)<span id="20-0-1"></span><br />
-ボタン・チェックボックス・ラジオボタンに [タイトルと画像を隣接させる](http://developer.4d.com/docs/ja/FormObjects/propertiesTextAndPicture#タイトルと画像を隣接させる) および、タイトルの  [横揃え](http://developer.4d.com/docs/ja/FormObjects/propertiesText#横揃え) プロパティが追加されました。また、チェックボックスとラジオボタンについては、画像の  [状態の数](http://developer.4d.com/docs/ja/FormObjects/propertiesTextAndPicture#状態の数) の最大が6に拡張されました。<br />
+ボタン・チェックボックス・ラジオボタンに タイトルの [横揃え](http://developer.4d.com/docs/ja/FormObjects/propertiesText#横揃え) および [タイトルと画像を隣接させる](http://developer.4d.com/docs/ja/FormObjects/propertiesTextAndPicture#タイトルと画像を隣接させる) プロパティが追加されました。また、チェックボックスとラジオボタンについては、画像の [状態の数](http://developer.4d.com/docs/ja/FormObjects/propertiesTextAndPicture#状態の数) の最大が 6 に拡張されました。<br />
 いずれもボタンスタイルによってはプロパティが適用されない場合があります。詳しくは各プロパティのドキュメントを参照ください。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [フォームオブジェクトの進化](https://blog.4d.com/ja/evolution-of-form-objects/)<br />
 
