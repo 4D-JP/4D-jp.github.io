@@ -13,7 +13,7 @@ type: page
 ## 20 # {#v20}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ボタン等の新しいプロパティ**](https://github.com/4D-JP/HDI/releases/download/20/HDI_Buttons.zip)<span id="20-0-1"></span><br />
-ボタン・チェックボックス・ラジオボタンに タイトルの [横揃え](http://developer.4d.com/docs/ja/FormObjects/propertiesText#横揃え) および [タイトルと画像を隣接させる](http://developer.4d.com/docs/ja/FormObjects/propertiesTextAndPicture#タイトルと画像を隣接させる) プロパティが追加されました。また、チェックボックスとラジオボタンについては、画像の [状態の数](http://developer.4d.com/docs/ja/FormObjects/propertiesTextAndPicture#状態の数) の最大が 6 に拡張されました。<br />
+ボタン・チェックボックス・ラジオボタンにタイトルの [横揃え](http://developer.4d.com/docs/ja/FormObjects/propertiesText/#%E6%A8%AA%E6%8F%83%E3%81%88) および [タイトルと画像を隣接させる](https://developer.4d.com/docs/ja/FormObjects/propertiesTextAndPicture/#%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%A8%E7%94%BB%E5%83%8F%E3%82%92%E9%9A%A3%E6%8E%A5%E3%81%95%E3%81%9B%E3%82%8B) プロパティが追加されました。また、チェックボックスとラジオボタンについては、画像の [状態の数](https://developer.4d.com/docs/ja/FormObjects/propertiesTextAndPicture/#%E7%8A%B6%E6%85%8B%E3%81%AE%E6%95%B0) の最大が 6 に拡張されました。<br />
 いずれもボタンスタイルによってはプロパティが適用されない場合があります。詳しくは各プロパティのドキュメントを参照ください。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [フォームオブジェクトの進化](https://blog.4d.com/ja/evolution-of-form-objects/)<br />
 
