@@ -12,6 +12,10 @@ type: page
 
 ## 20 # {#v20}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストボックスの docx読み込み/書き出し**](https://github.com/4D-JP/HDI/releases/download/20/HDI_4DWP_UseTextBoxes_V2.zip)<span id="20-0-3"></span><br />
+4D v19 R8 で追加されたテキストボックスが、docx の読み込み/書き出しにも対応するようになりました。これに伴い、読み込み/書き出しのオプションも新たに追加されています。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: テキストボックスの docx 読み込み/書き出し](https://blog.4d.com/ja/4d-write-pro-text-boxes-docx-import-export-options/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**コレクションの操作 v2**](https://github.com/4D-JP/HDI/releases/download/20/HDI_Collection_Functions.zip)<span id="20-0-2"></span><br />
 Collectionクラスに追加された新しい関数の紹介です:<br />
  [`first()`](http://developer.4d.com/docs/ja/API/CollectionClass/#first) コレクションの先頭要素を返します<br />
