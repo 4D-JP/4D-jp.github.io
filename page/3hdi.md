@@ -12,6 +12,10 @@ type: page
 
 ## 20 # {#v20}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Office365: フォルダーの作成・削除・名前の変更**](https://github.com/4D-JP/HDI/releases/download/20/HDI_Office365_manage_folders.zip)<span id="20-0-4"></span><br />
+Microsoft の Graph API を使用してメールフォルダーを作成・削除・名前変更する方法を紹介します。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Microsoft 365: Microsoft Graph APIによるメールフォルダーの作成・削除・名前の変更](https://blog.4d.com/ja/microsoft-365-create-delete-and-rename-mail-folders-with-the-microsoft-graph-api/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストボックスの docx読み込み/書き出し**](https://github.com/4D-JP/HDI/releases/download/20/HDI_4DWP_UseTextBoxes_V2.zip)<span id="20-0-3"></span><br />
 4D v19 R8 で追加されたテキストボックスが、docx の読み込み/書き出しにも対応するようになりました。これに伴い、読み込み/書き出しのオプションも新たに追加されています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: テキストボックスの docx 読み込み/書き出し](https://blog.4d.com/ja/4d-write-pro-text-boxes-docx-import-export-options/)<br />
