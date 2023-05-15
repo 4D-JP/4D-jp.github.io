@@ -12,6 +12,11 @@ type: page
 
 ## 20 # {#v20}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**WebSocketサーバー**](https://github.com/4D-JP/HDI/releases/download/20/HDI_WebSocket_Server.zip)<span id="20-0-5"></span><br />
+v20 より、4D は WebSocketサーバーを作成するためのコマンドを提供します。この HDI では、簡単なチャットを例に WebSocketサーバーの使い方を紹介します。<br />
+参考： [WebSocketServer クラス](http://developer.4d.com/docs/ja/API/WebSocketServerClass)、 [WebSocketConnection クラス](http://developer.4d.com/docs/ja/API/WebSocketConnectionClass)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいビルトイン WebSocketサーバー](https://blog.4d.com/ja/new-built-in-websocket-server/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**Office365: フォルダーの作成・削除・名前の変更**](https://github.com/4D-JP/HDI/releases/download/20/HDI_Office365_manage_folders.zip)<span id="20-0-4"></span><br />
 Microsoft の Graph API を使用してメールフォルダーを作成・削除・名前変更する方法を紹介します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Microsoft 365: Microsoft Graph APIによるメールフォルダーの作成・削除・名前の変更](https://blog.4d.com/ja/microsoft-365-create-delete-and-rename-mail-folders-with-the-microsoft-graph-api/)<br />
