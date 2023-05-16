@@ -138,6 +138,8 @@ type: page
 
 * [Guillaume Kotulski](https://github.com/gkotulski/)
 
+* [Guillaume Belleguic](https://github.com/tetsuo692)
+
 * [Julio Carneiro](https://github.com/fourctv)
 
 * [Keisuke Miyako](https://github.com/miyako)
