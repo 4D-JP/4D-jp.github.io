@@ -12,6 +12,10 @@ type: page
 
 ## 20 # {#v20}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みのブレーク行**](https://github.com/4D-JP/HDI/releases/download/20/HDI_4DWP_ORDA_Breaks.zip)<span id="20-0-6"></span><br />
+4D Write Pro の表組みに [ブレーク行](https://doc.4d.com/4Dv20/4D/20/Handling-tables.200-6229469.ja.html#6233076) (小計行) を設定できるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 表組みにブレーク行を追加！](https://blog.4d.com/ja/break-rows-a-new-addition-to-4d-write-pro-tables/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**WebSocketサーバー**](https://github.com/4D-JP/HDI/releases/download/20/HDI_WebSocket_Server.zip)<span id="20-0-5"></span><br />
 v20 より、4D は WebSocketサーバーを作成するためのコマンドを提供します。この HDI では、簡単なチャットを例に WebSocketサーバーの使い方を紹介します。<br />
 参照： [WebSocketServer クラス](http://developer.4d.com/docs/ja/API/WebSocketServerClass)、 [WebSocketConnection クラス](http://developer.4d.com/docs/ja/API/WebSocketConnectionClass)<br />
