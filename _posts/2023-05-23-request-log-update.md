@@ -64,7 +64,7 @@ v19r5 Hotfix 2では，サーバー側のリクエストログがテーブルに
 
 リクエストログは，クライアント/サーバーのネットワーク通信に焦点をあてたログファイルです。4Dには，他にもさまざまなデバッグツールが用意されています。
 
-* [DataStore..startRequestLog()](https://developer.4d.com/docs/ja/API/DataStoreClass/#startrequestlog)
+* [DataStore.startRequestLog()](https://developer.4d.com/docs/ja/API/DataStoreClass/#startrequestlog)
 * [START MONITORING ACTIVITY](https://doc.4d.com/4Dv19/4D/19.6/START-MONITORING-ACTIVITY.301-6270447.ja.html)
 * [GET ACTIVITY SNAPSHOT](https://doc.4d.com/4Dv19/4D/19.6/GET-ACTIVITY-SNAPSHOT.301-6270439.ja.html)
 * [Get database measures](https://doc.4d.com/4Dv19/4D/19.6/Get-database-measures.301-6270039.ja.html)
