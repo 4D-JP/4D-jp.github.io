@@ -54,11 +54,11 @@ SET DATABASE PARAMETER(4D Server log recording;1)
 
 v19r5 Hotfix 2では，サーバー側のリクエストログがテーブルに関わるものだった場合，`extra`項目にテーブル名が記録されるようになりました。
 
-|sequence_number|time|systemID|component|process_info_index|request|bytes_out|bytes_in|exec_duration|write_duration|task_kind|rtt|extra|
+|-|-|-|component|-|request|bytes_out|bytes_in|-|-|-|rtt|extra|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|
-|60|2023-05-24T17:28:11.769|6137036800|'srv4'|5|71|11|4|1127|34|c|1000||
-|61|2023-05-24T17:28:11.795|6137626624|'INFO'|5|TTF/i|0||||||
-|62|2023-05-24T17:28:11.796|6137626624|'dbmg'|5|11041|362|62|1132|65|c|1000|Table_1|
+|60|-|6137036800|'srv4'|5|71|11|4|1127|34|c|1000||
+|61|-|6137626624|'INFO'|5|TTF/i|0||||||
+|62|-|6137626624|'dbmg'|5|11041|362|62|1132|65|c|1000|Table_1|
 
 上記の例では，`[Table_1]`のトリガがコオペレティブモードで実行されていることが確認できます。
 
