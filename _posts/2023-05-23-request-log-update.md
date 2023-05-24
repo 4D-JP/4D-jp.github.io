@@ -54,7 +54,7 @@ SET DATABASE PARAMETER(4D Server log recording;1)
 
 v19r5 Hotfix 2では，サーバー側のリクエストログがテーブルに関わるものだった場合，`extra`項目にテーブル名が記録されるようになりました。
 
-|-|-|-|component|-|request|bytes_out|bytes_in|-|-|-|rtt|extra|
+|-|-|-|-|-|-|-|-|-|-|-|-|extra|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|
 |60|-|-|'srv4'|5|71|11|4|1127|34|c|1000||
 |61|-|-|'INFO'|5|TTF/i|0||||||
