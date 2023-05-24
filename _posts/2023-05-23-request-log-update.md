@@ -26,7 +26,7 @@ v19の時点でリクエストログに含まれているのは下記の情報�
 |request|リクエスト識別子|
 |bytes_in|受信バイト数|
 |bytes_out|送信バイト数|
-|duration|全体に要した時間 `ms`|
+|duration|オペレーション全体に要した時間 `ms`|
 |server_duration|サーバーがリクエストの処理に要した時間 `μs`|
 |write_duration|クライアントがリクエストの送信に要した時間 `μs`|
 |task_kind|プリエンプティブスレッドかどうか|
