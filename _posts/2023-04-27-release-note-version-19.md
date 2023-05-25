@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v19.6 修正リスト"
-date: 2023-05-22 08:00:00
+date: 2023-05-24 08:00:00
 categories: 修正リスト
 tags: v19
-build: 286655
+build: 286710
 version: "19.6"
 permalink: /2023/117/:slug/
 ---
@@ -12,6 +12,10 @@ permalink: /2023/117/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0103924 クライアント/サーバー通信の暗号化を有効にしており，起動時にWebサーバーを起動するように設定した場合，HTTPSサーバーが正しい証明書チェーンを使用しませんでした。
+
+* ACI0103886 特定のメールを`MAIL Convert from MIME`でメールオブジェクトに変換した場合，`bodyValues`プロパティが返されませんでした。
+ 
 * ACI0103933 Mac版のみ。*iODBC Framework* がインストールされていない状態で`SQL GET DATA SOURCE LIST`を実行した場合，内部エラー（サイズが`Null`の配列）が返されました。
 
 * ACI0102582 フランス語版のみ。Write Proツールバーの「保護」タブのヘルプTipsがローカライズされていませんでした。
