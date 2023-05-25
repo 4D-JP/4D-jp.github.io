@@ -6,7 +6,7 @@ categories: 仕様
 tags: debugging server
 ---
 
-特定のデータベース処理がボトルネットとなっているように思われる場合，クライアント側の[リクエストログ](https://doc.4d.com/4Dv19/4D/19.6/SET-DATABASE-PARAMETER.301-6270038.ja.html)を活用できるかもしれません。このログファイルは，クライアントからサーバーに送信されたリクエスト情報が記録されています。
+特定のデータベース処理がボトルネックとなっているように思われる場合，クライアント側の[リクエストログ](https://doc.4d.com/4Dv19/4D/19.6/SET-DATABASE-PARAMETER.301-6270038.ja.html)を活用できるかもしれません。このログファイルは，クライアントからサーバーに送信されたリクエスト情報が記録されています。
 
 ```4d
 SET DATABASE PARAMETER(Client log recording;1)
