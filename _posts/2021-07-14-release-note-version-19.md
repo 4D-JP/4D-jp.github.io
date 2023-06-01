@@ -300,8 +300,6 @@ WA Evaluate JavaScript(*;"area";"Utils.spread.getActiveSheet().options.showFormu
 
 * ACI0101851 Windows版のみ。`WP EXPORT DOCUMENT`を使用してWrite ProドキュメントをPDF形式でエクスポートした場合，ピクチャが出力されませんでした。
 
-* ACI0101877 インポート＆エクスポートダイアログの上部にあるオブジェクトがダークモードに対応していませんでした。
-
 * ACI0101880 プロジェクトモードのみ。コンボボックスのJSONスキーマ（`formsSchema.json`）が正しくありませんでした。`dataSourceTypeHint`は`integer`ではなく`text`であるべきです。
 
 * ACI0101869 Web Adminが旧式セッション管理で動作している場合，ブラウザから管理画面にアクセスしてからWebサーバーを再起動し，再起動中にページをリフレッシュした場合，アプリケーションがクラッシュしました。REST認証のために作成されるコオペラティブスレッドがWebプロセスの初期化に干渉しているようです。
