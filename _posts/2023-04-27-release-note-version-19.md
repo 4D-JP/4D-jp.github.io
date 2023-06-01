@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19.6 修正リスト"
-date: 2023-05-29 08:00:00
+date: 2023-05-31 08:00:00
 categories: 修正リスト
 tags: v19
-build: 286791
+build: 286806
 version: "19.6"
 permalink: /2023/117/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0101877 インポート＆エクスポートダイアログの上部にあるオブジェクトがダークモードに対応していませんでした。
 
 * ACI0103954 Windows版のみ。PDF形式でWrite Proドキュメントをエクスポートした場合，Wingdingsフォントが表示されませんでした。
 
