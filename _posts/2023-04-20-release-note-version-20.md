@@ -1,16 +1,38 @@
 ---
 layout: fix
 title: "4D v20 修正リスト"
-date: 2023-06-06 08:00:00
+date: 2023-06-07 08:00:00
 categories: 修正リスト
 tags: v20 
-build: 100381
+build: 100387
 version: "20"
 permalink: /2023/110/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103978 デフォルトボタンに設定したアイコンが表示されませんでした。
+
+* ACI0103974 [`4D.WebSocketServer`](https://developer.4d.com/docs/ja/API/WebSocketServerClass/#websocketserver-object)に渡された[WSSHandler](https://developer.4d.com/docs/ja/API/WebSocketServerClass/#wsshandler-引数)オブジェクトおよび[`4D.WebSocketConnection`](https://developer.4d.com/docs/ja/API/WebSocketConnectionClass)に渡れた[connectionHandler](https://developer.4d.com/docs/ja/API/WebSocketServerClass#connectionhandler-オブジェクト)に *onError* イベントで渡される`param`オブジェクトにエラー情報が含まれていませんでした。
+
+**注記**: `param.errors[]`プロパティが返されるようになりました。
+
+* ACI0103936 QUICネットワークレイヤーのみ。サーバーとの接続を解除した場合，サーバー側のUDP接続が解放されるまで`30`秒を要しました。長くても`3`秒で解放するべきです。
+ 
+#### ネットワーク接続を確認する方法
+
+  * Windows
+
+```
+netstat -ano | findstr "UDP" | findstr "4DServer PID" | findstr -v "*:*"
+```
+
+  * Mac
+
+```
+Lsof -i:19813 | grep "UDP"
+```
 
 * ACI0102580 フランス語版のみ。Write ProツールバーのヘルプTIpsにスペルミスがありました。
 
