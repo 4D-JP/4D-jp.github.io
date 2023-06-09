@@ -24,6 +24,8 @@ permalink: /2023/110/:slug/
 
 * ACI0103984 Mac版のみ。最小値を負の値に設定したルーラーのハンドルを操作してゼロよりも左に移動した場合，サーモメーターの表示がゼロを指したまま止まりました。
 
+=======
+>>>>>>> master
 * ACI0103978 デフォルトボタンに設定したアイコンが表示されませんでした。
 
 * ACI0103974 [`4D.WebSocketServer`](https://developer.4d.com/docs/ja/API/WebSocketServerClass/#websocketserver-object)に渡された[WSSHandler](https://developer.4d.com/docs/ja/API/WebSocketServerClass/#wsshandler-引数)オブジェクトおよび[`4D.WebSocketConnection`](https://developer.4d.com/docs/ja/API/WebSocketConnectionClass)に渡れた[connectionHandler](https://developer.4d.com/docs/ja/API/WebSocketServerClass#connectionhandler-オブジェクト)に *onError* イベントで渡される`param`オブジェクトにエラー情報が含まれていませんでした。
