@@ -1,16 +1,50 @@
 ---
 layout: fix
 title: "4D v20 修正リスト"
-date: 2023-06-06 08:00:00
+date: 2023-06-07 08:00:00
 categories: 修正リスト
 tags: v20 
-build: 100381
+build: 100397
 version: "20"
 permalink: /2023/110/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0098702 インポートダイアログで読み込み開始行を変更した場合，インポート設定がリセットされました。
+
+* ACI0103955 サーバーをサービスとして起動した場合，`WP PRINT`で印刷ができないことがありました。
+
+**注記**: "Microsoft XPS Document Printer"ではない仮想プリンターを使用した場合に問題が発生しました。ファイル名は変更できるので，4Dは選択されたプリンターが純正の"Microsoft XPS Document Printer"かどうかを確認することができません。たとえば，サードパーティ社製のプリンターを"Microsoft XPS Document Printer"に名称変更し，4Dを「騙している」ような環境がこれに該当します。そのような紛らわしい名称のカレントプリンターを指定して印刷コマンドを実行した場合，ファイル名を指定せずにXPS出力をしようとしているものとアプリケーションが判断し，ヘッドレスモードでファイル選択ダイアログを表示することは許可されていないので，印刷せずにエラー`3107`が返されました。
+
+* ACI0103957 `entitySelection.query()`でＮ対１リレーション属性が`null`のエンティティセレクションをクエリした場合，返される結果が正しくありませんでした。
+
+* ACI0103986 ルーラーの最小値がステップ値で割り切れない場合，目盛りの表示が正しくありませんでした。たとえば，最小値を`5`，最大値を`25`，ステップ値を`10`とした場合，目盛りの表示は`5 10 15 20`となるはずですが，`10 20 25`となりました。
+
+* ACI0103984 Mac版のみ。最小値を負の値に設定したルーラーのハンドルを操作してゼロよりも左に移動した場合，サーモメーターの表示がゼロを指したまま止まりました。
+
+* ACI0103978 デフォルトボタンに設定したアイコンが表示されませんでした。
+
+* ACI0103974 [`4D.WebSocketServer`](https://developer.4d.com/docs/ja/API/WebSocketServerClass/#websocketserver-object)に渡された[WSSHandler](https://developer.4d.com/docs/ja/API/WebSocketServerClass/#wsshandler-引数)オブジェクトおよび[`4D.WebSocketConnection`](https://developer.4d.com/docs/ja/API/WebSocketConnectionClass)に渡れた[connectionHandler](https://developer.4d.com/docs/ja/API/WebSocketServerClass#connectionhandler-オブジェクト)に *onError* イベントで渡される`param`オブジェクトにエラー情報が含まれていませんでした。
+
+**注記**: `param.errors[]`プロパティが返されるようになりました。
+
+* ACI0103936 QUICネットワークレイヤーのみ。サーバーとの接続を解除した場合，サーバー側のUDP接続が解放されるまで`30`秒を要しました。長くても`3`秒で解放するべきです。
+ 
+#### ネットワーク接続を確認する方法
+
+  * Windows
+
+```
+netstat -ano | findstr "UDP" | findstr "4DServer PID" | findstr -v "*:*"
+```
+
+  * Mac
+
+```
+Lsof -i:19813 | grep "UDP"
+```
 
 * ACI0102580 フランス語版のみ。Write ProツールバーのヘルプTIpsにスペルミスがありました。
 
