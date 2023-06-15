@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "URLフィルターとHTTP GET"
-date: 2023-06-06 08:00:00
+date: 2023-06-14 08:00:00
 categories: 仕様
 tags: webarea windows userinterface
 ---
