@@ -6,7 +6,7 @@ categories: 修正リスト
 tags: v19
 build: 286991
 version: "19.6"
-permalink: /2023/153/:slug/
+permalink: /2023/161/:slug/
 ---
 
 **バージョン**: {{page.version}}  
