@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D v20 修正リスト"
-date: 2023-06-13 08:00:00
+date: 2023-06-15 08:00:00
 categories: 修正リスト
 tags: v20 
-build: 100421
+build: 100428
 version: "20"
 permalink: /2023/110/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104010 Windows版のみ。プラグイン（*4DX* ファイル）と同階層にある依存ライブラリ（*.DLL* ファイル）がロードされませんでした。
+
+**注記**: CEFをロードする前に`AddDllDirectory()`ではなく`SetDllDirectory()`でライブラリのサーチパスを書き換えていたことが原因でした。
 
 * ACI0103971 Windows版のみ。4D View Proエリアにテンキーを使用して小数点を入力した場合，ロケール設定に関係なく，ピリオド（`.`）が表示されました。
 
