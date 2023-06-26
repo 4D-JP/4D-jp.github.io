@@ -802,4 +802,6 @@ ORDAにおける、メンバーメソッドを使ったエンティティの基�
 DOM、SAX、XML で始まるコマンドはすべてスレッドセーフです。プリエンプティブ・プロセスで実行することによって、処理速度を上げることができます。
 * <i class="fa fa-download" aria-hidden="true"></i> [**Webプロセスとプリエンプティブ実行**](https://github.com/4D-JP/HDI/releases/download/16/HDI_WebServerPreemptive.zip)<span id="16-0-1"></span><br />
 Webサーバーおよび HTTPクライアント関連のコマンドはすべてスレッドセーフです。プリエンプティブ・プロセスで実行するためには ”プリエンプティブプロセスを使用” という新しいデータベース設定を有効にします。
+* <i class="fa fa-download" aria-hidden="true"></i> [**Webサーバーと Google Charts**](https://github.com/4D-JP/HDI/releases/download/16/GoogleChart_4Dv16.zip)<span id="16-0-19"></span><br />
+Webサーバーを使って Google Charts を利用する方法の紹介です。
 
