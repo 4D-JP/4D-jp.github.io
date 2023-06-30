@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D v19.6 修正リスト"
-date: 2023-06-21 08:00:00
+date: 2023-06-29 08:00:00
 categories: 修正リスト
 tags: v19
-build: 287088
+build: 287226
 version: "19.6"
 permalink: /2023/161/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103928 `LDAP password MD5 (0)`モードで`LDAP LOGIN`と`LDAP LOGOUT`を繰り返した場合，予期しないエラー`-2`が返されました。ACI0103594が修正されたことによる副作用のようです。
+
+* ACI0104022 メッセージIDにURLエンコードされた文字が含まれている場合，`IMAPTransporter.searchMails()`でメールを検索することができませんでした。
+ 
+* ACI0104013 4D Viewスプレッドシートのセルに埋め込まれた`Substring`がView Proのフォーミュラに正しく変換されませんでした。
 
 * ACI0103982 `Get current printer`がシステム変数`OK`を更新しませんでした。
 
