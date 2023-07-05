@@ -12,8 +12,6 @@ permalink: /2023/110/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
-* ACI0103928 `LDAP password MD5 (0)`モードで`LDAP LOGIN`と`LDAP LOGOUT`を繰り返した場合，予期しないエラー`-2`が返されました。ACI0103594が修正されたことによる副作用のようです。
-
 * ACI0104050 アプリケーション起動時に「*libcef.dll* のエントリーポイント`IsThirdPartyinitialized`がみつからない」というエラーが表示されることがありました。
 
 * ACI0104039 プロジェクトモードのみ。スリーステートチェックボックスが正しく機能しませんでした。
