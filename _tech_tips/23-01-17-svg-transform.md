@@ -143,28 +143,35 @@ Case of
 		// 表示するためのフォームを組み立てる
 		$dynForm:=New object("rightMargin"; 10; "bottomMargin"; 10)
 		$dynForm.pages:=New collection($page)
+		$dynForm.events:=New collection("onLoad"; "onTimer")
 		$dynForm.method:=Current method path
 		
 		//組み立てたフォームの表示
 		$ref:=Open form window($dynForm)
-		DIALOG($dynForm; New object("svg"; $image))  //SVGをダイナミックフォームのパラメーターでフォームに渡す
+		DIALOG($dynForm)
 		CLOSE WINDOW($ref)
 		
 	: (FORM Event.code=On Load)  //フォームが表示された
-		
-		//最初に表示するSVGを用意
-		$svg:=DOM Parse XML source(File("/RESOURCES/sample.svg").platformPath)  //Resoucesフォルダのsample.svgをXMLとして読み込む
-		SVG EXPORT TO PICTURE($svg; $image)  //XMLをピクチャ変数に取り込む（注：変換ではない）
-		DOM CLOSE XML($svg)  //XMLを閉じてメモリー開放
 		
 		//フォームを初期化
 		Form.image:=$image
 		Form.position:=250
 		
+		//最初に表示するSVGを用意
+		SET TIMER(-1)
+		
 	: (FORM Event.code=On Clicked)  //実行ボタンがクリックされた
 		
+		//SVGを再描画
+		SET TIMER(-1)
+		
+	: (FORM Event.code=On Timer)  //タイマーイベントを利用してSVGの描画
+		
+		SET TIMER(0)  //タイマーイベント初期化
+		
+		//テンプレートを読み込んで描画する
 		$src:=File("/RESOURCES/template.svg").getText()  //テンプレートをテキストとして読み込む
-		PROCESS 4D TAGS($src; $src; Form)  //4D変換タグを評価する
+		PROCESS 4D TAGS($src; $src; Form)  //4D変換タグを評価する（パラメーターの値を埋め込む）
 		$svg:=DOM Parse XML variable($src)
 		SVG EXPORT TO PICTURE($svg; $image)
 		DOM CLOSE XML($svg)
