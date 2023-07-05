@@ -1,16 +1,26 @@
 ---
 layout: fix
 title: "4D v20 修正リスト"
-date: 2023-06-29 08:00:00
+date: 2023-07-05 08:00:00
 categories: 修正リスト
 tags: v20 
-build: 100509
+build: 100514
 version: "20"
 permalink: /2023/110/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103928 `LDAP password MD5 (0)`モードで`LDAP LOGIN`と`LDAP LOGOUT`を繰り返した場合，予期しないエラー`-2`が返されました。ACI0103594が修正されたことによる副作用のようです。
+
+* ACI0104050 アプリケーション起動時に「*libcef.dll* のエントリーポイント`IsThirdPartyinitialized`がみつからない」というエラーが表示されることがありました。
+
+* ACI0104039 プロジェクトモードのみ。スリーステートチェックボックスが正しく機能しませんでした。
+
+* ACI0104022 メッセージIDにURLエンコードされた文字が含まれている場合，`IMAPTransporter.searchMails()`でメールを検索することができませんでした。
+
+* ACI0103928 `LDAP password MD5 (0)`モードで`LDAP LOGIN`と`LDAP LOGOUT`を繰り返した場合，予期しないエラー`-2`が返されました。ACI0103594が修正されたことによる副作用のようです。
 
 * ACI0103960 複数のデータ型を返す三項演算子をコマンド（`time` `CALL WORKER`など）の引数に使用した場合，コンパイルモードでエラーが返されました。三演算子の第２オペランドで型が確定されているためです。
 
