@@ -12,4 +12,3 @@ permalink: /2023/191/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
-* ACI0104001 サーバーを１週間以上運用した場合，[データ収集](https://developer.4d.com/docs/ja/Admin/data-collect/)の`uptime`が更新されませんでした。
