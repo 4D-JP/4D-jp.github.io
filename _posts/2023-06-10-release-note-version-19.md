@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D v19.6 修正リスト"
-date: 2023-07-07 08:00:00
+date: 2023-07-17 08:00:00
 categories: 修正リスト
 tags: v19
-build: 287333
+build: 287402
 version: "19.6"
 permalink: /2023/161/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104061 Windows版のみ。Write ProドキュメントをPDF形式でエクスポートした場合，*Artdeco MN* フォントの文字が重ねて表示されました。Microsoft Print to PDFを使用すれば問題ありません。
+
+**注記**: Write Proが内部的に使用している[PDF-Writer](https://github.com/galkahana/PDF-Writer)のローレベル処理（カーニング）に問題がありました。回避策として，*Artdeco MN* フォントファミリーは，DirectWriteのAPIでフォントのオフセット位置を計算するようになりました。
+
+* ACI0103975 Mac版のみ。キーボードを長押しして拡張文字の候補を表示し，数字キーで選択した場合，アクセント付きの文字とそうでない文字の両方が入力されました。矢印キーやクリック操作で拡張文字を入力すれば問題ありません。
 
 * ACI0104050 アプリケーション起動時に「*libcef.dll* のエントリーポイント`IsThirdPartyinitialized`がみつからない」というエラーが表示されることがありました。
 
