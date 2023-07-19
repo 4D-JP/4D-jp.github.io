@@ -10,6 +10,12 @@ type: page
 {:toc}
 
 
+## 20r2 # {#v20r2}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**WebSocketクライアント**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_WebSocket.zip)<span id="20-2-1"></span><br />
+v20R2 では、4D で WebSocketクライアント接続するための [WebSocket クラス](http://developer.4d.com/docs/ja/API/WebSocketClass) が追加されました。簡単なチャットを例に使い方を紹介します。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [WebSocketクライアント](https://blog.4d.com/ja/websocket-client/)<br />
+
 ## 20 # {#v20}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みのブレーク行**](https://github.com/4D-JP/HDI/releases/download/20/HDI_4DWP_ORDA_Breaks.zip)<span id="20-0-6"></span><br />
