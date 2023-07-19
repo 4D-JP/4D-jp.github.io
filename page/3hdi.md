@@ -45,8 +45,6 @@ Collectionクラスに追加された新しい関数の紹介です:<br />
 いずれもボタンスタイルによってはプロパティが適用されない場合があります。詳しくは各プロパティのドキュメントを参照ください。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [フォームオブジェクトの進化](https://blog.4d.com/ja/evolution-of-form-objects/)<br />
 
-## 19r8 # {#v19r8}
-
 * <i class="fa fa-download" aria-hidden="true"></i> [**Office365: メールのコピー・移動・返信・削除**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_Office365_manage_mails.zip) (v19r8)<span id="19-8-6"></span><br />
 Microsoft の Graph API を使用してメールをコピー・移動・返信・削除する方法を紹介します。<br />
 参照: [4D NetKit](https://github.com/4d/4D-NetKit/tree/19RX)<br />
@@ -74,8 +72,6 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 * <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: コレクション/エンティティセレクション型での自動行高**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_LISTBOX_VariableRowHeight.zip) (v19r8)<span id="19-8-1"></span><br />
 コレクション/エンティティセレクション型のリストボックスでも自動行高が設定できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [コレクション型のリストボックスにおける自動行高](https://blog.4d.com/ja/variable-row-heights-in-collection-based-list-boxes/)<br />
-
-## 19r7 # {#v19r7}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 下部キャリーオーバー行**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_CarryOverRows.zip) (v19r7)<span id="19-7-7"></span><br />
 データソースに紐づいた表組みを使用する際、表が複数ページに分割される場合に [下部キャリーオーバー行](https://doc.4d.com/4Dv19R7/4D/19-R7/Handling-tables.200-6011887.ja.html#6021028) を表示できるようになりました。これは通常、小計を表示するのに使用します。<br />
@@ -107,8 +103,6 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 * <i class="fa fa-download" aria-hidden="true"></i> [**FileHandle クラス**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_FileHandle.zip) (v19r7)<span id="19-7-1"></span><br />
 新しく追加された　[`FileHandle　クラス`](http://developer.4d.com/docs/ja/API/FileHandleClass) で、ファイルを毎回開いたり閉じたりする必要なく、書き込み・読み取りが容易にできるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ファイル、フォルダー…そしてファイルハンドル!](https://blog.4d.com/ja/files-folders-and-now-file-handles/)
-
-## 19r6 # {#v19r6}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 空ピクチャーの非表示化**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_HideEmptyPictures.zip) (v19r6)<span id="19-6-7"></span><br />
 4D Write Pro ドキュメントに含まれる空ピクチャーを非表示にできるようになりました (デフォルトでは空の四角を表示)。<br />
@@ -146,8 +140,6 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 * <i class="fa fa-download" aria-hidden="true"></i> [**HTTPRequest クラス**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_HTTP_Classes.zip) (v19r6)<span id="19-6-1"></span><br />
 新しい [`HTTPRequest`](http://developer.4d.com/docs/ja/API/HTTPRequestClass/)クラスを使って、HTTPRequest オブジェクト を扱うことができます。このオブジェクトは、HTTPサーバーへのリクエストの設定と送信、および HTTPサーバーのレスポンスを処理するのに使用します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [HTTPクラス: 非同期の HTTPリクエストを実行する新しい方法](https://blog.4d.com/ja/http-classes-a-new-way-to-perform-asynchronous-http-requests/)
-
-## 19r5 # {#v19r5}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDAキャッシュの管理とRESTリクエストの最適化**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_ORDA_ContextAndRequestsOptimization.zip) (v19r5)<span id="19-5-7"></span><br />
 パフォーマンスのさらなる向上のため、ORDAキャッシュを管理する機能とRESTリクエストを最適化する機能が追加されました。<br />
@@ -194,8 +186,6 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 新しく追加された [`Copy parameters`](https://doc.4d.com/4Dv19R5/4D/19-R5/Copy-parameters.301-5872607.ja.html) コマンドを使い、関数/メソッドから関数/メソッドへと引数を転送することができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [パラメーターを簡単に管理する方法](https://blog.4d.com/ja/a-seamless-way-to-manage-parameters/)<br />
 
-## 19r4 # {#v19r4}
-
 * <i class="fa fa-download" aria-hidden="true"></i> [**システムワーカー**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_Systemworker.zip) (v19r4)<span id="19-4-4"></span><br />
 新しい [`SystemWorker`](http://developer.4d.com/docs/ja/API/SystemWorkerClass/) クラスを使って、外部プロセスを非同期に実行することができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [外部プロセスを非同期で起動する](https://blog.4d.com/ja/launch-an-external-process-asynchronously/)<br />
@@ -212,8 +202,6 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: エイリアス属性**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_ORDA_Aliases.zip) (v19r4)<span id="19-4-1"></span><br />
 ORDAクラスに [エイリアス属性](https://doc4d.github.io/docs/ja/ORDA/ordaClasses.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E5%B1%9E%E6%80%A7-1) を定義できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - エイリアス属性](https://blog.4d.com/ja/orda-say-hello-to-aliases/)<br />
-
-## 19r3 # {#v19r3}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**メール: Microsoft ID プラットフォームから Oauth2.0アクセストークンを取得**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_OAuth2_Microsoft_mail.zip) (v19r3)<span id="19-3-6"></span><br />
 Microsoft ID プラットフォームから Oauth2.0アクセストークンを取得し、IMAP および SMTP transporter を作成するサンプルです。<br />
@@ -246,8 +234,6 @@ ORDAクラスに [計算属性](https://developer.4d.com/docs/ja/ORDA/ordaClasse
 * <i class="fa fa-download" aria-hidden="true"></i> [**クラス: 計算プロパティ**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_CS_ComputedProperties.zip) (v19r3)<span id="19-3-1"></span><br />
 `Function get` および `Function set` キーワードを使って、クラスに [計算プロパティ](https://developer.4d.com/docs/ja/Concepts/classes/#function-get-%E3%81%A8-function-set) が追加できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [クラスに計算プロパティが登場！](https://blog.4d.com/ja/need-a-magic-wand-here-are-computed-class-properties/)<br />
-
-## 19r2 # {#v19r2}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーフォーマットの変更**](https://github.com/4D-JP/HDI/releases/download/19r2/HDI_4DWP_FormatPictures.zip) (v19r2)<span id="19-2-1"></span><br />
 4D Write Pro に新しく `wk image display mode` 属性が追加され、インラインおよびアンカーピクチャーのフォーマットが変更できるようになりました。また、新しい `wk background display mode` の追加によって、背景画像のフォーマットも簡単に変更できるようになりました。これらの属性の値として使用できる定数は [4D Write Pro ＞ ピクチャーを管理する ＞ 背景画像](https://doc.4d.com/4Dv19R2/4D/19-R2/Handling-pictures.200-5514111.ja.html#5524063) の章にて説明しています。<br />
