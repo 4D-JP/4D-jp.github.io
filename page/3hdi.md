@@ -13,7 +13,7 @@ type: page
 ## 20r2 # {#v20r2}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**WebSocketクライアント**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_WebSocket.zip)<span id="20-2-1"></span><br />
-v20R2 では、4D で WebSocketクライアント接続するための [WebSocket クラス](http://developer.4d.com/docs/ja/API/WebSocketClass) が追加されました。簡単なチャットを例に使い方を紹介します。<br />
+4D v20 R2 では、4D で WebSocketクライアント接続するための [WebSocket クラス](http://developer.4d.com/docs/ja/API/WebSocketClass) が追加されました。簡単なチャットを例に使い方を紹介します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [WebSocketクライアント](https://blog.4d.com/ja/websocket-client/)<br />
 
 ## 20 # {#v20}
@@ -23,7 +23,7 @@ v20R2 では、4D で WebSocketクライアント接続するための [WebSocke
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 表組みにブレーク行を追加！](https://blog.4d.com/ja/break-rows-a-new-addition-to-4d-write-pro-tables/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**WebSocketサーバー**](https://github.com/4D-JP/HDI/releases/download/20/HDI_WebSocket_Server.zip)<span id="20-0-5"></span><br />
-v20 より、4D は WebSocketサーバーを作成するためのコマンドを提供します。この HDI では、簡単なチャットを例に WebSocketサーバーの使い方を紹介します。<br />
+4D v20 より、4D は WebSocketサーバーを作成するためのコマンドを提供します。この HDI では、簡単なチャットを例に WebSocketサーバーの使い方を紹介します。<br />
 参照： [WebSocketServer クラス](http://developer.4d.com/docs/ja/API/WebSocketServerClass)、 [WebSocketConnection クラス](http://developer.4d.com/docs/ja/API/WebSocketConnectionClass)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいビルトイン WebSocketサーバー](https://blog.4d.com/ja/new-built-in-websocket-server/)<br />
 
