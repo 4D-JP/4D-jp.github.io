@@ -47,95 +47,95 @@ Collectionクラスに追加された新しい関数の紹介です:<br />
 
 ## 19r8 # {#v19r8}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Office365: メールのコピー・移動・返信・削除**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_Office365_manage_mails.zip)<span id="19-8-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Office365: メールのコピー・移動・返信・削除**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_Office365_manage_mails.zip) (v19r8)<span id="19-8-6"></span><br />
 Microsoft の Graph API を使用してメールをコピー・移動・返信・削除する方法を紹介します。<br />
 参照: [4D NetKit](https://github.com/4d/4D-NetKit/tree/19RX)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Microsoft 365: Microsoft Graph API でメールをコピー、移動、返信、削除する](https://blog.4d.com/ja/microsoft-365-copy-move-reply-and-delete-emails-with-the-microsoft-graph-api/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Office365: メールの受信**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_Office365_get_mails.zip)<span id="19-8-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Office365: メールの受信**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_Office365_get_mails.zip) (v19r8)<span id="19-8-5"></span><br />
 Microsoft の Graph API を使用してメールを受信する方法を紹介します。<br />
 参照: [4D NetKit](https://github.com/4d/4D-NetKit/tree/19RX)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Microsoft 365: Microsoft Graph API でメールを受信する](https://blog.4d.com/ja/microsoft-365-receive-emails-with-the-microsoft-graph-api/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Webセッションとアクセス権限**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_Permissions.zip)<span id="19-8-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Webセッションとアクセス権限**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_Permissions.zip) (v19r8)<span id="19-8-4"></span><br />
 4D のスケーラブルWebセッションに権限を付与することで、データへのアクセスを詳細に管理できるようになりました。<br />
 参照: [ORDA ＞ 権限](http://developer.4d.com/docs/ja/ORDA/privileges)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [完全な権限システムでデータアクセスをフィルタリングする](https://blog.4d.com/ja/filter-access-to-your-data-with-a-complete-system-of-permissions/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みとテーマ**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_4DVP_tableStyle.zip)<span id="19-8-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みとテーマ**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_4DVP_tableStyle.zip) (v19r8)<span id="19-8-3"></span><br />
 4D View Pro の表組みにテーマを適用できるようになりました。 [`VP SET TABLE THEME`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-set-table-theme) コマンドが追加されたほか、 [`VP CREATE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-create-table) コマンドが拡張され、テーマオプションをサポートするようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: 表組みのスタイルをカスタマイズ](https://blog.4d.com/ja/4d-view-pro-customize-the-style-of-your-tables/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストボックス**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_4DWP_UseTextBoxes.zip)<span id="19-8-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストボックス**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_4DWP_UseTextBoxes.zip) (v19r8)<span id="19-8-2"></span><br />
 4D Write Pro でテキストボックスを利用できるようになりました。それにともない、2つの新しいコマンドも追加されています: [`WP New text box`](https://doc.4d.com/4Dv19R8/4D/19-R8/WP-New-text-box.301-6196646.ja.html)、[`WP DELETE TEXT BOX`](https://doc.4d.com/4Dv19R8/4D/19-R8/WP-DELETE-TEXT-BOX.301-6196772.ja.html)<br />
 参照: [テキストボックスの管理](https://doc.4d.com/4Dv19R8/4D/19-R8/Using-a-4D-Write-Pro-area.200-6130476.ja.html#6131907)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro : フローティングテキストボックス！](https://blog.4d.com/ja/4d-write-pro-say-welcome-to-floating-text-boxes/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: コレクション/エンティティセレクション型での自動行高**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_LISTBOX_VariableRowHeight.zip)<span id="19-8-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: コレクション/エンティティセレクション型での自動行高**](https://github.com/4D-JP/HDI/releases/download/19r8/HDI_LISTBOX_VariableRowHeight.zip) (v19r8)<span id="19-8-1"></span><br />
 コレクション/エンティティセレクション型のリストボックスでも自動行高が設定できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [コレクション型のリストボックスにおける自動行高](https://blog.4d.com/ja/variable-row-heights-in-collection-based-list-boxes/)<br />
 
 ## 19r7 # {#v19r7}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 下部キャリーオーバー行**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_CarryOverRows.zip)<span id="19-7-7"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 下部キャリーオーバー行**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_CarryOverRows.zip) (v19r7)<span id="19-7-7"></span><br />
 データソースに紐づいた表組みを使用する際、表が複数ページに分割される場合に [下部キャリーオーバー行](https://doc.4d.com/4Dv19R7/4D/19-R7/Handling-tables.200-6011887.ja.html#6021028) を表示できるようになりました。これは通常、小計を表示するのに使用します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: キャリーオーバー行を導入](https://blog.4d.com/ja/4d-write-pro-carry-over-rows-are-available/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラの簡略表示**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_DisplayFormulas.zip)<span id="19-7-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラの簡略表示**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_DisplayFormulas.zip) (v19r7)<span id="19-7-6"></span><br />
 新しく追加された [フォーミュラソースを記号として表示](https://doc.4d.com/4Dv19R7/4D/19-R7/Managing-formulas.300-6011882.ja.html#6014416) プロパティを使って、ドキュメントのフォーミュラを ⓕ 記号として簡略に表示することができます。これは、エンドユーザーがフォーミュラの詳細な定義を知る必要がない場合に便利です。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: ユーザーフレンドリーな式表示](https://blog.4d.com/ja/4d-write-pro-user-friendly-display-of-formulas/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメントの変更検知**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_ModifiedDocuments.zip)<span id="19-7-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ドキュメントの変更検知**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DWP_ModifiedDocuments.zip) (v19r7)<span id="19-7-5"></span><br />
 新しい [`.modified`](https://doc.4d.com/4Dv19R7/4D/19-R7/4D-Write-Pro-Attributes.300-6011946.ja.html#6015862) プロパティを使って、ドキュメントが変更されたかどうかを検知できます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro – ドキュメントの変更を検知](https://blog.4d.com/ja/4d-write-pro-document-modification-detection/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 複数行のドラッグ＆ドロップ**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_LB_DragAndDrop.zip)<span id="19-7-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: 複数行のドラッグ＆ドロップ**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_LB_DragAndDrop.zip) (v19r7)<span id="19-7-4"></span><br />
 リストボックスから複数行をドラッグ＆ドロップする際、"alt" キーを使わなくても自然に操作できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [リストボックス – Altキーよ、さようなら！](https://blog.4d.com/ja/list-boxes-say-goodbye-to-alt-key/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みの列の管理**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DVP_TablesManagement.zip)<span id="19-7-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みの列の管理**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_4DVP_TablesManagement.zip) (v19r7)<span id="19-7-3"></span><br />
 新しく追加された　[`VP INSERT TABLE COLUMNS`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-insert-table-columns)、
 [`VP REMOVE TABLE COLUMNS`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-remove-table-columns)、
 [`VP SET TABLE COLUMN ATTRIBUTES`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-set-table-column-attributes)、
 [`VP Get table column index`](http://developer.4d.com/docs/ja/ViewPro/method-list#vp-get-table-column-index) を使って表組に列を追加・削除する方法を紹介します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: 行と列を管理する新しいコマンド](https://blog.4d.com/ja/4d-view-pro-new-commands-to-manage-rows-columns/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**フォームオブジェクトの角の丸み**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_RoundedCorner.zip)<span id="19-7-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**フォームオブジェクトの角の丸み**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_RoundedCorner.zip) (v19r7)<span id="19-7-2"></span><br />
 静的テキストおよび入力オブジェクトのプロパティに [`角の半径`](http://developer.4d.com/docs/ja/FormObjects/propertiesCoordinatesAndSizing#%E8%A7%92%E3%81%AE%E5%8D%8A%E5%BE%84) が追加され、角の丸みを設定できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [角の丸み、登場！](https://blog.4d.com/ja/say-hello-to-rounded-corners/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**FileHandle クラス**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_FileHandle.zip)<span id="19-7-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**FileHandle クラス**](https://github.com/4D-JP/HDI/releases/download/19r7/HDI_FileHandle.zip) (v19r7)<span id="19-7-1"></span><br />
 新しく追加された　[`FileHandle　クラス`](http://developer.4d.com/docs/ja/API/FileHandleClass) で、ファイルを毎回開いたり閉じたりする必要なく、書き込み・読み取りが容易にできるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ファイル、フォルダー…そしてファイルハンドル!](https://blog.4d.com/ja/files-folders-and-now-file-handles/)
 
 ## 19r6 # {#v19r6}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 空ピクチャーの非表示化**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_HideEmptyPictures.zip)<span id="19-6-7"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 空ピクチャーの非表示化**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_HideEmptyPictures.zip) (v19r6)<span id="19-6-7"></span><br />
 4D Write Pro ドキュメントに含まれる空ピクチャーを非表示にできるようになりました (デフォルトでは空の四角を表示)。<br />
 参照: [空のピクチャー](https://doc.4d.com/4Dv19R6/4D/19-R6/Handling-pictures.200-5903894.ja.html#5938250)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 空ピクチャーの非表示化](https://blog.4d.com/ja/4d-write-pro-disable-visibility-of-empty-images/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**メール: OAuth2を使って、Microsoftアカウントからメールを送信する**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_office365_SendMail.zip)<span id="19-6-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**メール: OAuth2を使って、Microsoftアカウントからメールを送信する**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_office365_SendMail.zip) (v19r6)<span id="19-6-6"></span><br />
 4D NetKit が提供する OAuth2Provider クラス、および Office365クラスを使って、Microsoftアカウントと連携してメールを送信する方法を紹介します。<br />
 参照: [4D NetKit](https://github.com/4d/4D-NetKit/tree/19RX)、HDI "[メール: Microsoft ID プラットフォームから Oauth2.0アクセストークンを取得](https://4d-jp.github.io/hdi/#v19r3)"<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Microsoft 365: 電子メールの送信](https://blog.4d.com/ja/microsoft-365-send-emails/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みとデータコンテキスト**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DVP_CreateTables.zip)<span id="19-6-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 表組みとデータコンテキスト**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DVP_CreateTables.zip) (v19r6)<span id="19-6-5"></span><br />
 新しく追加された [`VP CREATE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-create-table) と [`VP REMOVE TABLE`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-remove-table) コマンドを使って、表組みの作成と削除ができるようになりました。この表組みにデータコンテキストを関連付けることで、コレクションやオブジェクトに格納されたデータを簡単に表示できます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: コレクションを表組みとして表示](https://blog.4d.com/ja/4d-view-pro-display-your-collections-as-tables/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みとデータソースの関連付け**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_ORDA_Tables.zip)<span id="19-6-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みとデータソースの関連付け**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_4DWP_ORDA_Tables.zip) (v19r6)<span id="19-6-4"></span><br />
 4D Write Pro ドキュメントの表組みに、コレクションやエンティティセレクションをデータソースとして関連づけられるようになりました。<br />
 参照: [データソースに基づくテーブル](https://livedoc.4d.com/4Dv19R6/4D/19-R6/Handling-tables.200-5908411.ja.html#5908491)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: エンティティセレクションやコレクションで表組みを動的に埋める](https://blog.4d.com/ja/4d-write-pro-dynamically-fill-tables-with-entity-selections-collections/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: プロパティの取得・設定**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_LISTBOXES_Properties_v3.zip)<span id="19-6-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リストボックス: プロパティの取得・設定**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_LISTBOXES_Properties_v3.zip) (v19r6)<span id="19-6-3"></span><br />
 [`LISTBOX SET PROPERTY`](https://doc.4d.com/4Dv19R6/4D/19-R6/LISTBOX-SET-PROPERTY.301-5911042.ja.html)、および
 [`LISTBOX Get property`](https://doc.4d.com/4Dv19R6/4D/19-R6/LISTBOX-Get-property.301-5911088.ja.html) コマンドを使って、リストボックスのプロパティを設定する方法を紹介します。<br />
 4D v19 R6 では "横方向パディング" および "縦方向パディング" プロパティが新たに追加され、内マージンの設定が可能になりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [リストボックス: もっと美しく、もっと便利に](https://blog.4d.com/ja/list-boxes-more-control-more-beauty/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**フォーミュラを関数やコマンド内で使う**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_formula_in_commands.zip)<span id="19-6-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**フォーミュラを関数やコマンド内で使う**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_formula_in_commands.zip) (v19r6)<span id="19-6-2"></span><br />
 コードを呼び出す Collectionクラス関数は、formula 引数として Formulaオブジェクトをサポートするようになりました。<br />
 また、
 [`EXECUTE METHOD IN SUBFORM`](https://doc.4d.com/4Dv19R6/4D/19-R6/EXECUTE-METHOD-IN-SUBFORM.301-5910907.ja.html)、
@@ -143,13 +143,13 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 [`CALL WORKER`](https://doc.4d.com/4Dv19R6/4D/19-R6/CALL-WORKER.301-5911386.ja.html) コマンドも Formulaオブジェクトをサポートするようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [コレクションとコールバックコマンドにおけるフォーミュラの使用](https://blog.4d.com/ja/the-use-of-formulas-in-collections-callback-commands/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**HTTPRequest クラス**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_HTTP_Classes.zip)<span id="19-6-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**HTTPRequest クラス**](https://github.com/4D-JP/HDI/releases/download/19r6/HDI_HTTP_Classes.zip) (v19r6)<span id="19-6-1"></span><br />
 新しい [`HTTPRequest`](http://developer.4d.com/docs/ja/API/HTTPRequestClass/)クラスを使って、HTTPRequest オブジェクト を扱うことができます。このオブジェクトは、HTTPサーバーへのリクエストの設定と送信、および HTTPサーバーのレスポンスを処理するのに使用します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [HTTPクラス: 非同期の HTTPリクエストを実行する新しい方法](https://blog.4d.com/ja/http-classes-a-new-way-to-perform-asynchronous-http-requests/)
 
 ## 19r5 # {#v19r5}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDAキャッシュの管理とRESTリクエストの最適化**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_ORDA_ContextAndRequestsOptimization.zip)<span id="19-5-7"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDAキャッシュの管理とRESTリクエストの最適化**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_ORDA_ContextAndRequestsOptimization.zip) (v19r5)<span id="19-5-7"></span><br />
 パフォーマンスのさらなる向上のため、ORDAキャッシュを管理する機能とRESTリクエストを最適化する機能が追加されました。<br />
  [`dataClass.setRemoteCacheSettings()`](http://developer.4d.com/docs/ja/API/DataClassClass/#setremotecachesettings)、
  [`dataClass.getRemoteCache()`](http://developer.4d.com/docs/ja/API/DataClassClass/#getremotecache)、
@@ -162,12 +162,12 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
  [`dataStore.setRemoteContextInfo()`](http://developer.4d.com/docs/ja/API/DataStoreClass/#setremotecontextinfo)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - RESTリクエストの管理によるパフォーマンスの最適化](https://blog.4d.com/ja/orda-optimize-performance-with-full-control-over-rest-requests/)<br />
  
-* <i class="fa fa-download" aria-hidden="true"></i> [**親フォームとサブフォーム間の通信**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4D_SubformCommunication.zip)<span id="19-5-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**親フォームとサブフォーム間の通信**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4D_SubformCommunication.zip) (v19r5)<span id="19-5-6"></span><br />
 新しく追加された [`OBJECT Get subform container value`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-Get-subform-container-value.301-5862192.ja.html) および [`OBJECT SET SUBFORM CONTAINER VALUE`](https://doc.4d.com/4Dv19R5/4D/19-R5/OBJECT-SET-SUBFORM-CONTAINER-VALUE.301-5862140.ja.html) コマンドを使い、親フォームとサブフォーム間でスカラー型の変数あるいは式を同期させることができます。<br />
 参考: [サブフォーム](https://doc4d.github.io/docs/ja/FormObjects/subformOverview.html#%E8%A6%AA%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%A8%E3%82%B5%E3%83%96%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E3%81%AE%E5%90%8C%E6%9C%9F-%E5%8D%98%E4%B8%80%E5%80%A4)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [フォームとサブフォームの通信を簡単に](https://blog.4d.com/ja/form-and-subform-communication-made-easy/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DVP_DataContext.zip)<span id="19-5-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DVP_DataContext.zip) (v19r5)<span id="19-5-5"></span><br />
 4D View Pro ドキュメントのシートにデータコンテキストを関連付けることができるようになりました。オブジェクトまたはコレクションをバインドすることで、それらの内容をシートのセルに自動で表示することができます。<br />
 参考: [`VP SET DATA CONTEXT`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-set-data-context)、
 [`VP Get data context`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-get-data-context)、
@@ -175,81 +175,81 @@ Microsoft の Graph API を使用してメールを受信する方法を紹介�
 [`VP Get binding path`](http://developer.4d.com/docs/ja/ViewPro/method-list/#vp-get-binding-path)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: データコンテキストを使ったデータ表示](https://blog.4d.com/ja/4d-view-pro-populate-your-sheets-with-a-data-context/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_ORDA.zip)<span id="19-5-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: データコンテキストの利用**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_ORDA.zip) (v19r5)<span id="19-5-4"></span><br />
 4D v19R5 より、4D Write Pro ドキュメントにデータコンテキストを関連付けることができるようになりました。これにより、テンプレートドキュメント内で、エンティティやエンティティセレクションといった ORDAデータのほか、任意のオブジェクトデータを利用することができます。<br />
 参考: [`WP SET DATA CONTEXT`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-SET-DATA-CONTEXT.301-5866708.ja.html)、[`WP Get data context`](https://doc.4d.com/4Dv19R5/4D/19-R5/WP-Get-data-context.301-5866737.ja.html)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA と 4D Write Pro : パワーカップル!](https://blog.4d.com/ja/orda-and-4d-write-pro-the-power-couple/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 段落のリンク**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_LinkedParagraphs.zip)<span id="19-5-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 段落のリンク**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_LinkedParagraphs.zip) (v19r5)<span id="19-5-3"></span><br />
 4D Write Pro の段落を、次の段落とリンクするための新しい `wk keep with next` 属性が追加されました。これを設定すると、改ページやカラムブレークにより、離してはいけない段落同士が分離されてしまうことを防げます。<br />
 参考: [段落ブレーク＞自動ブレークを管理する＞次の段落につなげる](https://doc.4d.com/4Dv19R5/4D/19-R5/Using-a-4D-Write-Pro-area.200-5827439.ja.html#5864778)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - 段落リンクでレイアウト改善](https://blog.4d.com/ja/4d-write-pro-elevate-your-documents-layout-with-linked-paragraphs/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 繰り返し表示される表組みのヘッダー行**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_RepeatedHeaders.zip)<span id="19-5-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 繰り返し表示される表組みのヘッダー行**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_4DWP_RepeatedHeaders.zip) (v19r5)<span id="19-5-2"></span><br />
 4D v19R5 より、4D Write Pro の表組みは、最大5行までのヘッダー行を持てるようになりました。<br />
 参考: [テーブルの管理＞繰り返し表示されるヘッダー行](https://doc.4d.com/4Dv19R5/4D/19-R5/Using-a-4D-Write-Pro-area.200-5827439.ja.html#5859192)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 表組みのヘッダー行](https://blog.4d.com/ja/4d-write-pro-say-hello-to-table-headers/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Copy Parameters**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_CopyParameters.zip)<span id="19-5-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Copy Parameters**](https://github.com/4D-JP/HDI/releases/download/19r5/HDI_CopyParameters.zip) (v19r5)<span id="19-5-1"></span><br />
 新しく追加された [`Copy parameters`](https://doc.4d.com/4Dv19R5/4D/19-R5/Copy-parameters.301-5872607.ja.html) コマンドを使い、関数/メソッドから関数/メソッドへと引数を転送することができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [パラメーターを簡単に管理する方法](https://blog.4d.com/ja/a-seamless-way-to-manage-parameters/)<br />
 
 ## 19r4 # {#v19r4}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**システムワーカー**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_Systemworker.zip)<span id="19-4-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**システムワーカー**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_Systemworker.zip) (v19r4)<span id="19-4-4"></span><br />
 新しい [`SystemWorker`](http://developer.4d.com/docs/ja/API/SystemWorkerClass/) クラスを使って、外部プロセスを非同期に実行することができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [外部プロセスを非同期で起動する](https://blog.4d.com/ja/launch-an-external-process-asynchronously/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**View Pro: ワークブックオプションの管理**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DVP_workbook_options.zip)<span id="19-4-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**View Pro: ワークブックオプションの管理**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DVP_workbook_options.zip) (v19r4)<span id="19-4-3"></span><br />
 新しい [`VP SET WORKBOOK OPTIONS`](https://developer.4d.com/docs/ja/ViewPro/method-list/#vp-set-workbook-options) コマンドを使って、様々なワークブックオプションを管理することができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro:ワークブックオプション](https://blog.4d.com/ja/4d-view-pro-workbook-options/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 表組みの行内部の自動改ページ**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DWP_PageBreaksInTableRows.zip)<span id="19-4-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 表組みの行内部の自動改ページ**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_4DWP_PageBreaksInTableRows.zip) (v19r4)<span id="19-4-2"></span><br />
 4D Write Pro に新しい `wk page break inside row` 属性が追加され、表組みの行内部の自動改ページができるようになりました。<br />
 参考: [表のページ分け](https://doc.4d.com/4Dv19R4/4D/19-R4/Using-a-4D-Write-Pro-area.200-5760411.ja.html#5798838)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - ページレイアウトをより詳細に管理](https://blog.4d.com/ja/4d-write-pro-more-control-on-page-layout/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: エイリアス属性**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_ORDA_Aliases.zip)<span id="19-4-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: エイリアス属性**](https://github.com/4D-JP/HDI/releases/download/19r4/HDI_ORDA_Aliases.zip) (v19r4)<span id="19-4-1"></span><br />
 ORDAクラスに [エイリアス属性](https://doc4d.github.io/docs/ja/ORDA/ordaClasses.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E5%B1%9E%E6%80%A7-1) を定義できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - エイリアス属性](https://blog.4d.com/ja/orda-say-hello-to-aliases/)<br />
 
 ## 19r3 # {#v19r3}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**メール: Microsoft ID プラットフォームから Oauth2.0アクセストークンを取得**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_OAuth2_Microsoft_mail.zip)<span id="19-3-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**メール: Microsoft ID プラットフォームから Oauth2.0アクセストークンを取得**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_OAuth2_Microsoft_mail.zip) (v19r3)<span id="19-3-6"></span><br />
 Microsoft ID プラットフォームから Oauth2.0アクセストークンを取得し、IMAP および SMTP transporter を作成するサンプルです。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Microsoft 365へのアクセス](https://blog.4d.com/ja/4d-and-microsoft-365-access/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Webエリア: Webカメラの使用**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_Webcam.zip)<span id="19-3-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Webエリア: Webカメラの使用**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_Webcam.zip) (v19r3)<span id="19-3-6"></span><br />
 Webエリアの `埋め込みWebレンダリングエンジンを使用`プロパティを有効にすることで、コードを書くことなく Webカメラが
 使用できることを紹介します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Webエリアが Webカメラに対応](https://blog.4d.com/ja/webcam-support-in-web-areas/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: SVGへの書き出し**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_4DWP_ExportSVG.zip)<span id="19-3-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: SVGへの書き出し**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_4DWP_ExportSVG.zip) (v19r3)<span id="19-3-5"></span><br />
 [`WP EXPORT DOCUMENT`](https://livedoc.4d.com/4D-Write-Pro-19-R3/4D-Write-Pro/WP-EXPORT-DOCUMENT.301-5606518.ja.html) および [`WP EXPORT VARIABLE`](https://livedoc.4d.com/4D-Write-Pro-19-R3/4D-Write-Pro/WP-EXPORT-VARIABLE.301-5606522.ja.html) コマンドの機能が拡張され、4D Write Pro ドキュメントを SVG に書き出せるようになりました。<br />
 参考：[SVG フォーマットへの書き出し](https://livedoc.4d.com/4Dv19R3/4D/19-R3/Exporting-to-SVG-format.200-5626425.ja.html)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro ドキュメントをSVG形式で書き出す](https://blog.4d.com/ja/export-4d-write-pro-documents-to-svg-format/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 継続セクションブレーク**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_4DWP_ContinuousSectionBreaks.zip)<span id="19-3-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: 継続セクションブレーク**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_4DWP_ContinuousSectionBreaks.zip) (v19r3)<span id="19-3-4"></span><br />
 4D Write Pro に、改ページを強制しない [継続したセクションブレーク](https://doc.4d.com/4Dv19R3/4D/19-R3/Using-a-4D-Write-Pro-area.200-5606485.ja.html#5615462) が追加されました。これにより、ページ内で複数のセクションを管理できるようになり、同じページ上で異なる段組の設定ができるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - 継続セクションブレーク](https://blog.4d.com/ja/4d-write-pro-continuous-section-breaks/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: フォーミュラのハイライト**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_4DWP_HightlightFormulas.zip)<span id="19-3-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Write Pro: フォーミュラのハイライト**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_4DWP_HightlightFormulas.zip) (v19r3)<span id="19-3-3"></span><br />
 4D Write Pro に新しい表示オプションが追加され、ドキュメントに含まれるフォーミュラを、値表示・参照表示のいずれの場合でもハイライトすることができるようになりました。
 ハイライトは `wk formula highlight` および `wk formula highlight color` を使って設定します。<br />
 参照: [4D Write Pro標準アクションの使用](https://doc.4d.com/4Dv19R3/4D/19-R3/Using-4D-Write-Pro-standard-actions.200-5606489.ja.html)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: フォーミュラはいずこ](https://blog.4d.com/ja/4d-write-pro-where-are-my-formulas/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: 計算属性**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_ORDA_ComputedAttributes.zip)<span id="19-3-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDAクラス: 計算属性**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_ORDA_ComputedAttributes.zip) (v19r3)<span id="19-3-2"></span><br />
 ORDAクラスに [計算属性](https://developer.4d.com/docs/ja/ORDA/ordaClasses/#%E8%A8%88%E7%AE%97%E5%B1%9E%E6%80%A7) が追加できるようになりました。それぞれ専用の関数を設定することで、計算属性値を取得・設定・クエリ・並べ替えすることが可能です。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDAの計算属性によるマジックショー！](https://blog.4d.com/ja/a-magic-show-awaits-you-with-ordas-calculated-attributes/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**クラス: 計算プロパティ**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_CS_ComputedProperties.zip)<span id="19-3-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**クラス: 計算プロパティ**](https://github.com/4D-JP/HDI/releases/download/19r3/HDI_CS_ComputedProperties.zip) (v19r3)<span id="19-3-1"></span><br />
 `Function get` および `Function set` キーワードを使って、クラスに [計算プロパティ](https://developer.4d.com/docs/ja/Concepts/classes/#function-get-%E3%81%A8-function-set) が追加できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [クラスに計算プロパティが登場！](https://blog.4d.com/ja/need-a-magic-wand-here-are-computed-class-properties/)<br />
 
 ## 19r2 # {#v19r2}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーフォーマットの変更**](https://github.com/4D-JP/HDI/releases/download/19r2/HDI_4DWP_FormatPictures.zip)<span id="19-2-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ピクチャーフォーマットの変更**](https://github.com/4D-JP/HDI/releases/download/19r2/HDI_4DWP_FormatPictures.zip) (v19r2)<span id="19-2-1"></span><br />
 4D Write Pro に新しく `wk image display mode` 属性が追加され、インラインおよびアンカーピクチャーのフォーマットが変更できるようになりました。また、新しい `wk background display mode` の追加によって、背景画像のフォーマットも簡単に変更できるようになりました。これらの属性の値として使用できる定数は [4D Write Pro ＞ ピクチャーを管理する ＞ 背景画像](https://doc.4d.com/4Dv19R2/4D/19-R2/Handling-pictures.200-5514111.ja.html#5524063) の章にて説明しています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - 新しいピクチャーフォーマット](https://blog.4d.com/ja/4d-write-pro-new-image-formats/)<br />
 
