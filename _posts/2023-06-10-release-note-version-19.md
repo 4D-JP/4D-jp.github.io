@@ -12,6 +12,52 @@ permalink: /2023/161/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0102977 定数を括弧で括らずに`return`キーワードで返そうとした場合，すんタックスエラーになりました。
+
+**注記**: 修正に伴い，定数の`Return key`が`ReturnKey`に変更されました。
+
+* ACI0103613 Mac版のみ。[Devart ODBC Driver for Sybase v.3.3.1](https://www.devart.com/odbc/ase/download.htm) を使用して`SQL LOGIN`を実行した場合，エラー`9921`が返されました。
+
+**注記**: [Microsoftの仕様](https://learn.microsoft.com/en-us/sql/odbc/reference/syntax/sqlconnect-function?view=sql-server-ver16)に従い，4Dは`SQLConnectW`と`SQL_NTS`を使用しています。Apple Silicon版のDevart ODBC Driverはパスワードの処理で[`SQL_NTS(-3)`](https://github.com/microsoft/ODBC-Specification/blob/master/Windows/inc/sql.h)モードを正しく実装しておらず，*null-terminated string* がきちんと受け取れていません。Devart ODBC Driverのバグですが，文字数を渡すように4D側で回避することになりました。
+
+* ACI0104080 Windows版のみ。VS Code Extensionの[4D-Analyzer](https://marketplace.visualstudio.com/items?itemName=4D.4d-analyzer)で4Dまたは4D ServerをLSPにすることができませんでした。
+
+* ACI0104031 クラスの`property`宣言でコンポーネントのクラスをデータ型として参照した場合，シンタックスチェックでオブジェクトは未定義のクラスであるという警告が返され，プロパティ入力のタイプアヘッドでもクラスのメンバー関数やプロパティが候補として列挙されませんでした。
+
+* ACI0104030 `#DECLARE`構文または`C_POINTER`でポインター型のパラメーターを宣言し，渡されたポインター型のパラメーター自体に別のポインターを代入した場合，呼び出し元のポインターも更新されました。パラメーターはたとえポインター型であってもローカル変数と同じように振る舞うべきです。
+
+* ACI0104029 クラスのプロパティを *Integer* 型で宣言し，そのプロパティを`-This.prop`のように符号を反転して参照した場合，コンパイラーがエラーを返しました。
+
+* ACI0103188 データベース設定と *settings* のそれぞれでHTTPとHTTPSの両方を無効化した場合，[`WebServer.start()`](https://developer.4d.com/docs/ja/API/WebServerClass/#start)がエラーを返しませんでした。サーバーを開始できなかった場合は`errors[]`が返されるべきです。
+
+* ACI0103994 Mac版のみ。[iODBC Framework](https://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/WelcomeVisitors)がインストールされていない環境で`SQL LOGIN`を実行した場合，アプリケーションがクラッシュしました。
+
+* ACI0104038 **VS Code** のLSPとして使用した場合，**tool4d** のCPU占有率がほぼ`100`%に達しました。
+
+* ACI0103979 Apple Siliconターゲット向けにコンパイルされたMac版の4D ServerプロジェクトにWindows版の4D Remoteで接続した場合，クライアントがクラッシュしました。*On Startup* メソッドが存在しなければ問題ありません。
+
+**注記**: Apple Siliconターゲット限定（Intelターゲット無し）のプロジェクトを検出する仕組みがありませんでした。修正により，内部的なマーカーおよび新しいエラーメッセージが追加されましたが，プロジェクトを再コンパイルする必要があります。
+
+* ACI0104076 4D Write Pro Interfaceコンポーネントを使用し，Write Proドキュメントにフォーミュラを挿入した場合，バイナリ形式でフォーミュラが挿入されました。そのようなドキュメントが保存されたフィールドを「レコードの強制更新」モードで圧縮した場合，フォーミュラが失われました。
+
+**注記**: 通常，`WP INSERT FORMULA`で挿入したフォーミュラは文字列として保存されます。
+
+```html
+<span style="-d4-ref:'Current date:C33'"> </span>
+```
+
+しかし，4D Write Pro Interfaceコンポーネントで挿入したフォーミュラは特殊な形式で保存されます。
+
+```html
+<span style="-d4-ref-data:'data:application/octet-stream;base64,Bf3/YW1mNF4AAAAAAAAA6////zQARAAgAFcAcgBpAHQAZQBQAHIAbwAgAEkAbgB0AGUAcgBmAGEAYwBlACAAAAAAAAQAAAAAAEVWU1JPSQ0AAQAhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=='"> </span>
+```
+
+MSCは4D Write Pro Interfaceコンポーネントをロードしていないため，このようなフィールドを「レコードの強制更新」モードで圧縮した場合，フォーミュラが評価できずに空の文字列となりました。修正により，MSC圧縮のようにデータベースが実行されていない場面では，レコードに保存されたWrite Proドキュメントを開こうとするのではなく，データストリームをそのままコピーするようになりました。
+
+* ACI0104067 プラグインSDKのエントリーポイント`PA_ExecuteObjectMethod`を使用し，パラメーターを渡してコンパイルモードでエンティティセレクションのメンバー関数を実行しようとした場合，アプリケーションがクラッシュしました。
+
+* ACI0104037 プロジェクトモードのみ。配列型リストボックスの未定義列に`SELECTION TO ARRAY`で文字列フィールドをコピーした場合，データソースが`ARRAY TEXT`ではなく，`_o_ARRAY STRING`になりました。
+
 * ACI0103994 Mac版のみ。[iODBC Framework](https://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/WelcomeVisitors)がインストールされていない環境で`SQL LOGIN`を実行した場合，アプリケーションがクラッシュしました。
 
 * ACI0103613 Mac版のみ。[Devart ODBC Driver for Sybase v.3.3.1](https://www.devart.com/odbc/ase/download.htm) を使用して`SQL LOGIN`を実行した場合，エラー`9921`が返されました。
