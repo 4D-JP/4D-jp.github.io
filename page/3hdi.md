@@ -12,6 +12,10 @@ type: page
 
 ## 20r2 # {#v20r2}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メール送信**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_google_SendMail.zip)<span id="20-2-3"></span><br />
+Google APT を使って Gmailアカウントからメール送信ができるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Gmail API を使ったメール送信](https://blog.4d.com/ja/send-email-with-the-gmail-api/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みのセル結合**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_4DWP_CellsMerge.zip)<span id="20-2-2"></span><br />
 4D Write Pro の表組みのセルを結合できるようになりました。これに伴い、[`WP TABLE MERGE CELLS`](https://doc.4d.com/4Dv20R2/4D/20-R2/WP-TABLE-MERGE-CELLS.301-6392816.ja.html) および [`WP TABLE SPLIT CELLS`](https://doc.4d.com/4Dv20R2/4D/20-R2/WP-TABLE-SPLIT-CELLS.301-6397459.ja.html) コマンドも追加されています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 表組みのセル結合](https://blog.4d.com/ja/4d-write-pro-tables-introducing-cells-merge/)<br />
