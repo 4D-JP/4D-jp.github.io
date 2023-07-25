@@ -1,16 +1,26 @@
 ---
 layout: fix
 title: "4D v19.6 修正リスト"
-date: 2023-07-17 08:00:00
+date: 2023-07-21 08:00:00
 categories: 修正リスト
 tags: v19
-build: 287402
+build: 287481
 version: "19.6"
 permalink: /2023/161/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0103994 Mac版のみ。[iODBC Framework](https://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/WelcomeVisitors)がインストールされていない環境で`SQL LOGIN`を実行した場合，アプリケーションがクラッシュしました。
+
+* ACI0103613 Mac版のみ。[Devart ODBC Driver for Sybase v.3.3.1](https://www.devart.com/odbc/ase/download.htm) を使用して`SQL LOGIN`を実行した場合，エラー`9921`が返されました。
+
+**注記**: [Microsoftの仕様](https://learn.microsoft.com/en-us/sql/odbc/reference/syntax/sqlconnect-function?view=sql-server-ver16)に従い，4Dは`SQLConnectW`と`SQL_NTS`を使用しています。Apple Silicon版のDevart ODBC Driverはパスワードの処理で[`SQL_NTS(-3)`](https://github.com/microsoft/ODBC-Specification/blob/master/Windows/inc/sql.h)モードを正しく実装しておらず，*null-terminated string* がきちんと受け取れていません。Devart ODBC Driverのバグですが，文字数を渡すように4D側で回避することになりました。
+
+* ACI0104026 エクスプローラーのごみ箱にテーブルが残っている状態でごみ箱を空にした場合，アプリケーションがクラッシュしました。
+
+* ACI0103950 プロジェクトモードのみ。既存のフォームと名前が重複するフォームを作成しようとした場合，ランタイムエラーが返されました。
 
 * ACI0104061 Windows版のみ。Write ProドキュメントをPDF形式でエクスポートした場合，*Artdeco MN* フォントの文字が重ねて表示されました。Microsoft Print to PDFを使用すれば問題ありません。
 
