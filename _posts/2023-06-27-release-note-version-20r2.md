@@ -1,16 +1,54 @@
 ---
 layout: fix
 title: "4D v20r2 修正リスト"
-date: 2023-07-17 08:00:00
+date: 2023-07-24 08:00:00
 categories: 修正リスト
 tags: v20r2 
-build: 100104
+build: 100145
 version: "20r2"
 permalink: /2023/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104060 多数（`10`個）のプリエンプティブプロセスから大量（`100,000`個）JSONオブジェクトを同時に作成した場合，平行処理に期待されるパフォーマンス向上が得られませんでした。
+
+**注記**: 共有オブジェクトである`4D.Object`クラスとは違い，`4D.Object`インスタンスは共有オブジェクトでありません。用途に応じ，`4D.Object`クラスのミューテックス活用を最小限にとどめることにより，パフォーマンスの最適化が図られました。
+
+* ACI0104038 **VS Code** のLSPとして使用した場合，**tool4d** のCPU占有率がほぼ`100`%に達しました。
+
+* ACI0103979 Apple Siliconターゲット向けにコンパイルされたMac版の4D ServerプロジェクトにWindows版の4D Remoteで接続した場合，クライアントがクラッシュしました。*On Startup* メソッドが存在しなければ問題ありません。
+
+**注記**: Apple Siliconターゲット限定（Intelターゲット無し）のプロジェクトを検出する仕組みがありませんでした。修正により，内部的なマーカーおよび新しいエラーメッセージが追加されましたが，プロジェクトを再コンパイルする必要があります。
+
+* ACI0104037 プロジェクトモードのみ。配列型リストボックスの未定義列に`SELECTION TO ARRAY`で文字列フィールドをコピーした場合，データソースが`ARRAY TEXT`ではなく，`_o_ARRAY STRING`になりました。
+
+* ACI0103994 Mac版のみ。[iODBC Framework](https://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/WelcomeVisitors)がインストールされていない環境で`SQL LOGIN`を実行した場合，アプリケーションがクラッシュしました。
+
+* ACI0103613 Mac版のみ。[Devart ODBC Driver for Sybase v.3.3.1](https://www.devart.com/odbc/ase/download.htm) を使用して`SQL LOGIN`を実行した場合，エラー`9921`が返されました。
+
+**注記**: [Microsoftの仕様](https://learn.microsoft.com/en-us/sql/odbc/reference/syntax/sqlconnect-function?view=sql-server-ver16)に従い，4Dは`SQLConnectW`と`SQL_NTS`を使用しています。Apple Silicon版のDevart ODBC Driverはパスワードの処理で[`SQL_NTS(-3)`](https://github.com/microsoft/ODBC-Specification/blob/master/Windows/inc/sql.h)モードを正しく実装しておらず，*null-terminated string* がきちんと受け取れていません。Devart ODBC Driverのバグですが，文字数を渡すように4D側で回避することになりました。
+
+* ACI0104076 4D Write Pro Interfaceコンポーネントを使用し，Write Proドキュメントにフォーミュラを挿入した場合，バイナリ形式でフォーミュラが挿入されました。そのようなドキュメントが保存されたフィールドを「レコードの強制更新」モードで圧縮した場合，フォーミュラが失われました。
+
+**注記**: 通常，`WP INSERT FORMULA`で挿入したフォーミュラは文字列として保存されます。
+
+```html
+<span style="-d4-ref:'Current date:C33'"> </span>
+```
+
+しかし，4D Write Pro Interfaceコンポーネントで挿入したフォーミュラは特殊な形式で保存されます。
+
+```html
+<span style="-d4-ref-data:'data:application/octet-stream;base64,Bf3/YW1mNF4AAAAAAAAA6////zQARAAgAFcAcgBpAHQAZQBQAHIAbwAgAEkAbgB0AGUAcgBmAGEAYwBlACAAAAAAAAQAAAAAAEVWU1JPSQ0AAQAhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=='"> </span>
+```
+
+MSCは4D Write Pro Interfaceコンポーネントをロードしていないため，このようなフィールドを「レコードの強制更新」モードで圧縮した場合，フォーミュラが評価できずに空の文字列となりました。修正により，MSC圧縮のようにデータベースが実行されていない場面では，レコードに保存されたWrite Proドキュメントを開こうとするのではなく，データストリームをそのままコピーするようになりました。
+
+* ACI0104067 プラグインSDKのエントリーポイント`PA_ExecuteObjectMethod`を使用し，パラメーターを渡してコンパイルモードでエンティティセレクションのメンバー関数を実行しようとした場合，アプリケーションがクラッシュしました。
+
+* ACI0104080 Windows版のみ。VS Code Extensionの[4D-Analyzer](https://marketplace.visualstudio.com/items?itemName=4D.4d-analyzer)で4Dまたは4D ServerをLSPにすることができませんでした。
 
 * ACI0104059 後続のサブセクションと水平マージンが異なるサブセクションにテーブルを挿入した場合，同時にページブレークも挿入されました。
 
