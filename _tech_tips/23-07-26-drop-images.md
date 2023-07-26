@@ -126,10 +126,6 @@ Case of
 			End if 
 		End for each 
 		
-	: (FORM Event.code=On Drop)
-		
-		GET PASTEBOARD DATA TYPE($signatures; $nativeTypes)
-		
 	: (FORM Event.code=On Clicked)
 		
 		GET MOUSE($mouseX; $mouseY; $mouseButton)
