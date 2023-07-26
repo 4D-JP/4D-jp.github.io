@@ -1,6 +1,6 @@
 ---
 layout: technote
-title: "複数の画像をドロップして扱う方法"
+title: "複数の画像ファイルを４Ｄにドロップして取り扱う"
 position: 20230726001
 date: 2023-07-26 00:00:00
 categories: ヒント
