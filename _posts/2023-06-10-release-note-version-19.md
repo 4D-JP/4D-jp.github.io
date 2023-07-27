@@ -4,13 +4,15 @@ title: "4D v19.6 修正リスト"
 date: 2023-07-21 08:00:00
 categories: 修正リスト
 tags: v19
-build: 287481
+build: 287542
 version: "19.6"
 permalink: /2023/161/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104059 後続のサブセクションと水平マージンが異なるサブセクションにテーブルを挿入した場合，同時にページブレークも挿入されました。
 
 * ACI0103994 Mac版のみ。[iODBC Framework](https://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/WelcomeVisitors)がインストールされていない環境で`SQL LOGIN`を実行した場合，アプリケーションがクラッシュしました。
 
