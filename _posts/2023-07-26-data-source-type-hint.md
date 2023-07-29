@@ -14,4 +14,4 @@ v20では，ACI0103964の修正に伴い，`Open form window`の振る舞いが�
 
 とはいえ，ウィンドウを描画する時点でデータソースが評価されることは想定されていないかもしれません。たとえば，`Form`などのオブジェクトが存在する前提のメソッドはエラーを返すことになります。修正により，入力オブジェクトのサイズはデータソースを評価することによってではなく，式の型（`dataSourceTypeHint`）を参照することによって決まるように仕様が見直されました。今後，式の型が正しく設定されていない場合，ウィンドウサイズが変わってしまう可能性があります。一例として，ピクチャー型の入力オブジェクトはテキスト型とはボーダーのデザインが違っているため，正しくレンダリングされるためには，式の型もピクチャーに設定されている必要があります。
 
-**参考**: <i class="fa fa-external-link" aria-hidden="true"></i> https://discuss.4d.com/t/open-form-window-variable-et-expression/27519
+**参考**: <i class="fa fa-external-link" aria-hidden="true"></i> [Open form window + variable et expression](https://discuss.4d.com/t/open-form-window-variable-et-expression/27519)
