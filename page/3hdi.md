@@ -12,6 +12,10 @@ type: page
 
 ## 20r2 # {#v20r2}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: OAuth2.0サーバーへの接続**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_ConnectGithubWithOauth2.zip)<span id="20-2-4"></span><br />
+[4D NetKit](https://github.com/4d/4D-NetKit/tree/20R2) を使って、Microsoft や Google 以外の OAuth2.0 サーバーにも接続することができます。ここでは、GitHubへの接続を紹介します。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D NetKit: OAuth2認証の強化](https://blog.4d.com/ja/4d-netkit-enhancement-of-oauth2-authorization__trashed/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メール送信**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_google_SendMail.zip)<span id="20-2-3"></span><br />
 Google APT を使って Gmailアカウントからメール送信ができるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Gmail API を使ったメール送信](https://blog.4d.com/ja/send-email-with-the-gmail-api/)<br />
