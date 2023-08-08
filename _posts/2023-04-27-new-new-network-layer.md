@@ -3,7 +3,7 @@ layout: fix
 title: "QUICネットワークレイヤーについて"
 date: 2023-04-26 08:00:00
 categories: 仕様
-tags: v20 network clientserver
+tags: 20.x network clientserver
 ---
 
 [v20](https://blog.4d.com/ja-whats-new-in-4d-v20/)では，クライアント/サーバー通信テクノロジーのアップグレードが計画されています。次世代のネットワークレイヤーは，[現在公開中のベータ版](https://blog.4d.com/ja/4d-v20-beta-starts-today/)で試験的に有効にすることができ，v20 LTS（Long Time Support）の正式リリースでは全面的に無効化され，v20 Rバージョンで選択的に有効化できるようになります。その後，v21で標準のネットワークレイヤーが切り替わる予定です。

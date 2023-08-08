@@ -3,7 +3,7 @@ layout: fix
 title: "式の型"
 date: 2023-07-26 08:00:00
 categories: 仕様
-tags: v20 userinterface
+tags: 20.x userinterface
 ---
 
 v20では，ACI0103964の修正に伴い，`Open form window`の振る舞いが調整されました。

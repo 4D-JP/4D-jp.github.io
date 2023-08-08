@@ -3,7 +3,7 @@ layout: post
 title: "POP3で受信したGmailが削除される"
 date: 2021-06-30 12:00:00
 categories: 仕様
-tags: v18 pop3 transporter
+tags: 18.x pop3 transporter
 ---
 
 Gmailの設定「メール転送とPOP/IMAP」には，「POP でメールにアクセスする場合」という項目があり，下記のオプションから動作を選択できるようになっています。
