@@ -3,8 +3,7 @@ layout: post
 title: "Intelアーキテクチャを優先するには"
 date: 2021-07-01 12:00:00
 categories: 注意点
-tags: v19 mac silicon build
-version: v19
+tags: 19.x mac silicon build
 ---
 
 Mac版v19デスクトップ・クライアント・サーバーランタイムは，すべて**Universal 2**アプリです。Intelターゲットに限定してコンパイルを実行しても，アプリにはApple Siliconの実行ファイルが含まれているため，M1マシンでは「Rosettaで開く」オプションを明示的に選択する必要があります。このオプションは，Finderの「情報を見る」画面で操作することができます。

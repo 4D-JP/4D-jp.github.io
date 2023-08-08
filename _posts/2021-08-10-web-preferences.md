@@ -3,7 +3,7 @@ layout: post
 title: "WebエリアのJavaScriptは常に有効"
 date: 2021-08-10 12:48:00
 categories: 仕様
-tags: v19 webarea
+tags: 19.x webarea
 ---
 
 v19では，[WA SET PREFERENCE](https://doc.4d.com/4Dv19/4D/19/WA-SET-PREFERENCE.301-5393011.ja.html)の定数[\_o_WA enable JavaScript](https://doc.4d.com/4Dv19/4D/19/Web-Area.302-5393313.ja.html)が廃止され，WebエリアのJavaScriptを無効にすることはできないように仕様が変更されました。
