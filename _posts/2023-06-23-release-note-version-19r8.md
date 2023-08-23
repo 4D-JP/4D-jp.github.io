@@ -3,7 +3,7 @@ layout: fix
 title: "4D v19r8 Hotfix 2 修正リスト"
 date: 2023-06-23 08:00:00
 categories: 修正リスト
-tags: 19r8
+tags: 19r8 hotfix
 build: 100252
 version: 19r8
 permalink: /2023/174/:slug/

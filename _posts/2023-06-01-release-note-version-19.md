@@ -3,7 +3,7 @@ layout: fix
 title: "4D v19.6 Hotfix 2 修正リスト"
 date: 2023-06-01 08:00:00
 categories: 修正リスト
-tags: v19
+tags: 19.6 hotfix
 build: 286806
 version: "19.6"
 permalink: /2023/152/:slug/

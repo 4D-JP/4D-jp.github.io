@@ -3,7 +3,7 @@ layout: fix
 title: "4D v20.1 修正リスト"
 date: 2023-08-23 08:00:00
 categories: 修正リスト
-tags: v20 
+tags: "20.1"
 build: 100677
 version: "20.1"
 permalink: /2023/191/:slug/

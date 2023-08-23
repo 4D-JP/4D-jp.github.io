@@ -3,7 +3,7 @@ layout: fix
 title: "4D v20r2 修正リスト"
 date: 2023-08-22 08:00:00
 categories: 修正リスト
-tags: v20r2
+tags: 20r2
 build: 100250
 version: "20r2"
 permalink: /2023/178/:slug/

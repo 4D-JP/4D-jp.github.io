@@ -3,9 +3,9 @@ layout: fix
 title: "4D v20 修正リスト"
 date: 2023-07-05 08:00:00
 categories: 修正リスト
-tags: v20 
+tags: "20.0" 
 build: 100514
-version: "20"
+version: "20.0"
 permalink: /2023/110/:slug/
 ---
 
