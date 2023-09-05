@@ -16,4 +16,4 @@ tags: printing 19.x 20.x
 * PRINT SETTINGS
 * Printing page
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [ストアドプロシージャ v20](https://doc.4d.com/4Dv20/4D/20/Stored-Procedures.300-6330553.ja.html)
+<i class="fa fa-external-link" aria-hidden="true"></i> [ストアドプロシージャ](https://doc.4d.com/4Dv20/4D/20/Stored-Procedures.300-6330553.ja.html)
