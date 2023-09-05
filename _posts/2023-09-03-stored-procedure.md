@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "ストアドプロシージャで使用できないコマンド"
-date: 2023-09-04 08:00:00
+date: 2023-09-03 08:00:00
 categories: 仕様
 tags: printing 19.x 20.x
 ---
