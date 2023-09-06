@@ -12,6 +12,11 @@ type: page
 
 ## 20r2 # {#v20r2}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表ウィザード**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_WPTableWizard.zip)<span id="20-2-6"></span><br />
+データソース付きの表組みを作成し、4D Write Pro ドキュメントに挿入するのを助ける表ウィザードが実装されました。このウィザードはエンドユーザーも利用できるもので、デベロッパーによるテンプレートや表示名などの設定が可能です。<br />
+参考: [4D WritePro Interface](https://doc4d.github.io/docs/ja/WritePro/writeprointerface/)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro – データソース付き表組みの作成ウィザード](https://blog.4d.com/ja/4d-write-pro-a-wizard-to-create-tables-with-data/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**エラーのスロー**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_THROW.zip)<span id="20-2-5"></span><br />
 v20R2 では、新しい [`throw`](https://livedoc.4d.com/--20-R2/-/throw.301-6429523.ja.html) コマンドを使って、エラーをスローできるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4Dコードのエラー管理を強化](https://blog.4d.com/ja/enhanced-error-management-in-4d-code/)<br />
