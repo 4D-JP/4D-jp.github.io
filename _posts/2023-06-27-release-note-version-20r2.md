@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v20r2 修正リスト"
-date: 2023-09-22 08:00:00
+date: 2023-09-23 08:00:00
 categories: 修正リスト
 tags: 20r2
-build: 100390
+build: 100391
 version: "20r2"
 permalink: /2023/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104247 Qodly Serverのみ。*model.4DModel* ファイルでデータクラスの属性を`{"exposed": false, "scope": "publicOnServer"}`に設定してもREST APIで属性の値にアクセスすることができました。
 
 * ACI0104245 サーバー側にキャッシュされているエンティティのリレーション属性をIDで参照した場合，間違ったコンテキストでリクエストが送信され，アプリケーションがクラッシュすることがありました。
 
