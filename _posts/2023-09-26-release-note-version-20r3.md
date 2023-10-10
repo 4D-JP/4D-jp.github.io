@@ -16,9 +16,6 @@ permalink: /2023/269/:slug/
 
 * ACI0104263 計算属性が評価中のエンティティを再起的に参照することにより，すでに解放されたオブジェクトを含む参照を返し，アプリケーションがクラッシュする恐れがありました。
 
-
-ACI0104210	Get application info does not return the correct remote debugger session ID		4D Staff	According to origin
-
 * ACI0104187 `Get process activity`を実行している間に新規プロセスを起動してHTTPリクエストを実行した場合，アプリケーションがクラッシュする可能性がありました。
 
 * ACI0103939 ボタンとリンクされたポップアップメニューの間に区切りが表示されませんでした。
