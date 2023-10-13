@@ -1,16 +1,36 @@
 ---
 layout: fix
 title: "4D v20r2 修正リスト"
-date: 2023-09-23 08:00:00
+date: 2023-10-12 08:00:00
 categories: 修正リスト
 tags: 20r2
-build: 100391
+build: 100403
 version: "20r2"
 permalink: /2023/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104302 `File.open("write")`を実行した場合，返された`4D.FileHandle`の`eof`プロパティが`True`を返しました。
+
+* ACI0104208 `4D.FileHandle.readText()`でファイルの終わりを超えて読み込みを試みた場合，*undefined* が返されました。
+
+* ACI0104207 `4D.FileHandle.readBlob()`に無効なオフセットを渡して読み込みを試みた場合，*undefined* が返されました。
+
+* ACI0104206 `4D.FileHandle.readBlob()`でファイルの終わりを超えて読み込みを試みた場合，*undefined* が返されました。
+
+* ACI0104205 `4D.FileHandle.readText()`のオフセット値を省略した場合，カレントのオフセット位置ではなく，ファイルの先頭からデータの読み込みを開始しました。
+
+* ACI0104204 `4D.FileHandle`のオフセットが`0`ではなく`1`から始まりました。
+
+* ACI0104257 ツールボックスの選択タブのハイライト色が描画されませんでした。ユーザータブおよびグループタブは問題ありません。
+
+* ACI0104265 ウィンドウが最前面にない場合，デフォルトボタンが正しく描画されませんでした。
+
+* ACI0104270 `FileHandle.readLine()`が先頭行をスキップしました。仕様が見直され，オフセットの開始値が`0`に変更されたことによる副作用です。
+
+* ACI0104272 QodlyアプリケーションのWebフォームで参照したエンティティが解放されず，データベース終了時にCRONプロセスのクラッシュを引き起こす可能性がありました。
 
 * ACI0104247 Qodly Serverのみ。*model.4DModel* ファイルでデータクラスの属性を`{"exposed": false, "scope": "publicOnServer"}`に設定してもREST APIで属性の値にアクセスすることができました。
 
