@@ -1,16 +1,32 @@
 ---
 layout: fix
 title: "4D v20r3 修正リスト"
-date: 2023-10-05 08:00:00
+date: 2023-10-11 08:00:00
 categories: 修正リスト
 tags: 20r3
-build: 100059
+build: 100088
 version: "20r3"
 permalink: /2023/269/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104300 ビルド288506以降でショートカット設定を操作するとエラーが返されました。
+
+* ACI0104295 `4D.Filehandle.readLine()`で改行を含まないファイルの読み込みを試みた場合，空の文字列が返されました。
+
+* ACI0104302 `File.open("write")`を実行した場合，返された`4D.FileHandle`の`eof`プロパティが`True`を返しました。
+
+* ACI0104270 `FileHandle.readLine()`が先頭行をスキップしました。仕様が見直され，オフセットの開始値が`0`に変更されたことによる副作用です。
+
+* ACI0104208 `4D.FileHandle.readText()`でファイルの終わりを超えて読み込みを試みた場合，*undefined* が返されました。
+
+* ACI0104207 `4D.FileHandle.readBlob()`に無効なオフセットを渡して読み込みを試みた場合，*undefined* が返されました。
+
+* ACI0104206 `4D.FileHandle.readBlob()`でファイルの終わりを超えて読み込みを試みた場合，*undefined* が返されました。
+
+* ACI0104205 `4D.FileHandle.readText()`のオフセット値を省略した場合，カレントのオフセット位置ではなく，ファイルの先頭からデータの読み込みを開始しました。
 
 * ACI0104257 ツールボックスの選択タブのハイライト色が描画されませんでした。ユーザータブおよびグループタブは問題ありません。
 
