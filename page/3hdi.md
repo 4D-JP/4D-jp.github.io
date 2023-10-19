@@ -9,6 +9,12 @@ type: page
 * content
 {:toc}
 
+## 20r3 # {#v20r3}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: PDF/A への書き出し**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_4DWP_ExportAsPDFA.zip)<span id="20-3-1"></span><br />
+4D Write Pro ドキュメントを PDF/Aに書き出せるようになりました。<br />
+
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro : PDF/A形式での書き出しが可能になりました！](https://blog.4d.com/ja/4d-write-pro-pdf-a-format-now-available-for-export/)<br />
 
 ## 20r2 # {#v20r2}
 
