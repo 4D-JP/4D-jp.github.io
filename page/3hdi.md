@@ -11,6 +11,11 @@ type: page
 
 ## 20r3 # {#v20r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**複数コレクションの同期ソート**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Collection_multiSort.zip)<span id="20-3-3"></span><br />
+複数のコレクションを同期的にソートするための新しい  [`Collection.multiSort()`](http://developer.4d.com/docs/ja/API/CollectionClass#multisort) 関数が追加されました。<br />
+
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [複数コレクションの同期ソート](https://blog.4d.com/ja/sync-several-collections-with-this-new-function/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラに名前を付ける**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_4DWP_GiveNameToFormulas.zip)<span id="20-3-2"></span><br />
 4D Write Pro ドキュメントのフォーミュラに名前が付けられるようになりました。これにより、複雑なフォーミュラを役割名などで表せるようになり、エンドユーザーにとってドキュメントの可読性が向上します。  <br />
 これにともない、次の 2つのコマンドが拡張されました: [`WP Get formulas`](https://doc.4d.com/4Dv20R3/4D/20-R3/WP-Get-formulas.301-6475197.ja.html)、 [`WP INSERT FORMULA`](https://doc.4d.com/4Dv20R3/4D/20-R3/WP-INSERT-FORMULA.301-6475193.ja.html) <br />
