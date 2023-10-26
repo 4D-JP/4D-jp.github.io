@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D v19 修正リスト"
-date: 2023-10-11 08:00:00
+date: 2023-10-25 08:00:00
 categories: 修正リスト
 tags: "19.7"
-build: 288533
+build: 288742
 version: "19.7"
 permalink: /2023/250/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104328 4D ViewスプレッドシートをView Proに変換した場合，フォーマッターが正しく変換されないことがありました。
+
+**注記**: 過去バージョンで作成されたスプレッドシートを修正するクラス[`VPDocumentCleaner`](https://github.com/4d-depot/4D-View-Pro-Tips/blob/main/Project/Sources/Classes/VPDocumentCleaner.4dm)を[gitHub](https://github.com/4d-depot/4D-View-Pro-Tips)に公開しました。
 
 * ACI0104291 `SVG_New_text`でテキストのスタイルを設定することができませんでした。
 

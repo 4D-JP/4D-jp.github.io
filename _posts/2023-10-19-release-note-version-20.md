@@ -1,16 +1,26 @@
 ---
 layout: fix
 title: "4D v20 修正リスト"
-date: 2023-10-24 08:00:00
+date: 2023-10-25 08:00:00
 categories: 修正リスト
 tags: "20.1" 
-build: 100871
+build: 100880
 version: "20.1"
 permalink: /2023/292/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104307 [`4D.SystemWorker`](https://developer.4d.com/docs/ja/API/SystemWorkerClass/)のコンストラクターに渡す *options* オブジェクトのプロパティを計算属性として定義した場合，ランゲージコンテキストが不足しているというエラーが返されました。
+
+* ACI0104289 Windows版のみ。`OBJECT GET BEST SIZE`をテキストオブジェクトに対して使用した場合，正しい値が返されませんでした。
+
+* ACI0104287 Windows版のみ。`CONFIRM`または`ALERT`のテキストが途切れて表示されることがありました。ACI0104289が関係しています。
+
+* ACI0104284 空のジャーナルを`LOG FILE TO JSON`でテキストファイルに変換した場合，`[]`ではなく`[`という内容が出力されました。
+
+* ACI0104211 プラグインSDKのエントリーポイント経由でピクチャ配列にアクセスした場合，メモリ違反でアプリケーションが終了することがありました。
 
 * ACI0104329 `FileHandle.readText()`でUTF-8エンコーディングのテキストファイルを読み込んだ場合，バイトオーダーマーク（BOM）が除外されず，それが原因で`JSON Parse`がエラーを返しました。
 
