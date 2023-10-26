@@ -11,6 +11,12 @@ type: page
 
 ## 20r3 # {#v20r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メールの受信**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Google_get_mails.zip)<span id="20-3-4"></span><br />
+Google API を使って Gmailアカウントからメールを受信できるようになりました。<br />
+
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Netkit: Gmail からラベルや Eメールを取得](https://blog.4d.com/ja/4d-netkit-get-labels-and-emails-from-gmail/)<br />
+
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**複数コレクションの同期ソート**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Collection_multiSort.zip)<span id="20-3-3"></span><br />
 複数のコレクションを同期的にソートするための新しい  [`Collection.multiSort()`](http://developer.4d.com/docs/ja/API/CollectionClass#multisort) 関数が追加されました。<br />
 
@@ -44,7 +50,7 @@ v20R2 では、新しい [`throw`](https://livedoc.4d.com/--20-R2/-/throw.301-64
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D NetKit: OAuth2認証の強化](https://blog.4d.com/ja/4d-netkit-enhancement-of-oauth2-authorization__trashed/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メール送信**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_google_SendMail.zip)<span id="20-2-3"></span><br />
-Google APT を使って Gmailアカウントからメール送信ができるようになりました。<br />
+Google API を使って Gmailアカウントからメール送信ができるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Gmail API を使ったメール送信](https://blog.4d.com/ja/send-email-with-the-gmail-api/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みのセル結合**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_4DWP_CellsMerge.zip)<span id="20-2-2"></span><br />
