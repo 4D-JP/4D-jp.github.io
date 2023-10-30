@@ -27,7 +27,7 @@ Google API を使って Gmailアカウントからメールを受信できるよ
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラに名前を付ける**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_4DWP_GiveNameToFormulas.zip)<span id="20-3-2"></span><br />
 4D Write Pro ドキュメントのフォーミュラに名前が付けられるようになりました。これにより、複雑なフォーミュラを役割名などで表せるようになり、エンドユーザーにとってドキュメントの可読性が向上します。  <br />
 これにともない、次の 2つのコマンドが拡張されました: [`WP Get formulas`](https://doc.4d.com/4Dv20R3/4D/20-R3/WP-Get-formulas.301-6475197.ja.html)、 [`WP INSERT FORMULA`](https://doc.4d.com/4Dv20R3/4D/20-R3/WP-INSERT-FORMULA.301-6475193.ja.html) <br />
-参考: [フォーミュラの管理＞参照を名前で表示](https://doc.4d.com/4Dv20R3/4D/20-R3/Managing-formulas.300-6475178.ja.html#6476648)
+参考: [フォーミュラの管理＞参照を名前で表示](https://doc.4d.com/4Dv20R3/4D/20-R3/Managing-formulas.300-6475178.ja.html#6476648)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: フォーミュラに名前を付ける](https://blog.4d.com/ja/4d-write-pro-assign-names-to-formulas/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: PDF/A への書き出し**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_4DWP_ExportAsPDFA.zip)<span id="20-3-1"></span><br />
