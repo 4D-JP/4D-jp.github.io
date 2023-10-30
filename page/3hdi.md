@@ -11,6 +11,11 @@ type: page
 
 ## 20r3 # {#v20r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**データ変更の追跡**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Data_Change_Tracking.zip)<span id="20-3-5"></span><br />
+データベースにおけるデータ変更を追跡するための [グローバルスタンプ](http://developer.4d.com/docs/ja/ORDA/global-stamp) が導入されました。また、これを管理するための新しい関数  [`ds.getGlobalStamp()`](http://developer.4d.com/docs/ja/API/DataStoreClass#getglobalstamp)、 [`ds.setGlobalStamp()`](http://developer.4d.com/docs/ja/API/DataStoreClass#setglobalstamp) が追加されました。<br />
+
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [データベースのデータ変更を追跡](https://blog.4d.com/ja/track-data-changes-in-your-database/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メールの受信**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Google_get_mails.zip)<span id="20-3-4"></span><br />
 Google API を使って Gmailアカウントからメールを受信できるようになりました。<br />
 
