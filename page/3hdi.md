@@ -11,27 +11,27 @@ type: page
 
 ## 20r3 # {#v20r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**データ変更の追跡**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Data_Change_Tracking.zip)<span id="20-3-5"></span><br />
+データベースにおけるデータ変更を追跡するための [グローバルスタンプ](http://developer.4d.com/docs/ja/ORDA/global-stamp) が導入されました。また、これを管理するための新しい関数  [`ds.getGlobalStamp()`](http://developer.4d.com/docs/ja/API/DataStoreClass#getglobalstamp)、 [`ds.setGlobalStamp()`](http://developer.4d.com/docs/ja/API/DataStoreClass#setglobalstamp) が追加されました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [データベースのデータ変更を追跡](https://blog.4d.com/ja/track-data-changes-in-your-database/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メールの受信**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Google_get_mails.zip)<span id="20-3-4"></span><br />
 Google API を使って Gmailアカウントからメールを受信できるようになりました。<br />
-
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Netkit: Gmail からラベルや Eメールを取得](https://blog.4d.com/ja/4d-netkit-get-labels-and-emails-from-gmail/)<br />
 
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**複数コレクションの同期ソート**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Collection_multiSort.zip)<span id="20-3-3"></span><br />
 複数のコレクションを同期的にソートするための新しい  [`Collection.multiSort()`](http://developer.4d.com/docs/ja/API/CollectionClass#multisort) 関数が追加されました。<br />
-
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [複数コレクションの同期ソート](https://blog.4d.com/ja/sync-several-collections-with-this-new-function/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラに名前を付ける**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_4DWP_GiveNameToFormulas.zip)<span id="20-3-2"></span><br />
 4D Write Pro ドキュメントのフォーミュラに名前が付けられるようになりました。これにより、複雑なフォーミュラを役割名などで表せるようになり、エンドユーザーにとってドキュメントの可読性が向上します。  <br />
 これにともない、次の 2つのコマンドが拡張されました: [`WP Get formulas`](https://doc.4d.com/4Dv20R3/4D/20-R3/WP-Get-formulas.301-6475197.ja.html)、 [`WP INSERT FORMULA`](https://doc.4d.com/4Dv20R3/4D/20-R3/WP-INSERT-FORMULA.301-6475193.ja.html) <br />
-参考: [フォーミュラの管理＞参照を名前で表示](https://doc.4d.com/4Dv20R3/4D/20-R3/Managing-formulas.300-6475178.ja.html#6476648)
-
+参考: [フォーミュラの管理＞参照を名前で表示](https://doc.4d.com/4Dv20R3/4D/20-R3/Managing-formulas.300-6475178.ja.html#6476648)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: フォーミュラに名前を付ける](https://blog.4d.com/ja/4d-write-pro-assign-names-to-formulas/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: PDF/A への書き出し**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_4DWP_ExportAsPDFA.zip)<span id="20-3-1"></span><br />
 4D Write Pro ドキュメントを PDF/Aに書き出せるようになりました。<br />
-
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro : PDF/A形式での書き出しが可能になりました！](https://blog.4d.com/ja/4d-write-pro-pdf-a-format-now-available-for-export/)<br />
 
 ## 20r2 # {#v20r2}
