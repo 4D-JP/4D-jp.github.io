@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v20r3 修正リスト"
-date: 2023-11-01 08:00:00
+date: 2023-11-04 08:00:00
 categories: 修正リスト
 tags: 20r3
-build: 100151
+build: 100152
 version: "20r3"
 permalink: /2023/269/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104271 *4D Server* ライセンスの有効性をチェックするリクエストが`5`秒間隔でサーバーに送信されました。*4D Team Developer Professional* ライセンスでは問題ありません。ライセンスはクライアントがサーバーに接続したタイミングでチェックすれば良いはずです。
 
 * ACI0104332 `COPY BLOB`でBLOB自体のデータを上書きコピーした場合，*malloc* 保護またはページヒープによるメモリ違反が発生し，アプリケーションがクラッシュしました。
 

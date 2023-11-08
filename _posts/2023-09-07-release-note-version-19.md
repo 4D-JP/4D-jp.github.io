@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v19 修正リスト"
-date: 2023-10-25 08:00:00
+date: 2023-11-04 08:00:00
 categories: 修正リスト
 tags: "19.7"
-build: 288742
+build: 288839
 version: "19.7"
 permalink: /2023/250/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104271 *4D Server* ライセンスの有効性をチェックするリクエストが`5`秒間隔でサーバーに送信されました。*4D Team Developer Professional* ライセンスでは問題ありません。ライセンスはクライアントがサーバーに接続したタイミングでチェックすれば良いはずです。
 
 * ACI0104328 4D ViewスプレッドシートをView Proに変換した場合，フォーマッターが正しく変換されないことがありました。
 
