@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v20 修正リスト"
-date: 2023-11-16 08:00:00
+date: 2023-11-21 08:00:00
 categories: 修正リスト
 tags: "20.1" 
-build: 100945
+build: 100951
 version: "20.1"
 permalink: /2023/292/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104369 View Proスプレッドシートの数値型セルにユーロ通貨フォーマットを設定した場合，カンマとピリオドの使い方に間違いがありました。フランス語またはドイツ語ではカンマが小数点，ピリオドが桁区切りとなるべきです。
 
 * ACI0104296 Apple Silicon版の *DEVART ODBC Driver* を使用し，`SQL LOGIN`および`SQL LOGOUT`多重実行した場合，アプリケーションがクラッシュしました。
 
