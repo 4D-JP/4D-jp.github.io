@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D v20r2 修正リスト"
-date: 2023-10-15 08:00:00
+date: 2023-11-17 08:00:00
 categories: 修正リスト
 tags: 20r2
 build: 100432
