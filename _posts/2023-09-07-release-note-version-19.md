@@ -20,7 +20,7 @@ permalink: /2023/250/:slug/
 
 * ACI0104328 4D ViewスプレッドシートをView Proに変換した場合，フォーマッターが正しく変換されないことがありました。
 
-**注記**: 過去バージョンで作成されたスプレッドシートを修正するクラス[`VPDocumentCleaner`](https://github.com/4d-depot/4D-View-Pro-Tips/blob/main/Project/Sources/Classes/VPDocumentCleaner.4dm)を[gitHub](https://github.com/4d-depot/4D-View-Pro-Tips)に公開しました。
+**注記**: 過去バージョンで作成されたスプレッドシートを修正するクラス[`VPDocumentCleaner`](https://github.com/4d-depot/4D-View-Pro-Tips/blob/main/Project/Sources/Classes/VPDocumentCleaner.4dm)を[GitHub](https://github.com/4d-depot/4D-View-Pro-Tips)に公開しました。
 
 * ACI0104291 `SVG_New_text`でテキストのスタイルを設定することができませんでした。
 
