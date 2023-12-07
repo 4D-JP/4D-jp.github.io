@@ -391,8 +391,8 @@ ORDA のデータモデルクラスに定義されたクラス関数は RESTリ�
 * <i class="fa fa-download" aria-hidden="true"></i> [**アクティビティのモニタリング**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_Monitor_Activity.zip) (v18r3)<span id="18-3-6"></span><br />
 新しく追加された [`START MONITORING ACTIVITY`](https://doc.4d.com/4Dv18R3/4D/18-R3/START-MONITORING-ACTIVITY.301-4936186.ja.html) コマンドを使って、指定以上の時間を要した 4Dランゲージ実行、ネットワークリクエスト、4D データなどのオペレーションを記録することができます。また、このコマンドと連携して使われる [`Get Monitored Activity`](https://doc.4d.com/4Dv18R3/4D/18-R3/Get-Monitored-Activity.301-4936249.ja.html)と [`STOP MONITORING ACTIVITY`](https://doc.4d.com/4Dv18R3/4D/18-R3/STOP-MONITORING-ACTIVITY.301-4936217.ja.html) コマンドも追加されました。<br />
 なお、ネットワークアクティビティでは 4DRequestsLog ファイルと同じ情報が、4D ランゲージ実行では 4DDebugLog ファイルと同じ情報が取得されます (参考: [ログファイルの詳細](https://doc.4d.com/4Dv18R3/4D/18-R3/Description-of-log-files.300-4919535.ja.html))。
-* <i class="fa fa-download" aria-hidden="true"></i> [**Web server オブジェクト**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_MultipleWebServers.zip) (v18r3)<span id="18-3-5"></span><br />
-新しく追加された [`WEB Server`](https://doc.4d.com/4Dv18R3/4D/18-R3/WEB-Server.301-4851507.ja.html) コマンドを使って、Web server オブジェクトを取得し、Web サーバーを操作することができます。<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Webサーバーオブジェクト**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_MultipleWebServers.zip) (v18r3)<span id="18-3-5"></span><br />
+新しく追加された [`WEB Server`](https://doc.4d.com/4Dv18R3/4D/18-R3/WEB-Server.301-4851507.ja.html) コマンドを使って、WebServer オブジェクトを取得し、Webサーバーを操作することができます。<br />
 また、4D アプリケーション内で利用可能なすべての Web server オブジェクトを返す [`WEB Server list`](https://doc.4d.com/4Dv18R3/4D/18-R3/WEB-Server-list.301-4851515.ja.html) コマンドも追加されました。
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: シートオプション**](https://github.com/4D-JP/HDI/releases/download/18r3/HDI_4DVP_SheetOptions.zip) (v18r3)<span id="18-3-4"></span><br />
 新しく追加された [`VP SET SHEET OPTIONS`](https://doc.4d.com/4Dv18R3/4D/18-R3/VP-SET-SHEET-OPTIONS.301-4850835.ja.html) コマンドを使って、4D View Pro のシートオプション (セルデータの領域外表示、枠線やヘッダーの表示、シートの保護、枠線・タブ・選択の色指定など) を設定することができます。<br />
