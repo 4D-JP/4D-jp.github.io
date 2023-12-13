@@ -4,7 +4,7 @@ title: "4D v19.7 Hotfix 1 修正リスト"
 date: 2023-12-12 08:00:00
 categories: 修正リスト
 tags: "19.7"
-build: 289205,289349
+build: 289349
 version: 19.7 hotfix
 permalink: /2023/250/:slug/
 ---
