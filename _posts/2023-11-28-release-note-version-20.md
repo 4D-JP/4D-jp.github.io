@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D v20 修正リスト"
-date: 2023-12-12 08:00:00
+date: 2023-12-14 08:00:00
 categories: 修正リスト
 tags: "20.2" 
-build: 101005
+build: 101008
 version: "20.2"
 permalink: /2023/331/:slug/
 ---
