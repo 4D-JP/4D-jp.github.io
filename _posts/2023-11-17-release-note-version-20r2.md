@@ -3,7 +3,7 @@ layout: fix
 title: "4D v20r2 Hotfix 1 修正リスト"
 date: 2023-11-27 08:00:00
 categories: 修正リスト
-tags: 20r2
+tags: 20r2 hotfix
 build: 100440
 version: "20r2"
 permalink: /2023/297/:slug/
