@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D v20 修正リスト"
-date: 2023-12-14 08:00:00
+date: 2023-12-18 08:00:00
 categories: 修正リスト
 tags: "20.2" 
-build: 101008
+build: 101024
 version: "20.2"
 permalink: /2023/331/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104399 テキストの途中にカーソルを移動し，入力中の日本語を *delete* または *backspace* キーで削除した場合，未確定の文節に続く文字が一緒に削除されました。
 
 * ACI0104432 ３レベル以上の`AND`および`OR`で構成されたJOINクエリの処理が正しくありませんでした。
 
