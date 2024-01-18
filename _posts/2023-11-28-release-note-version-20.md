@@ -1,16 +1,24 @@
 ---
 layout: fix
 title: "4D v20 修正リスト"
-date: 2024-01-15 08:00:00
+date: 2024-01-17 08:00:00
 categories: 修正リスト
 tags: "20.2" 
-build: 101067
+build: 101075
 version: "20.2"
 permalink: /2023/331/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104417 Windows版のみ。ディスプレイのスケーリングが`100%`よりも高く設定されている場合，SVGに埋め込まれた画像が歪んで表示されました。SVGのテキストは問題ありません。
+
+* ACI0104435 フィールド属性の「必須入力」はプロジェクトモードで廃止されており，ストラクチャエディターのプロパティリストからも項目が削除されていますが，ストラクチャをプロジェクトに変換した場合，`.4DCatalog* ファイルには`mandatory`属性が残され，変換ログにも警告やエラーが出力されませんでした。変換後，当該フィールドを未入力のまま保存するとデータベースエラーが返されます。
+
+**注記**: 修正により，変換ログに下記のエラーが出力されるようになりました。
+
+> "No longer supported 'mandatory' attribute in project found on field '<Field name>' of table '<Table name>'. Please use instead 'Reject NULL value input' (or 'Map NULL values to blank values')"
 
 * ACI0104506 ベベルスタイルのボタンのポップアップメニューをリンクに設定した場合，*.4DForm* ファイルにはフォームイベントの *On Alternate Click* に相当するプロパティが追加されますが，フォームエディターのプロパティリストにはイベント名が表示されませんでした。
 
