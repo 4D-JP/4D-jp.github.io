@@ -16,7 +16,7 @@ permalink: /2024/4/:slug/
 
 * ACI0104472 メンテナンス＆セキュリティセンターのアクティビティログの日付フォーマットが正しくありませんでした。`2023-12-21`と出力されるべきところが`12--0021`のように出力されます。
 
-* ACI0104446 Mac版のみ。共有フォルダー内のファイルやフォルダーに対し，`File.rename()`や`Folder.rename()`を使用した場合，「Operation not supported」というPOSIXエラーが返されました。ターミナルで`mv`コマンドを使用すればレネームできるので，アクセス権限の問題ではありません。
+* ACI0104446 Mac版のみ。共有フォルダー内のファイルやフォルダーに対し，`File.rename()`や`Folder.rename()`を使用した場合，「Operation not supported」というPOSIXエラーが返されました。ターミナルで`mv`コマンドを使用すればリネームできるので，アクセス権限の問題ではありません。
 
 **注記**: 4Dは内部的に`renamex_np`をコールしています。修正により，エラー`45`（option not supported by network share）が返された場合，`RENAME_EXLC`を[指定せずに](https://developer.apple.com/documentation/foundation/nsurlvolumesupportsexclusiverenamingkey)リネームを再試行するようになりました。
 
