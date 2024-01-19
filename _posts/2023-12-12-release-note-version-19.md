@@ -1,16 +1,24 @@
 ---
 layout: fix
 title: "4D v19 修正リスト"
-date: 2024-01-15 08:00:00
+date: 2024-01-18 08:00:00
 categories: 修正リスト
 tags: "19.7"
-build: 289882
+build: 289952
 version: "19.7"
 permalink: /2023/346/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104478 Intelコンパイルモードのみ。BLOBのインデックス添字にBlob sizeぴったり（つまり`1`バイトオーバー）の位置を渡した場合，範囲チェックが働きませんでした。バッファーオーバーフローにより，アプリケーションがクラッシュする恐れがあります。ARMコンパイラーでは問題ありません。
+
+* ACI0104472 メンテナンス＆セキュリティセンターのアクティビティログの日付フォーマットが正しくありませんでした。`2023-12-21`と出力されるべきところが`12--0021`のように出力されます。
+
+* ACI0104446 Mac版のみ。共有フォルダー内のファイルやフォルダーに対し，`File.rename()`や`Folder.rename()`を使用した場合，「Operation not supported」というPOSIXエラーが返されました。ターミナルで`mv`コマンドを使用すればレネームできるので，アクセス権限の問題ではありません。
+
+**注記**: 4Dは内部的に`renamex_np`をコールしています。修正により，エラー`45`（option not supported by network share）が返された場合，`RENAME_EXLC`を[指定せずに](https://developer.apple.com/documentation/foundation/nsurlvolumesupportsexclusiverenamingkey)リネームを再試行するようになりました。
 
 * ACI0104506 ベベルスタイルのボタンのポップアップメニューをリンクに設定した場合，*.4DForm* ファイルにはフォームイベントの *On Alternate Click* に相当するプロパティが追加されますが，フォームエディターのプロパティリストにはイベント名が表示されませんでした。
 
