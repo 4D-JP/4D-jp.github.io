@@ -130,3 +130,5 @@ Qodlyのパラメーター区切りはカンマ記号です。
 1. Qodlyと同じ演算子の優先順位を4Dでも使用する
 
 モードが提供される予定です。
+
+また，4DからQodlyに対して[Open datastore](https://developer.4d.com/docs/ja/API/DataStoreClass/#open-datastore)を使用することができるように，Qodlyから4Dに対しても`openDatastore()`が実行できるようになる予定です。
