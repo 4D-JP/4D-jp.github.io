@@ -40,7 +40,7 @@ QodlyScriptは，4DとJavaScriptによく似たプログラミング言語です
 
 QodlyのキーワードはJavaScriptと同じく[**ECMAScript**](https://262.ecma-international.org/5.1/#sec-7.6)に準拠しています。4Dのキーワードとは違い，①キャメルケースであり，②空白を含みません。また，一部のキーワードは統合されています。
 
-|4Dキーワード|QodlyScriptキーワード|
+|4D|QodlyScript|
 |-|-|
 |If|if|
 |Else|else|
@@ -83,7 +83,7 @@ QodlyのキーワードはJavaScriptと同じく[**ECMAScript**](https://262.ecm
 
 4DとQodlyでは代入演算子および等価比較演算子が違います。
 
-|4D演算子|QodlyScript演算子|
+|4D|QodlyScript|
 |-|-|
 |\:=|=|
 |=|==|
@@ -93,7 +93,7 @@ QodlyのキーワードはJavaScriptと同じく[**ECMAScript**](https://262.ecm
 
 Qodlyにはプロセス変数の概念がありません。変数のスコープは常にローカルです。変数名には，`$`・ `_`・Unicodeを使用することができますが，冒頭の文字に数字・`$`を使用することはできません。
 
-|4Dローカル変数|QodlyScriptローカル変数|
+|4D|QodlyScript|
 |-|-|
 |$myVar|myVar|
 
@@ -101,7 +101,7 @@ Qodlyにはプロセス変数の概念がありません。変数のスコープ
 
 Qodlyの定数名は，`k`から始まり，キーワード同様にキャメルケースであり，空白を含みません。また，ASCIIコードの`Tab`など，リテラル表記で代用できるものは除かれています。
 
-|4D定数|QodlyScript定数|
+|4D|QodlyScript|
 |-|-|
 |4D REST digest|k4DRESTDigest|
 |Tab|9|
@@ -110,7 +110,7 @@ Qodlyの定数名は，`k`から始まり，キーワード同様にキャメル
 
 Qodlyのパラメーター区切りはカンマ記号です。
 
-|4Dパラメーター区切り|QodlyScriptパラメーター区切り|
+|4D|QodlyScript|
 |-|-|
 |;|,|
 
