@@ -8,7 +8,7 @@ tags: devcon24 programming language qodly
 
 # 4D Developer Conference 2024・質疑応答より
 
-> **Qodly for 4D**で開発したプロジェクト（たとえばトレーニングで使用したレンタルカーのアプリケーション）を**Qodly Cloud**に変換することはできるのでしょうか
+> **Qodly for 4D**で開発したプロジェクト（たとえばトレーニングで使用したレンタカーのアプリケーション）を**Qodly Cloud**に変換することはできるのでしょうか
 
 クラウド版のQodly Server（Linuxプラットフォームで動作する軽量版の4D Server）は，バックエンドに4Dと同じデータベースエンジンを採用していますが，Windows/macOS版の4D Serverよりもできることが限られているため，Qodly for 4Dで開発したプロジェクトをQodly Cloudにそのまま変換することはできません。
 
