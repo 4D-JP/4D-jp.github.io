@@ -85,7 +85,7 @@ QodlyのキーワードはJavaScriptと同じく[**ECMAScript**](https://262.ecm
 
 |4D演算子|QodlyScript演算子|
 |-|-|
-|:=|=|
+|\:=|=|
 |=|==|
 |#|!=|
 
