@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D v20r3 修正リスト"
-date: 2024-01-25 08:00:00
+date: 2024-01-29 08:00:00
 categories: 修正リスト
 tags: 20r3
-build: 100306
-version: "20r4"
+build: 100315
+version: "20r3"
 permalink: /2024/25/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104480 ドイツ語版のみ。設定画面のドキュメントURLが正しくありませんでした。ドイツ語のドキュメントは公開されていないので，英語版と同じ *https://developer.4d.com/docs/Preferences/overview* を開くべきです。
+
+* ACI0104523 `&&`または`||`演算子で結合したリレーション属性のクエリ条件が評価されませんでした。v20.1では問題ありません。
 
 * ACI0104503 *WebAdmin* のポートからリクエストを受信した場合でも*On REST Authentication* データベースメソッドが実行されました。
 
