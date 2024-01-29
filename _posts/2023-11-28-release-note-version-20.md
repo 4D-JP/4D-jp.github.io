@@ -1,16 +1,18 @@
 ---
 layout: fix
-title: "4D v20 修正リスト"
-date: 2024-01-25 08:00:00
+title: "4D v20.2 Hotfix 1 修正リスト"
+date: 2024-01-29 08:00:00
 categories: 修正リスト
-tags: "20.2" 
-build: 101100
+tags: 20.2 hotfix
+build: 101102
 version: "20.2"
 permalink: /2023/331/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104523 `&&`または`||`演算子で結合したリレーション属性のクエリ条件が評価されませんでした。v20.1では問題ありません。
 
 * ACI0104520 4D View Proのフォーミュラエディターパネルが正しく動作しませんでした。
 
