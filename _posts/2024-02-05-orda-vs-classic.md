@@ -20,4 +20,4 @@ ORDAは単なるクエリ言語ではなく，クライアント/サーバー型
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [RESTリクエストの管理によるパフォーマンスの最適化](https://blog.4d.com/ja/orda-optimize-performance-with-full-control-over-rest-requests/)
 
-<i class="fa fa-external-link" aria-hidden="true"></i> [ORDA – プロセス間でエンティティセレクションを共有する](https://blog.4d.com/ja/orda-share-an-entity-selection-between-processes/)
+<i class="fa fa-external-link" aria-hidden="true"></i> [ORDA – RESTリクエストの最適化](https://blog.4d.com/ja/orda-rest-request-optimization-step-by-step-a-demo/)
