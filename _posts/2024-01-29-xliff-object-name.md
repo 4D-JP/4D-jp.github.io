@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "XLIFFとオブジェクトのタイトル"
-date: 2024-01-29 08:00:00
+date: 2024-02-04 08:00:00
 categories: 仕様
 tags: xliff userinterface
 ---
