@@ -6,7 +6,7 @@ categories: 仕様
 tags: devcon24 qodly programming
 ---
 
-### 4D Developer Conference 2024・質疑応答より
+#### 4D Developer Conference 2024・質疑応答より
 
 > **Qodly for 4D**は日本語のテーブル名やフィールド名に対応していますか
 

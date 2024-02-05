@@ -6,7 +6,7 @@ categories: 仕様
 tags: devcon24 licensing qodly
 ---
 
-### 4D Developer Conference 2024・質疑応答より
+#### 4D Developer Conference 2024・質疑応答より
 
 > **Qodly for 4D**で開発したアプリケーションを運用するためには**4D Server**とクライアント接続ライセンスが必要とのことですが，Webのような無制限接続ライセンスは使えないのでしょうか
 
