@@ -12,6 +12,6 @@ tags: devcon24 programming language websocket
 
 `4D.WebSocketServer`には，[WebSocketStream](https://developer.chrome.com/docs/capabilities/web-apis/websocketstream?hl=ja)のように**バックプレッシャー**を適用する仕組みがないので，動画のライブ配信やビデオ会議システムのようなアプリケーションを構築する用途には向いていません。
 
-ブラウザからJavaScriptで定期的に送信されるフレーム画像を扱うだけの"**防犯カメラ**"アプリケーションであれば，WebSocketServerだけで簡単に構築することができます。
+ブラウザからJavaScriptで定期的に送信されるフレーム画像を扱うだけの"**防犯カメラ**"アプリケーションであれば，WebSocketServerだけで構築することができます。
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [github.com/miyako/4d-class-websocket-server-video](https://github.com/miyako/4d-class-websocket-server-video)
