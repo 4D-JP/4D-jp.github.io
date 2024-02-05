@@ -6,7 +6,7 @@ categories: 仕様
 tags: devcon24 programming language orda
 ---
 
-# 4D Developer Conference 2024・質疑応答より
+### 4D Developer Conference 2024・質疑応答より
 
 > 似たような処理をさせた場合，ORDAとクラシック言語でパフォーマンスに違いはないのでしょうか
 

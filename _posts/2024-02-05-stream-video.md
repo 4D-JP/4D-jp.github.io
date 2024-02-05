@@ -6,7 +6,7 @@ categories: 仕様
 tags: devcon24 programming language websocket
 ---
 
-# 4D Developer Conference 2024・質疑応答より
+### 4D Developer Conference 2024・質疑応答より
 
 > **WebSocketServer**を使用すれば，リアルタイムで音声や動画をストリーミング配信することができますか
 

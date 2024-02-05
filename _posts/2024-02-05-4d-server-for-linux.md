@@ -6,7 +6,7 @@ categories: 仕様
 tags: devcon24
 ---
 
-# 4D Developer Conference 2024・質疑応答より
+### 4D Developer Conference 2024・質疑応答より
 
 > **Qodly Cloud**はLinuxで動いているとのことですが，Linux版の4D Serverはリリースされないのでしょうか
 

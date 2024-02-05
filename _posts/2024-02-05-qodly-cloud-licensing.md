@@ -6,7 +6,7 @@ categories: 仕様
 tags: devcon24 licensing qodly
 ---
 
-# 4D Developer Conference 2024・質疑応答より
+### 4D Developer Conference 2024・質疑応答より
 
 > **Qodly Cloud**のライセンスは月額のサブスクリプション料金とのことですが，不特定多数のユーザーがアクセスできる無制限接続ライセンスは提供されないのでしょうか
 
