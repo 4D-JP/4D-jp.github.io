@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "WebSocketと動画のストリーミング"
-date: 2024-01-24 08:00:00
+date: 2024-02-04 08:00:00
 categories: 仕様
 tags: devcon24 programming language websocket
 ---
