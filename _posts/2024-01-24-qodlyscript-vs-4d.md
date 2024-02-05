@@ -132,3 +132,9 @@ Qodlyのパラメーター区切りはカンマ記号です。
 モードが提供される予定です。
 
 また，4DからQodlyに対して[Open datastore](https://developer.4d.com/docs/ja/API/DataStoreClass/#open-datastore)を使用することができるように，Qodlyから4Dに対しても`openDatastore()`が実行できるようになる予定です。
+
+## その他
+
+* Qodly for 4DとQodly Cloudの*WebForm* は互換性があるので，一方のQodly Studioから他方のQodly Studioにコピー＆ペーストすることができます。
+
+* 4DのストラクチャとQodlyのモデルは同じものではありません。しかし，相違点には法則性があるので，変換プログラムを開発できるかもしれません。
