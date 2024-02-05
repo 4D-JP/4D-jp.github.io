@@ -9,6 +9,13 @@ type: page
 * content
 {:toc}
 
+## 20r4 # {#v20r4}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メールの管理**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_Google_manage_mails.zip)<span id="20-4-1"></span><br />
+Google API を使って Gmailアカウントのメールのラベルを変更できるようになったほか、複数のメールを一括取得できるようになりました。<br />
+※ SVGを使って、簡単なアイコンを作る例題も含まれています。このアイコンを階層リストやリストボックス内に表示できます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Netkit：Gmail API によるラベル割り当て＆複数メールの取得](https://blog.4d.com/ja/4d-netkit-assign-labels-get-multiple-emails-with-gmail-api/)<br />
+
 ## 20r3 # {#v20r3}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**データ変更の追跡**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Data_Change_Tracking.zip)<span id="20-3-5"></span><br />
