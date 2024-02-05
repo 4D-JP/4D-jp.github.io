@@ -11,6 +11,11 @@ type: page
 
 ## 20r4 # {#v20r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: ラベルの管理**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_Google_manage_labels.zip)<span id="20-4-2"></span><br />
+Google API を使って Gmailアカウントのラベルを作成・編集・削除できるようになりました。<br />
+※ SVGを使って簡単なアイコンを作る例題も含まれています。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Netkit：Gmailラベルの作成・削除・更新](https://blog.4d.com/ja/4d-netkit-create-delete-and-update-gmail-labels/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メールの管理**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_Google_manage_mails.zip)<span id="20-4-1"></span><br />
 Google API を使って Gmailアカウントのメールのラベルを変更できるようになったほか、複数のメールを一括取得できるようになりました。<br />
 ※ SVGを使って、簡単なアイコンを作る例題も含まれています。このアイコンを階層リストやリストボックス内に表示できます。<br />
