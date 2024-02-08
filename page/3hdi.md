@@ -11,6 +11,10 @@ type: page
 
 ## 20r4 # {#v20r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 電子インボイスの作成**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_4DWP_GenerateFacturX.zip)<span id="20-4-3"></span><br />
+4D Write Pro を使って、XMLファイルが埋め込まれた PDF/A3形式の PDFファイルを出力できるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro：電子インボイスの作成](https://blog.4d.com/ja/4d-write-pro-electronic-invoice-generation/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: ラベルの管理**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_Google_manage_labels.zip)<span id="20-4-2"></span><br />
 Google API を使って Gmailアカウントのラベルを作成・編集・削除できるようになりました。<br />
 ※ SVGを使って簡単なアイコンを作る例題も含まれています。<br />
