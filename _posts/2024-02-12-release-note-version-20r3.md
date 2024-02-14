@@ -4,7 +4,7 @@ title: "4D v20r3 修正リスト"
 date: 2024-02-12 08:00:00
 categories: 修正リスト
 tags: 20r3
-build: 101131
+build: 100331
 version: "20r3"
 permalink: /2024/43/:slug/
 ---

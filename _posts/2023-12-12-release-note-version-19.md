@@ -1,9 +1,9 @@
 ---
 layout: fix
-title: "4D v19 修正リスト"
+title: "4D v19.7 Hotfix 2 修正リスト"
 date: 2024-02-08 08:00:00
 categories: 修正リスト
-tags: "19.7"
+tags: 19.7 hotfix
 build: 290255
 version: "19.7"
 permalink: /2023/346/:slug/
