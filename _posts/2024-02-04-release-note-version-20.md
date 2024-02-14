@@ -1,6 +1,6 @@
 ---
 layout: fix
-title: "4D v20 修正リスト"
+title: "4D 20 修正リスト"
 date: 2024-02-13 08:00:00
 categories: 修正リスト
 tags: "20.2"
