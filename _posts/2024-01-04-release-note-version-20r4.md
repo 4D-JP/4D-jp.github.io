@@ -46,7 +46,7 @@ permalink: /2024/4/:slug/
 
 * ACI0104515 `Open datastore`で4D Serverのユーザー名とパスワードを使用することができませんでした。*On REST Authentication* データベースメソッドで受信したパスワードハッシュを検証することができません。
 
-**注記**: [4D 19 R3以降，*directory.json* の仕様が変わり，bcryptハッシュが使用されるようになった](https://blog.4d.com/ja/bcrypt-support-for-passwords/)ことが関係しています。修正により，`Open datastore`の接続パラメーターで`passwordAlgorithm`プロパティが設定できるようになりました。`4d-rest-digest`を指定すれば，以前と同じようにMD5系のハッシュが送信され，[*On REST Authentication*](https://doc.4d.com/4Dv20/4D/20.2/On-REST-Authentication-database-method.301-6720994.ja.html) データベースメソッドで[Validate password](https://doc.4d.com/4Dv20/4D/20.2/Validate-password.301-6721229.ja.html)を使用できるようになります。このプロパティは*On REST Authentication* でパスワードを検証するためのものです。RESTでサーバーにアクセスできるユーザー＆グループをストラクチャ設定で管理する場合，*On REST Authentication* は作成せず，`passwordAlgorithm`プロパティも省略してください。
+**注記**: [4D 19 R3以降，*directory.json* の仕様が変わり，bcryptハッシュが使用されるようになった](https://blog.4d.com/ja/bcrypt-support-for-passwords/)ことが関係しています。修正により，パスワードはハッシュされずに標準テキストで送信されるようになりました。[*On REST Authentication*](https://doc.4d.com/4Dv20/4D/20.2/On-REST-Authentication-database-method.301-6720994.ja.html) データベースメソッドで[Validate password](https://doc.4d.com/4Dv20/4D/20.2/Validate-password.301-6721229.ja.html)を使用できるようにするためです。その場合，`Open datastore`の接続パラメーターの`tls`オプションを`True`に設定することが強く勧められています。さらに，接続パラメーターの`passwordAlgorithm`プロパティを`4d-rest-digest`に設定することにより，bcryptではなく，過去バージョンと同じMD5系のハッシュが送信できるようになりました。これは*On REST Authentication* データベースメソッドで[Validate password]を使用するための互換性オプションです。RESTでサーバーにアクセスできるユーザー＆グループを**ストラクチャ設定**で管理する場合（*On REST Authentication* データベースメソッドが存在しない場合），`passwordAlgorithm`プロパティは指定しないでください。
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [ストラクチャー設定を使用する](https://developer.4d.com/docs/ja/REST/configuration#ストラクチャー設定を使用する)
 
