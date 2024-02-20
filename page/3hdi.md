@@ -27,6 +27,11 @@ Google API を使って Gmailアカウントのメールのラベルを変更で
 
 ## 20r3 # {#v20r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ピクチャー/Blob属性にファイル参照を代入する**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Path_For_Picture.zip)<span id="20-3-6"></span><br />
+ピクチャーまたは Blob属性に 4D.File オブジェクトまたはパスを渡すことで、ファイルへの参照を代入できるようになりました。<br />
+参照: [ピクチャーまたは Blob属性にファイルを代入する](http://developer.4d.com/docs/ja/20-R3/ORDA/entities#%E3%83%94%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%81%BE%E3%81%9F%E3%81%AF-blob%E5%B1%9E%E6%80%A7%E3%81%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BB%A3%E5%85%A5%E3%81%99%E3%82%8B)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA: Blob/ピクチャー属性へのパスの割り当て](https://blog.4d.com/ja/orda-assigning-a-path-to-a-blob-or-picture-attribute/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**データ変更の追跡**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Data_Change_Tracking.zip)<span id="20-3-5"></span><br />
 データベースにおけるデータ変更を追跡するための [グローバルスタンプ](http://developer.4d.com/docs/ja/ORDA/global-stamp) が導入されました。また、これを管理するための新しい関数  [`ds.getGlobalStamp()`](http://developer.4d.com/docs/ja/API/DataStoreClass#getglobalstamp)、 [`ds.setGlobalStamp()`](http://developer.4d.com/docs/ja/API/DataStoreClass#setglobalstamp) が追加されました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [データベースのデータ変更を追跡](https://blog.4d.com/ja/track-data-changes-in-your-database/)<br />
