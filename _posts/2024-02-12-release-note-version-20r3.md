@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r3 修正リスト"
-date: 2024-02-25 08:00:00
+date: 2024-02-28 08:00:00
 categories: 修正リスト
 tags: 20r3
-build: 100344
+build: 100347
 version: "20r3"
 permalink: /2024/43/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104599 `Create deployment license`にスタンドアロン版のライセンス（`4UUD`または`4UOE`）を渡した場合，エラーが返されました。ACI0104384が修正されたことによる副作用のようです。
 
 * ACI0104567 *NetKit* コンポーネントの*OAuth* オブジェクトを`JMAP`または`MIME`メール形式でインスタンス化した場合，メールのフラグを既読/未読に設定することができませんでした。`Microsoft`メール形式であれば問題ありません。
 
