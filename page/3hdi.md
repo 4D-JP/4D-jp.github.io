@@ -11,6 +11,10 @@ type: page
 
 ## 20r4 # {#v20r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**日付と時間のフォーマット**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_NewDateTimeFormats.zip)<span id="20-4-4"></span><br />
+日付と時間のフォーマットを細かにカスタマイズできるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [日付と時間のカスタマイズ](https://blog.4d.com/ja/tailored-customization-for-dates-and-times/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 電子インボイスの作成**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_4DWP_GenerateFacturX.zip)<span id="20-4-3"></span><br />
 4D Write Pro を使って、XMLファイルが埋め込まれた PDF/A3形式の PDFファイルを出力できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro：電子インボイスの作成](https://blog.4d.com/ja/4d-write-pro-electronic-invoice-generation/)<br />
