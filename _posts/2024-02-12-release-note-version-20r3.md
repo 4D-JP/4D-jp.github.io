@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D 20r3 修正リスト"
-date: 2024-03-03 08:00:00
+date: 2024-03-14 08:00:00
 categories: 修正リスト
 tags: 20r3
-build: 100352
+build: 100356
 version: "20r3"
 permalink: /2024/43/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104618 `.certificatesFolder`プロパティに`4D.Folder`オブジェクトを設定して`4D.HTTPRequest`を使用した場合，アプリケーションがクラッシュしました。パス文字列を設定すれば問題ありません。
+
+**注記**: 全般的なメモリーリークを解消するための修正（ACI0104402）が関係していました。
 
 * ACI0104599 `Create deployment license`にスタンドアロン版のライセンス（`4UUD`または`4UOE`）を渡した場合，エラーが返されました。ACI0104384が修正されたことによる副作用のようです。
 
