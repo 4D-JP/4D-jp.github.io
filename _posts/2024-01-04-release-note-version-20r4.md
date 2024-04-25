@@ -4,7 +4,7 @@ title: "4D 20r4 修正リスト"
 date: 2024-04-22 08:00:00
 categories: 修正リスト
 tags: 20r4
-build: 100333
+build: 100334
 version: "20r4"
 permalink: /2024/4/:slug/
 ---
