@@ -95,6 +95,8 @@ $test:={addLabelIds: [$toto.id]}
 
 * ACI0104558 フォームに２個の統合Webエリアを配置し，`WA SET PAGE CONTENT`で空のページを表示しようとした場合，アプリケーションがクラッシュしました。URLを`about:blank`に設定すれば問題ありません。いずれかのWebエリアをシステム版に変更すれば問題ありません。
 
+* ACI0104515 `Open datastore`で4D Serverのユーザー名とパスワードを使用することができませんでした。*On REST Authentication* データベースメソッドで受信したパスワードハッシュを検証することができません。
+
 **注記**: [4D 19 R3以降，*directory.json* の仕様が変わり，bcryptハッシュが使用されるようになった](https://blog.4d.com/ja/bcrypt-support-for-passwords/)ことが関係しています。修正により，`Open datastore`の接続パラメーターで`passwordAlgorithm`プロパティが設定できるようになりました。`4d-rest-digest`を指定すれば，以前と同じようにMD5系のハッシュが送信され，[*On REST Authentication*](https://doc.4d.com/4Dv20/4D/20.2/On-REST-Authentication-database-method.301-6720994.ja.html) データベースメソッドで[Validate password](https://doc.4d.com/4Dv20/4D/20.2/Validate-password.301-6721229.ja.html)を使用できるようになります。このプロパティは*On REST Authentication* でパスワードを検証するためのものです。RESTでサーバーにアクセスできるユーザー＆グループをストラクチャ設定で管理する場合，*On REST Authentication* は作成せず，`passwordAlgorithm`プロパティも省略してください。
 
 * ACI0104341 ORDAの`entity.clone()`を実行した場合，エンティティがロックされました。
