@@ -9,6 +9,19 @@ type: page
 * content
 {:toc}
 
+## 20r5 # {#v20r5}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**新しいウィンドウタイプで外観をカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_WindowTypeWithoutTitleBar.zip)<span id="20-5-1"></span><br />
+新しいウィンドウタイプの追加により、ウィンドウの外観が完全にカスタマイズできるようになりました。<br />
+また、次の新しいコマンドが追加されました:<br />
+* [`MAXIMIZE WINDOW`](https://doc.4d.com/4Dv20R5/4D/20-R5/MAXIMIZE-WINDOW.301-6818209.ja.html)
+* [`MINIMIZE WINDOW`](https://doc.4d.com/4Dv20R5/4D/20-R5/MINIMIZE-WINDOW.301-6818206.ja.html)
+* [`REDUCE RESTORE WINDOW`](https://doc.4d.com/4Dv20R5/4D/20-R5/REDUCE-RESTORE-WINDOW.301-6848964.ja.html)
+* [`Is window maximized`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-maximized.301-6850247.ja.html)
+* [`Is window reduced`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-reduced.301-6850210.ja.html)
+
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいウィンドウタイプでアプリの外観をカスタマイズ](https://blog.4d.com/ja/customize-app-appearance-with-new-windows-types/)<br />
+
 ## 20r4 # {#v20r4}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**日付と時間のフォーマット**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_NewDateTimeFormats.zip)<span id="20-4-4"></span><br />
