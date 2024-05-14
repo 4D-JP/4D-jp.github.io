@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r4 修正リスト"
-date: 2024-05-08 08:00:00
+date: 2024-05-13 08:00:00
 categories: 修正リスト
 tags: 20r4
-build: 100345
+build: 100347
 version: "20r4"
 permalink: /2024/128/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104729 チェックボックスのスリーステートプロパティを`OBJECT SET THREE STATE CHECKBOX`で変更することができませんでした。
 
 * ACI0104805 ビルド版シングルユーザーアプリケーションで`WEB START SERVER`またはデータベース設定の「開始時にWebサーバーを起動」を使用した場合，アプリケーションがクラッシュすることがありました。ビルド`100332`では問題ありませんでした。
 
