@@ -12,7 +12,7 @@ type: page
 ## 20r5 # {#v20r5}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データの制限**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_RestrictData.zip)<span id="20-5-2"></span><br />
-ORDAによって取得されるデータが制限できるようになりました。この制限は Session オブジェクトを使用します。クライアントサーバーと Webサーバー (リモートデータストア、Qodly Studio含む) のコンテキストで利用可能です。<br />
+ORDAによって取得されるデータを制限できるようになりました。この制限は Session オブジェクトを使用します。クライアントサーバーと Webサーバー (リモートデータストア、Qodly Studio含む) のコンテキストで利用可能です。<br />
 ※ Qodly Studio の例題も含まれています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - 取得データを制限する方法](https://blog.4d.com/ja/orda-restrict-data-to-relevant-criteria/)<br />
 
@@ -23,6 +23,7 @@ ORDAによって取得されるデータが制限できるようになりまし�
    * [`REDUCE RESTORE WINDOW`](https://doc.4d.com/4Dv20R5/4D/20-R5/REDUCE-RESTORE-WINDOW.301-6848964.ja.html)
    * [`Is window maximized`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-maximized.301-6850247.ja.html)
    * [`Is window reduced`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-reduced.301-6850210.ja.html)
+     
 <br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいウィンドウタイプでアプリの外観をカスタマイズ](https://blog.4d.com/ja/customize-app-appearance-with-new-windows-types/)<br />
 
