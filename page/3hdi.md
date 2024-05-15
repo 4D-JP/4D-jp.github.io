@@ -23,9 +23,8 @@ ORDAによって取得されるデータを制限できるようになりまし�
    * [`REDUCE RESTORE WINDOW`](https://doc.4d.com/4Dv20R5/4D/20-R5/REDUCE-RESTORE-WINDOW.301-6848964.ja.html)
    * [`Is window maximized`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-maximized.301-6850247.ja.html)
    * [`Is window reduced`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-reduced.301-6850210.ja.html)
-     
 <br />
-　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいウィンドウタイプでアプリの外観をカスタマイズ](https://blog.4d.com/ja/customize-app-appearance-with-new-windows-types/)<br />
+<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいウィンドウタイプでアプリの外観をカスタマイズ](https://blog.4d.com/ja/customize-app-appearance-with-new-windows-types/)<br />
 
 ## 20r4 # {#v20r4}
 
