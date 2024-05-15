@@ -11,6 +11,10 @@ type: page
 
 ## 20r5 # {#v20r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**リモートセッションオブジェクト**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DRemoteSession.zip)<span id="20-5-3"></span><br />
+[Session](https://developer.4d.com/docs/ja/API/SessionClass)コマンドの対象がクライアント/サーバー接続とストアドプロシージャーに拡張されました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [クライアント/サーバー接続とストアドプロシージャーに対応した新しい 4Dリモートセッションオブジェクト](https://blog.4d.com/ja/new-4d-remote-session-object-with-client-server-connection-and-stored-procedure/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データの制限**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_RestrictData.zip)<span id="20-5-2"></span><br />
 ORDAによって取得されるデータを制限できるようになりました。この制限は Session オブジェクトを使用します。クライアントサーバーと Webサーバー (リモートデータストア、Qodly Studio含む) のコンテキストで利用可能です。<br />
 ※ Qodly Studio の例題も含まれています。<br />
