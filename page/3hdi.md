@@ -11,15 +11,24 @@ type: page
 
 ## 20r5 # {#v20r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**リモートセッションオブジェクト**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DRemoteSession.zip)<span id="20-5-3"></span><br />
+[Session](https://developer.4d.com/docs/ja/API/SessionClass)コマンドの対象がクライアント/サーバー接続とストアドプロシージャーに拡張されました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [クライアント/サーバー接続とストアドプロシージャーに対応した新しい 4Dリモートセッションオブジェクト](https://blog.4d.com/ja/new-4d-remote-session-object-with-client-server-connection-and-stored-procedure/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データの制限**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_RestrictData.zip)<span id="20-5-2"></span><br />
+ORDAによって取得されるデータを制限できるようになりました。この制限は Session オブジェクトを使用します。クライアントサーバーと Webサーバー (リモートデータストア、Qodly Studio含む) のコンテキストで利用可能です。<br />
+※ Qodly Studio の例題も含まれています。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - 取得データを制限する方法](https://blog.4d.com/ja/orda-restrict-data-to-relevant-criteria/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**新しいウィンドウタイプで外観をカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_WindowTypeWithoutTitleBar.zip)<span id="20-5-1"></span><br />
 新しいウィンドウタイプの追加により、ウィンドウの外観が完全にカスタマイズできるようになりました。また、次の新しいコマンドが追加されました:
    * [`MAXIMIZE WINDOW`](https://doc.4d.com/4Dv20R5/4D/20-R5/MAXIMIZE-WINDOW.301-6818209.ja.html)
    * [`MINIMIZE WINDOW`](https://doc.4d.com/4Dv20R5/4D/20-R5/MINIMIZE-WINDOW.301-6818206.ja.html)
    * [`REDUCE RESTORE WINDOW`](https://doc.4d.com/4Dv20R5/4D/20-R5/REDUCE-RESTORE-WINDOW.301-6848964.ja.html)
    * [`Is window maximized`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-maximized.301-6850247.ja.html)
-   * [`Is window reduced`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-reduced.301-6850210.ja.html)<br />
-
-　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいウィンドウタイプでアプリの外観をカスタマイズ](https://blog.4d.com/ja/customize-app-appearance-with-new-windows-types/)<br />
+   * [`Is window reduced`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-reduced.301-6850210.ja.html)
+<br />
+<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいウィンドウタイプでアプリの外観をカスタマイズ](https://blog.4d.com/ja/customize-app-appearance-with-new-windows-types/)<br />
 
 ## 20r4 # {#v20r4}
 
