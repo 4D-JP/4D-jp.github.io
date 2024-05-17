@@ -11,6 +11,10 @@ type: page
 
 ## 20r5 # {#v20r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [** 4D Write Pro: 用紙サイズの設定**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DWP_PageSize.zip)<span id="20-5-4"></span><br />
+4D Write Pro にドキュメントの用紙サイズを設定するための新しい [`wk page size`](https://doc.4d.com/4Dv20R5/4D/20-R5/4D-Write-Pro-Attributes.300-6851817.ja.html#6934351) 属性が追加されました。これに伴い、新しい標準アクション `pageSize` も追加されています。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [便利な新しい 4D Write Pro属性: wk page size！](https://blog.4d.com/ja/a-handy-new-4d-write-pro-attribute-wk-page-size/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**リモートセッションオブジェクト**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DRemoteSession.zip)<span id="20-5-3"></span><br />
 [Session](https://developer.4d.com/docs/ja/API/SessionClass)コマンドの対象がクライアント/サーバー接続とストアドプロシージャーに拡張されました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [クライアント/サーバー接続とストアドプロシージャーに対応した新しい 4Dリモートセッションオブジェクト](https://blog.4d.com/ja/new-4d-remote-session-object-with-client-server-connection-and-stored-procedure/)<br />
