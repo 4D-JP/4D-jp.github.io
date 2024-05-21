@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 19 修正リスト"
-date: 2024-05-16 08:00:00
+date: 2024-05-20 08:00:00
 categories: 修正リスト
 tags: "19.7"
-build: 291571
+build: 291599
 version: "19.7"
 permalink: /2024/111/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104669 メソッドエディター上で`Case of`構文の条件ブロックを畳んだ状態で別の条件ブロックカットまたは削除し，`command`+`Z`で操作を取り消した場合，コードが正しく復元されませんでした。
 
 * ACI0104789 Windows版のみ。`SET PRINT OPTION`で設定した*Orientation option* の設定が`QR RUN`で出力したレポートの`2`ページ目以降に反映されませんでした。PDF/XPSに出力した場合は問題ありません。なお，印刷ジョブを開始する前に用紙の方向を設定すれば問題ありません。
 
