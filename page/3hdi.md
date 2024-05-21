@@ -11,7 +11,7 @@ type: page
 
 ## 20r5 # {#v20r5}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [** 4D Write Pro: テキストの回り込み**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DWP_ManageAnchoredPictures.zip)<span id="20-5-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストの回り込み**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DWP_ManageAnchoredPictures.zip)<span id="20-5-5"></span><br />
 新しいアンカーモード [wk anchor layout](https://doc.4d.com/4Dv20R5/4D/20-R5/Handling-pictures.200-6851783.ja.html#6854646) が追加され、アンカーされた画像とテキストボックスにテキストを回り込ませることができるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: アンカー画像とテキストボックスの表示オプションが増えました！](https://blog.4d.com/ja/4d-write-pro-more-display-options-for-anchored-pictures-and-text-boxes/)<br />
 
