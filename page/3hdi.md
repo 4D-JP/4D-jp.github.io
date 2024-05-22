@@ -11,6 +11,10 @@ type: page
 
 ## 20r5 # {#v20r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カスタムファンクションとコレクション/オブジェクト引数**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DVP_Object_and_Collection_in_Custom_Functions.zip)<span id="20-5-7"></span><br />
+4D View Pro のカスタムファンクションに、セルレンジに基づいたコレクション/オブジェクト引数を渡せるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: カスタムファンクションの強化](https://blog.4d.com/ja/4d-view-pro-enhancement-of-custom-functions/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みの行数が無制限に**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DWP_LargeTables.zip)<span id="20-5-6"></span><br />
 4D Write Pro の表組みの最大行数 (1000件) の制限が廃止されました。これに伴い、膨大なデータを扱う場合に起こりうる問題を避けるため、HDI で紹介しているベストプラクティスに沿って作業することが推奨されます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 制限のない表組み！](https://blog.4d.com/ja/4d-write-pro-tables-without-limit/)<br />
