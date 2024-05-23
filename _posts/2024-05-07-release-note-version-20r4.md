@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r4 修正リスト"
-date: 2024-05-20 08:00:00
+date: 2024-05-22 08:00:00
 categories: 修正リスト
 tags: 20r4
-build: 100353
+build: 100355
 version: "20r4"
 permalink: /2024/128/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104290 ビット`4` (`16`) を指定せずに *Current process debug log* を有効化した場合，プラグインコマンドの呼び出しでアプリケーションがクラッシュしました。さきに全プロセスのデバッグログを有効化していれば問題ありません。
 
 * ACI0104752 Write Proの小数点タブが文字列の後に続くスペースに対して適用されませんでした。Microsoft Wordと同じように処理されるべきです。
  
