@@ -11,6 +11,10 @@ type: page
 
 ## 20r5 # {#v20r5}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Qodly Studio for 4D: 認証とセッション終了**](https://github.com/4D-JP/HDI/releases/download/20r5/PIQS_QuitSession.zip)<span id="20-5-8"></span><br />
+強制ログインモードの導入により、認証ステップでクライアントライセンスが消費されるのを避けられるようになりました。また、セッションを終了することで、4Dクライアントライセンスを即座に解放できます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Qodly Studio for 4D による 4Dクライアントライセンス消費方法の改善](https://blog.4d.com/ja/improved-4d-client-licenses-usage-with-qodly-studio-for-4d/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カスタムファンクションとコレクション/オブジェクト引数**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DVP_Object_and_Collection_in_Custom_Functions.zip)<span id="20-5-7"></span><br />
 4D View Pro のカスタムファンクションに、セルレンジに基づいたコレクション/オブジェクト引数を渡せるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: カスタムファンクションの強化](https://blog.4d.com/ja/4d-view-pro-enhancement-of-custom-functions/)<br />
