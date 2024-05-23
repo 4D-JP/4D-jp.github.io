@@ -1,16 +1,43 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2024-05-20 08:00:00
+date: 2024-05-22 08:00:00
 categories: 修正リスト
 tags: "20.3"
-build: 101281
+build: 101286
 version: "20.3"
 permalink: /2024/127/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104764 Windows版のみ。Write Proドキュメントを*wk pdf* 形式でエクスポートした場合，Unicodeの結合文字を使用したウムラウトが正しい位置に表示されませんでした。プリンタードライバー経由でPDFを出力すれば問題ありません。
+
+**注記**: [Hummus PDF-Writer](https://github.com/galkahana/PDF-Writer/issues/251)の不具合でした。レンダリングの問題を回避するため，合成文字のウムラウトが出力されるようになりました。
+
+* ACI0104758 プロジェクトモードのみ。互換性の「[ピリオドとカンマを数値フォーマットのプレースホルダーとして使用する](https://doc.4d.com/4Dv20/4D/20.2/Compatibility-page.300-6750362.ja.html)」が無効にされているストラクチャーをプロジェクトに変換した場合，ピリオドや空白を桁区切りとして使用するシステムで`####0,00%;-####0,00%;0,00%`のようなフォーマットを`String`関数で数値に適用した場合，カンマが小数点ではなく，桁区切り記号として処理されるようになりました。
+
+**注記**: プロジェクトモード変換の仕様が変更されました。以前は「ピリオドとカンマを数値フォーマットのプレースホルダーとして使用する」が強制的に有効化され，変換ログにも下記の警告が出力されました。
+
+```json
+{
+  "message": "Compatibility setting 'Use period and comma as placeholders in numeric formats' switched on.",
+  "severity": "warning"
+}
+```
+
+修正により，この設定は保持されるようになりました。プロジェクトモード変換後にデータベース設定で有効化することができます。
+
+* ACI0104752 Write Proの小数点タブが文字列の後に続くスペースに対して適用されませんでした。Microsoft Wordと同じように処理されるべきです。
+ 
+### Write Pro（修正前）
+![](https://github.com/4D-JP/4D-jp.github.io/assets/10509075/8b231b0e-865b-45b3-838d-150bb77cc959)
+
+### Word（参考）
+![](https://github.com/4D-JP/4D-jp.github.io/assets/10509075/8a57fcba-f1c6-4277-a2bc-afb77f219d17)
+
+* ACI0104596 [サーバー側のORDAリクエストログ](https://developer.4d.com/docs/ja/Debugging/debugLogFiles/#サーバー側)に`ipAddress`（クライアントのIPアドレス）が出力されませんでした。
 
 * ACI0104698 Mac版のみ。*Modal form dialog box* タイプのウィンドウからポップアップウィンドウを表示した場合，テキスト入力オブジェクトに数字をタイプ入力することができませんでした。
 
