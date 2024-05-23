@@ -12,6 +12,14 @@ permalink: /2024/128/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0104752 Write Proの小数点タブが文字列の後に続くスペースに対して適用されませんでした。Microsoft Wordと同じように処理されるべきです。
+ 
+### Write Pro（修正前）
+![](https://github.com/4D-JP/4D-jp.github.io/assets/10509075/8b231b0e-865b-45b3-838d-150bb77cc959)
+
+### Word（参考）
+![](https://github.com/4D-JP/4D-jp.github.io/assets/10509075/8a57fcba-f1c6-4277-a2bc-afb77f219d17)
+
 * ACI0104669 メソッドエディター上で`Case of`構文の条件ブロックを畳んだ状態で別の条件ブロックカットまたは削除し，`command`+`Z`で操作を取り消した場合，コードが正しく復元されませんでした。
 
 * ACI0104453 コンパイルモードのみ。別々のプリエンプティブWebプロセスから`Storage`経由でオブジェクトまたはコレクションにアクセスする処理が引き金となってアプリケーションがクラッシュする可能性がありました。
