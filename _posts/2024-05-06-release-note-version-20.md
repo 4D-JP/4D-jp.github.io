@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2024-05-22 08:00:00
+date: 2024-05-23 08:00:00
 categories: 修正リスト
 tags: "20.3"
-build: 101286
+build: 101287
 version: "20.3"
 permalink: /2024/127/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104342 コンパイルモードのみ。`SET HELP MENU`でインストールした*ak msc* アクションをサーバー側のヘルプメニューから実行した場合，ランタイムエラーが返されました。`INVOKE ACTION`を実行するための`4D_Server_Interface`ワーカーがプリエンプティブプロセスで起動されているためです。
 
 * ACI0104764 Windows版のみ。Write Proドキュメントを*wk pdf* 形式でエクスポートした場合，Unicodeの結合文字を使用したウムラウトが正しい位置に表示されませんでした。プリンタードライバー経由でPDFを出力すれば問題ありません。
 
