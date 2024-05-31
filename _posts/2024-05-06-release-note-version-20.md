@@ -1,9 +1,9 @@
 ---
 layout: fix
-title: "4D 20 修正リスト"
+title: "4D 20.3 Hotfix 2 修正リスト"
 date: 2024-05-30 08:00:00
 categories: 修正リスト
-tags: "20.3"
+tags: 20.3 hotfix
 build: 101304
 version: "20.3"
 permalink: /2024/127/:slug/
