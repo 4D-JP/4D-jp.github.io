@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D 19 修正リスト"
-date: 2024-05-20 08:00:00
+date: 2024-05-31 08:00:00
 categories: 修正リスト
 tags: "19.7"
 build: 291718
