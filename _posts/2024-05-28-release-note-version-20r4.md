@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r4 修正リスト"
-date: 2024-05-31 08:00:00
+date: 2024-06-03 08:00:00
 categories: 修正リスト
 tags: 20r4
-build: 100363
+build: 100364
 version: "20r4"
 permalink: /2024/147/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104828 *.4DZ* 形式にビルドしたプロジェクトの*$shared* 仮想フォルダーに*Qodly* からアクセスできませんでした。
 
 * ACI0104845 バイナリモードのみ。トレース中に追加したブレークポイントが保存されませんでした。
 
