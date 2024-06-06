@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D 20r5 修正リスト"
-date: 2024-06-03 08:00:00
+date: 2024-06-05 08:00:00
 categories: 修正リスト
 tags: 20r5
-build: 100160
+build: 100166
 version: "20r5"
 permalink: /2024/122/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104832 サーバー側のメンバー関数で作成した新規エンティティを`WebForm`側のアクションで保存することができませんでした。
+
+* ACI0104717 *$format=looker*を指定したRESTリクエストのJSONレスポンスが正しく[エスケープ処理](https://support.google.com/looker-studio/answer/10495775?hl=en)されていませんでした。
 
 * ACI0104836 Windows版のみ。クエリエディターでブール型のフィールドを指定した場合，二択のポップアップメニューが表示されませんでした。
 
