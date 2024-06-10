@@ -1,16 +1,34 @@
 ---
 layout: fix
 title: "4D 20r5 修正リスト"
-date: 2024-06-05 08:00:00
+date: 2024-06-10 08:00:00
 categories: 修正リスト
 tags: 20r5
-build: 100166
+build: 100174
 version: "20r5"
 permalink: /2024/122/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACIACI0104852 Linux版のみ。`Get process activity().processes`の`cpuTime`および`cpuUsage`が不正確な数値または`0`を返しました。
+
+* ACI0104826 `SQL EXECUTE`のクエリに時間を要した場合，つづく`SQL LOAD RECORD`でレコードフェッチのメッセージ画面が表示されました。
+
+* ACI0104822 Mac版のみ。`GOTO OBJECT(*; "")`につづけて`CALL FORM(Current form window)`実行した場合，CPU使用率が少し増えました。
+
+* ACI0104820 Windows版のみ。バーチャルキーコードを送信するタイプのバーコードリーダーで*Return* キーを入力することができませんでした。
+
+* ACI0104812 *Qodly* またはデータエクスプローラーでアップロードした画像がサーバー再起動後に表示されました。キャッシュにない画像も表示されるべきです。
+
+* ACI0104811 プロジェクトを開くたびに* catalog_editor.json* ファイルの`color`と`coordinates`の順序が入れ替わり，バージョン管理システムの競合を引き起こしました。
+
+* ACI0104798 *Write Pro Toolbar* が配置されたダイアログを閉じたタイミングでエラーが返されることがありました。
+
+* ACI0104738 サーバー管理画面のモニター上で右クリックしてもコンテキストメニューが表示されませんでした。
+
+* ACI0104564 プロジェクトのパスを指定して`Compile project`でコンポーネントをコンパイルした場合，`ORDER BY FORMULA`がエラーを返しました。カレントプロジェクトを指定して`Compile project`でコンパイルした場合，あるいはデザインモードのコンパイラーを使用した場合は問題ありません。
 
 * ACI0104832 サーバー側のメンバー関数で作成した新規エンティティを`WebForm`側のアクションで保存することができませんでした。
 
