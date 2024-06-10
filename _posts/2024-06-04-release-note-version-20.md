@@ -1,16 +1,28 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2024-06-05 08:00:00
+date: 2024-06-10 08:00:00
 categories: 修正リスト
 tags: "20.3"
-build: 101313
+build: 101319
 version: "20.3"
 permalink: /2024/158/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104798 *Write Pro Toolbar* が配置されたダイアログを閉じたタイミングでエラーが返されることがありました。
+
+* ACI0104738 サーバー管理画面のモニター上で右クリックしてもコンテキストメニューが表示されませんでした。
+
+* ACI0104564 プロジェクトのパスを指定して`Compile project`でコンポーネントをコンパイルした場合，`ORDER BY FORMULA`がエラーを返しました。カレントプロジェクトを指定して`Compile project`でコンパイルした場合，あるいはデザインモードのコンパイラーを使用した場合は問題ありません。
+
+* ACI0104826 `SQL EXECUTE`のクエリに時間を要した場合，つづく`SQL LOAD RECORD`でレコードフェッチのメッセージ画面が表示されました。
+
+* ACI0104822 Mac版のみ。`GOTO OBJECT(*; "")`につづけて`CALL FORM(Current form window)`実行した場合，CPU使用率が少し増えました。
+
+* ACI0104820 Windows版のみ。バーチャルキーコードを送信するタイプのバーコードリーダーで*Return* キーを入力することができませんでした。
 
 * ACI0102583 フランス語版のみ。*Write Pro Toolbar* のスペルチェックボタンのヘルプTipsがローカライズされていませんでした。
 
