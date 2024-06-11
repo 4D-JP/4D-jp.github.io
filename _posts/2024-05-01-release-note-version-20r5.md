@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D 20r5 修正リスト"
-date: 2024-06-10 08:00:00
+date: 2024-06-11 08:00:00
 categories: 修正リスト
 tags: 20r5
-build: 100174
+build: 100177
 version: "20r5"
 permalink: /2024/122/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104770 メソッドエディターで`4D`クラスストアのクラスを右クリックした場合，コンテキストメニューに「ドキュメンテーションを表示…」が表示されませんでした。
+
+* ACI0104869 *Qodly* のプレビューでデータを表示した後，*Qodly Studio* でデータストアを開いた場合，データストアに対するアクセス権限が失われ，サーバーを再起動またはデータストアを編集するまで回復しませんでした。
 
 * ACIACI0104852 Linux版のみ。`Get process activity().processes`の`cpuTime`および`cpuUsage`が不正確な数値または`0`を返しました。
 
