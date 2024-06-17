@@ -1,16 +1,30 @@
 ---
 layout: fix
 title: "4D 20r5 修正リスト"
-date: 2024-06-13 08:00:00
+date: 2024-06-16 08:00:00
 categories: 修正リスト
 tags: 20r5
-build: 100185
+build: 100193
 version: "20r5"
 permalink: /2024/122/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104880 *Qodly* の`forceLogin`を有効にした場合，*WebForm* がレンダリングされなくなりました。
+
+* ACI0104875 `SPELL ADD TO USER DICTIONARY`に文字列型のフォーミュラを渡した場合，コンパイルエラーが返されました。
+
+* ACI0104868 スタンドアロン版コンパイルモードのみ。`ORDER BY FORMULA`のフォーミュラとして自動リレーションフィールドの演算式を記述した場合，セレクションの並び順が正しくありませんでした。クライアント/サーバー版またはインタープリターモードでは問題ありません。
+
+```4d
+ORDER BY FORMULA([Movimenti];[Clienti]RagioneSociale+[Fornitori]RagioneSociale;<)
+```
+
+* ACI0104854 `WebForm`から呼び出されたエンティティのメンバー関数をトレースした場合，アプリケーションがクラッシュしました。
+
+* ACI0104626 *model.4DModel* プロジェクトをメンテナンスモードで開いた場合，MSCでデータやインデックスの検証ができませんでした。
 
 * ACI0104876 データクラスのメンバー関数が*Qodly Studio* に認識されませんでした。
 
