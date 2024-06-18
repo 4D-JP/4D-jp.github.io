@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r5 修正リスト"
-date: 2024-06-17 08:00:00
+date: 2024-06-18 08:00:00
 categories: 修正リスト
 tags: 20r5
-build: 100196
+build: 100197
 version: "20r5"
 permalink: /2024/122/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104881 リモートデータストアに対して`dataStore.authentify()`を実行した場合，エラーが返されました。
 
 * ACI0104865 Mac版のみ。システム設定で4Dの言語設定をOSとは別のものに変更した場合，正しい*.lproj'* フォルダーが使用されませんでした。
 
