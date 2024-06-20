@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r5 修正リスト"
-date: 2024-06-18 08:00:00
+date: 2024-06-19 08:00:00
 categories: 修正リスト
 tags: 20r5
-build: 100197
+build: 100201
 version: "20r5"
 permalink: /2024/122/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104885 *Qodly* の*WebForm* にデータテーブルを表示した状態でモデルを更新した場合，パーミッション情報が失われました。
 
 * ACI0104881 リモートデータストアに対して`dataStore.authentify()`を実行した場合，エラーが返されました。
 
