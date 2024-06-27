@@ -10,4 +10,4 @@ tags: programming userinterface
 
 前者で指定できる*Movable form dialog box* タイプのウィンドウには閉じるボタンがありますが，後者で指定できる*Movable dialog box* タイプのウィンドウには閉じるボタンがありません。
 
-[](https://github.com/4D-JP/4D-jp.github.io/blob/820a469e0dffab4649108444d879cb722e30601f/images/blog/2024/06/27/windows.png)
+<img src="https://github.com/4D-JP/4D-jp.github.io/blob/820a469e0dffab4649108444d879cb722e30601f/images/blog/2024/06/27/windows.png" width="676" />
