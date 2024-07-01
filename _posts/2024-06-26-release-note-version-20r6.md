@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-06-27 08:00:00
+date: 2024-06-30 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100037
+build: 100043
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104889 OEM版のみ。ビルドしたアプリケーションのライセンス情報に標準ライセンスの*4D Mobile Server* が表示されました。 
+
+* ACI0104826 `SQL EXECUTE`のクエリに時間を要した場合，つづく`SQL LOAD RECORD`でレコードフェッチのメッセージ画面が表示されました。
+
+* ACI0102246 `SQL LOGIN`で表示された接続ダイアログをキャンセルした場合，システム変数`OK`に`1`が代入されました。
 
 * ACI0104905 [`$limit`](https://developer.4d.com/docs/ja/REST/top_$limit/)を指定せずにREST APIでテーブルのレコード全件をリクエストした場合，デフォルトの上限である`100`件ではなく，エンティティセレクション全件がレスポンスとして返されました。
 
