@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-07-01 08:00:00
+date: 2024-07-02 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100051
+build: 100056
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104897 Windows版のみ。`Dynamic pop up menu`のメニュー項目に*Bold* *Underline* *Italic* のようなスタイルを設定した場合，アイコンがずれた位置に表示され，ポップアップメニューの角が丸くレンダリングされませんでした。
 
 * ACI0104910 オブジェクト型変数の宣言にオブジェクトリテラルで三項演算子を記述した場合，エラーが返されました。
 
