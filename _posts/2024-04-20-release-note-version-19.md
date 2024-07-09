@@ -1,6 +1,6 @@
 ---
 layout: fix
-title: "4D 19 修正リスト"
+title: "4D 19.8 修正リスト"
 date: 2024-06-30 08:00:00
 categories: 修正リスト
 tags: "19.8"
