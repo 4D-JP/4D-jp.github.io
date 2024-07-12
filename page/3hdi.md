@@ -12,8 +12,7 @@ type: page
 ## 20r5 # {#v20r5}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**コンポーネントマネージャー**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_Component_Management.zip)<span id="20-5-9"></span><br />
-4D 20 R5 では、プロジェクトの依存関係を確認するための新しいインターフェース、コンポーネントマネージャーが追加されました。また、`dependencies.json` ファイル、および `environment4d.json` ファイルを使用した、プロジェクトの依存関係を定義するための柔軟で新しい方法が導入されました。
-<br />
+4D 20 R5 では、プロジェクトの依存関係を確認するための新しいインターフェース、コンポーネントマネージャーが追加されました。また、`dependencies.json` ファイル、および `environment4d.json` ファイルを使用した、プロジェクトの依存関係を定義するための柔軟で新しい方法が導入されました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4Dにおけるコンポーネント管理の簡素化](https://blog.4d.com/ja/simplifying-component-management-in-4d/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**Qodly Studio for 4D: 認証とセッション終了**](https://github.com/4D-JP/HDI/releases/download/20r5/PIQS_QuitSession.zip)<span id="20-5-8"></span><br />
