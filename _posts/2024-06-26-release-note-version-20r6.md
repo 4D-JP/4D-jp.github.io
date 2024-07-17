@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-07-07 08:00:00
+date: 2024-07-16 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100099
+build: 100109
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
@@ -12,9 +12,17 @@ permalink: /2024/178/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0104934 [ノンブロッキング印刷](https://blog.4d.com/ja/non-blocking-printing/)の設定がサーバー側の印刷では無視されました。
+
+* ACI0104922 デフォルトの`Agent`または`keepAlive`が`True`に設定された`Agent`を使用し，HTTPSプロキシの背後から`HTTPRequest`を使用使用した場合，HTTP Keep-Aliveが機能しませんでした。
+
+* ACI0103643 プロジェクトを再起動した場合，ツールボックスで更新したプラグインのアクセス権が元に戻りました。
+
+* ACI0103521 データの`255`文字目にセパレーターが出現する場合，`IMPORT TEXT`がフィールドやレコードの区切りを認識しませんでした。
+
 * ACI0104948 Windows版のみ。地域と言語の設定に対応する*.lproj* が存在しない場合，ストラクチャエディターのコンテキストメニューにXLIFFリソースが表示されませんでした。デフォルトで英語のXLIFFリソースがロードされるべきです。
 
-ACI0104939	SMTPTransporter.send doesn't work with the port SSL 465 and the connectionTimeOut doesn'r respected		4D Staff	According to origin
+* ACI0104939 `port`を`465`，`acceptUnsecureConnection`を`True`に設定して`SMTPTransporter.send()`を実行した場合，`connectionTimeOut`が適用されませんでした。
 
 * ACI0104938 `IMAPTransporter.getMails()`でサイズのおおきなメールをダウンロードしようとした場合，アプリケーションがフリーズしました。
 
@@ -29,8 +37,6 @@ ACI0104939	SMTPTransporter.send doesn't work with the port SSL 465 and the conne
 * ACI0104946 メソッドエディターに`Open form window`を入力した場合，コード補完の定数リストに*Plain form window no title* および*Movable form dialog box no title* が表示されませんでした。
 
 * ACI0104930 ジャーナルファイルをデータファイルに統合した場合，*.4DIndx* インデックスファイルのサイズが過去のバージョンよりも大幅に増えることがありました。ACI0104510が修正されたことによる副作用等です。特定のデータベースで現象が発生します。
-
-* ACI0104732 列のフォーマットを金額（ユーロ記号）に設定したクイックレポートをHTML形式で出力した場合，合計行のセルが左揃えで表示されました。印刷では問題ありません。
 
 * ACI0104732 列のフォーマットを金額（ユーロ記号）に設定したクイックレポートをHTML形式で出力した場合，合計行のセルが左揃えで表示されました。印刷では問題ありません。
 
