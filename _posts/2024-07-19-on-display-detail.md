@@ -1,6 +1,6 @@
 ---
 layout: fix
-title: "SQLサーバーの起動"
+title: "リストボックス列とOn Display Detail"
 date: 2024-07-18 08:00:00
 categories: 仕様
 tags: sql
