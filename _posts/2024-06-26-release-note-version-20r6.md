@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-07-16 08:00:00
+date: 2024-07-18 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100109
+build: 100111
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104950 プロジェクト設定の「ツールバーを表示する」が有効にされていない場合，プロジェクト再起動後にエクスプローラーのウィンドウがツールバーの高さだけ低い位置に表示されました。
 
 * ACI0104934 [ノンブロッキング印刷](https://blog.4d.com/ja/non-blocking-printing/)の設定がサーバー側の印刷では無視されました。
 
