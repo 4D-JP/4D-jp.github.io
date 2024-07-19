@@ -6,7 +6,7 @@ categories: 仕様
 tags: sql
 ---
 
-[ドキュメント](https://doc.4d.com/4Dv20/4D/20.2/List-box-column-specific-properties.300-6750221.ja.html#:~:text=On%20Display%20Detail)にはデータソースの値が「On Display Detail イベントで計算されます」と記述されていますが，*On Display Detail* は，リストボックスの列ではなく，リストボックス全体に対して発生するフォームイベントのことを指しています。
+リストボックス列特有のプロパティに関する[ドキュメント](https://doc.4d.com/4Dv20/4D/20.2/List-box-column-specific-properties.300-6750221.ja.html#:~:text=On%20Display%20Detail)には，データソースの値が「On Display Detail イベントで計算されます」と記述されていますが，これはリストボックスの列ではなく，リストボックス全体に対して発生するフォームイベントのことを指しています。
 
 フォームエディターでリストボックスの列を選択した場合，フォームイベントの*On Display Detail* は表示されません。プロジェクトモードであれば，*.4DForm* ファイルを編集することにより，イベントを有効にすることができ，その場合，列のオブジェクトメソッドで*On Display Detail* を処理できるようになりますが，これは正式にサポートされている仕様ではないことに留意してください。
 
