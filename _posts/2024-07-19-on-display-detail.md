@@ -3,7 +3,7 @@ layout: fix
 title: "リストボックス列とOn Display Detail"
 date: 2024-07-18 08:00:00
 categories: 仕様
-tags: sql
+tags: userinterface programming
 ---
 
 リストボックス列特有のプロパティに関する[ドキュメント](https://doc.4d.com/4Dv20/4D/20.2/List-box-column-specific-properties.300-6750221.ja.html#:~:text=On%20Display%20Detail)には，データソースの値が「On Display Detail イベントで計算されます」と記述されていますが，これはリストボックスの列ではなく，リストボックス全体に対して発生するフォームイベントのことを指しています。
