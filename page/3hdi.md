@@ -11,6 +11,10 @@ type: page
 
 ## 20r6 # {#v20r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**セッションストレージの取得**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_SessionStorageByID.zip)<span id="20-6-2"></span><br />
+セッションを識別する一意のIDから、そのセッションのストレージを取得する新しいコマンド [`Session storage by ID`](https://livedoc.4d.com/4dv20R/help/command/ja/page1839.html) が追加されました。共有オブジェクトをセッションストレージに保存して、セッション間で情報を共有する例題も含まれています。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [セッションストレージへのアクセスを強化](https://blog.4d.com/ja/enhanced-session-storage-access/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**セッションの権限確認**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_GetPrivileges.zip)<span id="20-6-1"></span><br />
 セッションが持つ権限を確認するための [`session.getPrivileges()`](http://developer.4d.com/docs/ja/API/SessionClass#getprivileges) 関数が追加されました。また、REST API [`$info/privileges`](http://developer.4d.com/docs/ja/REST/info) も利用可能です。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [セッション権限を検査してデバッグを容易に](https://blog.4d.com/ja/permissions-inspect-session-privileges-for-easy-debugging)<br />
