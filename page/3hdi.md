@@ -11,6 +11,10 @@ type: page
 
 ## 20r6 # {#v20r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**エンティティセレクションから未定義エンティティを取り除く**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_CleanEntitySelection.zip)<span id="20-6-3"></span><br />
+エンティティセレクションからエンティティを削除すると、削除された要素は未定義のままエンティティセレクション内に存在し続けます。これを取り除くため、新しい [`EntitySelection.clean()`](http://developer.4d.com/docs/ja/API/EntitySelectionClass#clean) 関数が使用できるようになりました。REST API では [`$entityset`](http://developer.4d.com/docs/ja/REST/entityset) に $clean パラメーターを渡すことで同様のことをおこなえます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - 歯抜けのエンティティセレクションにさよならを](https://blog.4d.com/ja/orda-say-goodbye-to-empty-spaces-in-your-entity-selections/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**セッションストレージの取得**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_SessionStorageByID.zip)<span id="20-6-2"></span><br />
 セッションを識別する一意のIDから、そのセッションのストレージを取得する新しいコマンド [`Session storage by ID`](https://livedoc.4d.com/4dv20R/help/command/ja/page1839.html) が追加されました。共有オブジェクトをセッションストレージに保存して、セッション間で情報を共有する例題も含まれています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [セッションストレージへのアクセスを強化](https://blog.4d.com/ja/enhanced-session-storage-access/)<br />
