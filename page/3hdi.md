@@ -11,6 +11,10 @@ type: page
 
 ## 20r6 # {#v20r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**HTTPエージェントによる HTTPリクエストの管理**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_HTTP_Classes_with_agent.zip)<span id="20-6-4"></span><br />
+新しく追加された [`HTTPAgent`](http://developer.4d.com/docs/ja/API/HTTPAgentClass) クラスを使って、HTTPRequest クラス を使ったサーバー接続の持続性と再利用を管理することができます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [HTTPエージェントによる HTTPリクエストの管理](https://blog.4d.com/ja/managing-http-requests-with-http-agents/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**エンティティセレクションから未定義エンティティを取り除く**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_CleanEntitySelection.zip)<span id="20-6-3"></span><br />
 エンティティセレクションからエンティティを削除すると、削除された要素は未定義のままエンティティセレクション内に存在し続けます。これを取り除くため、新しい [`EntitySelection.clean()`](http://developer.4d.com/docs/ja/API/EntitySelectionClass#clean) 関数が使用できるようになりました。REST API では [`$entityset`](http://developer.4d.com/docs/ja/REST/entityset) に $clean パラメーターを渡すことで同様のことをおこなえます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - 歯抜けのエンティティセレクションにさよならを](https://blog.4d.com/ja/orda-say-goodbye-to-empty-spaces-in-your-entity-selections/)<br />
