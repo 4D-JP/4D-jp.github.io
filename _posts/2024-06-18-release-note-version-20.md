@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2024-07-25 08:00:00
+date: 2024-07-29 08:00:00
 categories: 修正リスト
 tags: "20.4"
-build: 101399
+build: 101401
 version: "20.4"
 permalink: /2024/170/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104973 *.4DProject* の`compatibilityVersion`が`1860`以上であり，*'settings.4Dsettings* の`session_mode="3"`属性が存在しないプロジェクトは，設定の「Web＞オプションⅠ＞旧式セッション管理」が有効であっても，`Web Server.scalabaleSession`に`True`が返されました。
+
+* ACI0104959 `SET AUTOMATIC RELATIONS (True;False)`を実行した場合，`GET FIELD RELATION`からＮ対１リレーションの情報が正しく返されませんでした。ACI0104414が修正されたことによる副作用です。
 
 * ACI0104957 デバッガのコンテキストメニューから「参照箇所を検索…」を選択し，デザインモードの検索が完了しないうちにメソッドの実行を再開し，新規プロセスでメソッドを再実行してデバッガを表示した場合，アプリケーションがクラッシュしました。
 

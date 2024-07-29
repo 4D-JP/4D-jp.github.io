@@ -1,16 +1,24 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-07-25 08:00:00
+date: 2024-07-29 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100128
+build: 100134
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104973 *.4DProject* の`compatibilityVersion`が`1860`以上であり，*'settings.4Dsettings* の`session_mode="3"`属性が存在しないプロジェクトは，設定の「Web＞オプションⅠ＞旧式セッション管理」が有効であっても，`Web Server.scalabaleSession`に`True`が返されました。
+
+* ACI0104959 `SET AUTOMATIC RELATIONS (True;False)`を実行した場合，`GET FIELD RELATION`からＮ対１リレーションの情報が正しく返されませんでした。ACI0104414が修正されたことによる副作用です。
+
+* ACI0104920 クライアント/サーバー版のみ。クライアント側のWebプロセスでセットにアクセスした場合，「パスワードが不正です」というエラーが返されました。旧式セッション管理で問題が再現します。
+
+**注記**: ACI0104973が修正されていないバージョンでは，設定で「旧式セッション管理」が有効にされていても，内部的にはスケーラブルセッション管理が有効にされているかもしれません。
 
 * ACI0104843 `VP Convert to picture`でView Proスプレッドシートの一部をピクチャに変換した場合，テキストが違うフォントで表示されました。
 

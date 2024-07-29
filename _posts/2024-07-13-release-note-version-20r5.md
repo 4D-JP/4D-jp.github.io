@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r5 修正リスト"
-date: 2024-07-25 08:00:00
+date: 2024-07-29 08:00:00
 categories: 修正リスト
 tags: 20r5
-build: 100256
+build: 100257
 version: "20r5"
 permalink: /2024/195/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104959 `SET AUTOMATIC RELATIONS (True;False)`を実行した場合，`GET FIELD RELATION`からＮ対１リレーションの情報が正しく返されませんでした。ACI0104414が修正されたことによる副作用です。
 
 * ACI0104563 リモートデータストアのホスト名に`http(s)://`を追加した場合，`Open datastore`がエラーを返されませんでした。
 
