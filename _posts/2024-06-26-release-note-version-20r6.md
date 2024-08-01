@@ -1,16 +1,24 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-07-29 08:00:00
+date: 2024-08-01 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100134
+build: 100141
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104971 統合Webエリアでクロスドメインリソース共有をした場合，*Access-Control-Allow-Origin* ヘッダーに`*`が設定してもCORSエラーが返されました。
+
+* ACI0104991 `SET AUTOMATIC RELATIONS (True;False)`を実行した後に`QUERY`および`ORDER BY`を実行した場合，`GET FIELD RELATION`からＮ対１リレーションの情報が正しく返されませんでした。ACI0104959の修正に問題がありました。
+
+* ACI0104988 ウィンドウが非アクティブになった場合，ラジオボタンやチェックボックスのテキストがグレーアウトされました。期待されるのはボタンだけがグレーアウトされ，テキストカラーは変化しないことです。
+
+* ACI0104980 フォームエディターでリストボックスに列を挿入した場合，エディター上の「スクロールしない列」がプロパティリストの値を合わなくなりました。
 
 * ACI0104973 *.4DProject* の`compatibilityVersion`が`1860`以上であり，*'settings.4Dsettings* の`session_mode="3"`属性が存在しないプロジェクトは，設定の「Web＞オプションⅠ＞旧式セッション管理」が有効であっても，`Web Server.scalabaleSession`に`True`が返されました。
 
