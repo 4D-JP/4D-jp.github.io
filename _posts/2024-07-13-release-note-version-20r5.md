@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D 20r5 修正リスト"
-date: 2024-07-29 08:00:00
+date: 2024-08-01 08:00:00
 categories: 修正リスト
 tags: 20r5
-build: 100257
+build: 100262
 version: "20r5"
 permalink: /2024/195/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104971 統合Webエリアでクロスドメインリソース共有をした場合，*Access-Control-Allow-Origin* ヘッダーに`*`が設定してもCORSエラーが返されました。
+
+**注記**: CEFの*Access-Control-Request-Headers* に`accept-language`が含まれていることが関係しています。正しいキーワードは`accept_language`（ハイフンではなく[アンダースコア](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language)）です。
+
+* ACI0104991 `SET AUTOMATIC RELATIONS (True;False)`を実行した後に`QUERY`および`ORDER BY`を実行した場合，`GET FIELD RELATION`からＮ対１リレーションの情報が正しく返されませんでした。ACI0104959の修正に問題がありました。
 
 * ACI0104959 `SET AUTOMATIC RELATIONS (True;False)`を実行した場合，`GET FIELD RELATION`からＮ対１リレーションの情報が正しく返されませんでした。ACI0104414が修正されたことによる副作用です。
 
