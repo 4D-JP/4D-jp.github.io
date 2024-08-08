@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r5 修正リスト"
-date: 2024-08-01 08:00:00
+date: 2024-08-07 08:00:00
 categories: 修正リスト
 tags: 20r5
-build: 100262
+build: 100263
 version: "20r5"
 permalink: /2024/195/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104949 スタートアップ時に`Compiler_`メソッドでコンポーネントメソッドを実行した場合，エラーが返されました。
 
 * ACI0104971 統合Webエリアでクロスドメインリソース共有をした場合，*Access-Control-Allow-Origin* ヘッダーに`*`が設定してもCORSエラーが返されました。
 
