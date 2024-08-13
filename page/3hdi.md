@@ -11,6 +11,10 @@ type: page
 
 ## 20r6 # {#v20r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 空のデータソースの表組みを管理**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_4DWP_TablesWithEmptyDataSources.zip)<span id="20-6-5"></span><br />
+新しい属性 ([`wk empty datasource`](https://doc.4d.com/4Dv20R6/4D/20-R6/4D-Write-Pro-Attributes.300-6993958.ja.html#7005206)) の追加により、リンクされたデータソースが空の場合、その表組みをどのように描画するかを定義できるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 空のデータソースを管理する！](https://blog.4d.com/ja/4d-write-pro-manage-empty-datasources/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**HTTPエージェントによる HTTPリクエストの管理**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_HTTP_Classes_with_agent.zip)<span id="20-6-4"></span><br />
 新しく追加された [`HTTPAgent`](http://developer.4d.com/docs/ja/API/HTTPAgentClass) クラスを使って、HTTPRequest クラス を使ったサーバー接続の持続性と再利用を管理することができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [HTTPエージェントによる HTTPリクエストの管理](https://blog.4d.com/ja/managing-http-requests-with-http-agents/)<br />
