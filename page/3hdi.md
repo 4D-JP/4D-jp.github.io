@@ -11,6 +11,10 @@ type: page
 
 ## 20r6 # {#v20r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: OAuth2.0接続インターフェースのカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_Netkit_BrowserAutoOpen_false.zip)<span id="20-6-6"></span><br />
+4D 20 R6 以降、authenticateURI を使うことで、接続インターフェースを好きな場所に表示できるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Netkit：OAuth 2.0接続インターフェースのカスタマイズ](https://blog.4d.com/ja/4d-netkit-customizing-oauth-2-0-connection-interface/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 空のデータソースの表組みを管理**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_4DWP_TablesWithEmptyDataSources.zip)<span id="20-6-5"></span><br />
 新しい属性 ([`wk empty datasource`](https://doc.4d.com/4Dv20R6/4D/20-R6/4D-Write-Pro-Attributes.300-6993958.ja.html#7005206)) の追加により、リンクされたデータソースが空の場合、その表組みをどのように描画するかを定義できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 空のデータソースを管理する！](https://blog.4d.com/ja/4d-write-pro-manage-empty-datasources/)<br />
