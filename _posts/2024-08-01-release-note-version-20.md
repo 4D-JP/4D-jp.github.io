@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2024-08-23 08:00:00
+date: 2024-08-25 08:00:00
 categories: 修正リスト
 tags: "20.4"
 build: 101438
