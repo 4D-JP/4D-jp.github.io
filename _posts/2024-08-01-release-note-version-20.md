@@ -1,16 +1,28 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2024-08-15 08:00:00
+date: 2024-08-23 08:00:00
 categories: 修正リスト
 tags: "20.4"
-build: 101433
+build: 101438
 version: "20.4"
 permalink: /2024/214/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104993 クイックレポートエディターの背景色グラデーションの第１カラーと第２カラーを同じ値に設定した場合，入力が無視されました。
+
+* ACI0105019 リレーション属性のクエリ条件を`OR`演算子で連結した場合，クエリプランが間違っていました。ACI0104799が修正されたことによる副作用のようです。
+
+```4d
+$oQuerySettings:=New object("parameters"; New object; "args"; New object; "queryPath"; True; "queryPlan"; True)
+$tQueryString:="(r_toPanel.isAP = true) AND (r_toOrdPanelExtra.reportStatus != 3 OR done = false)"
+$oQueryResults:=ds.ordPanel.query($tQueryString; $oQuerySettings)
+```
+
+* ACI0104990 Write Proエリアのツールバーにフォントサイズの小数が表示されませんでした。
 
 * ACI0105006 `4D.HTTPRequest`がタイムアウトに到達し，完全なレスポンスが返されなかった場合，アプリケーションがクラッシュすることがありました。
 
