@@ -36,6 +36,6 @@ $oQueryResults:=ds.ordPanel.query($tQueryString; $oQuerySettings)
 
 **注記**: キャッシュの`max_age`が`5`分に設定されました。
 
-* ACI0104971 統合Webエリアでクロスドメインリソース共有をした場合，*Access-Control-Allow-Origin* ヘッダーに`*`が設定してもCORSエラーが返されました。
+* ACI0104971 統合Webエリアでクロスドメインリソース共有をした場合，*Access-Control-Allow-Origin* ヘッダーに`*`を設定してもCORSエラーが返されました。
 
 **注記**: CEFの*Access-Control-Request-Headers* に`accept-language`が含まれていることが関係しています。正しいキーワードは`accept_language`（ハイフンではなく[アンダースコア](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language)）です。

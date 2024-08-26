@@ -38,7 +38,7 @@ permalink: /2024/178/:slug/
 
 * ACI0104949 スタートアップ時に`Compiler_`メソッドでコンポーネントメソッドを実行した場合，エラーが返されました。
 
-* ACI0104971 統合Webエリアでクロスドメインリソース共有をした場合，*Access-Control-Allow-Origin* ヘッダーに`*`が設定してもCORSエラーが返されました。
+* ACI0104971 統合Webエリアでクロスドメインリソース共有をした場合，*Access-Control-Allow-Origin* ヘッダーに`*`を設定してもCORSエラーが返されました。
 
 * ACI0104991 `SET AUTOMATIC RELATIONS (True;False)`を実行した後に`QUERY`および`ORDER BY`を実行した場合，`GET FIELD RELATION`からＮ対１リレーションの情報が正しく返されませんでした。ACI0104959の修正に問題がありました。
 
