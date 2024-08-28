@@ -9,7 +9,7 @@
 title: 4D-jp
 brief-intro: 4D Japan Technical Support Team
 # baseurl:  # the subpath of your site, e.g. /blog
-url: "https://4D-jp.github.io/" # the base hostname & protocol for your site
+url: "https://4D-jp.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
