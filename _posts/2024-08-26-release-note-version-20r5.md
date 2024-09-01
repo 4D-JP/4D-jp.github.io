@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D 20r5 修正リスト"
-date: 2024-08-27 08:00:00
+date: 2024-08-31 08:00:00
 categories: 修正リスト
 tags: 20r5
-build: 100276
+build: 100278
 version: "20r5"
 permalink: /2024/195/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104927 `MAXIMIZE WINDOW`または`REDUCE RESTORE WINDOW`を実行した場合，ウィンドウの最小化および最大化ボタンがクリックに反応しなくなりました。
+
+* ACI0105050 外部ファイルに保存したBLOBのパスにアクセスできない状態で「レコードの強制更新」モードのデータファイル圧縮を実行した場合，外部ファイルに保存したBLOBのパスがレコードから削除されました。
 
 * ACI0105041 `SET AUTOMATIC RELATIONS(False; False)`で自動リレーションを無効化した後に項目選択が設定されたフィールドにワイルドカード値を入力した場合，リレーションフィールドの項目リストが表示されました。
 
