@@ -11,6 +11,12 @@ type: page
 
 ## 20r6 # {#v20r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**RESTとQodlyによるシングルトンのサポート**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_Singletons.zip)<span id="20-6-7"></span><br />
+4D 20 R5 では、[シングルトン](http://developer.4d.com/docs/ja/Concepts/classes#シングルトンクラス) が導入されました。4D 20 R6 では、REST で共有シングルトンの公開関数を直接呼び出すことができます。
+<br />
+※ Qodly Studio の例題も含まれています。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [シングルトンのRESTとQodlyサポート](https://blog.4d.com/ja/rest-and-qodly-support-of-singletons/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: OAuth2.0接続インターフェースのカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_Netkit_BrowserAutoOpen_false.zip)<span id="20-6-6"></span><br />
 4D 20 R6 以降、authenticateURI を使うことで、接続インターフェースを好きな場所に表示できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Netkit：OAuth 2.0接続インターフェースのカスタマイズ](https://blog.4d.com/ja/4d-netkit-customizing-oauth-2-0-connection-interface/)<br />
