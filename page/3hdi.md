@@ -12,7 +12,7 @@ type: page
 ## 20r6 # {#v20r6}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**RESTとQodlyによるシングルトンのサポート**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_Singletons.zip)<span id="20-6-7"></span><br />
-4D 20 R5 では、[シングルトン](http://developer.4d.com/docs/ja/Concepts/classes#シングルトンクラス) が導入されました。4D 20 R6 では、REST で共有シングルトンの公開関数を直接呼び出すことができます。<br />
+4D 20 R5 で、[シングルトン](http://developer.4d.com/docs/ja/Concepts/classes#シングルトンクラス) が導入されました。4D 20 R6 では、REST で共有シングルトンの公開関数を直接呼び出すことができます。<br />
 ※ Qodly Studio の例題も含まれています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [シングルトンのRESTとQodlyサポート](https://blog.4d.com/ja/rest-and-qodly-support-of-singletons/)<br />
 
