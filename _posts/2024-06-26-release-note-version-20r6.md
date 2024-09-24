@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-09-22 08:00:00
+date: 2024-09-24 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100224
+build: 101477
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105070 `COLLECTION TO ARRAY`でコレクションから`ARRAY TIME`を作成した場合，数値型が時間型にキャストされず，すべての要素値が`00:00:00`になりました。`ARRAY TEXT`では問題ありません。
+
+* ACI0105095 Mac版のみ。macOS Sequoiaでは，フォーカスされたデフォルトボタンが白く表示され，クリックするまでタイトルが見えませんでした。
 
 * ACI0105090 `entitySelection.clean()`がトランザクションに対応していませんでした。
 
