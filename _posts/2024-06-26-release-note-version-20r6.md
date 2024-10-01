@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-09-25 08:00:00
+date: 2024-10-01 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100230
+build: 100231
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105088 Mac版のみ。`QR BLOB TO REPORT`がクラッシュすることがありました。ACI0105015（`BLOB to print settings`が関係している）と同じ問題です。
 
 * ACI0105089 `+=` `-=``*=` `/=`複合代入演算子とコレクションリテラル表記の`[]`を併用することができませんでした。
 
