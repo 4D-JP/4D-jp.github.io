@@ -12,7 +12,7 @@ permalink: /2024/178/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
-* ACI0105093 Mac版のみ。macOS 15 Sequoiaの印刷プレビュー画面からPDFファイルを出力した場合，エラー`-9630`が返されました。
+* ACI0105093 Mac版のみ。`SET PRINT PREVIEW`で印刷プレビューを有効にした状態で`SET PRINT OPTION`の*Destination option* を`3`（PDFファイル）に設定してプレビュー画面からPDFファイルを出力した場合，macOS 15 Sequoiaではエラー`-9630`が返されました。印刷プレビューとPDFファイル出力のいずれか一方だけを指定した場合は問題ありません。
 
 * ACI0105088 Mac版のみ。`QR BLOB TO REPORT`がクラッシュすることがありました。ACI0105015（`BLOB to print settings`が関係している）と同じ問題です。
 
