@@ -4,13 +4,15 @@ title: "4D 20.5 修正リスト"
 date: 2024-10-02 08:00:00
 categories: 修正リスト
 tags: "20.5"
-build: 101478
+build: 101480
 version: "20.5"
 permalink: /2024/245/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105093 Mac版のみ。macOS 15 Sequoiaの印刷プレビュー画面からPDFファイルを出力した場合，エラー`-9630`が返されました。
 
 * ACI0105070 `COLLECTION TO ARRAY`でコレクションから`ARRAY TIME`を作成した場合，数値型が時間型にキャストされず，すべての要素値が`00:00:00`になりました。`ARRAY TEXT`では問題ありません。
 

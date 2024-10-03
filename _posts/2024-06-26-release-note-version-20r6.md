@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-10-01 08:00:00
+date: 2024-10-02 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100231
+build: 100233
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105093 Mac版のみ。macOS 15 Sequoiaの印刷プレビュー画面からPDFファイルを出力した場合，エラー`-9630`が返されました。
 
 * ACI0105088 Mac版のみ。`QR BLOB TO REPORT`がクラッシュすることがありました。ACI0105015（`BLOB to print settings`が関係している）と同じ問題です。
 
