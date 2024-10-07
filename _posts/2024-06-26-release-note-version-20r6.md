@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-10-02 08:00:00
+date: 2024-10-06 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100233
+build: 100234
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105118 レコードアドレスが`32`ビットの範囲を超える場合，`selection.clean()`が正しく動作しませんでした。
 
 * ACI0105093 Mac版のみ。`SET PRINT PREVIEW`で印刷プレビューを有効にした状態で`SET PRINT OPTION`の*Destination option* を`3`（PDFファイル）に設定してプレビュー画面からPDFファイルを出力した場合，macOS 15 Sequoiaではエラー`-9630`が返されました。印刷プレビューとPDFファイル出力のいずれか一方だけを指定した場合は問題ありません。
 
