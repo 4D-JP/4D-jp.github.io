@@ -11,6 +11,11 @@ type: page
 
 ## 20r6 # {#v20r6}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**PDF/A3添付ファイルの抽出**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_ExtractPDFattachments.zip)<span id="20-6-8"></span><br />
+添付ファイルが埋め込まれた PDF/A3形式の PDFファイルから、これらを抽出するための専用コンポーネント [4D-QPDF](https://github.com/4d/4D-QPDF) が公開されました。この HDI ではその使い方を紹介しています。<br />
+このコンポーネントは、コンポーネントマネージャーを使って簡単に追加することが可能です。コンポーネントマネージャーについての詳細は[こちらのブログ記事](https://blog.4d.com/ja/simplifying-component-management-in-4d/)を参照ください。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [PDF/A3添付ファイルの抽出](https://blog.4d.com/ja/pdf-a3-file-extraction/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**RESTとQodlyによるシングルトンのサポート**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_Singletons.zip)<span id="20-6-7"></span><br />
 4D 20 R5 で [シングルトン](http://developer.4d.com/docs/ja/Concepts/classes#シングルトンクラス) が導入されました。4D 20 R6 では、REST で共有シングルトンの公開関数を直接呼び出すことができます。<br />
 ※ Qodly Studio の例題も含まれています。<br />
