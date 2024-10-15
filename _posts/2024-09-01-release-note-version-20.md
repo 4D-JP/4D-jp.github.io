@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20.5 修正リスト"
-date: 2024-10-02 08:00:00
+date: 2024-10-14 08:00:00
 categories: 修正リスト
 tags: "20.5"
-build: 101480
+build: 101484
 version: "20.5"
 permalink: /2024/245/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105108 `Get monitored activity`から`message`プロパティを持たない（したがって調査の助けにならない）統計情報が返されることがありました。
 
 * ACI0105093 Mac版のみ。`SET PRINT PREVIEW`で印刷プレビューを有効にした状態で`SET PRINT OPTION`の*Destination option* を`3`（PDFファイル）に設定してプレビュー画面からPDFファイルを出力した場合，macOS 15 Sequoiaではエラー`-9630`が返されました。印刷プレビューとPDFファイル出力のいずれか一方だけを指定した場合は問題ありません。
 
