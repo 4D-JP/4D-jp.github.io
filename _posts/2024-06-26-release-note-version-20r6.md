@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-10-14 08:00:00
+date: 2024-10-15 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100238
+build: 100240
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105066 *Qodly Studio* の*onChange* アクションで`RelatedEntity`型のリレーション属性の代わりに`Null`が返されました。
 
 * ACI0105137 順列ありエンティティセレクションに対して`entitySelection.clean()`を使用した場合，トランザクション中に削除されたエンティティがエンティティセレクションから除外されず，その位置に`Null`が返されました。
 
