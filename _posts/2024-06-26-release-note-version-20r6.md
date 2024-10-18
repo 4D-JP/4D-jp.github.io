@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-10-15 08:00:00
+date: 2024-10-17 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100240
+build: 100244
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105140 Windows版のみ。Windows 24H2でノンブロッキングモードの印刷コマンドを実行してPDFを出力しようとした場合，`OPEN PRINTING JOB`からエラーが返されることがありました。
 
 * ACI0105066 *Qodly Studio* の*onChange* アクションで`RelatedEntity`型のリレーション属性の代わりに`Null`が返されました。
 
