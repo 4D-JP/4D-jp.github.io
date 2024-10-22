@@ -140,6 +140,8 @@ type: page
 
 * [Guillaume Belleguic](https://github.com/tetsuo692)
 
+* [Jacques Quidu](https://github.com/jacques-quidu)
+
 * [Julio Carneiro](https://github.com/fourctv)
 
 * [Keisuke Miyako](https://github.com/miyako)
