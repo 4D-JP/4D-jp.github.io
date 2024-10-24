@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-10-19 08:00:00
+date: 2024-10-23 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100248
+build: 100251
 version: "20r6"
 permalink: /2024/178/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105153 Mac版のみ。パレットタイプのウィンドウ（*Controller form window* *Pop up form window* *Toolbar form window* *Palette form window*）をフォーカスした場合，フォーカスされていないウィンドウのデフォルトボタンのタイトルがボタンと同色になりました。ダークモードでは問題ありません。
 
 * ACI0105143 バイナリモードのみ。20r6以降，フォームに配置したピクチャの表示フォーマットが*Scaled to fit prop centered (6)* から*Truncated non centered (1)* に変わってしまうことがありました。
 
