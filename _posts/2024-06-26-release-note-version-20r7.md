@@ -29,7 +29,8 @@ $Many.Id:=1
 $Many.OneId:=1
 $Many.save()
 $Query:="One.Id#0 & ((Id#0 & (Id=0 | One.Id=0)) | (Id#0 & (Id=0 | One.Id=0)))"
-ALERT($Query+"\r\rExpected: 0\rResult: "+String(ds.Many.query($Query).length))```
+ALERT($Query+"\r\rExpected: 0\rResult: "+String(ds.Many.query($Query).length))
+```
 
 * ACI0105132 特定のドキュメントをWrite Proの埋め込みモードに表示することができませんでした。埋め込みモードでは，水平スクロールが常に表示され，自動改行モードがオフになることが関係しています。
 
