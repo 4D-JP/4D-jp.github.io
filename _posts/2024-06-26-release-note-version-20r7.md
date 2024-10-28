@@ -1,16 +1,35 @@
 ---
 layout: fix
 title: "4D 20r7 修正リスト"
-date: 2024-10-23 08:00:00
+date: 2024-10-27 08:00:00
 categories: 修正リスト
 tags: 20r7
-build: 100105
+build: 100116
 version: "20r7"
 permalink: /2024/274/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105172 Mac版のみ。WindowsのプロジェクトフォルダーをSMBまたはCIFSで共有し，Macから開発モードを有効にして開こうとした場合，アプリケーションがクラッシュしました。プロジェクトフォルダー自体ではなく，その親フォルダーを共有すれば問題ありません。
+
+* ACI0103752 4D ViewスプレッドシートをView Proに変換した場合，パーセンテージのフォーマットが正しく適用されませんでした。
+
+* ACI0105100 リレーション属性が関係するORDAクエリが間違っていることがありました。ACI0104799が修正されたことによる副作用のようです。
+
+```4d
+ds.One.all().drop()
+ds.Many.all().drop()
+$One:=ds.One.new()
+$One.Id:=1
+$One.save()
+$Many:=ds.Many.new()
+$Many.Id:=1
+$Many.OneId:=1
+$Many.save()
+$Query:="One.Id#0 & ((Id#0 & (Id=0 | One.Id=0)) | (Id#0 & (Id=0 | One.Id=0)))"
+ALERT($Query+"\r\rExpected: 0\rResult: "+String(ds.Many.query($Query).length))```
 
 * ACI0105132 特定のドキュメントをWrite Proの埋め込みモードに表示することができませんでした。埋め込みモードでは，水平スクロールが常に表示され，自動改行モードがオフになることが関係しています。
 
