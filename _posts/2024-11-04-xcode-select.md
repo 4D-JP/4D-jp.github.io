@@ -14,6 +14,6 @@ OKボタンをクリックすると，XCodeの標準的なインストール先�
 
 ![](https://github.com/user-attachments/assets/a026c1cf-d784-4ba0-a45c-fe9c6bc34ca4)
 
-エラーメッセージをみると，XCodeのライセンスに合意する必要がある，ということがわかります。XCodeを起動するか，エラーメッセージで勧められているコマンドライン`sudo xcodebuild -license`を実行することにより，Apple Siliconターゲットのコンパイルができるようになります。
+エラーメッセージをみると，XCodeのライセンスに合意する必要がある，ということがわかります。XCodeを起動するか，エラーメッセージで勧められているコマンドライン`sudo xcodebuild -license`を実行して，ライセンスに合意すると，Apple Siliconターゲットのコンパイルができるようになります。
 
 ![](https://github.com/user-attachments/assets/791f363e-e8de-4023-9591-700129be08b7)
