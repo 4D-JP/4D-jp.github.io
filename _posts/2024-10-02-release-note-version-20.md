@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2024-10-31 08:00:00
+date: 2024-11-04 08:00:00
 categories: 修正リスト
 tags: "20.5"
-build: 101532
+build: 101535
 version: "20.5"
 permalink: /2024/276/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105064 SOAPサーバーがXML External Entity (XXE) 攻撃の標的になる可能性がありました。
+
+* ACI0104985 *Excel* などのOfficeデスクトップアプリケーションから*Power Query* でSQLを実行した場合，`5`桁を超える数値が正しく返されませんでした。*MS Query* であれば問題ありません。
 
 * ACI0105022 UUIDフィールドに対し，空の文字列を含むコレクションを使用してORDAクエリを実行した場合，間違った結果が返されました。
 
