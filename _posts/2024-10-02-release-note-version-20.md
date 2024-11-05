@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2024-11-04 08:00:00
+date: 2024-11-05 08:00:00
 categories: 修正リスト
 tags: "20.5"
-build: 101535
+build: 101537
 version: "20.5"
 permalink: /2024/276/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105179 トランザクション中に更新されたエンティティがメモリから解放されるタイミングでアプリケーションがクラッシュすることがありました。
 
 * ACI0105064 SOAPサーバーがXML External Entity (XXE) 攻撃の標的になる可能性がありました。
 
