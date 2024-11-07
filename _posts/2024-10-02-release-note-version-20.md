@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2024-11-05 08:00:00
+date: 2024-11-06 08:00:00
 categories: 修正リスト
 tags: "20.5"
-build: 101537
+build: 101539
 version: "20.5"
 permalink: /2024/276/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105176 Write Proエリアの編集中に違うヘッダーの同じ相対位置にカーソルを移動してテキストを挿入した場合，*On Selection Change* イベントが発生しませんでした。
+
+* ACI0104443 セレクション型リストボックスセルの*On Before Keystroke* イベントで`FILTER KEYSTROKE("")`を実行した場合，セルの内容が消去されました。
 
 * ACI0105179 トランザクション中に更新されたエンティティがメモリから解放されるタイミングでアプリケーションがクラッシュすることがありました。
 
