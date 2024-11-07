@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-11-05 08:00:00
+date: 2024-11-07 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100283
+build: 100286
 version: "20r6"
 permalink: /2024/304/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104443 セレクション型リストボックスセルの*On Before Keystroke* イベントで`FILTER KEYSTROKE("")`を実行した場合，セルの内容が消去されました。
 
 * ACI0105179 トランザクション中に更新されたエンティティがメモリから解放されるタイミングでアプリケーションがクラッシュすることがありました。
 
