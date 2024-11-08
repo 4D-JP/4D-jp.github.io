@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2024-11-06 08:00:00
+date: 2024-11-07 08:00:00
 categories: 修正リスト
 tags: "20.5"
-build: 101539
+build: 101545
 version: "20.5"
 permalink: /2024/276/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0104992 `QR REPORT`の画面にストラクチャとバーチャルストラクチャの表示名が混在していました。
 
 * ACI0105176 Write Proエリアの編集中に違うヘッダーの同じ相対位置にカーソルを移動してテキストを挿入した場合，*On Selection Change* イベントが発生しませんでした。
 
