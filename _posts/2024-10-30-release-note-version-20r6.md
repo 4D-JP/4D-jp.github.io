@@ -4,7 +4,7 @@ title: "4D 20r6 修正リスト"
 date: 2024-11-07 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100286
+build: 100287
 version: "20r6"
 permalink: /2024/304/:slug/
 ---
