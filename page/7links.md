@@ -117,6 +117,8 @@ type: page
     * [DevQuickOpen](https://github.com/cannonsmith/DevQuickOpen) Xcodeの"素早く開く"やSpotlightのようにフォーム・メソッド・クラスを開く
     * [DevSync](https://github.com/cannonsmith/DevSync)
     
+* [Christophe Flament](https://github.com/flamentch)
+    
 * [Dani Beaubien](https://github.com/dbeaubien)
     * [4D Github API](https://github.com/dbeaubien/4D-Github-API-Component)
     * [Manifest Generator](https://github.com/dbeaubien/Manifest-Generator-4D-Component)
