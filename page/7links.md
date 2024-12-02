@@ -99,7 +99,6 @@ type: page
     * [AJUI_Banner](https://ch-fr.4d.com/ajuibanner-15/)
     * [AJUI_FloatingLabel](https://ch-fr.4d.com/ajuifloatinglabel)
     * [AJUI_Breadcrumb](https://ch-fr.4d.com/ajuibreadcrumb)
-    * [AJUI_Progressbar](https://github.com/AJARProject/AJUI_Progressbar)
     * [AJUI_Library](https://github.com/AJARProject/AJUI_Library)
     * [AJUI_macros](https://github.com/AJARProject/AJUI_macros)
     * [AJUI_Animate](https://github.com/AJARProject/AJUI_Animate)
