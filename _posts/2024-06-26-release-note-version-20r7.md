@@ -1,16 +1,19 @@
 ---
 layout: fix
 title: "4D 20r7 修正リスト"
-date: 2024-12-04 08:00:00
+date: 2024-12-08 08:00:00
 categories: 修正リスト
 tags: 20r7
-build: 100252
+build: 100262
 version: "20r7"
 permalink: /2024/274/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105249 Mac版のみ。リードオンリーのドキュメントを`WP EXPORT DOCUMENT`で上書き更新した場合，ファイルのリードオンリーステータスが失われました。
+
 
 * ACI0105267 "webadmin"権限がなくても，[*WebAdmin* サーバー](https://developer.4d.com/docs/ja/Admin/webAdmin/)の`$catalog/$all`/`$catalog/{tableName}`エンドポイントにアクセスすることができ，`Open datastore`もエラーを返しませんでした。ACI0104937が修正されたことによる副作用です。
 
