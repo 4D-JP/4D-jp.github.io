@@ -23,7 +23,7 @@ BOMをセットしたくないようなときは、文字セット名称に続�
 
 例えば、次のようなコードを実行したとき、それぞれBOM付き、BOM無しになります。
 
-```4dm
+```4d
 //BOMが付くケース
 var $fileObject : 4D.File
 $fileObject:=File(Folder(fk desktop folder).path+"test1.csv")  //デスクトップに作成
@@ -43,7 +43,7 @@ $fileObject.setText(""; "utf-8")
 
 例えば、次のコードは必要な行数分ループしてCSVファイルを生成しますが、BOMを自力で先頭に付けています。
 
-```4dm
+```4d
 /*
 	4D 19R7以降で動作
 */
