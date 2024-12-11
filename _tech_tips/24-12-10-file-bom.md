@@ -67,7 +67,7 @@ $options.breakModeWrite:="crlf"  //改行はCR/LFにする
 $f:=$csv.open($options)  //追加書き込みでファイルハンドルを生成
 //mark: 行を追加書き込みする
 For ($i; 1; 10)
-	$text:="カラム１番め\tカラム２番め\tカラム３番め\r"  //１行分のテキスト
-	$f.writeLine($text)  //テキストの書き込み
+	$text:="カラム１番め\tカラム２番め\tカラム３番め"  //１行分のテキスト（改行コードは不要）
+	$f.writeLine($text)  //テキストの書き込み（改行コードはここで自動で付加される）
 End for 
 ```
