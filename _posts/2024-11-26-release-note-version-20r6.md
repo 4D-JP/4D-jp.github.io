@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r6 修正リスト"
-date: 2024-12-15 08:00:00
+date: 2024-12-18 08:00:00
 categories: 修正リスト
 tags: 20r6
-build: 100350
+build: 100353
 version: "20r6"
 permalink: /2024/331/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105141 Mac版のみ。QUICネットワークレイヤーのみ。クライアントをしばらく放置した場合，サーバーがクラッシュすることがありました。
 
 * ACI0105302 クライアント/サーバー版のみ。HTTPクライアントの`readwriteTimeout`プロパティが無視されました。[テレメトリ](https://developer.4d.com/docs/ja/Admin/data-collect)サーバーがビジー状態の場合，アプリケーションがフリーズする恐れがあります。テレメトリのHTTP送信がコオペラティブプロセスで実行されている点も問題です。
 
