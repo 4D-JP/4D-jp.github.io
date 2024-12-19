@@ -302,4 +302,4 @@ permalink: /202/:slug/
 
 * ACI0102024 データファイルの暗号化を有効にした場合，レコードが登録されていないテーブルにはMSCが警告マークを表示しました。
 
-* ACI0099336 クライアント/サーバー版のみ。`SET AUTOMATIC RELATION`の設定が
+* ACI0099336 クライアント/サーバー版のみ。`SET AUTOMATIC RELATION`の設定が`RELATE ONE SELECTION`に反映されませんでした。ORDAのリレーション属性は問題ありません。
