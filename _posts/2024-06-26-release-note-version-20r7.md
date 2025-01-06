@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D 20r7 修正リスト"
-date: 2024-12-19 08:00:00
+date: 2025-01-05 08:00:00
 categories: 修正リスト
 tags: 20r7
 build: 100302
