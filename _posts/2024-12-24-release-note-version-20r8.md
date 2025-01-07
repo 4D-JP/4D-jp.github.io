@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-01-05 08:00:00
+date: 2025-01-06 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100051
+build: 100056
 version: "20r8"
 permalink: /2024/360/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105293 サーバーに接続した場合，ツールバーの「MSC」ボタンが「管理画面」ボタンに変化しますが，ボタンタイトルが途切れて表示されました。ACI0105245が修正されたことによる副作用です。
 
 * ACI0105307 AST（抽象構文木）インタープリターのみ。 `Character code` `Substring` `Length`などのパラメーターを省略した場合，アプリケーションがクラッシュしました。
 
