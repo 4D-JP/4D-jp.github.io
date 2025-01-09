@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D 20r7 修正リスト"
-date: 2025-01-06 08:00:00
+date: 2025-01-08 08:00:00
 categories: 修正リスト
 tags: 20r7
 build: 100302
@@ -11,6 +11,14 @@ permalink: /2024/274/:slug/
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105329 `VP PRINT`に定数の`vk workbook`または`-2`を渡してスプレッドシートを印刷することができませんでした。*SpreadJS* のアップデートが影響しているようです。
+
+* ACI0105318 [`VP CREATE TABLE`](https://developer.4d.com/docs/ja/ViewPro/commands/vp-create-table)を実行した場合，`cs.TableColumns`は未知のクラスであるというエラーが返されました。
+
+**注記**: ドキュメントの例題も[修正](https://github.com/doc4d/docs/commit/977aa62ee9e75d8876a13cf8161430337a89350e)されました。20r8ではクラス名が`TableColumns`ではなく`TableColumn`となります。20r7以前では，クラスを使わずに`New object`でオプションを渡してください。
+
+* ACI0105309 スケーラブルWebセッションと強制ログインモードが有効化されたアプリケーションの`/4DACTION/`リクエストから呼び出されたWebセッションで`Session.setPrivileges()`を使用した場合，セッションの権限が設定されませんでした。
 
 * ACI0105293 サーバーに接続した場合，ツールバーの「MSC」ボタンが「管理画面」ボタンに変化しますが，ボタンタイトルが途切れて表示されました。ACI0105245が修正されたことによる副作用です。
 
