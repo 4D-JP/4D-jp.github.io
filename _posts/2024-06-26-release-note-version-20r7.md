@@ -12,6 +12,10 @@ permalink: /2024/274/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0105340 チェコ語のシステムでアプリケーションが起動できませんでした。
+
+* ACI0105325 トルコ語のシステムでコンパイラーが起動できませんでした。
+
 * ACI0105329 `VP PRINT`に定数の`vk workbook`または`-2`を渡してスプレッドシートを印刷することができませんでした。*SpreadJS* のアップデートが影響しているようです。
 
 * ACI0105318 [`VP CREATE TABLE`](https://developer.4d.com/docs/ja/ViewPro/commands/vp-create-table)を実行した場合，`cs.TableColumns`は未知のクラスであるというエラーが返されました。
