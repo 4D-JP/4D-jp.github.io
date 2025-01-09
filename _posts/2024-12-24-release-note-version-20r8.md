@@ -50,20 +50,20 @@ permalink: /2024/360/:slug/
 
 **注記**: 以下のコマンドは`()`をつけて呼び出すことができます。
 
-* `Current process name`
-* `Call chain`
-* `WEB Server list`
-* `Get group access`
-* `Form Get color scheme`
-* `Web progress`
-* `Last errors`
-* `Web event`
-* `Web form`
-
-以下のコマンドは`()`をつけて呼び出すことができません。
-
-* `True`
-* `False`
+	* `Current process name`
+	* `Call chain`
+	* `WEB Server list`
+	* `Get group access`
+	* `Form Get color scheme`
+	* `Web progress`
+	* `Last errors`
+	* `Web event`
+	* `Web form`
+	
+	以下のコマンドは`()`をつけて呼び出すことができません。
+	
+	* `True`
+	* `False`
 
 * ACI0104592 コンパイラーパスを「すべて定義させる」に設定し，三項演算の三項に文字列同士の比較演算（`<` `<=` `>` `>=` `=` `#`）を記述した場合，コンパイルエラーになりました。
 
