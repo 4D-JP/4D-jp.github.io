@@ -1,16 +1,26 @@
 ---
 layout: fix
 title: "4D 20r7 修正リスト"
-date: 2025-01-08 08:00:00
+date: 2025-01-09 08:00:00
 categories: 修正リスト
 tags: 20r7
-build: 100302
+build: 100311
 version: "20r7"
 permalink: /2024/274/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105343 ビルドキーの`DatabaseToEmbedInClientWinFolder`または`DatabaseToEmbedInClientMacFolder`を使用してクライアントアプリケーションをビルドした場合，クライアントアプリケーション起動時にライセンス入力を求められました。
+
+**注記**: ビルドキーの`DatabaseToEmbedInClientWinFolder`または`DatabaseToEmbedInClientMacFolder`を使用してクライアントアプリケーションをビルドし，かつ，*Default Data* を組み込んだ場合，*Unlimited Desktop* ライセンスが必要です。データファイル無しでクライアントアプリケーションを起動した場合（コマンドラインインターフェースの`--dataless`を含む），*Unlimited Desktop* ライセンスは必要ありません。
+
+* ACI0105287 Mac版のみ。`SET WINDOW RECT`でウィンドウを別のモニターに移動した場合，ウィンドウがフォーカスを失い，非アクティブになりました。ACI0099153が修正されたことによる副作用です。
+
+**注記**: 同じ仕組みが`DRAG WINDOW`でも使用されています。修正により，ウィンドウを跨ったドラッグ操作ができるようになりました。
+
+* ACI0105223 Mac版のみ。管理画面の「メンテナンス」タブのボタンタイトルがドイツ語とポルトガル語では正しく表示されませんでした。
 
 * ACI0105340 チェコ語のシステムでアプリケーションが起動できませんでした。
 
