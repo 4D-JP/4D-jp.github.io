@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-01-08 08:00:00
+date: 2025-01-09 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100079
+build: 100083
 version: "20r8"
 permalink: /2024/360/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105325 トルコ語のシステムでコンパイラーが起動できませんでした。
+
+* ACI0104816 Write Proドキュメントのテーブルの後に改行コードが存在する場合，`WP Get elements`と`wk type table`で取得したテキストに余計な改行コードが含まれました。
+
+**注記**: `WP Get elements`ではなく`WP INSERT DOCUMENT`が修正されました。
 
 * ACI0105320 *Visual Studio Code* で複数のプロセスをデバッグ中に「続行」アクションを実行した場合，そのプロセスは再開されますが，残りのプロセスは終了しました。
 
