@@ -1,16 +1,30 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-01-09 08:00:00
+date: 2025-01-13 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100083
+build: 100094
 version: "20r8"
 permalink: /2024/360/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105345 Windows版のみ。クライアント側でWebサーバーを運用した場合，ネットワークエラーによってアプリケーションがクラッシュすることがありました。
+
+**注記**: ネットワークエラー自体を回避することはできませんが，クラッシュを回避するための対策が施されました。
+
+* ACI0105277 フォームをデザインモードで開いた場合，フォームオブジェクトの表示に時間がかかりました。
+
+* ACI0105343 ビルドキーの`DatabaseToEmbedInClientWinFolder`または`DatabaseToEmbedInClientMacFolder`を使用してクライアントアプリケーションをビルドした場合，クライアントアプリケーション起動時にライセンス入力を求められました。
+
+**注記**: ビルドキーの`DatabaseToEmbedInClientWinFolder`または`DatabaseToEmbedInClientMacFolder`を使用してクライアントアプリケーションをビルドし，かつ，*Default Data* を組み込んだ場合，*Unlimited Desktop* ライセンスが必要です。データファイル無しでクライアントアプリケーションを起動した場合（コマンドラインインターフェースの`--dataless`を含む），*Unlimited Desktop* ライセンスは必要ありません。
+
+* ACI0105251 コンポーネントから関連メニューバーの設定されたフォームを表示した場合，アプリケーションのメニューバーが切り替わりませんでした。
+
+* ACI0105135 計算属性のORDAクエリに[名前付き引数](https://developer.4d.com/docs/ja/Concepts/parameters#オブジェクトプロパティを名前付き引数として使用する)を使用した場合，[`Function query`](https://developer.4d.com/docs/ja/ORDA/ordaClasses#function-query-attributename)にパラメーター値が渡されませんでした。プレースホルダーを使用すれば問題ありません。
 
 * ACI0105325 トルコ語のシステムでコンパイラーが起動できませんでした。
 
