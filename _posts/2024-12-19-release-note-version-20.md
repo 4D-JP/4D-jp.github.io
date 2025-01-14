@@ -1,16 +1,24 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2025-01-09 08:00:00
+date: 2025-01-13 08:00:00
 categories: 修正リスト
 tags: "20.5"
-build: 101658
+build: 101661
 version: "20.5"
 permalink: /2024/335/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105345 Windows版のみ。クライアント側でWebサーバーを運用した場合，ネットワークエラーによってアプリケーションがクラッシュすることがありました。
+
+**注記**: ネットワークエラー自体を回避することはできませんが，クラッシュを回避するための対策が施されました。
+
+* ACI0105251 コンポーネントから関連メニューバーの設定されたフォームを表示した場合，アプリケーションのメニューバーが切り替わりませんでした。
+
+* ACI0105135 計算属性のORDAクエリに[名前付き引数](https://developer.4d.com/docs/ja/Concepts/parameters#オブジェクトプロパティを名前付き引数として使用する)を使用した場合，[`Function query`](https://developer.4d.com/docs/ja/ORDA/ordaClasses#function-query-attributename)にパラメーター値が渡されませんでした。プレースホルダーを使用すれば問題ありません。
 
 * ACI0105339 Windows版のみ。*On Web Authentication* データベースメソッドでデバッガを起動した場合，アプリケーションがフリーズしました。
 
