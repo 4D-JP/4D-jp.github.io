@@ -1,16 +1,30 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-01-13 08:00:00
+date: 2025-01-15 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100094
+build: 100101
 version: "20r8"
 permalink: /2024/360/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105343 ビルドキーの`DatabaseToEmbedInClientWinFolder`または`DatabaseToEmbedInClientMacFolder`を使用してクライアントアプリケーションをビルドした場合，クライアントアプリケーション起動時にライセンス入力を求められました。
+
+**注記**: ビルドキーの`DatabaseToEmbedInClientWinFolder`または`DatabaseToEmbedInClientMacFolder`を使用してクライアントアプリケーションをビルドし，かつ，*Default Data* を組み込んだ場合，*Unlimited Desktop* ライセンスが必要です。データファイル無しでクライアントアプリケーションを起動した場合（コマンドラインインターフェースの`--dataless`を含む），*Unlimited Desktop* ライセンスは必要ありません。
+
+* ACI0105308 フランス語版のみ。ようこそ画面のフランス語が正しくありませんでした。*Ouvrir ou Créer un projet d'application* の"C"は小文字で表記するべきです。
+
+* ACI0105300 Windows版のみ。クライアント自動アップデート中に*update.win.4darchive* ファイルが書き換わりました。ACI0104623が修正されたことによる副作用のようです。
+
+* ACI0105141 Mac版のみ。QUICネットワークレイヤーのみ。クライアントをしばらく放置した場合，サーバーがクラッシュすることがありました。
+
+* ACI0104856 Write Proドキュメントにセルのマージされたテーブルが表示されている場合，水平ルーラーの左マーカーが間違った位置に表示されました。
+
+* ACI0104743 コンポーネントのクラス名をエクスプローラーで編集することができました。入力を確定すると，エラーメッセージが表示され，クラス名が復元されます。
 
 * ACI0105345 Windows版のみ。クライアント側でWebサーバーを運用した場合，ネットワークエラーによってアプリケーションがクラッシュすることがありました。
 
