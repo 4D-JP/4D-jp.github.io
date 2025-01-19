@@ -1,12 +1,12 @@
 ---
 layout: fix
 title: "4D 20r7 修正リスト"
-date: 2025-01-09 08:00:00
+date: 2025-01-19 08:00:00
 categories: 修正リスト
 tags: 20r7
 build: 100311
 version: "20r7"
-permalink: /2024/274/:slug/
+permalink: /2025/19/:slug/
 ---
 
 **バージョン**: {{page.version}}  
