@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-01-15 08:00:00
+date: 2025-01-19 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100101
+build: 100104
 version: "20r8"
 permalink: /2024/360/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105310 *Contents* フォルダーが存在するバンドル形式のコンポーネントがLSPサーバーにロードされませんでした。
 
 * ACI0105343 ビルドキーの`DatabaseToEmbedInClientWinFolder`または`DatabaseToEmbedInClientMacFolder`を使用してクライアントアプリケーションをビルドした場合，クライアントアプリケーション起動時にライセンス入力を求められました。
 
