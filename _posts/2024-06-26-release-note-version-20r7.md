@@ -213,7 +213,7 @@ permalink: /2024/274/:slug/
 
 * ACI0105158 空のテーブルに対してLooker REST APIでアクセスした場合，スキーマが返されませんでした。
 
-* ACI0105068 Qodly Studioのみ。データモデルクラスのメンバー関数とは違い，シングルトンのメンバー関数は`filePath` `startingLine` `endingLine`などのメタ情報がサーバーから返されませんでした。
+* ACI0105068 *Qodly Studio* のみ。データモデルクラスのメンバー関数とは違い，シングルトンのメンバー関数は`filePath` `startingLine` `endingLine`などのメタ情報がサーバーから返されませんでした。
 
 * ACI0105157 Looker REST API（`$format=looker`）とドット記法でオブジェクト・BLOB・ピクチャ型のリレーション属性にアクセスした場合，エラー`400`ではなく`[]`が返されました。
 

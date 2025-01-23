@@ -250,7 +250,7 @@ ORDER BY FORMULA([Movimenti];[Clienti]RagioneSociale+[Fornitori]RagioneSociale;<
 
 * ACI0104542 `entity.save()`したリレーション属性のＮフィールドに`Null`を代入することができませんでした。１フィールドがプライマリーキーでなければ問題ありません。
 
-* ACI0104755 Qodly Studioの*$shared* 仮想フォルダーが*webAdmin* ポートを介して配信されませんでした。ACI0104622が修正されたことによる副作用です。起動時に*webAdmin* サーバーを開始していれば，問題ありません。
+* ACI0104755 *Qodly Studio* の*$shared* 仮想フォルダーが*webAdmin* ポートを介して配信されませんでした。ACI0104622が修正されたことによる副作用です。起動時に*webAdmin* サーバーを開始していれば，問題ありません。
 
 * ACI0104290 ビット`4` (`16`) を指定せずに *Current process debug log* を有効化した場合，プラグインコマンドの呼び出しでアプリケーションがクラッシュしました。さきに全プロセスのデバッグログを有効化していれば問題ありません。
 

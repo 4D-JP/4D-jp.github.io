@@ -135,6 +135,6 @@ Qodlyのパラメーター区切りはカンマ記号です。
 
 ## その他
 
-* Qodly for 4DとQodly Cloudの*WebForm* は互換性があるので，一方のQodly Studioから他方のQodly Studioにコピー＆ペーストすることができます。
+* Qodly for 4DとQodly Cloudの*WebForm* は互換性があるので，一方のQodly Studioから他方の*Qodly Studio* にコピー＆ペーストすることができます。
 
 * 4DのストラクチャとQodlyのモデルは同じものではありません。しかし，相違点には法則性があるので，変換プログラムを開発できるかもしれません。
