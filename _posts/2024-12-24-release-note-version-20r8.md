@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-01-23 08:00:00
+date: 2025-01-26 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100133
+build: 100138
 version: "20r8"
 permalink: /2024/360/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105352 Windows版のみ。CEF版Webエリアにキーストークを監視するタイプのWebアプリケーションを表示した場合，パフォーマンスに問題がありました。
+
+**注記**: CEFのバージョンアップに伴い，過去バージョン向けのパッチが無効になりました。修正により，[*4DCEFParameters* ファイル](https://blog.4d.com/ja/custom-parameters-for-initializing-embedded-web-area/)を使用せず，非公式の`WA SET PREFERENCES (...;200;False)`を実行することで，`disable-gpu-compositing`を無効化し，パフォーマンスを改善することができます。とはいえ，これは特定のWebアプリを対象とした特別な措置であり，通常は使用するべきではありません。
+
+* ACI0105323 `entitySelection.attributeName`をエンティティのエイリアス属性として宣言した場合，リレーション属性のすべてのエンティティが返されませんでした。
 
 * ACI0105373 Windows版のみ。フォームにスプリッターが配置されている場合，リサイズ操作で移動したオブジェクトが新しい位置に引っかかってしまうことがありました。ウィンドウを小さくした直後によく現象が発生します。
 
