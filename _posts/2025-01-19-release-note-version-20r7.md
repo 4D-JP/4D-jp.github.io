@@ -1,16 +1,26 @@
 ---
 layout: fix
 title: "4D 20r7 修正リスト"
-date: 2025-01-27 08:00:00
+date: 2025-02-02 08:00:00
 categories: 修正リスト
 tags: 20r7
-build: 100340
+build: 100344
 version: "20r7"
 permalink: /2025/19/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105351 オブジェクト型フィールドのプロパティにクラシック言語とオブジェクト記法で代入した値が保存されませんでした。クラシック言語と`OB SET`，あるいはORDAとオブジェクト記法を使用すれば，問題なく値が保存されます。
+
+```4d
+CREATE RECORD([Table_1])
+[Table_1]JSon1:={}
+SAVE RECORD([Table_1])
+[Table_1]JSon1.Monaco:=True
+SAVE RECORD([Table_1])
+```
 
 * ACI0105352 Windows版のみ。CEF版Webエリアにキーストークを監視するタイプのWebアプリケーションを表示した場合，パフォーマンスに問題がありました。
 
