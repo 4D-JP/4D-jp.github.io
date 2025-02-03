@@ -16,9 +16,9 @@ permalink: /2025/19/:slug/
 
 ```4d
 CREATE RECORD([Table_1])
-[Table_1]JSon1:={}
+[Table_1]obj:={}
 SAVE RECORD([Table_1])
-[Table_1]JSon1.Monaco:=True
+[Table_1]obj.Monaco:=True
 SAVE RECORD([Table_1])
 ```
 
