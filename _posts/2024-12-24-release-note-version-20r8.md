@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-02-04 08:00:00
+date: 2025-02-05 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100157
+build: 100161
 version: "20r8"
 permalink: /2024/360/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105392 クライアント/サーバー版のみ。`EXECUTE ON CLIENT`プロセスが動作している状態でデザインモードのメニューからクライアントを終了した場合，アプリケーションがクラッシュしました。
 
 * ACI0105398 Windows版のみ。`PRINT SETTINGS`を実行した場合，*Windows Server 2025* の新しい印刷設定ダイアログが表示されました。従来の印刷設定ダイアログが表示されるべきです。
 
