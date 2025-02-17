@@ -1,16 +1,32 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2025-02-12 08:00:00
+date: 2025-02-16 08:00:00
 categories: 修正リスト
 tags: "20.6"
-build: 101687
+build: 101703
 version: "20.6"
 permalink: /2025/43/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105351 オブジェクト型フィールドのプロパティにクラシック言語とオブジェクト記法で代入した値が保存されませんでした。クラシック言語と`OB SET`，あるいはORDAとオブジェクト記法を使用すれば，問題なく値が保存されます。
+
+```4d
+CREATE RECORD([Table_1])
+[Table_1]obj:={}
+SAVE RECORD([Table_1])
+[Table_1]obj.Monaco:=True
+SAVE RECORD([Table_1])
+```
+
+* ACI0105300 Windows版のみ。クライアント自動アップデート中に*update.win.4darchive* ファイルが書き換わりました。ACI0104623が修正されたことによる副作用のようです。
+
+* ACI0105391 自動アクションが設定されていないタブコントロールやボタングリッドに`OBJECT SET ACTION`で「ページ移動」アクションを設定しても無視されました。
+
+* ACI0105348 ツールボックスの「リスト」「ヘルプTips」「メニュー」のいずれかを編集中に別アプリケーションのウィンドウを最前面に表示した場合，編集した内容が失われました。
 
 * ACI0105323 `entitySelection.attributeName`をエンティティのエイリアス属性として宣言した場合，リレーション属性のすべてのエンティティが返されませんでした。
 
@@ -19,8 +35,6 @@ permalink: /2025/43/:slug/
 * ACI0105398 Windows版のみ。`PRINT SETTINGS`を実行した場合，*Windows Server 2025* の新しい印刷設定ダイアログが表示されました。従来の印刷設定ダイアログが表示されるべきです。
 
 * ACI0105374 アプリケーションモードのスプラッシュスクリーンに*.svg* 形式の新しい画像ではなく，*.png* 形式の古い画像が表示されました。
-
-	Application mode Logo 4D in splash screen: an old application.png is displayed instead of the application.svg		4D Staff	Not published
 
 * ACI0105373 Windows版のみ。フォームにスプリッターが配置されている場合，リサイズ操作で移動したオブジェクトが新しい位置に引っかかってしまうことがありました。ウィンドウを小さくした直後によく現象が発生します。
 
