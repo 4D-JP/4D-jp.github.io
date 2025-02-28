@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-02-26 08:00:00
+date: 2025-02-27 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100218
+build: 100223
 version: "20r8"
 permalink: /2024/360/:slug/
 ---
