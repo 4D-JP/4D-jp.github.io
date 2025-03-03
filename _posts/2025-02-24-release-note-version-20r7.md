@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r7 修正リスト"
-date: 2025-02-24 08:00:00
+date: 2025-03-02 08:00:00
 categories: 修正リスト
 tags: 20r7
-build: 100360
+build: 100376
 version: "20r7"
 permalink: /2025/55/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105437 QUICネットワークレイヤーのみ。SQLクエリでレコードをロックしたプロセスが延期されている状態でクライアントを強制終了した場合，レコードがロックされたままになりました。
 
 * ACI0105413 Mac版Apple Siliconターゲットのコンパイルモードのみ。	`Try(expression)`でコード実行がアボートされました。
 
