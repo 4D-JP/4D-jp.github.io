@@ -18,7 +18,7 @@ permalink: /2025/66/:slug/
 
 * ACI0105467 View Proエリアのツールバーまたはリボンで罫線を除去することができませんでした。
 
-**注記**: [SpreadJS `16.2.6`の不具合](https://developer.mescius.com/spreadjs/docs/rnotes/release-notes-for-version-1700)です。SpreadJSをアップデートする代わりにJavaScriptをバッチすることで問題が修正されました。
+**注記**: [SpreadJS `16.2.6`の不具合](https://developer.mescius.com/spreadjs/docs/rnotes/release-notes-for-version-1700)です。SpreadJSをアップデートする代わりにJavaScriptをパッチすることで問題が修正されました。
 
 * ACI0105434 クイックレポートのステータスエディターに同じＮ対１リレーションフィールドが繰り返し表示されました。
 
