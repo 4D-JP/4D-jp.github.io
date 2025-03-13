@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-03-11 08:00:00
+date: 2025-03-12 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100257
+build: 100261
 version: "20r8"
 permalink: /2024/360/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105476 データファイルの外にピクチャ型またはBLOB型のフィールドを保存できなかった場合，アプリケーションがクラッシュしました。ACI0105050が修正されたことによる副作用のようです。
+
+* ACI0105472 `VP Convert from 4D View`で大量の4D ViewスプレッドシートをView Proに変換したり，`VP IMPORT FROM OBJECT`でオブジェクトから展開した場合，かなりの時間がかかりました）。
 
 * ACI0105475 Mac版のみ。コンポーネントをビルドした場合，*info.plist* ファイルの内容が書き換わりませんでした。
 
