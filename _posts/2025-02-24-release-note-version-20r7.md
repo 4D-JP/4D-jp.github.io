@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D 20r7 Hotfix 2 修正リスト"
-date: 2025-03-12 08:00:00
+date: 2025-03-17 08:00:00
 categories: 修正リスト
 tags: 20r7 hotfix
 build: 100390
