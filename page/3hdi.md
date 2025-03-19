@@ -9,6 +9,13 @@ type: page
 * content
 {:toc}
 
+## 20r7 # {#v20r7}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビュープロパティ v2**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_4DWP_ViewSettingsV2.zip)<span id="20-7-1"></span><br />
+4D Write Pro で、表組みの境界線について、部分的または完全に不可視の場合に点線で示すための新しい標準アクション [`visibleTableBorders`](https://doc.4d.com/4Dv20R7/4D/20-R7/Using-4D-Write-Pro-standard-actions.200-7239619.ja.html#7267693) が追加されました。<br />
+この HDI は、指定できるビュープロパティの最新のまとめです。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 表組みの境界線を仮表示する](https://blog.4d.com/ja/4d-write-pro-make-hidden-table-borders-visible-temporarily/)<br />
+
 ## 20r6 # {#v20r6}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**PDF/A3添付ファイルの抽出**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_ExtractPDFattachments.zip)<span id="20-6-8"></span><br />
