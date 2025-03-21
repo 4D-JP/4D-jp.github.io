@@ -1,16 +1,34 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-03-18 08:00:00
+date: 2025-03-20 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100292
+build: 100297
 version: "20r8"
 permalink: /2024/360/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105504 サーバーからチャンク形式のレスポンスが返された場合，`4D.HTTPRequest`がエラー`23`を返すことがありました。チャンク形式のレスポンスは，接続毎リクエスト数の上限に達した場合に返されます。
+
+* ACI0105500 ライセンス画面に表示されるWebライセンスの名称が商品名と合っていませんでした。
+
+|旧称|変更後|
+|:-:|:-:|
+|4D Web Server|4D Web Application|
+|4D Web Server - Local|4D Web Application - Local|
+|4D Web Server - 1 Connection|4D Web Application - 1 Connection|
+|4D Web Server for 4D Client|4D Web Application for 4D Client|
+|4D WebServices Server|4D Web Services|
+|4D WebServices Server - Local |4D Web Services - Local|
+|4D WebServices Server - 1 Connection|4D Web Services - 1 Connection|
+
+* ACI0105427 バイナリモードで設定したフォームオブジェクトの「必須入力」プロパティは，プロジェクト変換時に解除されますが，影響を受けたフォームオブジェクトの情報が変換ログに記録されませんでした。
+
+* ACI0105495 `4D.HTTPRequest.new()`のオプションに渡された`Accept-Encoding`ヘッダーが無視され，常に`gzip, deflate`が送信されました。`HTTP Request`コマンドであればヘッダーをカスタマイズすることができます。
 
 * ACI0105469 エンティティセレクション型リストボックスのプロパティ（カレントの項目・カレントの項目の位置・選択された項目）にフォームクラスのプロパティが設定されている場合，フォームクラスのインスタンスが作成されませんでした。
 
