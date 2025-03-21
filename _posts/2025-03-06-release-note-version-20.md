@@ -1,10 +1,10 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2025-03-18 08:00:00
+date: 2025-03-20 08:00:00
 categories: 修正リスト
 tags: "20.6"
-build: 101765
+build: 101770
 version: "20.6"
 permalink: /2025/66/:slug/
 ---
@@ -12,6 +12,23 @@ permalink: /2025/66/:slug/
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
 
+* ACI0105496 Windows版のみ。リストボックスの選択行に組み込まれたコンボボックスの表示が正しくありませんでした。ハイライト行は濃いブルーで表示されているのに，タイトル文字がブラックで表示されるため，判読が困難でした。
+
+* ACI0105427 バイナリモードで設定したフォームオブジェクトの「必須入力」プロパティは，プロジェクト変換時に解除されますが，影響を受けたフォームオブジェクトの情報が変換ログに記録されませんでした。
+
+* ACI0105495 `4D.HTTPRequest.new()`のオプションに渡された`Accept-Encoding`ヘッダーが無視され，常に`gzip, deflate`が送信されました。`HTTP Request`コマンドであればヘッダーをカスタマイズすることができます。
+
+* ACI0105500 ライセンス画面に表示されるWebライセンスの名称が商品名と合っていませんでした。
+
+|旧称|変更後|
+|:-:|:-:|
+|4D Web Server|4D Web Application|
+|4D Web Server - Local|4D Web Application - Local|
+|4D Web Server - 1 Connection|4D Web Application - 1 Connection|
+|4D Web Server for 4D Client|4D Web Application for 4D Client|
+|4D WebServices Server|4D Web Services|
+|4D WebServices Server - Local |4D Web Services - Local|
+|4D WebServices Server - 1 Connection|4D Web Services - 1 Connection|
 
 * ACI0105459 macOS Sonomaのみ。ウィンドウがフォーカスされていない時のデフォルトボタンのタイトルカラーが正しくありませんでした，
 
