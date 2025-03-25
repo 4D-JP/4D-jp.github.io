@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-03-23 08:00:00
+date: 2025-03-24 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100303
+build: 100309
 version: "20r8"
 permalink: /2024/360/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105506 `SELECT LOG FILE`でジャーナルファイルを選択した場合，*backup.4DSettings* ファイル内の`JournalFileEnabled`プロパティが更新されませんでした。
 
 * ACI0105368 Linux版のみ。Qodly Serverで`WebSocketServer`を使用した場合，アプリケーションがクラッシュしました。
 
