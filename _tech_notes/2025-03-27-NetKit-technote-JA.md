@@ -348,7 +348,7 @@ $status:=$office365.mail.deleteFolder($folderId)
 ## 追加の資料
 4D NetKit およびその全てのクラスとコマンドについてのドキュメンテーションは、4D GitHub リポジトリにあります。4D NetKit を使用してGoogle やMicrosoft 、あるいは他の標準のOAuth2Provider クラスへと接続するためのその他の例題は、Fabrice Mainguené が作成した4D blog 記事やサンプルデータベースで見つけることができます。どちらのリソースも、以下のリンクから見つけることができます:
 
-https://github.com/4d/4D-NetKit
+https://github.com/4d/4D-NetKit<br />
 https://blog.4d.com/tag/4d-netkit/
 
 
