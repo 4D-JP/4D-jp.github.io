@@ -6,14 +6,12 @@ categories: 仕様
 tags: programming
 ---
 
-4D NetKitを使用してEメールとフォルダを管理する ([原文]((https://kb.4d.com/assetid=79587)）
+4D NetKitを使用してEメールとフォルダを管理する 原題: [Managing Email and Folders with 4D NetKit](https://kb.4d.com/assetid=79587)
 
 <!--more-->
 
-
 # 4D NetKitを使用してEメールとフォルダを管理する
-原文:Trina Nguyen
-(https://kb.4d.com/assetid=79587)
+原文: [Trina Nguyen](https://kb.4d.com/assetid=79587)
 
 
 
