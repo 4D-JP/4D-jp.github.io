@@ -1,9 +1,13 @@
 ---
-layout: fix
+layout: technote
+original_title: Managing Email and Folders with 4D NetKit
 title: "4D NetKitを使用してEメールとフォルダを管理する"
+author: Trina Nguyen
+position: Technical Services Engineer
 date: 2025-03-27 08:00:00
-categories: 仕様
-tags: programming netkit google microsoft365
+categories: テックノート
+tags: development programming netkit google microsoft365
+version: v20r6
 ---
 
 4D NetKitを使用してEメールとフォルダを管理する 原題: [Managing Email and Folders with 4D NetKit](https://kb.4d.com/assetid=79587)
