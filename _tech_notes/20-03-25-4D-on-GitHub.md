@@ -10,7 +10,12 @@ tags: development
 version: v18
 ---
 
-Githubと4D ([原文](http://library.4d-japan.com/00_xfer/00_tn/）
+Githubと4D 原題: [4D on GitHub](https://kb.4d.com/assetid=78277)
+
+# Githubと4D
+原文: [Ayoub Khali](https://kb.4d.com/assetid=78277)
+
+<i class="fa fa-download" aria-hidden="true"></i> [my_4D_project.4dbase.zip](https://github.com/4D-JP/HDI/releases/download/TN-19-11/my_4D_project.4dbase.zip)
 
 <!--more-->
 
