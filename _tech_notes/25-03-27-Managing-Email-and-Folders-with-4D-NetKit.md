@@ -3,7 +3,7 @@ layout: fix
 title: "4D NetKitを使用してEメールとフォルダを管理する"
 date: 2025-03-27 08:00:00
 categories: 仕様
-tags: programming
+tags: programming netkit google microsoft365
 ---
 
 4D NetKitを使用してEメールとフォルダを管理する 原題: [Managing Email and Folders with 4D NetKit](https://kb.4d.com/assetid=79587)
@@ -34,7 +34,7 @@ tags: programming
 
 
 ## 概要
-インターネットがより安全なセキュリティプロトコルへと移行するに従い、認証システムも同じようにセキュリティが厳しくなっていきます。OAuth 2.0 は、かつてのユーザーネームとパスワードのプロトコルと比べて、その代替として、あるいはより安全なログイン方法として導入されました。OAuth 2.0 ではユーザーが何度も何度もログインをするのではなく、トークンと呼ばれるものを使用して他のWebアプリからユーザー情報を取得し、それを用いて自身のプラットフォームで認証を行います。4D 19 R3 で導入された4D NetKitは、4D アプリケーションとサードパーティWeb サービスおよびそのAPI 間のOAuth 2.0 接続を管理することでこれらのトークンを取得します。このテクニカルノートでは4D NetKit の基礎と、これを使用してどのようにGoogle のGmail およびMicrosoft のOffice365 へと接続するかについて説明していきます。
+インターネットがより安全なセキュリティプロトコルへと移行するに従い、認証システムも同じようにセキュリティが厳しくなっていきます。OAuth 2.0 は、かつてのユーザーネームとパスワードのプロトコルと比べて、その代替として、あるいはより安全なログイン方法として導入されました。OAuth 2.0 ではユーザーが何度も何度もログインをするのではなく、トークンと呼ばれるものを使用して他のWebアプリからユーザー情報を取得し、それを用いて自身のプラットフォームで認証を行います。4D 19 R3 で導入された4D NetKitは、4D アプリケーションとサードパーティWeb サービスおよびそのAPI 間のOAuth 2.0 接続を管理することでこれらのトークンを取得します。このテクニカルノートでは4D NetKit の基礎と、これを使用してどのようにGoogle のGmail およびMicrosoft のMicrosoft 365 へと接続するかについて説明していきます。
 
 
 ## 導入
@@ -49,13 +49,13 @@ OAuth 2.0 では2種類のトークンを使用します。アクセストーク
 
 
 ## 4D NetKitを使用するための必要前提条件
-まず初めに、最新のバージョンの4D がインストールされていること、そしてその4D にWeb アプリケーションエクスパンションライセンスがインストールされていることが必要になります。これはトークンをリッスン、もしくは受信するために必要になるものです。このテックノートで触れている手法や、添付されているサンプルデータベースは、4D 20 R6 以降を対象としています。<br />
+まず初めに、最新のバージョンの4D がインストールされていることが必要です。（4D 19 R7以前の場合、Webトークンをリッスン、もしくは受信するために4D Web Application Expansionライセンスがインストールされていることが必要になります。）このテックノートで触れている手法や、添付されているサンプルデータベースは、4D 20 R6 以降を対象としています。<br />
 
 4D NetKit を使い始めるためには、その前にクライアントIDとクライアントシークレットが設定されている必要があります。添付のサンプルデータベースにはデモ目的にすでに登録されたアプリケーションが含まれています。しかしながら、デベロッパーはご自身のプログラムのために、ご自身のアプリケーションを登録する必要があります。このテックノートでは、Google のGmail API とMicrosoft のOffice365 API においてそれをどのように設定して行ったらいいかについて触れていきます。<br />
 
 ## クライアントシークレットを取得するためにGoogleアプリケーションに登録する
 Google アプリケーションからのクライアントシークレットを取得するためには、以下の手順にしたがって下さい:<br />
-1. https://console.developers.google.com/ にログインします。<br />
+1. [https://console.developers.google.com/](https://console.developers.google.com/) にログインします。<br />
 2. 左側のサイドバーメニューの“API とサービス”から、<b>認証情報</b>をクリックします。<br />(画像の中では"Credentials")<br />
 ![001.png](/images/TechNote/4D-NetKit/24-13_4DNetKit.pdf-image-001.png)<br />
 3. <b>プロジェクトの作成</b>をクリックしてプロジェクトを作成し始めます。<br />
@@ -75,8 +75,7 @@ Google アプリケーションからのクライアントシークレットを�
 
 ここからは、デベロッパーは自分のプログラムが実際に公開になった際にはどのように振る舞うのかをテストできる"テスト"状態にしておくことを選択できます。ただし、アプリケーションが機密情報を扱うスコープ、つまりユーザーのアカウントからEメールを送信したり受信したりする権限を使用する場合、デベロッパーは自身のアプリケーションをGoogle の検証プロセスを通す準備をする必要があります。この点についての詳細は以下のページにあります:
 
-OAuth App Verification Help Center<br />https://support.google.com/cloud/answer/13463073
-
+[OAuth App Verification Help Center](https://support.google.com/cloud/answer/13463073)<br />
 
 ## 接続を確立してアクセストークンを取得する
 Google からアクセストークンを取得して接続を確立するためには、デベロッパーはまず4D NetKit OAuth2Provider オブジェクトを作成し、そこに前段の章で取得したクライアントシークレットを入力する必要があります。
@@ -215,7 +214,7 @@ NetKit を使用してへと接続しようとする前に、アプリケーシ�
 ここで、Microsoft にアプリケーションを登録する際にはいくつかの必要前提条件があることに注意して下さい。デベロッパーは登録がアクティブであるAzure アカウントを持っている必要があり、そのアカウントは少なくともCloud Application Administrator である必要があり、またテナントを設定するためのクイックスタートが完了している必要があります。
 これらのステップを全て行うためには、以下のリンクのMicrosoft からの手順書に従って下さい:
 
-https://learn.microsoft.com/ja-jp/entra/identity-platform/quickstart-register-app?tabs=certificate
+[https://learn.microsoft.com/ja-jp/entra/identity-platform/quickstart-register-app?tabs=certificate](https://learn.microsoft.com/ja-jp/entra/identity-platform/quickstart-register-app?tabs=certificate)
 
 
 ## 接続を確立してアクセストークンを取得する
@@ -253,7 +252,7 @@ Form.oAuth2.getToken()
 
 
 ## Microsoft Graph APIを使用してEメールを送信、受信、削除する
-まず最初に、上記のOAuth2 情報を使用してMicrosoft365 オブジェクトを作成します。Google オブジェクト同様、Office365 もmailType にMIME とJMAP を指定することができます。しかしながら、Office365 には追加のメールタイプが存在し、それがデフォルトのオプションの"Micrrosoft" です。
+まず最初に、上記のOAuth2 情報を使用してOffice365 オブジェクトを作成します。Google オブジェクト同様、Office365 もmailType にMIME とJMAP を指定することができます。しかしながら、Office365 には追加のメールタイプが存在し、それがデフォルトのオプションの"Micrrosoft" です。
 
 ```4d
 $office365:=cs.NetKit.Office365.new($oAuth2; New object("mailType"; "Microsoft"))
@@ -309,7 +308,7 @@ $office365.mail.delete($mail.id)
 End for each
 ```
 
-注意: Google とは異なり、Microsoft の回復可能な削除アイテムフォルダからはメールを完全に削除することはできない可能性があります。詳細な情報については、以下のリンクのMicorosoft のドキュメンテーションWeb サイトをご覧下さい: https://learn.microsoft.com/en-us/graph/api/message-delete?view=graph-rest-1.0&tabs=http 
+注意: Google とは異なり、Microsoft の回復可能な削除アイテムフォルダからはメールを完全に削除することはできない可能性があります。詳細な情報については、以下のリンクのMicorosoft のドキュメンテーションWeb サイトをご覧下さい: [https://learn.microsoft.com/en-us/graph/api/message-delete?view=graph-rest-1.0&tabs=http](https://learn.microsoft.com/en-us/graph/api/message-delete?view=graph-rest-1.0&tabs=http) 
 
 
 
@@ -346,8 +345,8 @@ $status:=$office365.mail.deleteFolder($folderId)
 ## 追加の資料
 4D NetKit およびその全てのクラスとコマンドについてのドキュメンテーションは、4D GitHub リポジトリにあります。4D NetKit を使用してGoogle やMicrosoft 、あるいは他の標準のOAuth2Provider クラスへと接続するためのその他の例題は、Fabrice Mainguené が作成した4D blog 記事やサンプルデータベースで見つけることができます。どちらのリソースも、以下のリンクから見つけることができます:
 
-https://github.com/4d/4D-NetKit<br />
-https://blog.4d.com/tag/4d-netkit/
+[https://github.com/4d/4D-NetKit](https://github.com/4d/4D-NetKit)<br />
+[https://blog.4d.com/tag/4d-netkit/](https://blog.4d.com/tag/4d-netkit/)
 
 
 ## 結論
