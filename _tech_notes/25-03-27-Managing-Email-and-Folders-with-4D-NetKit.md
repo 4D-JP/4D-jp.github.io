@@ -13,8 +13,7 @@ tags: programming netkit google microsoft365
 # 4D NetKitを使用してEメールとフォルダを管理する
 原文: [Trina Nguyen](https://kb.4d.com/assetid=79587)
 
-
-
+<i class="fa fa-download" aria-hidden="true"></i> [testNetkit.4dbase.zip](https://github.com/4D-JP/HDI/releases/download/TN-24-13/testNetkit.4dbase.zip)
 
 ## 目次<br />
 * [概要](#概要)<br />
