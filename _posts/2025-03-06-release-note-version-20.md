@@ -1,10 +1,10 @@
 ---
 layout: fix
-title: "4D 20 修正リスト"
+title: "4D 20 Hotfix 2 修正リスト"
 date: 2025-03-30 08:00:00
 categories: 修正リスト
-tags: "20.6"
-build: 101785
+tags: 20.6 hotfix
+build: 101786
 version: "20.6"
 permalink: /2025/66/:slug/
 ---
