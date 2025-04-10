@@ -11,6 +11,10 @@ type: page
 
 ## 20r7 # {#v20r7}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ウィンドウのタイトルバーにアイコンを表示させる**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_SetWindowDocumentIcon.zip)<span id="20-7-3"></span><br />
+ウィンドウのタイトルバーに任意のアイコンを表示させたり、ドキュメントと紐づけることでファイルパスを表示できるようにしたりする新しいコマンドが追加されました: [`SET WINDOW DOCUMENT ICON`](https://doc.4d.com/4dv20R/help/command/ja/page1840.html)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [各ウィンドウに異なるアイコンを定義する](https://blog.4d.com/ja/define-a-different-icon-for-each-window/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: セクションとサブセクションの削除・リセット**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_4DWP_ManageSections.zip)<span id="20-7-2"></span><br />
 4D Write Pro のセクションとサブセクションをコマンドにより削除したり、属性をリセットしたりすることができます: [`WP DELETE SECTION`](https://developer.4d.com/docs/ja/WritePro/commands/wp-delete-section#wp-delete-section)、[`WP DELETE SUBSECTION`](https://developer.4d.com/docs/ja/20-R7/WritePro/commands/wp-delete-subsection)、[`WP RESET ATTRIBUTES`](https://developer.4d.com/docs/ja/20-R7/WritePro/commands/wp-reset-attributes)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: セクションとサブセクション管理用の新機能](https://blog.4d.com/ja/4d-write-pro-mastering-sections-and-subsections-with-new-functions/)<br />
