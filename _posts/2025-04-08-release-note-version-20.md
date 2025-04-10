@@ -1,13 +1,15 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2025-04-08 08:00:00
+date: 2025-04-09 08:00:00
 categories: 修正リスト
 tags: "20.6"
-build: 101794
+build: 101796
 version: "20.6"
 permalink: /2025/98/:slug/
 ---
+
+* ACI0105045 NetKitのプロバイダーオブジェクトの`tokenExpiration`が未定義だった場合，`getToken()`がアクセストークンを更新しませんでした。OAuthトークンの期限が渡されなかったときはトークンを更新するべきです。
 
 * ACI0103694 クライアント/サーバー版のみ。4D Serverの*On SQL Authentication* データベースメソッドを`TRACE`でデバッグすることができませんでした。
 
