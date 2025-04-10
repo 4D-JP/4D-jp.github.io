@@ -11,6 +11,10 @@ type: page
 
 ## 20r7 # {#v20r7}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: セクションとサブセクションの削除・リセット**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_4DWP_ManageSections.zip)<span id="20-7-2"></span><br />
+4D Write Pro のセクションとサブセクションをコマンドにより削除したり、属性をリセットしたりすることができます: [`WP DELETE SECTION`](https://developer.4d.com/docs/ja/WritePro/commands/wp-delete-section#wp-delete-section)、[`WP DELETE SUBSECTION`](https://developer.4d.com/docs/ja/20-R7/WritePro/commands/wp-delete-subsection)、[`WP RESET ATTRIBUTES`](https://developer.4d.com/docs/ja/20-R7/WritePro/commands/wp-reset-attributes)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: セクションとサブセクション管理用の新機能](https://blog.4d.com/ja/4d-write-pro-mastering-sections-and-subsections-with-new-functions/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビュープロパティ v2**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_4DWP_ViewSettingsV2.zip)<span id="20-7-1"></span><br />
 4D Write Pro で、表組みの境界線について、部分的または完全に不可視の場合に点線で示すための新しい標準アクション [`visibleTableBorders`](https://doc.4d.com/4Dv20R7/4D/20-R7/Using-4D-Write-Pro-standard-actions.200-7239619.ja.html#7267693) が追加されました。<br />
 この HDI は、指定できるビュープロパティの最新のまとめです。<br />
