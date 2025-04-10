@@ -10,7 +10,7 @@ tags: development programming netkit google microsoft365
 version: v20r6
 ---
 
-4D NetKitを使用してEメールとフォルダを管理する 原題: [Managing Email and Folders with 4D NetKit](https://kb.4d.com/assetid=79587)
+原題: [Managing Email and Folders with 4D NetKit](https://kb.4d.com/assetid=79587)
 
 <!--more-->
 
