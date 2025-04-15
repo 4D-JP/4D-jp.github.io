@@ -1,6 +1,6 @@
 ---
 layout: fix
-title: "4D 20 Hotfix 2 修正リスト"
+title: "4D 20.6 Hotfix 2 修正リスト"
 date: 2025-03-30 08:00:00
 categories: 修正リスト
 tags: 20.6 hotfix
