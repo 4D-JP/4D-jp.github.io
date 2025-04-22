@@ -11,6 +11,11 @@ type: page
 
 ## 20r7 # {#v20r7}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**プロセスとセッション情報の取得**](HDI_ImproveProcessAndSessionCommands.zip)<span id="20-7-4"></span><br />
+プロセスとセッションの情報を取得するための新しいコマンドが実装されました: [`Process info`](https://developer.4d.com/docs/ja/commands/process-info)、 [`Session info`](https://developer.4d.com/docs/ja/commands/session-info)<br />
+また、既存の [`Process activity`](https://developer.4d.com/docs/ja/commands/process-activity) コマンドの機能も強化されました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [プロセスとセッションを管理するための機能強化](https://blog.4d.com/ja/exciting-enhancements-for-managing-processes-and-sessions/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**ウィンドウのタイトルバーにアイコンを表示させる**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_SetWindowDocumentIcon.zip)<span id="20-7-3"></span><br />
 ウィンドウのタイトルバーに任意のアイコンを表示させたり、ドキュメントと紐づけることでファイルパスを表示できるようにしたりする新しいコマンドが追加されました: [`SET WINDOW DOCUMENT ICON`](https://doc.4d.com/4dv20R/help/command/ja/page1840.html)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [各ウィンドウに異なるアイコンを定義する](https://blog.4d.com/ja/define-a-different-icon-for-each-window/)<br />
