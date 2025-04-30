@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-04-29 08:00:00
+date: 2025-04-30 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100344
+build: 100345
 version: "20r8"
 permalink: /2025/114/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105604 20r5でコンパイルしたプロジェクトを20r7以降で開いた場合，`SVG_Define_solidColor`がエラーを返しました。
 
 * ACI0105557 特定のWebサービスに対し，`HTTP Get`でアクセスした場合，「ソケットストリームが終了しました」というエラーが返されました。
 
