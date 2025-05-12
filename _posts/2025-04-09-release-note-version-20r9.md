@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D 20r9 修正リスト"
-date: 2025-05-06 08:00:00
+date: 2025-05-11 08:00:00
 categories: 修正リスト
 tags: 20r9
-build: 100079
+build: 100080
 version: "20r9"
 permalink: /2025/99/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105512 ストラクチャーエディターに回帰的なリレーション設定が描画されないことがありました。線がテーブルの背後に描画されているようです。
+
+![relation_line](https://github.com/user-attachments/assets/d982abf1-32bc-49bb-bd46-78b07df83e92)
 
 * ACI0105596 旧式の型宣言コマンドをオブジェクトメソッドに記述した場合，警告が表示されませんでした。
 
