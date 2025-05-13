@@ -16,7 +16,7 @@ tags: clientserver programming
 新旧コマンドの対比については，下記の表を参考にしてください。
 
 |_O_GET SERIAL INFORMATION|License info|
-|:-:|:-:|
+|:-|:-|
 |key|`info.key`|
 |user|`info.userName`|
 |company|`info.companyName`|
@@ -26,7 +26,7 @@ tags: clientserver programming
 `product`に返されるライセンス名とシリアル情報は下記のとおりです。サーバー（4D Server）のユーザー数は，クライアント数ではなく，サーバー本体の情報（常に`1`）です。
 
 |name| id |
-|:-:|:-:|
+|:-|:-|
 |4D|808464433|
 |4D Volume Desktop|808464437|
 |4D Server|808464440|
