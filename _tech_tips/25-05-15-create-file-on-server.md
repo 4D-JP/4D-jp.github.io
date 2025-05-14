@@ -1,6 +1,6 @@
 ---
 layout: technote
-title: "BOM付きファイル"
+title: "クライアント側で読み込みしたファイルをサーバー上に保存"
 position: 20250514001
 date: 2025-05-15 00:00:00
 categories: ヒント
