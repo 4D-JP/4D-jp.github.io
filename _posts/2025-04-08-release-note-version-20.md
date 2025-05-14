@@ -1,11 +1,11 @@
 ---
 layout: fix
-title: "4D 20 修正リスト"
-date: 2025-05-08 08:00:00
+title: "4D 20.7 修正リスト"
+date: 2025-05-13 08:00:00
 categories: 修正リスト
-tags: "20.6"
+tags: "20.7"
 build: 101823
-version: "20.6"
+version: "20.7"
 permalink: /2025/98/:slug/
 ---
 
