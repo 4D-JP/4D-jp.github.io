@@ -4,7 +4,7 @@ title: "4D 20.7 修正リスト"
 date: 2025-05-13 08:00:00
 categories: 修正リスト
 tags: "20.7"
-build: 101823
+build: 101824
 version: "20.7"
 permalink: /2025/98/:slug/
 ---
