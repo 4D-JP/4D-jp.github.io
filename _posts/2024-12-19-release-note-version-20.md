@@ -40,7 +40,7 @@ permalink: /2024/335/:slug/
 
 * ACI0105135 計算属性のORDAクエリに[名前付き引数](https://developer.4d.com/docs/ja/Concepts/parameters#オブジェクトプロパティを名前付き引数として使用する)を使用した場合，[`Function query`](https://developer.4d.com/docs/ja/ORDA/ordaClasses#function-query-attributename)にパラメーター値が渡されませんでした。プレースホルダーを使用すれば問題ありません。
 
-* ACI0105339 Windows版のみ。*On Web Authentication* データベースメソッドでデバッガを起動した場合，アプリケーションがフリーズしました。
+* ACI0105339 Windows版のみ。*On Web Authentication* データベースメソッドでデバッガーを起動した場合，アプリケーションがフリーズしました。
 
 * ACI0105298	`4D.WebSocketServer`で`wss:`プロトコルを使用した場合，WebSocketクライアント毎に`1`メッセージしか処理できませんでした。
 

@@ -40,7 +40,7 @@ permalink: /179/:slug/
 SET DATABASE PARAMETER(Direct2D status; Direct2D disabled)
 ```
 
-* ACI0102983 `TRACE`またはプレークポイントでデバッガが起動しないことがありました。
+* ACI0102983 `TRACE`またはプレークポイントでデバッガーが起動しないことがありました。
 
 * ACI0102899 `VP Convert to picture`でレンジを指定した場合，背景が正しく変換されないことがありました。
 
@@ -64,7 +64,7 @@ SET DATABASE PARAMETER(Direct2D status; Direct2D disabled)
 
 **注記**: 修正により，[`SQL SET OPTION:`](https://doc.4d.com/4Dv19/4D/19.1/SQL-SET-OPTION.301-5653382.ja.html)に新しいオプション*SQL data chunk size*が追加されました。デフォルト値は`8000`です。Sybase ODBC driverは，断片化された*PutData*命令に対応していないため，バイナリデータを一気に送信する必要があります。Oracle・MySQL・Microsoft SQL Serverなどのデータベース管理システムでは，特に設定を変更する必要はないはずです。
 
-* ACI0102959 デバッガが接続されていないサーバーで直接RESTリクエストを処理した場合，予備プロセスおよび10分後に消滅するRESTプロセスが作成されました。
+* ACI0102959 デバッガーが接続されていないサーバーで直接RESTリクエストを処理した場合，予備プロセスおよび10分後に消滅するRESTプロセスが作成されました。
 
 **注記**: [`Open datastore`](https://developer.4d.com/docs/ja/API/DataStoreClass.html)を使用せずにREST APIをダイレクトに呼び出した場合，セッション識別子（クッキー）は送信されません。修正により，そのような場合は新規RESTプロセスを作成するのではなく，予備プロセスが利用されるようになりました。
 
