@@ -1,11 +1,11 @@
 ---
 layout: fix
-title: "4D 20r8 修正リスト"
-date: 2025-05-15 08:00:00
+title: "4D 20r8 Hotfix 1 修正リスト"
+date: 2025-05-16 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100351
-version: "20r8"
+build: 100353
+version: 20r8 hotfix
 permalink: /2025/114/:slug/
 ---
 
