@@ -11,7 +11,11 @@ type: page
 
 ## 20r7 # {#v20r7}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**プロセスとセッション情報の取得**](HDI_ImproveProcessAndSessionCommands.zip)<span id="20-7-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**OutgoingMessageクラス**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_OutGoingMessageClass.zip)<span id="20-7-5"></span><br />
+新しく追加された[OutgoingMessageクラス](https://developer.4d.com/docs/ja/API/OutgoingMessageClass) によって、RESTサーバーを介したブラウザーとのデータのやりとりが一層簡単になりました。また、[onHTTPget](https://developer.4d.com/docs/ja/20-R8/ORDA/ordaClasses#onhttpget-キーワード) キーワードの実装により、クラス関数を GET動詞で呼び出せるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [OutgoingMessageクラスでWebアプリケーションに力を](https://blog.4d.com/ja/energize-your-web-applications-with-the-outgoingmessage-class/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**プロセスとセッション情報の取得**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_ImproveProcessAndSessionCommands.zip)<span id="20-7-4"></span><br />
 プロセスとセッションの情報を取得するための新しいコマンドが実装されました: [`Process info`](https://developer.4d.com/docs/ja/commands/process-info)、 [`Session info`](https://developer.4d.com/docs/ja/commands/session-info)<br />
 また、既存の [`Process activity`](https://developer.4d.com/docs/ja/commands/process-activity) コマンドの機能も強化されました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [プロセスとセッションを管理するための機能強化](https://blog.4d.com/ja/exciting-enhancements-for-managing-processes-and-sessions/)<br />
