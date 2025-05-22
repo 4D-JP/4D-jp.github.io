@@ -9,6 +9,13 @@ type: page
 * content
 {:toc}
 
+## 20r8 # {#v20r8}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 文書の署名と検証**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_Sign4DWPdocuments.zip)<span id="20-8-1"></span><br />
+4D Write Pro ドキュメントに署名を追加する方法と、その署名を検証する方法を紹介します。<br />
+※ 少しの修正で、ほかのタイプの文書の署名にも応用が可能です。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - 文書に署名して保護](https://blog.4d.com/ja/4d-write-pro-sign-and-secure-documents/)<br />
+
 ## 20r7 # {#v20r7}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**OutgoingMessageクラス**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_OutGoingMessageClass.zip)<span id="20-7-5"></span><br />
