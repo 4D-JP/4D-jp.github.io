@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "Qodly Studioのライセンス"
-date: 2025-05-12 08:00:00
+date: 2025-05-22 08:00:00
 categories: 仕様
 version: 20r8
 tags: orda qodly projectmode license clientserver programming
