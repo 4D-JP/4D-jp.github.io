@@ -64,7 +64,7 @@ Developer Bundleは，プロジェクトモードを想定した新しいオプ�
 
 最後に、パートナーは[14日評価版のサーバーアプリケーションをビルドすることができます](https://blog.4d.com/ja/building-evaluation-applications/)。この設定でビルドしたアプリケーションは、初回の起動時にインターネット経由で評価ライセンス（ライセンスコード:`EVSE`）をダウンロードし、評価期間中は通常版の4D Serverと同じように動作します。
 
-|License|Qodly Studio for 4D|Qodly Studio for Server|Test Qodly|Deploy Qodly|
+|License|Qodly Studio for 4D|Qodly Studio for 4D Server|Test Qodly|Deploy Qodly|
 |:-:|:-:|:-:|:-:|:-:|
 |`PNDS`|||||
 |`PNDP`|✅| |✅||
