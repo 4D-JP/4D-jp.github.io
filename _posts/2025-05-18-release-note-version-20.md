@@ -1,13 +1,17 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2025-05-20 08:00:00
+date: 2025-05-22 08:00:00
 categories: 修正リスト
 tags: "20.7"
-build: 101829
+build: 101831
 version: "20.7"
 permalink: /2025/138/:slug/
 ---
+
+* ACI0105658 Mac版のみ。メニューおよびサブメニューのアイコンがRetinaディスプレイの高解像度やダークモードに対応していませんでした。
+
+**注記**: アイコンファイル名の[スケール係数](https://developer.4d.com/docs/ja/FormEditor/pictures.html#スケール係数)（例: `@2x`）や[ダークモード](https://developer.4d.com/docs/ja/FormEditor/pictures.html#ダークモード-macos-のみ)（例: `_dark@2x`）指定が正しく反映されるようになりました。
 
 * ACI0103920 Mac版のみ。*Modal form dialog box* に表示されたマルチスタイル入力オブジェクトのコンテキストメニューで「カラー」または「背景色」の「その他…」を選択してカラーピッカーを使用した場合，フォントカラーや背景色を変更することができませんでした。ウィンドウがモーダルダイアログでなければ問題ありません。
 
