@@ -9,6 +9,18 @@ type: page
 * content
 {:toc}
 
+## 20r8 # {#v20r8}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**TCPConnectionクラス**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_TCPConnection.zip)<span id="20-8-2"></span><br />
+4D 20 R8 では、新たに [TCPConnectionクラス](https://developer.4d.com/docs/ja/API/TCPConnectionClass) が追加されました。オブジェクト指向のシンタックスを活用し、非同期ネットワーク接続処理をサポートしているこの最新のクラスは、廃止予定である 4D Internet Commands の代替機能を提供するものです。このリリースでは、TCPクライアント機能が利用できるようになり、外部サーバーに接続してシームレスにデータを交換できるようになりました。<br />
+※ R9 で追加された [TCPListnerクラス](https://developer.4d.com/docs/ja/API/TCPListenerClass) を用いた [インターネットコマンドを使用しないバージョン](https://github.com/miyako/HDI_TCPConnection/tree/main) (英語) もぜひご確認ください。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [TCP接続を実行する新しいクラス](https://blog.4d.com/ja/new-class-to-perform-tcp-connections/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 文書の署名と検証**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_Sign4DWPdocuments.zip)<span id="20-8-1"></span><br />
+4D Write Pro ドキュメントに署名を追加する方法と、その署名を検証する方法を紹介します。<br />
+※ 少しの修正で、ほかのタイプの文書の署名にも応用が可能です。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - 文書に署名して保護する](https://blog.4d.com/ja/4d-write-pro-sign-and-secure-documents/)<br />
+
 ## 20r7 # {#v20r7}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**OutgoingMessageクラス**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_OutGoingMessageClass.zip)<span id="20-7-5"></span><br />
