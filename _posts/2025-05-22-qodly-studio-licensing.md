@@ -65,11 +65,11 @@ tags: orda qodly projectmode license clientserver programming
 
 なお，4D Serverの買い切りまたはサブスクリプションライセンス（ライセンスコード`4USE`）には，サーバー/クライアント環境の開発ライセンスが含まれているので，このライセンスがアクティブであれば，4D Serverで*Qodly Studio* を使用することができます。
 
-|ライセンス|Qodly Studio|Qodly|
-|:-:|:-:|:-:|
-|`PNDS`|||
-|`PNDP`|✅||
-|`PNDB`|✅||
-|`PNSS`||✅|
-|`4USE`|✅|✅|
+|ライセンス|Qodly Studio|Qodly Studio on Server|Qodly|
+|:-:|:-:|:-:|:-:|
+|`PNDS`||||
+|`PNDP`|✅|||
+|`PNDB`|✅|||
+|`PNSS`|||✅|
+|`4USE`||✅|✅|
 
