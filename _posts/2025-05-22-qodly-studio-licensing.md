@@ -77,13 +77,13 @@ Developer Bundleは，プロジェクトモードを想定した新しいオプ�
 ### Silver Partner Licenses
 
 * Develop (開発): `PNDP`
-* Text (検証): `PNSS`
+* Test (検証): `PNSS`
 * Evaluate (評価): `EVSE`
 * Deploy (運用): `4USE` or `4RSE`
 
 ### Gold Partner Licenses
 
 * Develop (開発): `PNDB` or `PNDP`
-* Text (検証): `PNDB` or `PNSS`
+* Test (検証): `PNDB` or `PNSS`
 * Evaluate (評価): `EVSE`
 * Deploy (運用): `4USE` or `4RSE`
