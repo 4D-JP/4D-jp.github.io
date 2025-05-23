@@ -74,18 +74,16 @@ Developer Bundleは，プロジェクトモードを想定した新しいオプ�
 |`4USE`| |✅|✅|✅|
 |`4RSE`| |✅|✅|✅|
 
-### 典型的なオペレーション（シルバー）
+### Silver Partner Licenses
 
-* `PNDP`で開発
-* `PNSS`で検証
-* `EVSE`で評価
-* `4USE`または`4RSE`で運用
-* `4USE`または`4RSE`で保守
+* Develop (開発): `PNDP`
+* Text (検証): `PNSS`
+* Evaluate (評価): `EVSE`
+* Deploy (運用): `4USE` or `4RSE`
 
-### 典型的なオペレーション（ゴールド）
+### Gold Partner Licenses
 
-* `PNDB`で開発
-* `PNDB`で検証
-* `EVSE`で評価
-* `4USE`または`4RSE`で運用
-* `4USE`または`4RSE`で保守
+* Develop (開発): `PNDB` or `PNDP`
+* Text (検証): `PNDB` or `PNSS`
+* Evaluate (評価): `EVSE`
+* Deploy (運用): `4USE` or `4RSE`
