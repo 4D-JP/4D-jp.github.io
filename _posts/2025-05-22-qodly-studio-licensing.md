@@ -51,11 +51,11 @@ tags: orda qodly projectmode license clientserver programming
 
 3番のDeveloper Bundleは，プロジェクトモードを想定した新しいオプションです。プロジェクトモードでは，リアルタイムでサーバー側のストラクチャファイルを同時に改修するのではなく，Gitなどのバージョン管理システムを活用し，チームのメンバーが開発したコードを共有リポジトリに結合する「継続的インテグレーション」方式が推奨されています。サーバー/クライアントの場合，2台のマシンを使用する代わりに，[同じマシン上でサーバーとクライアントの両方](https://developer.4d.com/docs/ja/Desktop/clientServer#4d-と-4d-server-の同じマシン上での使用)を起動し，ローカル接続でデザインモードを使用します（リモートクライアントもデザインモードにアクセスできますが，[開発モード](https://blog.4d.com/ja/developing-concurrently-on-4d-server-in-project-mode/)でない限り，コードを編集することはできません）。Developer Bundleで4D Serverには，2ユーザーまで接続することができます。開発用のPCまたはMac1台にライセンスを登録します。
 
-https://download.4d.com/Documents/Website/PartnerProgram/JP/PartnerProgram_Brochure_jp.pdf
+<i class="fa fa-external-link" aria-hidden="true"></i> [ブローシャー](https://download.4d.com/Documents/Website/PartnerProgram/JP/PartnerProgram_Brochure_jp.pdf)
 
 ## まとめ
 
-開発ツールの*Qodly Studio* は，4Dまたは4D Serverで使用することができます。4Dの場合，バージョン20 R2以降，4D Serverの場合，バージョン20 R8以降が対応しています。ただし，**プロジェクトモード限定**です。
+開発ツールの*Qodly Studio* は，4Dまたは4D Serverで使用することができます。4Dの場合，バージョン20 R2以降，4D Serverの場合，バージョン20 R8以降が対応しています。ただし，プロジェクトモード限定です。
 
 4Dで*Qodly Studio* を使用するためのライセンスは，パートナープログラムのシルバーおよびゴールドメンバーの特典である4D Developer Professional（ライセンスコード`PNDP`）に含まれています。
 
