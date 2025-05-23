@@ -49,7 +49,7 @@ tags: orda qodly projectmode license clientserver programming
 
 2番のTeam Developer Professionalは，複数の開発者がクライアントからサーバーに接続し，それぞれのマシンからリアルタイムで同時にアプリケーションを開発するようなバイナリモードのチーム体制に向いています。クライアント/サーバー環境でコンパイルを実行することができます。開発用のPCまたはMacサーバー1台にライセンスを登録します。
 
-3番のDeveloper Bundleは，プロジェクトモードを想定した新しいオプションです。プロジェクトモードでは，リアルタイムでサーバー側のストラクチャファイルを同時に改修するのではなく，Gitなどのバージョン管理システムを活用し，チームのメンバーが開発したコードを共有リポジトリに結合する「継続的インテグレーション」方式が推奨されています。サーバー/クライアントの場合，2台のマシンを使用する代わりに，[同じマシン上でサーバーとクライアントの両方](https://developer.4d.com/docs/ja/Desktop/clientServer#4d-と-4d-server-の同じマシン上での使用)を起動し，ローカル接続でデザインモードを使用します（リモートクライアントもデザインモードにアクセスできますが，[開発モード](https://blog.4d.com/ja/developing-concurrently-on-4d-server-in-project-mode/)でない限り，コードを編集することはできません）。Developer Bundleの4D Serverには，2ユーザーまで接続することができます。開発用のPCまたはMac1台にライセンスを登録します。
+3番のDeveloper Bundleは，プロジェクトモードを想定した新しいオプションです。プロジェクトモードでは，リアルタイムでサーバー側のストラクチャファイルを同時に改修するのではなく，Gitなどのバージョン管理システムを活用し，チームのメンバーが開発したコードを共有リポジトリに結合する「継続的インテグレーション」方式が推奨されています。サーバー/クライアントの場合，2台のマシンを使用する代わりに，[同じマシン上でサーバーとクライアントの両方](https://developer.4d.com/docs/ja/Desktop/clientServer#4d-と-4d-server-の同じマシン上での使用)を起動し，ローカル接続でデザインモードを使用します（リモートクライアントもデザインモードにアクセスできますが，[開発モード](https://blog.4d.com/ja/developing-concurrently-on-4d-server-in-project-mode/)でない限り，コードを編集することはできません）。Developer Bundleの4D Serverには，2ユーザーまで接続することができます。開発用のサーバー兼クライアントPCまたはMac1台にライセンスを登録します。
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [ブローシャー](https://download.4d.com/Documents/Website/PartnerProgram/JP/PartnerProgram_Brochure_jp.pdf)
 
