@@ -78,7 +78,7 @@ Developer Bundleは，プロジェクトモードを想定した新しいオプ�
 
 * `PNDP`で開発
 * `PNSS`で検証
-* `EVSE`で評価版をデプロイ
+* `EVSE`で評価
 * `4USE`または`4RSE`で運用
 * `4USE`または`4RSE`で保守
 
@@ -86,6 +86,6 @@ Developer Bundleは，プロジェクトモードを想定した新しいオプ�
 
 * `PNDP` `PNDB`で開発
 * `PNSS` `PNDB`で検証
-* `EVSE`で評価版をデプロイ
+* `EVSE`で評価
 * `4USE`または`4RSE`で運用
 * `4USE`または`4RSE`で保守
