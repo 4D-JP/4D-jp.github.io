@@ -37,13 +37,13 @@ tags: orda qodly projectmode license clientserver programming
 
 4D Developer Bundleは，プロジェクトモード向けに組み直された新しい開発ツールセットです。
 
-従来，ゴールドメンバーは，
+ゴールドメンバーは，パートナープログラム入会時または更新時に
 
 1. Developer Professional 3本
 2. Team Developer Professional 3ユーザー
 3. Developer Bundle 1本
 
-のいずれかを選択することができました。
+いずれかの特典を選択することができます。
 
 1番のDeveloper Professionalは，複数の開発者が別々のプロジェクトまたはプラットフォームを担当するようなチーム体制に向いています。開発用のPCまたはMac3台に1本ずつライセンスを登録します。
 
