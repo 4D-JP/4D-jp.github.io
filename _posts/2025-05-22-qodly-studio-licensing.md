@@ -63,7 +63,7 @@ tags: orda qodly projectmode license clientserver programming
 
 パートナープログラムには，テスト用の4D Server（ライセンスコード`PNSS`）も含まれています。サーバーアプリケーション（*Qodly* を含む）をテストするためのライセンスですが，このライセンスで開発ツールの*Qodly Studio* を使用したり，開発したサーバーアプリケーションを配付・運用したりすることはできないことに留意してください。そのためには，4D Serverの買い切りまたはサブスクリプションライセンスを購入してください。
 
-なお，4D Serverの買い切りまたはサブスクリプションライセンス（ライセンスコード`4USE`）には，サーバー/クライアント環境の開発ライセンスが含まれているので，このライセンスがアクティブであれば，4D Serverで*Qodly Studio* を使用することができます。
+なお，4D Serverの買い切りまたはサブスクリプションライセンス（ライセンスコード`4USE`）には，サーバー/クライアント環境の開発ライセンスが含まれているので，バージョン条件が満たされていれば，4D Serverで*Qodly Studio* を使用することができます（20 R8以降でライセンスを更新していれば，メンテナンスが終了した後も*Qodly Studio* を使い続けることができます）。
 
 |ライセンス|Qodly Studio|Qodly Studio on Server|Qodly|
 |:-:|:-:|:-:|:-:|
@@ -72,4 +72,3 @@ tags: orda qodly projectmode license clientserver programming
 |`PNDB`|✅|✅||
 |`PNSS`| | |✅|
 |`4USE`| |✅|✅|
-
