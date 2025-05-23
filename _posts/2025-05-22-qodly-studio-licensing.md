@@ -70,6 +70,6 @@ tags: orda qodly projectmode license clientserver programming
 |`PNDS`||||
 |`PNDP`|✅|||
 |`PNDB`|✅|||
-|`PNSS`|||✅|
-|`4USE`||✅|✅|
+|`PNSS`| | |✅|
+|`4USE`| |✅|✅|
 
