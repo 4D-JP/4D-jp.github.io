@@ -11,6 +11,11 @@ type: page
 
 ## 20r8 # {#v20r8}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4Dリクエストハンドラー**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_HTTP_RequestHandler.zip)<span id="20-8-3"></span><br />
+4D 20 R8 では、4D HTTPサーバーに [HTTPリクエストハンドラー](https://developer.4d.com/docs/ja/WebServer/http-request-handler) が導入されました。これにより、リクエストURLパターンに対してトリガーするビジネスロジックの定義を簡単かつ詳細におこなうことができます。また、これによって Qodlyページ上でのリダイレクトが可能になりました。<br />
+※ Qodly Studio の例題も含まれています。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4Dリクエストハンドラーで HTTPリクエストを管理する](https://blog.4d.com/ja/master-http-requests-with-4d-request-handlers/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**TCPConnectionクラス**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_TCPConnection.zip)<span id="20-8-2"></span><br />
 4D 20 R8 では、新たに [TCPConnectionクラス](https://developer.4d.com/docs/ja/API/TCPConnectionClass) が追加されました。オブジェクト指向のシンタックスを活用し、非同期ネットワーク接続処理をサポートしているこの最新のクラスは、廃止予定である 4D Internet Commands の代替機能を提供するものです。このリリースでは、TCPクライアント機能が利用できるようになり、外部サーバーに接続してシームレスにデータを交換できるようになりました。<br />
 ※ R9 で追加された [TCPListnerクラス](https://developer.4d.com/docs/ja/API/TCPListenerClass) を用いた [インターネットコマンドを使用しないバージョン](https://github.com/miyako/HDI_TCPConnection/tree/main) (英語) もぜひご確認ください。<br />
@@ -25,6 +30,7 @@ type: page
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**OutgoingMessageクラス**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_OutGoingMessageClass.zip)<span id="20-7-5"></span><br />
 新しく追加された[OutgoingMessageクラス](https://developer.4d.com/docs/ja/API/OutgoingMessageClass) によって、RESTサーバーを介したブラウザーとのデータのやりとりが一層簡単になりました。また、[onHTTPget](https://developer.4d.com/docs/ja/20-R8/ORDA/ordaClasses#onhttpget-キーワード) キーワードの実装により、クラス関数を GET動詞で呼び出せるようになりました。<br />
+※ Qodly Studio の例題も含まれています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [OutgoingMessageクラスでWebアプリケーションに力を](https://blog.4d.com/ja/energize-your-web-applications-with-the-outgoingmessage-class/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**プロセスとセッション情報の取得**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_ImproveProcessAndSessionCommands.zip)<span id="20-7-4"></span><br />
