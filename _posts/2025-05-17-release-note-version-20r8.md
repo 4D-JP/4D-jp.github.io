@@ -1,16 +1,28 @@
 ---
 layout: fix
 title: "4D 20r8 修正リスト"
-date: 2025-05-28 08:00:00
+date: 2025-06-01 08:00:00
 categories: 修正リスト
 tags: 20r8
-build: 100364
+build: 100366
 version: "20r8"
 permalink: /2025/137/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105682 無効な*.eml* ファイルを`MAIL Convert from MIME`に渡した場合，アプリケーションがフリーズしました。
+
+* ACI0105647 ASTインタープリターモードでは，`Formula`および`Formula from string`から返されたテキストまたはオブジェクトまたはコレクション型がメモリーリークになりました。
+
+**注記**: ASTインタープリターモードの設定は，*settings.4DSettings* ファイルに記述されています。
+
+```xml
+<misc use_ast_interpreter="true"/>
+```
+
+* ACI0105598 ASTインタープリターモードでは，`eval`キーワードを含むORDAクエリがメモリーリークになりました。
 
 * ACI0105640 `entity.getKey()`がテキストまたは整数ではなく，実数を返しました。
 
