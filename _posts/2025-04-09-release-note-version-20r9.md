@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r9 修正リスト"
-date: 2025-06-02 08:00:00
+date: 2025-06-03 08:00:00
 categories: 修正リスト
 tags: 20r9
-build: 100116
+build: 100119
 version: "20r9"
 permalink: /2025/99/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105627 Write Proインタフェースが使用する*OpenAI* のAPIキーに充分なアクセス権が設定されていない場合，HTTPリクエストが実行中であることを示すスピナーがいつまでも消えませんでした。
 
 * ACI0105684 `POP3 Transporter`でメールを受信した場合，メモリーリークが発生しました。ACI0105084が修正されたことによる副作用のようです。
 
