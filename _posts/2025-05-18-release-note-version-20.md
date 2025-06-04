@@ -9,6 +9,8 @@ version: "20.7"
 permalink: /2025/138/:slug/
 ---
 
+* ACI0103861 4D Write Proインタフェースに対して`OBJECT SET VISIBLE`を使用した場合，エラーが返されました。
+
 * ACI0105656 Windows版のみ。プロジェクトフォルダーと同じ階層にある*cert.pem* および*key.pem* を使ってHTTPSサーバーを開始した状態でRSA鍵を発行するために`4D.CryptoKey.new()`を実行した場合，初回に内部SSLエラーが返されました。以降の呼び出しは問題ありません。
 
 * ACI0105628 `OBJECT SET SCROLLBAR`でテキスト入力オブジェクトのスクロールバーを表示した後，`OBJECT DUPLICATE(`でオブジェクトを複製した場合，作成されたオブジェクトのスクロールバー・フォーカス・境界が正常に描画されませんでした。
