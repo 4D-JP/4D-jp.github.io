@@ -4,13 +4,34 @@ title: "4D 20r9 修正リスト"
 date: 2025-06-15 08:00:00
 categories: 修正リスト
 tags: 20r9
-build: 100146
+build: 100147
 version: "20r9"
 permalink: /2025/99/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105738 Mac版のみ。アプリケーションの起動時に「未知のメンバー関数です」という内部タイマープロセスのエラーがコンソールに出力されました。
+
+* ACI0105720 [ホストプロジェクトのアドレスとポートを使って4D NetKitでOAuth認証](https://blog.4d.com/ja/4d-netkit-use-your-web-server-host-ports-to-retrieve-your-oauth-2-0-authentication-response/)を実行した場合，初回だけエラーが返されました。
+
+* ACI0105702 メソッドエディターのリストに不要な項目（「検索結果なし」「of」）が表示されました。
+
+* ACI0105631 `var`シンタックスで変数の宣言と初期化を記述し，[文字参照記号](https://developer.4d.com/docs/ja/Concepts/string#文字参照記号)を使用して文字列型の初期値を代入した場合，「型を推定できません。バリアント型に指定されます」という警告が表示されました。
+
+```4d
+var $s:="abc"
+var $c:=$s[[1]]
+```
+
+* ACI0105621 Mac版のみ。コンパイルモードでパラメーターの間接指定に範囲外の番号を渡した場合，アプリケーションがクラッシュしました。
+
+* ACI0105337 Windows版のみ。インストーラーに収録されている*README* ファイルのハイパーリンクが正しくありませんでした。URLの末尾に不要なスラッシュがあります。ACI0104903が修正されたことによる副作用のようです。
+
+```
+https://developer.4d.com/docs/ja/20/GettingStarted/installation/
+```
 
 * ACI0105706 ピクチャポップアップメニューに表示された画像の座標とマウスポインターの座標の間にずれがあり，正確にクリックすることが困難でした。
 
