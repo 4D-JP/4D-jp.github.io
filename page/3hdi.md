@@ -11,7 +11,7 @@ type: page
 
 ## 20r9 # {#v20r9}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [** TCPListenerクラス**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_TCPConnection-TCPListener.zip)<span id="20-9-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**TCPListenerクラス**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_TCPConnection-TCPListener.zip)<span id="20-9-5"></span><br />
 4D 20 R9 では、新たに [TCPListenerクラス](https://developer.4d.com/docs/ja/API/TCPListenerClass) が追加されました。このクラスは、廃止予定である 4D Internet Commands の代替機能を提供するものです。このリリースでは、4D で直接 TCP接続の着信を処理し、TCPサーバーを構築できるようになりました<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [TCP接続の受信を処理する TCPListener クラス](https://blog.4d.com/ja/new-class-to-handle-incoming-tcp-connections/)<br />
 
