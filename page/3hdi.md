@@ -9,6 +9,29 @@ type: page
 * content
 {:toc}
 
+## 20r9 # {#v20r9}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [** TCPListenerクラス**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_TCPConnection-TCPListener.zip)<span id="20-9-5"></span><br />
+4D 20 R9 では、新たに [TCPListenerクラス](https://developer.4d.com/docs/ja/API/TCPListenerClass) が追加されました。このクラスは、廃止予定である 4D Internet Commands の代替機能を提供するものです。このリリースでは、4D で直接 TCP接続の着信を処理し、TCPサーバーを構築できるようになりました<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [TCP接続の受信を処理する TCPListener クラス](https://blog.4d.com/ja/new-class-to-handle-incoming-tcp-connections/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**ワンタイムパスワード (OTP) セッショントークン**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_Session_Token.zip)<span id="20-9-4"></span><br />
+[`Session`](https://developer.4d.com/docs/ja/API/SessionClass) オブジェクトに新しい関数 [`createOTP`](https://developer.4d.com/docs/ja/API/SessionClass#createotp) が追加され、ワンタイムパスワードを使うことでセッションを再取得できるようになりました。この OTP には有効期限を設定することができ、一度しか使えません。また、[`restore()`](https://developer.4d.com/docs/ja/API/SessionClass#restore) 関数も同様に追加されました。こちらの使い方についてはブログ記事をご覧ください。<br />
+※ この例題には Qodly Studio を使います。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Webセッションのワンタイムパスワード (OTP) の使い方](https://blog.4d.com/ja/connect-your-web-apps-to-third-party-systems/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 読み込みコールバックの改善**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_4DVP_End_Loading_Custom_Functions.zip)<span id="20-9-3"></span><br />
+4D View Pro の読み込みコマンド [`VP IMPORT DOCUMENT`](https://developer.4d.com/docs/ja/ViewPro/commands/vp-import-document)、[`VP IMPORT FORM BLOB`](https://developer.4d.com/docs/ja/ViewPro/commands/vp-import-from-blob)、[`VP IMPORT FROM OBJECT`](https://developer.4d.com/docs/ja/ViewPro/commands/vp-import-from-object) が改善され、読み込んだドキュメントにおいて、すべてのカスタム関数が計算完了するまでコールバックが実行されないことが保証されるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: 読み込みのコールバックで、カスタム関数の計算完了を確認する](https://blog.4d.com/ja/4d-view-pro-import-callback-ensures-custom-functions-are-fully-resolved/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**Webエリア内でクラスを使う**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_Context_Web_Area.zip)<span id="20-9-2"></span><br />
+新しい [`WA SET CONTEXT`](https://developer.4d.com/docs/ja/commands/wa-set-context) コマンドを使って、Webエリアのコンテキストにクラスを設定することで、その Webエリア内で `$4d` を介してクラス関数が使えるようになります。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [埋め込み Webエリアでの $4d を介したクラスの使用](https://blog.4d.com/ja/use-class-in-embedded-web-area-with-4d/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: カレンダーの取得**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_Get_Calendar.zip)<span id="20-9-1"></span><br />
+[4D NetKit](https://github.com/4d/4D-NetKit/) を使って、Google または Office365 のカレンダーイベントが取得できるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D NetKit: Google と Microsoft 365 のカレンダーイベントを取得する](https://blog.4d.com/ja/4d-netkit-get-google-and-microsoft-365-calendar-events/)<br />
+
 ## 20r8 # {#v20r8}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4Dリクエストハンドラー**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_HTTP_RequestHandler.zip)<span id="20-8-3"></span><br />
