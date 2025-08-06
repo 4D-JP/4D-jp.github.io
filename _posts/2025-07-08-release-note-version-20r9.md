@@ -1,16 +1,28 @@
 ---
 layout: fix
 title: "4D 20r9 修正リスト"
-date: 2025-08-01 08:00:00
+date: 2025-08-05 08:00:00
 categories: 修正リスト
 tags: 20r9
-build: 100197
+build: 100200
 version: "20r9"
 permalink: /2025/190/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105810 ビルドキーの`DatabaseToEmbedInClientMacFolder`または`DatabaseToEmbedInClientWinFolder`を使用してクライアントアプリケーションをビルドした場合，`RESTART 4D`で再起動した後にシングルユーザー版のライセンス入力画面が表示されました。ビルド版のクライアントアプリケーションを使用するためにライセンスは必要ないはずです。
+
+* ACI0105788 プロジェクトフォームのフォームメソッドのドキュメンテーションがエクスプローラーに表示されませんでした。
+
+* ACI0105837 直接型指定を有効にした場合，数値型を返すコマンドの引数に整数型の変数を渡すコードがコンパイルエラー（実数から倍長整数への再定義）になりました。
+
+```4d
+var splitter : Integer
+var y1 : Integer  // エラー : 変数の再定義
+OBJECT GET COORDINATES(splitter; $x1; y1; $x2; $y2)
+```
 
 * ACI0105832 Windows版のみ。同時に複数のスレッドで同一の共有オブジェクトが開放されることにより，アプリケーションがクラッシュする恐れがありました。
 
