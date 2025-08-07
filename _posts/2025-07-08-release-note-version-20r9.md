@@ -1,9 +1,9 @@
 ---
 layout: fix
-title: "4D 20r9 修正リスト"
+title: "4D 20r9 Hotfix 1 修正リスト"
 date: 2025-08-05 08:00:00
 categories: 修正リスト
-tags: 20r9
+tags: 20r9 hotfix
 build: 100200
 version: "20r9"
 permalink: /2025/190/:slug/
