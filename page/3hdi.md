@@ -9,6 +9,13 @@ type: page
 * content
 {:toc}
 
+
+## 20r10 # {#v20r10}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [** UDPSocket と UDPEvent クラス**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_UDPSocket.zip)<span id="20-10-1"></span><br />
+4D 20 R10 では、新たに [UDPSocketクラス](https://developer.4d.com/docs/ja/API/UDPSocketClass) と [UDPEventクラス](https://developer.4d.com/docs/ja/API/UDPEventClass) が追加されました。これらのクラスは、廃止予定である 4D Internet Commands の代替機能を提供するものです。これらを使って、UDP通信をおこなうことができます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [UDP通信を実行する新しいクラス](https://blog.4d.com/ja/new-class-to-perform-udp-communications/)<br />
+
 ## 20r9 # {#v20r9}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**TCPListenerクラス**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_TCPConnection-TCPListener.zip)<span id="20-9-5"></span><br />
