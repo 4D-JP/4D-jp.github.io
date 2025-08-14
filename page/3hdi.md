@@ -12,6 +12,10 @@ type: page
 
 ## 20r10 # {#v20r10}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**型指定されたオブジェクトフィールド**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_typed_object_field.zip)<span id="20-10-2"></span><br />
+4D 20 R10 では、オブジェクトフィールドをクラスとして型指定することができます。HDI では、型指定されたオブジェクトフィールドからデータを取得する方法などを紹介します。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [オブジェクトフィールドをクラスで型指定する](https://blog.4d.com/ja/stricter-class-based-typing-for-objects/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**UDPSocket と UDPEvent クラス**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_UDPSocket.zip)<span id="20-10-1"></span><br />
 4D 20 R10 では、新たに [UDPSocketクラス](https://developer.4d.com/docs/ja/API/UDPSocketClass) と [UDPEventクラス](https://developer.4d.com/docs/ja/API/UDPEventClass) が追加されました。これらのクラスは、廃止予定である 4D Internet Commands の代替機能を提供するものです。これらを使って、UDP通信をおこなうことができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [UDP通信を実行する新しいクラス](https://blog.4d.com/ja/new-class-to-perform-udp-communications/)<br />
