@@ -12,6 +12,10 @@ type: page
 
 ## 20r10 # {#v20r10}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**データソースにフォーミュラを設定**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_SetDataSourceFormula.zip)<span id="20-10-3"></span><br />
+4D 20 R10 では、フォームオブジェクトのデータソースフォーミュラを設定・取得するための新しいコマンドが追加されました: [`OBJECT SET DATA SOURCE FORMULA`](https://developer.4d.com/docs/ja/commands/object-set-data-source-formula)、[`OBJECT Get data source formula`](https://developer.4d.com/docs/ja/commands/object-get-data-source-formula)。これによって、より簡単に動的 (ダイナミック) なフォーム編集をおこなうことができます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいデータソースコマンドを使った動的なフォーム作成](https://blog.4d.com/ja/building-forms-on-the-fly-with-new-data-source-commands/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**型指定されたオブジェクトフィールド**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_typed_object_field.zip)<span id="20-10-2"></span><br />
 4D 20 R10 では、オブジェクトフィールドをクラスとして型指定することができます。HDI では、型指定されたオブジェクトフィールドからデータを取得する方法などを紹介します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [オブジェクトフィールドをクラスで型指定する](https://blog.4d.com/ja/stricter-class-based-typing-for-objects/)<br />
