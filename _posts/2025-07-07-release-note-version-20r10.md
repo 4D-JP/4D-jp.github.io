@@ -1,16 +1,22 @@
 ---
 layout: fix
 title: "4D 20r10 修正リスト"
-date: 2025-08-10 08:00:00
+date: 2025-08-17 08:00:00
 categories: 修正リスト
 tags: 20r10
-build: 100174
+build: 100181
 version: "20r10"
 permalink: /2025/188/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105811 GitHubのアセットがHTTPでダウンロードできないことがありました。リダイレクトで到達できないサーバーがあるようです。
+
+**注記**: [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx)によると，`3xx`リダイレクトでメソッドが`GET`または`HEAD`に変更された場合，コンテンツ特有のヘッダー（例: `Content-Encoding` `Content-Language` `Content-Location` `Content-Type` `Content-Length` `Digest` `Last-Modified`）は取り除かれるべきです。また，セキュリティに関わるもので，自動的に追加されないもの（例: `Authorization` `Cookie`）も取り除かれるべきです。
+
+* ACI0105711 `WP Paragraph range` `WP Selection range` `WP Bookmark range` `WP Picture range` `WP Text range`など，一部のWrite ProコマンドのヘルプTipsが正しくありませんでした。
 
 * ACI0105668 4D Volume Desktopのパスを指定せずにクライアントアプリケーションをビルドしても，エラーが返されませんでした。
 
