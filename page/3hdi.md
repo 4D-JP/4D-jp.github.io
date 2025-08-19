@@ -12,6 +12,10 @@ type: page
 
 ## 20r10 # {#v20r10}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: touchedイベント**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_ORDA_Events_touched.zip)<span id="20-10-4"></span><br />
+4D 20 R10 では、ORDA の [`touched` イベント](https://developer.4d.com/docs/ja/ORDA/orda-events#function-event-touched) が実装されました。このイベントは属性レベルまたはエンティティレベルで設定することができ、属性値が変更されたときにトリガーされます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA: 新しい touched イベント](https://blog.4d.com/ja/orda-get-started-with-the-touched-event/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**データソースにフォーミュラを設定**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_SetDataSourceFormula.zip)<span id="20-10-3"></span><br />
 4D 20 R10 では、フォームオブジェクトのデータソースフォーミュラを設定・取得するための新しいコマンドが追加されました: [`OBJECT SET DATA SOURCE FORMULA`](https://developer.4d.com/docs/ja/commands/object-set-data-source-formula)、[`OBJECT Get data source formula`](https://developer.4d.com/docs/ja/commands/object-get-data-source-formula)。これによって、より簡単に動的 (ダイナミック) なフォーム編集をおこなうことができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいデータソースコマンドを使った動的なフォーム作成](https://blog.4d.com/ja/building-forms-on-the-fly-with-new-data-source-commands/)<br />
