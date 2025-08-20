@@ -13,7 +13,7 @@ type: page
 ## 20r10 # {#v20r10}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: AIを使ったセマンティック検索**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_Vector.zip)<span id="20-10-6"></span><br />
-AIベクトルのサポートにともない、人工知能によるセマンティック検索が可能になりました。この HDI では、4D Write Pro の文書を、オブジェクトフィールドに格納されたベクトル化情報とともに保存しておくことで、プロンプトによるセマンティック検索を実現しています。ベクトル化情報を扱うための  [`Vector` クラス](https://developer.4d.com/docs/ja/API/VectorClass) も追加されています。<br />
+AIベクトルのサポートにともない、人工知能によるセマンティック検索が可能になりました。この HDI では、4D Write Pro の文書をベクトル化してオブジェクトフィールドに格納し、もとの文書とともに保存しておくことで、プロンプトによるセマンティック検索を実現しています。ベクトル情報を扱うための  [`Vector` クラス](https://developer.4d.com/docs/ja/API/VectorClass) も追加されています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: AI による文書検索](https://blog.4d.com/ja/ai-brings-magical-search-to-4d-write-pro-documents/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: Entityクラスのコンストラクター**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_ORDA_constructor.zip)<span id="20-10-5"></span><br />
