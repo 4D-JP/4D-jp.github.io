@@ -12,6 +12,14 @@ type: page
 
 ## 20r10 # {#v20r10}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: AIを使ったセマンティック検索**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_Vector.zip)<span id="20-10-6"></span><br />
+AIベクトルのサポートにともない、人工知能によるセマンティック検索が可能になりました。この HDI では、4D Write Pro の文書をベクトル化してオブジェクトフィールドに格納し、もとの文書とともに保存しておくことで、プロンプトによるセマンティック検索を実現しています。ベクトル情報を扱うための  [`Vector` クラス](https://developer.4d.com/docs/ja/API/VectorClass) も追加されています。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: AI による文書検索](https://blog.4d.com/ja/ai-brings-magical-search-to-4d-write-pro-documents/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: Entityクラスのコンストラクター**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_ORDA_constructor.zip)<span id="20-10-5"></span><br />
+4D 20 R10 では、ORDA の Entityクラスにコンストラクターが設定できるようになりました。Entity クラスに [`constructor()`](https://developer.4d.com/docs/ja/ORDA/ordaClasses#class-constructor-1) を実装すると、新規エンティティがインスタンス化される際に、エンティティ属性の初期値を指定することができます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - エンティティコンストラクターの紹介](https://blog.4d.com/ja/orda-get-started-with-the-entity-constructor/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: touchedイベント**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_ORDA_Events_touched.zip)<span id="20-10-4"></span><br />
 4D 20 R10 では、ORDA の [`touched` イベント](https://developer.4d.com/docs/ja/ORDA/orda-events#function-event-touched) が実装されました。このイベントは属性レベルまたはエンティティレベルで設定することができ、属性値が変更されたときにトリガーされます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA: 新しい touched イベント](https://blog.4d.com/ja/orda-get-started-with-the-touched-event/)<br />
