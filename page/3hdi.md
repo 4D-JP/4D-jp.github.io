@@ -12,9 +12,13 @@ type: page
 
 ## 20r10 # {#v20r10}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: AIを使ったセマンティック検索**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_Vector.zip)<span id="20-10-6"></span><br />
-AIベクトルのサポートにともない、人工知能によるセマンティック検索が可能になりました。この HDI では、4D Write Pro の文書をベクトル化してオブジェクトフィールドに格納し、もとの文書とともに保存しておくことで、プロンプトによるセマンティック検索を実現しています。ベクトル情報を扱うための  [`Vector` クラス](https://developer.4d.com/docs/ja/API/VectorClass) も追加されています。<br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: AIを使ったセマンティック検索**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_Vector.zip)<span id="20-10-7"></span><br />
+AIベクトルのサポートにともない、人工知能によるセマンティック検索が可能になりました。この HDI では、4D Write Pro の文書をベクトル化してオブジェクトフィールドに格納し、もとの文書とともに保存しておくことで、プロンプトによるセマンティック検索を実現しています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: AI による文書検索](https://blog.4d.com/ja/ai-brings-magical-search-to-4d-write-pro-documents/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Vector クラスを使った類似性検索**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4D_Vectors.zip)<span id="20-10-6"></span><br />
+ベクトル化情報を扱うための [`Vector` クラス](https://developer.4d.com/docs/ja/API/VectorClass) が実装されたのにともない、人工知能を使った類似性検索が可能になりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D AI: 4D Vector のパワー](https://blog.4d.com/ja/4d-ai-discover-the-power-of-4d-vectors/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: Entityクラスのコンストラクター**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_ORDA_constructor.zip)<span id="20-10-5"></span><br />
 4D 20 R10 では、ORDA の Entityクラスにコンストラクターが設定できるようになりました。Entity クラスに [`constructor()`](https://developer.4d.com/docs/ja/ORDA/ordaClasses#class-constructor-1) を実装すると、新規エンティティがインスタンス化される際に、エンティティ属性の初期値を指定することができます。<br />
