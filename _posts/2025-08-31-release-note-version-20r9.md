@@ -1,16 +1,18 @@
 ---
 layout: fix
 title: "4D 20r9 修正リスト"
-date: 2025-08-31 08:00:00
+date: 2025-09-09 08:00:00
 categories: 修正リスト
 tags: 20r9
-build: 100206
+build: 100208
 version: "20r9"
 permalink: /2025/243/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105857 コンパイルモードのみ。`METHOD Get Path`コマンドにテーブルに対するポインターの逆参照を渡した場合，エラーが返されました。
 
 * ACI0105866 [試用版ライセンス](https://jp.4d.com/4d-free-trial/)では*Qodly Studio* にアクセスすることができませんでした。
 
