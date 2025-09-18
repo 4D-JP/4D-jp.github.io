@@ -1,13 +1,15 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2025-09-09 08:00:00
+date: 2025-09-17 08:00:00
 categories: 修正リスト
 tags: "20.7"
-build: 101914
+build: 101920
 version: "20.7"
 permalink: /2025/252/:slug/
 ---
+
+* ACI0105889 `VP SET FORMULA`で無効なフォーミュラを設定した場合，セルに`#NAME?`という文字列が表示されませんでした。
 
 * ACI0105853 `Begin SQL`/`End SQL`ブロック内では，メソッドエディターのコード補完にローカル変数が表示されませんでした。
 
