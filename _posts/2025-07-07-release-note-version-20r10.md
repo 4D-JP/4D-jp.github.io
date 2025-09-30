@@ -1,16 +1,24 @@
 ---
 layout: fix
 title: "4D 20r10 修正リスト"
-date: 2025-09-17 08:00:00
+date: 2025-09-29 08:00:00
 categories: 修正リスト
 tags: 20r10
-build: 100228
+build: 100251
 version: "20r10"
 permalink: /2025/188/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105907 クライアント自動アップデート画面の背後にプロジェクトをロード中であるという余計な進捗ダイアログが表示されました。
+
+* ACI0105797 明示的に型宣言されていない変数を`BASE64 ENCODE`の第`2`パラメーターに渡した場合，インタープリターモードではテキスト型，コンパイルモードではBLOB型が返されました。
+
+* ACI0105892 AIKitの`OpenAIChatCompletionsAPI`コンストラクターに`onResponse` `onTerminate` `onError`コールバック関数を[パラメーター](https://developer.4d.com/docs/ja/aikit/Classes/openaichatcompletionsparameters)として渡した場合，`onTerminate`が`onData`の代わりにコールされました。
+
+* ACI0105890 Write Proドキュメント内で画像をドラッグし，ヘッダーまたはフッターを超えてページにドロップした場合，移動ではなくコピーが実行されました。
 
 * ACI0105887 Windows版のみ。`SHOW ON DISK`に渡したフォルダー内で最初に表示されるファイルが別のフォルダーに対するショートカットだった場合，そのショートカットが開かれてしまい，コマンドに渡したパスではなく，ショートカットのターゲットがエクスプローラーに表示されました。
 
