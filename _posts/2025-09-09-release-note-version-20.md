@@ -1,13 +1,17 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2025-09-29 08:00:00
+date: 2025-10-02 08:00:00
 categories: 修正リスト
 tags: "20.7"
-build: 101955
+build: 101960
 version: "20.7"
 permalink: /2025/252/:slug/
 ---
+
+* ACI0105883 Windows版のみ。デスクトップの解像度が`100`%以外に設定されている環境でプリンターフォントを参照した場合，アプリケーションがフリーズしました。
+
+**注記**: 修正により，プリンターフォントは無視されるようになりました。Direct2Dでビットマップフォントはサポートされていません
 
 * ACI0105478 [`SET DATABASE PARAMETER`](https://developer.4d.com/docs/ja/commands/set-database-parameter)のセレクター`34`（デバッグログ）の「即時記録」モードを有効化した場合，二重にエントリーが記録されました。
 
