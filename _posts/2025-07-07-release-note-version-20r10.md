@@ -4,7 +4,7 @@ title: "4D 20r10 修正リスト"
 date: 2025-09-29 08:00:00
 categories: 修正リスト
 tags: 20r10
-build: 100251
+build: 100252
 version: "20r10"
 permalink: /2025/188/:slug/
 ---
