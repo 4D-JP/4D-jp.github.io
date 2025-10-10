@@ -57,7 +57,7 @@ ORDAの基本的なクエリ機能を紹介するデモサンプルです。
 
 この例題は、少し古いため、例えば次のように書かれたコードは・・・
 
-```4dm
+```4d
 $settings:=New object
 $settings.parameters:=New object("givenName"; "Bravo@"; "givenComment"; "New client")
 $clients:=ds.Clients.QUERY("name = : givenName and comment = :givenComment"; $settings)
@@ -65,7 +65,7 @@ $clients:=ds.Clients.QUERY("name = : givenName and comment = :givenComment"; $se
 
 現在の4Dであれば、次のように書くことができますので、より直感的なコードを書くことができます。
 
-```4dm
+```4d
 $settings:={}
 $settings.parameters:={\
   givenName: $givenName; \
@@ -78,6 +78,9 @@ $clients:=ds.Clients.QUERY("name = : givenName and comment = :givenComment"; $se
 
 こちらは、値の命名プレースホルダーではなく、属性パスのデモサンプルになります。
 
+> [ORDA: フォーミュラを使ったクエリ](https://github.com/4D-JP/HDI/releases/download/17r6/HDI_Query_ByFormula.zip)
+
+クエリでフォーミュラを扱えるので、計算して得られるような値をクエリすることが可能です。
 
 ## まとめ
 
@@ -87,7 +90,7 @@ $clients:=ds.Clients.QUERY("name = : givenName and comment = :givenComment"; $se
 以下は、検索する文字列を入力して、`Miscellaneous`テーブルの`Note`フィールドを検索した結果をローカル変数`$selection`に取り出す例題です。
 検索する文字列は、空白で区切って複数を入力できます。
 
-```4dm
+```4d
 $text:=Request("検索する文字列を空白で区切って複数指定できます")
 If (OK=1)
 	$text:=Replace string($text; "　"; " ")
