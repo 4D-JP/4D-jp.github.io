@@ -1,6 +1,6 @@
 ---
 layout: fix
-title: "4D 20r9 修正リスト"
+title: "4D 20r9 Hotfix 2 修正リスト"
 date: 2025-09-09 08:00:00
 categories: 修正リスト
 tags: 20r9 hotfix
