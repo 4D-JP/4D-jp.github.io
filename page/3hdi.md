@@ -12,6 +12,10 @@ type: page
 
 ## 20r10 # {#v20r10}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: カレンダーイベントの作成・編集**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_Calendar_Event_Management.zip)<span id="20-10-8"></span><br />
+[4D NetKit](https://github.com/4d/4D-NetKit/) を使って、Google または Office365 のカレンダーイベントを新規作成および編集できるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Microsoft 365 や Google のカレンダーイベントを 4D で管理: 作成・更新・削除](https://blog.4d.com/ja/managing-calendar-events-with-microsoft-365-or-google-in-4d-create-update-delete/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: AIを使ったセマンティック検索**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_Vector.zip)<span id="20-10-7"></span><br />
 AIベクトルのサポートにともない、人工知能によるセマンティック検索が可能になりました。この HDI では、4D Write Pro の文書をベクトル化してオブジェクトフィールドに格納し、もとの文書とともに保存しておくことで、プロンプトによるセマンティック検索を実現しています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: AI による文書検索](https://blog.4d.com/ja/ai-brings-magical-search-to-4d-write-pro-documents/)<br />
