@@ -12,6 +12,10 @@ type: page
 
 ## 20r10 # {#v20r10}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: AI を使った文書の分類・評価**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_Classification.zip)<span id="20-10-9"></span><br />
+この HDI では、4D Write Pro の文書を AI によって自動的に分類・評価して、文書情報を充実させる方法を紹介します。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [AI によるインテリジェントな 4D Write Pro文書分析](https://blog.4d.com/ja/intelligent-4d-write-pro-document-analysis-with-ai/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: カレンダーイベントの作成・編集**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_Calendar_Event_Management.zip)<span id="20-10-8"></span><br />
 [4D NetKit](https://github.com/4d/4D-NetKit/) を使って、Google または Office365 のカレンダーイベントを新規作成および編集できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Microsoft 365 や Google のカレンダーイベントを 4D で管理: 作成・更新・削除](https://blog.4d.com/ja/managing-calendar-events-with-microsoft-365-or-google-in-4d-create-update-delete/)<br />
