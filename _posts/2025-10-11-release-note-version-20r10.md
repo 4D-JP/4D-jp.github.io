@@ -1,16 +1,20 @@
 ---
 layout: fix
 title: "4D 20r10 修正リスト"
-date: 2025-10-15 08:00:00
+date: 2025-10-19 08:00:00
 categories: 修正リスト
 tags: 20r10
-build: 100268
+build: 100270
 version: "20r10"
 permalink: /2025/284/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0105955 コンポーネントをビルドした場合，Appleの公証に必要な`CFBundlePackageType`キー（値: `BNDL`）が*Info.plist* ファイルに書き込まれませんでした。
+
+**注記**: アプリケーション本体のビルドコマンドに加え，*Build4D* コンポーネントも[修正](https://github.com/4d/Build4D/commit/29d30e312e04302f2ba4c2141025f0778536bad2)されました。
 
 * ACI0105908 `Choose`コマンドの引数としてクラスのプロパティを記述した場合，メソッドエディターのヘルプTipsに間違った型が表示されました。
 
