@@ -1,13 +1,21 @@
 ---
 layout: fix
 title: "4D 21 修正リスト"
-date: 2025-10-15 08:00:00
+date: 2025-10-19 08:00:00
 categories: 修正リスト
 tags: "21.0"
-build: 100127
+build: 100142
 version: "21.0"
 permalink: /2025/279/:slug/
 ---
+
+* ACI0105955 コンポーネントをビルドした場合，Appleの公証に必要な`CFBundlePackageType`キー（値: `BNDL`）が*Info.plist* ファイルに書き込まれませんでした。
+
+**注記**: アプリケーション本体のビルドコマンドに加え，*Build4D* コンポーネントも[修正](https://github.com/4d/Build4D/commit/29d30e312e04302f2ba4c2141025f0778536bad2)されました。
+
+* ACI0105950 Mac版のみ。フローティングウィンドウでランタイムエクスプローラーを開いた場合，プロセスページに情報が表示されませんでした。
+
+* ACI0105928 *NetKit* コンポーネント`state`プロパティに拡張文字が含まれる場合，`NetKit.OAuth2Provider.getToken()`が`404`エラーを返ししました。
 
 * ACI0105820 強制ログインモードを有効にした場合，4D Mobileを利用することができませんでした。
 
