@@ -12,6 +12,10 @@ type: page
 
 ## 20r10 # {#v20r10}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: チャンクで文書を検索する**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_VectorWithChunk.zip)<span id="20-10-10"></span><br />
+この HDI では、チャンクを使い、4D Write Pro の文書を検索して、該当する段落を見つける方法を紹介します。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [AI で 4D Write Pro文書の「適切な場所」を見つける](https://blog.4d.com/ja/find-the-right-spot-in-your-4d-write-pro-document-with-ai/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: AI を使った文書の分類・評価**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_Classification.zip)<span id="20-10-9"></span><br />
 この HDI では、4D Write Pro の文書を AI によって自動的に分類・評価して、文書情報を充実させる方法を紹介します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [AI によるインテリジェントな 4D Write Pro文書分析](https://blog.4d.com/ja/intelligent-4d-write-pro-document-analysis-with-ai/)<br />
