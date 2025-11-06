@@ -4,10 +4,24 @@ title: "4D 21 修正リスト"
 date: 2025-10-28 08:00:00
 categories: 修正リスト
 tags: "21.0"
-build: 100160
+build: 100182
 version: "21.0"
 permalink: /2025/279/:slug/
 ---
+
+* ACI0105999 Windows版Fluent UIモードのみ。WebエリアにFTPアドレスをロードしようとした場合，アプリケーションがクラッシュしました。
+
+* ACI0105998 Windows版Fluent UIモードのみ。WebエリアのURLプロパティが無視されました。
+
+* ACI0105993 「4D Serverへの接続」画面に「最近使用」のリストが表示されませんでした。
+
+* ACI0105988 コンボボックスまたはポップアップメニューのデータソースにオブジェクト型を使用し，`values`プロパティにクラスの計算属性を使用した場合，「ランゲージコンテキストが不足」しているというエラーが返されました。
+
+* ACI0105965 Windows版Fluent UIモードのみ。クリックしたデフォルトボタンがフォーカス表示されませんでした。
+
+* ACI0105961 エクスプローラーで選択したフォーム・メソッド・クラスを`Return`キーで開くことができませんでした。
+
+* ACI0105942 Windows版のみ。[`WA SET PREFERENCE`](https://developer.4d.com/docs/ja/commands/wa-set-preference)で*WA enable Web inspector* を`False`に設定しても，コンテキストメニューに「開発者ツールで調査する」メニューが表示されました。
 
 * ACI0105967 QUICネットワークレイヤー（`ngtcp2`）のみ。クライアント/サーバーのネットワーク接続が切り替わった後も`Session.info.IPAddress`は古いIPアドレスのままでした。
 
