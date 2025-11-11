@@ -1,6 +1,6 @@
 ---
 layout: fix
-title: "4D 19 Hotfix 3 修正リスト"
+title: "4D 19.7 Hotfix 3 修正リスト"
 date: 2024-02-13 08:00:00
 categories: 修正リスト
 tags: 19.7 hotfix
