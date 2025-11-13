@@ -1,33 +1,19 @@
 .code-wrapper {
   position: relative;
-  display: inline-block; /* shrink to pre width */
-}
-
-pre {
-  position: relative;       /* make button position relative to pre */
-  overflow: auto;           /* keep horizontal scroll */
-  padding: 1em;             /* optional padding */
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  white-space: pre;
+  display: inline-block; /* shrink-wrap the pre */
 }
 
 .copy-button {
-  position: absolute; /* fixed relative to wrapper, not scrollable pre */
+  position: absolute;
   top: 0.25rem;
   right: 0.25rem;
   z-index: 10;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
-  cursor: pointer;
   border: none;
-  background: #2d2d2d;
-  color: #fff;
-  border-radius: 4px;
-  opacity: 0.7;
-  transition: opacity 0.2s;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
 }
-
-.copy-button:hover {
-  opacity: 1;
+.copy-button svg {
+  width: 16px;
+  height: 16px;
 }
