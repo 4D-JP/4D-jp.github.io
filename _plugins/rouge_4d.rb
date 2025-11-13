@@ -84,16 +84,16 @@ module Rouge
         # OBJECT NOTATION
         #
         # Dot notation functions
-        rule %r/(?<=\.)([\p{L}])([\p{L}0-9]*)(?=\()/, Name::Function
+        rule %r/(?<=[.])([\p{L}])([\p{L}0-9]*)(?=[(])/, Name::Function
         # Dot notation attributes
-        rule %r/(?<=\.)([\p{L}])([\p{L}0-9]*)(?=\.|\()\b/, Name::Attribute
+        rule %r/(?<=[.])([\p{L}])([\p{L}0-9]*)(?=[.])/, Name::Attribute
         #
         # COMMANDS
         #
-        rule %r/(?i)\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Property
-        rule %r/(?i)\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Property
-        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Property
-        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Property
+        rule %r/(?i)\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Function
+        rule %r/(?i)\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Function
+        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])(?i)\b(?:#{COMMAND_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Function
+        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])(?i)\b(?:#{COMMAND_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Function
         #
         # KEYWORDS (system variables)
         #
