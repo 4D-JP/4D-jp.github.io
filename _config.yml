@@ -45,6 +45,9 @@ markdown: kramdown
 kramdown:
   syntax_highlighter: nil
 
+highlighter: rouge
+  plugins_dir: _plugins
+  
 # port
 # port: 1234
 
