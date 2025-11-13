@@ -31,52 +31,23 @@
 <!-- <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    
-    document.querySelectorAll("pre").forEach(pre => {
-      // Create a wrapper div
-      const wrapper = document.createElement("div");
-      wrapper.className = "code-wrapper";
+  document.querySelectorAll("pre > code").forEach(function(codeBlock) {
+    const button = document.createElement("button");
+    button.className = "copy-button";
+    button.type = "button";
+    button.innerText = "Copy";
 
-      // Insert wrapper before the pre
-      pre.parentNode.insertBefore(wrapper, pre);
-
-      // Move the pre into the wrapper
-      wrapper.appendChild(pre);
-
-      // Create the copy button
-      const button = document.createElement("button");
-      button.className = "copy-button";
-      button.type = "button";
-
-      // Use an inline two-rectangle SVG icon
-      button.innerHTML = `
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-          <rect x="2" y="2" width="10" height="10" stroke="black" fill="none" stroke-width="1"/>
-          <rect x="4" y="4" width="10" height="10" stroke="black" fill="none" stroke-width="1"/>
-        </svg>
-      `;
-
-      // Copy functionality
-      button.addEventListener("click", () => {
-        navigator.clipboard.writeText(pre.innerText).then(() => {
-          button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-            <polyline points="2,8 6,12 14,4" stroke="green" fill="none" stroke-width="2"/>
-          </svg>`; // checkmark icon
-          setTimeout(() => {
-            // Restore original icon
-            button.innerHTML = `
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <rect x="2" y="2" width="10" height="10" stroke="black" fill="none" stroke-width="1"/>
-                <rect x="4" y="4" width="10" height="10" stroke="black" fill="none" stroke-width="1"/>
-              </svg>
-            `;
-          }, 2000);
-        });
+    button.addEventListener("click", function() {
+      const text = codeBlock.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        button.innerText = "Copied!";
+        setTimeout(() => (button.innerText = "Copy"), 2000);
       });
-
-      // Append the button to the wrapper
-      wrapper.appendChild(button);
     });
-    
+
+    const pre = codeBlock.parentNode;
+    pre.style.position = "relative";  // ensure pre is positioned
+    pre.appendChild(button);
+  });
 });
 </script>

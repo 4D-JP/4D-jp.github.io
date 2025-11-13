@@ -1,19 +1,23 @@
-.code-wrapper {
+/* Style the copy button */
+pre {
   position: relative;
-  display: inline-block; /* shrink-wrap the pre */
 }
 
 .copy-button {
   position: absolute;
   top: 0.25rem;
   right: 0.25rem;
-  z-index: 10;
-  border: none;
-  background: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
   cursor: pointer;
-  padding: 0;
+  border: none;
+  background: #f5f5f5;
+  color: #333;
+  border-radius: 4px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
 }
-.copy-button svg {
-  width: 16px;
-  height: 16px;
+
+.copy-button:hover {
+  opacity: 1;
 }
