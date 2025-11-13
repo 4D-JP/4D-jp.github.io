@@ -29,3 +29,25 @@
     </div>
 </footer>
 <!-- <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll("pre > code").forEach(function(codeBlock) {
+    const button = document.createElement("button");
+    button.className = "copy-button";
+    button.type = "button";
+    button.innerText = "Copy";
+
+    button.addEventListener("click", function() {
+      const text = codeBlock.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        button.innerText = "Copied!";
+        setTimeout(() => (button.innerText = "Copy"), 2000);
+      });
+    });
+
+    const pre = codeBlock.parentNode;
+    pre.style.position = "relative";  // ensure pre is positioned
+    pre.appendChild(button);
+  });
+});
+</script>

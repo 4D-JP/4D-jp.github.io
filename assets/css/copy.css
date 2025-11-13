@@ -1,0 +1,23 @@
+/* Style the copy button */
+pre {
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  border: none;
+  background: #f5f5f5;
+  color: #333;
+  border-radius: 4px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.copy-button:hover {
+  opacity: 1;
+}
