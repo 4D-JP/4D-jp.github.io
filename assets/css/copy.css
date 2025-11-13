@@ -16,9 +16,10 @@ pre code {
 }
 
 .copy-button {
-  position: absolute;
+  position: sticky;
   top: 0.25rem;
   right: 0.25rem;
+  z-index: 10;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   cursor: pointer;
