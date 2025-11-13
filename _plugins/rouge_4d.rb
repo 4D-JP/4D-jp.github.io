@@ -90,10 +90,10 @@ module Rouge
         #
         # COMMANDS
         #
-        rule %r/(?i)\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Tag
-        rule %r/(?i)\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Tag
-        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Tag
-        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Tag
+        rule %r/(?i)\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Property
+        rule %r/(?i)\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Property
+        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Property
+        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Property
         #
         # KEYWORDS (system variables)
         #
