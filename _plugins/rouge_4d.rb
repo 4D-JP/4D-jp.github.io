@@ -90,17 +90,17 @@ module Rouge
         #
         # COMMANDS
         #
-        rule %r/(?i)\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Builtin
-        rule %r/(?i)\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Builtin
-        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Builtin
-        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Builtin
+        rule %r/(?i)\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Tag
+        rule %r/(?i)\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Tag
+        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Tag
+        rule %r/(?<![+\-|\/^*?=#%&:;.)\]])\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Tag
         #
         # KEYWORDS (system variables)
         #
         # Multi
-        rule %r/(?i)\b(error formula|error line|error method)\b/, Name::Builtin::Pseudo
+        rule %r/(?i)\b(error formula|error line|error method)\b/, Name::Label
         # Single
-        rule %r/(?i)\b(document|ok|recdelimit|flddelimit|modifiers|keycode|mousex|mousey|mouseproc|mousedown|error)\b/, Name::Builtin::Pseudo
+        rule %r/(?i)\b(document|ok|recdelimit|flddelimit|modifiers|keycode|mousex|mousey|mouseproc|mousedown|error)\b/, Name::Label
         #
         # KEYWORDS (control flow)
         #
