@@ -76,7 +76,16 @@ module Rouge
         # Tokenised commands
         rule %r/(?<!\w)([\p{L}])([\p{L} 0-9]*)([\p{L}])(?=(:C[0-9]+))\b/, Name::Function
         #
-        # INSERT COMMANDS HERE
+        #
+        # OBJECT NOTATION
+        #
+        # Dot notation functions
+        rule %r/(?<=\.)([\p{L}])([\p{L}0-9]*)(?=\()/, Name::Function
+        # Dot notation attributes
+        rule %r/(?<=\.)([\p{L}])([\p{L}0-9]*)(?=\.|\()\b/, Name::Attribute
+        #
+        # COMMANDS
+        #
         rule %r/(?i)\b(?:#{COMMAND_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Builtin
         #
         rule %r/(?i)\b(?:#{COMMAND_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Builtin
@@ -103,13 +112,6 @@ module Rouge
         rule %r/\b(?i)(local |exposed |shared )*(event )([\p{L}]+ )?([\p{L}]+)\b/, Keyword::Declaration
         # Special Sequence 3
         rule %r/\b(?i)(singleton |shared )*(class constructor)\b/, Keyword::Declaration
-        #
-        # OBJECT NOTATION
-        #
-        # Dot notation functions
-        rule %r/(?<=\.)([\p{L}])([\p{L}0-9]*)(?=\()/, Name::Function
-        # Dot notation attributes
-        rule %r/(?<=\.)([\p{L}])([\p{L}0-9]*)(?=\.|\()\b/, Name::Attribute
         #
         # 4D operators
         #
