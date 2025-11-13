@@ -136,7 +136,7 @@ module Rouge
         # rule %r/[()]/, Token::Punctuation
         # rule %r/[{}[\]]/, Token::Punctuation
         rule %r/[;]/, Token::Punctuation
-        rule %r/[.]/, Token::Punctuation
+        # rule %r/[.]/, Token::Punctuation
         # rule %r/\\/, Token::Punctuation
       end
       
