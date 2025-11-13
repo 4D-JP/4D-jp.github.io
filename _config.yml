@@ -38,9 +38,12 @@ google_analytics_id: UA-132873397-1
 # Build settings
 markdown: kramdown
 
+#kramdown:
+#  syntax_highlighter_opts:
+#    disable : true
+
 kramdown:
-  syntax_highlighter_opts:
-    disable : true
+  syntax_highlighter: nil
 
 # port
 # port: 1234
