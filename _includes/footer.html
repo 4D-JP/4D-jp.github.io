@@ -30,26 +30,38 @@
 </footer>
 <!-- <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll("pre > code").forEach(function(codeBlock) {
-      const pre = codeBlock.parentNode;
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("pre > code").forEach((codeBlock) => {
+    const pre = codeBlock.parentNode;
+    const wrapper = document.createElement("div");
+    wrapper.className = "code-wrapper";
+    pre.parentNode.insertBefore(wrapper, pre);
+    wrapper.appendChild(pre);
 
-      const button = document.createElement("button");
-      button.className = "copy-button";
-      button.type = "button";
-      // Set the icon using Font Awesome
-      button.innerHTML = '<i class="fa-regular fa-copy"></i>';
-      
-      button.addEventListener("click", function() {
-          navigator.clipboard.writeText(codeBlock.innerText).then(() => {
-            button.innerHTML = '<i class="fa-regular fa-check"></i>'; // show check mark on success
-            setTimeout(() => {
-              button.innerHTML = '<i class="fa-regular fa-copy"></i>';
-            }, 2000);
-          });
-        });
+    // Create button
+    const button = document.createElement("button");
+    button.className = "copy-btn";
+    button.setAttribute("data-tooltip", "Copied!");
+    button.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1z"/>
+        <path d="M20 5H8c-1.1 0-2 .9-2 2v16h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2z"/>
+      </svg>
+      Copy
+    `;
+    wrapper.appendChild(button);
 
-      pre.appendChild(button); // inject button inside pre
+    // Copy behavior
+    button.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(codeBlock.innerText);
+        button.classList.add("show-tooltip");
+        setTimeout(() => button.classList.remove("show-tooltip"), 1200);
+      } catch (err) {
+        console.error("Copy failed:", err);
+      }
     });
+  });
 });
 </script>
+

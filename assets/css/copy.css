@@ -1,28 +1,72 @@
-pre {
-  position: relative;       /* make button position relative to pre */
-  overflow: auto;           /* keep horizontal scroll */
-  padding: 1em;             /* optional padding */
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  white-space: pre;
+.code-wrapper {
+  position: relative;
+  margin: 1.2em 0;
 }
 
-.copy-button {
-  position: absolute;       /* absolute instead of sticky */
-  top: 0.25rem;
-  right: 0.25rem;
-  z-index: 10;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+/* Style for scrollable code */
+.code-wrapper pre {
+  overflow-x: auto;
+  padding: 1em;
+  background: #1e1e1e;
+  color: #eee;
+  border-radius: 8px;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+/* ChatGPT-style button */
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ccc;
+  padding: 4px 8px;
+  border-radius: 6px;
   cursor: pointer;
-  border: none;
-  background: #2d2d2d;
-  color: #fff;
-  border-radius: 4px;
-  opacity: 0.7;
-  transition: opacity 0.2s;
+  font-size: 0.8em;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  backdrop-filter: blur(4px);
 }
 
-.copy-button:hover {
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Tooltip for 'Copied!' */
+.copy-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -1.8em;
+  right: 0;
+  background: #444;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.7em;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.copy-btn.show-tooltip::after {
   opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: smooth fadeout for the tooltip */
+@keyframes fadeout {
+  to {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
 }
