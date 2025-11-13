@@ -134,7 +134,7 @@ module Rouge
         rule %r/\b([\p{L}])([\p{L}0-9]*)\b/, Name
         #
         rule %r/[()]/, Punctuation
-        rule %r/[{}[\]]/, Punctuation
+        rule %r/[{}\[\]]/, Punctuation
         rule %r/[;]/, Punctuation
         rule %r/[.]/, Punctuation
         rule %r/\\/, Punctuation
