@@ -24,9 +24,6 @@ module Rouge
         utiliser use var property try catch return break continue if si else sinon boucle repeat repeter until jusque while tant que for alias defer lamda
       )
 
-      # Built-in constants
-      CONSTANTS = %w(True False Null)
-
       state :root do
         #
         # CONSTANTS
@@ -39,68 +36,69 @@ module Rouge
         # STRINGS
         #
         # String constants
-        rule %r/"/, Str::Double, :string
+        rule %r/"/, Literal::String, :string
         #
         # NUMBERS
         #
         # Hex
-        rule %r/(?<![\w])0[xX][0-9a-fA-F]+\b/, Num::Hex
+        rule %r/(?<![\w])0[xX][0-9a-fA-F]+\b/, Literal::Number::Hex
         # Dec
-        rule %r/(?<![\w])[0-9]+(?:[.,][0-9]+)?(?:[eE]-?[0-9]+)?\b/, Num::Float
+        rule %r/(?<![\w])[0-9]+(?:[.,][0-9]+)?(?:[eE]-?[0-9]+)?\b/, Literal::Number::Float
         # Int
-        rule %r/(?<![\w])[0-9]+\b/, Num::Integer
+        rule %r/(?<![\w])[0-9]+\b/, Literal::Number::Integer
         #
         # TIME AND DATE
         #
         # Time
-        rule %r/(?<![\w])[?][0-9]{2}:[0-9]{2}:[0-9]{2}[?]\b/, Name::Constant
+        rule %r/(?<![\w])[?][0-9]{2}:[0-9]{2}:[0-9]{2}[?]\b/, Literal
         # Date
-        rule %r/(?<![\w])[!][0-9]{2,4}-[0-9]{2}-[0-9]{2}[!]\b/, Name::Constant
+        rule %r/(?<![\w])[!][0-9]{2,4}-[0-9]{2}-[0-9]{2}[!]\b/, Literal
         #
         # PREFIX:$
         #
         # Numbered parameters
-        rule %r/(?<![\w])[$][0-9]+\b/, Name::Variable
+        rule %r/(?<![\w])[$][0-9]+\b/, Name::Variable::Instance
         # Local variables and named parameters
         rule %r/(?<![\w])[$][\p{L}_]+[\p{L}_0-9]*/, Name::Variable
         #
         # PREFIX:<>
         #
         # Interprocess variables
-        rule %r/(?<![\w])<>[\p{L}_]+[\p{L}_0-9]*/, Name::Variable
+        rule %r/(?<![\w])<>[\p{L}_]+[\p{L}_0-9]*/, Name::Variable::Global
         #
-        # Language constants
-        rule %r/(?<!\w)(\p{L})([\p{L} 0-9]+)(\p{L})(?=(:K[0-9]+:[0-9]+))\b/, Name::Variable
+        # Tokenised constants
+        rule %r/(?<!\w)(\p{L})([\p{L} 0-9]+)(\p{L})(?=(:K[0-9]+:[0-9]+))\b/, Name::Constant
         #
-        # KEYWORDS (BASIC)
+        # Tokenised commands
+        rule %r/(?<!\w)([\p{L}])([\p{L} 0-9]*)([\p{L}])(?=(:C[0-9]+))\b/, Name::Function
+        #
+        # INSERT COMMANDS HERE
+        rule %r/(?i)\b(?:#{COMMAND_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Builtin
+        #
+        rule %r/(?i)\b(?:#{COMMAND_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Builtin
+        #
+        # KEYWORDS (system variables)
         #
         # Multi
-        rule %r/(?i)\b(error formula|error line|error method)\b/, Keyword::Reserved
+        rule %r/(?i)\b(error formula|error line|error method)\b/, Name::Builtin::Pseudo
         # Single
-        rule %r/(?i)\b(document|ok|recdelimit|flddelimit|modifiers|keycode|mousex|mousey|mouseproc|mousedown|error)\b/, Keyword::Reserved
+        rule %r/(?i)\b(document|ok|recdelimit|flddelimit|modifiers|keycode|mousex|mousey|mouseproc|mousedown|error)\b/, Name::Builtin::Pseudo
         #
-        # KEYWORDS (ADDITIONAL)
+        # KEYWORDS (control flow)
         #
         # Multi
         rule %r/(?i)\b(?:#{MULTI_KEYWORDS.map { |k| Regexp.escape(k) }.join('|')})\b/, Keyword::Reserved
         # Single
         rule %r/(?i)\b(?:#{SINGLE_KEYWORDS.join('|')})\b/, Keyword::Reserved
         #
-        # Classic command
-        rule %r/(?<!\w)([\p{L}])([\p{L} 0-9]*)([\p{L}])(?=(:C[0-9]+))\b/, Name::Function
-        #
-        # Classic command special (more keyword than function)
-        rule %r/(?<!\w)(?i)(super|this|form|null|4d|ds|cs)(?=(:C[0-9]+)?)\b/, Keyword::Reserved
-        #
-        # Special keyword
-        rule %r/(?<!\w)(?i)(#DECLARE)\b/, Keyword::Reserved
-        #
+        # Special Sequence 0
+        rule %r/(?<!\w)(?i)(#DECLARE)\b/, Keyword::Declaration
         # Special Sequence 1
-        rule %r/\b(?i)(local |exposed |shared )*(function )([\p{L}]+ )?([\p{L}]+)\b/, Name::Function
+        rule %r/\b(?i)(local |exposed |shared )*(function )([\p{L}]+ )?([\p{L}]+)\b/, Keyword::Declaration
         # Special Sequence 2
-        rule %r/\b(?i)(local |exposed |shared )*(event )([\p{L}]+ )?([\p{L}]+)\b/, Name::Function
+        rule %r/\b(?i)(local |exposed |shared )*(event )([\p{L}]+ )?([\p{L}]+)\b/, Keyword::Declaration
         # Special Sequence 3
-        rule %r/\b(?i)(singleton |shared )*(class constructor)\b/, Name::Function
+        rule %r/\b(?i)(singleton |shared )*(class constructor)\b/, Keyword::Declaration
         #
         # OBJECT NOTATION
         #
@@ -120,10 +118,10 @@ module Rouge
       
       # String state for escape sequences
       state :string do
-        rule %r/\\["ntr\\]/, Str::Escape
-        rule %r/"/, Str::Double, :pop!
-        rule %r/[^\\"]+/, Str::Double
-        rule %r/\\/, Str::Escape
+        rule %r/\\["ntr\\]/, Literal::String::Escape
+        rule %r/"/, Literal::String, :pop!
+        rule %r/[^\\"]+/, Literal::String::Escape
+        rule %r/\\/, Literal::String::Escape
       end
     end
   end
