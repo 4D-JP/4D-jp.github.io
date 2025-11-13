@@ -128,14 +128,14 @@ module Rouge
         #
         # 4D operators
         #
-        rule %r/(\+=|-=|\*=|\/=|~\||&&|&|\|\||\||<<|>>|<=|>=|<|>|:=|\?\?|\?\+|\?\-|\+|\-|\*|\/|=|#|\\\^|%|\?|:)/, Operator
+        rule %r/(\+=|-=|\*=|\/=|~\||&&|&|\|\||\||<<|>>|<=|>=|<|>|:=|\?\?|\?\+|\?\-|\+|\-|\*|\/|=|#|\\\^|%|\?|:)/, Token::Operator
         #
         # Generic identifiers (Unicode)
         rule %r/\b([\p{L}])([\p{L}0-9]*)\b/, Name
         #
         # rule %r/[()]/, Token::Punctuation
         # rule %r/[{}[\]]/, Token::Punctuation
-        rule %r/[;]/, Token::Punctuation
+        # rule %r/[;]/, Token::Punctuation
         # rule %r/[.]/, Token::Punctuation
         # rule %r/\\/, Token::Punctuation
       end
