@@ -79,3 +79,12 @@
 .highlight .ss {
   color: #859900;
 }
+
+/* Leave err elements unstyled */
+.err {
+  color: inherit;      /* Use the surrounding text color */
+  background: none;    /* Remove any background */
+  font-weight: normal; /* Remove bold/italic if applied */
+  font-style: normal;
+  text-decoration: none;
+}
