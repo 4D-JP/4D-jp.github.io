@@ -31,25 +31,27 @@
 <!-- <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll("pre > code").forEach(function(codeBlock) {
-      const pre = codeBlock.parentNode;
+    
+    document.querySelectorAll("pre").forEach(pre => {
+      const wrapper = document.createElement("div");
+      wrapper.className = "code-wrapper";
+      pre.parentNode.insertBefore(wrapper, pre);
+      wrapper.appendChild(pre);
 
       const button = document.createElement("button");
       button.className = "copy-button";
       button.type = "button";
-      // Set the icon using Font Awesome
-      button.innerHTML = '<i class="fa-regular fa-copy"></i>';
-      
-      button.addEventListener("click", function() {
-          navigator.clipboard.writeText(codeBlock.innerText).then(() => {
-            button.innerHTML = '<i class="fa-regular fa-check"></i>'; // show check mark on success
-            setTimeout(() => {
-              button.innerHTML = '<i class="fa-regular fa-copy"></i>';
-            }, 2000);
-          });
-        });
+      button.innerHTML = '<i class="fa-regular fa-clipboard">Copy</i>';
 
-      pre.appendChild(button); // inject button inside pre
+      button.addEventListener("click", () => {
+        navigator.clipboard.writeText(pre.innerText).then(() => {
+          button.innerHTML = '<i class="fa-regular fa-check"></i>';
+          setTimeout(() => button.innerHTML = '<i class="fa-regular fa-clipboard">Copied!</i>', 2000);
+        });
+      });
+
+      wrapper.appendChild(button);
     });
+    
 });
 </script>

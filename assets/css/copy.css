@@ -1,3 +1,8 @@
+.code-wrapper {
+  position: relative;
+  display: inline-block; /* shrink to pre width */
+}
+
 pre {
   position: relative;       /* make button position relative to pre */
   overflow: auto;           /* keep horizontal scroll */
@@ -8,7 +13,7 @@ pre {
 }
 
 .copy-button {
-  position: absolute;       /* absolute instead of sticky */
+  position: absolute; /* fixed relative to wrapper, not scrollable pre */
   top: 0.25rem;
   right: 0.25rem;
   z-index: 10;
