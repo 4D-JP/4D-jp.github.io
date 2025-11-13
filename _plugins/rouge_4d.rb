@@ -133,6 +133,11 @@ module Rouge
         # Generic identifiers (Unicode)
         rule %r/\b([\p{L}])([\p{L}0-9]*)\b/, Name
         #
+        rule %r/[()]/, Token::Punctuation
+        rule %r/[{}[\]]/, Token::Punctuation
+        rule %r/[;]/, Token::Punctuation
+        rule %r/[,]/, Token::Punctuation
+        rule %r/\\/, Token::Punctuation
       end
       
       # String state for escape sequences
