@@ -43,8 +43,8 @@ markdown: kramdown
 #    disable : true
 
 kramdown:
-  syntax_highlighter: nil
-
+  syntax_highlighter: rouge
+  
 highlighter: rouge
 plugins_dir: _plugins
   
@@ -68,11 +68,11 @@ collections:
 excerpt_separator: <!--more-->
 
 # paginate
-gems: [jekyll-paginate]
-paginate: 10
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
 
-# sitemap
-gems: [jekyll-sitemap]
+paginate: 10
 
 defaults:
   - scope:
