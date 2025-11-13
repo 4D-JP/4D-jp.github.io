@@ -1,6 +1,18 @@
 /* Style the copy button */
+/* Make code blocks scrollable horizontally if too wide */
 pre {
-  position: relative;
+  overflow: auto;       /* enables scrollbars when content overflows */
+  padding: 1em;         /* optional, adds padding */
+  background-color: #f5f5f5; /* optional, background */
+  border-radius: 5px;   /* optional, rounded corners */
+  white-space: pre;     /* preserve whitespace */
+}
+
+/* Optional: style the inner code spans from Rouge */
+pre code {
+  display: block;
+  font-family: monospace;
+  font-size: 0.9em;
 }
 
 .copy-button {
