@@ -123,13 +123,13 @@ module Rouge
         # Special Sequence 3
         rule %r/\b(?i)(singleton |shared )*(class constructor)\b/, Keyword::Declaration
         #
-        # OPERATOR
-        #
-        rule %r/(\+=|-=|\*=|\/=|~\||&&|&|\|\||\||<<|>>|<=|>=|<|>|:=|\?\?|\?\+|\?\-|\+|\-|\*|\/|=|#|\\\^|%|\?|:)/, Operator
-        #
+        # TOKEN
         # Generic identifiers (Unicode)
         rule %r/\b([\p{L}])([\p{L}0-9]*)\b/, Name
         #
+        # OPERATOR
+        #
+        rule %r/(\+=|-=|\*=|\/=|~\||&&|&|\|\||\||<<|>>|<=|>=|<|>|:=|\?\?|\?\+|\?\-|\+|\-|\*|\/|=|#|\\\^|%|\?|:)/, Operator
         #
         # PUNCTUATION
         #
@@ -142,6 +142,7 @@ module Rouge
         # FALLBACK
         #
         rule %r/\s+/, Text
+        rule %r/./, Text
       end
       
       # String state for escape sequences
