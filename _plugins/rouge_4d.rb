@@ -123,6 +123,9 @@ module Rouge
         # Special Sequence 3
         rule %r/\b(?i)(singleton |shared )*(class constructor)\b/, Keyword::Declaration
         #
+        # Symbols
+        rule %r/[;,(){}\[\]\\]/, Token::Punctuation
+        #
         # 4D operators
         #
         rule %r/(\+=|-=|\*=|\/=|~\||&&|&|\|\||\||<<|>>|<=|>=|<|>|:=|\?\?|\?\+|\?\-|\+|\-|\*|\/|=|#|\\\^|%|\?|:)/, Operator
