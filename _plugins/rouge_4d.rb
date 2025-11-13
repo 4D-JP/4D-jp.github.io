@@ -87,10 +87,7 @@ module Rouge
         #
         # OBJECT NOTATION
         #
-        # Dot notation functions
-        rule %r/(?<=[.])([\p{L}])([\p{L}0-9]*)(?=[(])/, Name::Function
-        # Dot notation attributes
-        rule %r/(?<=[.])([\p{L}])([\p{L}0-9]*)(?=[.])/, Name::Attribute
+        rule %r/(?<=[.])([\p{L}])([\p{L}0-9]*)\b/, Name::Attribute
         #
         # COMMANDS
         #
