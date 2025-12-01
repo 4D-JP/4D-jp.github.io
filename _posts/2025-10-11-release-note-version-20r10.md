@@ -1,16 +1,38 @@
 ---
 layout: fix
 title: "4D 20r10 修正リスト"
-date: 2025-11-12 08:00:00
+date: 2025-11-30 08:00:00
 categories: 修正リスト
 tags: 20r10
-build: 100284
+build: 100296
 version: "20r10"
 permalink: /2025/284/:slug/
 ---
 
 **バージョン**: {{page.version}}  
 **ビルド**: {{page.build}} 
+
+* ACI0106026 *tool4d* で*Build4D* を使用してOEM版のサーバーアプリケーションをビルドした場合，途中でエラーが発生し，ライセンスフォルダーにライセンスがインストールされませんでした。
+
+**注記**: 修正により，*tool4d* で[`Create deployment license`](https://developer.4d.com/docs/ja/commands/create-deployment-license)および`BUILD APPLICATION`が使用できるようになりました。
+
+* ACI0106042 共有オブジェクトグループのコピー中にアクセス競合が発生する恐れがありました。
+
+* ACI0106020 頻繁に`License info`を使用した場合，内部タイマープロセスがクラッシュすることがありました。
+
+**注記**: コマンドの実行に伴い，メニューバーが更新されたいたことが関係しています。修正により，`License info`を実行してもメニューバーは更新されないようになりました。[`License info`](https://developer.4d.com/docs/ja/commands/license-info)はライセンスフォルダーの内容を毎回リロードするコマンドであり，頻繁に呼び出されることは想定されていません。ライセンスの使用状況を定期的に確認するのであれば，[`License usage`](https://developer.4d.com/docs/ja/commands/license-usage)を検討してください。
+
+* ACI0106043 HTTPリクエストハンドラーの`IncomingMessage`オブジェクトの`urlQuery`プロパティの値に含まれる`%3D`が`=`にデコードされました。
+
+* ACI0106040 macOS 26.1 Apple Silicon版のみ。4D Write Proエリアに対して擬似的にキーボードイベントを発生させた場合，アプリケーションがクラッシュする恐れがありました。
+
+* ACI0106026 *tool4d* で*Build4D* を使用してOEM版のサーバーアプリケーションをビルドした場合，途中でエラーが発生し，ライセンスフォルダーにライセンスがインストールされませんでした。
+
+**注記**: 修正により，*tool4d* で[`Create deployment license`](https://developer.4d.com/docs/ja/commands/create-deployment-license)および`BUILD APPLICATION`が使用できるようになりました。
+
+* ACI0105906 WebSocketサーバーは`1`件のメッセージバンドル毎に1回しかワーカーをトリガーしませんでした。同時に`n+x`件のメッセージがキューに追加されても，`n+1`件しかワーカーのスタックが増えないため，最新のメッセージではなく，数分前に送信したメッセージが処理されることがありました。
+
+* ACI0105933 インストーラーの英語版およびフランス語版の「お読みください（README）」ファイルに記載されたコンポーネントのダウンロードURL（GitHub）が正しくありませんでした。
 
 * ACI0106023 `SMTPTransporter`でメールを送信した場合，メール本文中に含まれるピリオド記号（`.`）が失わることがありました。ACI0105850が修正されたことによる副作用のようです。
 

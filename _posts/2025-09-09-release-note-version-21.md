@@ -1,13 +1,65 @@
 ---
 layout: fix
 title: "4D 21 修正リスト"
-date: 2025-11-05 08:00:00
+date: 2025-11-30 08:00:00
 categories: 修正リスト
 tags: "21.0"
-build: 100186
+build: 100225
 version: "21.0"
 permalink: /2025/279/:slug/
 ---
+
+* ACI0106035 インデックス再構築中に表示される進捗ダイアログのメッセージが1行に収まらず，判読できないことがありました。
+
+* ACIACI0106006 [`restrictedByDefault`](https://developer.4d.com/docs/ja/ORDA/privileges#restriction-modes)が`True`の場合，*Authentify* で権限を取得した後も計算属性にアクセスできず，`restrict`フィルターも適用されませんでした。
+
+* ACI0106005 無効なシンタックスですが，空の`Try()`構文をコンパイルした場合，`GFLAGS`でメモリ破壊が検出されました。
+
+* ACI0105906 WebSocketサーバーは`1`件のメッセージバンドル毎に1回しかワーカーをトリガーしませんでした。同時に`n+x`件のメッセージがキューに追加されても，`n+1`件しかワーカーのスタックが増えないため，最新のメッセージではなく，数分前に送信したメッセージが処理されることがありました。
+
+* ACI0105672 ライセンスを指定せずに*Build4D* でサーバーアプリケーションをビルドすることができませんでした。
+
+* ACI0106011 [`restrictedByDefault`](https://developer.4d.com/docs/ja/ORDA/privileges#restriction-modes)が`True`の場合，*Authentify* で権限を取得した後もエイリアス属性にアクセスできませんでした。
+
+* ACI0106003 OEM Desktopライセンスをアクティベーションすることができませんでした。ライセンス登録サーバー側でマスタープロダクト（Developer Professional）とのリンク処理がうまくできてないようです。
+
+* ACI0105904 プロジェクトモードのみ。ビルドしたアプリケーションのログイン画面で「パスワードを保存」を有効にしても，パスワード（のハッシュ）が保存されず，毎回，入力を求められました。
+
+**注記**: ログイン情報は*AppData/Roaming* またはApplication Supportフォルダーに「アプリケーション名.mdp」というファイル名で保存されます。ログイン画面を再表示されるためには，起動時にShiftキーを押しつづけてください。
+
+* ACI0105991 インデックスが設定されている`4D.Vector`型のフィールドに対してクエリを実行した場合，空のエンティティセレクションが返されました。
+
+* ACI0106048 フランス語版のみ。ヌルポインターを逆参照しようとした場合に返されるエラーメッセージのXLIFFリソースがありませんでした。
+
+* ACI0106033 SVGコンポーネントの`SVG_New_textArea`に渡されたテキストのアンパーサンド記号（`&`）が正しくエンコードされませんでした。
+
+* ACI0106015 *4D Widgets* コンポーネントがロードされていない場合，フォームエディターのオブジェクトライブラリに無効な項目が表示されました。使用されていない依存関係はオブジェクトライブラリから除外されるべきです。
+
+* ACI0105956 コンポーネントの*HTTPHandlers.json* ファイルでHTTPハンドラーを定義し，ホストのWebサーバーに対して合致するリクエストを送信した場合，コンポーネントのHTTPハンドラーが呼ばれませんでした。
+
+**注記**: コンポーネントの*HTTPHandlers.json* ファイルでHTTPハンドラーを定義する場合，コンポーネントのクラス名前空間を含める必要があります。また，コンポーネント側でホストの`WebServer`オブジェクトを使用するためには*On before host database startup* データベースメソッドでオブジェクトにアクセスする必要があります。
+
+```4d
+#DECLARE($event : Integer)
+
+Case of 
+	: ($event=On before host database startup)
+		var $webServer : Object
+		$webServer:=WEB Server(Web server database)
+End case 
+```
+
+* ACI0106042 共有オブジェクトグループのコピー中にアクセス競合が発生する恐れがありました。
+
+* ACI0106007 特定の状況で`WEB SEND RAW DATA`を実行した場合，アプリケーションがクラッシュしました。
+
+ACI0106044	AST interpreter: dereferencing a null 4D pointer does not trigger an error		4D Staff	According to origin
+
+* ACI0106043 HTTPリクエストハンドラーの`IncomingMessage`オブジェクトの`urlQuery`プロパティの値に含まれる`%3D`が`=`にデコードされました。
+
+* ACI0106040 macOS 26.1 Apple Silicon版のみ。4D Write Proエリアに対して擬似的にキーボードイベントを発生させた場合，アプリケーションがクラッシュする恐れがありました。
+
+* ACI0106023 `SMTPTransporter`でメールを送信した場合，メール本文中に含まれるピリオド記号（`.`）が失わることがありました。ACI0105850が修正されたことによる副作用のようです。
 
 * ACI0105929 Mac版のみ。`entitySelection.slice()`で作成したエンティティセレクションに対し，オブジェクト型フィールドの並び替えを属性パスを指定せずに実行した場合，アプリケーションがクラッシュすることがありました。 
 
