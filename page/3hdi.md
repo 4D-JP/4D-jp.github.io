@@ -9,6 +9,11 @@ type: page
 * content
 {:toc}
 
+## 21 # {#v21}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Vector と query()**](https://github.com/4D-JP/HDI/releases/download/21/HDI_4D_Query_Vectors.zip)<span id="21-0-1"></span><br />
+[`query()`](https://developer.4d.com/docs/ja/API/DataClassClass#ベクトル類似度によるクエリ) 関数にベクトルクエリのネイティブサポートが導入されたことにより、[`DataClass.query()`](https://developer.4d.com/docs/ja/API/DataClassClass#query) および [`EntitySelection.query()`](https://developer.4d.com/docs/ja/API/EntitySelectionClass#query) を使ってベクトル属性のクエリが行えるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [セマンティック検索: ベクトル類似度によるクエリ](https://blog.4d.com/ja/4d-ai-searching-entities-by-vector-similarity-in-4d/)<br />
 
 ## 20r10 # {#v20r10}
 
