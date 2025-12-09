@@ -10,4 +10,6 @@ tags: webarea windows userinterface
 
 <i class="fa fa-external-link" aria-hidden="true"></i> [4D DevCon 2024](https://speakerdeck.com/miyako/4d-devcon-2024?slide=80)
 
-どうしても進捗をリアルタイムで表示したい場合，[埋め込みWebレンダリングエンジン](https://developer.4d.com/docs/ja/FormObjects/propertiesWebArea#埋め込みwebレンダリングエンジンを使用)の使用を検討してください。
+同様の理由により，Windows版システムWebエリアでは[`WA GET URL HISTORY`](https://developer.4d.com/docs/ja/commands/wa-get-url-history)でURLの履歴が参照できなくなりました。
+
+どうしても進捗をリアルタイムで表示したい場合，あるいは履歴にアクセスしたい場合，[埋め込みWebレンダリングエンジン](https://developer.4d.com/docs/ja/FormObjects/propertiesWebArea#埋め込みwebレンダリングエンジンを使用)の使用を検討してください。
