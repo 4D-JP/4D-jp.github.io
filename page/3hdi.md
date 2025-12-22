@@ -11,6 +11,11 @@ type: page
 
 ## 21 # {#v21}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: アクセスをデフォルトで拒否する**](https://github.com/4D-JP/HDI/releases/download/21/HDI_RestrictAccessByDefault.zip)<span id="21-0-2"></span><br />
+
+[`roles.json`](https://developer.4d.com/docs/ja/ORDA/privileges) ファイルで新しいブール型プロパティ [`restrictedByDefault`](https://developer.4d.com/docs/ja/ORDA/privileges#制限モード) が利用可能になりました。このプロパティにより、データストア・データクラス・属性・データモデルクラス関数・シングルトン関数といったリソースに対する Webアクセスをデフォルトで拒否することができます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - アクセス許可 - ワンクリックでリソースへの Webアクセスを制限/許可する](https://blog.4d.com/ja/orda-permissions-restrict-allow-web-access-to-the-resources-in-one-click/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Vector と query()**](https://github.com/4D-JP/HDI/releases/download/21/HDI_4D_Query_Vectors.zip)<span id="21-0-1"></span><br />
 [`query()`](https://developer.4d.com/docs/ja/API/DataClassClass#ベクトル類似度によるクエリ) 関数にベクトルクエリのネイティブサポートが導入されたことにより、[`DataClass.query()`](https://developer.4d.com/docs/ja/API/DataClassClass#query) および [`EntitySelection.query()`](https://developer.4d.com/docs/ja/API/EntitySelectionClass#query) を使ってベクトル属性のクエリが行えるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [セマンティック検索: ベクトル類似度によるクエリ](https://blog.4d.com/ja/4d-ai-searching-entities-by-vector-similarity-in-4d/)<br />
