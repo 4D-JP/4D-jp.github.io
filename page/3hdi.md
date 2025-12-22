@@ -12,7 +12,6 @@ type: page
 ## 21 # {#v21}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: アクセスをデフォルトで拒否する**](https://github.com/4D-JP/HDI/releases/download/21/HDI_RestrictAccessByDefault.zip)<span id="21-0-2"></span><br />
-
 [`roles.json`](https://developer.4d.com/docs/ja/ORDA/privileges) ファイルで新しいブール型プロパティ [`restrictedByDefault`](https://developer.4d.com/docs/ja/ORDA/privileges#制限モード) が利用可能になりました。このプロパティにより、データストア・データクラス・属性・データモデルクラス関数・シングルトン関数といったリソースに対する Webアクセスをデフォルトで拒否することができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - アクセス許可 - ワンクリックでリソースへの Webアクセスを制限/許可する](https://blog.4d.com/ja/orda-permissions-restrict-allow-web-access-to-the-resources-in-one-click/)<br />
 
