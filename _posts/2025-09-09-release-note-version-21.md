@@ -9,7 +9,7 @@ version: "21.0"
 permalink: /2025/279/:slug/
 ---
 
-* ACI0106046 `QUERY BY ATTRIBUTE`の比較演算子を省略した場合，アプリケーションがクラッシュしました。
+* ACI0106046 Mac版のみ。Apple Siliconプラットフォームで`QUERY BY ATTRIBUTE`の比較演算子を省略した場合，アプリケーションがクラッシュしました。
 
 * ACI0106065`JSON Validate`が`multipleOf`キーワードを正しく判定できませんでした。
 
