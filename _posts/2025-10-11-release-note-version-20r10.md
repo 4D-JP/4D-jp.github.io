@@ -1,9 +1,9 @@
 ---
 layout: fix
-title: "4D 20r10 修正リスト"
+title: "4D 20r10 Hotfix 2 修正リスト"
 date: 2025-11-30 08:00:00
 categories: 修正リスト
-tags: 20r10
+tags: 20r10 hotfix
 build: 100310
 version: "20r10"
 permalink: /2025/284/:slug/
