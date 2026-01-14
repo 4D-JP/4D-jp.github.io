@@ -91,10 +91,10 @@ module Rouge
         #
         # COMMANDS
         #
-        rule %r/(?i)\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Function
-        rule %r/(?i)\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Function
         rule %r/(?<![+\-|\/^*?=#%&:;.)\]])(?i)\b(?:#{COMMAND_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Function
         rule %r/(?<![+\-|\/^*?=#%&:;.)\]])(?i)\b(?:#{COMMAND_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Function
+        rule %r/(?i)\b(?:#{FUNCTION_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Function
+        rule %r/(?i)\b(?:#{FUNCTION_FRENCH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Function
         #
         # CONSTANTS
         rule %r/(?i)\b(?:#{CONSTANTS_ENGLISH.map { |k| Regexp.escape(k) }.join('|')})\b/, Name::Function
