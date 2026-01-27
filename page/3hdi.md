@@ -11,6 +11,11 @@ type: page
 
 ## 21 # {#v21}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Web とのセッション共有**](https://github.com/4D-JP/HDI/releases/download/21/HDI_Share_C-S_Web_Session.zip)<span id="21-0-3"></span><br />
+4D アプリケーションと Web でセッションが共有できるようになったことで、追加のクライアントライセンスを消費することなく、4Dフォームの Webエリアに Qodlyページを表示できるようになりました。<br />
+※ Qodly Studio の例題も含まれています。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [追加コストなしで Webエリアに Qodlyページを埋め込む](https://blog.4d.com/ja/share-your-4d-remote-client-session-with-web-accesses/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: アクセスをデフォルトで拒否する**](https://github.com/4D-JP/HDI/releases/download/21/HDI_RestrictAccessByDefault.zip)<span id="21-0-2"></span><br />
 [`roles.json`](https://developer.4d.com/docs/ja/ORDA/privileges) ファイルで新しいブール型プロパティ [`restrictedByDefault`](https://developer.4d.com/docs/ja/ORDA/privileges#制限モード) が利用可能になりました。このプロパティにより、データストア・データクラス・属性・データモデルクラス関数・シングルトン関数といったリソースに対する Webアクセスをデフォルトで拒否することができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - アクセス許可 - ワンクリックでリソースへの Webアクセスを制限/許可する](https://blog.4d.com/ja/orda-permissions-restrict-allow-web-access-to-the-resources-in-one-click/)<br />
