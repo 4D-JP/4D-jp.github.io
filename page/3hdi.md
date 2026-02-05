@@ -11,6 +11,11 @@ type: page
 
 ## 21 # {#v21}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: Save と Drop イベント**](https://github.com/4D-JP/HDI/releases/download/21/HDI_ORDA_Events_Save_Drop.zip)<span id="21-0-4"></span><br />
+データの保存や削除の各フェーズ (実行前・実行中・実行後) カスタムロジックを組み込み、強固なデータ整合性を実現する[ORDAイベント](https://developer.4d.com/docs/ja/ORDA/orda-events)の具体的な実装方法を紹介します。<br />
+※ Qodly Studio の例題も含まれています。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA – データベース操作中にイベント駆動ロジックを処理する](https://blog.4d.com/ja/orda-handle-an-event-driven-logic-during-database-operations/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**Web とのセッション共有**](https://github.com/4D-JP/HDI/releases/download/21/HDI_Share_C-S_Web_Session.zip)<span id="21-0-3"></span><br />
 4D アプリケーションと Web でセッションが共有できるようになったことで、追加のクライアントライセンスを消費することなく、4Dフォームの Webエリアに Qodlyページを表示できるようになりました。<br />
 ※ Qodly Studio の例題も含まれています。<br />
