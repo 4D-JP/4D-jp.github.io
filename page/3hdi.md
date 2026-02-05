@@ -11,6 +11,10 @@ type: page
 
 ## 21 # {#v21}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Qodlyページのローカライズ**](https://github.com/4D-JP/HDI/releases/download/21/PIQS_Localization.zip)<span id="21-0-5"></span><br />
+Qodlyページのローカライズに関するサンプルです。詳しくはブログ記事を参照ください。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Qodlyページのローカライズ：実践ガイド](https://blog.4d.com/ja/localize-your-qodly-pages-a-practical-guide/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: Save と Drop イベント**](https://github.com/4D-JP/HDI/releases/download/21/HDI_ORDA_Events_Save_Drop.zip)<span id="21-0-4"></span><br />
 データの保存や削除の各フェーズ (実行前・実行中・実行後) カスタムロジックを組み込み、強固なデータ整合性を実現する[ORDAイベント](https://developer.4d.com/docs/ja/ORDA/orda-events)の具体的な実装方法を紹介します。<br />
 ※ Qodly Studio の例題も含まれています。<br />
