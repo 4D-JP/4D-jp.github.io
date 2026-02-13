@@ -33,273 +33,253 @@ Qodlyページのローカライズに関するサンプルです。詳しくは
 [`query()`](https://developer.4d.com/docs/ja/API/DataClassClass#ベクトル類似度によるクエリ) 関数にベクトルクエリのネイティブサポートが導入されたことにより、[`DataClass.query()`](https://developer.4d.com/docs/ja/API/DataClassClass#query) および [`EntitySelection.query()`](https://developer.4d.com/docs/ja/API/EntitySelectionClass#query) を使ってベクトル属性のクエリが行えるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [セマンティック検索: ベクトル類似度によるクエリ](https://blog.4d.com/ja/4d-ai-searching-entities-by-vector-similarity-in-4d/)<br />
 
-## 20r10 # {#v20r10}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDAのコンストラクターと touchedイベントの実行タイミング**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_ORDA_Events_Details.zip)<span id="20-10-11"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDAのコンストラクターと touchedイベントの実行タイミング**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_ORDA_Events_Details.zip) (20r10)<span id="20-10-11"></span><br />
 この HDI では、Qodlyアプリを使った場合に ORDAの [`constructor()`](https://developer.4d.com/docs/ja/ORDA/ordaClasses#class-constructor-1)と [`touched` イベント](https://developer.4d.com/docs/ja/ORDA/orda-events#function-event-touched)がそれぞれいつ、どこで実行されるかを確認します。<br />
 ※ この例題には Qodly Studio を使います。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - コンストラクターと touchedイベント - ネットワークを介した動作の詳細](https://blog.4d.com/ja/orda-events-on-data-detailed-behaviour-through-a-network/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: チャンクで文書を検索する**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_VectorWithChunk.zip)<span id="20-10-10"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: チャンクで文書を検索する**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_VectorWithChunk.zip) (20r10)<span id="20-10-10"></span><br />
 この HDI では、チャンクを使い、4D Write Pro の文書を検索して、該当する段落を見つける方法を紹介します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [AI で 4D Write Pro文書の「適切な場所」を見つける](https://blog.4d.com/ja/find-the-right-spot-in-your-4d-write-pro-document-with-ai/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: AI を使った文書の分類・評価**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_Classification.zip)<span id="20-10-9"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: AI を使った文書の分類・評価**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_Classification.zip) (20r10)<span id="20-10-9"></span><br />
 この HDI では、4D Write Pro の文書を AI によって自動的に分類・評価して、文書情報を充実させる方法を紹介します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [AI によるインテリジェントな 4D Write Pro文書分析](https://blog.4d.com/ja/intelligent-4d-write-pro-document-analysis-with-ai/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: カレンダーイベントの作成・編集**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_Calendar_Event_Management.zip)<span id="20-10-8"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: カレンダーイベントの作成・編集**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_Calendar_Event_Management.zip) (20r10)<span id="20-10-8"></span><br />
 [4D NetKit](https://github.com/4d/4D-NetKit/) を使って、Google または Office365 のカレンダーイベントを新規作成および編集できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Microsoft 365 や Google のカレンダーイベントを 4D で管理: 作成・更新・削除](https://blog.4d.com/ja/managing-calendar-events-with-microsoft-365-or-google-in-4d-create-update-delete/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: AIを使ったセマンティック検索**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_Vector.zip)<span id="20-10-7"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: AIを使ったセマンティック検索**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4DWP_AI_Vector.zip) (20r10)<span id="20-10-7"></span><br />
 AIベクトルのサポートにともない、人工知能によるセマンティック検索が可能になりました。この HDI では、4D Write Pro の文書をベクトル化してオブジェクトフィールドに格納し、もとの文書とともに保存しておくことで、プロンプトによるセマンティック検索を実現しています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: AI による文書検索](https://blog.4d.com/ja/ai-brings-magical-search-to-4d-write-pro-documents/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Vector クラスを使った類似性検索**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4D_Vectors.zip)<span id="20-10-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Vector クラスを使った類似性検索**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_4D_Vectors.zip) (20r10)<span id="20-10-6"></span><br />
 ベクトル化情報を扱うための [`Vector` クラス](https://developer.4d.com/docs/ja/API/VectorClass) が実装されたのにともない、人工知能を使った類似性検索が可能になりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D AI: 4D Vector のパワー](https://blog.4d.com/ja/4d-ai-discover-the-power-of-4d-vectors/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: Entityクラスのコンストラクター**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_ORDA_constructor.zip)<span id="20-10-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: Entityクラスのコンストラクター**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_ORDA_constructor.zip) (20r10)<span id="20-10-5"></span><br />
 4D 20 R10 では、ORDA の Entityクラスにコンストラクターが設定できるようになりました。Entity クラスに [`constructor()`](https://developer.4d.com/docs/ja/ORDA/ordaClasses#class-constructor-1) を実装すると、新規エンティティがインスタンス化される際に、エンティティ属性の初期値を指定することができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - エンティティコンストラクターの紹介](https://blog.4d.com/ja/orda-get-started-with-the-entity-constructor/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: touchedイベント**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_ORDA_Events_touched.zip)<span id="20-10-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: touchedイベント**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_ORDA_Events_touched.zip) (20r10)<span id="20-10-4"></span><br />
 4D 20 R10 では、ORDA の [`touched` イベント](https://developer.4d.com/docs/ja/ORDA/orda-events#function-event-touched) が実装されました。このイベントは属性レベルまたはエンティティレベルで設定することができ、属性値が変更されたときにトリガーされます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA: 新しい touched イベント](https://blog.4d.com/ja/orda-get-started-with-the-touched-event/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**データソースにフォーミュラを設定**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_SetDataSourceFormula.zip)<span id="20-10-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**データソースにフォーミュラを設定**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_SetDataSourceFormula.zip) (20r10)<span id="20-10-3"></span><br />
 4D 20 R10 では、フォームオブジェクトのデータソースフォーミュラを設定・取得するための新しいコマンドが追加されました: [`OBJECT SET DATA SOURCE FORMULA`](https://developer.4d.com/docs/ja/commands/object-set-data-source-formula)、[`OBJECT Get data source formula`](https://developer.4d.com/docs/ja/commands/object-get-data-source-formula)。これによって、より簡単に動的 (ダイナミック) なフォーム編集をおこなうことができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいデータソースコマンドを使った動的なフォーム作成](https://blog.4d.com/ja/building-forms-on-the-fly-with-new-data-source-commands/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**型指定されたオブジェクトフィールド**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_typed_object_field.zip)<span id="20-10-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**型指定されたオブジェクトフィールド**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_typed_object_field.zip) (20r10)<span id="20-10-2"></span><br />
 4D 20 R10 では、オブジェクトフィールドをクラスとして型指定することができます。HDI では、型指定されたオブジェクトフィールドからデータを取得する方法などを紹介します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [オブジェクトフィールドをクラスで型指定する](https://blog.4d.com/ja/stricter-class-based-typing-for-objects/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**UDPSocket と UDPEvent クラス**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_UDPSocket.zip)<span id="20-10-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**UDPSocket と UDPEvent クラス**](https://github.com/4D-JP/HDI/releases/download/20r10/HDI_UDPSocket.zip) (20r10)<span id="20-10-1"></span><br />
 4D 20 R10 では、新たに [UDPSocketクラス](https://developer.4d.com/docs/ja/API/UDPSocketClass) と [UDPEventクラス](https://developer.4d.com/docs/ja/API/UDPEventClass) が追加されました。これらのクラスは、廃止予定である 4D Internet Commands の代替機能を提供するものです。これらを使って、UDP通信をおこなうことができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [UDP通信を実行する新しいクラス](https://blog.4d.com/ja/new-class-to-perform-udp-communications/)<br />
 
-## 20r9 # {#v20r9}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**TCPListenerクラス**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_TCPConnection-TCPListener.zip)<span id="20-9-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**TCPListenerクラス**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_TCPConnection-TCPListener.zip) (20r9)<span id="20-9-5"></span><br />
 4D 20 R9 では、新たに [TCPListenerクラス](https://developer.4d.com/docs/ja/API/TCPListenerClass) が追加されました。このクラスは、廃止予定である 4D Internet Commands の代替機能を提供するものです。このリリースでは、4D で直接 TCP接続の着信を処理し、TCPサーバーを構築できるようになりました<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [TCP接続の受信を処理する TCPListener クラス](https://blog.4d.com/ja/new-class-to-handle-incoming-tcp-connections/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ワンタイムパスワード (OTP) セッショントークン**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_Session_Token.zip)<span id="20-9-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ワンタイムパスワード (OTP) セッショントークン**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_Session_Token.zip) (20r9)<span id="20-9-4"></span><br />
 [`Session`](https://developer.4d.com/docs/ja/API/SessionClass) オブジェクトに新しい関数 [`createOTP`](https://developer.4d.com/docs/ja/API/SessionClass#createotp) が追加され、ワンタイムパスワードを使うことでセッションを再取得できるようになりました。この OTP には有効期限を設定することができ、一度しか使えません。また、[`restore()`](https://developer.4d.com/docs/ja/API/SessionClass#restore) 関数も同様に追加されました。こちらの使い方についてはブログ記事をご覧ください。<br />
 ※ この例題には Qodly Studio を使います。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Webセッションのワンタイムパスワード (OTP) の使い方](https://blog.4d.com/ja/connect-your-web-apps-to-third-party-systems/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 読み込みコールバックの改善**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_4DVP_End_Loading_Custom_Functions.zip)<span id="20-9-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: 読み込みコールバックの改善**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_4DVP_End_Loading_Custom_Functions.zip) (20r9)<span id="20-9-3"></span><br />
 4D View Pro の読み込みコマンド [`VP IMPORT DOCUMENT`](https://developer.4d.com/docs/ja/ViewPro/commands/vp-import-document)、[`VP IMPORT FORM BLOB`](https://developer.4d.com/docs/ja/ViewPro/commands/vp-import-from-blob)、[`VP IMPORT FROM OBJECT`](https://developer.4d.com/docs/ja/ViewPro/commands/vp-import-from-object) が改善され、読み込んだドキュメントにおいて、すべてのカスタム関数が計算完了するまでコールバックが実行されないことが保証されるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: 読み込みのコールバックで、カスタム関数の計算完了を確認する](https://blog.4d.com/ja/4d-view-pro-import-callback-ensures-custom-functions-are-fully-resolved/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Webエリア内でクラスを使う**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_Context_Web_Area.zip)<span id="20-9-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Webエリア内でクラスを使う**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_Context_Web_Area.zip) (20r9)<span id="20-9-2"></span><br />
 新しい [`WA SET CONTEXT`](https://developer.4d.com/docs/ja/commands/wa-set-context) コマンドを使って、Webエリアのコンテキストにクラスを設定することで、その Webエリア内で `$4d` を介してクラス関数が使えるようになります。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [埋め込み Webエリアでの $4d を介したクラスの使用](https://blog.4d.com/ja/use-class-in-embedded-web-area-with-4d/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: カレンダーの取得**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_Get_Calendar.zip)<span id="20-9-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: カレンダーの取得**](https://github.com/4D-JP/HDI/releases/download/20r9/HDI_Get_Calendar.zip) (20r9)<span id="20-9-1"></span><br />
 [4D NetKit](https://github.com/4d/4D-NetKit/) を使って、Google または Office365 のカレンダーイベントが取得できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D NetKit: Google と Microsoft 365 のカレンダーイベントを取得する](https://blog.4d.com/ja/4d-netkit-get-google-and-microsoft-365-calendar-events/)<br />
 
-## 20r8 # {#v20r8}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**4Dリクエストハンドラー**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_HTTP_RequestHandler.zip)<span id="20-8-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4Dリクエストハンドラー**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_HTTP_RequestHandler.zip) (20r8)<span id="20-8-3"></span><br />
 4D 20 R8 では、4D HTTPサーバーに [HTTPリクエストハンドラー](https://developer.4d.com/docs/ja/WebServer/http-request-handler) が導入されました。これにより、リクエストURLパターンに対してトリガーするビジネスロジックの定義を簡単かつ詳細におこなうことができます。また、これによって Qodlyページ上でのリダイレクトが可能になりました。<br />
 ※ Qodly Studio の例題も含まれています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4Dリクエストハンドラーで HTTPリクエストを管理する](https://blog.4d.com/ja/master-http-requests-with-4d-request-handlers/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**TCPConnectionクラス**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_TCPConnection.zip)<span id="20-8-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**TCPConnectionクラス**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_TCPConnection.zip) (20r8)<span id="20-8-2"></span><br />
 4D 20 R8 では、新たに [TCPConnectionクラス](https://developer.4d.com/docs/ja/API/TCPConnectionClass) が追加されました。オブジェクト指向のシンタックスを活用し、非同期ネットワーク接続処理をサポートしているこの最新のクラスは、廃止予定である 4D Internet Commands の代替機能を提供するものです。このリリースでは、TCPクライアント機能が利用できるようになり、外部サーバーに接続してシームレスにデータを交換できるようになりました。<br />
 ※ R9 で追加された [TCPListnerクラス](https://developer.4d.com/docs/ja/API/TCPListenerClass) を用いた [インターネットコマンドを使用しないバージョン](https://github.com/miyako/HDI_TCPConnection/tree/main) (英語) もぜひご確認ください。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [TCP接続を実行する新しいクラス](https://blog.4d.com/ja/new-class-to-perform-tcp-connections/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 文書の署名と検証**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_Sign4DWPdocuments.zip)<span id="20-8-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 文書の署名と検証**](https://github.com/4D-JP/HDI/releases/download/20r8/HDI_Sign4DWPdocuments.zip) (20r8)<span id="20-8-1"></span><br />
 4D Write Pro ドキュメントに署名を追加する方法と、その署名を検証する方法を紹介します。<br />
 ※ 少しの修正で、ほかのタイプの文書の署名にも応用が可能です。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - 文書に署名して保護する](https://blog.4d.com/ja/4d-write-pro-sign-and-secure-documents/)<br />
 
-## 20r7 # {#v20r7}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**OutgoingMessageクラス**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_OutGoingMessageClass.zip)<span id="20-7-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**OutgoingMessageクラス**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_OutGoingMessageClass.zip) (20r7)<span id="20-7-5"></span><br />
 新しく追加された[OutgoingMessageクラス](https://developer.4d.com/docs/ja/API/OutgoingMessageClass) によって、RESTサーバーを介したブラウザーとのデータのやりとりが一層簡単になりました。また、[onHTTPget](https://developer.4d.com/docs/ja/20-R8/ORDA/ordaClasses#onhttpget-キーワード) キーワードの実装により、クラス関数を GET動詞で呼び出せるようになりました。<br />
 ※ Qodly Studio の例題も含まれています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [OutgoingMessageクラスでWebアプリケーションに力を](https://blog.4d.com/ja/energize-your-web-applications-with-the-outgoingmessage-class/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**プロセスとセッション情報の取得**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_ImproveProcessAndSessionCommands.zip)<span id="20-7-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**プロセスとセッション情報の取得**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_ImproveProcessAndSessionCommands.zip) (20r7)<span id="20-7-4"></span><br />
 プロセスとセッションの情報を取得するための新しいコマンドが実装されました: [`Process info`](https://developer.4d.com/docs/ja/commands/process-info)、 [`Session info`](https://developer.4d.com/docs/ja/commands/session-info)<br />
 また、既存の [`Process activity`](https://developer.4d.com/docs/ja/commands/process-activity) コマンドの機能も強化されました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [プロセスとセッションを管理するための機能強化](https://blog.4d.com/ja/exciting-enhancements-for-managing-processes-and-sessions/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ウィンドウのタイトルバーにアイコンを表示させる**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_SetWindowDocumentIcon.zip)<span id="20-7-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ウィンドウのタイトルバーにアイコンを表示させる**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_SetWindowDocumentIcon.zip) (20r7)<span id="20-7-3"></span><br />
 ウィンドウのタイトルバーに任意のアイコンを表示させたり、ドキュメントと紐づけることでファイルパスを表示できるようにしたりする新しいコマンドが追加されました: [`SET WINDOW DOCUMENT ICON`](https://doc.4d.com/4dv20R/help/command/ja/page1840.html)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [各ウィンドウに異なるアイコンを定義する](https://blog.4d.com/ja/define-a-different-icon-for-each-window/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: セクションとサブセクションの削除・リセット**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_4DWP_ManageSections.zip)<span id="20-7-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: セクションとサブセクションの削除・リセット**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_4DWP_ManageSections.zip) (20r7)<span id="20-7-2"></span><br />
 4D Write Pro のセクションとサブセクションをコマンドにより削除したり、属性をリセットしたりすることができます: [`WP DELETE SECTION`](https://developer.4d.com/docs/ja/WritePro/commands/wp-delete-section#wp-delete-section)、[`WP DELETE SUBSECTION`](https://developer.4d.com/docs/ja/20-R7/WritePro/commands/wp-delete-subsection)、[`WP RESET ATTRIBUTES`](https://developer.4d.com/docs/ja/20-R7/WritePro/commands/wp-reset-attributes)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: セクションとサブセクション管理用の新機能](https://blog.4d.com/ja/4d-write-pro-mastering-sections-and-subsections-with-new-functions/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビュープロパティ v2**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_4DWP_ViewSettingsV2.zip)<span id="20-7-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: ビュープロパティ v2**](https://github.com/4D-JP/HDI/releases/download/20r7/HDI_4DWP_ViewSettingsV2.zip) (20r7)<span id="20-7-1"></span><br />
 4D Write Pro で、表組みの境界線について、部分的または完全に不可視の場合に点線で示すための新しい標準アクション [`visibleTableBorders`](https://doc.4d.com/4Dv20R7/4D/20-R7/Using-4D-Write-Pro-standard-actions.200-7239619.ja.html#7267693) が追加されました。<br />
 この HDI は、指定できるビュープロパティの最新のまとめです。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 表組みの境界線を仮表示する](https://blog.4d.com/ja/4d-write-pro-make-hidden-table-borders-visible-temporarily/)<br />
 
-## 20r6 # {#v20r6}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**PDF/A3添付ファイルの抽出**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_ExtractPDFattachments.zip)<span id="20-6-8"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**PDF/A3添付ファイルの抽出**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_ExtractPDFattachments.zip) (20r6)<span id="20-6-8"></span><br />
 添付ファイルが埋め込まれた PDF/A3形式の PDFファイルから、これらを抽出するための専用コンポーネント [4D-QPDF](https://github.com/4d/4D-QPDF) が公開されました。この HDI ではその使い方を紹介しています。<br />
 このコンポーネントは、コンポーネントマネージャーを使って簡単に追加することが可能です。コンポーネントマネージャーについての詳細は[こちらのブログ記事](https://blog.4d.com/ja/simplifying-component-management-in-4d/)を参照ください。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [PDF/A3添付ファイルの抽出](https://blog.4d.com/ja/pdf-a3-file-extraction/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**RESTとQodlyによるシングルトンのサポート**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_Singletons.zip)<span id="20-6-7"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**RESTとQodlyによるシングルトンのサポート**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_Singletons.zip) (20r6)<span id="20-6-7"></span><br />
 4D 20 R5 で [シングルトン](http://developer.4d.com/docs/ja/Concepts/classes#シングルトンクラス) が導入されました。4D 20 R6 では、REST で共有シングルトンの公開関数を直接呼び出すことができます。<br />
 ※ Qodly Studio の例題も含まれています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [シングルトンのRESTとQodlyサポート](https://blog.4d.com/ja/rest-and-qodly-support-of-singletons/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: OAuth2.0接続インターフェースのカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_Netkit_BrowserAutoOpen_false.zip)<span id="20-6-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: OAuth2.0接続インターフェースのカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_Netkit_BrowserAutoOpen_false.zip) (20r6)<span id="20-6-6"></span><br />
 4D 20 R6 以降、authenticateURI を使うことで、接続インターフェースを好きな場所に表示できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Netkit：OAuth 2.0接続インターフェースのカスタマイズ](https://blog.4d.com/ja/4d-netkit-customizing-oauth-2-0-connection-interface/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 空のデータソースの表組みを管理**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_4DWP_TablesWithEmptyDataSources.zip)<span id="20-6-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 空のデータソースの表組みを管理**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_4DWP_TablesWithEmptyDataSources.zip) (20r6)<span id="20-6-5"></span><br />
 新しい属性 ([`wk empty datasource`](https://doc.4d.com/4Dv20R6/4D/20-R6/4D-Write-Pro-Attributes.300-6993958.ja.html#7005206)) の追加により、リンクされたデータソースが空の場合、その表組みをどのように描画するかを定義できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 空のデータソースを管理する！](https://blog.4d.com/ja/4d-write-pro-manage-empty-datasources/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**HTTPエージェントによる HTTPリクエストの管理**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_HTTP_Classes_with_agent.zip)<span id="20-6-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**HTTPエージェントによる HTTPリクエストの管理**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_HTTP_Classes_with_agent.zip) (20r6)<span id="20-6-4"></span><br />
 新しく追加された [`HTTPAgent`](http://developer.4d.com/docs/ja/API/HTTPAgentClass) クラスを使って、HTTPRequest クラス を使ったサーバー接続の持続性と再利用を管理することができます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [HTTPエージェントによる HTTPリクエストの管理](https://blog.4d.com/ja/managing-http-requests-with-http-agents/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**エンティティセレクションから未定義エンティティを取り除く**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_CleanEntitySelection.zip)<span id="20-6-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**エンティティセレクションから未定義エンティティを取り除く**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_CleanEntitySelection.zip) (20r6)<span id="20-6-3"></span><br />
 エンティティセレクションからエンティティを削除すると、削除された要素は未定義のままエンティティセレクション内に存在し続けます。これを取り除くため、新しい [`EntitySelection.clean()`](http://developer.4d.com/docs/ja/API/EntitySelectionClass#clean) 関数が使用できるようになりました。REST API では [`$entityset`](http://developer.4d.com/docs/ja/REST/entityset) に $clean パラメーターを渡すことで同様のことをおこなえます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - 歯抜けのエンティティセレクションにさよならを](https://blog.4d.com/ja/orda-say-goodbye-to-empty-spaces-in-your-entity-selections/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**セッションストレージの取得**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_SessionStorageByID.zip)<span id="20-6-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**セッションストレージの取得**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_SessionStorageByID.zip) (20r6)<span id="20-6-2"></span><br />
 セッションを識別する一意のIDから、そのセッションのストレージを取得する新しいコマンド [`Session storage by ID`](https://livedoc.4d.com/4dv20R/help/command/ja/page1839.html) が追加されました。共有オブジェクトをセッションストレージに保存して、セッション間で情報を共有する例題も含まれています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [セッションストレージへのアクセスを強化](https://blog.4d.com/ja/enhanced-session-storage-access/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**セッションの権限確認**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_GetPrivileges.zip)<span id="20-6-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**セッションの権限確認**](https://github.com/4D-JP/HDI/releases/download/20r6/HDI_GetPrivileges.zip) (20r6)<span id="20-6-1"></span><br />
 セッションが持つ権限を確認するための [`session.getPrivileges()`](http://developer.4d.com/docs/ja/API/SessionClass#getprivileges) 関数が追加されました。また、REST API [`$info/privileges`](http://developer.4d.com/docs/ja/REST/info) も利用可能です。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [セッション権限を検査してデバッグを容易に](https://blog.4d.com/ja/permissions-inspect-session-privileges-for-easy-debugging)<br />
 
-## 20r5 # {#v20r5}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**コンポーネントマネージャー**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_Component_Management.zip)<span id="20-5-9"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**コンポーネントマネージャー**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_Component_Management.zip) (20r5)<span id="20-5-9"></span><br />
 4D 20 R5 では、プロジェクトの依存関係を確認するための新しいインターフェース、コンポーネントマネージャーが追加されました。また、`dependencies.json` ファイル、および `environment4d.json` ファイルを使用した、プロジェクトの依存関係を定義するための柔軟で新しい方法が導入されました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4Dにおけるコンポーネント管理の簡素化](https://blog.4d.com/ja/simplifying-component-management-in-4d/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Qodly Studio for 4D: 認証とセッション終了**](https://github.com/4D-JP/HDI/releases/download/20r5/PIQS_QuitSession.zip)<span id="20-5-8"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Qodly Studio for 4D: 認証とセッション終了**](https://github.com/4D-JP/HDI/releases/download/20r5/PIQS_QuitSession.zip) (20r5)<span id="20-5-8"></span><br />
 強制ログインモードの導入により、認証ステップでクライアントライセンスが消費されるのを避けられるようになりました。また、セッションを終了することで、4Dクライアントライセンスを即座に解放できます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Qodly Studio for 4D による 4Dクライアントライセンス消費方法の改善](https://blog.4d.com/ja/improved-4d-client-licenses-usage-with-qodly-studio-for-4d/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カスタムファンクションとコレクション/オブジェクト引数**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DVP_Object_and_Collection_in_Custom_Functions.zip)<span id="20-5-7"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D View Pro: カスタムファンクションとコレクション/オブジェクト引数**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DVP_Object_and_Collection_in_Custom_Functions.zip) (20r5)<span id="20-5-7"></span><br />
 4D View Pro のカスタムファンクションに、セルレンジに基づいたコレクション/オブジェクト引数を渡せるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D View Pro: カスタムファンクションの強化](https://blog.4d.com/ja/4d-view-pro-enhancement-of-custom-functions/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みの行数が無制限に**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DWP_LargeTables.zip)<span id="20-5-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みの行数が無制限に**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DWP_LargeTables.zip) (20r5)<span id="20-5-6"></span><br />
 4D Write Pro の表組みの最大行数 (1000件) の制限が廃止されました。これに伴い、膨大なデータを扱う場合に起こりうる問題を避けるため、HDI で紹介しているベストプラクティスに沿って作業することが推奨されます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 制限のない表組み！](https://blog.4d.com/ja/4d-write-pro-tables-without-limit/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストの回り込み**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DWP_ManageAnchoredPictures.zip)<span id="20-5-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: テキストの回り込み**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DWP_ManageAnchoredPictures.zip) (20r5)<span id="20-5-5"></span><br />
 新しいアンカーモード [wk anchor layout](https://doc.4d.com/4Dv20R5/4D/20-R5/Handling-pictures.200-6851783.ja.html#6854646) が追加され、アンカーされた画像とテキストボックスにテキストを回り込ませることができるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: アンカー画像とテキストボックスの表示オプションが増えました！](https://blog.4d.com/ja/4d-write-pro-more-display-options-for-anchored-pictures-and-text-boxes/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 用紙サイズの設定**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DWP_PageSize.zip)<span id="20-5-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 用紙サイズの設定**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DWP_PageSize.zip) (20r5)<span id="20-5-4"></span><br />
 4D Write Pro にドキュメントの用紙サイズを設定するための新しい [`wk page size`](https://doc.4d.com/4Dv20R5/4D/20-R5/4D-Write-Pro-Attributes.300-6851817.ja.html#6934351) 属性が追加されました。これに伴い、新しい標準アクション `pageSize` も追加されています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [便利な新しい 4D Write Pro属性: wk page size！](https://blog.4d.com/ja/a-handy-new-4d-write-pro-attribute-wk-page-size/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**リモートセッションオブジェクト**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DRemoteSession.zip)<span id="20-5-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**リモートセッションオブジェクト**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_4DRemoteSession.zip) (20r5)<span id="20-5-3"></span><br />
 [Session](https://developer.4d.com/docs/ja/API/SessionClass)コマンドの対象がクライアント/サーバー接続とストアドプロシージャーに拡張されました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [クライアント/サーバー接続とストアドプロシージャーに対応した新しい 4Dリモートセッションオブジェクト](https://blog.4d.com/ja/new-4d-remote-session-object-with-client-server-connection-and-stored-procedure/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データの制限**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_RestrictData.zip)<span id="20-5-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ORDA: データの制限**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_RestrictData.zip) (20r5)<span id="20-5-2"></span><br />
 ORDAによって取得されるデータを制限できるようになりました。この制限は Session オブジェクトを使用します。クライアントサーバーと Webサーバー (リモートデータストア、Qodly Studio含む) のコンテキストで利用可能です。<br />
 ※ Qodly Studio の例題も含まれています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA - 取得データを制限する方法](https://blog.4d.com/ja/orda-restrict-data-to-relevant-criteria/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**新しいウィンドウタイプで外観をカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_WindowTypeWithoutTitleBar.zip)<span id="20-5-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**新しいウィンドウタイプで外観をカスタマイズ**](https://github.com/4D-JP/HDI/releases/download/20r5/HDI_WindowTypeWithoutTitleBar.zip) (20r5)<span id="20-5-1"></span><br />
 新しいウィンドウタイプの追加により、ウィンドウの外観が完全にカスタマイズできるようになりました。また、次の新しいコマンドが追加されました:
    * [`MAXIMIZE WINDOW`](https://doc.4d.com/4Dv20R5/4D/20-R5/MAXIMIZE-WINDOW.301-6818209.ja.html)
    * [`MINIMIZE WINDOW`](https://doc.4d.com/4Dv20R5/4D/20-R5/MINIMIZE-WINDOW.301-6818206.ja.html)
    * [`REDUCE RESTORE WINDOW`](https://doc.4d.com/4Dv20R5/4D/20-R5/REDUCE-RESTORE-WINDOW.301-6848964.ja.html)
    * [`Is window maximized`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-maximized.301-6850247.ja.html)
    * [`Is window reduced`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-reduced.301-6850210.ja.html)
-<br />
-<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいウィンドウタイプでアプリの外観をカスタマイズ](https://blog.4d.com/ja/customize-app-appearance-with-new-windows-types/)<br />
+<br />    <i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいウィンドウタイプでアプリの外観をカスタマイズ](https://blog.4d.com/ja/customize-app-appearance-with-new-windows-types/)<br />
 
-## 20r4 # {#v20r4}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**日付と時間のフォーマット**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_NewDateTimeFormats.zip)<span id="20-4-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**日付と時間のフォーマット**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_NewDateTimeFormats.zip) (20r4)<span id="20-4-4"></span><br />
 日付と時間のフォーマットを細かにカスタマイズできるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [日付と時間のカスタマイズ](https://blog.4d.com/ja/tailored-customization-for-dates-and-times/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 電子インボイスの作成**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_4DWP_GenerateFacturX.zip)<span id="20-4-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 電子インボイスの作成**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_4DWP_GenerateFacturX.zip) (20r4)<span id="20-4-3"></span><br />
 4D Write Pro を使って、XMLファイルが埋め込まれた PDF/A3形式の PDFファイルを出力できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro：電子インボイスの作成](https://blog.4d.com/ja/4d-write-pro-electronic-invoice-generation/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: ラベルの管理**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_Google_manage_labels.zip)<span id="20-4-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: ラベルの管理**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_Google_manage_labels.zip) (20r4)<span id="20-4-2"></span><br />
 Google API を使って Gmailアカウントのラベルを作成・編集・削除できるようになりました。<br />
 ※ SVGを使って簡単なアイコンを作る例題も含まれています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Netkit：Gmailラベルの作成・削除・更新](https://blog.4d.com/ja/4d-netkit-create-delete-and-update-gmail-labels/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メールの管理**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_Google_manage_mails.zip)<span id="20-4-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メールの管理**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_Google_manage_mails.zip) (20r4)<span id="20-4-1"></span><br />
 Google API を使って Gmailアカウントのメールのラベルを変更できるようになったほか、複数のメールを一括取得できるようになりました。<br />
 ※ SVGを使って、簡単なアイコンを作る例題も含まれています。このアイコンを階層リストやリストボックス内に表示できます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Netkit：Gmail API によるラベル割り当て＆複数メールの取得](https://blog.4d.com/ja/4d-netkit-assign-labels-get-multiple-emails-with-gmail-api/)<br />
 
-## 20r3 # {#v20r3}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**ピクチャー/Blob属性にファイル参照を代入する**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Path_For_Picture.zip)<span id="20-3-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**ピクチャー/Blob属性にファイル参照を代入する**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Path_For_Picture.zip) (20r3)<span id="20-3-6"></span><br />
 ピクチャーまたは Blob属性に 4D.File オブジェクトまたはパスを渡すことで、ファイルへの参照を代入できるようになりました。<br />
 参照: [ピクチャーまたは Blob属性にファイルを代入する](http://developer.4d.com/docs/ja/20-R3/ORDA/entities#%E3%83%94%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%81%BE%E3%81%9F%E3%81%AF-blob%E5%B1%9E%E6%80%A7%E3%81%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BB%A3%E5%85%A5%E3%81%99%E3%82%8B)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [ORDA: Blob/ピクチャー属性へのパスの割り当て](https://blog.4d.com/ja/orda-assigning-a-path-to-a-blob-or-picture-attribute/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**データ変更の追跡**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Data_Change_Tracking.zip)<span id="20-3-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**データ変更の追跡**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Data_Change_Tracking.zip) (20r3)<span id="20-3-5"></span><br />
 データベースにおけるデータ変更を追跡するための [グローバルスタンプ](http://developer.4d.com/docs/ja/ORDA/global-stamp) が導入されました。また、これを管理するための新しい関数  [`ds.getGlobalStamp()`](http://developer.4d.com/docs/ja/API/DataStoreClass#getglobalstamp)、 [`ds.setGlobalStamp()`](http://developer.4d.com/docs/ja/API/DataStoreClass#setglobalstamp) が追加されました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [データベースのデータ変更を追跡](https://blog.4d.com/ja/track-data-changes-in-your-database/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メールの受信**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Google_get_mails.zip)<span id="20-3-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メールの受信**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Google_get_mails.zip) (20r3)<span id="20-3-4"></span><br />
 Google API を使って Gmailアカウントからメールを受信できるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Netkit: Gmail からラベルや Eメールを取得](https://blog.4d.com/ja/4d-netkit-get-labels-and-emails-from-gmail/)<br />
 
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**複数コレクションの同期ソート**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Collection_multiSort.zip)<span id="20-3-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**複数コレクションの同期ソート**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_Collection_multiSort.zip) (20r3)<span id="20-3-3"></span><br />
 複数のコレクションを同期的にソートするための新しい  [`Collection.multiSort()`](http://developer.4d.com/docs/ja/API/CollectionClass#multisort) 関数が追加されました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [複数コレクションの同期ソート](https://blog.4d.com/ja/sync-several-collections-with-this-new-function/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラに名前を付ける**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_4DWP_GiveNameToFormulas.zip)<span id="20-3-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: フォーミュラに名前を付ける**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_4DWP_GiveNameToFormulas.zip) (20r3)<span id="20-3-2"></span><br />
 4D Write Pro ドキュメントのフォーミュラに名前が付けられるようになりました。これにより、複雑なフォーミュラを役割名などで表せるようになり、エンドユーザーにとってドキュメントの可読性が向上します。  <br />
 これにともない、次の 2つのコマンドが拡張されました: [`WP Get formulas`](https://doc.4d.com/4Dv20R3/4D/20-R3/WP-Get-formulas.301-6475197.ja.html)、 [`WP INSERT FORMULA`](https://doc.4d.com/4Dv20R3/4D/20-R3/WP-INSERT-FORMULA.301-6475193.ja.html) <br />
 参考: [フォーミュラの管理＞参照を名前で表示](https://doc.4d.com/4Dv20R3/4D/20-R3/Managing-formulas.300-6475178.ja.html#6476648)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: フォーミュラに名前を付ける](https://blog.4d.com/ja/4d-write-pro-assign-names-to-formulas/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: PDF/A への書き出し**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_4DWP_ExportAsPDFA.zip)<span id="20-3-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: PDF/A への書き出し**](https://github.com/4D-JP/HDI/releases/download/20r3/HDI_4DWP_ExportAsPDFA.zip) (20r3)<span id="20-3-1"></span><br />
 4D Write Pro ドキュメントを PDF/Aに書き出せるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro : PDF/A形式での書き出しが可能になりました！](https://blog.4d.com/ja/4d-write-pro-pdf-a-format-now-available-for-export/)<br />
 
-## 20r2 # {#v20r2}
-
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表ウィザード**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_WPTableWizard.zip)<span id="20-2-6"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表ウィザード**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_WPTableWizard.zip) (20r2)<span id="20-2-6"></span><br />
 データソース付きの表組みを作成し、4D Write Pro ドキュメントに挿入するのを助ける表ウィザードが実装されました。このウィザードはエンドユーザーも利用できるもので、デベロッパーによるテンプレートや表示名などの設定が可能です。<br />
 参考: [4D WritePro Interface](https://doc4d.github.io/docs/ja/WritePro/writeprointerface/)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro – データソース付き表組みの作成ウィザード](https://blog.4d.com/ja/4d-write-pro-a-wizard-to-create-tables-with-data/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**エラーのスロー**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_THROW.zip)<span id="20-2-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**エラーのスロー**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_THROW.zip) (20r2)<span id="20-2-5"></span><br />
 v20R2 では、新しい [`throw`](https://livedoc.4d.com/--20-R2/-/throw.301-6429523.ja.html) コマンドを使って、エラーをスローできるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4Dコードのエラー管理を強化](https://blog.4d.com/ja/enhanced-error-management-in-4d-code/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: OAuth2.0サーバーへの接続**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_ConnectGithubWithOauth2.zip)<span id="20-2-4"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: OAuth2.0サーバーへの接続**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_ConnectGithubWithOauth2.zip) (20r2)<span id="20-2-4"></span><br />
 [4D NetKit](https://github.com/4d/4D-NetKit/tree/20R2) を使って、Microsoft や Google 以外の OAuth2.0 サーバーにも接続することができます。ここでは、GitHubへの接続を紹介します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D NetKit: OAuth2認証の強化](https://blog.4d.com/ja/4d-netkit-enhancement-of-oauth2-authorization__trashed/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メール送信**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_google_SendMail.zip)<span id="20-2-3"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**Gmail API: メール送信**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_google_SendMail.zip) (20r2)<span id="20-2-3"></span><br />
 Google API を使って Gmailアカウントからメール送信ができるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Gmail API を使ったメール送信](https://blog.4d.com/ja/send-email-with-the-gmail-api/)<br />
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みのセル結合**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_4DWP_CellsMerge.zip)<span id="20-2-2"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: 表組みのセル結合**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_4DWP_CellsMerge.zip) (20r2)<span id="20-2-2"></span><br />
 4D Write Pro の表組みのセルを結合できるようになりました。これに伴い、[`WP TABLE MERGE CELLS`](https://doc.4d.com/4Dv20R2/4D/20-R2/WP-TABLE-MERGE-CELLS.301-6392816.ja.html) および [`WP TABLE SPLIT CELLS`](https://doc.4d.com/4Dv20R2/4D/20-R2/WP-TABLE-SPLIT-CELLS.301-6397459.ja.html) コマンドも追加されています。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro: 表組みのセル結合](https://blog.4d.com/ja/4d-write-pro-tables-introducing-cells-merge/)<br />
   
-* <i class="fa fa-download" aria-hidden="true"></i> [**WebSocketクライアント**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_WebSocket.zip)<span id="20-2-1"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**WebSocketクライアント**](https://github.com/4D-JP/HDI/releases/download/20r2/HDI_WebSocket.zip) (20r2)<span id="20-2-1"></span><br />
 4D v20 R2 では、4D で WebSocketクライアント接続するための [WebSocket クラス](http://developer.4d.com/docs/ja/API/WebSocketClass) が追加されました。簡単なチャットを例に使い方を紹介します。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [WebSocketクライアント](https://blog.4d.com/ja/websocket-client/)<br />
 
