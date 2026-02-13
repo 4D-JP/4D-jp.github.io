@@ -213,6 +213,7 @@ ORDAによって取得されるデータを制限できるようになりまし�
    * [`Is window reduced`](https://doc.4d.com/4Dv20R5/4D/20-R5/Is-window-reduced.301-6850210.ja.html)
 <br />    <i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [新しいウィンドウタイプでアプリの外観をカスタマイズ](https://blog.4d.com/ja/customize-app-appearance-with-new-windows-types/)<br />
 
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**日付と時間のフォーマット**](https://github.com/4D-JP/HDI/releases/download/20r4/HDI_NewDateTimeFormats.zip) (20r4)<span id="20-4-4"></span><br />
 日付と時間のフォーマットを細かにカスタマイズできるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [日付と時間のカスタマイズ](https://blog.4d.com/ja/tailored-customization-for-dates-and-times/)<br />
