@@ -9,6 +9,23 @@ version: "21.0"
 permalink: /2025/279/:slug/
 ---
 
+* ACI0105828 View Proエリアの上でスワイプ操作をした場合，ページがエリアを離れました。
+
+**注記**: 参考までに，Webエリアのナビゲーションは下記の方法で不許可にすることができます。
+
+```4d
+If (Form event code=On VP Ready)
+	
+	ARRAY TEXT($filters; 0)
+	ARRAY BOOLEAN($AllowDeny; 0)
+	APPEND TO ARRAY($filters; "*")
+	APPEND TO ARRAY($AllowDeny; False)
+	
+	WA SET URL FILTERS(*; OBJECT Get name(Object current); $filters; $AllowDeny)
+	
+End if 
+```
+
 * ACI0105969 QUICネットワークレイヤーのみ。多数のクライアントが同時に接続を切断した場合，サーバーがクラッシュする恐れがありました。
 
 * ACI0105685 ツールボックスのメニューに画像をペーストした場合，ランタイムエラーが返されました。
