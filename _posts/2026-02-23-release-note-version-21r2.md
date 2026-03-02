@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D 21 修正リスト"
-date: 2026-02-23 08:00:00
+date: 2026-03-02 08:00:00
 categories: 修正リスト
 tags: 21r2
 build: 100143
