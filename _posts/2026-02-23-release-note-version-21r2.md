@@ -9,6 +9,32 @@ version: "21r2"
 permalink: /2026/54/:slug/
 ---
 
+* ACI0106125 Windows版のみ。View Proスプレッドシートを印刷しようとした場合，ユーザーインターフェースがフリーズしました。ACI0105828が修正されたことによる副作用のようです。
+
+**注記**: 問題は修正されましたが，下記のコードで回避することもできます。
+
+```4d
+
+If (Form event code=On VP Ready)
+	
+	ARRAY TEXT($filters; 0)
+	ARRAY BOOLEAN($AllowDeny; 0)
+	APPEND TO ARRAY($filters; "*")
+	APPEND TO ARRAY($AllowDeny; False)
+	APPEND TO ARRAY($filters; "chrome://*")
+	APPEND TO ARRAY($AllowDeny; True)
+	APPEND TO ARRAY($filters; "chrome-untrusted://*")
+	APPEND TO ARRAY($AllowDeny; True)
+	
+	WA SET URL FILTERS(*; OBJECT Get name(Object current); $filters; $AllowDeny)
+	
+End if
+```
+
+* ACI0106000 インタープリターモードとコンパイルモード，WindowsとMacでは，整数がオーバーフローしたときの振る舞いが違いました。
+
+**注記**: インタープリターモードでは，定数`MAXLONG`は数値の`2147483647`なので，数式の`MAXLONG+1`は浮動小数点演算となり，`2147483648`が返されます。これを整数型に代入すると，内部的に`lrint()`がコールされます。Windows版の[`lrint()`](https://learn.microsoft.com/ja-jp/cpp/c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl?view=msvc-170)は`4`バイトを返す仕様です。Visual Studioのコンパイラーでは，`2147483648`が渡されると，`0`が返されるようです（実装依存）。
+
 * ACI0106145 Windows版のクライアントからMac版のサーバーに接続し，自動アップデートを実行した場合，一部のユーザーインタフェースにビルドで設定したカスタムアイコンではなく，4D Volume Desktopのアイコンが表示されました。自動アップデートクライアントに`.ico`ファイルがコピーされていないようです。
 
 * ACI0106217 フランス語版のみ。定数の`Chemin est système`に余計なスペースが含まれていました。
@@ -16,3 +42,45 @@ permalink: /2026/54/:slug/
 * ACI0106180 エクスポートダイアログでレコードの書き出しに使用するフォームを変更した場合，アプリケーションがクラッシュしました。
 
 * ACI0106146 ORDAの[restrictedByDefault](https://developer.4d.com/docs/ja/ORDA/privileges)が有効に設定されている場合，エンティティを削除することができませんでした。
+
+* ACI0105903 Write Proドキュメントのレンジまたはセクションの最終文字を含めずに`WP new`で新規ドキュメントを作成した場合，余計なページブレークが追加され，レイアウトが崩れました。
+
+* ACI0106126 `METHOD RESOLVE PATH`でクラスを扱うことができませんでした。
+
+* ACI0105958 Mac版のみ。`Folder`のパスの末尾に`/../`を記述した場合，`1`階層ではなく，`2`階層上のフォルダーが返されました。
+
+* ACI0106203 [`License usage`](https://developer.4d.com/docs/ja/commands/license-usage)から返される`session`オブジェクトの`IPAddress`プロパティの値が空でした。
+
+* ACI0105285 `HTTPRequest.wait()`を実行するクラスのメンバー関数をデバッガーの式ペインに保存した場合，デバッガがブレークポイントと同時に無限ループに陥り，使用できなくなりました。
+
+* ACI0097827 Windows版のみ。ビルドアプリケーションにカスタムアイコンを設定しても，特定のウィンドウには4Dのアイコンが表示されました。
+
+	- 起動オプション（`Alt`または`option`キーを押しながらアプリケーションを起動）
+	- サーバー選択（`Alt`または`option`キーを押しながらクライアントを起動）
+	- ユーザー認証
+	- クライアント自動アップデート
+	- アプリケーション終了
+	- サーバー終了
+
+* ACI0105828 View Proエリアの上でスワイプ操作をした場合，ページがエリアを離れました。
+
+**注記**: 参考までに，Webエリアのナビゲーションは下記の方法で不許可にすることができます。
+
+```4d
+If (Form event code=On VP Ready)
+	
+	ARRAY TEXT($filters; 0)
+	ARRAY BOOLEAN($AllowDeny; 0)
+	APPEND TO ARRAY($filters; "*")
+	APPEND TO ARRAY($AllowDeny; False)
+	
+	WA SET URL FILTERS(*; OBJECT Get name(Object current); $filters; $AllowDeny)
+	
+End if 
+```
+
+* ACI0106087 Write Proのデータ行に複数のソート条件が存在する場合，ブレーク行が間違った位置に挿入されることがありました。ブレーク行は，並び替えの条件に従い，キーフィールドの値が変化する直前の位置に挿入されるべきです。
+
+* ACI0106103 スケーラブルセッション管理モードでセッション固有のデータをプロセス変数に代入した場合，別セッションのWebプロセスからその内容を参照することができました。
+
+**注記**: パフォーマンス向上のため，Webプロセスが再利用されることは，ドキュメントに明記されていますが，セキュリティを高めるため，スケーラブルセッション管理モードでは，Webプロセスが再利用されないようになりました。Webリクエストの完了と同時にプロセス変数はクリアされ，カレントレコードはアンロードされます。Webサーバー起動時に予備プロセスが作成されることもありません。
