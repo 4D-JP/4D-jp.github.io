@@ -1,6 +1,6 @@
 ---
 layout: fix
-title: "4D 21 修正リスト"
+title: "4D 21r2 修正リスト"
 date: 2026-03-02 08:00:00
 categories: 修正リスト
 tags: 21r2
