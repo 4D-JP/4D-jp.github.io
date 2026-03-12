@@ -1,13 +1,21 @@
 ---
 layout: fix
 title: "4D 21 修正リスト"
-date: 2026-02-23 08:00:00
+date: 2026-03-11 08:00:00
 categories: 修正リスト
 tags: "21.0"
-build: 100378
+build: 100406
 version: "21.0"
 permalink: /2026/57/:slug/
 ---
+
+* ACI0106233 Windows版のみ。一定数（約`80`個）を超えてメソッドエディターのウィンドウを開くことができませんでした。ACI0106038が修正されたことによる副作用のようです。
+
+* ACI0106240 QUICネットワークレイヤーのみ。終了時にアプリケーションがクラッシュすることがありました。
+
+* ACI0106232 管理者権限でアプリケーションを起動した場合，CEF版Webエリアが使用できませんでした。
+
+**注記**: [CEFの不具合]( https://github.com/chromiumembedded/cef/issues/3960)のようです。`do-not-de-elevate`スイッチを`true`を設定することにより，問題を回避しました。
 
 * ACI0106207 存在しないコールバックメソッド名を`VERIFY CURRENT DATA FILE`または`VERIFY DATA FILE`に渡した場合，`OK`システム変数に`0`が代入されませんでした。
 
