@@ -12,7 +12,7 @@ type: page
 ## 21r3 # {#v21r3}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**IMAP イベント**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI-IMAP-Events.zip)<span id="21-3-2"></span><br />
-IMAP New transporter コマンドに新しい listener パラメーターが追され、メール通知を受け取れるようになりました。サポートされる通知イベントは次の3つです:  [`listener.onMailCreated()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onmailcreatedtransporter--object-event--object)、 [`listener.onMailDeleted()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onmaildeletedtransporter--object-event--object)、 [`listener.onFlagsModified()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onflagsmodifiedtransporter--object-event--object)。<br />
+IMAP New transporter コマンドに新しい listener パラメーターが追加され、メール通知を受け取れるようになりました。サポートされる通知イベントは次の3つです:  [`listener.onMailCreated()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onmailcreatedtransporter--object-event--object)、 [`listener.onMailDeleted()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onmaildeletedtransporter--object-event--object)、 [`listener.onFlagsModified()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onflagsmodifiedtransporter--object-event--object)。<br />
 通知機能の有効/無効化には、IMAPTransporterオブジェクトのnotifierプロパティを使用します: [`notifier.start()`](https://developer.4d.com/docs/ja/API/IMAPNotifierClass#start)、[`notifier.stop()`](https://developer.4d.com/docs/ja/API/IMAPNotifierClass#stop)<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4IMAP Transporterによる即時メール通知](https://blog.4d.com/ja/execute-code-from-text-with-4d-method/)<br />
 
