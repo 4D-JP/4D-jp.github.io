@@ -14,7 +14,7 @@ type: page
 * <i class="fa fa-download" aria-hidden="true"></i> [**IMAP イベント**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI-IMAP-Events.zip)<span id="21-3-2"></span><br />
 IMAP New transporter コマンドに新しい listener パラメーターが追加され、メール通知を受け取れるようになりました。サポートされる通知イベントは次の3つです:  [`listener.onMailCreated()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onmailcreatedtransporter--object-event--object)、 [`listener.onMailDeleted()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onmaildeletedtransporter--object-event--object)、 [`listener.onFlagsModified()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onflagsmodifiedtransporter--object-event--object)。<br />
 通知機能の有効/無効化には、IMAPTransporterオブジェクトのnotifierプロパティを使用します: [`notifier.start()`](https://developer.4d.com/docs/ja/API/IMAPNotifierClass#start)、[`notifier.stop()`](https://developer.4d.com/docs/ja/API/IMAPNotifierClass#stop)<br />
-　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4IMAP Transporterによる即時メール通知](https://blog.4d.com/ja/execute-code-from-text-with-4d-method/)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [IMAP Transporterによる即時メール通知](https://blog.4d.com/ja/instant-email-notifications-with-imap-transporter/)<br />
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D.Method クラス**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_4D_Method.zip)<span id="21-3-1"></span><br />
 [4D.Method クラス](https://developer.4d.com/docs/ja/API/MethodClass) を使って、コンパイル済みの運用環境であっても、外部のテキストからロジックを動的に生成・検証し、デバッガーによる追跡も可能にする方法を紹介します。<br />
