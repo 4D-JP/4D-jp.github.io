@@ -9,9 +9,24 @@ type: page
 * content
 {:toc}
 
+## 21r3 # {#v21r3}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**JSON Validate**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_JSON_Validate.zip)<span id="21-3-3"></span><br />
+[`JSON Validate`](https://developer.4d.com/docs/ja/commands/json-validate) コマンドがアップデートされ、最新の JSON Schema 標準である Draft 2020-12 に対応しました。条件付きルールが指定できるようになったことで、ビジネスロジックの一部をスキーマに直接エンコードできるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [JSONの検証を簡素化し、堅牢性を高める](https://blog.4d.com/ja/simplify-json-validation-and-boost-robustness/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**IMAP イベント**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI-IMAP-Events.zip)<span id="21-3-2"></span><br />
+IMAP New transporter コマンドに新しい listener パラメーターが追加され、メール通知を受け取れるようになりました。サポートされる通知イベントは次の3つです:  [`listener.onMailCreated()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onmailcreatedtransporter--object-event--object)、 [`listener.onMailDeleted()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onmaildeletedtransporter--object-event--object)、 [`listener.onFlagsModified()`](https://developer.4d.com/docs/ja/commands/imap-new-transporter#onflagsmodifiedtransporter--object-event--object)。<br />
+通知機能の有効/無効化には、IMAPTransporterオブジェクトのnotifierプロパティを使用します: [`notifier.start()`](https://developer.4d.com/docs/ja/API/IMAPNotifierClass#start)、[`notifier.stop()`](https://developer.4d.com/docs/ja/API/IMAPNotifierClass#stop)<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [IMAP Transporterによる即時メール通知](https://blog.4d.com/ja/instant-email-notifications-with-imap-transporter/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D.Method クラス**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_4D_Method.zip)<span id="21-3-1"></span><br />
+[4D.Method クラス](https://developer.4d.com/docs/ja/API/MethodClass) を使って、コンパイル済みの運用環境であっても、外部のテキストからロジックを動的に生成・検証し、デバッガーによる追跡も可能にする方法を紹介します。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D.Method を使用してテキストからコードを実行する](https://blog.4d.com/ja/execute-code-from-text-with-4d-method/)<br />
+
 ## 21r2 # {#v21r2}
 
-* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: リスト化と自動インデント**](https://github.com/4D-JP/HDI/releases/download/21r2/HDI_4DWP_AutoIndentBullets.zip)<span id="21-0-5"></span><br />
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: リスト化と自動インデント**](https://github.com/4D-JP/HDI/releases/download/21r2/HDI_4DWP_AutoIndentBullets.zip)<span id="21-2-1"></span><br />
 4D Write Pro で標準アクションを使用して[リスト](https://developer.4d.com/docs/ja/WritePro/4d-write-pro-attributes#リスト)を作成すると、小さな余白 (インデント) が自動で追加されるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro - 箇条書きを標準アクションで設定した際に余白を自動追加](https://blog.4d.com/ja/4d-write-pro-adding-a-margin-automatically-when-bullets-are-set-using-standard-actions/)<br />
 
