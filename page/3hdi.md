@@ -11,6 +11,11 @@ type: page
 
 ## 21r3 # {#v21r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**シングルトンにおける server キーワード**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_ServerKeyword_Singletons.zip)<span id="21-3-4"></span><br />
+[共有シングルトンおよびセッションシングルトン](https://developer.4d.com/docs/ja/Concepts/classes#シングルトンクラス)の関数が
+[`server`](https://developer.4d.com/docs/ja/Concepts/classes#server) キーワードをサポートするようになりました。server キーワードを使用すると、そのシングルトンが 4Dクライアント上でインスタンス化されている場合でも、その関数は常にサーバー上で実行されます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [クライアントサーバー: サーバー上でロジックを実行する新しい方法](https://blog.4d.com/ja/client-server-a-new-way-to-execute-logic-on-server/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**JSON Validate**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_JSON_Validate.zip)<span id="21-3-3"></span><br />
 [`JSON Validate`](https://developer.4d.com/docs/ja/commands/json-validate) コマンドがアップデートされ、最新の JSON Schema 標準である Draft 2020-12 に対応しました。条件付きルールが指定できるようになったことで、ビジネスロジックの一部をスキーマに直接エンコードできるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [JSONの検証を簡素化し、堅牢性を高める](https://blog.4d.com/ja/simplify-json-validation-and-boost-robustness/)<br />
