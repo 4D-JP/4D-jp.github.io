@@ -11,6 +11,10 @@ type: page
 
 ## 21r3 # {#v21r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4Dクライアント上のSessionコマンド**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_Session_4DClient.zip)<span id="21-3-5"></span><br />
+4D 21 R3 では、[`Session`](https://developer.4d.com/docs/ja/API/SessionClass) コマンドを 4Dクライアントから直接呼び出すことが可能になりました。4Dクライアント上で [`Session`](https://developer.4d.com/docs/ja/API/SessionClass) コマンドを呼び出したときに返される情報はサーバーと同じですが、一つ例外があり、[`storage`](https://developer.4d.com/docs/API/SessionClass#storage) 共有オブジェクトに関しては、その 4Dクライアントにローカルなものが返されます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [サーバーサイドのラッパーは不要に: クライアントサイドで Session を使用しましょう](https://blog.4d.com/ja/forget-server-side-wrappers-use-4d-sessions-from-the-client/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**シングルトンにおける server キーワード**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_ServerKeyword_Singletons.zip)<span id="21-3-4"></span><br />
 [共有シングルトンおよびセッションシングルトン](https://developer.4d.com/docs/ja/Concepts/classes#シングルトンクラス)の関数が
 [`server`](https://developer.4d.com/docs/ja/Concepts/classes#server) キーワードをサポートするようになりました。server キーワードを使用すると、そのシングルトンが 4Dクライアント上でインスタンス化されている場合でも、その関数は常にサーバー上で実行されます。<br />
