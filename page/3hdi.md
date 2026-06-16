@@ -11,6 +11,19 @@ type: page
 
 ## 21r3 # {#v21r3}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: マルチレベルスタイルシートを使った多階層リスト**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_4DWP_MultiLevelStyleSheets.zip)<span id="21-3-6"></span><br />
+マルチレベルスタイルシートを作成して適用することで、多階層リストのスタイルを管理する方法を紹介します。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D Write Pro の多階層リスト: 構造・番号付け・スタイルを完全に制御](https://blog.4d.com/ja/multi-level-lists-in-4d-write-pro-full-control-over-structure-numbering-and-style/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4Dクライアント上のSessionコマンド**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_Session_4DClient.zip)<span id="21-3-5"></span><br />
+4D 21 R3 では、[`Session`](https://developer.4d.com/docs/ja/API/SessionClass) コマンドを 4Dクライアントから直接呼び出すことが可能になりました。4Dクライアント上で [`Session`](https://developer.4d.com/docs/ja/API/SessionClass) コマンドを呼び出したときに返される情報はサーバーと同じですが、一つ例外があり、[`storage`](https://developer.4d.com/docs/API/SessionClass#storage) 共有オブジェクトに関しては、その 4Dクライアントにローカルなものが返されます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [サーバーサイドのラッパーは不要に: クライアントサイドで Session を使用しましょう](https://blog.4d.com/ja/forget-server-side-wrappers-use-4d-sessions-from-the-client/)<br />
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**シングルトンにおける server キーワード**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_ServerKeyword_Singletons.zip)<span id="21-3-4"></span><br />
+[共有シングルトンおよびセッションシングルトン](https://developer.4d.com/docs/ja/Concepts/classes#シングルトンクラス)の関数が
+[`server`](https://developer.4d.com/docs/ja/Concepts/classes#server) キーワードをサポートするようになりました。server キーワードを使用すると、そのシングルトンが 4Dクライアント上でインスタンス化されている場合でも、その関数は常にサーバー上で実行されます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [クライアントサーバー: サーバー上でロジックを実行する新しい方法](https://blog.4d.com/ja/client-server-a-new-way-to-execute-logic-on-server/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**JSON Validate**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_JSON_Validate.zip)<span id="21-3-3"></span><br />
 [`JSON Validate`](https://developer.4d.com/docs/ja/commands/json-validate) コマンドがアップデートされ、最新の JSON Schema 標準である Draft 2020-12 に対応しました。条件付きルールが指定できるようになったことで、ビジネスロジックの一部をスキーマに直接エンコードできるようになりました。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [JSONの検証を簡素化し、堅牢性を高める](https://blog.4d.com/ja/simplify-json-validation-and-boost-robustness/)<br />
