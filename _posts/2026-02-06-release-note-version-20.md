@@ -1,7 +1,7 @@
 ---
 layout: fix
-title: "4D 20 修正リスト"
-date: 2026-05-14 08:00:00
+title: "4D 20.8 Hotfix 3 修正リスト"
+date: 2026-06-05 08:00:00
 categories: 修正リスト
 tags: "20.9"
 build: 102063
