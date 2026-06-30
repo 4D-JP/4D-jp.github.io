@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D 20 修正リスト"
-date: 2026-06-06 08:00:00
+date: 2026-06-19 08:00:00
 categories: 修正リスト
 tags: "20.8"
 build: 102069
