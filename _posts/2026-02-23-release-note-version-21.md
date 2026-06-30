@@ -3,7 +3,7 @@ layout: fix
 title: "4D 21.0 Hotfix 2 修正リスト"
 date: 2026-03-11 08:00:00
 categories: 修正リスト
-tags: "21.0"
+tags: 21.0 hotfix
 build: 100422
 version: "21.0"
 permalink: /2026/57/:slug/

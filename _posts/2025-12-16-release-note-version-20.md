@@ -3,7 +3,7 @@ layout: fix
 title: "4D 20.8 Hotfix 2 修正リスト"
 date: 2026-02-06 08:00:00
 categories: 修正リスト
-tags: "20.8"
+tags: 20.8 hotfix
 build: 102029
 version: "20.8"
 permalink: /2025/350/:slug/

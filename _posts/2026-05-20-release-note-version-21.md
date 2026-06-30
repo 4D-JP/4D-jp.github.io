@@ -1,13 +1,15 @@
 ---
 layout: fix
-title: "4D 21 修正リスト"
+title: "4D 21.1 Hotfix 1 修正リスト"
 date: 2026-06-13 08:00:00
 categories: 修正リスト
-tags: "21.1"
-build: 100500
+tags: 21.1 hotfix
+build: 100522
 version: "21.1"
 permalink: /2026/140/:slug/
 ---
+
+* ACI0106355 エンティティのUUID型属性に数値リテラルの`0`を代入するコードがシンタックスエラーになりませんでした。クラシック言語では，シンタックスエラーになります。ORDA特有の問題です。
 
 * ACI0106291 Write Proドキュメントのタイトルに`?`や`/`などのURLメタ文字が含まれている場合，画像が表示されませんでした。
 
@@ -22,3 +24,27 @@ permalink: /2026/140/:slug/
 **注記**: 問題は修正されましたが，誤ったコードをlangがキャッシュしているかもしれないので，コンパイルコードを削除してから再コンパイルを実行してください。
 
 * ACI0106269 Windows版のみ。特定の環境で[埋め込みWebレンダリングエンジン](https://developer.4d.com/docs/ja/FormObjects/propertiesWebArea#埋め込みwebレンダリングエンジンを使用)を使用するWebエリアを表示した場合，アプリケーションがクラッシュしました。2025年の3月にリリースされた`146.0.3856.59`や`146.0.3856.62`など，*Edge* ブラウザのバージョン番号が`146.0`で始まるシステムで問題が発生します。
+
+* ACI0106318 Write Proドキュメントに挿入したSVGのレンダリングに問題がありました。`transform`属性の`clipPath`の子要素が`transform`属性を使用している場合，Webブラウザのようにレンダリングされませんでした。`transform`属性のよる座標系の変換を回避すれば問題ありません。
+
+- NG
+
+```xml
+  <defs>
+	<clipPath id="clipShapeTransformRect" clipPathUnits="userSpaceOnUse">
+	  <rect x="0" y="0" width="240" height="120" transform="translate(530,160)"/>
+	</clipPath>
+  </defs>
+```
+
+- OK
+
+```xml
+  <defs>
+	<clipPath id="clipRectNoTransformEquivalent" clipPathUnits="userSpaceOnUse">
+	  <rect x="530" y="160" width="240" height="120"/>
+	</clipPath>
+  </defs>
+```
+
+* ACI0106214 Windows版のみ。検索ツールのハイライトにより，選択テキストのハイライトがみえなくなりました。正しいハイライトカラーが適用されていないようです。
