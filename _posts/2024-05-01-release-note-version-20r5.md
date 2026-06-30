@@ -83,7 +83,7 @@ ORDER BY FORMULA([Movimenti];[Clienti]RagioneSociale+[Fornitori]RagioneSociale;<
 
 * ACI0104869 *Qodly* のプレビューでデータを表示した後，*Qodly Studio* でデータストアを開いた場合，データストアに対するアクセス権限が失われ，サーバーを再起動またはデータストアを編集するまで回復しませんでした。
 
-* ACIACI0104852 Linux版のみ。`Get process activity().processes`の`cpuTime`および`cpuUsage`が不正確な数値または`0`を返しました。
+* ACI0104852 Linux版のみ。`Get process activity().processes`の`cpuTime`および`cpuUsage`が不正確な数値または`0`を返しました。
 
 * ACI0104826 `SQL EXECUTE`のクエリに時間を要した場合，つづく`SQL LOAD RECORD`でレコードフェッチのメッセージ画面が表示されました。
 
