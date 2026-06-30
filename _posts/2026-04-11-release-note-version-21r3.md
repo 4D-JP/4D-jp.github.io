@@ -9,6 +9,19 @@ version: "21r3"
 permalink: /2026/101/:slug/
 ---
 
+* ACI0106386 宣言したばかりのテキスト型に対して複合演算子を使用した場合，アプリケーションがクラッシュしました。
+
+```4d
+var $text; $t : Text
+$text+=$t
+```
+
+* ACI0106373 特定のデータファイルでリレーションナルクエリを実行した場合，アプリケーションがクラッシュする恐れがありました。ACI0106262が修正されたことによる副作用のようです。
+
+* ACI0106364 Mac版のみ。`FORM Theme`(https://developer.4d.com/docs/ja/commands/form-theme#form-theme)が空の文字列を返しませんでした。
+
+* ACI0106333 Windows版のみ。`Process activity`から返される`cpuUsage`の値が信用できませんでした。Windowsのタスクマネージャーに表示される数値よりもずっと高いCPU使用率が返されます。
+
 * ACI0106370 `COLLECTION TO ARRAY`など，特定のコマンドはデバッグログに記録されませんでした。
 
 * ACI0106358 Windows版のみ。改行コードを含むテキストを`EXPORT TEXT`で書き出すことができませんでした。`RecDelimit`システム変数に`13`を渡しても効果がありません。
