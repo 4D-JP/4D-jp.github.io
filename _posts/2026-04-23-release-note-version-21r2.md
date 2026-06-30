@@ -1,9 +1,9 @@
 ---
 layout: fix
-title: "4D 21r2 修正リスト"
-date: 2026-05-19 08:00:00
+title: "4D 21r2 Hotfix 1 修正リスト"
+date: 2026-05-21 08:00:00
 categories: 修正リスト
-tags: 21r2
+tags: 21r2 hotfix
 build: 100216
 version: "21r2"
 permalink: /2026/113/:slug/
