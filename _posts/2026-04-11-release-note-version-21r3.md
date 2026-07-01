@@ -9,6 +9,37 @@ version: "21r3"
 permalink: /2026/101/:slug/
 ---
 
+* ACI0106369 一部のコマンドのパラメーターを省略した場合，シンタックスエラーが返されました。
+
+- `OBJECT Get pointer`
+- `Window process`
+- `PRINT SELECTION`
+- `Subtotal`
+
+* ACI0106352 Windows版のみ。FluentUIモードのフォームでは，デスクトップからフォルダーをドラッグ＆ドロップすることができませんでした。MDIウィンドウに対するドロップ（`On Drop`データベースイベント）は問題ありません。
+
+* ACI0106350 Windows版のみ。CEFを除外してビルドしたアプリケーションで統合WebエリアまたはView Proエリアが配置されたFluentUIモードのフォームを表示しようとした場合，アプリケーションがクラッシュしました。
+
+* ACI0106336 ブロックコメントの後にクラスのメンバー関数またはコンストラクターを記述した場合，コードが実行されませんでしした。関数のコードをトレースすると，あるはずのコードが表示されません。改行を挿入すれば問題ありません。
+
+* ACI0106329 メソッドエディターからドキュメンテーションにジャンプした場合，ページがみつかりませんというエラーが表示されました。サイト側のリダイレクトが正しく設定されていないようです。
+
+* ACI0106342 ライセンスの自動更新に失敗した場合，"4D Motor Unrecoverable error: Can't get answer"というエラーメッセージが返されました。一般的なユーザーには，何のことを言っているのかわかりません。
+
+* ACI0106372 値を変数で受け取るタイプのXMLコマンドに整数型を渡した場合，エラーが返されました。
+
+	- `DOM Get first child XML element`
+	- `DOM Get next sibling XML element`
+	- `DOM Get last child XML element`
+	- `DOM Get previous sibling XML element`
+	- `DOM Get parent XML element`
+
+* ACI0106312 `JSON Validate`に無効なスキーマタイプを渡した場合，エラーが返されませんでした。
+
+* ACI0106295 クイックレポートがコンパイルできませんでした。[`QR SET INFO COLUMN`](https://developer.4d.com/docs/ja/commands/qr-set-info-column#qr-set-info-column)のシンタックス定義ファイルが正しくないためです。
+
+* ACI0106294 ラベルエディターがコンパイルできませんでした。[`DOM Create XML element`](https://developer.4d.com/docs/ja/commands/dom-create-xml-element) [`DOM SET XML ATTRIBUTE`](https://developer.4d.com/docs/ja/commands/dom-set-xml-attribute)の型推定が厳し過ぎるためです。
+
 * ACI0106386 宣言したばかりのテキスト型に対して複合演算子を使用した場合，アプリケーションがクラッシュしました。
 
 ```4d
