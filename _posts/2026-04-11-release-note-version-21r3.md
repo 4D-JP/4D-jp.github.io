@@ -11,10 +11,10 @@ permalink: /2026/101/:slug/
 
 * ACI0106369 一部のコマンドのパラメーターを省略した場合，シンタックスエラーが返されました。
 
-- `OBJECT Get pointer`
-- `Window process`
-- `PRINT SELECTION`
-- `Subtotal`
+	- `OBJECT Get pointer`
+	- `Window process`
+	- `PRINT SELECTION`
+	- `Subtotal`
 
 * ACI0106352 Windows版のみ。FluentUIモードのフォームでは，デスクトップからフォルダーをドラッグ＆ドロップすることができませんでした。MDIウィンドウに対するドロップ（`On Drop`データベースイベント）は問題ありません。
 
@@ -49,7 +49,7 @@ $text+=$t
 
 * ACI0106373 特定のデータファイルでリレーションナルクエリを実行した場合，アプリケーションがクラッシュする恐れがありました。ACI0106262が修正されたことによる副作用のようです。
 
-* ACI0106364 Mac版のみ。`FORM Theme`(https://developer.4d.com/docs/ja/commands/form-theme#form-theme)が空の文字列を返しませんでした。
+* ACI0106364 Mac版のみ。[`FORM Theme`](https://developer.4d.com/docs/ja/commands/form-theme#form-theme)が空の文字列を返しませんでした。
 
 * ACI0106333 Windows版のみ。`Process activity`から返される`cpuUsage`の値が信用できませんでした。Windowsのタスクマネージャーに表示される数値よりもずっと高いCPU使用率が返されます。
 
