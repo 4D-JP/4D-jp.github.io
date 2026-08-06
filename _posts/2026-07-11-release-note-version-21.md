@@ -1,13 +1,15 @@
 ---
 layout: fix
 title: "4D 21 修正リスト"
-date: 2026-07-28 08:00:00
+date: 2026-08-05 08:00:00
 categories: 修正リスト
 tags: "21.1"
-build: 100547
+build: 100550
 version: "21.1"
 permalink: /2026/192/:slug/
 ---
+
+* ACI0106472 QUICレイヤーのみ。RFC 8899で定められた`DPLPMTUD`が正しく実装されていないようです。QUICのUDPパケットを調べると，`DF` (Don't Fragment) ビットが`1`ではなく`0`に設定されていることが確認できます。MTUが`1390`に設定されたIPsecのVPN環境では，サイズを超過するプローブが中間デバイスによって断片化され，正しいMTUが伝達されず，パケットロスにより，通信速度が大幅に低下します。
 
 * ACI0106450 Write Proドキュメントのフォントスタイルを`INVOKE ACTION`または`WP SET ATTRIBUTES`でボールドまたはイタリックを変更した場合，フォントも変わることがありました。たとえば，Calibri lightをボールドに変更した場合，Calibri Boldの代わりにTimes New roman Boldになりました。段落レベルでスタイルシートが設定されている場合に問題が発生します。
 
