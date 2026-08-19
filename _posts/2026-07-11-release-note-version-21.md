@@ -4,7 +4,7 @@ title: "4D 21 Hotfix 2 修正リスト"
 date: 2026-08-18 08:00:00
 categories: 修正リスト
 tags: 21.1 hotfix
-build: 100562
+build: 100555
 version: "21.1"
 permalink: /2026/192/:slug/
 ---
