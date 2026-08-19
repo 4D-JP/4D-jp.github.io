@@ -1,13 +1,15 @@
 ---
 layout: fix
-title: "4D 21r3 修正リスト"
+title: "4D 21r3 Hotfix 1 修正リスト"
 date: 2026-08-06 08:00:00
 categories: 修正リスト
-tags: 21r3
-build: 100178
+tags: 21r3 hotfix
+build: 100180
 version: "21r3"
 permalink: /2026/193/:slug/
 ---
+
+* ACI0106367 フォームオブジェクトの[式の型/式タイプ](https://developer.4d.com/docs/ja/FormObjects/propertiesObject#式の型式タイプ)を明示的に指定しない限り， 時間型のオブジェクトプロパティが正しく表示されませんでした。
 
 * ACI0106471 `Localized string`コマンドに`":resNum,itemNum"`表記のリソース識別子を渡した場合，空の文字列が返されました。
 
