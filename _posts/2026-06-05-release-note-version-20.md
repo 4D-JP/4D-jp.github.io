@@ -1,10 +1,10 @@
 ---
 layout: fix
-title: "4D 20 修正リスト"
+title: "4D 20.8 Hotfix 4 修正リスト"
 date: 2026-08-18 08:00:00
 categories: 修正リスト
-tags: "20.8"
-build: 102082
+tags: 20.8 hotfix
+build: 102083
 version: "20.8"
 permalink: /2026/157/:slug/
 ---
