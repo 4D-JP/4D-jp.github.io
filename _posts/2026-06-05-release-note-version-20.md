@@ -1,7 +1,7 @@
 ---
 layout: fix
 title: "4D 20.8 Hotfix 4 修正リスト"
-date: 2026-08-18 08:00:00
+date: 2026-08-20 08:00:00
 categories: 修正リスト
 tags: 20.8 hotfix
 build: 102083
