@@ -4,10 +4,12 @@ title: "4D 21 Hotfix 2 修正リスト"
 date: 2026-08-18 08:00:00
 categories: 修正リスト
 tags: 21.1 hotfix
-build: 100555
+build: 100562
 version: "21.1"
 permalink: /2026/192/:slug/
 ---
+
+* ACI0106486 フランス語版のみ。macOS 26 Tahoeでは，メソッドプロパティ「Ne peut pas être exécuté dans un process préemptif（プリエンプティブプロセスでは実行不可）」の表示が途切れていました。
 
 * ACI0106412 Windows版のみ。セッション中にライトモードからダークモードにアピアランスが切り替わった場合，`DISPLAY NOTIFICATION`がクラッシュする恐れがありました。
 
