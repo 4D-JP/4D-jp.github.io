@@ -9,6 +9,12 @@ type: page
 * content
 {:toc}
 
+## 21r4 # {#v21r4}
+
+* <i class="fa fa-download" aria-hidden="true"></i> [**4D NetKit: メールやカレンダー通知の受領**](https://github.com/4D-JP/HDI/releases/download/21r4/HDI_Microsoft_Google_Notifications.zip)<span id="21-4-1"></span><br />
+4D NetKit を使って、Google または Office365 のメールやカレンダー通知を受領できるようになりました。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [4D NetKit Notifications を使って、Google や Microsoft 365 との同期を維持しましょう](https://blog.4d.com/ja/stay-synchronized-with-google-and-microsoft-365-with-4d-netkit-notifications/)<br />
+
 ## 21r3 # {#v21r3}
 
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D Write Pro: マルチレベルスタイルシートを使った多階層リスト**](https://github.com/4D-JP/HDI/releases/download/21r3/HDI_4DWP_MultiLevelStyleSheets.zip)<span id="21-3-6"></span><br />
