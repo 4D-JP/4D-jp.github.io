@@ -1,13 +1,65 @@
 ---
 layout: fix
 title: "4D 21r4 修正リスト"
-date: 2026-08-18 08:00:00
+date: 2026-08-29 08:00:00
 categories: 修正リスト
 tags: 21r4
 build: 100132
 version: "21r4"
 permalink: /2026/194/:slug/
 ---
+
+* ACI0106508 フランス語版・スペイン語版のみ。"OK"という文字列を`ALERT`で表示した場合，"OK"の代わりに"Valider"あるいは"Aceptar"と表示されました。小文字の"ok"であれば問題ありません。
+
+* ACI0106425 Mac版のみ。システムWebエリアが配置されたフォーム上で`"Is window maximized`または`MAXIMIZE WINDOW`を実行した場合，アプリケーションがクラッシュしました。macOS 27 Golden Gateに特有の現象です。
+
+* ACI0106512 Mac版のみ。階層ポップアップメニューの第２階層がダークモードに対応していませんでした。
+
+* ACI0106485 可変長引数（`${i}`）を使用した場合，クラスのメンバー関数に存在する警告がメソッドエディターやコンパイラー画面に表示されませんでした。
+
+**注記**: クラス関数は`${i}`シンタックスをサポートしていない点に留意してください。
+
+* ACI0106424 メール添付ファイル名のMIMEエンコードに問題がありました。`Content-Disposition`ヘッダーの`attachment`属性とセミコロン記号（`;`）の間余計な改行が挿入されるため，ファイアーウォールやウイルス対策ソフトウェアによってブロックされる恐れがありました。
+
+* ACI0106414 `IMAPTransporter.notifier.start()	`でIMAP通知を開始した場合，通知が返されませんでした。
+
+* ACI0106413 IMAP通知を開始した後に`IMAPTransporter.getBoxInfo()`を実行した場合，アプリケーションがフリーズしました。
+
+**注記**: 問題は修正されましたが，`cs.IMAPListener`は`New OAuth2 provider`のパラメーターではなく，`IMAP New transporter`のパラメーターである点に留意してください。
+
+- 誤
+
+```4d
+var $param : Object:=New object()
+$param.name:="Microsoft"
+$param.permission:="signedIn"
+$param.listener:=cs.IMAPListener.new()
+// ...
+var $IMAPParameters : Object:=New object
+$IMAPParameters.authenticationMode:=IMAP authentication OAUTH2
+$IMAPParameters.host:="outlook.office365.com"
+$IMAPParameters.port:=993
+// ...
+```
+
+- 正
+
+```4d
+$IMAPParameters.listener:=cs.IMAPListener.new()
+var $transporter : Object:=IMAP New transporter($IMAPParameters)
+```
+
+* ACI0106499 コンパイルモードのみ。ポインターの逆参照（`($PtrTimeArray->{1})`）を使用した場合，時間型配列の正しい値が返されませんでした。`11`（時間）の代わりに`9`（倍長整数），`12:34:56`の代わりに`45296`が返されました。
+
+* ACI0106430 クライアント/サーバー版のみ。Apple Siliconターゲットのコンパイルモードでサーバー側で実行するように設定されているコンポーネントメソッドを`On Server Startup`で実行した場合，同じメソッドをクライアント側から実行することができなくなりました。
+
+* ACI0106494 `MAIL Convert to MIME`のデコードが正しくありませんでした。ヘッダーが複数行に亘る場合，URLの途中など，不正な位置に改行が挿入されることがありました。
+
+* ACI0106500 QUICレイヤーのみ。VPNを有効にした場合，クライアント自動アップグレードができませんでした。ACI0106472が修正されたことによる副作用のようです。
+
+* ACI0106452 Webサーバーを再起動した場合，HTTPリクエスト数のカウンターがリセットされませんでした。
+
+**注記**: `/4dwebtest`に表示されるリクエスト数のカウンターおよび`WEB Get server info`の`httpRequestCount`がリセットされるようになりました。
 
 * ACI0106406 クライアント/サーバー版のみ。Qodly Proのデバッグセッションを中断した場合，サーバーがクラッシュしました。
 
