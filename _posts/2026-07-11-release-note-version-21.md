@@ -1,6 +1,6 @@
 ---
 layout: fix
-title: "4D 21 Hotfix 2 修正リスト"
+title: "4D 21.1 Hotfix 2 修正リスト"
 date: 2026-08-18 08:00:00
 categories: 修正リスト
 tags: 21.1 hotfix
