@@ -4,7 +4,7 @@ title: "4D 21r4 修正リスト"
 date: 2026-08-29 08:00:00
 categories: 修正リスト
 tags: 21r4
-build: 100132
+build: 100155
 version: "21r4"
 permalink: /2026/194/:slug/
 ---
