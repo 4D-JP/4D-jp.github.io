@@ -11,6 +11,10 @@ type: page
 
 ## 21r4 # {#v21r4}
 
+* <i class="fa fa-download" aria-hidden="true"></i> [**Apple 作文ツールへのアクセス**](https://github.com/4D-JP/HDI/releases/download/21r4/HDI_Writing_Tools_Text_Widgets.zip)<span id="21-4-3"></span><br />
+テキスト入力や 4D Write Pro エリアより Apple の作文ツールにアクセスできるようになりました。この機能は Apple シリコン搭載の macOS マシンにて、Sequoia 15.1 以降でご利用いただけます。<br />
+　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [Appleのライティングツール - 4D Write Proおよびテキスト入力で利用可能に](https://blog.4d.com/ja/apple-writing-tools-now-available-in-4d-write-pro-and-text-input/)<br />
+
 * <i class="fa fa-download" aria-hidden="true"></i> [**4D RESTサーバーのクォータ**](https://github.com/4D-JP/HDI/releases/download/21r4/HDI_REST_Server_quotas.zip)<span id="21-4-2"></span><br />
 4D 21 R4 より、新しいクォータ管理機構により、RESTサーバーのメモリに保持するエンティティセットの数をセッション毎に制限できるようになりました。この機能は [`4D.QuotaManager`](https://developer.4d.com/docs/ja/API/QuotaManagerClass) クラスにより提供されます。<br />
 　　<i class="fa fa-external-link" aria-hidden="true"></i> ブログ記事: [RESTサーバーのパフォーマンスを最高の状態に保つ](https://blog.4d.com/ja/keep-your-rest-server-performing-at-its-best/)<br />
