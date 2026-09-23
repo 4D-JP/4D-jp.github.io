@@ -170,7 +170,7 @@ End case
 
 * ACI0106007 特定の状況で`WEB SEND RAW DATA`を実行した場合，アプリケーションがクラッシュしました。
 
-ACI0106044	AST interpreter: dereferencing a null 4D pointer does not trigger an error		4D Staff	According to origin
+* ACI0106044 ASTインタープリターモードでは，ヌルポインターの逆参照がエラー`85`を返しませんでした。
 
 * ACI0106043 HTTPリクエストハンドラーの`IncomingMessage`オブジェクトの`urlQuery`プロパティの値に含まれる`%3D`が`=`にデコードされました。
 
