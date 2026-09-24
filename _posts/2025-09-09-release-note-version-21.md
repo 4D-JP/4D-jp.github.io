@@ -50,7 +50,7 @@ End if
 
 * ACI0106046 Mac版のみ。Apple Siliconプラットフォームで`QUERY BY ATTRIBUTE`の比較演算子を省略した場合，アプリケーションがクラッシュしました。
 
-* ACI0106065`JSON Validate`が`multipleOf`キーワードを正しく判定できませんでした。
+* ACI0106065 `JSON Validate`が`multipleOf`キーワードを正しく判定できませんでした。
 
 * ACI0106066 サーバー管理画面が更新されるタイミングでプロセスが終了した場合，アプリケーションがクラッシュする恐れがありました。
 
