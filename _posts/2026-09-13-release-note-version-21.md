@@ -1,10 +1,10 @@
 ---
 layout: fix
-title: "4D 21 修正リスト"
-date: 2026-10-06 08:00:00
+title: "4D 21.2 Hotfix 1 修正リスト"
+date: 2026-10-13 08:00:00
 categories: 修正リスト
-tags: "21.2"
-build: 100607
+tags: 21.2 hotfix
+build: 100611
 version: "21.2"
 permalink: /2026/256/:slug/
 ---
